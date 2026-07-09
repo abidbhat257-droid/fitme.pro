@@ -1,0 +1,141 @@
+{
+  "theme": "dark",
+  "toggle_support": true,
+  "typography": {
+    "fonts": [
+      {
+        "role": "headings",
+        "family": "Clash Display",
+        "fallback": "sans-serif",
+        "weights": [600, 700],
+        "instruction": "Use for all headings, massive hero text, and card titles. Ensure tracking-tight or tracking-tighter."
+      },
+      {
+        "role": "body",
+        "family": "Manrope",
+        "fallback": "sans-serif",
+        "weights": [400, 500, 600],
+        "instruction": "Use for body text, form labels, and standard paragraphs for clean legibility."
+      },
+      {
+        "role": "data",
+        "family": "JetBrains Mono",
+        "fallback": "monospace",
+        "weights": [400, 700],
+        "instruction": "Use for all numeric results, formulas, and metric values to instill a sense of precision."
+      }
+    ],
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tighter uppercase",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight uppercase",
+      "h3": "text-xl sm:text-2xl tracking-tight",
+      "card_title": "text-lg sm:text-xl font-bold uppercase",
+      "result_value": "text-3xl sm:text-4xl font-black tracking-tight",
+      "body": "text-base leading-relaxed",
+      "label": "text-xs font-bold uppercase tracking-[0.2em]"
+    }
+  },
+  "colors": {
+    "archetype": "The Performance Pro",
+    "light": {
+      "background": "#F8F9FA",
+      "surface": "#FFFFFF",
+      "text": "#0F172A",
+      "text_muted": "#64748B",
+      "border": "#E2E8F0",
+      "primary": "#CCFF00",
+      "primary_text": "#000000",
+      "secondary": "#2563EB",
+      "categories": {
+        "basic": "#3B82F6",
+        "body_composition": "#F97316",
+        "body_shape": "#EC4899",
+        "metabolism": "#EAB308",
+        "advanced": "#EF4444"
+      }
+    },
+    "dark": {
+      "background": "#0A0A0A",
+      "surface": "#121212",
+      "text": "#F8FAFC",
+      "text_muted": "#94A3B8",
+      "border": "#262626",
+      "primary": "#CCFF00",
+      "primary_text": "#000000",
+      "secondary": "#3B82F6",
+      "categories": {
+        "basic": "#3B82F6",
+        "body_composition": "#F97316",
+        "body_shape": "#EC4899",
+        "metabolism": "#EAB308",
+        "advanced": "#EF4444"
+      }
+    }
+  },
+  "surface_strategies": {
+    "cards": "Grid Borders & Sharp Edges. bg-surface, 1px solid border-border, rounded-none or max rounded-sm. No soft shadows. Hover: shadow-[4px_4px_0px_0px_rgba(204,255,0,1)] (Neo-brutalist pop) or subtle -translate-y-1 with neon border glow.",
+    "inputs": "Tactical Minimalism. bg-transparent, border-b-2 border-border, rounded-none, uppercase labels. Focus: border-primary ring-0.",
+    "buttons": "Sharp rects. bg-primary text-black font-bold uppercase tracking-wider. Hover: bg-white (in dark mode) or bg-black text-white (in light mode) with transition-colors.",
+    "header": "Crystal Glass. backdrop-blur-xl bg-background/80 border-b border-border."
+  },
+  "layouts": {
+    "dashboard": {
+      "container": "flex flex-col lg:flex-row min-h-screen",
+      "sidebar_input_panel": "w-full lg:w-96 lg:fixed h-auto lg:h-screen overflow-y-auto border-r border-border bg-surface p-6 sm:p-8 z-40",
+      "main_results_area": "flex-1 lg:ml-96 p-6 sm:p-8 lg:p-12",
+      "grid": "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6",
+      "instruction": "The input panel is persistent on the left (desktop) or top (mobile). As user types, all 30 calculators in the main area update instantly. Group cards by category headers."
+    },
+    "seo_page": {
+      "hero": "relative pt-32 pb-20 px-6 sm:px-12 border-b border-border overflow-hidden",
+      "hero_overlay": "absolute inset-0 bg-black/60 z-10",
+      "content": "max-w-4xl mx-auto py-12 px-6 sm:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12",
+      "main_article": "lg:col-span-8 space-y-8",
+      "sidebar": "lg:col-span-4 space-y-8"
+    }
+  },
+  "components": {
+    "GaugeBar": "A horizontal 100% width div, divided into colored segments (e.g., Underweight, Normal, Overweight). An absolute positioned triangle or vertical line indicates the user's result.",
+    "ResultCard": "Contains: Category Icon/Chip (top left), Share icon (top right). Title. Massive Numeric Result. GaugeBar. 'View Details' link. Uses data-testid='calc-card-{id}'",
+    "MeasurementInput": "Grouped logically (General, Dimensions). Use large touch-friendly input fields. Unit toggle switch (Metric/Imperial) at the very top."
+  },
+  "motion": {
+    "interactions": "Hover states on all cards: border color changes to category color, slight lift. Button clicks: scale-95. Staggered entrance animation for the 30 cards using framer-motion.",
+    "page_transitions": "Smooth fade-in. No page reloads when changing calculators.",
+    "accessibility": "respect prefers-reduced-motion."
+  },
+  "icons_and_assets": {
+    "library": "@phosphor-icons/react",
+    "installation": "yarn add @phosphor-icons/react",
+    "images": {
+      "hero_background": {
+        "url": "https://images.pexels.com/photos/8820689/pexels-photo-8820689.jpeg",
+        "description": "Male athlete sprinting from starting blocks"
+      }
+    },
+    "usage": "Use sharp, duotone or bold weights from Phosphor to match the tactical feel."
+  },
+  "visual_enhancers": {
+    "textures": "Subtle noise overlay (pointer-events-none) across the whole app to kill the 'digital flatness'.",
+    "data_viz": "Use simple custom SVG for body shape silhouettes or standard recharts for complex charts. Keep them monochrome with category accent colors."
+  },
+  "instructions_to_main_agent": [
+    "Use standard React state or Zustand for the persistent global store (sync with localStorage).",
+    "Implement the single-entry form so it recalculates all dependent formulas instantly.",
+    "Each calculator needs a route (e.g., `/calculator/bmi`). The dashboard is at `/`.",
+    "For the dashboard, lazy-load the result cards if they affect performance, but keep the calculations synchronous.",
+    "Ensure the PDF generation uses `window.print()` with a custom `@media print` CSS or a client-side library like `html2pdf.js`.",
+    "Do NOT use HTML `<input type=\"date\">` - stick to Shadcn components where possible, but customize them aggressively to match the 'Sharp/Tactical' surface strategy.",
+    "Add data-testid attributes to all inputs and result outputs."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Avoid AI slop: do NOT use generic centered layouts or purple-on-white gradients.",
+    "Create depth through sharp 1px borders and high contrast, not soft shadows.",
+    "Do not center align the app container (.App { text-align: center; } is banned).",
+    "Never use generic AI emojis for icons; strictly use @phosphor-icons/react.",
+    "Use 2x spacing everywhere. Cards need breathing room.",
+    "Ensure hover states explicitly set text colors, not just backgrounds.",
+    "Toast notifications MUST use Sonner.",
+    "Do not use generic font families like Inter or Roboto. Apply Clash Display for headers and Manrope for body text."
+  ]
+}
