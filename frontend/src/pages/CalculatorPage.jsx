@@ -152,7 +152,7 @@ export default function CalculatorPage() {
                   </p>
                   <div className="mt-2 flex flex-wrap gap-2">
                     {calc.requires.map((r) => (
-                      <span key={r} className="text-[10px] uppercase tracking-widest border border-border px-2 py-1">{r}</span>
+                      <span key={r} className="text-[10px] uppercase tracking-widest border border-border px-2 py-1">{humanizeField(r)}</span>
                     ))}
                   </div>
                 </div>
@@ -241,6 +241,22 @@ function upsertMeta(name, content, isProperty = false) {
     document.head.appendChild(el);
   }
   el.setAttribute("content", content);
+}
+
+function humanizeField(k) {
+  const map = {
+    heightCm: "Height",
+    weightKg: "Weight",
+    waistCm: "Waist",
+    hipCm: "Hip",
+    neckCm: "Neck",
+    wristCm: "Wrist",
+    goalWeightKg: "Goal Weight",
+    age: "Age",
+    sex: "Sex",
+    activity: "Activity Level",
+  };
+  return map[k] || k;
 }
 
 function upsertJsonLd(obj) {

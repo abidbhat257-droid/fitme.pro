@@ -86,6 +86,7 @@ export default function Dashboard() {
               {[{ key: "all", label: "All" }, ...CALCULATORS_BY_CATEGORY.map((c) => ({ key: c.key, label: c.label, color: c.color }))].map((c) => (
                 <button
                   key={c.key}
+                  data-testid={`dash-chip-${c.key}`}
                   onClick={() => setActiveCat(c.key)}
                   className={`whitespace-nowrap px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.2em] border transition-colors ${activeCat === c.key ? "bg-[var(--brand-lime)] text-black border-[var(--brand-lime)]" : "border-border hover:border-[var(--brand-lime)]"}`}
                   style={activeCat !== c.key && c.color ? { borderLeftColor: c.color, borderLeftWidth: 3 } : {}}

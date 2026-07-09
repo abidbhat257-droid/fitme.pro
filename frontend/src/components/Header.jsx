@@ -38,12 +38,14 @@ export default function Header() {
             className="hidden sm:flex items-center border border-border overflow-hidden text-xs uppercase font-bold tracking-[0.15em]"
           >
             <button
+              data-testid="unit-metric"
               onClick={() => setUnit("metric")}
               className={`px-3 py-2 transition-colors ${state.unit === "metric" ? "bg-[var(--brand-lime)] text-black" : "hover:bg-muted"}`}
             >
               Metric
             </button>
             <button
+              data-testid="unit-imperial"
               onClick={() => setUnit("imperial")}
               className={`px-3 py-2 transition-colors ${state.unit === "imperial" ? "bg-[var(--brand-lime)] text-black" : "hover:bg-muted"}`}
             >
