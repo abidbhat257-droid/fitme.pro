@@ -2,6 +2,7 @@ import React, { useMemo, useState, useEffect } from "react";
 import MeasurementPanel from "@/components/MeasurementPanel";
 import ResultCard from "@/components/ResultCard";
 import RadarProfile from "@/components/viz/RadarProfile";
+import GoalsWidget from "@/components/GoalsWidget";
 import { CALCULATORS, CALCULATORS_BY_CATEGORY } from "@/lib/calculators";
 import { useAllResults } from "@/hooks/useAllResults";
 import { useMeasurements } from "@/context/MeasurementContext";
@@ -101,6 +102,9 @@ export default function Dashboard() {
             </div>
           </div>
         </section>
+
+        {/* GOALS */}
+        <GoalsWidget />
 
         {/* CONTROLS */}
         <section className="sticky top-[73px] lg:top-[73px] z-30 bg-background/90 backdrop-blur-xl border-b border-border no-print">

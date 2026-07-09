@@ -39,15 +39,24 @@ function hydrateSnapshots() {
     return raw ? JSON.parse(raw) : [];
   } catch { return []; }
 }
+function hydrateGoals() {
+  if (typeof window === "undefined") return [];
+  try {
+    const raw = window.localStorage.getItem("fitmepro:goals:v1");
+    return raw ? JSON.parse(raw) : [];
+  } catch { return []; }
+}
 
 export function MeasurementProvider({ children }) {
   const storage = getStorage();
 
   const [state, setState] = useState(hydrateMeasurements);
   const [snapshots, setSnapshots] = useState(hydrateSnapshots);
+  const [goals, setGoals] = useState(hydrateGoals);
 
   useEffect(() => { storage.setMeasurements(state); }, [state, storage]);
   useEffect(() => { storage.saveSnapshots(snapshots); }, [snapshots, storage]);
+  useEffect(() => { storage.saveGoals(goals); }, [goals, storage]);
 
   const update = useCallback((patch) => setState((prev) => ({ ...prev, ...patch })), []);
   const reset = useCallback(() => setState(DEFAULTS), []);
@@ -91,7 +100,33 @@ export function MeasurementProvider({ children }) {
     if (snap) setState({ ...DEFAULTS, ...snap.state });
   }, [snapshots]);
 
-  const value = { state, update, reset, setUnit, snapshots, saveSnapshot, deleteSnapshot, loadSnapshot };
+  // ---------- Goals ----------
+  const genId = () => (typeof crypto !== "undefined" && crypto.randomUUID) ? crypto.randomUUID() : String(Date.now() + Math.random());
+
+  const saveGoal = useCallback((data) => {
+    const goal = {
+      id: genId(),
+      createdAt: new Date().toISOString(),
+      startDate: data.startDate || new Date().toISOString(),
+      ...data,
+    };
+    setGoals((prev) => [goal, ...prev].slice(0, 20));
+    return goal;
+  }, []);
+
+  const updateGoal = useCallback((id, patch) => {
+    setGoals((prev) => prev.map((g) => (g.id === id ? { ...g, ...patch } : g)));
+  }, []);
+
+  const deleteGoal = useCallback((id) => {
+    setGoals((prev) => prev.filter((g) => g.id !== id));
+  }, []);
+
+  const value = {
+    state, update, reset, setUnit,
+    snapshots, saveSnapshot, deleteSnapshot, loadSnapshot,
+    goals, saveGoal, updateGoal, deleteGoal,
+  };
 
   return <MeasurementContext.Provider value={value}>{children}</MeasurementContext.Provider>;
 }

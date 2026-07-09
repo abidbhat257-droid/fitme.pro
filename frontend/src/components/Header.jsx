@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Sun, Moon, Printer, ArrowCounterClockwise, Barbell, Camera, DownloadSimple, ShareNetwork, GitDiff, CaretDown } from "@phosphor-icons/react";
+import { Sun, Moon, Printer, ArrowCounterClockwise, Barbell, Camera, DownloadSimple, ShareNetwork, GitDiff, CaretDown, Target } from "@phosphor-icons/react";
 import { useTheme } from "@/context/ThemeContext";
 import { useMeasurements } from "@/context/MeasurementContext";
 import { Button } from "@/components/ui/button";
@@ -12,6 +12,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import SnapshotDialog from "@/components/SnapshotDialog";
+import GoalDialog from "@/components/GoalDialog";
 import { downloadCSV, downloadJSON, downloadShareCard } from "@/lib/exports";
 import { toast } from "sonner";
 import { NAV } from "@/constants/testIds";
@@ -118,6 +119,17 @@ export default function Header() {
                     className="uppercase text-xs tracking-wider font-bold cursor-pointer"
                   >
                     <Camera size={14} weight="duotone" className="mr-2" /> Snapshots
+                  </DropdownMenuItem>
+                }
+              />
+              <GoalDialog
+                trigger={
+                  <DropdownMenuItem
+                    data-testid="action-new-goal"
+                    onSelect={(e) => e.preventDefault()}
+                    className="uppercase text-xs tracking-wider font-bold cursor-pointer"
+                  >
+                    <Target size={14} weight="duotone" className="mr-2" /> New Goal
                   </DropdownMenuItem>
                 }
               />

@@ -11,6 +11,7 @@
 
 const MEASUREMENTS_KEY = "fitmepro:measurements:v1";
 const SNAPSHOTS_KEY = "fitmepro:snapshots:v1";
+const GOALS_KEY = "fitmepro:goals:v1";
 const THEME_KEY = "fitmepro:theme";
 
 class LocalStorageAdapter {
@@ -42,6 +43,13 @@ class LocalStorageAdapter {
     this._write(SNAPSHOTS_KEY, snapshots);
   }
 
+  async listGoals() {
+    return this._read(GOALS_KEY, []);
+  }
+  async saveGoals(goals) {
+    this._write(GOALS_KEY, goals);
+  }
+
   async getTheme(fallback = "dark") {
     try { return window.localStorage.getItem(THEME_KEY) || fallback; } catch { return fallback; }
   }
@@ -60,4 +68,4 @@ export function getStorage() {
 }
 
 /** Public for tests / future migration. */
-export const StorageKeys = { MEASUREMENTS_KEY, SNAPSHOTS_KEY, THEME_KEY };
+export const StorageKeys = { MEASUREMENTS_KEY, SNAPSHOTS_KEY, GOALS_KEY, THEME_KEY };
