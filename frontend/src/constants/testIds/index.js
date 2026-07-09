@@ -1,15 +1,50 @@
-// constants/testIds/ — central registry of data-testid values used by the
-// end-to-end testing agent (qabot) to locate and interact with UI elements
-// during automated tests. UI without testids cannot be automatically verified.
-//
-// Structure: each feature lives in its own file (auth.js, cart.js, ...) and
-// is re-exported from here, so consumers can do a single import like
-// `import { LOGIN, CART } from '@/constants/testIds'` (or relative).
-//
-// Adding a new feature:
-//   1. Create constants/testIds/<feature>.js
-//   2. Export named objects (e.g. `export const PROFILE = { ... }`)
-//   3. Re-export here: `export * from './<feature>';`
+export const HOME = {
+  emergentLink: "home-emergent-link",
+};
 
-export * from './auth';
-export * from './home';
+export const NAV = {
+  root: "nav-root",
+  logo: "nav-logo",
+  dashboardLink: "nav-dashboard-link",
+  themeToggle: "nav-theme-toggle",
+  unitToggle: "nav-unit-toggle",
+  printBtn: "nav-print-btn",
+  resetBtn: "nav-reset-btn",
+};
+
+export const PANEL = {
+  root: "measurement-panel",
+  age: "input-age",
+  sex: "input-sex",
+  height: "input-height",
+  weight: "input-weight",
+  waist: "input-waist",
+  hip: "input-hip",
+  neck: "input-neck",
+  wrist: "input-wrist",
+  activity: "input-activity",
+  goalWeight: "input-goal-weight",
+  unitMetric: "unit-metric",
+  unitImperial: "unit-imperial",
+};
+
+export const DASH = {
+  root: "dashboard-root",
+  category: (k) => `dash-category-${k}`,
+  cardsGrid: "dash-cards-grid",
+  search: "dash-search",
+};
+
+export const CARD = {
+  root: (id) => `calc-card-${id}`,
+  value: (id) => `calc-value-${id}`,
+  category: (id) => `calc-category-${id}`,
+  detailsLink: (id) => `calc-details-${id}`,
+  copyBtn: (id) => `calc-copy-${id}`,
+};
+
+export const SEO = {
+  root: (slug) => `seo-page-${slug}`,
+  backLink: "seo-back-link",
+  faqItem: (i) => `seo-faq-${i}`,
+};

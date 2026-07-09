@@ -1,0 +1,136 @@
+import React, { useMemo, useState, useEffect } from "react";
+import MeasurementPanel from "@/components/MeasurementPanel";
+import ResultCard from "@/components/ResultCard";
+import { CALCULATORS, CALCULATORS_BY_CATEGORY, hasRequiredInputs } from "@/lib/calculators";
+import { useMeasurements } from "@/context/MeasurementContext";
+import { DASH } from "@/constants/testIds";
+import { MagnifyingGlass, Lightning } from "@phosphor-icons/react";
+
+export default function Dashboard() {
+  const { state } = useMeasurements();
+  const [query, setQuery] = useState("");
+  const [activeCat, setActiveCat] = useState("all");
+
+  useEffect(() => {
+    document.title = "Fitme Pro — 30 Health & Body Composition Calculators";
+  }, []);
+
+  // Precompute all results (synchronous, memoized on state)
+  const results = useMemo(() => {
+    const map = {};
+    for (const c of CALCULATORS) {
+      const ready = hasRequiredInputs(c, state);
+      map[c.id] = { ready, result: ready ? safeCompute(c, state) : null };
+    }
+    return map;
+  }, [state]);
+
+  const filteredCategories = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    return CALCULATORS_BY_CATEGORY
+      .filter((cat) => activeCat === "all" || activeCat === cat.key)
+      .map((cat) => ({
+        ...cat,
+        items: cat.items.filter((c) => !q || c.name.toLowerCase().includes(q)),
+      }))
+      .filter((cat) => cat.items.length > 0);
+  }, [query, activeCat]);
+
+  const readyCount = Object.values(results).filter((r) => r.ready).length;
+
+  return (
+    <div data-testid={DASH.root} className="flex flex-col lg:flex-row min-h-screen">
+      <MeasurementPanel />
+
+      <main className="flex-1 min-w-0">
+        {/* HERO */}
+        <section className="relative border-b border-border overflow-hidden">
+          <div className="absolute inset-0 opacity-[0.08] pointer-events-none" style={{
+            backgroundImage: "radial-gradient(circle at 20% 30%, #CCFF00 0%, transparent 40%), radial-gradient(circle at 80% 70%, #3B82F6 0%, transparent 40%)",
+          }} />
+          <div className="relative px-6 sm:px-10 py-12 lg:py-16 max-w-5xl">
+            <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.3em] text-[var(--brand-lime)] mb-4">
+              <Lightning size={14} weight="fill" /> Instant · Private · Ad-free
+            </div>
+            <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl uppercase tracking-tighter leading-[0.95]">
+              30 Body <span className="text-[var(--brand-lime)]">Calculators.</span>
+              <br />
+              One Entry.
+            </h1>
+            <p className="mt-5 text-base sm:text-lg text-muted-foreground max-w-2xl leading-relaxed">
+              Enter your measurements once — get BMI, body fat, TDEE, obesity risk, and 26 more insights,
+              recalculated the moment you type.
+            </p>
+            <div className="mt-6 inline-flex items-center gap-4 font-mono-data text-sm border border-border px-4 py-2">
+              <span className="text-[var(--brand-lime)] text-lg">{readyCount}</span>
+              <span className="text-muted-foreground">/ {CALCULATORS.length} unlocked</span>
+            </div>
+          </div>
+        </section>
+
+        {/* CONTROLS */}
+        <section className="sticky top-[73px] lg:top-[73px] z-30 bg-background/90 backdrop-blur-xl border-b border-border no-print">
+          <div className="px-6 sm:px-10 py-4 flex flex-col sm:flex-row gap-4 sm:items-center justify-between">
+            <div className="relative w-full sm:max-w-sm">
+              <MagnifyingGlass size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
+              <input
+                data-testid={DASH.search}
+                type="search"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder="Search calculators…"
+                className="w-full pl-10 pr-4 py-2.5 border-2 border-border bg-transparent focus:border-[var(--brand-lime)] focus:outline-none text-sm font-mono-data"
+              />
+            </div>
+            <div className="flex gap-1.5 overflow-x-auto pb-1 -mx-1 px-1">
+              {[{ key: "all", label: "All" }, ...CALCULATORS_BY_CATEGORY.map((c) => ({ key: c.key, label: c.label, color: c.color }))].map((c) => (
+                <button
+                  key={c.key}
+                  onClick={() => setActiveCat(c.key)}
+                  className={`whitespace-nowrap px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.2em] border transition-colors ${activeCat === c.key ? "bg-[var(--brand-lime)] text-black border-[var(--brand-lime)]" : "border-border hover:border-[var(--brand-lime)]"}`}
+                  style={activeCat !== c.key && c.color ? { borderLeftColor: c.color, borderLeftWidth: 3 } : {}}
+                >
+                  {c.label}
+                </button>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* CARDS */}
+        <section className="px-6 sm:px-10 py-10 space-y-14 print-grid" data-testid={DASH.cardsGrid}>
+          {filteredCategories.map((cat) => (
+            <div key={cat.key} data-testid={DASH.category(cat.key)}>
+              <div className="flex items-baseline gap-3 mb-6">
+                <div className="h-3 w-3" style={{ background: cat.color }} />
+                <h2 className="font-display text-2xl sm:text-3xl uppercase tracking-tighter">{cat.label}</h2>
+                <span className="font-mono-data text-xs text-muted-foreground">{cat.items.length} calcs</span>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                {cat.items.map((c, i) => (
+                  <ResultCard
+                    key={c.id}
+                    calc={c}
+                    ready={results[c.id]?.ready}
+                    result={results[c.id]?.result}
+                    index={i}
+                  />
+                ))}
+              </div>
+            </div>
+          ))}
+          {filteredCategories.length === 0 && (
+            <div className="text-center text-muted-foreground py-20">
+              No calculators match your search.
+            </div>
+          )}
+        </section>
+      </main>
+    </div>
+  );
+}
+
+function safeCompute(calc, state) {
+  try { return calc.compute(state); }
+  catch { return { value: "—", tone: "neutral" }; }
+}

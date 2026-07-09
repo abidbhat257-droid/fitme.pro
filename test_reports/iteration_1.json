@@ -1,0 +1,59 @@
+{
+  "summary": "Frontend smoke test on FitMe Pro dashboard. Dashboard loads with 30 cards and measurement panel visible, but multiple critical blockers found: calculators do NOT unlock even after all valid measurements are entered (counter stuck at 0/30), a global overlay ('.grain' wrapper on <html>) intercepts pointer events blocking theme toggle / category chips / details links / unit toggle, search filter does not filter cards, and localStorage persistence loses non-age fields on reload.",
+  "tested_scope": ["frontend"],
+  "passed": [
+    "Dashboard loads at / with data-testid=dashboard-root",
+    "30 calculator cards render (calc-card-* count == 30)",
+    "Measurement panel visible with all input fields",
+    "Age, height, weight, waist, hip, neck, wrist inputs accept values (visible in screenshot)",
+    "Sex select (shadcn) opens and 'Male' is selected"
+  ],
+  "failed": [
+    {
+      "area": "Calculator unlock logic",
+      "issue": "After entering age=30, sex=Male, height=175, weight=72, waist=82, hip=96, neck=38, wrist=17 (all visible in inputs), the counter still shows '0 / 30 unlocked' and calc-value-bmi never appears. BMI should be ~23.5. Result cards do not render values.",
+      "evidence": "Screenshot shows all inputs populated but hero counter reads '0 / 30 unlocked'. calc-value-bmi selector timed out (element never rendered).",
+      "priority": "HIGH"
+    },
+    {
+      "area": "Global pointer-events overlay",
+      "issue": "Clicks on nav-theme-toggle, unit-imperial, dash-category-basic, and calc-details-bmi all fail with '<html lang=\"en\" class=\"dark\"> intercepts pointer events'. Likely the .grain overlay div (App.js wrapper) or a pseudo-element has pointer-events:auto over the whole viewport.",
+      "evidence": "Playwright retries for 8s and reports html intercepts pointer events for every interactive element outside the input panel.",
+      "priority": "HIGH"
+    },
+    {
+      "area": "Search filter",
+      "issue": "Typing 'BMI' in dash-search leaves all 30 cards visible. Filter is not applied.",
+      "evidence": "After fill('dash-search','BMI') and 500ms wait, calc-card-* count is still 30.",
+      "priority": "HIGH"
+    },
+    {
+      "area": "localStorage persistence",
+      "issue": "After reload, age=30 persists but height input is empty. Other fields likely also not persisted (only partial).",
+      "evidence": "After page.goto('/'), input-age value='30' but input-height value=''.",
+      "priority": "MEDIUM"
+    },
+    {
+      "area": "Category chip clickability",
+      "issue": "dash-category-basic renders as a <div> (not button) and is blocked by the html-level overlay, so category filtering cannot be exercised.",
+      "evidence": "Click on data-testid=dash-category-basic times out due to html intercept.",
+      "priority": "HIGH"
+    },
+    {
+      "area": "SEO / calculator detail page",
+      "issue": "Cannot verify /calculator/bmi route, JSON-LD, or SEO content because calc-details-bmi link is blocked by same pointer-events overlay.",
+      "evidence": "Click on calc-details-bmi times out (html intercepts).",
+      "priority": "HIGH"
+    }
+  ],
+  "action_items": [
+    "Fix the top-level overlay swallowing pointer events. Check the .grain class in App.css (likely has ::before/::after with pointer-events:auto covering full viewport, or the .App div has pointer-events set incorrectly). Set pointer-events:none on the decorative grain layer.",
+    "Debug why measurements do not unlock calculators. Verify MeasurementContext state updates on input change, and that ResultCard renders when values are valid. Counter reads 0/30 despite all inputs populated — likely a controlled-input/onChange or validation gate not firing.",
+    "Fix search filter in Dashboard.jsx — currently does not filter calc-card list on dash-search input.",
+    "Ensure MeasurementContext writes ALL fields (height, weight, waist, hip, neck, wrist, activity, goalWeight, sex) to localStorage — currently only age (or partial) persists.",
+    "Once overlay is fixed, re-test: theme toggle, unit metric/imperial toggle, category chips, details links, JSON-LD on /calculator/bmi, copy button toast, print button, responsive layouts."
+  ],
+  "success_rate": {"backend": "N/A (skipped)", "frontend": "~30%"},
+  "retest_needed": true,
+  "full_testing_deferred": true
+}
