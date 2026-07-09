@@ -1,0 +1,51 @@
+{
+  "summary": "Fitme Pro iteration #3 frontend tested end-to-end. All 14 requested scenarios PASSED. Regression baseline holds (30/30 unlocked, BMI=23.5, WHR=0.47). New features all work: metric↔imperial value conversion, input validation with aria-invalid/aria-describedby, Actions dropdown menu with all 5 items, JSON+CSV+PNG downloads with correct filename patterns and payload shape, Snapshot save/restore/delete + Compare page with 30 rows and dropdown selectors including 'Current (live)', per-calculator SEO pages with JSON-LD, all header aria-labels, Reset preserves snapshots, localStorage persistence across reload, and NO horizontal scroll on any viewport.",
+  "tested_scope": ["frontend"],
+  "passed": [
+    "Dashboard loads at /, 30 cards render, counter '30 / 30 unlocked' after full input; calc-value-bmi=23.5kg/m², calc-value-waist-height-ratio=0.47",
+    "Metric→Imperial converts values: height 175→68.9 in, weight 72→158.7 lb; BMI stays 23.5 in both units",
+    "Imperial→Metric converts back: height 68.9→175, weight 158.7→72 (BMI 23.5 preserved)",
+    "Validation: height=500 shows [data-testid=input-height-error] with text 'Max 250 cm'; input has aria-invalid=true, aria-describedby='height-error'",
+    "Valid value clears error (count returns to 0); same behavior for weight=999 and age=200",
+    "Unit toggle buttons expose aria-pressed reflecting active state (metric=true, imperial=false initially)",
+    "Actions dropdown (nav-actions-trigger) contains action-share-png, action-download-json, action-download-csv, action-snapshots, action-compare-link — all 5 present",
+    "Download JSON: file 'fitmepro-results-20260709.json' matches pattern; payload has keys [generatedAt, unit, inputs, results], unit='metric', 30 results, each with id/name/category/value/unit/status/formula",
+    "Download CSV: file 'fitmepro-results-20260709.csv'; header row = 'Category,Calculator,Result,Unit,Status,Formula'; 30+1 rows",
+    "Share PNG: file 'fitmepro-share-20260709.png' downloaded successfully",
+    "Snapshots dialog opens via Actions→Snapshots; entering name in snapshot-name-input + snapshot-save-btn adds item; Delete removes it; Restore closes dialog and restores measurement values (height reverted 180→175)",
+    "Compare page (/compare): 30 compare-row-{id} rows render; compare-select-a and -b both present; options include 'Current (live)' + saved snapshot(s); changing selections updates A/B/Δ cells",
+    "Per-calc SEO: /calculator/bmi title='BMI Calculator — Body Mass Index · Fitme Pro', script#fitme-jsonld present; /calculator/tdee title updates + jsonld present",
+    "Header aria-labels: nav-theme-toggle='Toggle theme', nav-reset-btn='Reset all inputs', nav-print-btn='Print or save as PDF', nav-logo='Fitme Pro home' — all exact",
+    "Reset (nav-reset-btn) clears all measurement inputs; localStorage key fitmepro:snapshots:v1 still contains saved TEST_BASE snapshot after reset",
+    "localStorage persistence: fitmepro:measurements:v1 + fitmepro:snapshots:v1 + fitmepro:theme all persist across reload",
+    "No horizontal scroll at 1280×720, 768×1024, 375×667 across /, /calculator/bmi, /compare (docW==winW on all combos)"
+  ],
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [
+      {"component": "Unit conversion rounding on round-trip", "issue": "After Metric→Imperial→Metric, some length fields drift by 0.1 due to two-step rounding (e.g. neck 38→15→38.1). Cosmetic; results unaffected.", "selector": "MeasurementContext.setUnit round1() applied twice", "priority": "LOW"},
+      {"component": "Validation vs computation", "issue": "When an input is out-of-range (e.g. height=500 cm shows 'Max 250 cm' error), calculators still compute with that value (BMI shown as 2.9). Consider treating out-of-range as 'not ready' so cards revert to 'Enter missing measurements' rather than showing misleading numbers.", "selector": "useAllResults / MeasurementPanel", "priority": "LOW"},
+      {"component": "Radix DropdownMenu + Dialog interaction", "issue": "When opening Snapshots dialog via Actions→Snapshots and dismissing the dialog with Escape, the parent DropdownMenu occasionally stays with data-state='open' and its overlay can intercept pointer events on subsequent rapid clicks. Reproducible when tests hit Actions→Snapshots→Escape→Actions immediately. A page click elsewhere resets it. Non-blocking but affects automation & fast users.", "selector": "Header.jsx DropdownMenu + SnapshotDialog", "priority": "LOW"}
+    ],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [],
+  "action_items": [
+    "(Optional/LOW) Round conversion only once (not both ways) or store canonical metric value internally to avoid 38→15→38.1 drift on unit toggles",
+    "(Optional/LOW) In useAllResults, mark a calculator as not-ready if any required input has a validation error, so out-of-range values don't yield misleading computed cards",
+    "(Optional/LOW) Investigate Radix DropdownMenu closing behaviour after a nested Dialog dismissal (perhaps controlled `open` state on the DropdownMenu, or wrap SnapshotDialog outside of the menu with a portal trigger)"
+  ],
+  "critical_code_review_comments": [
+    "MeasurementContext.setUnit: converts and rounds to 1 decimal every toggle → cumulative drift. Recommend keeping raw metric internally.",
+    "exports.js downloadShareCard uses canvas.toBlob without awaiting a Promise wrapper — Playwright download works, but if the caller ever needs to know completion (toast on success) it currently fires 'success' immediately even before the blob is ready.",
+    "Compare.jsx defaults bId=options[1] which is fine, but when snapshots reload asynchronously (localStorage read on mount) the default may need to update; verified visually — works correctly."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A (skipped)", "frontend": "100% of requested scenarios pass; 3 LOW cosmetic/UX polish items"},
+  "test_credentials": "N/A",
+  "seed_data_creation": "Created localStorage snapshot 'TEST_BASE' during tests; cleared each run.",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "All iteration-3 acceptance criteria pass. Downloads (JSON/CSV/PNG) verified with Playwright expect_download. Snapshot save/delete/restore works, Compare page correctly renders 30 rows with A/B/Δ. Only remaining polish items are: (a) rounding drift on unit round-trips, (b) invalid inputs still compute cards, (c) very minor Radix menu+dialog focus edge case. None blocking."
+}

@@ -1,7 +1,8 @@
 import React, { useMemo, useState, useEffect } from "react";
 import MeasurementPanel from "@/components/MeasurementPanel";
 import ResultCard from "@/components/ResultCard";
-import { CALCULATORS, CALCULATORS_BY_CATEGORY, hasRequiredInputs } from "@/lib/calculators";
+import { CALCULATORS, CALCULATORS_BY_CATEGORY } from "@/lib/calculators";
+import { useAllResults } from "@/hooks/useAllResults";
 import { useMeasurements } from "@/context/MeasurementContext";
 import { DASH } from "@/constants/testIds";
 import { MagnifyingGlass, Lightning } from "@phosphor-icons/react";
@@ -15,15 +16,8 @@ export default function Dashboard() {
     document.title = "Fitme Pro — 30 Health & Body Composition Calculators";
   }, []);
 
-  // Precompute all results (synchronous, memoized on state)
-  const results = useMemo(() => {
-    const map = {};
-    for (const c of CALCULATORS) {
-      const ready = hasRequiredInputs(c, state);
-      map[c.id] = { ready, result: ready ? safeCompute(c, state) : null };
-    }
-    return map;
-  }, [state]);
+  // Precompute all results via shared hook (used across Dashboard, Compare)
+  const results = useAllResults(state);
 
   const filteredCategories = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -129,9 +123,4 @@ export default function Dashboard() {
       </main>
     </div>
   );
-}
-
-function safeCompute(calc, state) {
-  try { return calc.compute(state); }
-  catch { return { value: "—", tone: "neutral" }; }
 }

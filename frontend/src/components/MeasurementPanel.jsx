@@ -1,6 +1,7 @@
 import React from "react";
 import { useMeasurements } from "@/context/MeasurementContext";
 import { ACTIVITY_LEVELS } from "@/lib/units";
+import { getBounds, validateField } from "@/lib/validation";
 import { Label } from "@/components/ui/label";
 import { PANEL } from "@/constants/testIds";
 import {
@@ -11,7 +12,10 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-function TacticalInput({ id, label, unit, testid, ...rest }) {
+function TacticalInput({ id, label, unit, testid, field, unitSystem, value, onChange, ...rest }) {
+  const b = getBounds(field, unitSystem);
+  const error = validateField(field, value, unitSystem);
+  const errorId = `${id}-error`;
   return (
     <div className="space-y-1.5">
       <Label htmlFor={id} className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">
@@ -22,9 +26,21 @@ function TacticalInput({ id, label, unit, testid, ...rest }) {
         data-testid={testid}
         type="number"
         inputMode="decimal"
-        className="w-full bg-transparent border-b-2 border-border focus:border-[var(--brand-lime)] focus:outline-none py-2 text-lg font-mono-data transition-colors placeholder:text-muted-foreground/40"
+        min={b?.min}
+        max={b?.max}
+        step={b?.step}
+        value={value}
+        onChange={onChange}
+        aria-invalid={!!error}
+        aria-describedby={error ? errorId : undefined}
+        className={`w-full bg-transparent border-b-2 py-2 text-lg font-mono-data transition-colors placeholder:text-muted-foreground/40 focus:outline-none ${error ? "border-red-500 focus:border-red-500" : "border-border focus:border-[var(--brand-lime)]"}`}
         {...rest}
       />
+      {error ? (
+        <div id={errorId} data-testid={`${testid}-error`} className="text-[10px] text-red-500 font-mono-data">
+          {error}
+        </div>
+      ) : null}
     </div>
   );
 }
@@ -32,10 +48,12 @@ function TacticalInput({ id, label, unit, testid, ...rest }) {
 export default function MeasurementPanel({ compact = false }) {
   const { state, update, setUnit } = useMeasurements();
   const metric = state.unit === "metric";
+  const set = (field) => (e) => update({ [field]: e.target.value });
 
   return (
     <aside
       data-testid={PANEL.root}
+      aria-label="Your measurements"
       className={`${compact ? "" : "lg:w-96 lg:sticky lg:top-[73px] lg:self-start lg:h-[calc(100vh-73px)] lg:overflow-y-auto"} border-b lg:border-b-0 lg:border-r border-border bg-card/40 p-6 sm:p-8`}
     >
       <div className="space-y-6">
@@ -49,6 +67,7 @@ export default function MeasurementPanel({ compact = false }) {
           <button
             data-testid={PANEL.unitMetric}
             onClick={() => setUnit("metric")}
+            aria-pressed={metric}
             className={`flex-1 py-2 ${metric ? "bg-[var(--brand-lime)] text-black" : "hover:bg-muted"}`}
           >
             Metric
@@ -56,6 +75,7 @@ export default function MeasurementPanel({ compact = false }) {
           <button
             data-testid={PANEL.unitImperial}
             onClick={() => setUnit("imperial")}
+            aria-pressed={!metric}
             className={`flex-1 py-2 ${!metric ? "bg-[var(--brand-lime)] text-black" : "hover:bg-muted"}`}
           >
             Imperial
@@ -64,24 +84,19 @@ export default function MeasurementPanel({ compact = false }) {
 
         {/* GENERAL */}
         <div className="space-y-4">
-          <div className="text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)]">
-            ── General
-          </div>
+          <div className="text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)]">── General</div>
           <div className="grid grid-cols-2 gap-4">
             <TacticalInput
-              id="age"
-              testid={PANEL.age}
-              label="Age"
-              unit="yrs"
-              placeholder="30"
-              value={state.age}
-              onChange={(e) => update({ age: e.target.value })}
+              id="age" testid={PANEL.age} label="Age" unit="yrs" placeholder="30"
+              field="age" unitSystem={state.unit}
+              value={state.age} onChange={set("age")}
             />
             <div className="space-y-1.5">
               <Label className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">Sex</Label>
               <Select value={state.sex} onValueChange={(v) => update({ sex: v })}>
                 <SelectTrigger
                   data-testid={PANEL.sex}
+                  aria-label="Sex"
                   className="rounded-none border-0 border-b-2 border-border bg-transparent focus:border-[var(--brand-lime)] focus:ring-0 h-[42px] px-0 font-mono-data text-lg"
                 >
                   <SelectValue />
@@ -94,82 +109,37 @@ export default function MeasurementPanel({ compact = false }) {
             </div>
           </div>
           <TacticalInput
-            id="height"
-            testid={PANEL.height}
-            label="Height"
-            unit={metric ? "cm" : "in"}
-            placeholder={metric ? "175" : "69"}
-            value={state.height}
-            onChange={(e) => update({ height: e.target.value })}
+            id="height" testid={PANEL.height} label="Height" unit={metric ? "cm" : "in"}
+            placeholder={metric ? "175" : "69"} field="height" unitSystem={state.unit}
+            value={state.height} onChange={set("height")}
           />
           <TacticalInput
-            id="weight"
-            testid={PANEL.weight}
-            label="Weight"
-            unit={metric ? "kg" : "lb"}
-            placeholder={metric ? "72" : "160"}
-            value={state.weight}
-            onChange={(e) => update({ weight: e.target.value })}
+            id="weight" testid={PANEL.weight} label="Weight" unit={metric ? "kg" : "lb"}
+            placeholder={metric ? "72" : "160"} field="weight" unitSystem={state.unit}
+            value={state.weight} onChange={set("weight")}
           />
         </div>
 
         {/* CIRCUMFERENCES */}
         <div className="space-y-4">
-          <div className="text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)]">
-            ── Circumferences
-          </div>
+          <div className="text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)]">── Circumferences</div>
           <div className="grid grid-cols-2 gap-4">
-            <TacticalInput
-              id="waist"
-              testid={PANEL.waist}
-              label="Waist"
-              unit={metric ? "cm" : "in"}
-              placeholder={metric ? "82" : "32"}
-              value={state.waist}
-              onChange={(e) => update({ waist: e.target.value })}
-            />
-            <TacticalInput
-              id="hip"
-              testid={PANEL.hip}
-              label="Hip"
-              unit={metric ? "cm" : "in"}
-              placeholder={metric ? "96" : "38"}
-              value={state.hip}
-              onChange={(e) => update({ hip: e.target.value })}
-            />
-            <TacticalInput
-              id="neck"
-              testid={PANEL.neck}
-              label="Neck"
-              unit={metric ? "cm" : "in"}
-              placeholder={metric ? "38" : "15"}
-              value={state.neck}
-              onChange={(e) => update({ neck: e.target.value })}
-            />
-            <TacticalInput
-              id="wrist"
-              testid={PANEL.wrist}
-              label="Wrist"
-              unit={metric ? "cm" : "in"}
-              placeholder={metric ? "17" : "6.7"}
-              value={state.wrist}
-              onChange={(e) => update({ wrist: e.target.value })}
-            />
+            <TacticalInput id="waist" testid={PANEL.waist} label="Waist" unit={metric ? "cm" : "in"} placeholder={metric ? "82" : "32"} field="waist" unitSystem={state.unit} value={state.waist} onChange={set("waist")} />
+            <TacticalInput id="hip" testid={PANEL.hip} label="Hip" unit={metric ? "cm" : "in"} placeholder={metric ? "96" : "38"} field="hip" unitSystem={state.unit} value={state.hip} onChange={set("hip")} />
+            <TacticalInput id="neck" testid={PANEL.neck} label="Neck" unit={metric ? "cm" : "in"} placeholder={metric ? "38" : "15"} field="neck" unitSystem={state.unit} value={state.neck} onChange={set("neck")} />
+            <TacticalInput id="wrist" testid={PANEL.wrist} label="Wrist" unit={metric ? "cm" : "in"} placeholder={metric ? "17" : "6.7"} field="wrist" unitSystem={state.unit} value={state.wrist} onChange={set("wrist")} />
           </div>
         </div>
 
-        {/* ACTIVITY */}
+        {/* LIFESTYLE */}
         <div className="space-y-4">
-          <div className="text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)]">
-            ── Lifestyle & Goals
-          </div>
+          <div className="text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)]">── Lifestyle & Goals</div>
           <div className="space-y-1.5">
-            <Label className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">
-              Activity Level
-            </Label>
+            <Label className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">Activity Level</Label>
             <Select value={state.activity} onValueChange={(v) => update({ activity: v })}>
               <SelectTrigger
                 data-testid={PANEL.activity}
+                aria-label="Activity level"
                 className="rounded-none border-0 border-b-2 border-border bg-transparent focus:border-[var(--brand-lime)] focus:ring-0 h-[42px] px-0 font-mono-data"
               >
                 <SelectValue />
@@ -181,15 +151,7 @@ export default function MeasurementPanel({ compact = false }) {
               </SelectContent>
             </Select>
           </div>
-          <TacticalInput
-            id="goal"
-            testid={PANEL.goalWeight}
-            label="Goal Weight (optional)"
-            unit={metric ? "kg" : "lb"}
-            placeholder={metric ? "68" : "150"}
-            value={state.goalWeight}
-            onChange={(e) => update({ goalWeight: e.target.value })}
-          />
+          <TacticalInput id="goal" testid={PANEL.goalWeight} label="Goal Weight (optional)" unit={metric ? "kg" : "lb"} placeholder={metric ? "68" : "150"} field="goalWeight" unitSystem={state.unit} value={state.goalWeight} onChange={set("goalWeight")} />
         </div>
 
         <div className="text-xs text-muted-foreground leading-relaxed border-t border-border pt-4">

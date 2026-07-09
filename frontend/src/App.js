@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Dashboard from "@/pages/Dashboard";
 import CalculatorPage from "@/pages/CalculatorPage";
+import Compare from "@/pages/Compare";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/calculator/:slug" element={<CalculatorPage />} />
+              <Route path="/compare" element={<Compare />} />
             </Routes>
             <Footer />
             <Toaster position="top-right" richColors closeButton theme="dark" />
