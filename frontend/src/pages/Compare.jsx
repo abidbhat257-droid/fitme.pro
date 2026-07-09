@@ -159,6 +159,7 @@ export default function Compare() {
                   width={280}
                   height={56}
                   unit={m.unitStr}
+                  gradientId={`grad-${m.id}`}
                 />
               </div>
             ))}

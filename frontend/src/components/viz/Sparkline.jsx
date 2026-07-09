@@ -8,7 +8,8 @@ import React from "react";
  *  - width, height
  *  - showDots: boolean
  */
-export default function Sparkline({ points = [], color = "#CCFF00", width = 160, height = 44, showDots = true, unit = "" }) {
+export default function Sparkline({ points = [], color = "#CCFF00", width = 160, height = 44, showDots = true, unit = "", gradientId }) {
+  const gradId = gradientId || `grad-${color.replace("#", "")}-${Math.random().toString(36).slice(2, 8)}`;
   const sorted = points
     .filter((p) => Number.isFinite(p.value))
     .slice()
@@ -58,12 +59,12 @@ export default function Sparkline({ points = [], color = "#CCFF00", width = 160,
     <div className="flex flex-col gap-1">
       <svg width={width} height={height} className="block">
         <defs>
-          <linearGradient id={`grad-${color.replace("#", "")}`} x1="0" x2="0" y1="0" y2="1">
+          <linearGradient id={gradId} x1="0" x2="0" y1="0" y2="1">
             <stop offset="0" stopColor={color} stopOpacity="0.4" />
             <stop offset="1" stopColor={color} stopOpacity="0" />
           </linearGradient>
         </defs>
-        <path d={fillD} fill={`url(#grad-${color.replace("#", "")})`} />
+        <path d={fillD} fill={`url(#${gradId})`} />
         <path d={pathD} fill="none" stroke={color} strokeWidth="1.5" strokeLinejoin="round" strokeLinecap="round" />
         {showDots && sorted.map((p, i) => (
           <circle
