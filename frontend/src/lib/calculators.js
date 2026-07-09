@@ -1,4 +1,5 @@
 import { toMetric, getActivityFactor, formatWeight, formatLength, formatNumber } from "./units";
+import { validateField } from "./validation";
 
 // Categories
 export const CATEGORIES = {
@@ -748,12 +749,33 @@ export function getCalculator(slug) {
 }
 
 // Check whether inputs required by a calculator are all present as finite numbers
+// AND that no raw input violates its range validation.
+const RAW_FIELD_MAP = {
+  heightCm: "height",
+  weightKg: "weight",
+  waistCm: "waist",
+  hipCm: "hip",
+  neckCm: "neck",
+  wristCm: "wrist",
+  goalWeightKg: "goalWeight",
+};
+
 export function hasRequiredInputs(calc, state) {
   const m = toMetric(state);
   return calc.requires.every((k) => {
     if (k === "sex") return m.sex === "male" || m.sex === "female";
     if (k === "activity") return !!m.activity;
+    if (k === "age") {
+      const err = validateField("age", state.age, state.unit);
+      return Number.isFinite(m.age) && m.age > 0 && !err;
+    }
     const v = m[k];
-    return Number.isFinite(v) && v > 0;
+    if (!(Number.isFinite(v) && v > 0)) return false;
+    const rawField = RAW_FIELD_MAP[k];
+    if (rawField) {
+      const err = validateField(rawField, state[rawField], state.unit);
+      if (err) return false;
+    }
+    return true;
   });
 }

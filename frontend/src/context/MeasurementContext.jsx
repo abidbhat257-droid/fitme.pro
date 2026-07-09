@@ -27,7 +27,7 @@ function safeParseJSON(raw, fallback) {
   try { return raw ? JSON.parse(raw) : fallback; } catch { return fallback; }
 }
 
-function round1(v) { return Math.round(v * 10) / 10; }
+function round2(v) { return Math.round(v * 100) / 100; }
 
 export function MeasurementProvider({ children }) {
   const [state, setState] = useState(() => {
@@ -63,11 +63,11 @@ export function MeasurementProvider({ children }) {
       const cvtWt = unit === "imperial" ? kgToLb : lbToKg;
       for (const f of LENGTH_FIELDS) {
         const n = parseFloat(prev[f]);
-        if (Number.isFinite(n) && n > 0) next[f] = String(round1(cvtLen(n)));
+        if (Number.isFinite(n) && n > 0) next[f] = String(round2(cvtLen(n)));
       }
       for (const f of WEIGHT_FIELDS) {
         const n = parseFloat(prev[f]);
-        if (Number.isFinite(n) && n > 0) next[f] = String(round1(cvtWt(n)));
+        if (Number.isFinite(n) && n > 0) next[f] = String(round2(cvtWt(n)));
       }
       return next;
     });
