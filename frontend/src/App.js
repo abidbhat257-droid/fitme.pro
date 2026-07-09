@@ -10,7 +10,7 @@ import CalculatorPage from "@/pages/CalculatorPage";
 
 function App() {
   return (
-    <div className="App grain">
+    <div className="App">
       <ThemeProvider>
         <MeasurementProvider>
           <BrowserRouter>

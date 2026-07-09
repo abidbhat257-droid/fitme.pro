@@ -1,0 +1,53 @@
+{
+  "summary": "FitMe Pro frontend re-tested after grain overlay fix. All previously reported HIGH blockers are RESOLVED. Core flows work end-to-end: 30 cards render, counter 0→30, BMI=23.5 and WHR=0.47 on the specified inputs, search 'bmi'→2 cards, Basic filter chip→6 cards, dark/light theme toggle with reload persistence, Reset clears all inputs and returns counter to 0/30, localStorage persists ALL measurement fields (including sex + activity), Details link navigates to /calculator/bmi, JSON-LD script#fitme-jsonld contains WebApplication + FAQPage, FAQ accordions present (3 items), Copy button works with sonner 'Copied' toast, Print button triggers window.print without error, 5 sample slug pages (tdee, waist-hip-ratio, navy-body-fat, obesity-class, ffmi) all render, and responsive layout has NO horizontal scroll at 1280×720 / 768×1024 / 375×667.",
+  "tested_scope": ["frontend"],
+  "passed": [
+    "Dashboard loads with 30 calculator cards + measurement panel + hero + 5 category sections",
+    "Counter reads '0 / 30 unlocked' initially and '30 / 30 unlocked' after all required inputs are filled",
+    "calc-value-bmi = '23.5kg/m²' and calc-value-waist-height-ratio = '0.47' with age=30/sex=Male/height=175/weight=72/waist=82/hip=96/neck=38/wrist=17/activity=Moderate/goalWeight=68",
+    "Search 'bmi' filters to exactly 2 cards (calc-card-bmi, calc-card-bmi-prime)",
+    "Basic category chip (clicked by text) filters to 6 Basic cards",
+    "Theme toggle switches dark↔light; localStorage key 'fitmepro:theme'='light'; theme persists across reload",
+    "Reset button clears all inputs; counter returns to 0/30",
+    "localStorage persists age, height, weight, waist, hip, neck, wrist, goalWeight, sex ('Male'), activity ('Moderate (3–5 days/week)') after reload",
+    "Details link (calc-details-bmi) navigates to /calculator/bmi with document.title = 'BMI Calculator — Body Mass Index · Fitme Pro'",
+    "<script id=fitme-jsonld> present containing both 'WebApplication' and 'FAQPage' schemas",
+    "seo-page-bmi root, seo-faq-0..2 accordions present (3 FAQs)",
+    "Copy button on SEO page copies text and shows sonner toast 'Copied'",
+    "Print button (nav-print-btn) invokes window.print() without throwing",
+    "Slug pages render for tdee, waist-hip-ratio, navy-body-fat, obesity-class, ffmi (each with unique document.title)",
+    "No horizontal scroll at 1280×720, 768×1024, 375×667 (docW == winW at all viewports)",
+    "Cards single-column at 375×667"
+  ],
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [
+      {"component": "Header unit toggle buttons", "issue": "The header Metric/Imperial <button>s inside [data-testid=nav-unit-toggle] do NOT have the per-button data-testid=\"unit-metric\" / \"unit-imperial\" that the spec requires. Only the MeasurementPanel toggle has them. Feature works functionally (state.unit updates + lime highlight moves), but automated selectors like [data-testid=nav-unit-toggle] [data-testid=unit-imperial] fail.", "selector": "/app/frontend/src/components/Header.jsx lines 40-51", "priority": "LOW"},
+      {"component": "Category filter chips", "issue": "The category filter chips ('All', 'Basic', 'Body Composition', …) render as bare <button> elements without data-testid. The existing data-testid=\"dash-category-basic\" is applied to the SECTION wrapper <div> of the Basic cards group, not to the chip. Spec's example 'Clicking Basic shows only Basic category cards' works only if the tester clicks by text; automated clicks on [data-testid=dash-category-basic] target the section header instead.", "selector": "/app/frontend/src/pages/Dashboard.jsx line 87-95", "priority": "LOW"},
+      {"component": "MeasurementPanel unit labels on SEO page", "issue": "Placeholder chips render as 'HEIGHTCM' / 'WEIGHTKG' (no space between field name and unit) — cosmetic.", "selector": "CalculatorPage 'Enter these measurements to see your result' placeholders", "priority": "LOW"},
+      {"component": "Unit toggle value conversion", "issue": "Switching Metric→Imperial in header does not convert the numeric input values (height stays '175', weight stays '72'). Only the unit label after each field label appears to change. If this is intentional (units are stored per-mode independently) it can be ignored, but the value 175 displayed under an 'in' label would be misleading.", "selector": "MeasurementPanel + Header unit toggle", "priority": "LOW"}
+    ],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [],
+  "action_items": [
+    "Add data-testid=\"unit-metric\" and data-testid=\"unit-imperial\" to the two <button>s inside the header [data-testid=nav-unit-toggle] container (Header.jsx). This matches the review spec.",
+    "Add data-testid to each filter chip in Dashboard.jsx (e.g., data-testid=`dash-chip-${c.key}` or move DASH.category(c.key) to the chip). Currently dash-category-basic is used on the section wrapper.",
+    "Consider converting numeric field values when switching between metric/imperial, or clarify that stored values are unit-specific.",
+    "Fix minor label formatting 'HEIGHTCM' → 'HEIGHT / CM' (or add a space) on the CalculatorPage placeholder chips."
+  ],
+  "critical_code_review_comments": [
+    "Dashboard.jsx line 103: data-testid={DASH.category(cat.key)} is used on the section wrapper div AND the review spec expects it on the filter chip — pick one and be consistent to avoid ambiguous selectors.",
+    "Header.jsx unit toggle buttons should either use NAV.unitMetric/Imperial or expose per-button testids to allow automation.",
+    "CalculatorPage onCopy silently swallows clipboard errors via toast.error; consider logging for production diagnostics."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A (skipped)", "frontend": "~95% (all functional requirements met; 4 minor issues, none blocking)"},
+  "test_credentials": "N/A (no auth)",
+  "seed_data_creation": "None (localStorage only)",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "Grain overlay pointer-events bug is fully resolved. All previous HIGH blockers (unlock logic, overlay, search, persistence, category filter, SEO detail navigation) now pass. Remaining issues are all cosmetic/minor test-selector alignment gaps: (a) header unit-metric/unit-imperial testids missing; (b) filter chips missing testids so dash-category-<k> currently refers to section wrapper. When re-testing, click chip by text (Basic/All etc.) or add missing testids first.",
+  "rca of the issue": "N/A — no functional bugs remain. The 4 minor issues are testability + cosmetic gaps as noted above."
+}
