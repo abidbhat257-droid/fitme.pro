@@ -4,6 +4,7 @@ import { toast } from "sonner";
 import { ArrowLeft, ShareNetwork, Printer, Copy, ArrowRight } from "@phosphor-icons/react";
 import MeasurementPanel from "@/components/MeasurementPanel";
 import Visualization from "@/components/viz/Visualization";
+import VizInfo from "@/components/viz/VizInfo";
 import { getCalculator, CATEGORIES, CALCULATORS, hasRequiredInputs } from "@/lib/calculators";
 import { getContent } from "@/lib/content";
 import { useMeasurements } from "@/context/MeasurementContext";
@@ -170,7 +171,10 @@ export default function CalculatorPage() {
             {/* Visualization */}
             {ready && result && (
               <div data-testid={`seo-viz-${slug}`}>
-                <div className="text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)] mb-3">Visualization</div>
+                <div className="flex items-center justify-between mb-3">
+                  <div className="text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)]">Visualization</div>
+                  <VizInfo slug={slug} />
+                </div>
                 <div className="bg-card border border-border p-5 sm:p-6" style={{ borderTop: `3px solid ${cat.color}` }}>
                   <Visualization calc={calc} state={state} result={result} />
                 </div>

@@ -1,8 +1,6 @@
 import React, { createContext, useContext, useEffect, useState, useCallback } from "react";
 import { cmToIn, inToCm, kgToLb, lbToKg } from "@/lib/units";
-
-const STORAGE_KEY = "fitmepro:measurements:v1";
-const SNAP_KEY = "fitmepro:snapshots:v1";
+import { getStorage } from "@/lib/storage";
 
 const DEFAULTS = {
   unit: "metric",
@@ -23,38 +21,38 @@ const WEIGHT_FIELDS = ["weight", "goalWeight"];
 
 const MeasurementContext = createContext(null);
 
-function safeParseJSON(raw, fallback) {
-  try { return raw ? JSON.parse(raw) : fallback; } catch { return fallback; }
-}
-
 function round2(v) { return Math.round(v * 100) / 100; }
 
+// Synchronous hydration from LocalStorageAdapter's underlying store. Kept sync
+// to prevent a first-paint flicker; async adapters (cloud) can hydrate via effect.
+function hydrateMeasurements() {
+  if (typeof window === "undefined") return DEFAULTS;
+  try {
+    const raw = window.localStorage.getItem("fitmepro:measurements:v1");
+    return raw ? { ...DEFAULTS, ...JSON.parse(raw) } : DEFAULTS;
+  } catch { return DEFAULTS; }
+}
+function hydrateSnapshots() {
+  if (typeof window === "undefined") return [];
+  try {
+    const raw = window.localStorage.getItem("fitmepro:snapshots:v1");
+    return raw ? JSON.parse(raw) : [];
+  } catch { return []; }
+}
+
 export function MeasurementProvider({ children }) {
-  const [state, setState] = useState(() => {
-    if (typeof window === "undefined") return DEFAULTS;
-    return { ...DEFAULTS, ...safeParseJSON(window.localStorage.getItem(STORAGE_KEY), {}) };
-  });
+  const storage = getStorage();
 
-  const [snapshots, setSnapshots] = useState(() => {
-    if (typeof window === "undefined") return [];
-    return safeParseJSON(window.localStorage.getItem(SNAP_KEY), []);
-  });
+  const [state, setState] = useState(hydrateMeasurements);
+  const [snapshots, setSnapshots] = useState(hydrateSnapshots);
 
-  useEffect(() => {
-    try { window.localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch (_e) { /* ignore */ }
-  }, [state]);
+  useEffect(() => { storage.setMeasurements(state); }, [state, storage]);
+  useEffect(() => { storage.saveSnapshots(snapshots); }, [snapshots, storage]);
 
-  useEffect(() => {
-    try { window.localStorage.setItem(SNAP_KEY, JSON.stringify(snapshots)); } catch (_e) { /* ignore */ }
-  }, [snapshots]);
-
-  const update = useCallback((patch) => {
-    setState((prev) => ({ ...prev, ...patch }));
-  }, []);
-
+  const update = useCallback((patch) => setState((prev) => ({ ...prev, ...patch })), []);
   const reset = useCallback(() => setState(DEFAULTS), []);
 
-  // Setting the unit converts existing numeric field values.
+  // Convert existing numeric input values when switching unit systems.
   const setUnit = useCallback((unit) => {
     setState((prev) => {
       if (prev.unit === unit) return prev;
@@ -73,15 +71,14 @@ export function MeasurementProvider({ children }) {
     });
   }, []);
 
-  // Snapshot API
   const saveSnapshot = useCallback((name) => {
     const snap = {
-      id: crypto.randomUUID ? crypto.randomUUID() : String(Date.now()),
+      id: (typeof crypto !== "undefined" && crypto.randomUUID) ? crypto.randomUUID() : String(Date.now()),
       name: name?.trim() || `Snapshot ${new Date().toLocaleDateString()}`,
       createdAt: new Date().toISOString(),
       state: { ...state },
     };
-    setSnapshots((prev) => [snap, ...prev].slice(0, 20));
+    setSnapshots((prev) => [snap, ...prev].slice(0, 100));
     return snap;
   }, [state]);
 
@@ -94,16 +91,7 @@ export function MeasurementProvider({ children }) {
     if (snap) setState({ ...DEFAULTS, ...snap.state });
   }, [snapshots]);
 
-  const value = {
-    state,
-    update,
-    reset,
-    setUnit,
-    snapshots,
-    saveSnapshot,
-    deleteSnapshot,
-    loadSnapshot,
-  };
+  const value = { state, update, reset, setUnit, snapshots, saveSnapshot, deleteSnapshot, loadSnapshot };
 
   return <MeasurementContext.Provider value={value}>{children}</MeasurementContext.Provider>;
 }
