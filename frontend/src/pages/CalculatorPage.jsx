@@ -3,7 +3,7 @@ import { useParams, Link, Navigate } from "react-router-dom";
 import { toast } from "sonner";
 import { ArrowLeft, ShareNetwork, Printer, Copy, ArrowRight } from "@phosphor-icons/react";
 import MeasurementPanel from "@/components/MeasurementPanel";
-import GaugeBar from "@/components/GaugeBar";
+import Visualization from "@/components/viz/Visualization";
 import { getCalculator, CATEGORIES, CALCULATORS, hasRequiredInputs } from "@/lib/calculators";
 import { getContent } from "@/lib/content";
 import { useMeasurements } from "@/context/MeasurementContext";
@@ -166,6 +166,16 @@ export default function CalculatorPage() {
                 {calc.formula}
               </pre>
             </div>
+
+            {/* Visualization */}
+            {ready && result && (
+              <div data-testid={`seo-viz-${slug}`}>
+                <div className="text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)] mb-3">Visualization</div>
+                <div className="bg-card border border-border p-5 sm:p-6" style={{ borderTop: `3px solid ${cat.color}` }}>
+                  <Visualization calc={calc} state={state} result={result} />
+                </div>
+              </div>
+            )}
 
             {/* Steps */}
             <div>
