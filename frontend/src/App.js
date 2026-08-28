@@ -7,6 +7,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Dashboard from "@/pages/Dashboard";
 import CalculatorPage from "@/pages/CalculatorPage";
+import About from "./pages/about";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Terms from "./pages/terms";
 import Contact from "./pages/Contact";
 import Compare from "@/pages/Compare";
 
