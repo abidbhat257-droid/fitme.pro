@@ -17,7 +17,6 @@ function App() {
   return (
     <div className="App">
       <ThemeProvider>
-<Route path="/terms" element={<Terms />} />
           <BrowserRouter>
             <Header />
             <Routes>
