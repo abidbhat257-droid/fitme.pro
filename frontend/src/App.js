@@ -18,6 +18,7 @@ function App() {
           <BrowserRouter>
             <Header />
             <Routes>
+    <Route path="/contact" element={<Contact />} />
               <Route path="/" element={<Dashboard />} />
               <Route path="/calculator/:slug" element={<CalculatorPage />} />
               <Route path="/compare" element={<Compare />} />
