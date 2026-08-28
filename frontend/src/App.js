@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Dashboard from "@/pages/Dashboard";
 import CalculatorPage from "@/pages/CalculatorPage";
+import Contact from "./pages/Contact";
 import Compare from "@/pages/Compare";
 
 function App() {
