@@ -42,7 +42,11 @@ upsertMeta("description", content.metaDescription);
 
 upsertMeta("og:title", content.title, true);
 upsertMeta("og:description", content.metaDescription, true);
-
+upsertMeta(
+  "og:url",
+  `https://fitme-pro.vercel.app/calculator/${slug}`,
+  true
+);
 const canonicalUrl = `https://fitme-pro.vercel.app/calculator/${slug}`;
 
 let canonical = document.querySelector('link[rel="canonical"]');
