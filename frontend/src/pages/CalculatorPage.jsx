@@ -36,7 +36,24 @@ export default function CalculatorPage() {
     upsertMeta("description", content.metaDescription);
     upsertMeta("og:title", content.title, true);
     upsertMeta("og:description", content.metaDescription, true);
+document.title = `${content.title} · Fitme Pro`;
 
+upsertMeta("description", content.metaDescription);
+
+upsertMeta("og:title", content.title, true);
+upsertMeta("og:description", content.metaDescription, true);
+
+const canonicalUrl = `https://fitme-pro.vercel.app/calculator/${slug}`;
+
+let canonical = document.querySelector('link[rel="canonical"]');
+
+if (!canonical) {
+  canonical = document.createElement("link");
+  canonical.setAttribute("rel", "canonical");
+  document.head.appendChild(canonical);
+}
+
+canonical.setAttribute("href", canonicalUrl);
     // JSON-LD schema: FAQPage + WebApplication
     const ld = {
       "@context": "https://schema.org",
