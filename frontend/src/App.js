@@ -10,7 +10,7 @@ import CalculatorPage from "@/pages/CalculatorPage";
 import About from "./pages/about";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Terms from "./pages/terms";
-import contact from "./pages/contact";
+import Contact from "./pages/contact";
 import Compare from "@/pages/Compare";
 
 function App() {
