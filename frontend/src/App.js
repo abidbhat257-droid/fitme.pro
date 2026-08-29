@@ -17,14 +17,15 @@ function App() {
   return (
     <div className="App">
       <ThemeProvider>
+        <MeasurementProvider>
           <BrowserRouter>
             <Header />
             <Routes>
-    <Route path="/contact" element={<Contact />} />
+              <Route path="/contact" element={<Contact />} />
               <Route path="/" element={<Dashboard />} />
-  <Route path="/about" element={<About />} />
-<Route path="/privacy-policy" element={<PrivacyPolicy />} />
-<Route path="/terms" element={<Terms />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/terms" element={<Terms />} />
               <Route path="/calculator/:slug" element={<CalculatorPage />} />
               <Route path="/compare" element={<Compare />} />
             </Routes>
@@ -36,5 +37,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
