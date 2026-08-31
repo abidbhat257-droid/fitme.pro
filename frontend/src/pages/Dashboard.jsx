@@ -9,16 +9,46 @@ import { useMeasurements } from "@/context/MeasurementContext";
 import { DASH } from "@/constants/testIds";
 import { MagnifyingGlass, Lightning } from "@phosphor-icons/react";
 
+const SITE_URL = "https://fitme-pro.vercel.app";
+
+function upsertMeta(name, content) {
+  let el = document.head.querySelector(`meta[name="${name}"]`);
+  if (!el) {
+    el = document.createElement("meta");
+    el.setAttribute("name", name);
+    document.head.appendChild(el);
+  }
+  el.setAttribute("content", content);
+}
+
+function upsertCanonical(url) {
+  let el = document.head.querySelector('link[rel="canonical"]');
+  if (!el) {
+    el = document.createElement("link");
+    el.setAttribute("rel", "canonical");
+    document.head.appendChild(el);
+  }
+  el.setAttribute("href", url);
+}
+
 export default function Dashboard() {
   const { state } = useMeasurements();
   const [query, setQuery] = useState("");
   const [activeCat, setActiveCat] = useState("all");
 
   useEffect(() => {
-    document.title = "Fitme Pro — 30 Health & Body Composition Calculators";
+    const title = "Fitme Pro — 30 Health & Body Composition Calculators";
+    const description =
+      "Free health and body composition calculators for BMI, body fat, BMR, TDEE, calorie needs, ideal weight, and more. Enter your measurements once and get instant results.";
+
+    document.title = title;
+    upsertMeta("description", description);
+    upsertMeta("og:title", title);
+    upsertMeta("og:description", description);
+    upsertMeta("og:url", SITE_URL);
+    upsertCanonical(SITE_URL + "/");
   }, []);
 
-  // Precompute all results via shared hook (used across Dashboard, Compare)
   const results = useAllResults(state);
 
   const filteredCategories = useMemo(() => {
@@ -34,15 +64,14 @@ export default function Dashboard() {
 
   const readyCount = Object.values(results).filter((r) => r.ready).length;
 
-  // Radar body profile axes (6 metrics). Uses raw values from results when available.
   const isMale = state.sex === "male";
   const radarAxes = useMemo(() => [
-    { key: "bmi",  label: "BMI",      value: results["bmi"]?.result?.raw,               min: 15,   max: 40,  ideal: 22 },
-    { key: "bf",   label: "Body Fat", value: results["navy-body-fat"]?.result?.raw ?? results["body-fat"]?.result?.raw, min: 5, max: 40, ideal: isMale ? 15 : 22 },
+    { key: "bmi", label: "BMI", value: results["bmi"]?.result?.raw, min: 15, max: 40, ideal: 22 },
+    { key: "bf", label: "Body Fat", value: results["navy-body-fat"]?.result?.raw ?? results["body-fat"]?.result?.raw, min: 5, max: 40, ideal: isMale ? 15 : 22 },
     { key: "whtr", label: "W/Height", value: results["waist-height-ratio"]?.result?.raw, min: 0.3, max: 0.7, ideal: 0.45 },
-    { key: "whr",  label: "W/Hip",    value: results["waist-hip-ratio"]?.result?.raw,    min: 0.6, max: 1.1, ideal: isMale ? 0.85 : 0.75 },
-    { key: "ffmi", label: "FFMI",     value: results["ffmi"]?.result?.raw,               min: 14,  max: 25,  ideal: isMale ? 22 : 18 },
-    { key: "bri",  label: "BRI",      value: results["bri"]?.result?.raw,                min: 2,   max: 8,   ideal: 3.4 },
+    { key: "whr", label: "W/Hip", value: results["waist-hip-ratio"]?.result?.raw, min: 0.6, max: 1.1, ideal: isMale ? 0.85 : 0.75 },
+    { key: "ffmi", label: "FFMI", value: results["ffmi"]?.result?.raw, min: 14, max: 25, ideal: isMale ? 22 : 18 },
+    { key: "bri", label: "BRI", value: results["bri"]?.result?.raw, min: 2, max: 8, ideal: 3.4 },
   ], [results, isMale]);
 
   const radarReady = radarAxes.filter((a) => Number.isFinite(a.value)).length >= 4;
@@ -52,7 +81,6 @@ export default function Dashboard() {
       <MeasurementPanel />
 
       <main className="flex-1 min-w-0">
-        {/* HERO */}
         <section className="relative border-b border-border overflow-hidden">
           <div className="absolute inset-0 opacity-[0.08] pointer-events-none" style={{
             backgroundImage: "radial-gradient(circle at 20% 30%, #CCFF00 0%, transparent 40%), radial-gradient(circle at 80% 70%, #3B82F6 0%, transparent 40%)",
@@ -77,7 +105,6 @@ export default function Dashboard() {
               </div>
             </div>
 
-            {/* Body Profile Radar */}
             <div className="lg:col-span-5" data-testid="dash-radar-profile">
               {radarReady ? (
                 <div className="border border-border bg-card/60 p-5 sm:p-6 backdrop-blur-sm">
@@ -103,10 +130,8 @@ export default function Dashboard() {
           </div>
         </section>
 
-        {/* GOALS */}
         <GoalsWidget />
 
-        {/* CONTROLS */}
         <section className="sticky top-[73px] lg:top-[73px] z-30 bg-background/90 backdrop-blur-xl border-b border-border no-print">
           <div className="px-6 sm:px-10 py-4 flex flex-col sm:flex-row gap-4 sm:items-center justify-between">
             <div className="relative w-full sm:max-w-sm">
@@ -136,7 +161,6 @@ export default function Dashboard() {
           </div>
         </section>
 
-        {/* CARDS */}
         <section className="px-6 sm:px-10 py-10 space-y-14 print-grid" data-testid={DASH.cardsGrid}>
           {filteredCategories.map((cat) => (
             <div key={cat.key} data-testid={DASH.category(cat.key)}>
