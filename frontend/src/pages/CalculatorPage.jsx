@@ -567,4 +567,4 @@ function removeJsonLd() {
     existing.remove();
   }
 }
-```
+
