@@ -149,7 +149,7 @@ export default function ResultCard({ calc, result, ready, index = 0 }) {
           {calc.formula.length > 34 ? calc.formula.slice(0, 34) + "…" : calc.formula}
         </div>
         <Link
-          to={`/calculator/${calc.slug}`}
+          to={`/${calc.slug}-calculator`}
           data-testid={CARD.detailsLink(calc.id)}
           className="text-xs font-bold uppercase tracking-[0.15em] flex items-center gap-1 hover:text-[var(--brand-lime)] transition-colors"
         >
