@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/calculator/:slug",
+      "destination": "/:slug-calculator",
+      "permanent": true
+    }
+  ]
+}
