@@ -1,4 +1,4 @@
-jsx
+
 import React, { useEffect, useMemo } from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
 import { toast } from "sonner";
