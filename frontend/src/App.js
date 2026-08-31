@@ -1,19 +1,16 @@
-```jsx
 import "@/App.css";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { MeasurementProvider } from "@/context/MeasurementContext";
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-
 import Dashboard from "@/pages/Dashboard";
 import CalculatorPage from "@/pages/CalculatorPage";
-import About from "@/pages/about";
-import PrivacyPolicy from "@/pages/PrivacyPolicy";
-import Terms from "@/pages/terms";
-import Contact from "@/pages/contact";
+import About from "./pages/about";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Terms from "./pages/terms";
+import Contact from "./pages/contact";
 import Compare from "@/pages/Compare";
 
 function App() {
@@ -26,7 +23,6 @@ function App() {
 
             <Routes>
               <Route path="/" element={<Dashboard />} />
-
               <Route path="/about" element={<About />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/terms" element={<Terms />} />
@@ -188,10 +184,7 @@ function App() {
                 element={<CalculatorPage seoSlug="obesity-class" />}
               />
 
-              <Route
-                path="*"
-                element={<Navigate to="/" replace />}
-              />
+              <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
 
             <Footer />
@@ -210,4 +203,3 @@ function App() {
 }
 
 export default App;
-
