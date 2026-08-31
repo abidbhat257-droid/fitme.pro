@@ -11,11 +11,12 @@ import { MagnifyingGlass, Lightning } from "@phosphor-icons/react";
 
 const SITE_URL = "https://fitme-pro.vercel.app";
 
-function upsertMeta(name, content) {
-  let el = document.head.querySelector(`meta[name="${name}"]`);
+function upsertMeta(name, content, isProperty = false) {
+  const attribute = isProperty ? "property" : "name";
+  let el = document.head.querySelector(`meta[${attribute}="${name}"]`);
   if (!el) {
     el = document.createElement("meta");
-    el.setAttribute("name", name);
+    el.setAttribute(attribute, name);
     document.head.appendChild(el);
   }
   el.setAttribute("content", content);
@@ -31,6 +32,17 @@ function upsertCanonical(url) {
   el.setAttribute("href", url);
 }
 
+function upsertJsonLd(data) {
+  let el = document.getElementById("fitme-home-jsonld");
+  if (!el) {
+    el = document.createElement("script");
+    el.type = "application/ld+json";
+    el.id = "fitme-home-jsonld";
+    document.head.appendChild(el);
+  }
+  el.textContent = JSON.stringify(data);
+}
+
 export default function Dashboard() {
   const { state } = useMeasurements();
   const [query, setQuery] = useState("");
@@ -43,10 +55,47 @@ export default function Dashboard() {
 
     document.title = title;
     upsertMeta("description", description);
-    upsertMeta("og:title", title);
-    upsertMeta("og:description", description);
-    upsertMeta("og:url", SITE_URL);
-    upsertCanonical(SITE_URL + "/");
+    upsertMeta("og:title", title, true);
+    upsertMeta("og:description", description, true);
+    upsertMeta("og:url", `${SITE_URL}/`, true);
+    upsertMeta("og:type", "website", true);
+    upsertMeta("og:site_name", "Fitme Pro", true);
+    upsertMeta("twitter:card", "summary");
+    upsertMeta("twitter:title", title);
+    upsertMeta("twitter:description", description);
+    upsertCanonical(`${SITE_URL}/`);
+
+    upsertJsonLd({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": `${SITE_URL}/#website`,
+          url: `${SITE_URL}/`,
+          name: "Fitme Pro",
+          description,
+        },
+        {
+          "@type": "WebApplication",
+          "@id": `${SITE_URL}/#application`,
+          name: "Fitme Pro Health & Body Composition Calculators",
+          url: `${SITE_URL}/`,
+          applicationCategory: "HealthApplication",
+          operatingSystem: "Web",
+          isAccessibleForFree: true,
+          offers: {
+            "@type": "Offer",
+            price: "0",
+            priceCurrency: "USD",
+          },
+        },
+      ],
+    });
+
+    return () => {
+      const jsonLd = document.getElementById("fitme-home-jsonld");
+      if (jsonLd) jsonLd.remove();
+    };
   }, []);
 
   const results = useAllResults(state);
