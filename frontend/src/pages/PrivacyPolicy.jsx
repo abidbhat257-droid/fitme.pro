@@ -1,4 +1,4 @@
-```jsx
+
 import React from "react";
 
 export default function PrivacyPolicy() {
@@ -169,4 +169,4 @@ export default function PrivacyPolicy() {
     </main>
   );
 }
-```
+
