@@ -463,7 +463,7 @@ export default function CalculatorPage({ seoSlug }) {
                 {related.map((r) => (
                   <li key={r.id}>
                     <Link
-                      to={`/calculator/${r.slug}`}
+                      to={`/${r.slug}-calculator`}
                       className="flex items-center justify-between text-sm py-1.5 border-b border-border/50 hover:text-[var(--brand-lime)] transition-colors group"
                     >
                       <span>{r.name}</span>
