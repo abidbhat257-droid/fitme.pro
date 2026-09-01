@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { getExpansionSections } from "@/lib/longFormExpansion";
+import { CALCULATORS } from "@/lib/calculators";
 
 const HEADINGS = [
   "What Is {name}?",
@@ -46,9 +47,7 @@ export default function LongFormArticle({ content, calc }) {
   const relatedNames = content.related || [];
   const relatedLinks = relatedNames
     .map((name) => {
-      const found = (window.__FITME_CALCULATORS__ || []).find(
-        (item) => item.name === name
-      );
+      const found = CALCULATORS.find((item) => item.name === name);
       return found ? { name, slug: found.slug } : null;
     })
     .filter(Boolean);
