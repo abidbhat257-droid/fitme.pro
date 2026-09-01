@@ -1,9 +1,42 @@
 {
+  "version": 2,
   "redirects": [
-    {
-      "source": "/calculator/:slug",
-      "destination": "/:slug-calculator",
-      "permanent": true
-    }
+    {"source":"/calculator/:slug","destination":"/:slug-calculator","permanent":true},
+    {"source":"/calculator/:slug/","destination":"/:slug-calculator","permanent":true}
+  ],
+  "rewrites": [
+    {"source":"/bmi-calculator","destination":"/bmi-calculator/index.html"},
+    {"source":"/bmi-prime-calculator","destination":"/bmi-prime-calculator/index.html"},
+    {"source":"/healthy-weight-range-calculator","destination":"/healthy-weight-range-calculator/index.html"},
+    {"source":"/ideal-body-weight-calculator","destination":"/ideal-body-weight-calculator/index.html"},
+    {"source":"/weight-loss-goal-calculator","destination":"/weight-loss-goal-calculator/index.html"},
+    {"source":"/weight-gain-goal-calculator","destination":"/weight-gain-goal-calculator/index.html"},
+    {"source":"/body-fat-calculator","destination":"/body-fat-calculator/index.html"},
+    {"source":"/navy-body-fat-calculator","destination":"/navy-body-fat-calculator/index.html"},
+    {"source":"/relative-fat-mass-calculator","destination":"/relative-fat-mass-calculator/index.html"},
+    {"source":"/body-adiposity-index-calculator","destination":"/body-adiposity-index-calculator/index.html"},
+    {"source":"/lean-body-mass-calculator","destination":"/lean-body-mass-calculator/index.html"},
+    {"source":"/fat-mass-calculator","destination":"/fat-mass-calculator/index.html"},
+    {"source":"/fat-free-mass-calculator","destination":"/fat-free-mass-calculator/index.html"},
+    {"source":"/ffmi-calculator","destination":"/ffmi-calculator/index.html"},
+    {"source":"/waist-hip-ratio-calculator","destination":"/waist-hip-ratio-calculator/index.html"},
+    {"source":"/waist-height-ratio-calculator","destination":"/waist-height-ratio-calculator/index.html"},
+    {"source":"/absi-calculator","destination":"/absi-calculator/index.html"},
+    {"source":"/bri-calculator","destination":"/bri-calculator/index.html"},
+    {"source":"/conicity-index-calculator","destination":"/conicity-index-calculator/index.html"},
+    {"source":"/body-frame-size-calculator","destination":"/body-frame-size-calculator/index.html"},
+    {"source":"/bmr-calculator","destination":"/bmr-calculator/index.html"},
+    {"source":"/tdee-calculator","destination":"/tdee-calculator/index.html"},
+    {"source":"/daily-calorie-needs-calculator","destination":"/daily-calorie-needs-calculator/index.html"},
+    {"source":"/calorie-deficit-calculator","destination":"/calorie-deficit-calculator/index.html"},
+    {"source":"/calorie-surplus-calculator","destination":"/calorie-surplus-calculator/index.html"},
+    {"source":"/body-surface-area-calculator","destination":"/body-surface-area-calculator/index.html"},
+    {"source":"/ponderal-index-calculator","destination":"/ponderal-index-calculator/index.html"},
+    {"source":"/adjusted-body-weight-calculator","destination":"/adjusted-body-weight-calculator/index.html"},
+    {"source":"/body-density-calculator","destination":"/body-density-calculator/index.html"},
+    {"source":"/obesity-class-calculator","destination":"/obesity-class-calculator/index.html"}
+  ],
+  "headers": [
+    {"source":"/bmi-calculator/index.html","headers":[{"key":"Cache-Control","value":"public, max-age=0, s-maxage=86400, stale-while-revalidate=604800"}]}
   ]
 }
