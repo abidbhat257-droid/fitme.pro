@@ -22,6 +22,8 @@ import {
 } from "@/lib/calculators";
 
 import { getContent } from "@/lib/content";
+import { getLongFormContent } from "@/lib/longFormContent";
+import LongFormArticle from "@/components/LongFormArticle";
 import { useMeasurements } from "@/context/MeasurementContext";
 import {
   Accordion,
@@ -33,26 +35,12 @@ import {
 import { SEO } from "@/constants/testIds";
 
 export default function CalculatorPage({ seoSlug }) {
-  /*
-   * There are two types of calculator URLs:
-   *
-   * 1. /calculator/:slug
-   *    Example: /calculator/bmi
-   *
-   * 2. SEO URLs
-   *    Example: /bmi-calculator
-   *
-   * For SEO URLs, App.js passes seoSlug="bmi".
-   * For the original URLs, React Router provides :slug.
-   */
-
   const { slug: routeSlug } = useParams();
-
-  // Use seoSlug when supplied, otherwise use the URL parameter.
   const slug = seoSlug || routeSlug;
 
   const calc = getCalculator(slug);
   const content = getContent(slug);
+  const longForm = getLongFormContent(slug);
   const { state } = useMeasurements();
 
   const ready = calc ? hasRequiredInputs(calc, state) : false;
@@ -67,39 +55,19 @@ export default function CalculatorPage({ seoSlug }) {
     }
   }, [calc, ready, state]);
 
-  /*
-   * SEO
-   */
   useEffect(() => {
     if (!calc || !content) return;
 
-    // Page title
     document.title = `${content.title} · Fitme Pro`;
-
-    // Meta description
     upsertMeta("description", content.metaDescription);
-
-    // Open Graph
     upsertMeta("og:title", content.title, true);
     upsertMeta("og:description", content.metaDescription, true);
 
-    /*
-     * IMPORTANT:
-     * Use the actual browser URL.
-     *
-     * This means:
-     * /bmi-calculator
-     * stays /bmi-calculator
-     *
-     * instead of incorrectly becoming:
-     * /calculator/bmi
-     */
     const pageUrl =
       window.location.origin + window.location.pathname;
 
     upsertMeta("og:url", pageUrl, true);
 
-    // Canonical URL
     let canonical = document.querySelector(
       'link[rel="canonical"]'
     );
@@ -112,15 +80,17 @@ export default function CalculatorPage({ seoSlug }) {
 
     canonical.setAttribute("href", pageUrl);
 
-    /*
-     * JSON-LD structured data
-     */
+    const faqItems = longForm?.faqs?.length
+      ? longForm.faqs
+      : content.faq;
+
     const ld = {
       "@context": "https://schema.org",
       "@graph": [
         {
           "@type": "WebApplication",
           name: content.title,
+          url: pageUrl,
           applicationCategory: "HealthApplication",
           operatingSystem: "Web",
           offers: {
@@ -130,8 +100,25 @@ export default function CalculatorPage({ seoSlug }) {
           },
         },
         {
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "FitMe Pro",
+              item: window.location.origin + "/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: content.title,
+              item: pageUrl,
+            },
+          ],
+        },
+        {
           "@type": "FAQPage",
-          mainEntity: content.faq.map((f) => ({
+          mainEntity: faqItems.map((f) => ({
             "@type": "Question",
             name: f.q,
             acceptedAnswer: {
@@ -148,12 +135,8 @@ export default function CalculatorPage({ seoSlug }) {
     return () => {
       removeJsonLd();
     };
-  }, [calc, content]);
+  }, [calc, content, longForm]);
 
-  /*
-   * If the calculator or content does not exist,
-   * send the visitor back to the dashboard.
-   */
   if (!calc || !content) {
     return <Navigate to="/" replace />;
   }
@@ -161,14 +144,9 @@ export default function CalculatorPage({ seoSlug }) {
   const cat = CATEGORIES[calc.category];
 
   const related = CALCULATORS.filter(
-    (c) =>
-      c.category === calc.category &&
-      c.id !== calc.id
+    (c) => c.category === calc.category && c.id !== calc.id
   ).slice(0, 4);
 
-  /*
-   * Copy result
-   */
   const onCopy = async () => {
     const text = `${calc.name}: ${
       result?.value ?? "—"
@@ -182,12 +160,8 @@ export default function CalculatorPage({ seoSlug }) {
     }
   };
 
-  /*
-   * Share result
-   */
   const onShare = async () => {
     const url = window.location.href;
-
     const text = `My ${calc.name} result: ${
       result?.value ?? "—"
     }`;
@@ -220,7 +194,6 @@ export default function CalculatorPage({ seoSlug }) {
       <MeasurementPanel />
 
       <main className="flex-1 min-w-0">
-        {/* HERO */}
         <section className="relative border-b border-border overflow-hidden">
           <div
             className="absolute inset-0 opacity-[0.06] pointer-events-none"
@@ -247,7 +220,6 @@ export default function CalculatorPage({ seoSlug }) {
                 className="h-2 w-2"
                 style={{ background: cat.color }}
               />
-
               {cat.label}
             </div>
 
@@ -261,15 +233,11 @@ export default function CalculatorPage({ seoSlug }) {
           </div>
         </section>
 
-        {/* RESULT + FORMULA */}
         <section className="px-6 sm:px-10 py-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
           <div className="lg:col-span-8 space-y-8">
-            {/* RESULT */}
             <div
               className="border border-border bg-card p-6 sm:p-8"
-              style={{
-                borderTop: `3px solid ${cat.color}`,
-              }}
+              style={{ borderTop: `3px solid ${cat.color}` }}
             >
               <div className="flex flex-wrap items-start justify-between gap-4 mb-6">
                 <div className="text-[10px] font-bold uppercase tracking-[0.25em] text-muted-foreground">
@@ -307,7 +275,6 @@ export default function CalculatorPage({ seoSlug }) {
                 <>
                   <div className="font-mono-data text-5xl sm:text-6xl font-black tracking-tight text-[var(--brand-lime)]">
                     {result.value}
-
                     {result.unit ? (
                       <span className="text-lg ml-2 text-muted-foreground font-normal">
                         {result.unit}
@@ -360,7 +327,6 @@ export default function CalculatorPage({ seoSlug }) {
               )}
             </div>
 
-            {/* FORMULA */}
             <div>
               <div className="text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)] mb-2">
                 Formula
@@ -371,22 +337,18 @@ export default function CalculatorPage({ seoSlug }) {
               </pre>
             </div>
 
-            {/* VISUALIZATION */}
             {ready && result && (
               <div data-testid={`seo-viz-${slug}`}>
                 <div className="flex items-center justify-between mb-3">
                   <div className="text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)]">
                     Visualization
                   </div>
-
                   <VizInfo slug={slug} />
                 </div>
 
                 <div
                   className="bg-card border border-border p-5 sm:p-6"
-                  style={{
-                    borderTop: `3px solid ${cat.color}`,
-                  }}
+                  style={{ borderTop: `3px solid ${cat.color}` }}
                 >
                   <Visualization
                     calc={calc}
@@ -397,7 +359,6 @@ export default function CalculatorPage({ seoSlug }) {
               </div>
             )}
 
-            {/* STEPS */}
             <div>
               <h2 className="font-display text-2xl uppercase tracking-tighter mb-4">
                 How To Calculate
@@ -405,14 +366,10 @@ export default function CalculatorPage({ seoSlug }) {
 
               <ol className="space-y-3">
                 {content.steps.map((s, i) => (
-                  <li
-                    key={i}
-                    className="flex gap-4 items-start"
-                  >
+                  <li key={i} className="flex gap-4 items-start">
                     <span className="font-mono-data text-xs bg-[var(--brand-lime)] text-black px-2 py-0.5 mt-0.5">
                       {String(i + 1).padStart(2, "0")}
                     </span>
-
                     <span className="text-sm text-foreground/90 leading-relaxed">
                       {s}
                     </span>
@@ -421,7 +378,8 @@ export default function CalculatorPage({ seoSlug }) {
               </ol>
             </div>
 
-            {/* FAQ */}
+            <LongFormArticle content={longForm} calc={calc} />
+
             <div>
               <h2 className="font-display text-2xl uppercase tracking-tighter mb-4">
                 FAQ
@@ -432,27 +390,28 @@ export default function CalculatorPage({ seoSlug }) {
                 collapsible
                 className="border-t border-border"
               >
-                {content.faq.map((f, i) => (
-                  <AccordionItem
-                    key={i}
-                    value={`i-${i}`}
-                    data-testid={SEO.faqItem(i)}
-                    className="border-b border-border"
-                  >
-                    <AccordionTrigger className="text-left text-sm font-bold uppercase tracking-wider hover:no-underline">
-                      {f.q}
-                    </AccordionTrigger>
+                {(longForm?.faqs?.length ? longForm.faqs : content.faq).map(
+                  (f, i) => (
+                    <AccordionItem
+                      key={i}
+                      value={`i-${i}`}
+                      data-testid={SEO.faqItem(i)}
+                      className="border-b border-border"
+                    >
+                      <AccordionTrigger className="text-left text-sm font-bold uppercase tracking-wider hover:no-underline">
+                        {f.q}
+                      </AccordionTrigger>
 
-                    <AccordionContent className="text-sm text-muted-foreground leading-relaxed">
-                      {f.a}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
+                      <AccordionContent className="text-sm text-muted-foreground leading-relaxed">
+                        {f.a}
+                      </AccordionContent>
+                    </AccordionItem>
+                  )
+                )}
               </Accordion>
             </div>
           </div>
 
-          {/* SIDEBAR */}
           <aside className="lg:col-span-4 space-y-6">
             <div className="border border-border p-5">
               <div className="text-[10px] font-bold uppercase tracking-[0.25em] text-muted-foreground mb-3">
@@ -467,7 +426,6 @@ export default function CalculatorPage({ seoSlug }) {
                       className="flex items-center justify-between text-sm py-1.5 border-b border-border/50 hover:text-[var(--brand-lime)] transition-colors group"
                     >
                       <span>{r.name}</span>
-
                       <ArrowRight
                         size={14}
                         className="opacity-0 group-hover:opacity-100 transition-opacity"
@@ -502,9 +460,6 @@ export default function CalculatorPage({ seoSlug }) {
   );
 }
 
-/*
- * Add or update a meta tag.
- */
 function upsertMeta(name, content, isProperty = false) {
   const key = isProperty ? "property" : "name";
 
@@ -521,9 +476,6 @@ function upsertMeta(name, content, isProperty = false) {
   el.setAttribute("content", content);
 }
 
-/*
- * Convert internal field names into readable labels.
- */
 function humanizeField(k) {
   const map = {
     heightCm: "Height",
@@ -541,14 +493,10 @@ function humanizeField(k) {
   return map[k] || k;
 }
 
-/*
- * Add JSON-LD structured data to the page.
- */
 function upsertJsonLd(obj) {
   removeJsonLd();
 
   const s = document.createElement("script");
-
   s.type = "application/ld+json";
   s.id = "fitme-jsonld";
   s.textContent = JSON.stringify(obj);
@@ -556,15 +504,10 @@ function upsertJsonLd(obj) {
   document.head.appendChild(s);
 }
 
-/*
- * Remove previous JSON-LD when leaving the page.
- */
 function removeJsonLd() {
-  const existing =
-    document.getElementById("fitme-jsonld");
+  const existing = document.getElementById("fitme-jsonld");
 
   if (existing) {
     existing.remove();
   }
 }
-
