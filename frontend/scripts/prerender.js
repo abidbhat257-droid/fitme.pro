@@ -5,11 +5,14 @@ const root = path.resolve(__dirname, "..");
 const build = path.join(root, "build");
 const indexPath = path.join(build, "index.html");
 const contentPath = path.join(root, "src", "lib", "content.js");
+const longFormPath = path.join(root, "src", "lib", "longFormContent.js");
 const tempModulePath = path.join(build, "__fitme_content.mjs");
+const tempLongFormPath = path.join(build, "__fitme_longform.mjs");
 const siteUrl = (process.env.SITE_URL || "https://fitme-pro.vercel.app").replace(/\/$/, "");
 
 if (!fs.existsSync(indexPath)) throw new Error(`CRA build output not found: ${indexPath}`);
 if (!fs.existsSync(contentPath)) throw new Error(`SEO content file not found: ${contentPath}`);
+if (!fs.existsSync(longFormPath)) throw new Error(`Long-form content file not found: ${longFormPath}`);
 
 const esc = (value) => String(value ?? "")
   .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
@@ -18,13 +21,17 @@ const json = (value) => JSON.stringify(value).replace(/</g, "\\u003c");
 
 (async () => {
   try {
-    // Import the existing ES-module data through a temporary .mjs file.
-    // The original content.js is never modified.
     const source = fs.readFileSync(contentPath, "utf8");
     fs.writeFileSync(tempModulePath, `${source}\nexport default CALC_CONTENT;`, "utf8");
+    const longSource = fs.readFileSync(longFormPath, "utf8");
+    fs.writeFileSync(tempLongFormPath, `${longSource}\n`, "utf8");
+
     const mod = await import(`${pathToFileURL(tempModulePath).href}?v=${Date.now()}`);
+    const longMod = await import(`${pathToFileURL(tempLongFormPath).href}?v=${Date.now()}`);
     const pages = mod.CALC_CONTENT || mod.default;
+    const getLongFormContent = longMod.getLongFormContent;
     if (!pages || typeof pages !== "object") throw new Error("CALC_CONTENT was not exported from src/lib/content.js");
+    if (typeof getLongFormContent !== "function") throw new Error("getLongFormContent was not exported from longFormContent.js");
 
     const base = fs.readFileSync(indexPath, "utf8");
     let count = 0;
@@ -32,9 +39,13 @@ const json = (value) => JSON.stringify(value).replace(/</g, "\\u003c");
     for (const [slug, page] of Object.entries(pages)) {
       if (!page || typeof page !== "object") continue;
       const canonical = `${siteUrl}/${slug}-calculator`;
-      const faq = Array.isArray(page.faq) ? page.faq : [];
-      const steps = Array.isArray(page.steps) ? page.steps.map((s) => `<li>${esc(s)}</li>`).join("") : "";
+      const longForm = getLongFormContent(slug);
+      const faq = longForm?.faqs?.length ? longForm.faqs : (Array.isArray(page.faq) ? page.faq : []);
+      const steps = Array.isArray(page.steps) ? page.steps.map((s, i) => `<li><strong>Step ${i + 1}:</strong> ${esc(s)}</li>`).join("") : "";
       const faqs = faq.map((f) => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join("");
+      const articleSections = longForm?.sections?.map((text, i) => `<section><h2>${esc(sectionHeading(i, page.title))}</h2><p>${esc(text)}</p></section>`).join("") || "";
+      const related = longForm?.related?.map((name) => `<li>${esc(name)}</li>`).join("") || "";
+
       const schema = {
         "@context": "https://schema.org",
         "@graph": [
@@ -46,7 +57,8 @@ const json = (value) => JSON.stringify(value).replace(/</g, "\\u003c");
           ] }
         ]
       };
-      const seo = `<article id="seo-content" style="max-width:900px;margin:0 auto;padding:32px 20px;font-family:Arial,sans-serif"><nav aria-label="Breadcrumb"><a href="/">Fitme Pro</a> / <span>${esc(page.title)}</span></nav><h1>${esc(page.title)}</h1><p>${esc(page.intro)}</p><h2>How to calculate</h2><ol>${steps}</ol>${page.formula ? `<h2>Formula</h2><p><code>${esc(page.formula)}</code></p>` : ""}${page.overview ? `<h2>Overview</h2><p>${esc(page.overview)}</p>` : ""}${page.limitations ? `<h2>Limitations</h2><p>${esc(page.limitations)}</p>` : ""}${faqs ? `<h2>Frequently asked questions</h2>${faqs}` : ""}<p><a href="/">Explore all 30 Fitme Pro calculators</a></p></article>`;
+
+      const seo = `<article id="seo-content" style="max-width:900px;margin:0 auto;padding:32px 20px;font-family:Arial,sans-serif"><nav aria-label="Breadcrumb"><a href="/">Fitme Pro</a> / <span>${esc(page.title)}</span></nav><h1>${esc(page.title)}</h1><p>${esc(page.intro)}</p><section><h2>How to Calculate</h2><ol>${steps}</ol></section>${page.formula ? `<section><h2>Formula</h2><p><code>${esc(page.formula)}</code></p></section>` : ""}${page.overview ? `<section><h2>Quick Overview</h2><p>${esc(page.overview)}</p></section>` : ""}${articleSections}${related ? `<section><h2>Related Calculators</h2><ul>${related}</ul></section>` : ""}${page.limitations ? `<section><h2>Limitations</h2><p>${esc(page.limitations)}</p></section>` : ""}${faqs ? `<section><h2>Frequently Asked Questions</h2>${faqs}</section>` : ""}<p><a href="/">Explore all 30 Fitme Pro calculators</a></p></article>`;
 
       let html = base;
       html = html.replace(/<title>[\s\S]*?<\/title>/i, `<title>${esc(page.title)} · Fitme Pro</title>`);
@@ -60,11 +72,30 @@ const json = (value) => JSON.stringify(value).replace(/</g, "\\u003c");
       count++;
     }
     if (count !== 30) throw new Error(`Expected 30 calculator pages, generated ${count}.`);
-    console.log(`Prerendered ${count} calculator pages.`);
+    console.log(`Prerendered ${count} calculator pages with long-form SEO content.`);
   } finally {
     try { fs.unlinkSync(tempModulePath); } catch (_) {}
+    try { fs.unlinkSync(tempLongFormPath); } catch (_) {}
   }
 })().catch((error) => { console.error("Prerender failed:", error); process.exit(1); });
+
+function sectionHeading(index, title) {
+  const headings = [
+    `What Is ${title}?`,
+    "Why This Calculation Matters",
+    "Inputs and Measurement Guide",
+    "The Formula Explained",
+    "How to Interpret Your Result",
+    "Accuracy and What Can Affect It",
+    "Common Mistakes to Avoid",
+    "Using the Result for Fitness Planning",
+    "Related Health and Body-Composition Measures",
+    "Tracking Changes Over Time",
+    "When to Seek Professional Guidance",
+    "Key Takeaways",
+  ];
+  return headings[index] || title;
+}
 
 function pathToFileURL(filePath) {
   const resolved = path.resolve(filePath).replace(/\\/g, "/");
