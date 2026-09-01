@@ -22,6 +22,55 @@ const esc = (value) => String(value ?? "")
   .replace(/\"/g, "&quot;").replace(/'/g, "&#39;");
 const json = (value) => JSON.stringify(value).replace(/</g, "\\u003c");
 
+// Names used in longFormContent are human-readable. Keep a deterministic map so
+// prerendered related links become real crawlable internal links instead of text.
+const RELATED_SLUGS = {
+  "BMI Calculator": "bmi-calculator",
+  "BMI Prime Calculator": "bmi-prime-calculator",
+  "Healthy Weight Range Calculator": "healthy-weight-range-calculator",
+  "Ideal Body Weight Calculator": "ideal-body-weight-calculator",
+  "Weight Loss Goal Calculator": "weight-loss-goal-calculator",
+  "Weight Gain Goal Calculator": "weight-gain-goal-calculator",
+  "Body Fat Calculator": "body-fat-calculator",
+  "Body Fat Percentage Calculator": "body-fat-calculator",
+  "Navy Body Fat Calculator": "navy-body-fat-calculator",
+  "US Navy Body Fat Calculator": "navy-body-fat-calculator",
+  "Relative Fat Mass Calculator": "relative-fat-mass-calculator",
+  "Body Adiposity Index Calculator": "body-adiposity-index-calculator",
+  "Lean Body Mass Calculator": "lean-body-mass-calculator",
+  "Fat Mass Calculator": "fat-mass-calculator",
+  "Fat-Free Mass Calculator": "fat-free-mass-calculator",
+  "Fat-Free Mass Index Calculator": "ffmi-calculator",
+  "FFMI Calculator": "ffmi-calculator",
+  "Waist-to-Hip Ratio Calculator": "waist-hip-ratio-calculator",
+  "Waist-to-Height Ratio Calculator": "waist-height-ratio-calculator",
+  "ABSI Calculator": "absi-calculator",
+  "A Body Shape Index Calculator": "absi-calculator",
+  "BRI Calculator": "bri-calculator",
+  "Body Roundness Index Calculator": "bri-calculator",
+  "Conicity Index Calculator": "conicity-index-calculator",
+  "Body Frame Size Calculator": "body-frame-size-calculator",
+  "BMR Calculator": "bmr-calculator",
+  "TDEE Calculator": "tdee-calculator",
+  "Daily Calorie Needs Calculator": "daily-calorie-needs-calculator",
+  "Calorie Deficit Calculator": "calorie-deficit-calculator",
+  "Calorie Surplus Calculator": "calorie-surplus-calculator",
+  "Body Surface Area Calculator": "body-surface-area-calculator",
+  "Ponderal Index Calculator": "ponderal-index-calculator",
+  "Adjusted Body Weight Calculator": "adjusted-body-weight-calculator",
+  "Body Density Calculator": "body-density-calculator",
+  "Obesity Class Calculator": "obesity-class-calculator"
+};
+
+function relatedLinks(names) {
+  return (names || []).map((name) => {
+    const slug = RELATED_SLUGS[name];
+    return slug
+      ? `<li><a href="/${slug}">${esc(name)}</a></li>`
+      : `<li>${esc(name)}</li>`;
+  }).join("");
+}
+
 (async () => {
   try {
     const source = fs.readFileSync(contentPath, "utf8");
@@ -51,7 +100,7 @@ const json = (value) => JSON.stringify(value).replace(/</g, "\\u003c");
       const steps = Array.isArray(page.steps) ? page.steps.map((s, i) => `<li><strong>Step ${i + 1}:</strong> ${esc(s)}</li>`).join("") : "";
       const faqs = faq.map((f) => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join("");
       const articleSections = sections.map((text, i) => `<section><h2>${esc(sectionHeading(i, page.title))}</h2><p>${esc(text)}</p></section>`).join("");
-      const related = longForm?.related?.map((name) => `<li>${esc(name)}</li>`).join("") || "";
+      const related = relatedLinks(longForm?.related);
 
       const schema = {
         "@context": "https://schema.org",
@@ -65,7 +114,7 @@ const json = (value) => JSON.stringify(value).replace(/</g, "\\u003c");
         ]
       };
 
-      const seo = `<article id="seo-content" style="max-width:900px;margin:0 auto;padding:32px 20px;font-family:Arial,sans-serif"><nav aria-label="Breadcrumb"><a href="/">Fitme Pro</a> / <span>${esc(page.title)}</span></nav><h1>${esc(page.title)}</h1><p>${esc(page.intro)}</p><section><h2>How to Calculate</h2><ol>${steps}</ol></section>${page.formula ? `<section><h2>Formula</h2><p><code>${esc(page.formula)}</code></p></section>` : ""}${page.overview ? `<section><h2>Quick Overview</h2><p>${esc(page.overview)}</p></section>` : ""}${articleSections}${related ? `<section><h2>Related Calculators</h2><ul>${related}</ul></section>` : ""}${page.limitations ? `<section><h2>Limitations</h2><p>${esc(page.limitations)}</p></section>` : ""}${faqs ? `<section><h2>Frequently Asked Questions</h2>${faqs}</section>` : ""}<p><a href="/">Explore all 30 Fitme Pro calculators</a></p></article>`;
+      const seo = `<article id="seo-content" style="max-width:900px;margin:0 auto;padding:32px 20px;font-family:Arial,sans-serif"><nav aria-label="Breadcrumb"><a href="/">Fitme Pro</a> / <span>${esc(page.title)}</span></nav><h1>${esc(page.title)}</h1><p>${esc(page.intro)}</p><section><h2>How to Calculate</h2><ol>${steps}</ol></section>${page.formula ? `<section><h2>Formula</h2><p><code>${esc(page.formula)}</code></p></section>` : ""}${page.overview ? `<section><h2>Quick Overview</h2><p>${esc(page.overview)}</p></section>` : ""}${articleSections}${related ? `<section><h2>Related Calculators</h2><ul>${related}</ul></section>` : ""}${page.limitations ? `<section><h2>Limitations</h2><p>${esc(page.limitations)}</p></section>` : ""}${faqs ? `<section><h2>Frequently Asked Questions</h2>${faqs}</section>` : ""}<p><a href="/">Explore all Fitme Pro calculators</a></p></article>`;
 
       let html = base;
       html = html.replace(/<title>[\s\S]*?<\/title>/i, `<title>${esc(page.title)} · Fitme Pro</title>`);
