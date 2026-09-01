@@ -236,7 +236,9 @@ export const CALCULATORS = [
     slug: "navy-body-fat",
     name: "US Navy Body Fat",
     category: "composition",
-    requires: ["heightCm", "sex", "waistCm", "neckCm", "hipCm"],
+    // Hip circumference is only used by the female Navy equation.
+    // Keep the calculator's required fields sex-specific in the UI/validation layer.
+    requires: ["heightCm", "sex", "waistCm", "neckCm"],
     formula: "Uses log10 of waist, neck (± hip) & height",
     compute: (s) => {
       const m = toMetric(s);
@@ -249,7 +251,7 @@ export const CALCULATORS = [
           : (v < 25 ? "Fit" : v < 32 ? "Average" : "High"),
         tone: v < (m.sex === "male" ? 20 : 25) ? "good" : v < (m.sex === "male" ? 25 : 32) ? "warn" : "bad",
         range: m.sex === "male" ? "10–20%" : "18–28%",
-        interpretation: "US Navy circumference-based body fat estimate — reasonably accurate for most healthy adults.",
+        interpretation: "US Navy circumference-based body fat estimate. Results are estimates and can vary with measurement technique and body shape.",
       };
     },
   },
@@ -269,7 +271,7 @@ export const CALCULATORS = [
         raw: v,
         category: v < 25 ? "Lean" : v < 35 ? "Average" : "High",
         tone: v < 25 ? "good" : v < 35 ? "warn" : "bad",
-        interpretation: "RFM estimates body fat using only height and waist. Correlates well with DXA scans.",
+        interpretation: "RFM estimates body fat using only height and waist. Results are estimates rather than a direct body-fat measurement.",
       };
     },
   },
@@ -290,7 +292,7 @@ export const CALCULATORS = [
         raw: v,
         category: v < 25 ? "Healthy" : v < 33 ? "Overweight" : "Obese",
         tone: v < 25 ? "good" : v < 33 ? "warn" : "bad",
-        interpretation: "Alternative body-fat estimate using hip circumference and height only.",
+        interpretation: "Alternative body-fat estimate using hip circumference and height only. It is not a direct measurement of body fat.",
       };
     },
   },
@@ -311,7 +313,7 @@ export const CALCULATORS = [
         raw: v,
         category: "Boer formula",
         tone: "good",
-        interpretation: "Lean body mass = everything that isn't fat: muscle, bones, organs, water.",
+        interpretation: "Estimated lean body mass using the Boer equation; it is not a direct measurement of muscle mass.",
       };
     },
   },
@@ -332,7 +334,7 @@ export const CALCULATORS = [
         raw: v,
         category: "Estimated",
         tone: "warn",
-        interpretation: "Total kilograms/pounds of adipose tissue, estimated from body fat %.",
+        interpretation: "Estimated fat mass derived from the BMI-based body-fat estimate.",
       };
     },
   },
@@ -353,7 +355,7 @@ export const CALCULATORS = [
         raw: v,
         category: "Estimated",
         tone: "good",
-        interpretation: "Everything in your body minus fat — muscle, bone, and organs.",
+        interpretation: "Estimated fat-free mass derived from the BMI-based body-fat estimate.",
       };
     },
   },
@@ -380,7 +382,7 @@ export const CALCULATORS = [
         unit: "kg/m²",
         category: cat,
         tone: "good",
-        interpretation: "FFMI benchmarks muscularity independent of body fat.",
+        interpretation: "FFMI estimates fat-free mass relative to height; the result depends on the body-fat estimate used.",
       };
     },
   },
@@ -403,7 +405,7 @@ export const CALCULATORS = [
         category: v < limit ? "Low risk" : v < limit + 0.1 ? "Moderate" : "High risk",
         tone: v < limit ? "good" : v < limit + 0.1 ? "warn" : "bad",
         range: m.sex === "male" ? "< 0.90" : "< 0.85",
-        interpretation: "WHR flags central adiposity — an independent risk factor for cardiovascular disease.",
+        interpretation: "WHR flags central adiposity; risk interpretation depends on age, sex, ethnicity and other health factors.",
       };
     },
   },
@@ -423,7 +425,7 @@ export const CALCULATORS = [
         category: v < 0.4 ? "Slim" : v < 0.5 ? "Healthy" : v < 0.6 ? "Overweight" : "Obese",
         tone: v < 0.5 ? "good" : v < 0.6 ? "warn" : "bad",
         range: "< 0.50",
-        interpretation: "‘Keep your waist under half your height’ — a robust marker across ages and ethnicities.",
+        interpretation: "Waist-to-height ratio is a screening measure of central adiposity; it should not be treated as a diagnosis.",
       };
     },
   },
@@ -443,9 +445,9 @@ export const CALCULATORS = [
       return {
         value: formatNumber(v, 4),
         raw: v,
-        category: v < 0.079 ? "Low mortality risk" : v < 0.083 ? "Average" : "High mortality risk",
+        category: v < 0.079 ? "Lower range" : v < 0.083 ? "Middle range" : "Higher range",
         tone: v < 0.079 ? "good" : v < 0.083 ? "warn" : "bad",
-        interpretation: "ABSI captures abdominal obesity independent of BMI. Higher values predict all-cause mortality.",
+        interpretation: "ABSI describes waist size relative to height and BMI. Population risk associations vary by population and should not be treated as an individual diagnosis.",
       };
     },
   },
@@ -465,9 +467,9 @@ export const CALCULATORS = [
       return {
         value: formatNumber(v, 2),
         raw: v,
-        category: v < 3.41 ? "Lean" : v < 4.5 ? "Average" : v < 5.46 ? "Overweight" : "Obese",
+        category: v < 3.41 ? "Lower range" : v < 4.5 ? "Middle range" : v < 5.46 ? "Higher range" : "Very high range",
         tone: v < 4.5 ? "good" : v < 5.46 ? "warn" : "bad",
-        interpretation: "BRI models the human body as an ellipse. Higher = rounder = more visceral fat.",
+        interpretation: "BRI is a body-shape index derived from waist and height; it is a screening metric rather than a diagnosis.",
       };
     },
   },
@@ -486,10 +488,10 @@ export const CALCULATORS = [
       return {
         value: formatNumber(v, 2),
         raw: v,
-        category: v < 1.25 ? "Healthy" : "Elevated",
+        category: v < 1.25 ? "Lower range" : "Higher range",
         tone: v < 1.25 ? "good" : "warn",
         range: "1.00–1.25",
-        interpretation: "Conicity index models body shape as a double cone. Higher values indicate central fat.",
+        interpretation: "Conicity index is a body-shape measure associated with central adiposity; cutoffs vary by population.",
       };
     },
   },
@@ -509,7 +511,7 @@ export const CALCULATORS = [
         raw: m.heightCm / m.wristCm,
         category: `${frame} frame`,
         tone: "good",
-        interpretation: "Frame size affects healthy weight ranges. Requires wrist circumference.",
+        interpretation: "Frame size is an estimate based on height and wrist circumference.",
       };
     },
   },
@@ -531,7 +533,7 @@ export const CALCULATORS = [
         unit: "kcal/day",
         category: "Mifflin-St Jeor",
         tone: "good",
-        interpretation: "Calories your body burns at complete rest to maintain basic functions.",
+        interpretation: "Estimated resting energy expenditure using the Mifflin-St Jeor equation.",
       };
     },
   },
@@ -552,7 +554,7 @@ export const CALCULATORS = [
         unit: "kcal/day",
         category: "Maintenance",
         tone: "good",
-        interpretation: "Total calories you burn per day including movement and digestion.",
+        interpretation: "Estimated daily energy expenditure based on BMR and the selected activity factor.",
       };
     },
   },
@@ -573,7 +575,7 @@ export const CALCULATORS = [
         unit: "kcal/day",
         category: "Maintain weight",
         tone: "good",
-        interpretation: "Eat this many calories per day to maintain your current weight.",
+        interpretation: "Estimated daily calories to maintain current weight based on the selected activity factor.",
       };
     },
   },
@@ -595,7 +597,7 @@ export const CALCULATORS = [
         raw: mod,
         category: `Mild: ${mild.toFixed(0)} · Moderate: ${mod.toFixed(0)}`,
         tone: "good",
-        interpretation: "Suggested calorie intake for fat loss — a 500 kcal daily deficit ≈ 0.45 kg/week loss.",
+        interpretation: "A calorie deficit is an estimate for weight loss; actual energy needs and weight change vary between people.",
       };
     },
   },
@@ -617,7 +619,7 @@ export const CALCULATORS = [
         raw: lean,
         category: `Lean: ${lean.toFixed(0)} · Aggressive: ${agg.toFixed(0)}`,
         tone: "good",
-        interpretation: "Calorie intake for muscle gain. A lean surplus limits fat gain while supporting growth.",
+        interpretation: "A calorie surplus can support weight gain; the amount needed varies with goals, activity and individual response.",
       };
     },
   },
@@ -640,7 +642,7 @@ export const CALCULATORS = [
         category: "Du Bois",
         tone: "good",
         range: "1.5–2.0 m²",
-        interpretation: "BSA is used clinically for dosing chemotherapy and cardiac index calculations.",
+        interpretation: "BSA is an estimated body surface area; clinical uses should be determined by a healthcare professional.",
       };
     },
   },
@@ -659,10 +661,10 @@ export const CALCULATORS = [
         value: formatNumber(v, 1),
         raw: v,
         unit: "kg/m³",
-        category: v < 11 ? "Underweight" : v < 15 ? "Healthy" : "Overweight",
+        category: v < 11 ? "Lower range" : v < 15 ? "Middle range" : "Higher range",
         tone: v >= 11 && v < 15 ? "good" : "warn",
         range: "11–15",
-        interpretation: "More accurate than BMI for very tall or very short individuals.",
+        interpretation: "Ponderal index relates weight to height cubically; interpretation depends on age and population.",
       };
     },
   },
@@ -682,7 +684,7 @@ export const CALCULATORS = [
         raw: v,
         category: "Clinical dosing",
         tone: "good",
-        interpretation: "Used in clinical settings when actual weight is >120% of IBW (e.g., drug dosing).",
+        interpretation: "Adjusted body weight is used in some clinical dosing protocols; medication dosing should follow professional guidance.",
       };
     },
   },
@@ -704,7 +706,7 @@ export const CALCULATORS = [
         category: "Siri equation",
         tone: "good",
         range: "1.030–1.100",
-        interpretation: "Denser bodies carry more lean tissue relative to fat.",
+        interpretation: "Estimated body density derived from the Navy body-fat estimate; it is not a direct measurement.",
       };
     },
   },
@@ -733,7 +735,7 @@ export const CALCULATORS = [
         category: `Risk: ${risk}`,
         tone: cat?.tone,
         interpretation:
-          "Combined BMI class and waist circumference to reflect cardiometabolic risk more accurately.",
+          "BMI class and waist circumference are screening measures; they do not by themselves diagnose individual cardiometabolic risk.",
       };
     },
   },
