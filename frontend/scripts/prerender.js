@@ -6,13 +6,16 @@ const build = path.join(root, "build");
 const indexPath = path.join(build, "index.html");
 const contentPath = path.join(root, "src", "lib", "content.js");
 const longFormPath = path.join(root, "src", "lib", "longFormContent.js");
+const expansionPath = path.join(root, "src", "lib", "longFormExpansion.js");
 const tempModulePath = path.join(build, "__fitme_content.mjs");
 const tempLongFormPath = path.join(build, "__fitme_longform.mjs");
+const tempExpansionPath = path.join(build, "__fitme_expansion.mjs");
 const siteUrl = (process.env.SITE_URL || "https://fitme-pro.vercel.app").replace(/\/$/, "");
 
 if (!fs.existsSync(indexPath)) throw new Error(`CRA build output not found: ${indexPath}`);
 if (!fs.existsSync(contentPath)) throw new Error(`SEO content file not found: ${contentPath}`);
 if (!fs.existsSync(longFormPath)) throw new Error(`Long-form content file not found: ${longFormPath}`);
+if (!fs.existsSync(expansionPath)) throw new Error(`Long-form expansion file not found: ${expansionPath}`);
 
 const esc = (value) => String(value ?? "")
   .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
@@ -23,15 +26,18 @@ const json = (value) => JSON.stringify(value).replace(/</g, "\\u003c");
   try {
     const source = fs.readFileSync(contentPath, "utf8");
     fs.writeFileSync(tempModulePath, `${source}\nexport default CALC_CONTENT;`, "utf8");
-    const longSource = fs.readFileSync(longFormPath, "utf8");
-    fs.writeFileSync(tempLongFormPath, `${longSource}\n`, "utf8");
+    fs.writeFileSync(tempLongFormPath, fs.readFileSync(longFormPath, "utf8"), "utf8");
+    fs.writeFileSync(tempExpansionPath, fs.readFileSync(expansionPath, "utf8"), "utf8");
 
     const mod = await import(`${pathToFileURL(tempModulePath).href}?v=${Date.now()}`);
     const longMod = await import(`${pathToFileURL(tempLongFormPath).href}?v=${Date.now()}`);
+    const expansionMod = await import(`${pathToFileURL(tempExpansionPath).href}?v=${Date.now()}`);
     const pages = mod.CALC_CONTENT || mod.default;
     const getLongFormContent = longMod.getLongFormContent;
+    const getExpansionSections = expansionMod.getExpansionSections;
     if (!pages || typeof pages !== "object") throw new Error("CALC_CONTENT was not exported from src/lib/content.js");
     if (typeof getLongFormContent !== "function") throw new Error("getLongFormContent was not exported from longFormContent.js");
+    if (typeof getExpansionSections !== "function") throw new Error("getExpansionSections was not exported from longFormExpansion.js");
 
     const base = fs.readFileSync(indexPath, "utf8");
     let count = 0;
@@ -40,10 +46,11 @@ const json = (value) => JSON.stringify(value).replace(/</g, "\\u003c");
       if (!page || typeof page !== "object") continue;
       const canonical = `${siteUrl}/${slug}-calculator`;
       const longForm = getLongFormContent(slug);
+      const sections = longForm ? [...longForm.sections, ...getExpansionSections(longForm)] : [];
       const faq = longForm?.faqs?.length ? longForm.faqs : (Array.isArray(page.faq) ? page.faq : []);
       const steps = Array.isArray(page.steps) ? page.steps.map((s, i) => `<li><strong>Step ${i + 1}:</strong> ${esc(s)}</li>`).join("") : "";
       const faqs = faq.map((f) => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join("");
-      const articleSections = longForm?.sections?.map((text, i) => `<section><h2>${esc(sectionHeading(i, page.title))}</h2><p>${esc(text)}</p></section>`).join("") || "";
+      const articleSections = sections.map((text, i) => `<section><h2>${esc(sectionHeading(i, page.title))}</h2><p>${esc(text)}</p></section>`).join("");
       const related = longForm?.related?.map((name) => `<li>${esc(name)}</li>`).join("") || "";
 
       const schema = {
@@ -72,27 +79,23 @@ const json = (value) => JSON.stringify(value).replace(/</g, "\\u003c");
       count++;
     }
     if (count !== 30) throw new Error(`Expected 30 calculator pages, generated ${count}.`);
-    console.log(`Prerendered ${count} calculator pages with long-form SEO content.`);
+    console.log(`Prerendered ${count} calculator pages with expanded long-form SEO content and 10 FAQs where configured.`);
   } finally {
-    try { fs.unlinkSync(tempModulePath); } catch (_) {}
-    try { fs.unlinkSync(tempLongFormPath); } catch (_) {}
+    for (const file of [tempModulePath, tempLongFormPath, tempExpansionPath]) {
+      try { fs.unlinkSync(file); } catch (_) {}
+    }
   }
 })().catch((error) => { console.error("Prerender failed:", error); process.exit(1); });
 
 function sectionHeading(index, title) {
   const headings = [
-    `What Is ${title}?`,
-    "Why This Calculation Matters",
-    "Inputs and Measurement Guide",
-    "The Formula Explained",
-    "How to Interpret Your Result",
-    "Accuracy and What Can Affect It",
-    "Common Mistakes to Avoid",
-    "Using the Result for Fitness Planning",
-    "Related Health and Body-Composition Measures",
-    "Tracking Changes Over Time",
-    "When to Seek Professional Guidance",
-    "Key Takeaways",
+    `What Is ${title}?`, "Why This Calculation Matters", "Inputs and Measurement Guide", "The Formula Explained",
+    "How to Interpret Your Result", "Accuracy and What Can Affect It", "Common Mistakes to Avoid", "Using the Result for Fitness Planning",
+    "Related Health and Body-Composition Measures", "Tracking Changes Over Time", "When to Seek Professional Guidance", "Key Takeaways",
+    "Understanding the Calculation as a Model", "Getting Better Inputs", "Units and Conversion", "Why Trends Matter More Than One Reading",
+    "Understanding Reference Ranges", "Combining Complementary Measures", "What Changes During Weight Loss", "What Changes During Weight Gain",
+    "Mathematical Precision vs Biological Precision", "Why Different Equations Disagree", "Turning the Number Into a Practical Decision", "Using Numbers Without Obsessing Over Them",
+    "What to Look for in a Quality Calculator", "Final Takeaways"
   ];
   return headings[index] || title;
 }
