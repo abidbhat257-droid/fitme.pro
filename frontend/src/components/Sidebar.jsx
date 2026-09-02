@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { List, X, House, Calculator, Info, ShieldCheck, FileText } from "@phosphor-icons/react";
 import { CALCULATORS, CATEGORIES } from "@/lib/calculators";
@@ -11,27 +11,24 @@ const information = [
   ["/terms", "Terms & Conditions", FileText],
 ];
 
+const allCalculators = [...CALCULATORS, ...SPECIALIZED_CALCULATORS];
+
+function topNow() {
+  window.scrollTo(0, 0);
+  if (document.scrollingElement) document.scrollingElement.scrollTop = 0;
+  if (document.documentElement) document.documentElement.scrollTop = 0;
+  if (document.body) document.body.scrollTop = 0;
+}
+
 export default function Sidebar() {
   const [open, setOpen] = useState(false);
   const location = useLocation();
-
-  const groups = useMemo(() => {
-    const base = Object.values(CATEGORIES).map((cat) => ({
-      key: cat.key,
-      label: cat.label,
-      color: cat.color,
-      items: CALCULATORS.filter((c) => c.category === cat.key),
-    }));
-    return [...base, {
-      key: "specialized",
-      label: "Specialized",
-      color: "#059669",
-      items: SPECIALIZED_CALCULATORS,
-    }];
-  }, []);
-
-  const total = CALCULATORS.length + SPECIALIZED_CALCULATORS.length;
   const close = () => setOpen(false);
+
+  const go = () => {
+    topNow();
+    requestAnimationFrame(topNow);
+  };
 
   return (
     <>
@@ -52,53 +49,55 @@ export default function Sidebar() {
             <div className="flex shrink-0 items-center justify-between border-b border-border bg-background px-5 py-4">
               <div>
                 <div className="font-display text-xl font-bold uppercase tracking-tighter">fitme<span className="text-[var(--brand-lime)]">.pro</span></div>
-                <div className="mt-1 text-[9px] font-bold uppercase tracking-[0.2em] text-muted-foreground">{total} calculators</div>
+                <div className="mt-1 text-[9px] font-bold uppercase tracking-[0.2em] text-muted-foreground">40 calculators</div>
               </div>
               <button aria-label="Close navigation" onClick={close} className="grid h-9 w-9 place-items-center rounded-md border border-border hover:border-[var(--brand-lime)] hover:text-[var(--brand-lime)]"><X size={18} /></button>
             </div>
 
             <nav className="min-h-0 flex-1 overflow-y-auto p-4">
-              <Link to="/" onClick={close} className={`mb-4 flex items-center gap-3 rounded-md px-3 py-3 text-sm font-bold uppercase tracking-wider hover:bg-muted hover:text-[var(--brand-lime)] ${location.pathname === "/" ? "bg-muted text-[var(--brand-lime)]" : ""}`}>
+              <Link to="/" onClick={() => { go(); close(); }} className={`mb-4 flex items-center gap-3 rounded-md px-3 py-3 text-sm font-bold uppercase tracking-wider hover:bg-muted hover:text-[var(--brand-lime)] ${location.pathname === "/" ? "bg-muted text-[var(--brand-lime)]" : ""}`}>
                 <House size={18} weight="duotone" /> Dashboard
               </Link>
 
               <div className="mb-3 flex items-center justify-between border-y border-border px-3 py-3">
-                <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)]">All {total} Calculators</span>
-                <span className="font-mono-data text-[10px] text-muted-foreground">{CALCULATORS.length} + {SPECIALIZED_CALCULATORS.length}</span>
+                <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)]">All 40 Calculators</span>
+                <span className="font-mono-data text-[10px] text-muted-foreground">30 + 10</span>
               </div>
 
               <div className="space-y-6">
-                {groups.map((group) => (
-                  <section key={group.key}>
-                    <div className="mb-2 flex items-center gap-2 px-3 py-1">
-                      <span className="h-2 w-2 shrink-0 rounded-full" style={{ background: group.color }} />
-                      <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">{group.label}</span>
-                      <span className="ml-auto font-mono-data text-[10px] text-muted-foreground">{group.items.length}</span>
-                    </div>
-                    <div className="space-y-0.5">
-                      {group.items.map((calc) => {
-                        const slug = calc.slug || calc.id;
-                        const to = `/${slug}-calculator`;
-                        const globalIndex = CALCULATORS.indexOf(calc);
-                        const specializedIndex = SPECIALIZED_CALCULATORS.indexOf(calc);
-                        const number = globalIndex >= 0 ? globalIndex + 1 : CALCULATORS.length + specializedIndex + 1;
-                        return (
-                          <Link key={calc.id} to={to} onClick={close} className={`flex items-center gap-3 rounded-md px-3 py-2.5 text-sm transition-colors hover:bg-muted hover:text-[var(--brand-lime)] ${location.pathname === to ? "bg-muted font-bold text-[var(--brand-lime)]" : ""}`}>
-                            <span className="w-7 shrink-0 font-mono-data text-[10px] text-muted-foreground">{String(number).padStart(2, "0")}</span>
-                            <Calculator size={16} weight="duotone" className="shrink-0" />
-                            <span className="truncate">{calc.name}</span>
-                          </Link>
-                        );
-                      })}
-                    </div>
-                  </section>
-                ))}
+                {allCalculators.map((calc, index) => {
+                  const slug = calc.slug || calc.id;
+                  const to = `/${slug}-calculator`;
+                  const category = CATEGORIES[calc.category];
+                  const categoryLabel = category?.label || calc.category || "Specialized";
+                  const categoryColor = category?.color || "#059669";
+
+                  return (
+                    <React.Fragment key={calc.id}>
+                      {(index === 0 || allCalculators[index - 1].category !== calc.category) && (
+                        <div className={`${index === 0 ? "" : "pt-2"} mb-2 flex items-center gap-2 px-3`}>
+                          <span className="h-2 w-2 shrink-0 rounded-full" style={{ background: categoryColor }} />
+                          <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">{categoryLabel}</span>
+                        </div>
+                      )}
+                      <Link
+                        to={to}
+                        onClick={() => { go(); close(); }}
+                        className={`flex items-center gap-3 rounded-md px-3 py-2.5 text-sm transition-colors hover:bg-muted hover:text-[var(--brand-lime)] ${location.pathname === to ? "bg-muted font-bold text-[var(--brand-lime)]" : ""}`}
+                      >
+                        <span className="w-7 shrink-0 font-mono-data text-[10px] text-muted-foreground">{String(index + 1).padStart(2, "0")}</span>
+                        <Calculator size={16} weight="duotone" className="shrink-0" />
+                        <span className="truncate">{calc.name}</span>
+                      </Link>
+                    </React.Fragment>
+                  );
+                })}
               </div>
 
               <div className="my-6 border-t border-border" />
               <div className="mb-2 px-3 text-[10px] font-bold uppercase tracking-[0.25em] text-muted-foreground">Information</div>
               <div className="space-y-0.5">
-                {information.map(([to, label, Icon]) => <Link key={to} to={to} onClick={close} className="flex items-center gap-3 rounded-md px-3 py-2.5 text-sm hover:bg-muted hover:text-[var(--brand-lime)]"><Icon size={16} weight="duotone" />{label}</Link>)}
+                {information.map(([to, label, Icon]) => <Link key={to} to={to} onClick={() => { go(); close(); }} className="flex items-center gap-3 rounded-md px-3 py-2.5 text-sm hover:bg-muted hover:text-[var(--brand-lime)]"><Icon size={16} weight="duotone" />{label}</Link>)}
               </div>
             </nav>
           </aside>
