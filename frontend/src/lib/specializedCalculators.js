@@ -1,82 +1,20 @@
-import { toMetric, getActivityFactor, formatWeight, formatNumber } from "./units";
+import { toMetric, getActivityFactor, formatNumber } from "./units";
 
 export const SPECIALIZED_CALCULATORS = [
-  {
-    id: "calorie-calculator", slug: "calorie-calculator", name: "Calorie Calculator", category: "Nutrition & Fitness",
-    requires: ["height", "weight", "age", "sex", "activity"],
-    description: "Estimate daily calorie needs for weight loss, maintenance, or gain using your existing FitMe Pro measurements.",
-    formula: "BMR = 10W + 6.25H − 5A + sex constant; TDEE = BMR × activity factor",
-    compute: (s) => { const m = toMetric(s); const bmr = 10*m.weightKg + 6.25*m.heightCm - 5*m.age + (m.sex === "male" ? 5 : -161); const tdee = bmr * getActivityFactor(m.activity); return { value: Math.round(tdee).toLocaleString(), unit: "kcal/day", category: "Maintenance calories", tone: "good", interpretation: "Estimated maintenance calories from your existing age, sex, height, weight, and activity level.", range: `Loss ~${Math.round(tdee-500).toLocaleString()} · Gain ~${Math.round(tdee+300).toLocaleString()}` }; },
-  },
-  {
-    id: "macro-calculator", slug: "macro-calculator", name: "Macro Calculator", category: "Nutrition & Fitness",
-    requires: ["height", "weight", "age", "sex", "activity"],
-    description: "Calculate daily protein, carbohydrate, and fat targets from your existing body data and activity level.",
-    formula: "Calories from TDEE; protein ≈ 1.6 g/kg; fat ≈ 25% calories; carbs fill remaining calories",
-    compute: (s) => { const m = toMetric(s); const bmr=10*m.weightKg+6.25*m.heightCm-5*m.age+(m.sex === "male"?5:-161); const kcal=bmr*getActivityFactor(m.activity); const p=1.6*m.weightKg; const f=(kcal*.25)/9; const c=(kcal-p*4-f*9)/4; return { value: `${Math.round(p)}g P · ${Math.round(c)}g C · ${Math.round(f)}g F`, raw:kcal, unit:"/ day", category:`Based on ~${Math.round(kcal).toLocaleString()} kcal`, tone:"good", interpretation:"A practical starting macro split derived from your existing FitMe Pro measurements. Individual needs vary." }; },
-  },
-  {
-    id: "protein-calculator", slug: "protein-calculator", name: "Protein Calculator", category: "Nutrition & Fitness",
-    requires: ["weight", "activity"],
-    description: "Estimate a practical daily protein target using your existing weight and activity level.",
-    formula: "Protein target = body weight × activity-based protein factor",
-    compute: (s) => { const m=toMetric(s); const factor={sedentary:1.2,light:1.4,moderate:1.6,active:1.7,very_active:1.8}[m.activity]||1.6; const p=m.weightKg*factor; return { value: `${Math.round(p)}`, raw:p, unit:"g/day", category:`${factor.toFixed(1)} g/kg target`, tone:"good", interpretation:"Estimated daily protein target based on body weight and your selected activity level." }; },
-  },
-  {
-    id: "calories-burned-calculator", slug: "calories-burned-calculator", name: "Calories Burned Calculator", category: "Nutrition & Fitness",
-    requires: ["weight", "activity"],
-    description: "Estimate calories burned during 30 minutes of moderate exercise using your existing weight and activity level.",
-    formula: "Calories ≈ MET × 3.5 × weight(kg) / 200 × minutes",
-    compute: (s) => { const m=toMetric(s); const met={sedentary:2.5,light:3.5,moderate:5,active:7,very_active:8}[m.activity]||5; const kcal=met*3.5*m.weightKg/200*30; return { value: `${Math.round(kcal)}`, raw:kcal, unit:"kcal / 30 min", category:"Moderate activity estimate", tone:"good", interpretation:"Estimated energy expenditure for 30 minutes using your existing body weight and activity level. Actual burn varies by exercise and intensity." }; },
-  },
-  {
-    id: "pace-calculator", slug: "pace-calculator", name: "Pace Calculator", category: "Running & Training",
-    requires: [], extraInputs: true,
-    description: "Calculate running pace, speed, distance, and time. Body measurements are shared with FitMe Pro, while a run distance and time are required for a meaningful pace result.",
-    formula: "Pace = time ÷ distance; Speed = distance ÷ time",
-  },
-  {
-    id: "carbohydrate-calculator", slug: "carbohydrate-calculator", name: "Carbohydrate Calculator", category: "Nutrition & Fitness",
-    requires: ["height", "weight", "age", "sex", "activity"],
-    description: "Estimate daily carbohydrate intake from your existing calorie needs and activity level.",
-    formula: "Carbohydrates = remaining calories after protein and fat ÷ 4",
-    compute: (s) => { const m=toMetric(s); const bmr=10*m.weightKg+6.25*m.heightCm-5*m.age+(m.sex === "male"?5:-161); const kcal=bmr*getActivityFactor(m.activity); const p=m.weightKg*1.6; const f=kcal*.25/9; const c=Math.max(0,(kcal-p*4-f*9)/4); return {value:`${Math.round(c)}`,raw:c,unit:"g/day",category:`From ~${Math.round(kcal).toLocaleString()} kcal/day`,tone:"good",interpretation:"Estimated carbohydrate target after allocating a practical protein and fat baseline."}; },
-  },
-  {
-    id: "fat-intake-calculator", slug: "fat-intake-calculator", name: "Fat Intake Calculator", category: "Nutrition & Fitness",
-    requires: ["height", "weight", "age", "sex", "activity"],
-    description: "Estimate a daily dietary fat target from your existing calorie needs.",
-    formula: "Fat = target calories × 25% ÷ 9",
-    compute: (s) => { const m=toMetric(s); const bmr=10*m.weightKg+6.25*m.heightCm-5*m.age+(m.sex === "male"?5:-161); const kcal=bmr*getActivityFactor(m.activity); const f=kcal*.25/9; return {value:`${Math.round(f)}`,raw:f,unit:"g/day",category:`25% of ~${Math.round(kcal).toLocaleString()} kcal`,tone:"good",interpretation:"Estimated dietary fat target using 25% of estimated maintenance calories as a starting point."}; },
-  },
-  {
-    id: "one-rep-max-calculator", slug: "one-rep-max-calculator", name: "One Rep Max Calculator", category: "Strength Training",
-    requires: [], extraInputs: true,
-    description: "Estimate your one-repetition maximum from a lifting set. Enter the weight and repetitions on the calculator page.",
-    formula: "Epley: 1RM = weight × (1 + reps / 30)",
-  },
-  {
-    id: "target-heart-rate-calculator", slug: "target-heart-rate-calculator", name: "Target Heart Rate Zone", category: "Running & Training",
-    requires: ["age"],
-    description: "Find exercise heart-rate zones from your existing age.",
-    formula: "Estimated HRmax = 220 − age; zones are percentages of HRmax",
-    compute: (s) => { const m=toMetric(s); const max=220-m.age; return {value:`${Math.round(max*.64)}–${Math.round(max*.76)}`,raw:max,unit:"bpm",category:`Zone 2 · estimated HRmax ${Math.round(max)} bpm`,tone:"good",interpretation:"Estimated moderate aerobic zone using 220 − age. Heart-rate response varies between individuals."}; },
-  },
-  {
-    id: "army-body-fat-calculator", slug: "army-body-fat-calculator", name: "Army Body Fat Calculator", category: "Body Composition",
-    requires: ["height", "waist", "neck", "sex"],
-    description: "Estimate body fat using your existing FitMe Pro height and circumference measurements.",
-    formula: "U.S. military circumference-based body-fat equation",
-    compute: (s) => { const m=toMetric(s); let bf; if(m.sex === "male"){ if(!(m.waistCm>m.neckCm)) return {value:"—",tone:"neutral",interpretation:"Check waist and neck measurements."}; bf=495/(1.0324-.19077*Math.log10(m.waistCm-m.neckCm)+.15456*Math.log10(m.heightCm))-450; } else { if(!(m.hipCm>0&&m.waistCm+m.hipCm>m.neckCm)) return {value:"—",tone:"neutral",interpretation:"Enter hip circumference for the female equation."}; bf=495/(1.29579-.35004*Math.log10(m.waistCm+m.hipCm-m.neckCm)+.221*Math.log10(m.heightCm))-450; } return {value:formatNumber(bf,1),raw:bf,unit:"%",category:"Circumference estimate",tone:bf<25?"good":bf<32?"warn":"bad",interpretation:"Estimated body-fat percentage using height, waist, neck, and hip where required. Results depend on measurement technique."}; },
-  },
+  { id:"calorie-calculator",slug:"calorie-calculator",name:"Calorie Calculator",category:"Nutrition & Fitness",requires:["height","weight","age","sex","activity"],description:"Estimate daily calorie needs for weight loss, maintenance, or gain using your existing FitMe Pro measurements.",formula:"BMR = 10W + 6.25H − 5A + sex constant; TDEE = BMR × activity factor",compute:(s)=>{const m=toMetric(s);const bmr=10*m.weightKg+6.25*m.heightCm-5*m.age+(m.sex==="male"?5:-161);const tdee=bmr*getActivityFactor(m.activity);return{value:Math.round(tdee).toLocaleString(),unit:"kcal/day",category:"Maintenance calories",tone:"good",interpretation:"Estimated maintenance calories from your existing age, sex, height, weight, and activity level.",range:`Loss ~${Math.round(tdee-500).toLocaleString()} · Gain ~${Math.round(tdee+300).toLocaleString()}`};}},
+  { id:"macro-calculator",slug:"macro-calculator",name:"Macro Calculator",category:"Nutrition & Fitness",requires:["height","weight","age","sex","activity"],description:"Calculate daily protein, carbohydrate, and fat targets from your existing body data and activity level.",formula:"Calories from TDEE; protein ≈ 1.6 g/kg; fat ≈ 25% calories; carbs fill remaining calories",compute:(s)=>{const m=toMetric(s);const bmr=10*m.weightKg+6.25*m.heightCm-5*m.age+(m.sex==="male"?5:-161);const kcal=bmr*getActivityFactor(m.activity);const p=1.6*m.weightKg;const f=kcal*.25/9;const c=(kcal-p*4-f*9)/4;return{value:`${Math.round(p)}g P · ${Math.round(c)}g C · ${Math.round(f)}g F`,raw:kcal,unit:"/ day",category:`Based on ~${Math.round(kcal).toLocaleString()} kcal`,tone:"good",interpretation:"A practical starting macro split derived from your existing FitMe Pro measurements. Individual needs vary."};}},
+  { id:"protein-calculator",slug:"protein-calculator",name:"Protein Calculator",category:"Nutrition & Fitness",requires:["weight","activity"],description:"Estimate a practical daily protein target using your existing weight and activity level.",formula:"Protein target = body weight × activity-based protein factor",compute:(s)=>{const m=toMetric(s);const factor={sedentary:1.2,light:1.4,moderate:1.6,active:1.7,very_active:1.8}[m.activity]||1.6;const p=m.weightKg*factor;return{value:`${Math.round(p)}`,raw:p,unit:"g/day",category:`${factor.toFixed(1)} g/kg target`,tone:"good",interpretation:"Estimated daily protein target based on body weight and your selected activity level."};}},
+  { id:"calories-burned-calculator",slug:"calories-burned-calculator",name:"Calories Burned Calculator",category:"Nutrition & Fitness",requires:["weight","activity"],description:"Estimate calories burned during 30 minutes of moderate exercise using your existing weight and activity level.",formula:"Calories ≈ MET × 3.5 × weight(kg) / 200 × minutes",compute:(s)=>{const m=toMetric(s);const met={sedentary:2.5,light:3.5,moderate:5,active:7,very_active:8}[m.activity]||5;const kcal=met*3.5*m.weightKg/200*30;return{value:`${Math.round(kcal)}`,raw:kcal,unit:"kcal / 30 min",category:"Moderate activity estimate",tone:"good",interpretation:"Estimated energy expenditure for 30 minutes using your existing body weight and activity level. Actual burn varies by exercise and intensity."};}},
+  { id:"pace-calculator",slug:"pace-calculator",name:"Pace Calculator",category:"Running & Training",requires:[],extraInputs:true,description:"Calculate running pace, speed, distance, and time. Body measurements are shared with FitMe Pro, while a run distance and time are required for a meaningful pace result.",formula:"Pace = time ÷ distance; Speed = distance ÷ time" },
+  { id:"carbohydrate-calculator",slug:"carbohydrate-calculator",name:"Carbohydrate Calculator",category:"Nutrition & Fitness",requires:["height","weight","age","sex","activity"],description:"Estimate daily carbohydrate intake from your existing calorie needs and activity level.",formula:"Carbohydrates = remaining calories after protein and fat ÷ 4",compute:(s)=>{const m=toMetric(s);const bmr=10*m.weightKg+6.25*m.heightCm-5*m.age+(m.sex==="male"?5:-161);const kcal=bmr*getActivityFactor(m.activity);const p=m.weightKg*1.6;const f=kcal*.25/9;const c=Math.max(0,(kcal-p*4-f*9)/4);return{value:`${Math.round(c)}`,raw:c,unit:"g/day",category:`From ~${Math.round(kcal).toLocaleString()} kcal/day`,tone:"good",interpretation:"Estimated carbohydrate target after allocating a practical protein and fat baseline."};}},
+  { id:"fat-intake-calculator",slug:"fat-intake-calculator",name:"Fat Intake Calculator",category:"Nutrition & Fitness",requires:["height","weight","age","sex","activity"],description:"Estimate a daily dietary fat target from your existing calorie needs.",formula:"Fat = target calories × 25% ÷ 9",compute:(s)=>{const m=toMetric(s);const bmr=10*m.weightKg+6.25*m.heightCm-5*m.age+(m.sex==="male"?5:-161);const kcal=bmr*getActivityFactor(m.activity);const f=kcal*.25/9;return{value:`${Math.round(f)}`,raw:f,unit:"g/day",category:`25% of ~${Math.round(kcal).toLocaleString()} kcal`,tone:"good",interpretation:"Estimated dietary fat target using 25% of estimated maintenance calories as a starting point."};}},
+  { id:"one-rep-max-calculator",slug:"one-rep-max-calculator",name:"One Rep Max Calculator",category:"Strength Training",requires:[],extraInputs:true,description:"Estimate your one-repetition maximum from a lifting set. Enter the weight and repetitions on the calculator page.",formula:"Epley: 1RM = weight × (1 + reps / 30)" },
+  { id:"target-heart-rate-calculator",slug:"target-heart-rate-calculator",name:"Target Heart Rate Zone",category:"Running & Training",requires:["age"],description:"Find exercise heart-rate zones from your existing age.",formula:"Estimated HRmax = 220 − age; zones are percentages of HRmax",compute:(s)=>{const m=toMetric(s);const max=220-m.age;return{value:`${Math.round(max*.64)}–${Math.round(max*.76)}`,raw:max,unit:"bpm",category:`Zone 2 · estimated HRmax ${Math.round(max)} bpm`,tone:"good",interpretation:"Estimated moderate aerobic zone using 220 − age. Heart-rate response varies between individuals."};}},
+  { id:"army-body-fat-calculator",slug:"army-body-fat-calculator",name:"Army Body Fat Calculator",category:"Body Composition",requires:["height","waist","neck","sex"],description:"Estimate body fat using your existing FitMe Pro height and circumference measurements.",formula:"U.S. military circumference-based body-fat equation",compute:(s)=>{const m=toMetric(s);let bf;if(m.sex==="male"){if(!(m.waistCm>m.neckCm))return{value:"—",tone:"neutral",interpretation:"Check waist and neck measurements."};bf=495/(1.0324-.19077*Math.log10(m.waistCm-m.neckCm)+.15456*Math.log10(m.heightCm))-450;}else{if(!(m.hipCm>0&&m.waistCm+m.hipCm>m.neckCm))return{value:"—",tone:"neutral",interpretation:"Enter hip circumference for the female equation."};bf=495/(1.29579-.35004*Math.log10(m.waistCm+m.hipCm-m.neckCm)+.221*Math.log10(m.heightCm))-450;}return{value:formatNumber(bf,1),raw:bf,unit:"%",category:"Circumference estimate",tone:bf<25?"good":bf<32?"warn":"bad",interpretation:"Estimated body-fat percentage using height, waist, neck, and hip where required. Results depend on measurement technique."};}}
 ];
 
-export const SPECIALIZED_BY_ID = Object.fromEntries(SPECIALIZED_CALCULATORS.map((c) => [c.id, c]));
+export const SPECIALIZED_BY_ID=Object.fromEntries(SPECIALIZED_CALCULATORS.map((c)=>[c.id,c]));
+export function getSpecializedCalculator(id){return SPECIALIZED_BY_ID[id]||null;}
 
-export function getSpecializedCalculator(id) { return SPECIALIZED_BY_ID[id] || null; }
-
-export function computeSpecialized(id, state) {
-  const calc = getSpecializedCalculator(id);
-  if (!calc?.compute) return null;
-  try { return calc.compute(state); } catch { return null; }
-}
+function hasInputs(calc,state){const m=toMetric(state);return calc.requires.every((r)=>r==="sex"?(m.sex==="male"||m.sex==="female"):r==="activity"?!!m.activity:r==="age"?Number.isFinite(m.age)&&m.age>0:r==="height"?Number.isFinite(m.heightCm)&&m.heightCm>0:r==="weight"?Number.isFinite(m.weightKg)&&m.weightKg>0:r==="waist"?Number.isFinite(m.waistCm)&&m.waistCm>0:r==="neck"?Number.isFinite(m.neckCm)&&m.neckCm>0:true);}
+export function computeSpecialized(id,state){const calc=getSpecializedCalculator(id);if(!calc?.compute||!hasInputs(calc,state))return null;try{return calc.compute(state);}catch{return null;}}
