@@ -43,10 +43,6 @@
     .dark {
         --background: 0 0% 4%;
         --foreground: 210 40% 98%;
-        --card: 0 0% 7%;
-        --card-foreground: 210 40% 98%;
-        --popover: 0 0% 7%;
-        --popover-foreground: 210 40% 98%;
         --primary: 160 84% 39%;
         --primary-foreground: 0 0% 100%;
         --secondary: 217 91% 60%;
@@ -71,6 +67,12 @@
     .font-display { font-family: var(--font-display); }
     .font-mono-data { font-family: var(--font-mono); }
 }
+
+/* Compatibility layer: any remaining legacy lime accent renders as FitMe Pro emerald. */
+[fill="#CCFF00"] { fill: var(--brand-lime) !important; }
+[stroke="#CCFF00"] { stroke: var(--brand-lime) !important; }
+[style*="#CCFF00"] { color: var(--brand-lime) !important; background-color: var(--brand-lime) !important; border-color: var(--brand-lime) !important; }
+main > section:first-child > div:first-child[style*="radial-gradient"] { background-image: radial-gradient(circle at 20% 30%, #059669 0%, transparent 40%), radial-gradient(circle at 80% 70%, #3B82F6 0%, transparent 40%) !important; }
 
 .grain::before {
     content: ""; position: fixed; inset: 0; pointer-events: none !important; z-index: 0; opacity: 0.03;
