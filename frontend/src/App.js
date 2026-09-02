@@ -16,14 +16,25 @@ import Contact from "./pages/contact";
 import Compare from "@/pages/Compare";
 
 function ScrollToTop() {
-  const { pathname } = useLocation();
+  const location = useLocation();
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
-  }, [pathname]);
+    if ("scrollRestoration" in window.history) window.history.scrollRestoration = "manual";
+    const scroll = () => window.scrollTo(0, 0);
+    scroll();
+    const frame1 = requestAnimationFrame(scroll);
+    const frame2 = requestAnimationFrame(() => requestAnimationFrame(scroll));
+    return () => {
+      cancelAnimationFrame(frame1);
+      cancelAnimationFrame(frame2);
+    };
+  }, [location.pathname, location.key]);
   return null;
 }
 
-function LegacyCalculatorRedirect() { const { slug } = useParams(); return <Navigate to={slug ? `/${slug}-calculator` : "/"} replace />; }
+function LegacyCalculatorRedirect() {
+  const { slug } = useParams();
+  return <Navigate to={slug ? `/${slug}-calculator` : "/"} replace />;
+}
 
 function App() {
   return <div className="App"><ThemeProvider><MeasurementProvider><BrowserRouter><ScrollToTop /><Header /><Routes>
