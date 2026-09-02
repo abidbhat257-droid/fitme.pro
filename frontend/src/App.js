@@ -1,5 +1,5 @@
 import "@/App.css";
-import { BrowserRouter, Routes, Route, Navigate, useParams, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, useParams, useLocation, useNavigationType } from "react-router-dom";
 import { useEffect, useLayoutEffect } from "react";
 import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "@/context/ThemeContext";
@@ -17,52 +17,21 @@ import Terms from "./pages/terms";
 import Contact from "./pages/contact";
 import Compare from "@/pages/Compare";
 
-function forceTop() {
-  const reset = () => {
-    window.scrollTo(0, 0);
-    document.documentElement.scrollTop = 0;
-    document.body.scrollTop = 0;
-    if (document.scrollingElement) document.scrollingElement.scrollTop = 0;
-    document.querySelectorAll("[data-scroll-container]").forEach((el) => { el.scrollTop = 0; });
-  };
-  reset();
-  requestAnimationFrame(() => { reset(); requestAnimationFrame(reset); });
-  setTimeout(reset, 0);
-  setTimeout(reset, 30);
-  setTimeout(reset, 100);
-  setTimeout(reset, 250);
-  setTimeout(reset, 500);
-}
-
-function ScrollToTop() {
+function ScrollManager() {
   const location = useLocation();
+  const navigationType = useNavigationType();
 
   useLayoutEffect(() => {
-    if ("scrollRestoration" in window.history) window.history.scrollRestoration = "manual";
-    forceTop();
-  }, [location.pathname, location.key]);
+    if (!("scrollRestoration" in window.history)) return;
+    window.history.scrollRestoration = "auto";
+  }, []);
 
   useEffect(() => {
-    const handleClick = (event) => {
-      const target = event.target instanceof Element ? event.target.closest("a,button") : null;
-      if (!target) return;
-      const href = target.getAttribute("href") || "";
-      const label = (target.textContent || "").trim().toLowerCase();
-      const isBackLink = target.tagName === "A" && label.includes("back to dashboard");
-      const isNavigation = target.tagName === "A" && href && !href.startsWith("#") && !href.startsWith("http") && !href.startsWith("mailto:");
-      const isDashboardFilter = target.matches('[data-testid^="dash-chip-"]');
-
-      if (isBackLink) {
-        event.preventDefault();
-        if (window.history.length > 1) window.history.back();
-        else window.location.assign("/");
-        return;
-      }
-      if (isNavigation || isDashboardFilter) forceTop();
-    };
-    document.addEventListener("click", handleClick, true);
-    return () => document.removeEventListener("click", handleClick, true);
-  }, []);
+    // New navigation starts at the top. Browser back/forward keeps the exact position.
+    if (navigationType !== "PUSH" && navigationType !== "REPLACE") return;
+    const frame = requestAnimationFrame(() => window.scrollTo({ top: 0, left: 0, behavior: "auto" }));
+    return () => cancelAnimationFrame(frame);
+  }, [location.key, navigationType]);
 
   return null;
 }
@@ -73,7 +42,7 @@ function LegacyCalculatorRedirect() {
 }
 
 function App() {
-  return <div className="App"><ThemeProvider><MeasurementProvider><BrowserRouter><ScrollToTop /><Sidebar /><Header /><Routes>
+  return <div className="App"><ThemeProvider><MeasurementProvider><BrowserRouter><ScrollManager /><Sidebar /><Header /><Routes>
     <Route path="/" element={<Dashboard />} /><Route path="/about" element={<About />} /><Route path="/privacy-policy" element={<PrivacyPolicy />} /><Route path="/terms" element={<Terms />} /><Route path="/contact" element={<Contact />} /><Route path="/compare" element={<Compare />} />
     <Route path="/calculator/:slug" element={<LegacyCalculatorRedirect />} />
     {SPECIALIZED_CALCULATORS.map((calc) => <Route key={calc.id} path={`/${calc.slug}`} element={<SpecializedCalculatorPage calculatorId={calc.id} />} />)}
