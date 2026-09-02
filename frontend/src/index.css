@@ -6,59 +6,18 @@
     --font-display: 'Clash Display', ui-sans-serif, system-ui, sans-serif;
     --font-body: 'Manrope', ui-sans-serif, system-ui, sans-serif;
     --font-mono: 'JetBrains Mono', ui-monospace, monospace;
-
     --brand-lime: #059669;
     --brand-lime-soft: #34D399;
-
     --cat-basic: #3B82F6;
     --cat-composition: #F97316;
     --cat-shape: #EC4899;
     --cat-metabolism: #EAB308;
     --cat-advanced: #EF4444;
 }
-
 @layer base {
-    :root {
-        --background: 210 20% 98%;
-        --foreground: 222 47% 11%;
-        --card: 0 0% 100%;
-        --card-foreground: 222 47% 11%;
-        --popover: 0 0% 100%;
-        --popover-foreground: 222 47% 11%;
-        --primary: 160 84% 39%;
-        --primary-foreground: 0 0% 100%;
-        --secondary: 217 91% 60%;
-        --secondary-foreground: 0 0% 100%;
-        --muted: 210 20% 94%;
-        --muted-foreground: 215 16% 40%;
-        --accent: 160 84% 39%;
-        --accent-foreground: 0 0% 100%;
-        --destructive: 0 84% 60%;
-        --destructive-foreground: 0 0% 98%;
-        --border: 214 20% 88%;
-        --input: 214 20% 88%;
-        --ring: 160 84% 39%;
-        --radius: 0.25rem;
-    }
-    .dark {
-        --background: 0 0% 4%;
-        --foreground: 210 40% 98%;
-        --primary: 160 84% 39%;
-        --primary-foreground: 0 0% 100%;
-        --secondary: 217 91% 60%;
-        --secondary-foreground: 0 0% 100%;
-        --muted: 0 0% 12%;
-        --muted-foreground: 215 20% 65%;
-        --accent: 160 84% 39%;
-        --accent-foreground: 0 0% 100%;
-        --destructive: 0 62% 45%;
-        --destructive-foreground: 0 0% 98%;
-        --border: 0 0% 15%;
-        --input: 0 0% 15%;
-        --ring: 160 84% 39%;
-    }
+    :root { --background: 210 20% 98%; --foreground: 222 47% 11%; --card: 0 0% 100%; --card-foreground: 222 47% 11%; --popover: 0 0% 100%; --popover-foreground: 222 47% 11%; --primary: 160 84% 39%; --primary-foreground: 0 0% 100%; --secondary: 217 91% 60%; --secondary-foreground: 0 0% 100%; --muted: 210 20% 94%; --muted-foreground: 215 16% 40%; --accent: 160 84% 39%; --accent-foreground: 0 0% 100%; --destructive: 0 84% 60%; --destructive-foreground: 0 0% 98%; --border: 214 20% 88%; --input: 214 20% 88%; --ring: 160 84% 39%; --radius: 0.25rem; }
+    .dark { --background: 0 0% 0%; --foreground: 210 40% 98%; --card: 0 0% 4%; --card-foreground: 210 40% 98%; --popover: 0 0% 3%; --popover-foreground: 210 40% 98%; --primary: 160 84% 39%; --primary-foreground: 0 0% 100%; --secondary: 217 91% 60%; --secondary-foreground: 0 0% 100%; --muted: 0 0% 8%; --muted-foreground: 215 20% 65%; --accent: 160 84% 39%; --accent-foreground: 0 0% 100%; --destructive: 0 62% 45%; --destructive-foreground: 0 0% 98%; --border: 0 0% 15%; --input: 0 0% 15%; --ring: 160 84% 39%; }
 }
-
 @layer base {
     * { @apply border-border; }
     html { font-family: var(--font-body); -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
@@ -67,35 +26,19 @@
     .font-display { font-family: var(--font-display); }
     .font-mono-data { font-family: var(--font-mono); }
 }
-
-/* Compatibility layer: any remaining legacy lime accent renders as FitMe Pro emerald. */
 [fill="#CCFF00"] { fill: var(--brand-lime) !important; }
 [stroke="#CCFF00"] { stroke: var(--brand-lime) !important; }
 [style*="#CCFF00"] { color: var(--brand-lime) !important; background-color: var(--brand-lime) !important; border-color: var(--brand-lime) !important; }
 main > section:first-child > div:first-child[style*="radial-gradient"] { background-image: radial-gradient(circle at 20% 30%, #059669 0%, transparent 40%), radial-gradient(circle at 80% 70%, #3B82F6 0%, transparent 40%) !important; }
-
-.grain::before {
-    content: ""; position: fixed; inset: 0; pointer-events: none !important; z-index: 0; opacity: 0.03;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-}
-
+.grain::before { content: ""; position: fixed; inset: 0; pointer-events: none !important; z-index: 0; opacity: 0.03; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
 .dark ::-webkit-scrollbar { width: 10px; height: 10px; }
-.dark ::-webkit-scrollbar-track { background: hsl(var(--background)); }
+.dark ::-webkit-scrollbar-track { background: #000; }
 .dark ::-webkit-scrollbar-thumb { background: hsl(var(--border)); border-radius: 4px; }
 .dark ::-webkit-scrollbar-thumb:hover { background: hsl(var(--muted-foreground)); }
-
 ::selection { background: var(--brand-lime); color: #fff; }
-
 .brut-hover { transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease; }
 .brut-hover:hover { transform: translate(-2px, -2px); box-shadow: 4px 4px 0 0 var(--brand-lime); }
-
 @keyframes cardIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
 .card-in { animation: cardIn 380ms ease both; }
-
-@media print {
-    .no-print { display: none !important; }
-    body { background: #fff !important; color: #000 !important; }
-    .print-grid { grid-template-columns: repeat(2, 1fr) !important; }
-}
-
+@media print { .no-print { display: none !important; } body { background: #fff !important; color: #000 !important; } .print-grid { grid-template-columns: repeat(2, 1fr) !important; } }
 @media (prefers-reduced-motion: reduce) { .card-in { animation: none; } .brut-hover { transition: none; } }
