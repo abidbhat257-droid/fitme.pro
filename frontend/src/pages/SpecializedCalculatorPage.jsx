@@ -1,10 +1,10 @@
 import React, { useEffect, useMemo, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { ArrowLeft, ShareNetwork, Printer, Copy } from "@phosphor-icons/react";
 import { toast } from "sonner";
 import MeasurementPanel from "@/components/MeasurementPanel";
 import { useMeasurements } from "@/context/MeasurementContext";
-import { getSpecializedCalculator } from "@/lib/specializedCalculators";
+import { SPECIALIZED_CALCULATORS, getSpecializedCalculator } from "@/lib/specializedCalculators";
 import { toMetric } from "@/lib/units";
 
 const CATEGORY_COLORS = { "Nutrition & Fitness": "#059669", "Running & Training": "#059669", "Strength Training": "#059669", "Body Composition": "#059669" };
@@ -13,18 +13,42 @@ function normalizeSlug(value) {
   return String(value || "").trim().replace(/^\/+|\/+$/g, "").replace(/-calculator-calculator$/, "-calculator");
 }
 
-function resolveCalculator(value) {
-  const slug = normalizeSlug(value);
-  return getSpecializedCalculator(slug) || getSpecializedCalculator(slug.replace(/-calculator$/, "")) || null;
+// Resolve from the actual browser pathname as well as the router param.
+// This makes the specialized pages resilient to direct links, refreshes, and
+// any trailing-slash/duplicate-suffix variation introduced by navigation.
+function resolveCalculator(value, pathname) {
+  const candidates = [
+    value,
+    String(pathname || "").split("/").filter(Boolean).pop(),
+  ].map(normalizeSlug).filter(Boolean);
+
+  for (const slug of candidates) {
+    const exact = getSpecializedCalculator(slug);
+    if (exact) return exact;
+
+    const withoutSuffix = slug.replace(/-calculator$/, "");
+    const byId = getSpecializedCalculator(withoutSuffix);
+    if (byId) return byId;
+
+    const byRegistry = SPECIALIZED_CALCULATORS.find((item) =>
+      normalizeSlug(item.slug) === slug ||
+      normalizeSlug(item.id) === slug ||
+      normalizeSlug(item.slug).replace(/-calculator$/, "") === withoutSuffix ||
+      normalizeSlug(item.id).replace(/-calculator$/, "") === withoutSuffix
+    );
+    if (byRegistry) return byRegistry;
+  }
+
+  return null;
 }
 
 function sharedReady(calc, state) { const m=toMetric(state); return calc.requires.every((r)=>r==="sex"?(m.sex==="male"||m.sex==="female"):r==="activity"?!!m.activity:r==="age"?Number.isFinite(m.age)&&m.age>0:r==="height"?Number.isFinite(m.heightCm)&&m.heightCm>0:r==="weight"?Number.isFinite(m.weightKg)&&m.weightKg>0:r==="waist"?Number.isFinite(m.waistCm)&&m.waistCm>0:r==="neck"?Number.isFinite(m.neckCm)&&m.neckCm>0:true); }
 function ExtraResult({ id, values }) { if(id==="pace-calculator"){const distance=Number(values.distance),minutes=Number(values.minutes),seconds=Number(values.seconds)||0;if(!(distance>0)||!(minutes>=0)||!(seconds>=0))return null;const total=minutes*60+seconds;if(!(total>0))return null;const pace=total/distance,pm=Math.floor(pace/60),ps=Math.round(pace%60),speed=distance/(total/3600);return {value:`${pm}:${String(ps).padStart(2,"0")}`,unit:"min/km",category:`${speed.toFixed(1)} km/h`,interpretation:"Running pace calculated from the distance and elapsed time you entered."};}const weight=Number(values.liftWeight),reps=Number(values.reps);if(!(weight>0)||!(reps>0)||reps>30)return null;const oneRM=weight*(1+reps/30);return {value:oneRM.toFixed(1),unit:"kg estimated 1RM",category:`Epley estimate from ${weight} kg × ${reps} reps`,interpretation:"Estimated one-repetition maximum using the Epley equation. Use conservative loads when applying an estimate to training."}; }
 
 export default function SpecializedCalculatorPage(){
-  const {slug}=useParams();
-  const calc=resolveCalculator(slug);
+  const location=useLocation();
   const {state}=useMeasurements();
+  const calc=resolveCalculator(null, location.pathname);
   const [values,setValues]=useState({distance:"5",minutes:"30",seconds:"0",liftWeight:"60",reps:"8"});
   const color=CATEGORY_COLORS[calc?.category]||"#059669";
   const ready=!!calc&&sharedReady(calc,state);
