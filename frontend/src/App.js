@@ -47,8 +47,17 @@ function ScrollToTop() {
       const target = event.target instanceof Element ? event.target.closest("a,button") : null;
       if (!target) return;
       const href = target.getAttribute("href") || "";
+      const label = (target.textContent || "").trim().toLowerCase();
+      const isBackLink = target.tagName === "A" && label.includes("back to dashboard");
       const isNavigation = target.tagName === "A" && href && !href.startsWith("#") && !href.startsWith("http") && !href.startsWith("mailto:");
       const isDashboardFilter = target.matches('[data-testid^="dash-chip-"]');
+
+      if (isBackLink) {
+        event.preventDefault();
+        if (window.history.length > 1) window.history.back();
+        else window.location.assign("/");
+        return;
+      }
       if (isNavigation || isDashboardFilter) forceTop();
     };
     document.addEventListener("click", handleClick, true);
