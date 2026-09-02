@@ -1,4 +1,5 @@
 import React, { useMemo, useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import MeasurementPanel from "@/components/MeasurementPanel";
 import ResultCard from "@/components/ResultCard";
 import RadarProfile from "@/components/viz/RadarProfile";
@@ -7,40 +8,54 @@ import { CALCULATORS, CALCULATORS_BY_CATEGORY } from "@/lib/calculators";
 import { useAllResults } from "@/hooks/useAllResults";
 import { useMeasurements } from "@/context/MeasurementContext";
 import { DASH } from "@/constants/testIds";
-import { MagnifyingGlass, Lightning } from "@phosphor-icons/react";
+import { MagnifyingGlass, Lightning, ArrowRight } from "@phosphor-icons/react";
 
 const SITE_URL = "https://fitme-pro.vercel.app";
+
+const SPECIALIZED_CALCULATORS = [
+  { id: "calorie-calculator", name: "Calorie Calculator", description: "Estimate daily calorie needs for weight loss, maintenance, or gain.", category: "Nutrition & Fitness" },
+  { id: "macro-calculator", name: "Macro Calculator", description: "Calculate daily protein, carbohydrate, and fat targets.", category: "Nutrition & Fitness" },
+  { id: "protein-calculator", name: "Protein Calculator", description: "Estimate a practical daily protein target based on your body and activity.", category: "Nutrition & Fitness" },
+  { id: "calories-burned-calculator", name: "Calories Burned Calculator", description: "Estimate calories burned during common physical activities.", category: "Nutrition & Fitness" },
+  { id: "pace-calculator", name: "Pace Calculator", description: "Calculate running pace, speed, distance, and time.", category: "Running & Training" },
+  { id: "carbohydrate-calculator", name: "Carbohydrate Calculator", description: "Estimate daily carbohydrate intake for your goals and activity.", category: "Nutrition & Fitness" },
+  { id: "fat-intake-calculator", name: "Fat Intake Calculator", description: "Estimate a daily dietary fat target from calorie needs.", category: "Nutrition & Fitness" },
+  { id: "one-rep-max-calculator", name: "One Rep Max Calculator", description: "Estimate your one-repetition maximum from a lifting set.", category: "Strength Training" },
+  { id: "target-heart-rate-calculator", name: "Target Heart Rate Zone", description: "Find exercise heart-rate zones from your age and training intensity.", category: "Running & Training" },
+  { id: "army-body-fat-calculator", name: "Army Body Fat Calculator", description: "Estimate body fat using the U.S. military circumference method.", category: "Body Composition" },
+];
 
 function upsertMeta(name, content, isProperty = false) {
   const attribute = isProperty ? "property" : "name";
   let el = document.head.querySelector(`meta[${attribute}="${name}"]`);
-  if (!el) {
-    el = document.createElement("meta");
-    el.setAttribute(attribute, name);
-    document.head.appendChild(el);
-  }
+  if (!el) { el = document.createElement("meta"); el.setAttribute(attribute, name); document.head.appendChild(el); }
   el.setAttribute("content", content);
 }
 
 function upsertCanonical(url) {
   let el = document.head.querySelector('link[rel="canonical"]');
-  if (!el) {
-    el = document.createElement("link");
-    el.setAttribute("rel", "canonical");
-    document.head.appendChild(el);
-  }
+  if (!el) { el = document.createElement("link"); el.setAttribute("rel", "canonical"); document.head.appendChild(el); }
   el.setAttribute("href", url);
 }
 
 function upsertJsonLd(data) {
   let el = document.getElementById("fitme-home-jsonld");
-  if (!el) {
-    el = document.createElement("script");
-    el.type = "application/ld+json";
-    el.id = "fitme-home-jsonld";
-    document.head.appendChild(el);
-  }
+  if (!el) { el = document.createElement("script"); el.type = "application/ld+json"; el.id = "fitme-home-jsonld"; document.head.appendChild(el); }
   el.textContent = JSON.stringify(data);
+}
+
+function SpecializedCard({ calc }) {
+  return (
+    <Link to={`/${calc.id}`} className="group block border border-border bg-card/40 p-5 transition-colors hover:border-[var(--brand-lime)] hover:bg-card/70">
+      <div className="flex items-center justify-between gap-3 mb-3">
+        <span className="text-[9px] font-bold uppercase tracking-[0.2em] text-muted-foreground">{calc.category}</span>
+        <ArrowRight size={16} className="text-muted-foreground transition-transform group-hover:translate-x-1 group-hover:text-[var(--brand-lime)]" />
+      </div>
+      <h3 className="font-display text-xl uppercase tracking-tight">{calc.name}</h3>
+      <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{calc.description}</p>
+      <div className="mt-4 text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--brand-lime)]">Open calculator →</div>
+    </Link>
+  );
 }
 
 export default function Dashboard() {
@@ -49,10 +64,8 @@ export default function Dashboard() {
   const [activeCat, setActiveCat] = useState("all");
 
   useEffect(() => {
-    const title = "Fitme Pro — 30 Health & Body Composition Calculators";
-    const description =
-      "Free health and body composition calculators for BMI, body fat, BMR, TDEE, calorie needs, ideal weight, and more. Enter your measurements once and get instant results.";
-
+    const title = "Fitme Pro — 40 Health & Body Composition Calculators";
+    const description = "Free health, body composition, nutrition, and fitness calculators. Use 40 calculators for BMI, body fat, BMR, TDEE, calories, macros, protein, running, and more.";
     document.title = title;
     upsertMeta("description", description);
     upsertMeta("og:title", title, true);
@@ -64,55 +77,30 @@ export default function Dashboard() {
     upsertMeta("twitter:title", title);
     upsertMeta("twitter:description", description);
     upsertCanonical(`${SITE_URL}/`);
-
-    upsertJsonLd({
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebSite",
-          "@id": `${SITE_URL}/#website`,
-          url: `${SITE_URL}/`,
-          name: "Fitme Pro",
-          description,
-        },
-        {
-          "@type": "WebApplication",
-          "@id": `${SITE_URL}/#application`,
-          name: "Fitme Pro Health & Body Composition Calculators",
-          url: `${SITE_URL}/`,
-          applicationCategory: "HealthApplication",
-          operatingSystem: "Web",
-          isAccessibleForFree: true,
-          offers: {
-            "@type": "Offer",
-            price: "0",
-            priceCurrency: "USD",
-          },
-        },
-      ],
-    });
-
-    return () => {
-      const jsonLd = document.getElementById("fitme-home-jsonld");
-      if (jsonLd) jsonLd.remove();
-    };
+    upsertJsonLd({ "@context": "https://schema.org", "@graph": [
+      { "@type": "WebSite", "@id": `${SITE_URL}/#website`, url: `${SITE_URL}/`, name: "Fitme Pro", description },
+      { "@type": "WebApplication", "@id": `${SITE_URL}/#application`, name: "Fitme Pro Health, Fitness & Body Composition Calculators", url: `${SITE_URL}/`, applicationCategory: "HealthApplication", operatingSystem: "Web", isAccessibleForFree: true, offers: { "@type": "Offer", price: "0", priceCurrency: "USD" } }
+    ] });
+    return () => { const jsonLd = document.getElementById("fitme-home-jsonld"); if (jsonLd) jsonLd.remove(); };
   }, []);
 
   const results = useAllResults(state);
-
   const filteredCategories = useMemo(() => {
     const q = query.trim().toLowerCase();
     return CALCULATORS_BY_CATEGORY
       .filter((cat) => activeCat === "all" || activeCat === cat.key)
-      .map((cat) => ({
-        ...cat,
-        items: cat.items.filter((c) => !q || c.name.toLowerCase().includes(q)),
-      }))
+      .map((cat) => ({ ...cat, items: cat.items.filter((c) => !q || c.name.toLowerCase().includes(q)) }))
       .filter((cat) => cat.items.length > 0);
   }, [query, activeCat]);
 
-  const readyCount = Object.values(results).filter((r) => r.ready).length;
+  const filteredSpecialized = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    if (activeCat !== "all" && activeCat !== "specialized") return [];
+    return SPECIALIZED_CALCULATORS.filter((c) => !q || `${c.name} ${c.description} ${c.category}`.toLowerCase().includes(q));
+  }, [query, activeCat]);
 
+  const readyCount = Object.values(results).filter((r) => r.ready).length;
+  const totalCount = CALCULATORS.length + SPECIALIZED_CALCULATORS.length;
   const isMale = state.sex === "male";
   const radarAxes = useMemo(() => [
     { key: "bmi", label: "BMI", value: results["bmi"]?.result?.raw, min: 15, max: 40, ideal: 22 },
@@ -122,59 +110,23 @@ export default function Dashboard() {
     { key: "ffmi", label: "FFMI", value: results["ffmi"]?.result?.raw, min: 14, max: 25, ideal: isMale ? 22 : 18 },
     { key: "bri", label: "BRI", value: results["bri"]?.result?.raw, min: 2, max: 8, ideal: 3.4 },
   ], [results, isMale]);
-
   const radarReady = radarAxes.filter((a) => Number.isFinite(a.value)).length >= 4;
 
   return (
     <div data-testid={DASH.root} className="flex flex-col lg:flex-row min-h-screen">
       <MeasurementPanel />
-
       <main className="flex-1 min-w-0">
         <section className="relative border-b border-border overflow-hidden">
-          <div className="absolute inset-0 opacity-[0.08] pointer-events-none" style={{
-            backgroundImage: "radial-gradient(circle at 20% 30%, #CCFF00 0%, transparent 40%), radial-gradient(circle at 80% 70%, #3B82F6 0%, transparent 40%)",
-          }} />
+          <div className="absolute inset-0 opacity-[0.08] pointer-events-none" style={{ backgroundImage: "radial-gradient(circle at 20% 30%, #CCFF00 0%, transparent 40%), radial-gradient(circle at 80% 70%, #3B82F6 0%, transparent 40%)" }} />
           <div className="relative px-6 sm:px-10 py-12 lg:py-16 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-7">
-              <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.3em] text-[var(--brand-lime)] mb-4">
-                <Lightning size={14} weight="fill" /> Instant · Private · Ad-free
-              </div>
-              <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl uppercase tracking-tighter leading-[0.95]">
-                30 Body <span className="text-[var(--brand-lime)]">Calculators.</span>
-                <br />
-                One Entry.
-              </h1>
-              <p className="mt-5 text-base sm:text-lg text-muted-foreground max-w-2xl leading-relaxed">
-                Enter your measurements once — get BMI, body fat, TDEE, obesity risk, and 26 more insights,
-                recalculated the moment you type.
-              </p>
-              <div className="mt-6 inline-flex items-center gap-4 font-mono-data text-sm border border-border px-4 py-2">
-                <span className="text-[var(--brand-lime)] text-lg">{readyCount}</span>
-                <span className="text-muted-foreground">/ {CALCULATORS.length} unlocked</span>
-              </div>
+              <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.3em] text-[var(--brand-lime)] mb-4"><Lightning size={14} weight="fill" /> Instant · Private · Ad-free</div>
+              <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl uppercase tracking-tighter leading-[0.95]">40 Body <span className="text-[var(--brand-lime)]">Calculators.</span><br />One Entry.</h1>
+              <p className="mt-5 text-base sm:text-lg text-muted-foreground max-w-2xl leading-relaxed">Enter your measurements once — get BMI, body fat, TDEE, obesity risk, and 26 more integrated insights. Plus 10 specialized nutrition and fitness calculators.</p>
+              <div className="mt-6 inline-flex items-center gap-4 font-mono-data text-sm border border-border px-4 py-2"><span className="text-[var(--brand-lime)] text-lg">{readyCount}</span><span className="text-muted-foreground">/ {totalCount} calculators · {CALCULATORS.length} integrated</span></div>
             </div>
-
             <div className="lg:col-span-5" data-testid="dash-radar-profile">
-              {radarReady ? (
-                <div className="border border-border bg-card/60 p-5 sm:p-6 backdrop-blur-sm">
-                  <div className="flex items-baseline justify-between mb-3">
-                    <div className="text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)]">
-                      ── Your Body Profile
-                    </div>
-                    <div className="text-[9px] uppercase tracking-widest text-muted-foreground">
-                      6-metric radar
-                    </div>
-                  </div>
-                  <RadarProfile axes={radarAxes} />
-                </div>
-              ) : (
-                <div className="border border-dashed border-border p-6 sm:p-8 text-center bg-card/30">
-                  <div className="text-[10px] font-bold uppercase tracking-[0.25em] text-muted-foreground">Body Profile</div>
-                  <p className="text-sm mt-2 text-muted-foreground leading-relaxed">
-                    Fill height, weight, waist, hip &amp; neck to unlock your radar profile — a 6-axis snapshot of your body vs. ideal ranges.
-                  </p>
-                </div>
-              )}
+              {radarReady ? <div className="border border-border bg-card/60 p-5 sm:p-6 backdrop-blur-sm"><div className="flex items-baseline justify-between mb-3"><div className="text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)]">── Your Body Profile</div><div className="text-[9px] uppercase tracking-widest text-muted-foreground">6-metric radar</div></div><RadarProfile axes={radarAxes} /></div> : <div className="border border-dashed border-border p-6 sm:p-8 text-center bg-card/30"><div className="text-[10px] font-bold uppercase tracking-[0.25em] text-muted-foreground">Body Profile</div><p className="text-sm mt-2 text-muted-foreground leading-relaxed">Fill height, weight, waist, hip &amp; neck to unlock your radar profile — a 6-axis snapshot of your body vs. ideal ranges.</p></div>}
             </div>
           </div>
         </section>
@@ -183,59 +135,19 @@ export default function Dashboard() {
 
         <section className="sticky top-[73px] lg:top-[73px] z-30 bg-background/90 backdrop-blur-xl border-b border-border no-print">
           <div className="px-6 sm:px-10 py-4 flex flex-col sm:flex-row gap-4 sm:items-center justify-between">
-            <div className="relative w-full sm:max-w-sm">
-              <MagnifyingGlass size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
-              <input
-                data-testid={DASH.search}
-                type="search"
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
-                placeholder="Search calculators…"
-                className="w-full pl-10 pr-4 py-2.5 border-2 border-border bg-transparent focus:border-[var(--brand-lime)] focus:outline-none text-sm font-mono-data"
-              />
-            </div>
+            <div className="relative w-full sm:max-w-sm"><MagnifyingGlass size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" /><input data-testid={DASH.search} type="search" value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search all 40 calculators…" className="w-full pl-10 pr-4 py-2.5 border-2 border-border bg-transparent focus:border-[var(--brand-lime)] focus:outline-none text-sm font-mono-data" /></div>
             <div className="flex gap-1.5 overflow-x-auto pb-1 -mx-1 px-1">
-              {[{ key: "all", label: "All" }, ...CALCULATORS_BY_CATEGORY.map((c) => ({ key: c.key, label: c.label, color: c.color }))].map((c) => (
-                <button
-                  key={c.key}
-                  data-testid={`dash-chip-${c.key}`}
-                  onClick={() => setActiveCat(c.key)}
-                  className={`whitespace-nowrap px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.2em] border transition-colors ${activeCat === c.key ? "bg-[var(--brand-lime)] text-black border-[var(--brand-lime)]" : "border-border hover:border-[var(--brand-lime)]"}`}
-                  style={activeCat !== c.key && c.color ? { borderLeftColor: c.color, borderLeftWidth: 3 } : {}}
-                >
-                  {c.label}
-                </button>
-              ))}
+              {[{ key: "all", label: "All" }, ...CALCULATORS_BY_CATEGORY.map((c) => ({ key: c.key, label: c.label, color: c.color })), { key: "specialized", label: "Specialized", color: "#A855F7" }].map((c) => <button key={c.key} data-testid={`dash-chip-${c.key}`} onClick={() => setActiveCat(c.key)} className={`whitespace-nowrap px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.2em] border transition-colors ${activeCat === c.key ? "bg-[var(--brand-lime)] text-black border-[var(--brand-lime)]" : "border-border hover:border-[var(--brand-lime)]"}`} style={activeCat !== c.key && c.color ? { borderLeftColor: c.color, borderLeftWidth: 3 } : {}}>{c.label}</button>)}
             </div>
           </div>
         </section>
 
         <section className="px-6 sm:px-10 py-10 space-y-14 print-grid" data-testid={DASH.cardsGrid}>
-          {filteredCategories.map((cat) => (
-            <div key={cat.key} data-testid={DASH.category(cat.key)}>
-              <div className="flex items-baseline gap-3 mb-6">
-                <div className="h-3 w-3" style={{ background: cat.color }} />
-                <h2 className="font-display text-2xl sm:text-3xl uppercase tracking-tighter">{cat.label}</h2>
-                <span className="font-mono-data text-xs text-muted-foreground">{cat.items.length} calcs</span>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-                {cat.items.map((c, i) => (
-                  <ResultCard
-                    key={c.id}
-                    calc={c}
-                    ready={results[c.id]?.ready}
-                    result={results[c.id]?.result}
-                    index={i}
-                  />
-                ))}
-              </div>
-            </div>
-          ))}
-          {filteredCategories.length === 0 && (
-            <div className="text-center text-muted-foreground py-20">
-              No calculators match your search.
-            </div>
-          )}
+          {filteredCategories.map((cat) => <div key={cat.key} data-testid={DASH.category(cat.key)}><div className="flex items-baseline gap-3 mb-6"><div className="h-3 w-3" style={{ background: cat.color }} /><h2 className="font-display text-2xl sm:text-3xl uppercase tracking-tighter">{cat.label}</h2><span className="font-mono-data text-xs text-muted-foreground">{cat.items.length} calcs</span></div><div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">{cat.items.map((c, i) => <ResultCard key={c.id} calc={c} ready={results[c.id]?.ready} result={results[c.id]?.result} index={i} />)}</div></div>)}
+
+          {filteredSpecialized.length > 0 && <div data-testid="dash-category-specialized"><div className="flex items-baseline gap-3 mb-6"><div className="h-3 w-3 bg-purple-500" /><h2 className="font-display text-2xl sm:text-3xl uppercase tracking-tighter">Specialized</h2><span className="font-mono-data text-xs text-muted-foreground">{filteredSpecialized.length} calcs</span></div><div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">{filteredSpecialized.map((c) => <SpecializedCard key={c.id} calc={c} />)}</div></div>}
+
+          {filteredCategories.length === 0 && filteredSpecialized.length === 0 && <div className="text-center text-muted-foreground py-20">No calculators match your search.</div>}
         </section>
       </main>
     </div>
