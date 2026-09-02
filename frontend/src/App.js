@@ -8,6 +8,10 @@ import Footer from "@/components/Footer";
 import Dashboard from "@/pages/Dashboard";
 import CalculatorPage from "@/pages/CalculatorPage";
 import CalorieCalculator from "@/pages/CalorieCalculator";
+import MacroCalculator from "@/pages/MacroCalculator";
+import ProteinCalculator from "@/pages/ProteinCalculator";
+import CaloriesBurnedCalculator from "@/pages/CaloriesBurnedCalculator";
+import PaceCalculator from "@/pages/PaceCalculator";
 import About from "./pages/about";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Terms from "./pages/terms";
@@ -35,6 +39,10 @@ function App() {
               <Route path="/compare" element={<Compare />} />
               <Route path="/calculator/:slug" element={<LegacyCalculatorRedirect />} />
               <Route path="/calorie-calculator" element={<CalorieCalculator />} />
+              <Route path="/macro-calculator" element={<MacroCalculator />} />
+              <Route path="/protein-calculator" element={<ProteinCalculator />} />
+              <Route path="/calories-burned-calculator" element={<CaloriesBurnedCalculator />} />
+              <Route path="/pace-calculator" element={<PaceCalculator />} />
               <Route path="/bmi-calculator" element={<CalculatorPage seoSlug="bmi" />} />
               <Route path="/bmi-prime-calculator" element={<CalculatorPage seoSlug="bmi-prime" />} />
               <Route path="/healthy-weight-range-calculator" element={<CalculatorPage seoSlug="healthy-weight-range" />} />
