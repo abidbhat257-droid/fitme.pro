@@ -5,25 +5,13 @@ import ResultCard from "@/components/ResultCard";
 import RadarProfile from "@/components/viz/RadarProfile";
 import GoalsWidget from "@/components/GoalsWidget";
 import { CALCULATORS, CALCULATORS_BY_CATEGORY } from "@/lib/calculators";
+import { SPECIALIZED_CALCULATORS, computeSpecialized } from "@/lib/specializedCalculators";
 import { useAllResults } from "@/hooks/useAllResults";
 import { useMeasurements } from "@/context/MeasurementContext";
 import { DASH } from "@/constants/testIds";
 import { MagnifyingGlass, Lightning, ArrowRight } from "@phosphor-icons/react";
 
 const SITE_URL = "https://fitme-pro.vercel.app";
-
-const SPECIALIZED_CALCULATORS = [
-  { id: "calorie-calculator", name: "Calorie Calculator", description: "Estimate daily calorie needs for weight loss, maintenance, or gain.", category: "Nutrition & Fitness" },
-  { id: "macro-calculator", name: "Macro Calculator", description: "Calculate daily protein, carbohydrate, and fat targets.", category: "Nutrition & Fitness" },
-  { id: "protein-calculator", name: "Protein Calculator", description: "Estimate a practical daily protein target based on your body and activity.", category: "Nutrition & Fitness" },
-  { id: "calories-burned-calculator", name: "Calories Burned Calculator", description: "Estimate calories burned during common physical activities.", category: "Nutrition & Fitness" },
-  { id: "pace-calculator", name: "Pace Calculator", description: "Calculate running pace, speed, distance, and time.", category: "Running & Training" },
-  { id: "carbohydrate-calculator", name: "Carbohydrate Calculator", description: "Estimate daily carbohydrate intake for your goals and activity.", category: "Nutrition & Fitness" },
-  { id: "fat-intake-calculator", name: "Fat Intake Calculator", description: "Estimate a daily dietary fat target from calorie needs.", category: "Nutrition & Fitness" },
-  { id: "one-rep-max-calculator", name: "One Rep Max Calculator", description: "Estimate your one-repetition maximum from a lifting set.", category: "Strength Training" },
-  { id: "target-heart-rate-calculator", name: "Target Heart Rate Zone", description: "Find exercise heart-rate zones from your age and training intensity.", category: "Running & Training" },
-  { id: "army-body-fat-calculator", name: "Army Body Fat Calculator", description: "Estimate body fat using the U.S. military circumference method.", category: "Body Composition" },
-];
 
 function upsertMeta(name, content, isProperty = false) {
   const attribute = isProperty ? "property" : "name";
@@ -44,7 +32,9 @@ function upsertJsonLd(data) {
   el.textContent = JSON.stringify(data);
 }
 
-function SpecializedCard({ calc }) {
+function SpecializedCard({ calc, state }) {
+  const result = computeSpecialized(calc.id, state);
+  const needsExtra = calc.extraInputs;
   return (
     <Link to={`/${calc.id}`} className="group block border border-border bg-card/40 p-5 transition-colors hover:border-[var(--brand-lime)] hover:bg-card/70">
       <div className="flex items-center justify-between gap-3 mb-3">
@@ -52,7 +42,18 @@ function SpecializedCard({ calc }) {
         <ArrowRight size={16} className="text-muted-foreground transition-transform group-hover:translate-x-1 group-hover:text-[var(--brand-lime)]" />
       </div>
       <h3 className="font-display text-xl uppercase tracking-tight">{calc.name}</h3>
-      <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{calc.description}</p>
+      {result ? (
+        <>
+          <div className="mt-4 font-mono-data text-3xl font-black tracking-tight text-[var(--brand-lime)]">{result.value}<span className="text-sm ml-2 text-muted-foreground font-normal">{result.unit}</span></div>
+          {result.category && <div className="mt-2 text-[10px] font-bold uppercase tracking-[0.16em]">{result.category}</div>}
+          {result.interpretation && <p className="mt-2 text-xs text-muted-foreground leading-relaxed">{result.interpretation}</p>}
+        </>
+      ) : (
+        <>
+          <div className="mt-4 font-mono-data text-3xl text-muted-foreground/40">— — —</div>
+          <p className="mt-2 text-xs text-muted-foreground leading-relaxed">{needsExtra ? "Open calculator to enter the activity-specific data needed for a meaningful result." : calc.description}</p>
+        </>
+      )}
       <div className="mt-4 text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--brand-lime)]">Open calculator →</div>
     </Link>
   );
@@ -99,7 +100,8 @@ export default function Dashboard() {
     return SPECIALIZED_CALCULATORS.filter((c) => !q || `${c.name} ${c.description} ${c.category}`.toLowerCase().includes(q));
   }, [query, activeCat]);
 
-  const readyCount = Object.values(results).filter((r) => r.ready).length;
+  const specializedReady = SPECIALIZED_CALCULATORS.filter((c) => !!computeSpecialized(c.id, state)).length;
+  const readyCount = Object.values(results).filter((r) => r.ready).length + specializedReady;
   const totalCount = CALCULATORS.length + SPECIALIZED_CALCULATORS.length;
   const isMale = state.sex === "male";
   const radarAxes = useMemo(() => [
@@ -145,7 +147,7 @@ export default function Dashboard() {
         <section className="px-6 sm:px-10 py-10 space-y-14 print-grid" data-testid={DASH.cardsGrid}>
           {filteredCategories.map((cat) => <div key={cat.key} data-testid={DASH.category(cat.key)}><div className="flex items-baseline gap-3 mb-6"><div className="h-3 w-3" style={{ background: cat.color }} /><h2 className="font-display text-2xl sm:text-3xl uppercase tracking-tighter">{cat.label}</h2><span className="font-mono-data text-xs text-muted-foreground">{cat.items.length} calcs</span></div><div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">{cat.items.map((c, i) => <ResultCard key={c.id} calc={c} ready={results[c.id]?.ready} result={results[c.id]?.result} index={i} />)}</div></div>)}
 
-          {filteredSpecialized.length > 0 && <div data-testid="dash-category-specialized"><div className="flex items-baseline gap-3 mb-6"><div className="h-3 w-3 bg-purple-500" /><h2 className="font-display text-2xl sm:text-3xl uppercase tracking-tighter">Specialized</h2><span className="font-mono-data text-xs text-muted-foreground">{filteredSpecialized.length} calcs</span></div><div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">{filteredSpecialized.map((c) => <SpecializedCard key={c.id} calc={c} />)}</div></div>}
+          {filteredSpecialized.length > 0 && <div data-testid="dash-category-specialized"><div className="flex items-baseline gap-3 mb-6"><div className="h-3 w-3 bg-purple-500" /><h2 className="font-display text-2xl sm:text-3xl uppercase tracking-tighter">Specialized</h2><span className="font-mono-data text-xs text-muted-foreground">{filteredSpecialized.length} calcs</span></div><div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">{filteredSpecialized.map((c) => <SpecializedCard key={c.id} calc={c} state={state} />)}</div></div>}
 
           {filteredCategories.length === 0 && filteredSpecialized.length === 0 && <div className="text-center text-muted-foreground py-20">No calculators match your search.</div>}
         </section>
