@@ -1,6 +1,6 @@
 import "@/App.css";
 import { BrowserRouter, Routes, Route, Navigate, useParams, useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
 import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { MeasurementProvider } from "@/context/MeasurementContext";
@@ -15,19 +15,42 @@ import Terms from "./pages/terms";
 import Contact from "./pages/contact";
 import Compare from "@/pages/Compare";
 
+function forceTop() {
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    if (document.documentElement) document.documentElement.scrollTop = 0;
+    if (document.body) document.body.scrollTop = 0;
+    if (document.scrollingElement) document.scrollingElement.scrollTop = 0;
+  };
+  scrollTop();
+  requestAnimationFrame(scrollTop);
+  setTimeout(scrollTop, 0);
+  setTimeout(scrollTop, 80);
+}
+
 function ScrollToTop() {
   const location = useLocation();
-  useEffect(() => {
+
+  useLayoutEffect(() => {
     if ("scrollRestoration" in window.history) window.history.scrollRestoration = "manual";
-    const scroll = () => window.scrollTo(0, 0);
-    scroll();
-    const frame1 = requestAnimationFrame(scroll);
-    const frame2 = requestAnimationFrame(() => requestAnimationFrame(scroll));
-    return () => {
-      cancelAnimationFrame(frame1);
-      cancelAnimationFrame(frame2);
-    };
+    forceTop();
   }, [location.pathname, location.key]);
+
+  useEffect(() => {
+    const handleClick = (event) => {
+      const target = event.target instanceof Element ? event.target.closest("a,button") : null;
+      if (!target) return;
+
+      const isCalculatorLink = target.matches('a[href$="-calculator"], a[href^="/calculator/"]');
+      const isDashboardFilter = target.matches('[data-testid^="dash-chip-"]');
+
+      if (isCalculatorLink || isDashboardFilter) forceTop();
+    };
+
+    document.addEventListener("click", handleClick, true);
+    return () => document.removeEventListener("click", handleClick, true);
+  }, []);
+
   return null;
 }
 
