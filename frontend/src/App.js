@@ -1,5 +1,6 @@
 import "@/App.css";
-import { BrowserRouter, Routes, Route, Navigate, useParams } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, useParams, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { MeasurementProvider } from "@/context/MeasurementContext";
@@ -14,10 +15,18 @@ import Terms from "./pages/terms";
 import Contact from "./pages/contact";
 import Compare from "@/pages/Compare";
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, [pathname]);
+  return null;
+}
+
 function LegacyCalculatorRedirect() { const { slug } = useParams(); return <Navigate to={slug ? `/${slug}-calculator` : "/"} replace />; }
 
 function App() {
-  return <div className="App"><ThemeProvider><MeasurementProvider><BrowserRouter><Header /><Routes>
+  return <div className="App"><ThemeProvider><MeasurementProvider><BrowserRouter><ScrollToTop /><Header /><Routes>
     <Route path="/" element={<Dashboard />} /><Route path="/about" element={<About />} /><Route path="/privacy-policy" element={<PrivacyPolicy />} /><Route path="/terms" element={<Terms />} /><Route path="/contact" element={<Contact />} /><Route path="/compare" element={<Compare />} />
     <Route path="/calculator/:slug" element={<LegacyCalculatorRedirect />} />
     <Route path="/calorie-calculator" element={<SpecializedCalculatorPage />} /><Route path="/macro-calculator" element={<SpecializedCalculatorPage />} /><Route path="/protein-calculator" element={<SpecializedCalculatorPage />} /><Route path="/calories-burned-calculator" element={<SpecializedCalculatorPage />} /><Route path="/pace-calculator" element={<SpecializedCalculatorPage />} />
