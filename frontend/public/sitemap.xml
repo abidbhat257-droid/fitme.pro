@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url><loc>https://fitme-pro.vercel.app/</loc></url>
   <url><loc>https://fitme-pro.vercel.app/bmi-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/bmi-prime-calculator</loc></url>
@@ -28,10 +27,13 @@
   <url><loc>https://fitme-pro.vercel.app/calorie-deficit-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/calorie-surplus-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/calorie-calculator</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/macro-calculator</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/protein-calculator</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/calories-burned-calculator</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/pace-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/body-surface-area-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/ponderal-index-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/adjusted-body-weight-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/body-density-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/obesity-class-calculator</loc></url>
-
 </urlset>
