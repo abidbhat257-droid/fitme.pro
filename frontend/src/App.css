@@ -1,4 +1,9 @@
 /* App container — no forced centering, no generic styles */
-.App {
-    min-height: 100vh;
-}
+.App { min-height: 100vh; }
+
+/* Calculator pages: don't make users pass through the intro hero. The result is the first page content. */
+[data-testid^="seo-page-"] > main > section:first-child { display: none; }
+
+/* Keep long calculator content comfortable on phones. */
+[data-testid^="seo-page-"] > main { min-width: 0; width: 100%; }
+[data-testid^="seo-page-"] > main > section { width: 100%; }
