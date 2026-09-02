@@ -6,15 +6,15 @@ import { CATEGORIES } from "@/lib/calculators";
 import GaugeBar from "./GaugeBar";
 import { CARD } from "@/constants/testIds";
 
-const TONE = { good: "#CCFF00", warn: "#EAB308", bad: "#EF4444", neutral: "#94A3B8" };
+const TONE = { good: "#059669", warn: "#EAB308", bad: "#EF4444", neutral: "#94A3B8" };
 
 function buildGauge(calc, res) {
   if (!res || !Number.isFinite(res.raw)) return null;
   const v = res.raw;
-  if (calc.id === "bmi") return { segments: [{ label: "Under", color: "#60A5FA" }, { label: "Normal", color: "#CCFF00" }, { label: "Over", color: "#EAB308" }, { label: "Obese", color: "#EF4444" }], position: Math.min(1, Math.max(0, (v - 15) / 25)) };
-  if (calc.id === "waist-height-ratio") return { segments: [{ label: "Slim", color: "#60A5FA" }, { label: "Healthy", color: "#CCFF00" }, { label: "Over", color: "#EAB308" }, { label: "Obese", color: "#EF4444" }], position: Math.min(1, Math.max(0, (v - 0.3) / 0.45)) };
-  if (calc.id === "waist-hip-ratio") return { segments: [{ label: "Low", color: "#CCFF00" }, { label: "Moderate", color: "#EAB308" }, { label: "High", color: "#EF4444" }], position: Math.min(1, Math.max(0, (v - 0.7) / 0.4)) };
-  if (["body-fat", "navy-body-fat", "relative-fat-mass"].includes(calc.id)) return { segments: [{ label: "Lean", color: "#60A5FA" }, { label: "Fit", color: "#CCFF00" }, { label: "Avg", color: "#EAB308" }, { label: "High", color: "#EF4444" }], position: Math.min(1, Math.max(0, v / 45)) };
+  if (calc.id === "bmi") return { segments: [{ label: "Under", color: "#60A5FA" }, { label: "Normal", color: "#059669" }, { label: "Over", color: "#EAB308" }, { label: "Obese", color: "#EF4444" }], position: Math.min(1, Math.max(0, (v - 15) / 25)) };
+  if (calc.id === "waist-height-ratio") return { segments: [{ label: "Slim", color: "#60A5FA" }, { label: "Healthy", color: "#059669" }, { label: "Over", color: "#EAB308" }, { label: "Obese", color: "#EF4444" }], position: Math.min(1, Math.max(0, (v - 0.3) / 0.45)) };
+  if (calc.id === "waist-hip-ratio") return { segments: [{ label: "Low", color: "#059669" }, { label: "Moderate", color: "#EAB308" }, { label: "High", color: "#EF4444" }], position: Math.min(1, Math.max(0, (v - 0.7) / 0.4)) };
+  if (["body-fat", "navy-body-fat", "relative-fat-mass"].includes(calc.id)) return { segments: [{ label: "Lean", color: "#60A5FA" }, { label: "Fit", color: "#059669" }, { label: "Avg", color: "#EAB308" }, { label: "High", color: "#EF4444" }], position: Math.min(1, Math.max(0, v / 45)) };
   return null;
 }
 
