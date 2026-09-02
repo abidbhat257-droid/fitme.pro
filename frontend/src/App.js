@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Dashboard from "@/pages/Dashboard";
 import CalculatorPage from "@/pages/CalculatorPage";
+import CalorieCalculator from "@/pages/CalorieCalculator";
 import About from "./pages/about";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Terms from "./pages/terms";
@@ -33,6 +34,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/compare" element={<Compare />} />
               <Route path="/calculator/:slug" element={<LegacyCalculatorRedirect />} />
+              <Route path="/calorie-calculator" element={<CalorieCalculator />} />
               <Route path="/bmi-calculator" element={<CalculatorPage seoSlug="bmi" />} />
               <Route path="/bmi-prime-calculator" element={<CalculatorPage seoSlug="bmi-prime" />} />
               <Route path="/healthy-weight-range-calculator" element={<CalculatorPage seoSlug="healthy-weight-range" />} />
