@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useState } from "react";
 import { Camera, CheckCircle, TrendDown, TrendUp } from "@phosphor-icons/react";
 import { useMeasurements } from "@/context/MeasurementContext";
 import SnapshotDialog from "@/components/SnapshotDialog";
@@ -32,15 +32,17 @@ export default function RadarProfile({ axes = [] }) {
     ? axes.map((a, i) => { const p = pt(i, Math.max(0, Math.min(1, (a.ideal - a.min) / (a.max - a.min))) * R); return `${p.x},${p.y}`; }).join(" ")
     : null;
 
-  const profileScore = useMemo(() => {
-    const scored = axes.filter((a) => Number.isFinite(a.value) && Number.isFinite(a.ideal));
-    if (!scored.length) return null;
-    const points = scored.map((a) => {
-      const tolerance = Math.max((a.max - a.min) * 0.25, 0.02);
-      return Math.max(0, 100 - (Math.abs(a.value - a.ideal) / tolerance) * 100);
-    });
-    return Math.round(points.reduce((sum, x) => sum + x, 0) / points.length);
-  }, [axes]);
+  // Calculate directly instead of using a conditional Hook. This keeps Hook order
+  // stable even when the component receives fewer than three axes.
+  const scored = axes.filter((a) => Number.isFinite(a.value) && Number.isFinite(a.ideal));
+  const profileScore = scored.length
+    ? Math.round(
+        scored.reduce((sum, a) => {
+          const tolerance = Math.max((a.max - a.min) * 0.25, 0.02);
+          return sum + Math.max(0, 100 - (Math.abs(a.value - a.ideal) / tolerance) * 100);
+        }, 0) / scored.length
+      )
+    : null;
 
   const counts = axes.reduce((acc, a) => {
     const s = status(a);
