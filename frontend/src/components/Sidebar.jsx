@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { createPortal } from "react-dom";
 import { Link, useLocation } from "react-router-dom";
-import { List, X, House, Calculator, Info, ShieldCheck, FileText } from "@phosphor-icons/react";
+import { List, X, House, Calculator, Info, ShieldCheck, FileText, BookOpen } from "@phosphor-icons/react";
 import { CALCULATORS, CATEGORIES } from "@/lib/calculators";
 import { SPECIALIZED_CALCULATORS } from "@/lib/specializedCalculators";
 import BodyProfileSidebar from "@/components/BodyProfileSidebar";
@@ -23,7 +23,8 @@ export default function Sidebar() {
       <aside className="relative flex h-full w-[min(420px,94vw)] flex-col overflow-hidden border-r border-border bg-background shadow-2xl">
         <div className="flex shrink-0 items-center justify-between border-b border-border bg-background px-5 py-4"><div><div className="font-display text-xl font-bold uppercase tracking-tighter">fitme<span className="text-[var(--brand-lime)]">.pro</span></div><div className="mt-1 text-[9px] font-bold uppercase tracking-[0.2em] text-muted-foreground">All 40 calculators</div></div><button aria-label="Close navigation" onClick={close} className="grid h-9 w-9 place-items-center rounded-md border border-border hover:border-[var(--brand-lime)] hover:text-[var(--brand-lime)]"><X size={18} /></button></div>
         <nav className="min-h-0 flex-1 overflow-y-auto p-4">
-          <Link to="/" onClick={close} className={`mb-4 flex items-center gap-3 rounded-md px-3 py-3 text-sm font-bold uppercase tracking-wider hover:bg-muted hover:text-[var(--brand-lime)] ${location.pathname === "/" ? "bg-muted text-[var(--brand-lime)]" : ""}`}><House size={18} weight="duotone" /> Dashboard</Link>
+          <Link to="/" onClick={close} className={`mb-2 flex items-center gap-3 rounded-md px-3 py-3 text-sm font-bold uppercase tracking-wider hover:bg-muted hover:text-[var(--brand-lime)] ${location.pathname === "/" ? "bg-muted text-[var(--brand-lime)]" : ""}`}><House size={18} weight="duotone" /> Dashboard</Link>
+          <Link to="/journal" onClick={close} className={`mb-4 flex items-center gap-3 rounded-md px-3 py-3 text-sm font-bold uppercase tracking-wider hover:bg-muted hover:text-[var(--brand-lime)] ${location.pathname.startsWith("/journal") ? "bg-muted text-[var(--brand-lime)]" : ""}`}><BookOpen size={18} weight="duotone" /> Journal</Link>
           <BodyProfileSidebar />
           <div className="my-6 flex items-center justify-between border-y border-border px-3 py-3"><span className="text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)]">All 40 Calculators</span><span className="font-mono-data text-[10px] text-muted-foreground">{allCalculators.length}</span></div>
           <div className="space-y-1">
