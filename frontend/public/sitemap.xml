@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://fitme-pro.vercel.app/</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/nutrition</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/fitness</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/weight-loss</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/body-composition</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/wellness</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/health-education</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/nutrition/what-is-a-healthy-diet</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/nutrition/how-many-calories-should-i-eat</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/nutrition/how-much-protein-do-i-need</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/nutrition/carbohydrates-explained</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/nutrition/dietary-fats-explained</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/nutrition/dietary-fibre-guide</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/nutrition/how-much-sugar-should-you-eat</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/nutrition/salt-and-sodium-explained</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/nutrition/how-to-read-a-nutrition-label</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/nutrition/healthy-eating-on-a-budget</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/nutrition/hydration-and-water</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/nutrition/how-to-build-a-balanced-meal</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/nutrition/what-are-macros</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/nutrition/nutrition-for-muscle-growth</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/nutrition/pre-workout-and-post-workout-nutrition</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/weight-loss/what-is-a-calorie-deficit</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/weight-loss/healthy-weight-loss-basics</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/weight-loss/why-am-i-not-losing-weight</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/body-composition/bmi-vs-body-fat</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/body-composition/what-is-body-fat-percentage</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/body-composition/waist-circumference-health</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/body-composition/what-is-bmr</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/body-composition/what-is-tdee</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/body-composition/how-to-measure-body-composition</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/fitness/physical-activity-guidelines</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/fitness/strength-training-for-beginners</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/fitness/walking-for-health</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/fitness/exercise-recovery-and-rest</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/wellness/sleep-and-health</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/wellness/sedentary-behaviour-and-health</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/wellness/stress-and-healthy-habits</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/health-education/what-is-obesity</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/health-education/understanding-bmi</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/health-education/nutrition-myths-facts</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/journal/health-education/when-to-see-a-health-professional</loc></url>
   <url><loc>https://fitme-pro.vercel.app/bmi-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/bmi-prime-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/healthy-weight-range-calculator</loc></url>
