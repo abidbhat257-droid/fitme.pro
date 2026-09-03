@@ -20,6 +20,10 @@ export default function Journal() {
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-primary">FitMe Pro Journal</p>
           <h1 className="max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl">Practical guidance for a healthier, stronger you.</h1>
           <p className="mt-5 max-w-2xl text-base leading-7 text-muted-foreground sm:text-lg">Evidence-informed articles on nutrition, fitness, weight management, body composition and everyday wellness—written to help you understand the numbers behind your health.</p>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <Link to="/journal/evidence-sources" className="rounded-full border border-white/15 px-4 py-2 text-sm font-semibold transition hover:border-primary/50 hover:text-primary">Our evidence sources →</Link>
+            <Link to="/journal/editorial-standards" className="rounded-full border border-white/15 px-4 py-2 text-sm font-semibold transition hover:border-primary/50 hover:text-primary">Editorial standards →</Link>
+          </div>
         </section>
 
         <section className="mt-10">
