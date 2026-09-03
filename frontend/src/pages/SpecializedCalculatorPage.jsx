@@ -3,13 +3,67 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, ShareNetwork, Printer, Copy } from "@phosphor-icons/react";
 import MeasurementPanel from "@/components/MeasurementPanel";
 import { useMeasurements } from "@/context/MeasurementContext";
-import { getSpecializedCalculator } from "@/lib/specializedCalculators";
+import { getSpecializedCalculator, SPECIALIZED_CALCULATORS } from "@/lib/specializedCalculators";
 import { toMetric } from "@/lib/units";
+import CalculatorSEOGuide from "@/components/CalculatorSEOGuide";
 import { toast } from "sonner";
 
 const CATEGORY_COLORS = { "Nutrition & Fitness": "#059669", "Running & Training": "#059669", "Strength Training": "#059669", "Body Composition": "#059669" };
-function sharedReady(calc, state) { const m = toMetric(state); return calc.requires.every((r) => r === "sex" ? (m.sex === "male" || m.sex === "female") : r === "activity" ? !!m.activity : r === "age" ? Number.isFinite(m.age) && m.age > 0 : r === "height" ? Number.isFinite(m.heightCm) && m.heightCm > 0 : r === "weight" ? Number.isFinite(m.weightKg) && m.weightKg > 0 : r === "waist" ? Number.isFinite(m.waistCm) && m.waistCm > 0 : r === "neck" ? Number.isFinite(m.neckCm) && m.neckCm > 0 : true); }
-function ExtraResult({ id, values }) { if (id === "pace-calculator") { const distance = Number(values.distance), minutes = Number(values.minutes), seconds = Number(values.seconds) || 0; if (!(distance > 0) || !(minutes >= 0) || !(seconds >= 0)) return null; const total = minutes * 60 + seconds; if (!(total > 0)) return null; const pace = total / distance, pm = Math.floor(pace / 60), ps = Math.round(pace % 60), speed = distance / (total / 3600); return { value: `${pm}:${String(ps).padStart(2, "0")}`, unit: "min/km", category: `${speed.toFixed(1)} km/h`, interpretation: "Running pace calculated from the distance and elapsed time you entered." }; } const weight = Number(values.liftWeight), reps = Number(values.reps); if (!(weight > 0) || !(reps > 0) || reps > 30) return null; const oneRM = weight * (1 + reps / 30); return { value: oneRM.toFixed(1), unit: "kg estimated 1RM", category: `Epley estimate from ${weight} kg × ${reps} reps`, interpretation: "Estimated one-repetition maximum using the Epley equation. Use conservative loads when applying an estimate to training." }; }
+
+function sharedReady(calc, state) {
+  const m = toMetric(state);
+  return calc.requires.every((r) => r === "sex" ? (m.sex === "male" || m.sex === "female") : r === "activity" ? !!m.activity : r === "age" ? Number.isFinite(m.age) && m.age > 0 : r === "height" ? Number.isFinite(m.heightCm) && m.heightCm > 0 : r === "weight" ? Number.isFinite(m.weightKg) && m.weightKg > 0 : r === "waist" ? Number.isFinite(m.waistCm) && m.waistCm > 0 : r === "neck" ? Number.isFinite(m.neckCm) && m.neckCm > 0 : true);
+}
+
+function ExtraResult({ id, values }) {
+  if (id === "pace-calculator") {
+    const distance = Number(values.distance), minutes = Number(values.minutes), seconds = Number(values.seconds) || 0;
+    if (!(distance > 0) || !(minutes >= 0) || !(seconds >= 0)) return null;
+    const total = minutes * 60 + seconds;
+    if (!(total > 0)) return null;
+    const pace = total / distance, pm = Math.floor(pace / 60), ps = Math.round(pace % 60), speed = distance / (total / 3600);
+    return { value: `${pm}:${String(ps).padStart(2, "0")}`, unit: "min/km", category: `${speed.toFixed(1)} km/h`, interpretation: "Running pace calculated from the distance and elapsed time you entered." };
+  }
+  const weight = Number(values.liftWeight), reps = Number(values.reps);
+  if (!(weight > 0) || !(reps > 0) || reps > 30) return null;
+  const oneRM = weight * (1 + reps / 30);
+  return { value: oneRM.toFixed(1), unit: "kg estimated 1RM", category: `Epley estimate from ${weight} kg × ${reps} reps`, interpretation: "Estimated one-repetition maximum using the Epley equation. Use conservative loads when applying an estimate to training." };
+}
+
+function upsertMeta(name, content, property = false) {
+  const key = property ? "property" : "name";
+  let el = document.head.querySelector(`meta[${key}="${name}"]`);
+  if (!el) { el = document.createElement("meta"); el.setAttribute(key, name); document.head.appendChild(el); }
+  el.setAttribute("content", content);
+}
+
+function setJsonLd(calc, faqs) {
+  document.getElementById("fitme-specialized-jsonld")?.remove();
+  const script = document.createElement("script");
+  script.id = "fitme-specialized-jsonld";
+  script.type = "application/ld+json";
+  const url = `${window.location.origin}/${calc.slug}`;
+  script.textContent = JSON.stringify({ "@context": "https://schema.org", "@graph": [
+    { "@type": "WebApplication", name: calc.name, url, applicationCategory: "HealthApplication", operatingSystem: "Web", offers: { "@type": "Offer", price: "0", priceCurrency: "USD" } },
+    { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "FitMe Pro", item: `${window.location.origin}/` }, { "@type": "ListItem", position: 2, name: calc.category, item: `${window.location.origin}/calculators` }, { "@type": "ListItem", position: 3, name: calc.name, item: url }] },
+    { "@type": "FAQPage", mainEntity: faqs.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) }
+  ]});
+  document.head.appendChild(script);
+}
+
+function faqFor(calc) {
+  return [
+    [`What does the ${calc.name} calculate?`, `${calc.name} applies the stated method to the inputs on this page to produce a health, nutrition or fitness estimate.`],
+    [`How does the ${calc.name} work?`, `Enter the requested values and FitMe Pro applies the displayed formula. The result updates as your inputs change.`],
+    [`What inputs are required?`, calc.extraInputs ? "This calculator uses dedicated activity-specific inputs shown in the Calculator Inputs section." : "This calculator uses the measurements in your shared Body Profile."],
+    [`How accurate is the ${calc.name}?`, "The result is an estimate when it is based on an equation or prediction model. Measurement quality, individual differences and the chosen method can affect accuracy."],
+    [`Why can another calculator show a different result?`, "Different calculators may use different equations, assumptions, reference populations or rounding rules. Compare methodology before comparing numbers."],
+    [`Can I use the result to track progress?`, "Yes. Repeating the calculation with consistent inputs can help you monitor trends, especially when combined with other relevant measures."],
+    [`Is this calculator free?`, "Yes. FitMe Pro calculators are free to use in the browser."],
+    [`Can this result diagnose a medical condition?`, "No. FitMe Pro provides educational estimates and does not diagnose disease or replace professional medical assessment."]
+  ];
+}
+
 export default function SpecializedCalculatorPage({ calculatorId }) {
   const { state, calculatorInputs, updateCalculatorInputs } = useMeasurements();
   const calc = getSpecializedCalculator(calculatorId);
@@ -18,12 +72,41 @@ export default function SpecializedCalculatorPage({ calculatorId }) {
   const color = CATEGORY_COLORS[calc?.category] || "#059669";
   const ready = !!calc && sharedReady(calc, state);
   const result = useMemo(() => { if (!calc) return null; if (calc.extraInputs) return ExtraResult({ id: calc.id, values }); return ready ? calc.compute(state) : null; }, [calc, state, ready, values]);
-  useEffect(() => { if (!calc) return; document.title = `${calc.name} · Fitme Pro`; let meta = document.head.querySelector('meta[name="description"]'); if (!meta) { meta = document.createElement("meta"); meta.name = "description"; document.head.appendChild(meta); } meta.content = `${calc.description} Free calculator from FitMe Pro.`; let canonical = document.head.querySelector('link[rel="canonical"]'); if (!canonical) { canonical = document.createElement("link"); canonical.rel = "canonical"; document.head.appendChild(canonical); } canonical.href = `${window.location.origin}/${calc.slug}`; }, [calc]);
+  const faqs = useMemo(() => calc ? faqFor(calc) : [], [calc]);
+
+  useEffect(() => {
+    if (!calc) return;
+    const title = `${calc.name} — Free Online Calculator | FitMe Pro`;
+    document.title = title;
+    upsertMeta("description", `${calc.description} Learn the formula, use an example, and understand the limitations with the free ${calc.name.toLowerCase()} from FitMe Pro.`);
+    upsertMeta("og:title", title, true);
+    upsertMeta("og:description", calc.description, true);
+    const canonical = document.head.querySelector('link[rel="canonical"]') || document.head.appendChild(Object.assign(document.createElement("link"), { rel: "canonical" }));
+    canonical.href = `${window.location.origin}/${calc.slug}`;
+    setJsonLd(calc, faqs);
+    return () => document.getElementById("fitme-specialized-jsonld")?.remove();
+  }, [calc, faqs]);
+
   useEffect(() => { window.scrollTo(0, 0); }, [calculatorId]);
+
   if (!calc) return <main className="p-10"><h1 className="font-display text-2xl uppercase">Calculator not found</h1><p className="mt-3 text-muted-foreground">The calculator URL could not be matched to one of FitMe Pro's specialized calculators.</p><Link className="mt-6 inline-block text-[var(--brand-lime)]" to="/">Back to dashboard</Link></main>;
+
   const setValue = (key, value) => { setValues(x => ({ ...x, [key]: value })); updateCalculatorInputs(calculatorId, { [key]: value }); };
   const onCopy = async () => { try { await navigator.clipboard.writeText(`${calc.name}: ${result?.value ?? "—"} ${result?.unit ?? ""}`); toast.success("Copied"); } catch { toast.error("Copy failed"); } };
   const onShare = async () => { try { if (navigator.share) await navigator.share({ title: calc.name, text: `${calc.name}: ${result?.value ?? "—"}`, url: window.location.href }); else { await navigator.clipboard.writeText(window.location.href); toast.success("Link copied"); } } catch {} };
-  return <div className="flex min-h-screen flex-col lg:flex-row"><MeasurementPanel/><main className="min-w-0 flex-1"><section className="relative overflow-hidden border-b border-border"><div className="relative max-w-4xl px-6 py-8 sm:px-10 lg:py-10"><Link to="/" className="mb-4 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.25em] text-muted-foreground hover:text-[var(--brand-lime)]"><ArrowLeft size={14}/> Back to dashboard</Link><div className="mb-2 flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.3em]" style={{ color }}><span className="h-2 w-2" style={{ background: color }} />{calc.category}</div><h1 className="font-display text-3xl uppercase leading-none tracking-tighter sm:text-4xl lg:text-5xl">{calc.name}</h1><p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">{calc.description}</p></div></section><section className="px-6 py-8 sm:px-10"><div className="max-w-4xl border border-border bg-card p-6 sm:p-8" style={{ borderTop: `4px solid ${color}` }}><div className="mb-5 flex flex-wrap items-start justify-between gap-4"><div className="text-[10px] font-bold uppercase tracking-[0.25em] text-muted-foreground">Your Result</div><div className="flex gap-2 no-print"><button onClick={onCopy} className="inline-flex items-center gap-1.5 border border-border px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest hover:border-[var(--brand-lime)]"><Copy size={12}/> Copy</button><button onClick={onShare} className="inline-flex items-center gap-1.5 border border-border px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest hover:border-[var(--brand-lime)]"><ShareNetwork size={12}/> Share</button><button onClick={() => window.print()} className="inline-flex items-center gap-1.5 border border-border px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest hover:border-[var(--brand-lime)]"><Printer size={12}/> Print</button></div></div>{result ? <><div className="font-mono-data text-5xl font-black tracking-tight text-[var(--brand-lime)] sm:text-6xl">{result.value}<span className="ml-2 text-lg font-normal text-muted-foreground">{result.unit}</span></div>{result.category && <div className="mt-3 text-sm font-bold uppercase tracking-[0.2em]">{result.category}</div>}<p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground">{result.interpretation}</p></> : <div className="text-muted-foreground"><div className="font-mono-data text-4xl text-muted-foreground/40">— — —</div><p className="mt-3 text-sm leading-relaxed">Enter the required measurements below to see your result.</p></div>}</div>{calc.extraInputs && <div className="mt-8 max-w-4xl border border-border bg-card p-6 sm:p-8" style={{ borderTop: `3px solid ${color}` }}><div className="mb-5 text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)]">Calculator Inputs</div><p className="mb-5 text-xs text-muted-foreground">Enter the activity-specific values required for this calculator.</p>{calc.id === "pace-calculator" ? <div className="grid grid-cols-1 gap-4 sm:grid-cols-3"><Field label="Distance / km" value={values.distance} set={v => setValue("distance", v)}/><Field label="Minutes" value={values.minutes} set={v => setValue("minutes", v)}/><Field label="Seconds" value={values.seconds} set={v => setValue("seconds", v)}/></div> : <div className="grid grid-cols-1 gap-4 sm:grid-cols-2"><Field label="Lift weight / kg" value={values.liftWeight} set={v => setValue("liftWeight", v)}/><Field label="Repetitions" value={values.reps} set={v => setValue("reps", v)}/></div>}</div>}<div className="mt-8 max-w-4xl"><div className="mb-2 text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)]">Formula</div><pre className="overflow-x-auto whitespace-pre-wrap border border-border bg-card p-4 font-mono-data text-sm">{calc.formula}</pre></div></section></main></div>;
+  const related = SPECIALIZED_CALCULATORS.filter((x) => x.id !== calc.id && x.category === calc.category).slice(0, 6);
+
+  return <div className="flex min-h-screen flex-col lg:flex-row">
+    <MeasurementPanel />
+    <main className="min-w-0 flex-1">
+      <section className="relative overflow-hidden border-b border-border"><div className="relative max-w-4xl px-6 py-8 sm:px-10 lg:py-10"><Link to="/" className="mb-4 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.25em] text-muted-foreground hover:text-[var(--brand-lime)]"><ArrowLeft size={14}/> Back to dashboard</Link><div className="mb-2 flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.3em]" style={{ color }}><span className="h-2 w-2" style={{ background: color }} />{calc.category}</div><h1 className="font-display text-3xl uppercase leading-none tracking-tighter sm:text-4xl lg:text-5xl">{calc.name}</h1><p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">{calc.description}</p></div></section>
+      <section className="px-6 py-8 sm:px-10"><div className="max-w-4xl border border-border bg-card p-6 sm:p-8" style={{ borderTop: `4px solid ${color}` }}><div className="mb-5 flex flex-wrap items-start justify-between gap-4"><div className="text-[10px] font-bold uppercase tracking-[0.25em] text-muted-foreground">Your Result</div><div className="flex gap-2 no-print"><button onClick={onCopy} className="inline-flex items-center gap-1.5 border border-border px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest hover:border-[var(--brand-lime)]"><Copy size={12}/> Copy</button><button onClick={onShare} className="inline-flex items-center gap-1.5 border border-border px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest hover:border-[var(--brand-lime)]"><ShareNetwork size={12}/> Share</button><button onClick={() => window.print()} className="inline-flex items-center gap-1.5 border border-border px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest hover:border-[var(--brand-lime)]"><Printer size={12}/> Print</button></div></div>{result ? <><div className="font-mono-data text-5xl font-black tracking-tight text-[var(--brand-lime)] sm:text-6xl">{result.value}<span className="ml-2 text-lg font-normal text-muted-foreground">{result.unit}</span></div>{result.category && <div className="mt-3 text-sm font-bold uppercase tracking-[0.2em]">{result.category}</div>}<p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground">{result.interpretation}</p></> : <div className="text-muted-foreground"><div className="font-mono-data text-4xl text-muted-foreground/40">— — —</div><p className="mt-3 text-sm leading-relaxed">Enter the required values below to see your result.</p></div>}</div>
+        {calc.extraInputs && <div className="mt-8 max-w-4xl border border-border bg-card p-6 sm:p-8" style={{ borderTop: `3px solid ${color}` }}><div className="mb-5 text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)]">Calculator Inputs</div><p className="mb-5 text-xs leading-6 text-muted-foreground">These dedicated inputs are required because this calculation cannot be derived from the shared Body Profile alone. Use consistent units and measurement conditions when tracking change.</p>{calc.id === "pace-calculator" ? <div className="grid grid-cols-1 gap-4 sm:grid-cols-3"><Field label="Distance / km" value={values.distance} set={v => setValue("distance", v)}/><Field label="Minutes" value={values.minutes} set={v => setValue("minutes", v)}/><Field label="Seconds" value={values.seconds} set={v => setValue("seconds", v)}/></div> : <div className="grid grid-cols-1 gap-4 sm:grid-cols-2"><Field label="Lift weight / kg" value={values.liftWeight} set={v => setValue("liftWeight", v)}/><Field label="Repetitions" value={values.reps} set={v => setValue("reps", v)}/></div>}</div>}
+        {!calc.extraInputs && <div className="mt-8 max-w-4xl border border-border bg-card p-5 text-xs leading-6 text-muted-foreground">This calculator uses your shared Body Profile. Keep those measurements consistent when comparing results over time.</div>}
+        <CalculatorSEOGuide calc={calc} related={related} />
+      </section>
+    </main>
+  </div>;
 }
-function Field({ label, value, set }) { return <label className="block"><span className="mb-2 block text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">{label}</span><input type="number" value={value} onChange={e => set(e.target.value)} className="w-full border-b-2 border-border bg-transparent px-0 py-2 text-lg font-mono-data focus:border-[var(--brand-lime)] focus:outline-none" /></label>; }
+
+function Field({ label, value, set }) { return <label className="block"><span className="mb-2 block text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">{label}</span><input type="number" inputMode="decimal" min="0" value={value} onChange={e => set(e.target.value)} className="w-full border-b-2 border-border bg-transparent px-0 py-2 text-lg font-mono-data focus:border-[var(--brand-lime)] focus:outline-none" /></label>; }
