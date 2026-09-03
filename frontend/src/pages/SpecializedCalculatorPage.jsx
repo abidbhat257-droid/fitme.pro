@@ -8,79 +8,22 @@ import { toMetric } from "@/lib/units";
 import { toast } from "sonner";
 
 const CATEGORY_COLORS = { "Nutrition & Fitness": "#059669", "Running & Training": "#059669", "Strength Training": "#059669", "Body Composition": "#059669" };
-
-function sharedReady(calc, state) {
-  const m = toMetric(state);
-  return calc.requires.every((r) => r === "sex" ? (m.sex === "male" || m.sex === "female") : r === "activity" ? !!m.activity : r === "age" ? Number.isFinite(m.age) && m.age > 0 : r === "height" ? Number.isFinite(m.heightCm) && m.heightCm > 0 : r === "weight" ? Number.isFinite(m.weightKg) && m.weightKg > 0 : r === "waist" ? Number.isFinite(m.waistCm) && m.waistCm > 0 : r === "neck" ? Number.isFinite(m.neckCm) && m.neckCm > 0 : true);
-}
-
-function ExtraResult({ id, values }) {
-  if (id === "pace-calculator") {
-    const distance = Number(values.distance), minutes = Number(values.minutes), seconds = Number(values.seconds) || 0;
-    if (!(distance > 0) || !(minutes >= 0) || !(seconds >= 0)) return null;
-    const total = minutes * 60 + seconds;
-    if (!(total > 0)) return null;
-    const pace = total / distance, pm = Math.floor(pace / 60), ps = Math.round(pace % 60), speed = distance / (total / 3600);
-    return { value: `${pm}:${String(ps).padStart(2, "0")}`, unit: "min/km", category: `${speed.toFixed(1)} km/h`, interpretation: "Running pace calculated from the distance and elapsed time you entered." };
-  }
-  const weight = Number(values.liftWeight), reps = Number(values.reps);
-  if (!(weight > 0) || !(reps > 0) || reps > 30) return null;
-  const oneRM = weight * (1 + reps / 30);
-  return { value: oneRM.toFixed(1), unit: "kg estimated 1RM", category: `Epley estimate from ${weight} kg × ${reps} reps`, interpretation: "Estimated one-repetition maximum using the Epley equation. Use conservative loads when applying an estimate to training." };
-}
-
+function sharedReady(calc, state) { const m = toMetric(state); return calc.requires.every((r) => r === "sex" ? (m.sex === "male" || m.sex === "female") : r === "activity" ? !!m.activity : r === "age" ? Number.isFinite(m.age) && m.age > 0 : r === "height" ? Number.isFinite(m.heightCm) && m.heightCm > 0 : r === "weight" ? Number.isFinite(m.weightKg) && m.weightKg > 0 : r === "waist" ? Number.isFinite(m.waistCm) && m.waistCm > 0 : r === "neck" ? Number.isFinite(m.neckCm) && m.neckCm > 0 : true); }
+function ExtraResult({ id, values }) { if (id === "pace-calculator") { const distance = Number(values.distance), minutes = Number(values.minutes), seconds = Number(values.seconds) || 0; if (!(distance > 0) || !(minutes >= 0) || !(seconds >= 0)) return null; const total = minutes * 60 + seconds; if (!(total > 0)) return null; const pace = total / distance, pm = Math.floor(pace / 60), ps = Math.round(pace % 60), speed = distance / (total / 3600); return { value: `${pm}:${String(ps).padStart(2, "0")}`, unit: "min/km", category: `${speed.toFixed(1)} km/h`, interpretation: "Running pace calculated from the distance and elapsed time you entered." }; } const weight = Number(values.liftWeight), reps = Number(values.reps); if (!(weight > 0) || !(reps > 0) || reps > 30) return null; const oneRM = weight * (1 + reps / 30); return { value: oneRM.toFixed(1), unit: "kg estimated 1RM", category: `Epley estimate from ${weight} kg × ${reps} reps`, interpretation: "Estimated one-repetition maximum using the Epley equation. Use conservative loads when applying an estimate to training." }; }
 export default function SpecializedCalculatorPage({ calculatorId }) {
-  const { state } = useMeasurements();
+  const { state, calculatorInputs, updateCalculatorInputs } = useMeasurements();
   const calc = getSpecializedCalculator(calculatorId);
-  const [values, setValues] = useState({ distance: "5", minutes: "30", seconds: "0", liftWeight: "60", reps: "8" });
+  const saved = calculatorInputs?.[calculatorId] || {};
+  const [values, setValues] = useState({ distance: saved.distance ?? "5", minutes: saved.minutes ?? "30", seconds: saved.seconds ?? "0", liftWeight: saved.liftWeight ?? "60", reps: saved.reps ?? "8" });
   const color = CATEGORY_COLORS[calc?.category] || "#059669";
   const ready = !!calc && sharedReady(calc, state);
   const result = useMemo(() => { if (!calc) return null; if (calc.extraInputs) return ExtraResult({ id: calc.id, values }); return ready ? calc.compute(state) : null; }, [calc, state, ready, values]);
-
-  useEffect(() => {
-    if (!calc) return;
-    document.title = `${calc.name} · Fitme Pro`;
-    let meta = document.head.querySelector('meta[name="description"]');
-    if (!meta) { meta = document.createElement("meta"); meta.name = "description"; document.head.appendChild(meta); }
-    meta.content = `${calc.description} Free calculator from FitMe Pro.`;
-    let canonical = document.head.querySelector('link[rel="canonical"]');
-    if (!canonical) { canonical = document.createElement("link"); canonical.rel = "canonical"; document.head.appendChild(canonical); }
-    canonical.href = `${window.location.origin}/${calc.slug}`;
-  }, [calc]);
-
+  useEffect(() => { if (!calc) return; document.title = `${calc.name} · Fitme Pro`; let meta = document.head.querySelector('meta[name="description"]'); if (!meta) { meta = document.createElement("meta"); meta.name = "description"; document.head.appendChild(meta); } meta.content = `${calc.description} Free calculator from FitMe Pro.`; let canonical = document.head.querySelector('link[rel="canonical"]'); if (!canonical) { canonical = document.createElement("link"); canonical.rel = "canonical"; document.head.appendChild(canonical); } canonical.href = `${window.location.origin}/${calc.slug}`; }, [calc]);
   useEffect(() => { window.scrollTo(0, 0); }, [calculatorId]);
-
   if (!calc) return <main className="p-10"><h1 className="font-display text-2xl uppercase">Calculator not found</h1><p className="mt-3 text-muted-foreground">The calculator URL could not be matched to one of FitMe Pro's specialized calculators.</p><Link className="mt-6 inline-block text-[var(--brand-lime)]" to="/">Back to dashboard</Link></main>;
-
+  const setValue = (key, value) => { setValues(x => ({ ...x, [key]: value })); updateCalculatorInputs(calculatorId, { [key]: value }); };
   const onCopy = async () => { try { await navigator.clipboard.writeText(`${calc.name}: ${result?.value ?? "—"} ${result?.unit ?? ""}`); toast.success("Copied"); } catch { toast.error("Copy failed"); } };
   const onShare = async () => { try { if (navigator.share) await navigator.share({ title: calc.name, text: `${calc.name}: ${result?.value ?? "—"}`, url: window.location.href }); else { await navigator.clipboard.writeText(window.location.href); toast.success("Link copied"); } } catch {} };
-
-  return <div className="flex min-h-screen flex-col lg:flex-row">
-    <MeasurementPanel />
-    <main className="min-w-0 flex-1">
-      <section className="relative overflow-hidden border-b border-border">
-        <div className="relative max-w-4xl px-6 py-8 sm:px-10 lg:py-10">
-          <Link to="/" className="mb-4 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.25em] text-muted-foreground hover:text-[var(--brand-lime)]"><ArrowLeft size={14}/> Back to dashboard</Link>
-          <div className="mb-2 flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.3em]" style={{ color }}><span className="h-2 w-2" style={{ background: color }} />{calc.category}</div>
-          <h1 className="font-display text-3xl uppercase leading-none tracking-tighter sm:text-4xl lg:text-5xl">{calc.name}</h1>
-          <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">{calc.description}</p>
-        </div>
-      </section>
-
-      <section className="px-6 py-8 sm:px-10">
-        <div className="max-w-4xl border border-border bg-card p-6 sm:p-8" style={{ borderTop: `4px solid ${color}` }}>
-          <div className="mb-5 flex flex-wrap items-start justify-between gap-4"><div className="text-[10px] font-bold uppercase tracking-[0.25em] text-muted-foreground">Your Result</div><div className="flex gap-2 no-print"><button onClick={onCopy} className="inline-flex items-center gap-1.5 border border-border px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest hover:border-[var(--brand-lime)]"><Copy size={12}/> Copy</button><button onClick={onShare} className="inline-flex items-center gap-1.5 border border-border px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest hover:border-[var(--brand-lime)]"><ShareNetwork size={12}/> Share</button><button onClick={() => window.print()} className="inline-flex items-center gap-1.5 border border-border px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest hover:border-[var(--brand-lime)]"><Printer size={12}/> Print</button></div></div>
-          {result ? <><div className="font-mono-data text-5xl font-black tracking-tight text-[var(--brand-lime)] sm:text-6xl">{result.value}<span className="ml-2 text-lg font-normal text-muted-foreground">{result.unit}</span></div>{result.category && <div className="mt-3 text-sm font-bold uppercase tracking-[0.2em]">{result.category}</div>}<p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground">{result.interpretation}</p></> : <div className="text-muted-foreground"><div className="font-mono-data text-4xl text-muted-foreground/40">— — —</div><p className="mt-3 text-sm leading-relaxed">Enter the required measurements below to see your result.</p></div>}
-        </div>
-
-        {calc.extraInputs && <div className="mt-8 max-w-4xl border border-border bg-card p-6 sm:p-8" style={{ borderTop: `3px solid ${color}` }}><div className="mb-5 text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)]">Calculator Inputs</div><p className="mb-5 text-xs text-muted-foreground">Enter the activity-specific values required for this calculator.</p>{calc.id === "pace-calculator" ? <div className="grid grid-cols-1 gap-4 sm:grid-cols-3"><Field label="Distance / km" value={values.distance} set={(v) => setValues((x) => ({ ...x, distance: v }))}/><Field label="Minutes" value={values.minutes} set={(v) => setValues((x) => ({ ...x, minutes: v }))}/><Field label="Seconds" value={values.seconds} set={(v) => setValues((x) => ({ ...x, seconds: v }))}/></div> : <div className="grid grid-cols-1 gap-4 sm:grid-cols-2"><Field label="Lift weight / kg" value={values.liftWeight} set={(v) => setValues((x) => ({ ...x, liftWeight: v }))}/><Field label="Repetitions" value={values.reps} set={(v) => setValues((x) => ({ ...x, reps: v }))}/></div>}</div>}
-
-        <div className="mt-8 max-w-4xl"><div className="mb-2 text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)]">Formula</div><pre className="overflow-x-auto whitespace-pre-wrap border border-border bg-card p-4 font-mono-data text-sm">{calc.formula}</pre></div>
-        <div className="mt-8 max-w-4xl"><h2 className="mb-4 font-display text-2xl uppercase tracking-tighter">How To Calculate</h2><ol className="space-y-3"><li className="flex gap-4"><span className="bg-[var(--brand-lime)] px-2 py-0.5 font-mono-data text-xs text-white">01</span><span className="text-sm leading-relaxed">Enter or confirm the shared FitMe Pro measurements in the panel.</span></li><li className="flex gap-4"><span className="bg-[var(--brand-lime)] px-2 py-0.5 font-mono-data text-xs text-white">02</span><span className="text-sm leading-relaxed">Enter any calculator-specific values shown above.</span></li><li className="flex gap-4"><span className="bg-[var(--brand-lime)] px-2 py-0.5 font-mono-data text-xs text-white">03</span><span className="text-sm leading-relaxed">Use the result as an estimate and track changes over time.</span></li></ol></div>
-        <div className="mt-8 max-w-4xl"><h2 className="mb-4 font-display text-2xl uppercase tracking-tighter">FAQ</h2><div className="space-y-4 text-sm leading-relaxed text-muted-foreground"><p><strong className="text-foreground">Does this use my FitMe Pro data?</strong><br/>Yes. Shared measurements are read from the same on-device measurement state used by the other calculators.</p><p><strong className="text-foreground">Are the results exact?</strong><br/>No. These are estimates based on established equations and the measurements entered.</p><p><strong className="text-foreground">Is my information uploaded?</strong><br/>The calculator is designed to process measurements on your device.</p></div></div>
-      </section>
-    </main>
-  </div>;
+  return <div className="flex min-h-screen flex-col lg:flex-row"><MeasurementPanel/><main className="min-w-0 flex-1"><section className="relative overflow-hidden border-b border-border"><div className="relative max-w-4xl px-6 py-8 sm:px-10 lg:py-10"><Link to="/" className="mb-4 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.25em] text-muted-foreground hover:text-[var(--brand-lime)]"><ArrowLeft size={14}/> Back to dashboard</Link><div className="mb-2 flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.3em]" style={{ color }}><span className="h-2 w-2" style={{ background: color }} />{calc.category}</div><h1 className="font-display text-3xl uppercase leading-none tracking-tighter sm:text-4xl lg:text-5xl">{calc.name}</h1><p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">{calc.description}</p></div></section><section className="px-6 py-8 sm:px-10"><div className="max-w-4xl border border-border bg-card p-6 sm:p-8" style={{ borderTop: `4px solid ${color}` }}><div className="mb-5 flex flex-wrap items-start justify-between gap-4"><div className="text-[10px] font-bold uppercase tracking-[0.25em] text-muted-foreground">Your Result</div><div className="flex gap-2 no-print"><button onClick={onCopy} className="inline-flex items-center gap-1.5 border border-border px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest hover:border-[var(--brand-lime)]"><Copy size={12}/> Copy</button><button onClick={onShare} className="inline-flex items-center gap-1.5 border border-border px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest hover:border-[var(--brand-lime)]"><ShareNetwork size={12}/> Share</button><button onClick={() => window.print()} className="inline-flex items-center gap-1.5 border border-border px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest hover:border-[var(--brand-lime)]"><Printer size={12}/> Print</button></div></div>{result ? <><div className="font-mono-data text-5xl font-black tracking-tight text-[var(--brand-lime)] sm:text-6xl">{result.value}<span className="ml-2 text-lg font-normal text-muted-foreground">{result.unit}</span></div>{result.category && <div className="mt-3 text-sm font-bold uppercase tracking-[0.2em]">{result.category}</div>}<p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground">{result.interpretation}</p></> : <div className="text-muted-foreground"><div className="font-mono-data text-4xl text-muted-foreground/40">— — —</div><p className="mt-3 text-sm leading-relaxed">Enter the required measurements below to see your result.</p></div>}</div>{calc.extraInputs && <div className="mt-8 max-w-4xl border border-border bg-card p-6 sm:p-8" style={{ borderTop: `3px solid ${color}` }}><div className="mb-5 text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)]">Calculator Inputs</div><p className="mb-5 text-xs text-muted-foreground">Enter the activity-specific values required for this calculator.</p>{calc.id === "pace-calculator" ? <div className="grid grid-cols-1 gap-4 sm:grid-cols-3"><Field label="Distance / km" value={values.distance} set={v => setValue("distance", v)}/><Field label="Minutes" value={values.minutes} set={v => setValue("minutes", v)}/><Field label="Seconds" value={values.seconds} set={v => setValue("seconds", v)}/></div> : <div className="grid grid-cols-1 gap-4 sm:grid-cols-2"><Field label="Lift weight / kg" value={values.liftWeight} set={v => setValue("liftWeight", v)}/><Field label="Repetitions" value={values.reps} set={v => setValue("reps", v)}/></div>}</div>}<div className="mt-8 max-w-4xl"><div className="mb-2 text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)]">Formula</div><pre className="overflow-x-auto whitespace-pre-wrap border border-border bg-card p-4 font-mono-data text-sm">{calc.formula}</pre></div></section></main></div>;
 }
-
-function Field({ label, value, set }) { return <label className="block"><span className="mb-2 block text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">{label}</span><input type="number" value={value} onChange={(e) => set(e.target.value)} className="w-full border-b-2 border-border bg-transparent px-0 py-2 text-lg font-mono-data focus:border-[var(--brand-lime)] focus:outline-none" /></label>; }
+function Field({ label, value, set }) { return <label className="block"><span className="mb-2 block text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">{label}</span><input type="number" value={value} onChange={e => set(e.target.value)} className="w-full border-b-2 border-border bg-transparent px-0 py-2 text-lg font-mono-data focus:border-[var(--brand-lime)] focus:outline-none" /></label>; }
