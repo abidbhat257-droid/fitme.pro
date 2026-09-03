@@ -1,65 +1,10 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { JOURNAL_ARTICLES, JOURNAL_CATEGORIES } from "@/lib/journalContent";
+import { JOURNAL_EXPANSION_ARTICLES } from "@/lib/journalExpansion";
 
-export default function Journal() {
-  useEffect(() => {
-    document.title = "FitMe Pro Journal — Nutrition, Fitness, Weight Loss & Wellness";
-    const desc = "Evidence-informed guides on nutrition, fitness, weight management, body composition and wellness from FitMe Pro.";
-    let meta = document.querySelector('meta[name="description"]');
-    if (!meta) { meta = document.createElement("meta"); meta.name = "description"; document.head.appendChild(meta); }
-    meta.content = desc;
-  }, []);
-
-  const featured = JOURNAL_ARTICLES.find((a) => a.featured) || JOURNAL_ARTICLES[0];
-
-  return (
-    <main className="min-h-screen px-4 py-10 sm:px-6 lg:px-10">
-      <div className="mx-auto max-w-6xl">
-        <section className="rounded-3xl border border-white/10 bg-white/[0.04] p-7 sm:p-10">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-primary">FitMe Pro Journal</p>
-          <h1 className="max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl">Practical guidance for a healthier, stronger you.</h1>
-          <p className="mt-5 max-w-2xl text-base leading-7 text-muted-foreground sm:text-lg">Evidence-informed articles on nutrition, fitness, weight management, body composition and everyday wellness—written to help you understand the numbers behind your health.</p>
-          <div className="mt-6 flex flex-wrap gap-3">
-            <Link to="/journal/evidence-sources" className="rounded-full border border-white/15 px-4 py-2 text-sm font-semibold transition hover:border-primary/50 hover:text-primary">Our evidence sources →</Link>
-            <Link to="/journal/editorial-standards" className="rounded-full border border-white/15 px-4 py-2 text-sm font-semibold transition hover:border-primary/50 hover:text-primary">Editorial standards →</Link>
-          </div>
-        </section>
-
-        <section className="mt-10">
-          <div className="mb-5 flex items-end justify-between gap-4"><div><h2 className="text-2xl font-bold">Explore topics</h2><p className="mt-1 text-sm text-muted-foreground">Start with the area you want to learn about.</p></div></div>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {JOURNAL_CATEGORIES.map((cat) => (
-              <Link key={cat.slug} to={`/journal/${cat.slug}`} className="group rounded-2xl border border-white/10 bg-card p-5 transition hover:-translate-y-0.5 hover:border-primary/40">
-                <h3 className="text-lg font-semibold group-hover:text-primary">{cat.name}</h3><p className="mt-2 text-sm leading-6 text-muted-foreground">{cat.description}</p><span className="mt-4 inline-block text-sm font-medium text-primary">Explore →</span>
-              </Link>
-            ))}
-          </div>
-        </section>
-
-        <section className="mt-10">
-          <div className="mb-5"><h2 className="text-2xl font-bold">Featured guide</h2></div>
-          <Link to={`/journal/${featured.categorySlug}/${featured.slug}`} className="block rounded-3xl border border-white/10 bg-card p-7 transition hover:border-primary/40 sm:p-9">
-            <span className="text-xs font-semibold uppercase tracking-wider text-primary">{featured.category} · {featured.readTime}</span>
-            <h2 className="mt-3 max-w-3xl text-2xl font-bold sm:text-3xl">{featured.title}</h2>
-            <p className="mt-3 max-w-3xl leading-7 text-muted-foreground">{featured.description}</p>
-            <span className="mt-5 inline-block font-semibold text-primary">Read the guide →</span>
-          </Link>
-        </section>
-
-        <section className="mt-10 pb-10">
-          <div className="mb-5"><h2 className="text-2xl font-bold">Latest articles</h2></div>
-          <div className="grid gap-5 md:grid-cols-2">
-            {JOURNAL_ARTICLES.map((article) => (
-              <Link key={article.slug} to={`/journal/${article.categorySlug}/${article.slug}`} className="rounded-2xl border border-white/10 bg-card p-6 transition hover:border-primary/40">
-                <span className="text-xs font-semibold uppercase tracking-wider text-primary">{article.category} · {article.readTime}</span>
-                <h3 className="mt-2 text-xl font-semibold">{article.title}</h3>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">{article.description}</p>
-              </Link>
-            ))}
-          </div>
-        </section>
-      </div>
-    </main>
-  );
+export default function Journal(){
+ useEffect(()=>{document.title="FitMe Pro Journal — Nutrition, Fitness, Weight Loss & Wellness";const d="Evidence-informed guides on nutrition, fitness, weight management, body composition and wellness from FitMe Pro.";let m=document.querySelector('meta[name="description"]');if(!m){m=document.createElement("meta");m.name="description";document.head.appendChild(m)}m.content=d},[]);
+ const articles=[...JOURNAL_ARTICLES,...JOURNAL_EXPANSION_ARTICLES]; const featured=JOURNAL_ARTICLES.find(a=>a.featured)||articles[0];
+ return <main className="min-h-screen px-4 py-10 sm:px-6 lg:px-10"><div className="mx-auto max-w-6xl"><section className="rounded-3xl border border-white/10 bg-white/[0.04] p-7 sm:p-10"><p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-primary">FitMe Pro Journal</p><h1 className="max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl">Practical guidance for a healthier, stronger you.</h1><p className="mt-5 max-w-2xl text-base leading-7 text-muted-foreground sm:text-lg">Evidence-informed articles on nutrition, fitness, weight management, body composition and everyday wellness—written to help you understand the numbers behind your health.</p><div className="mt-6 flex flex-wrap gap-3"><Link to="/journal/evidence-sources" className="rounded-full border border-white/15 px-4 py-2 text-sm font-semibold">Our evidence sources →</Link><Link to="/journal/editorial-standards" className="rounded-full border border-white/15 px-4 py-2 text-sm font-semibold">Editorial standards →</Link></div></section><section className="mt-10"><div className="mb-5"><h2 className="text-2xl font-bold">Explore topics</h2><p className="mt-1 text-sm text-muted-foreground">Start with the area you want to learn about.</p></div><div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{JOURNAL_CATEGORIES.map(c=><Link key={c.slug} to={`/journal/${c.slug}`} className="group rounded-2xl border border-white/10 bg-card p-5 transition hover:border-primary/40"><h3 className="text-lg font-semibold group-hover:text-primary">{c.name}</h3><p className="mt-2 text-sm leading-6 text-muted-foreground">{c.description}</p><span className="mt-4 inline-block text-sm font-medium text-primary">Explore →</span></Link>)}</div></section><section className="mt-10"><h2 className="mb-5 text-2xl font-bold">Featured guide</h2><Link to={`/journal/${featured.categorySlug}/${featured.slug}`} className="block rounded-3xl border border-white/10 bg-card p-7 transition hover:border-primary/40 sm:p-9"><span className="text-xs font-semibold uppercase tracking-wider text-primary">{featured.category} · {featured.readTime}</span><h2 className="mt-3 max-w-3xl text-2xl font-bold sm:text-3xl">{featured.title}</h2><p className="mt-3 max-w-3xl leading-7 text-muted-foreground">{featured.description}</p><span className="mt-5 inline-block font-semibold text-primary">Read the guide →</span></Link></section><section className="mt-10 pb-10"><div className="mb-5"><h2 className="text-2xl font-bold">Latest articles</h2><p className="mt-1 text-sm text-muted-foreground">New and expanded evidence-informed guides.</p></div><div className="grid gap-5 md:grid-cols-2">{articles.map(a=><Link key={`${a.categorySlug}-${a.slug}`} to={`/journal/${a.categorySlug}/${a.slug}`} className="rounded-2xl border border-white/10 bg-card p-6 transition hover:border-primary/40"><span className="text-xs font-semibold uppercase tracking-wider text-primary">{a.category} · {a.readTime}</span><h3 className="mt-2 text-xl font-semibold">{a.title}</h3><p className="mt-2 text-sm leading-6 text-muted-foreground">{a.description}</p></Link>)}</div></section></div></main>;
 }
