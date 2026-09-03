@@ -1,30 +1,12 @@
 import React, { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { JOURNAL_ARTICLES, getJournalCategory } from "@/lib/journalContent";
+import { JOURNAL_EXPANSION_ARTICLES } from "@/lib/journalExpansion";
 
 export default function JournalCategory() {
-  const { categorySlug } = useParams();
-  const category = getJournalCategory(categorySlug);
-  const articles = JOURNAL_ARTICLES.filter((a) => a.categorySlug === categorySlug);
-
-  useEffect(() => {
-    if (!category) return;
-    document.title = `${category.name} — FitMe Pro Journal`;
-    let meta = document.querySelector('meta[name="description"]');
-    if (!meta) { meta = document.createElement("meta"); meta.name = "description"; document.head.appendChild(meta); }
-    meta.content = `${category.description} Explore FitMe Pro Journal guides and calculators.`;
-  }, [category]);
-
-  if (!category) return <main className="mx-auto max-w-4xl px-4 py-20"><h1 className="text-3xl font-bold">Topic not found</h1><Link className="mt-4 inline-block text-primary" to="/journal">Back to Journal →</Link></main>;
-
-  return (
-    <main className="min-h-screen px-4 py-10 sm:px-6 lg:px-10"><div className="mx-auto max-w-6xl">
-      <Link to="/journal" className="text-sm font-medium text-primary">← FitMe Pro Journal</Link>
-      <header className="mt-6 max-w-3xl"><p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">Journal / {category.name}</p><h1 className="mt-3 text-4xl font-bold sm:text-5xl">{category.name}</h1><p className="mt-4 text-lg leading-8 text-muted-foreground">{category.description}</p></header>
-      <section className="mt-10 grid gap-5 md:grid-cols-2">
-        {articles.length ? articles.map((article) => <Link key={article.slug} to={`/journal/${categorySlug}/${article.slug}`} className="rounded-2xl border border-white/10 bg-card p-6 transition hover:border-primary/40"><span className="text-xs font-semibold uppercase tracking-wider text-primary">{article.readTime}</span><h2 className="mt-2 text-xl font-semibold">{article.title}</h2><p className="mt-2 text-sm leading-6 text-muted-foreground">{article.description}</p><span className="mt-4 inline-block text-sm font-semibold text-primary">Read article →</span></Link>) : <p className="text-muted-foreground">More articles are coming soon.</p>}
-      </section>
-      <section className="mt-12 rounded-3xl border border-primary/20 bg-primary/5 p-7"><h2 className="text-2xl font-bold">Use the numbers with context</h2><p className="mt-2 max-w-2xl leading-7 text-muted-foreground">FitMe Pro calculators provide estimates that can help you understand body measurements, energy needs and nutrition targets. They are not medical diagnoses.</p><div className="mt-5 flex flex-wrap gap-3"><Link className="rounded-xl bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground" to="/tdee-calculator">TDEE Calculator</Link><Link className="rounded-xl border border-white/10 px-4 py-2 text-sm font-semibold" to="/protein-calculator">Protein Calculator</Link><Link className="rounded-xl border border-white/10 px-4 py-2 text-sm font-semibold" to="/calorie-deficit-calculator">Calorie Deficit Calculator</Link></div></section>
-    </div></main>
-  );
+  const { categorySlug } = useParams(); const category = getJournalCategory(categorySlug);
+  const articles = [...JOURNAL_ARTICLES, ...JOURNAL_EXPANSION_ARTICLES].filter((a)=>a.categorySlug===categorySlug);
+  useEffect(()=>{if(!category)return;document.title=`${category.name} — FitMe Pro Journal`;let m=document.querySelector('meta[name="description"]');if(!m){m=document.createElement("meta");m.name="description";document.head.appendChild(m)}m.content=`${category.description} Explore FitMe Pro Journal guides and calculators.`},[category]);
+  if(!category)return <main className="mx-auto max-w-4xl px-4 py-20"><h1 className="text-3xl font-bold">Topic not found</h1><Link className="mt-4 inline-block text-primary" to="/journal">Back to Journal →</Link></main>;
+  return <main className="min-h-screen px-4 py-10 sm:px-6 lg:px-10"><div className="mx-auto max-w-6xl"><Link to="/journal" className="text-sm font-medium text-primary">← FitMe Pro Journal</Link><header className="mt-6 max-w-3xl"><p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">Journal / {category.name}</p><h1 className="mt-3 text-4xl font-bold sm:text-5xl">{category.name}</h1><p className="mt-4 text-lg leading-8 text-muted-foreground">{category.description}</p></header><section className="mt-10 grid gap-5 md:grid-cols-2">{articles.map(a=><Link key={a.slug} to={`/journal/${categorySlug}/${a.slug}`} className="rounded-2xl border border-white/10 bg-card p-6 transition hover:border-primary/40"><span className="text-xs font-semibold uppercase tracking-wider text-primary">{a.readTime}</span><h2 className="mt-2 text-xl font-semibold">{a.title}</h2><p className="mt-2 text-sm leading-6 text-muted-foreground">{a.description}</p><span className="mt-4 inline-block text-sm font-semibold text-primary">Read article →</span></Link>)}</section><section className="mt-12 rounded-3xl border border-primary/20 bg-primary/5 p-7"><h2 className="text-2xl font-bold">Use the numbers with context</h2><p className="mt-2 max-w-2xl leading-7 text-muted-foreground">FitMe Pro calculators provide estimates that can help you understand body measurements, energy needs and nutrition targets. They are not medical diagnoses.</p><div className="mt-5 flex flex-wrap gap-3"><Link className="rounded-xl bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground" to="/tdee-calculator">TDEE Calculator</Link><Link className="rounded-xl border border-white/10 px-4 py-2 text-sm font-semibold" to="/protein-calculator">Protein Calculator</Link><Link className="rounded-xl border border-white/10 px-4 py-2 text-sm font-semibold" to="/calorie-deficit-calculator">Calorie Deficit Calculator</Link></div></section></div></main>;
 }
