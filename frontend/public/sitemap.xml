@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://fitme-pro.vercel.app/</loc></url>
-
-  <!-- Body Composition & Body Measurements -->
   <url><loc>https://fitme-pro.vercel.app/bmi-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/body-fat-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/lean-body-mass-calculator</loc></url>
@@ -23,8 +21,6 @@
   <url><loc>https://fitme-pro.vercel.app/body-frame-size-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/total-body-water-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/skeletal-muscle-mass-calculator</loc></url>
-
-  <!-- Weight, BMI & Weight Goals -->
   <url><loc>https://fitme-pro.vercel.app/ideal-body-weight-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/healthy-weight-range-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/adjusted-body-weight-calculator</loc></url>
@@ -40,8 +36,6 @@
   <url><loc>https://fitme-pro.vercel.app/calories-to-gain-1-kg-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/obesity-class-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/bmi-prime-calculator</loc></url>
-
-  <!-- Calories & Metabolism -->
   <url><loc>https://fitme-pro.vercel.app/bmr-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/tdee-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/daily-calorie-needs-calculator</loc></url>
@@ -54,11 +48,9 @@
   <url><loc>https://fitme-pro.vercel.app/exercise-calorie-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/walking-calorie-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/running-calorie-calculator</loc></url>
-  <url><loc>https://fitme-pro.vercel.app/cycling-calculator</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/cycling-calorie-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/reverse-diet-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/calorie-per-meal-calculator</loc></url>
-
-  <!-- Nutrition & Macronutrients -->
   <url><loc>https://fitme-pro.vercel.app/protein-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/protein-per-meal-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/protein-to-calorie-ratio-calculator</loc></url>
@@ -74,8 +66,6 @@
   <url><loc>https://fitme-pro.vercel.app/micronutrient-intake-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/daily-calorie-macro-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/meal-macro-calculator</loc></url>
-
-  <!-- Running, Cardio & Endurance -->
   <url><loc>https://fitme-pro.vercel.app/pace-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/running-speed-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/pace-to-speed-converter</loc></url>
@@ -91,8 +81,6 @@
   <url><loc>https://fitme-pro.vercel.app/aerobic-training-zone-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/anaerobic-threshold-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/fitness-age-calculator</loc></url>
-
-  <!-- Strength & Gym Performance -->
   <url><loc>https://fitme-pro.vercel.app/one-rep-max-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/bench-press-1rm-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/squat-1rm-calculator</loc></url>
@@ -103,8 +91,6 @@
   <url><loc>https://fitme-pro.vercel.app/training-volume-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/wilks-score-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/dots-score-calculator</loc></url>
-
-  <!-- Heart Rate & Cardiovascular Metrics -->
   <url><loc>https://fitme-pro.vercel.app/maximum-heart-rate-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/target-heart-rate-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/heart-rate-zone-calculator</loc></url>
