@@ -36,6 +36,15 @@ function formatHeading(template, name) {
   return template.replace("{name}", name);
 }
 
+function exampleFor(calc) {
+  const required = calc?.requires || [];
+  const values = { age: 30, heightCm: 175, weightKg: 70, waistCm: 82, hipCm: 96, neckCm: 38, wristCm: 17, activity: "moderate", sex: "male" };
+  const labels = { age: "age", heightCm: "height", weightKg: "weight", waistCm: "waist", hipCm: "hip", neckCm: "neck", wristCm: "wrist", activity: "activity level", sex: "sex" };
+  const units = { heightCm: "cm", weightKg: "kg", waistCm: "cm", hipCm: "cm", neckCm: "cm", wristCm: "cm" };
+  const parts = required.map((key) => `${labels[key] || key}: ${values[key] ?? "example value"}${units[key] ? ` ${units[key]}` : ""}`);
+  return parts.length ? parts.join(", ") : "the example values shown in the calculator inputs";
+}
+
 export default function LongFormArticle({ content, calc }) {
   if (!content) return null;
 
@@ -52,34 +61,29 @@ export default function LongFormArticle({ content, calc }) {
     })
     .filter(Boolean);
 
+  const name = content.name || calc?.name || "This Calculator";
+  const example = exampleFor(calc);
+
   return (
     <article className="border-t border-border pt-10 mt-2 space-y-8" data-testid="long-form-seo-content">
       <header>
-        <div className="text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)] mb-2">
-          Complete Guide
-        </div>
-        <h2 className="font-display text-3xl uppercase tracking-tighter leading-tight">
-          {content.name || calc?.name}
-        </h2>
-        <p className="mt-4 text-base text-muted-foreground leading-8">
-          This guide explains how the calculation works, what the result can tell you, how to measure inputs consistently, and how to use the number responsibly.
-        </p>
+        <div className="text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)] mb-2">Complete Guide</div>
+        <h2 className="font-display text-3xl uppercase tracking-tighter leading-tight">{name}</h2>
+        <p className="mt-4 text-base text-muted-foreground leading-8">This guide explains how the calculation works, what the result can tell you, how to measure inputs consistently, and how to use the number responsibly.</p>
       </header>
+
+      <section className="border border-border bg-card p-6">
+        <h3 className="font-display text-xl uppercase tracking-tight mb-3">Worked Example</h3>
+        <p className="text-sm sm:text-base text-muted-foreground leading-8">For a practical example, start with {example}. Apply the formula or method shown on this page using the same units throughout. The calculator performs the arithmetic automatically, while the displayed method lets you verify which inputs drive the result. This example is for understanding the calculation, not a health recommendation.</p>
+      </section>
 
       <div className="space-y-8">
         {sections.map((text, index) => {
-          const heading = formatHeading(
-            HEADINGS[index % HEADINGS.length],
-            content.name || calc?.name || "This Calculator"
-          );
+          const heading = formatHeading(HEADINGS[index % HEADINGS.length], name);
           return (
             <section key={`${index}-${heading}`}>
-              <h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">
-                {heading}
-              </h3>
-              <p className="text-sm sm:text-base text-muted-foreground leading-8">
-                {text}
-              </p>
+              <h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">{heading}</h3>
+              <p className="text-sm sm:text-base text-muted-foreground leading-8">{text}</p>
             </section>
           );
         })}
@@ -87,30 +91,18 @@ export default function LongFormArticle({ content, calc }) {
 
       {relatedLinks.length > 0 && (
         <section className="border border-border bg-card p-6">
-          <h3 className="font-display text-xl uppercase tracking-tight mb-4">
-            Related Calculators
-          </h3>
+          <h3 className="font-display text-xl uppercase tracking-tight mb-4">Related Calculators</h3>
           <div className="grid sm:grid-cols-2 gap-2">
             {relatedLinks.map((item) => (
-              <Link
-                key={item.slug}
-                to={`/${item.slug}-calculator`}
-                className="border border-border px-4 py-3 text-sm font-bold hover:text-[var(--brand-lime)] hover:border-[var(--brand-lime)] transition-colors"
-              >
-                {item.name}
-              </Link>
+              <Link key={item.slug} to={`/${item.slug}-calculator`} className="border border-border px-4 py-3 text-sm font-bold hover:text-[var(--brand-lime)] hover:border-[var(--brand-lime)] transition-colors">{item.name}</Link>
             ))}
           </div>
         </section>
       )}
 
       <section className="border border-border p-6 bg-card">
-        <h3 className="font-display text-xl uppercase tracking-tight mb-3">
-          Important Health Note
-        </h3>
-        <p className="text-sm text-muted-foreground leading-7">
-          FitMe Pro calculators provide educational estimates. They do not diagnose disease, replace clinical assessment, or guarantee a particular health or fitness outcome. If a result is unexpected, concerning, or relevant to a medical condition, discuss it with a qualified healthcare professional.
-        </p>
+        <h3 className="font-display text-xl uppercase tracking-tight mb-3">Important Health Note</h3>
+        <p className="text-sm text-muted-foreground leading-7">FitMe Pro calculators provide educational estimates. They do not diagnose disease, replace clinical assessment, or guarantee a particular health or fitness outcome. If a result is unexpected, concerning, or relevant to a medical condition, discuss it with a qualified healthcare professional.</p>
       </section>
     </article>
   );
