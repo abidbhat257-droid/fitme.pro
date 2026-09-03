@@ -13,7 +13,7 @@
     "@radix-ui/react-collapsible": "1.1.11",
     "@radix-ui/react-context-menu": "2.2.10",
     "@radix-ui/react-dialog": "1.1.14",
-    "@radix-ui/react-dropdown-menu": "2.2.5",
+    "@radix-ui/react-dropdown-menu": "2.1.15",
     "@radix-ui/react-hover-card": "1.1.15",
     "@radix-ui/react-label": "2.1.7",
     "@radix-ui/react-menubar": "1.1.15",
@@ -65,11 +65,12 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "CI=false craco build && node scripts/prerender.js && node scripts/prerenderExtras.js && node scripts/prerenderJournalExpansion.js && node scripts/prerenderSpecialized.js && node scripts/prerenderSEO.js",
+    "build": "CI=false craco build && node scripts/prerender.js && node scripts/prerenderExtras.js && node scripts/prerenderJournalExpansion.js && node scripts/prerenderSpecialized.js && node scripts/prerenderCalculatorSEO.js && node scripts/prerenderSEO.js",
     "test": "craco test"
   },
   "browserslist": {
     "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"],
     "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
   },
   "devDependencies": {
