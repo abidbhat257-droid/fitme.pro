@@ -1,6 +1,15 @@
 {
   "version": 2,
   "redirects": [
+    {"source":"/calculator/obesity-class","destination":"/obesity-class-calculator","permanent":true},
+    {"source":"/calculator/ponderal-index","destination":"/ponderal-index-calculator","permanent":true},
+    {"source":"/calculator/waist-height-ratio","destination":"/waist-height-ratio-calculator","permanent":true},
+    {"source":"/calculator/tdee","destination":"/tdee-calculator","permanent":true},
+    {"source":"/calculator/weight-loss-goal","destination":"/weight-loss-timeline-calculator","permanent":true},
+    {"source":"/calculator/weight-gain-goal","destination":"/weight-gain-calorie-calculator","permanent":true},
+    {"source":"/calculator/navy-body-fat","destination":"/body-fat-calculator","permanent":true},
+    {"source":"/calculator/army-body-fat-calculator","destination":"/body-fat-calculator","permanent":true},
+    {"source":"/calculator/calorie-calculator","destination":"/daily-calorie-needs-calculator","permanent":true},
     {"source":"/calculator/:slug","destination":"/:slug-calculator","permanent":true},
     {"source":"/calculator/:slug/","destination":"/:slug-calculator","permanent":true}
   ],
@@ -9,10 +18,7 @@
     {"source":"/bmi-prime-calculator","destination":"/bmi-prime-calculator/index.html"},
     {"source":"/healthy-weight-range-calculator","destination":"/healthy-weight-range-calculator/index.html"},
     {"source":"/ideal-body-weight-calculator","destination":"/ideal-body-weight-calculator/index.html"},
-    {"source":"/weight-loss-goal-calculator","destination":"/weight-loss-goal-calculator/index.html"},
-    {"source":"/weight-gain-goal-calculator","destination":"/weight-gain-goal-calculator/index.html"},
     {"source":"/body-fat-calculator","destination":"/body-fat-calculator/index.html"},
-    {"source":"/navy-body-fat-calculator","destination":"/navy-body-fat-calculator/index.html"},
     {"source":"/relative-fat-mass-calculator","destination":"/relative-fat-mass-calculator/index.html"},
     {"source":"/body-adiposity-index-calculator","destination":"/body-adiposity-index-calculator/index.html"},
     {"source":"/lean-body-mass-calculator","destination":"/lean-body-mass-calculator/index.html"},
