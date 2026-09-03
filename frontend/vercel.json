@@ -10,6 +10,11 @@
     {"source":"/calculator/navy-body-fat","destination":"/body-fat-calculator","permanent":true},
     {"source":"/calculator/army-body-fat-calculator","destination":"/body-fat-calculator","permanent":true},
     {"source":"/calculator/calorie-calculator","destination":"/daily-calorie-needs-calculator","permanent":true},
+    {"source":"/weight-loss-goal-calculator","destination":"/weight-loss-timeline-calculator","permanent":true},
+    {"source":"/weight-gain-goal-calculator","destination":"/weight-gain-calorie-calculator","permanent":true},
+    {"source":"/navy-body-fat-calculator","destination":"/body-fat-calculator","permanent":true},
+    {"source":"/army-body-fat-calculator","destination":"/body-fat-calculator","permanent":true},
+    {"source":"/calorie-calculator","destination":"/daily-calorie-needs-calculator","permanent":true},
     {"source":"/calculator/:slug","destination":"/:slug-calculator","permanent":true},
     {"source":"/calculator/:slug/","destination":"/:slug-calculator","permanent":true}
   ],
