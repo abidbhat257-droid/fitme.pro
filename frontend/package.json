@@ -13,7 +13,7 @@
     "@radix-ui/react-collapsible": "1.1.11",
     "@radix-ui/react-context-menu": "2.2.10",
     "@radix-ui/react-dialog": "1.1.14",
-    "@radix-ui/react-dropdown-menu": "2.1.15",
+    "@radix-ui/react-dropdown-menu": "2.2.5",
     "@radix-ui/react-hover-card": "1.1.15",
     "@radix-ui/react-label": "2.1.7",
     "@radix-ui/react-menubar": "1.1.15",
@@ -70,6 +70,7 @@
   },
   "browserslist": {
     "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"],
     "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
   },
   "devDependencies": {
@@ -100,7 +101,7 @@
     "rollup": "2.80.0",
     "underscore": "1.13.8",
     "uuid": "11.1.1",
-    "@tootallnate/once": "2.0.0",
+    "@tootallnate/once": "2.0.1",
     "webpack-dev-server": "5.2.4",
     "resolve-url-loader": "5.0.0",
     "**/resolve-url-loader/postcss": "8.5.10",
