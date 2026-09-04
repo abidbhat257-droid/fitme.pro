@@ -6,8 +6,10 @@ import BMISEOContent from "@/components/BMISEOContent";
 import CompositionSEOContent from "@/components/CompositionSEOContent";
 import Phase1SEOContent from "@/components/Phase1SEOContent";
 import Phase2SEOContent from "@/components/Phase2SEOContent";
+import Phase3SEOContent from "@/components/Phase3SEOContent";
 
 const PHASE2_SEO_SLUGS = new Set(["calorie", "body-fat", "calorie-deficit", "calories-burned", "water-intake"]);
+const PHASE3_SEO_SLUGS = new Set(["protein", "pace", "one-rep-max", "maximum-heart-rate", "heart-rate-zone"]);
 const COMPOSITION_SEO_SLUGS = new Set([
   "body-fat", "lean-body-mass", "fat-mass", "fat-free-mass", "relative-fat-mass",
   "body-adiposity-index", "fat-mass-index", "fat-free-mass-index", "waist-to-hip-ratio",
@@ -40,9 +42,11 @@ function exampleFor(calc) {
 export default function LongFormArticle({ content, calc }) {
   if (!content) return null;
   const isDedicatedPhase2 = PHASE2_SEO_SLUGS.has(calc?.slug);
+  const isDedicatedPhase3 = PHASE3_SEO_SLUGS.has(calc?.slug);
   const isDedicatedComposition = COMPOSITION_SEO_SLUGS.has(calc?.slug);
   const isDedicatedPhase1 = PHASE1_SEO_SLUGS.has(calc?.slug);
-  const sections = isDedicatedComposition || isDedicatedPhase1 || isDedicatedPhase2 ? [] : [...(content.sections || []), ...getExpansionSections(content)];
+  const hasDedicatedSEO = isDedicatedComposition || isDedicatedPhase1 || isDedicatedPhase2 || isDedicatedPhase3 || calc?.slug === "bmi";
+  const sections = hasDedicatedSEO ? [] : [...(content.sections || []), ...getExpansionSections(content)];
   const relatedNames = content.related || [];
   const relatedLinks = relatedNames.map((name) => { const found = CALCULATORS.find((item) => item.name === name); return found ? { name, slug: found.slug } : null; }).filter(Boolean);
   const name = content.name || calc?.name || "This Calculator";
@@ -56,19 +60,20 @@ export default function LongFormArticle({ content, calc }) {
         <p className="mt-4 text-base text-muted-foreground leading-8">This guide explains how the calculation works, what the result can tell you, how to measure inputs consistently, and how to use the number responsibly.</p>
       </header>
       {calc?.slug === "bmi" && <BMISEOContent />}
+      {isDedicatedPhase3 && <Phase3SEOContent slug={calc.slug} />}
       {isDedicatedPhase2 && <Phase2SEOContent slug={calc.slug} />}
-      {!isDedicatedPhase2 && isDedicatedComposition && <CompositionSEOContent slug={calc.slug} />}
+      {!isDedicatedPhase2 && !isDedicatedPhase3 && isDedicatedComposition && <CompositionSEOContent slug={calc.slug} />}
       {isDedicatedPhase1 && <Phase1SEOContent slug={calc.slug} />}
-      {!isDedicatedComposition && !isDedicatedPhase1 && !isDedicatedPhase2 && calc?.slug !== "bmi" && (
+      {!hasDedicatedSEO && (
         <section className="border border-border bg-card p-6"><h3 className="font-display text-xl uppercase tracking-tight mb-3">Worked Example</h3><p className="text-sm sm:text-base text-muted-foreground leading-8">For a practical example, start with {example}. Apply the formula or method shown on this page using the same units throughout. The calculator performs the arithmetic automatically, while the displayed method lets you verify which inputs drive the result. This example is for understanding the calculation, not a health recommendation.</p></section>
       )}
-      {!isDedicatedComposition && !isDedicatedPhase1 && !isDedicatedPhase2 && calc?.slug !== "bmi" && (
+      {!hasDedicatedSEO && (
         <div className="space-y-8">{sections.map((text, index) => { const heading = formatHeading(HEADINGS[index % HEADINGS.length], name); return <section key={`${index}-${heading}`}><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">{heading}</h3><p className="text-sm sm:text-base text-muted-foreground leading-8">{text}</p></section>; })}</div>
       )}
-      {relatedLinks.length > 0 && !isDedicatedComposition && !isDedicatedPhase1 && !isDedicatedPhase2 && calc?.slug !== "bmi" && (
+      {relatedLinks.length > 0 && !hasDedicatedSEO && (
         <section className="border border-border bg-card p-6"><h3 className="font-display text-xl uppercase tracking-tight mb-4">Related Calculators</h3><div className="grid sm:grid-cols-2 gap-2">{relatedLinks.map((item) => <Link key={item.slug} to={`/${item.slug}-calculator`} className="border border-border px-4 py-3 text-sm font-bold hover:text-[var(--brand-lime)] hover:border-[var(--brand-lime)] transition-colors">{item.name}</Link>)}</div></section>
       )}
-      {!isDedicatedComposition && !isDedicatedPhase1 && !isDedicatedPhase2 && calc?.slug !== "bmi" && (
+      {!hasDedicatedSEO && (
         <section className="border border-border p-6 bg-card"><h3 className="font-display text-xl uppercase tracking-tight mb-3">Important Health Note</h3><p className="text-sm text-muted-foreground leading-7">FitMe Pro calculators provide educational estimates. They do not diagnose disease, replace clinical assessment, or guarantee a particular health or fitness outcome. If a result is unexpected, concerning, or relevant to a medical condition, discuss it with a qualified healthcare professional.</p></section>
       )}
     </article>
