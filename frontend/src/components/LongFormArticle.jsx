@@ -8,11 +8,13 @@ import Phase1SEOContent from "@/components/Phase1SEOContent";
 import Phase2SEOContent from "@/components/Phase2SEOContent";
 import Phase3SEOContent from "@/components/Phase3SEOContent";
 import Phase4SEOContent from "@/components/Phase4SEOContent";
+import Phase5SEOContent from "@/components/Phase5SEOContent";
 import SEOPageCompleteness from "@/components/SEOPageCompleteness";
 
 const PHASE2_SEO_SLUGS = new Set(["calorie", "body-fat", "calorie-deficit", "calories-burned", "water-intake"]);
 const PHASE3_SEO_SLUGS = new Set(["protein", "pace", "one-rep-max", "maximum-heart-rate", "heart-rate-zone"]);
 const PHASE4_SEO_SLUGS = new Set(["walking-calories", "macro-calculator", "vo2-max", "healthy-weight-range", "body-surface-area"]);
+const PHASE5_SEO_SLUGS = new Set(["adjusted-body-weight", "target-weight", "target-weight-bmi", "weight-loss-percentage", "weight-gain-percentage"]);
 const COMPOSITION_SEO_SLUGS = new Set([
   "body-fat", "lean-body-mass", "fat-mass", "fat-free-mass", "relative-fat-mass",
   "body-adiposity-index", "fat-mass-index", "fat-free-mass-index", "waist-to-hip-ratio",
@@ -47,9 +49,10 @@ export default function LongFormArticle({ content, calc }) {
   const isDedicatedPhase2 = PHASE2_SEO_SLUGS.has(calc?.slug);
   const isDedicatedPhase3 = PHASE3_SEO_SLUGS.has(calc?.slug);
   const isDedicatedPhase4 = PHASE4_SEO_SLUGS.has(calc?.slug);
+  const isDedicatedPhase5 = PHASE5_SEO_SLUGS.has(calc?.slug);
   const isDedicatedComposition = COMPOSITION_SEO_SLUGS.has(calc?.slug);
   const isDedicatedPhase1 = PHASE1_SEO_SLUGS.has(calc?.slug);
-  const hasDedicatedSEO = isDedicatedComposition || isDedicatedPhase1 || isDedicatedPhase2 || isDedicatedPhase3 || isDedicatedPhase4 || calc?.slug === "bmi";
+  const hasDedicatedSEO = isDedicatedComposition || isDedicatedPhase1 || isDedicatedPhase2 || isDedicatedPhase3 || isDedicatedPhase4 || isDedicatedPhase5 || calc?.slug === "bmi";
   const sections = hasDedicatedSEO ? [] : [...(content.sections || []), ...getExpansionSections(content)];
   const relatedNames = content.related || [];
   const relatedLinks = relatedNames.map((name) => { const found = CALCULATORS.find((item) => item.name === name); return found ? { name, slug: found.slug } : null; }).filter(Boolean);
@@ -64,10 +67,11 @@ export default function LongFormArticle({ content, calc }) {
         <p className="mt-4 text-base text-muted-foreground leading-8">This guide explains how the calculation works, what the result can tell you, how to measure inputs consistently, and how to use the number responsibly.</p>
       </header>
       {calc?.slug === "bmi" && <BMISEOContent />}
+      {isDedicatedPhase5 && <Phase5SEOContent slug={calc.slug} />}
       {isDedicatedPhase4 && <Phase4SEOContent slug={calc.slug} />}
       {isDedicatedPhase3 && <Phase3SEOContent slug={calc.slug} />}
       {isDedicatedPhase2 && <Phase2SEOContent slug={calc.slug} />}
-      {!isDedicatedPhase2 && !isDedicatedPhase3 && !isDedicatedPhase4 && isDedicatedComposition && <CompositionSEOContent slug={calc.slug} />}
+      {!isDedicatedPhase2 && !isDedicatedPhase3 && !isDedicatedPhase4 && !isDedicatedPhase5 && isDedicatedComposition && <CompositionSEOContent slug={calc.slug} />}
       {isDedicatedPhase1 && <Phase1SEOContent slug={calc.slug} />}
       {hasDedicatedSEO && <SEOPageCompleteness slug={calc?.slug} />}
       {!hasDedicatedSEO && (
