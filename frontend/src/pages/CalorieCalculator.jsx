@@ -14,22 +14,27 @@ export default function CalorieCalculator() {
   const [height, setHeight] = useState("173");
   const [weight, setWeight] = useState("85");
   const [activity, setActivity] = useState("moderate");
+  const [deficit, setDeficit] = useState("500");
+  const [surplus, setSurplus] = useState("300");
   const [unit, setUnit] = useState("metric");
 
   const result = useMemo(() => {
     const a = Number(age);
     let h = Number(height);
     let w = Number(weight);
+    const d = Number(deficit);
+    const g = Number(surplus);
     if (!Number.isFinite(a) || !Number.isFinite(h) || !Number.isFinite(w) || a <= 0 || h <= 0 || w <= 0) return null;
+    if (!Number.isFinite(d) || d < 0 || !Number.isFinite(g) || g < 0) return null;
     if (unit === "imperial") {
-      h = h * 2.54;
-      w = w * 0.45359237;
+      h *= 2.54;
+      w *= 0.45359237;
     }
     const bmr = 10 * w + 6.25 * h - 5 * a + (sex === "male" ? 5 : -161);
     const factor = ACTIVITY.find((x) => x[0] === activity)?.[2] || 1.55;
     const tdee = bmr * factor;
-    return { bmr, tdee, loss: tdee - 500, gain: tdee + 300 };
-  }, [age, height, weight, sex, activity, unit]);
+    return { bmr, tdee, loss: Math.max(0, tdee - d), gain: tdee + g, deficit: d, surplus: g };
+  }, [age, height, weight, sex, activity, deficit, surplus, unit]);
 
   const field = "w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-base outline-none focus:border-blue-500";
 
@@ -41,25 +46,21 @@ export default function CalorieCalculator() {
         <p className="mt-3 max-w-3xl text-slate-600">Estimate your daily calorie needs from the Mifflin–St Jeor equation and your activity level. Use the result as a starting estimate, not a medical prescription.</p>
 
         <div className="mt-7 grid gap-5 md:grid-cols-2">
-          <label className="block"> <span className="mb-2 block font-medium text-slate-700">Units</span>
-            <select className={field} value={unit} onChange={(e) => setUnit(e.target.value)}><option value="metric">Metric (kg, cm)</option><option value="imperial">Imperial (lb, in)</option></select>
-          </label>
-          <label className="block"> <span className="mb-2 block font-medium text-slate-700">Sex</span>
-            <select className={field} value={sex} onChange={(e) => setSex(e.target.value)}><option value="male">Male</option><option value="female">Female</option></select>
-          </label>
-          <label className="block"> <span className="mb-2 block font-medium text-slate-700">Age</span><input className={field} type="number" min="15" max="120" value={age} onChange={(e) => setAge(e.target.value)} /></label>
-          <label className="block"> <span className="mb-2 block font-medium text-slate-700">Height ({unit === "metric" ? "cm" : "in"})</span><input className={field} type="number" min="50" max="300" value={height} onChange={(e) => setHeight(e.target.value)} /></label>
-          <label className="block"> <span className="mb-2 block font-medium text-slate-700">Weight ({unit === "metric" ? "kg" : "lb"})</span><input className={field} type="number" min="20" max="500" value={weight} onChange={(e) => setWeight(e.target.value)} /></label>
-          <label className="block"> <span className="mb-2 block font-medium text-slate-700">Activity level</span>
-            <select className={field} value={activity} onChange={(e) => setActivity(e.target.value)}>{ACTIVITY.map(([id, label]) => <option key={id} value={id}>{label}</option>)}</select>
-          </label>
+          <label className="block"><span className="mb-2 block font-medium text-slate-700">Units</span><select className={field} value={unit} onChange={(e) => setUnit(e.target.value)}><option value="metric">Metric (kg, cm)</option><option value="imperial">Imperial (lb, in)</option></select></label>
+          <label className="block"><span className="mb-2 block font-medium text-slate-700">Sex</span><select className={field} value={sex} onChange={(e) => setSex(e.target.value)}><option value="male">Male</option><option value="female">Female</option></select></label>
+          <label className="block"><span className="mb-2 block font-medium text-slate-700">Age</span><input className={field} type="number" min="15" max="120" value={age} onChange={(e) => setAge(e.target.value)} /></label>
+          <label className="block"><span className="mb-2 block font-medium text-slate-700">Height ({unit === "metric" ? "cm" : "in"})</span><input className={field} type="number" min="50" max="300" value={height} onChange={(e) => setHeight(e.target.value)} /></label>
+          <label className="block"><span className="mb-2 block font-medium text-slate-700">Weight ({unit === "metric" ? "kg" : "lb"})</span><input className={field} type="number" min="20" max="500" value={weight} onChange={(e) => setWeight(e.target.value)} /></label>
+          <label className="block"><span className="mb-2 block font-medium text-slate-700">Activity level</span><select className={field} value={activity} onChange={(e) => setActivity(e.target.value)}>{ACTIVITY.map(([id, label]) => <option key={id} value={id}>{label}</option>)}</select></label>
+          <label className="block"><span className="mb-2 block font-medium text-slate-700">Daily calorie deficit</span><input className={field} type="number" min="0" max="5000" step="50" value={deficit} onChange={(e) => setDeficit(e.target.value)} /><span className="mt-1 block text-xs text-slate-500">Used for the weight-loss target.</span></label>
+          <label className="block"><span className="mb-2 block font-medium text-slate-700">Daily calorie surplus</span><input className={field} type="number" min="0" max="5000" step="50" value={surplus} onChange={(e) => setSurplus(e.target.value)} /><span className="mt-1 block text-xs text-slate-500">Used for the weight-gain target.</span></label>
         </div>
 
         {result && <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           <Result label="BMR" value={result.bmr} note="Calories/day at rest" />
           <Result label="Maintenance" value={result.tdee} note="Estimated TDEE" />
-          <Result label="Weight loss" value={result.loss} note="About 500 kcal below maintenance" />
-          <Result label="Weight gain" value={result.gain} note="About 300 kcal above maintenance" />
+          <Result label="Weight loss" value={result.loss} note={`${result.deficit.toLocaleString()} kcal below maintenance`} />
+          <Result label="Weight gain" value={result.gain} note={`${result.surplus.toLocaleString()} kcal above maintenance`} />
         </div>}
       </section>
 
@@ -67,22 +68,19 @@ export default function CalorieCalculator() {
         <h2>How the calorie calculator works</h2>
         <p>This calculator first estimates basal metabolic rate (BMR), the energy your body would use at rest, with the Mifflin–St Jeor equation. It then multiplies BMR by an activity factor to estimate total daily energy expenditure (TDEE). Your real energy needs can be higher or lower because activity, body composition, food intake, sleep and other factors vary.</p>
         <h2>Calories for weight loss</h2>
-        <p>A common starting approach is to eat somewhat below estimated maintenance calories. This calculator shows a simple 500-calorie reduction as a reference point. It is not a guarantee of a particular weekly weight change. As body weight changes, energy requirements can change too, so progress should be monitored over time.</p>
+        <p>Enter the daily calorie deficit you want to model. The calculator subtracts that user-selected deficit from estimated maintenance calories. The displayed target is an estimate, not a guarantee of a particular weekly weight change.</p>
         <h2>Calories for weight gain</h2>
-        <p>The example surplus shown here is 300 calories per day. A modest surplus can be a practical starting point for people pursuing gradual weight gain, especially when combined with resistance training and adequate protein. Actual changes in body weight and composition differ between individuals.</p>
+        <p>Enter the daily calorie surplus you want to model. The calculator adds that user-selected surplus to estimated maintenance calories. Actual changes in body weight and composition differ between individuals.</p>
         <h2>Calorie calculator formula</h2>
         <p><strong>Male BMR:</strong> 10 × weight(kg) + 6.25 × height(cm) − 5 × age + 5.</p>
         <p><strong>Female BMR:</strong> 10 × weight(kg) + 6.25 × height(cm) − 5 × age − 161.</p>
         <p><strong>Estimated maintenance calories:</strong> BMR × activity factor.</p>
+        <p><strong>Weight-loss target:</strong> maintenance − user-selected daily deficit.</p>
+        <p><strong>Weight-gain target:</strong> maintenance + user-selected daily surplus.</p>
         <h2>Accuracy and limitations</h2>
         <p>Mifflin–St Jeor is an estimation equation, not a direct measurement of metabolism. Activity-factor selection is another major source of uncertainty. For better real-world estimates, compare the calculator result with your weight trend and usual food intake over several weeks rather than treating one number as exact.</p>
         <h2>Related FitMe Pro calculators</h2>
-        <ul>
-          <li><a href="/bmr-calculator">BMR Calculator</a></li>
-          <li><a href="/tdee-calculator">TDEE Calculator</a></li>
-          <li><a href="/calorie-deficit-calculator">Calorie Deficit Calculator</a></li>
-          <li><a href="/calorie-surplus-calculator">Calorie Surplus Calculator</a></li>
-        </ul>
+        <ul><li><a href="/bmr-calculator">BMR Calculator</a></li><li><a href="/tdee-calculator">TDEE Calculator</a></li><li><a href="/calorie-deficit-calculator">Calorie Deficit Calculator</a></li><li><a href="/calorie-surplus-calculator">Calorie Surplus Calculator</a></li></ul>
         <h2>Frequently asked questions</h2>
         <h3>How many calories should I eat?</h3><p>Your starting calorie target depends on estimated maintenance needs and your goal. Use the maintenance result as a baseline, then adjust using your multi-week weight trend.</p>
         <h3>Is 1,500 calories enough?</h3><p>There is no single calorie target that is appropriate for everyone. Energy needs vary substantially with body size, age, sex and activity.</p>
