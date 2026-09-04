@@ -1,5 +1,27 @@
 {
+  "version": 2,
   "buildCommand": "cd frontend && npm run build",
   "outputDirectory": "frontend/build",
-  "framework": "create-react-app"
+  "framework": "create-react-app",
+  "redirects": [
+    {"source":"/calculator/obesity-class","destination":"/obesity-class-calculator","permanent":true},
+    {"source":"/calculator/ponderal-index","destination":"/ponderal-index-calculator","permanent":true},
+    {"source":"/calculator/waist-height-ratio","destination":"/waist-height-ratio-calculator","permanent":true},
+    {"source":"/calculator/tdee","destination":"/tdee-calculator","permanent":true},
+    {"source":"/calculator/weight-loss-goal","destination":"/weight-loss-timeline-calculator","permanent":true},
+    {"source":"/calculator/weight-gain-goal","destination":"/weight-gain-calorie-calculator","permanent":true},
+    {"source":"/calculator/navy-body-fat","destination":"/body-fat-calculator","permanent":true},
+    {"source":"/calculator/army-body-fat-calculator","destination":"/body-fat-calculator","permanent":true},
+    {"source":"/calculator/calorie-calculator","destination":"/daily-calorie-needs-calculator","permanent":true},
+    {"source":"/calculator/body-density","destination":"/body-density-calculator","permanent":true},
+    {"source":"/calculator/adjusted-body-weight","destination":"/adjusted-body-weight-calculator","permanent":true},
+    {"source":"/calculator/fat-free-mass","destination":"/fat-free-mass-calculator","permanent":true},
+    {"source":"/calculator/daily-calorie-needs","destination":"/daily-calorie-needs-calculator","permanent":true},
+    {"source":"/calculator/fat-mass","destination":"/fat-mass-calculator","permanent":true},
+    {"source":"/weight-loss-goal-calculator","destination":"/weight-loss-timeline-calculator","permanent":true},
+    {"source":"/weight-gain-goal-calculator","destination":"/weight-gain-calorie-calculator","permanent":true},
+    {"source":"/navy-body-fat-calculator","destination":"/body-fat-calculator","permanent":true},
+    {"source":"/army-body-fat-calculator","destination":"/body-fat-calculator","permanent":true},
+    {"source":"/calorie-calculator","destination":"/daily-calorie-needs-calculator","permanent":true}
+  ]
 }
