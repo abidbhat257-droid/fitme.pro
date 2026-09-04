@@ -53,8 +53,8 @@ function metricStatus(value, ref) {
 }
 function statusMeta(status) {
   if (status === "in-range") return { label: "In reference", Icon: CheckCircle, cls: "text-emerald-500" };
-  if (status === "below") return { label: "Below", Icon: ArrowDown, cls: "text-amber-500" };
-  if (status === "above") return { label: "Above", Icon: ArrowUp, cls: "text-amber-500" };
+  if (status === "below") return { label: "Below", Icon: ArrowDown, cls: "text-yellow-500" };
+  if (status === "above") return { label: "Above", Icon: ArrowUp, cls: "text-red-500" };
   return { label: "Tracked", Icon: Target, cls: "text-muted-foreground" };
 }
 function pretty(id) {
@@ -103,6 +103,7 @@ export default function BodyProfileTracker({ currentResults = {} }) {
   const inRange = rows.filter((r) => r.status === "in-range").length;
   const referenced = rows.filter((r) => r.ref).length;
   const improved = rows.filter((r) => Number.isFinite(r.delta) && ((r.delta < 0 && ["bmi", "body-fat", "navy-body-fat", "relative-fat-mass", "waist-hip-ratio", "waist-height-ratio", "bri"].includes(r.id)) || (r.delta > 0 && ["ffmi", "lean-body-mass"].includes(r.id)))).length;
+  const selectedMeta = selectedRow ? statusMeta(selectedRow.status) : null;
 
   return (
     <section className="border-y border-border bg-card/20" data-testid="body-profile-tracker">
@@ -130,7 +131,7 @@ export default function BodyProfileTracker({ currentResults = {} }) {
                 <div className="mb-4 flex items-center justify-between"><div><div className="text-[9px] font-bold uppercase tracking-[0.2em] text-muted-foreground">Metric comparison</div><div className="mt-1 text-sm font-bold">Current vs reference vs last snapshot</div></div><div className="font-mono-data text-[10px] text-muted-foreground">{history.length ? "HISTORY ON" : "SAVE A SNAPSHOT"}</div></div>
                 <div className="flex flex-wrap gap-1.5">{rows.map((r) => <button key={r.id} onClick={() => setSelected(r.id)} className={`border px-2.5 py-1.5 text-[9px] font-bold uppercase tracking-wider transition-colors ${selectedRow?.id === r.id ? "border-[var(--brand-lime)] bg-[var(--brand-lime)] text-black" : "border-border hover:border-[var(--brand-lime)]"}`}>{r.label}</button>)}</div>
                 {selectedRow && <div className="mt-5 grid gap-3 sm:grid-cols-3">
-                  <div className="border border-border p-4"><div className="text-[9px] uppercase tracking-widest text-muted-foreground">Current</div><div className="mt-2 font-mono-data text-2xl font-black text-[var(--brand-lime)]">{displayValue(selectedRow.result)}</div></div>
+                  <div className="border border-border p-4"><div className="text-[9px] uppercase tracking-widest text-muted-foreground">Current</div><div className={`mt-2 font-mono-data text-2xl font-black ${selectedMeta?.cls || "text-foreground"}`}>{displayValue(selectedRow.result)}</div></div>
                   <div className="border border-border p-4"><div className="text-[9px] uppercase tracking-widest text-muted-foreground">Reference</div><div className="mt-2 font-mono-data text-xl font-black">{selectedRow.ref ? `${selectedRow.ref.min}–${selectedRow.ref.max}${selectedRow.ref.unit ? ` ${selectedRow.ref.unit}` : ""}` : "No fixed ideal"}</div><div className="mt-1 text-[9px] text-muted-foreground">{selectedRow.ref?.label || "This result is tracked, not judged against an arbitrary ideal."}</div></div>
                   <div className="border border-border p-4"><div className="text-[9px] uppercase tracking-widest text-muted-foreground">Change</div><div className="mt-2 flex items-center gap-2 font-mono-data text-xl font-black">{Number.isFinite(selectedRow.delta) ? <>{selectedRow.delta > 0 ? <TrendUp size={20} /> : selectedRow.delta < 0 ? <TrendDown size={20} /> : <Minus size={20} />}{selectedRow.delta > 0 ? "+" : ""}{selectedRow.delta.toFixed(2)}</> : "—"}</div><div className="mt-1 text-[9px] text-muted-foreground">from latest saved snapshot</div></div>
                 </div>}
@@ -150,7 +151,7 @@ export default function BodyProfileTracker({ currentResults = {} }) {
             <div className="mt-5 overflow-x-auto border border-border">
               <table className="w-full min-w-[760px] text-left">
                 <thead><tr className="border-b border-border bg-background"><th className="p-3 text-[9px] uppercase tracking-widest text-muted-foreground">Metric</th><th className="p-3 text-[9px] uppercase tracking-widest text-muted-foreground">Current</th><th className="p-3 text-[9px] uppercase tracking-widest text-muted-foreground">Reference / ideal</th><th className="p-3 text-[9px] uppercase tracking-widest text-muted-foreground">Change</th><th className="p-3 text-[9px] uppercase tracking-widest text-muted-foreground">Status</th></tr></thead>
-                <tbody>{rows.map((r) => { const meta = statusMeta(r.status); return <tr key={r.id} className="border-b border-border last:border-0 hover:bg-card/50"><td className="p-3 text-xs font-bold">{r.label}</td><td className="p-3 font-mono-data text-sm font-bold">{displayValue(r.result)}</td><td className="p-3 font-mono-data text-xs">{r.ref ? `${r.ref.min}–${r.ref.max}${r.ref.unit ? ` ${r.ref.unit}` : ""}` : <span className="text-muted-foreground">Tracked only</span>}</td><td className="p-3 font-mono-data text-xs">{Number.isFinite(r.delta) ? `${r.delta > 0 ? "+" : ""}${r.delta.toFixed(2)}` : "—"}</td><td className={`p-3 text-[9px] font-bold uppercase tracking-widest ${meta.cls}`}><meta.Icon size={13} className="mr-1 inline" />{meta.label}</td></tr>; })}</tbody>
+                <tbody>{rows.map((r) => { const meta = statusMeta(r.status); return <tr key={r.id} className="border-b border-border last:border-0 hover:bg-card/50"><td className="p-3 text-xs font-bold">{r.label}</td><td className={`p-3 font-mono-data text-sm font-bold ${meta.cls}`}>{displayValue(r.result)}</td><td className="p-3 font-mono-data text-xs">{r.ref ? `${r.ref.min}–${r.ref.max}${r.ref.unit ? ` ${r.ref.unit}` : ""}` : <span className="text-muted-foreground">Tracked only</span>}</td><td className="p-3 font-mono-data text-xs">{Number.isFinite(r.delta) ? `${r.delta > 0 ? "+" : ""}${r.delta.toFixed(2)}` : "—"}</td><td className={`p-3 text-[9px] font-bold uppercase tracking-widest ${meta.cls}`}><meta.Icon size={13} className="mr-1 inline" />{meta.label}</td></tr>; })}</tbody>
               </table>
             </div>
             <div className="mt-4 flex items-start gap-2 text-[9px] leading-relaxed text-muted-foreground"><XCircle size={14} className="mt-0.5 shrink-0" /> Reference ranges are informational, not diagnoses. Metrics such as BMR, TDEE and calorie estimates do not have a single universal “ideal”; FitMe Pro tracks them without forcing an arbitrary target.</div>
