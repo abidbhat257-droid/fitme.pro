@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { getExpansionSections } from "@/lib/longFormExpansion";
 import { CALCULATORS } from "@/lib/calculators";
+import BMISEOContent from "@/components/BMISEOContent";
 
 const HEADINGS = [
   "What Is {name}?",
@@ -71,6 +72,8 @@ export default function LongFormArticle({ content, calc }) {
         <h2 className="font-display text-3xl uppercase tracking-tighter leading-tight">{name}</h2>
         <p className="mt-4 text-base text-muted-foreground leading-8">This guide explains how the calculation works, what the result can tell you, how to measure inputs consistently, and how to use the number responsibly.</p>
       </header>
+
+      {calc?.slug === "bmi" && <BMISEOContent />}
 
       <section className="border border-border bg-card p-6">
         <h3 className="font-display text-xl uppercase tracking-tight mb-3">Worked Example</h3>
