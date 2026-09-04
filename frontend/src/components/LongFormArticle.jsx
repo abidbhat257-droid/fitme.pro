@@ -8,6 +8,7 @@ import Phase1SEOContent from "@/components/Phase1SEOContent";
 import Phase2SEOContent from "@/components/Phase2SEOContent";
 import Phase3SEOContent from "@/components/Phase3SEOContent";
 import Phase4SEOContent from "@/components/Phase4SEOContent";
+import SEOPageCompleteness from "@/components/SEOPageCompleteness";
 
 const PHASE2_SEO_SLUGS = new Set(["calorie", "body-fat", "calorie-deficit", "calories-burned", "water-intake"]);
 const PHASE3_SEO_SLUGS = new Set(["protein", "pace", "one-rep-max", "maximum-heart-rate", "heart-rate-zone"]);
@@ -68,6 +69,7 @@ export default function LongFormArticle({ content, calc }) {
       {isDedicatedPhase2 && <Phase2SEOContent slug={calc.slug} />}
       {!isDedicatedPhase2 && !isDedicatedPhase3 && !isDedicatedPhase4 && isDedicatedComposition && <CompositionSEOContent slug={calc.slug} />}
       {isDedicatedPhase1 && <Phase1SEOContent slug={calc.slug} />}
+      {hasDedicatedSEO && <SEOPageCompleteness slug={calc?.slug} />}
       {!hasDedicatedSEO && (
         <section className="border border-border bg-card p-6"><h3 className="font-display text-xl uppercase tracking-tight mb-3">Worked Example</h3><p className="text-sm sm:text-base text-muted-foreground leading-8">For a practical example, start with {example}. Apply the formula or method shown on this page using the same units throughout. The calculator performs the arithmetic automatically, while the displayed method lets you verify which inputs drive the result. This example is for understanding the calculation, not a health recommendation.</p></section>
       )}
