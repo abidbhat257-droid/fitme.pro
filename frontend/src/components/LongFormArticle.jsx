@@ -3,6 +3,15 @@ import { Link } from "react-router-dom";
 import { getExpansionSections } from "@/lib/longFormExpansion";
 import { CALCULATORS } from "@/lib/calculators";
 import BMISEOContent from "@/components/BMISEOContent";
+import CompositionSEOContent from "@/components/CompositionSEOContent";
+
+const COMPOSITION_SEO_SLUGS = new Set([
+  "body-fat", "lean-body-mass", "fat-mass", "fat-free-mass", "relative-fat-mass",
+  "body-adiposity-index", "fat-mass-index", "fat-free-mass-index", "waist-to-hip-ratio",
+  "waist-to-height-ratio", "a-body-shape-index", "body-roundness-index", "conicity-index",
+  "ponderal-index", "body-density", "body-surface-area", "body-frame-size",
+  "total-body-water", "skeletal-muscle-mass",
+]);
 
 const HEADINGS = [
   "What Is {name}?",
@@ -49,7 +58,8 @@ function exampleFor(calc) {
 export default function LongFormArticle({ content, calc }) {
   if (!content) return null;
 
-  const sections = [
+  const isDedicatedComposition = COMPOSITION_SEO_SLUGS.has(calc?.slug);
+  const sections = isDedicatedComposition ? [] : [
     ...(content.sections || []),
     ...getExpansionSections(content),
   ];
@@ -74,25 +84,30 @@ export default function LongFormArticle({ content, calc }) {
       </header>
 
       {calc?.slug === "bmi" && <BMISEOContent />}
+      {isDedicatedComposition && <CompositionSEOContent slug={calc.slug} />}
 
-      <section className="border border-border bg-card p-6">
-        <h3 className="font-display text-xl uppercase tracking-tight mb-3">Worked Example</h3>
-        <p className="text-sm sm:text-base text-muted-foreground leading-8">For a practical example, start with {example}. Apply the formula or method shown on this page using the same units throughout. The calculator performs the arithmetic automatically, while the displayed method lets you verify which inputs drive the result. This example is for understanding the calculation, not a health recommendation.</p>
-      </section>
+      {!isDedicatedComposition && calc?.slug !== "bmi" && (
+        <section className="border border-border bg-card p-6">
+          <h3 className="font-display text-xl uppercase tracking-tight mb-3">Worked Example</h3>
+          <p className="text-sm sm:text-base text-muted-foreground leading-8">For a practical example, start with {example}. Apply the formula or method shown on this page using the same units throughout. The calculator performs the arithmetic automatically, while the displayed method lets you verify which inputs drive the result. This example is for understanding the calculation, not a health recommendation.</p>
+        </section>
+      )}
 
-      <div className="space-y-8">
-        {sections.map((text, index) => {
-          const heading = formatHeading(HEADINGS[index % HEADINGS.length], name);
-          return (
-            <section key={`${index}-${heading}`}>
-              <h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">{heading}</h3>
-              <p className="text-sm sm:text-base text-muted-foreground leading-8">{text}</p>
-            </section>
-          );
-        })}
-      </div>
+      {!isDedicatedComposition && calc?.slug !== "bmi" && (
+        <div className="space-y-8">
+          {sections.map((text, index) => {
+            const heading = formatHeading(HEADINGS[index % HEADINGS.length], name);
+            return (
+              <section key={`${index}-${heading}`}>
+                <h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">{heading}</h3>
+                <p className="text-sm sm:text-base text-muted-foreground leading-8">{text}</p>
+              </section>
+            );
+          })}
+        </div>
+      )}
 
-      {relatedLinks.length > 0 && (
+      {relatedLinks.length > 0 && !isDedicatedComposition && calc?.slug !== "bmi" && (
         <section className="border border-border bg-card p-6">
           <h3 className="font-display text-xl uppercase tracking-tight mb-4">Related Calculators</h3>
           <div className="grid sm:grid-cols-2 gap-2">
@@ -103,10 +118,12 @@ export default function LongFormArticle({ content, calc }) {
         </section>
       )}
 
-      <section className="border border-border p-6 bg-card">
-        <h3 className="font-display text-xl uppercase tracking-tight mb-3">Important Health Note</h3>
-        <p className="text-sm text-muted-foreground leading-7">FitMe Pro calculators provide educational estimates. They do not diagnose disease, replace clinical assessment, or guarantee a particular health or fitness outcome. If a result is unexpected, concerning, or relevant to a medical condition, discuss it with a qualified healthcare professional.</p>
-      </section>
+      {!isDedicatedComposition && calc?.slug !== "bmi" && (
+        <section className="border border-border p-6 bg-card">
+          <h3 className="font-display text-xl uppercase tracking-tight mb-3">Important Health Note</h3>
+          <p className="text-sm text-muted-foreground leading-7">FitMe Pro calculators provide educational estimates. They do not diagnose disease, replace clinical assessment, or guarantee a particular health or fitness outcome. If a result is unexpected, concerning, or relevant to a medical condition, discuss it with a qualified healthcare professional.</p>
+        </section>
+      )}
     </article>
   );
 }
