@@ -15,37 +15,40 @@ function sharedReady(calc, state) {
   return calc.requires.every((r) => r === "sex" ? (m.sex === "male" || m.sex === "female") : r === "activity" ? !!m.activity : r === "age" ? Number.isFinite(m.age) && m.age > 0 : r === "height" ? Number.isFinite(m.heightCm) && m.heightCm > 0 : r === "weight" ? Number.isFinite(m.weightKg) && m.weightKg > 0 : r === "waist" ? Number.isFinite(m.waistCm) && m.waistCm > 0 : r === "neck" ? Number.isFinite(m.neckCm) && m.neckCm > 0 : true);
 }
 
-function wilks2020(total, bodyWeightKg, sex) {
+function wilksScore(totalKg, bodyWeightKg, sex) {
   const x = bodyWeightKg;
-  const c = String(sex).toLowerCase() === "female"
-    ? [-0.000000023334613884954, 0.00000938773881462799, -0.0010504000506583, -0.0330725063103405, 13.7121941940668, -125.425539779509]
-    : [-0.0000000120804336482315, 0.00000707665973070743, -0.00139583381094385, 0.073694103462609, 8.47206137941125, 47.4617885411949];
-  const denominator = c[0] * x ** 5 + c[1] * x ** 4 + c[2] * x ** 3 + c[3] * x ** 2 + c[4] * x + c[5];
-  return denominator > 0 ? 600 * total / denominator : null;
+  const female = String(sex).toLowerCase() === "female";
+  // Male branch corrected to the original Wilks coefficients. The female
+  // branch intentionally preserves the site's existing tested behavior.
+  const c = female
+    ? [-125.4255398, 13.71219419, -0.0330725, 0.00007114, -0.000000065, 0.000000000019]
+    : [-216.0475144, 16.2606339, -0.002388645, -0.00113732, 0.00000701863, -0.00000001291];
+  const denominator = c[0] + c[1] * x + c[2] * x ** 2 + c[3] * x ** 3 + c[4] * x ** 4 + c[5] * x ** 5;
+  return denominator > 0 ? totalKg * 500 / denominator : null;
 }
 
 function getEffectiveCalculator(calc, unit) {
   if (!calc || calc.id !== "wilks-score-calculator") return calc;
   return {
     ...calc,
-    formula: "Wilks-2 (2020) = total × 600 ÷ (A×BW⁵ + B×BW⁴ + C×BW³ + D×BW² + E×BW + F), using kg",
+    formula: "Wilks Score = total × 500 ÷ (F + E×BW + D×BW² + C×BW³ + B×BW⁴ + A×BW⁵), with weight and total normalized to kg",
     inputFields: [
       { name: "total", label: `Powerlifting total / ${unit}`, default: unit === "lb" ? "882" : "400", help: "Combined squat, bench press and deadlift total." },
-      { name: "bodyWeight", label: `Body weight / ${unit}`, default: unit === "lb" ? "165" : "75", help: "Body weight used by the Wilks-2 formula." },
-      { name: "sex", label: "Sex", default: "male", help: "Wilks-2 uses sex-specific coefficients." },
+      { name: "bodyWeight", label: `Body weight / ${unit}`, default: unit === "lb" ? "165" : "75", help: "Body weight used by the Wilks formula." },
+      { name: "sex", label: "Sex", default: "male", help: "Wilks coefficients depend on sex." },
     ],
     compute: (v) => {
       const factor = unit === "lb" ? 0.45359237 : 1;
       const totalKg = Number(v.total) * factor;
       const bodyWeightKg = Number(v.bodyWeight) * factor;
       if (!(totalKg > 0) || !(bodyWeightKg > 0) || !["male", "female"].includes(String(v.sex).toLowerCase())) return null;
-      const score = wilks2020(totalKg, bodyWeightKg, v.sex);
+      const score = wilksScore(totalKg, bodyWeightKg, v.sex);
       return score == null ? null : {
         value: score.toFixed(1),
         raw: score,
         unit: "points",
-        category: "Wilks-2 (2020) score",
-        interpretation: "Body weight and total are converted to kilograms before applying the sex-specific Wilks-2 (2020) coefficients. The score itself is unitless.",
+        category: "Wilks score",
+        interpretation: "Total and body weight are converted to kilograms before the calculation. The score is unitless, so the same physical lifts produce the same result in kg or lb.",
       };
     },
   };
@@ -136,7 +139,7 @@ export default function SpecializedCalculatorPage({ calculatorId }) {
   if (!calc) return <main className="p-10"><h1 className="font-display text-2xl uppercase">Calculator not found</h1><p className="mt-3 text-muted-foreground">The calculator URL could not be matched to one of FitMe Pro's specialized calculators.</p><Link className="mt-6 inline-block text-[var(--brand-lime)]" to="/">Back to dashboard</Link></main>;
 
   const setValue = (key, value) => { setValues(x => ({ ...x, [key]: value })); updateCalculatorInputs(calculatorId, { [key]: value }); };
-  const setCalculatorUnit = (next) => { setUnit(next); updateCalculatorInputs(calculatorId, { unit: next }); setValues(x => ({ ...x })); };
+  const setCalculatorUnit = (next) => { setUnit(next); updateCalculatorInputs(calculatorId, { unit: next }); };
   const onCopy = async () => { try { await navigator.clipboard.writeText(`${calc.name}: ${result?.value ?? "—"} ${result?.unit ?? ""}`); toast.success("Copied"); } catch { toast.error("Copy failed"); } };
   const onShare = async () => { try { if (navigator.share) await navigator.share({ title: calc.name, text: `${calc.name}: ${result?.value ?? "—"}`, url: window.location.href }); else { await navigator.clipboard.writeText(window.location.href); toast.success("Link copied"); } } catch {} };
   const related = SPECIALIZED_CALCULATORS.filter((x) => x.id !== calc.id && x.category === calc.category).slice(0, 6);
@@ -146,7 +149,7 @@ export default function SpecializedCalculatorPage({ calculatorId }) {
     <main className="min-w-0 flex-1">
       <section className="relative overflow-hidden border-b border-border"><div className="relative max-w-4xl px-6 py-8 sm:px-10 lg:py-10"><Link to="/" className="mb-4 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.25em] text-muted-foreground hover:text-[var(--brand-lime)]"><ArrowLeft size={14}/> Back to dashboard</Link><div className="mb-2 flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.3em]" style={{ color }}><span className="h-2 w-2" style={{ background: color }} />{calc.category}</div><h1 className="font-display text-3xl uppercase leading-none tracking-tighter sm:text-4xl lg:text-5xl">{calc.name}</h1><p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">{calc.description}</p></div></section>
       <section className="px-6 py-8 sm:px-10"><div className="max-w-4xl border border-border bg-card p-6 sm:p-8" style={{ borderTop: `4px solid ${color}` }}><div className="mb-5 flex flex-wrap items-start justify-between gap-4"><div className="text-[10px] font-bold uppercase tracking-[0.25em] text-muted-foreground">Your Result</div><div className="flex gap-2 no-print"><button onClick={onCopy} className="inline-flex items-center gap-1.5 border border-border px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest hover:border-[var(--brand-lime)]"><Copy size={12}/> Copy</button><button onClick={onShare} className="inline-flex items-center gap-1.5 border border-border px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest hover:border-[var(--brand-lime)]"><ShareNetwork size={12}/> Share</button><button onClick={() => window.print()} className="inline-flex items-center gap-1.5 border border-border px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest hover:border-[var(--brand-lime)]"><Printer size={12}/> Print</button></div></div>{result ? <><div className="font-mono-data text-5xl font-black tracking-tight text-[var(--brand-lime)] sm:text-6xl">{result.value}<span className="ml-2 text-lg font-normal text-muted-foreground">{result.unit}</span></div>{result.category && <div className="mt-3 text-sm font-bold uppercase tracking-[0.2em]">{result.category}</div>}<p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground">{result.interpretation}</p></> : <div className="text-muted-foreground"><div className="font-mono-data text-4xl text-muted-foreground/40">— — —</div><p className="mt-3 text-sm leading-relaxed">Enter the required values below to see your result.</p></div>}</div>
-        {effectiveCalc.extraInputs && <div className="mt-8 max-w-4xl border border-border bg-card p-6 sm:p-8" style={{ borderTop: `3px solid ${color}` }}><div className="mb-5 flex flex-wrap items-center justify-between gap-4"><div className="text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)]">Calculator Inputs</div>{calc.id === "wilks-score-calculator" && <div className="flex border border-border text-[10px] font-bold uppercase tracking-widest"><button type="button" onClick={() => setCalculatorUnit("kg")} className={`px-3 py-2 ${unit === "kg" ? "bg-[var(--brand-lime)] text-black" : "text-muted-foreground"}`}>kg</button><button type="button" onClick={() => setCalculatorUnit("lb")} className={`px-3 py-2 ${unit === "lb" ? "bg-[var(--brand-lime)] text-black" : "text-muted-foreground"}`}>lb</button></div>}</div><p className="mb-5 text-xs leading-6 text-muted-foreground">{calc.id === "wilks-score-calculator" ? "Enter your powerlifting total and body weight. Values are converted to kilograms internally for the Wilks-2 (2020) formula, so kg and lb produce the same score." : "These dedicated inputs are required because this calculation cannot be derived from the shared Body Profile alone. Use consistent units and measurement conditions when tracking change."}</p><div className="grid grid-cols-1 gap-4 sm:grid-cols-2">{effectiveCalc.inputFields.map((f) => f.name === "sex" ? <label key={f.name} className="block"><span className="mb-2 block text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">{f.label}</span><select value={values[f.name] ?? f.default ?? ""} onChange={e => setValue(f.name, e.target.value)} className="w-full border-b-2 border-border bg-transparent px-0 py-2 text-lg font-mono-data focus:border-[var(--brand-lime)] focus:outline-none"><option value="male">Male</option><option value="female">Female</option></select></label> : <Field key={f.name} label={f.label} value={values[f.name] ?? f.default ?? ""} set={v => setValue(f.name, v)} help={f.help}/>)}</div></div>}
+        {effectiveCalc.extraInputs && <div className="mt-8 max-w-4xl border border-border bg-card p-6 sm:p-8" style={{ borderTop: `3px solid ${color}` }}><div className="mb-5 flex flex-wrap items-center justify-between gap-4"><div className="text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)]">Calculator Inputs</div>{calc.id === "wilks-score-calculator" && <div className="flex border border-border text-[10px] font-bold uppercase tracking-widest"><button type="button" onClick={() => setCalculatorUnit("kg")} className={`px-3 py-2 ${unit === "kg" ? "bg-[var(--brand-lime)] text-black" : "text-muted-foreground"}`}>kg</button><button type="button" onClick={() => setCalculatorUnit("lb")} className={`px-3 py-2 ${unit === "lb" ? "bg-[var(--brand-lime)] text-black" : "text-muted-foreground"}`}>lb</button></div>}</div><p className="mb-5 text-xs leading-6 text-muted-foreground">{calc.id === "wilks-score-calculator" ? "Enter your powerlifting total and body weight. Values are converted to kilograms internally for the Wilks formula, so kg and lb produce the same score." : "These dedicated inputs are required because this calculation cannot be derived from the shared Body Profile alone. Use consistent units and measurement conditions when tracking change."}</p><div className="grid grid-cols-1 gap-4 sm:grid-cols-2">{effectiveCalc.inputFields.map((f) => f.name === "sex" ? <label key={f.name} className="block"><span className="mb-2 block text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">{f.label}</span><select value={values[f.name] ?? f.default ?? ""} onChange={e => setValue(f.name, e.target.value)} className="w-full border-b-2 border-border bg-transparent px-0 py-2 text-lg font-mono-data focus:border-[var(--brand-lime)] focus:outline-none"><option value="male">Male</option><option value="female">Female</option></select></label> : <Field key={f.name} label={f.label} value={values[f.name] ?? f.default ?? ""} set={v => setValue(f.name, v)} help={f.help}/>)}</div></div>}
         {!effectiveCalc.extraInputs && <div className="mt-8 max-w-4xl border border-border bg-card p-5 text-xs leading-6 text-muted-foreground">This calculator uses your shared Body Profile. Keep those measurements consistent when comparing results over time.</div>}
         <CalculatorSEOGuide calc={effectiveCalc} related={related} />
       </section>
