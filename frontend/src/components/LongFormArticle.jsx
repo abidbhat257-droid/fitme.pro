@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { getExpansionSections } from "@/lib/longFormExpansion";
 import { CALCULATORS } from "@/lib/calculators";
@@ -67,6 +67,26 @@ export default function LongFormArticle({ content, calc }) {
   const relatedLinks = relatedNames.map((name) => { const found = CALCULATORS.find((item) => item.name === name); return found ? { name, slug: found.slug } : null; }).filter(Boolean);
   const name = content.name || calc?.name || "This Calculator";
   const example = exampleFor(calc);
+
+  useEffect(() => {
+    const root = document.querySelector('[data-testid="long-form-seo-content"]');
+    if (!root) return;
+
+    const normalize = (text) => text.replace(/\s+/g, " ").trim().toLowerCase();
+    const workedExample = Array.from(root.querySelectorAll("section")).find((section) => {
+      const heading = section.querySelector("h2, h3");
+      return heading && normalize(heading.textContent) === "worked example";
+    });
+    const related = Array.from(root.querySelectorAll("section")).find((section) => {
+      const heading = section.querySelector("h2, h3");
+      return heading && normalize(heading.textContent) === "related calculators";
+    });
+
+    if (workedExample && related && workedExample.nextElementSibling !== related) {
+      workedExample.parentNode.insertBefore(related, workedExample.nextElementSibling);
+    }
+  });
+
   return (
     <article className="border-t border-border pt-10 mt-2 space-y-8" data-testid="long-form-seo-content">
       <header>
