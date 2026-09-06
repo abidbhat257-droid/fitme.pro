@@ -1,6 +1,14 @@
 import React,{useEffect,useMemo,useState}from"react";import{Link}from"react-router-dom";import{JOURNAL_ARTICLES,JOURNAL_CATEGORIES}from"@/lib/journalContent";import{JOURNAL_EXPANSION_ARTICLES}from"@/lib/journalExpansion";import{SEO_COMPETITOR_ARTICLES}from"@/lib/seoCompetitorArticles";import{SEO_COMPETITOR_ARTICLES_2}from"@/lib/seoCompetitorArticles2";
 
 const uniqueArticles=()=>Array.from(new Map([...JOURNAL_ARTICLES,...JOURNAL_EXPANSION_ARTICLES,...SEO_COMPETITOR_ARTICLES,...SEO_COMPETITOR_ARTICLES_2].map(a=>[a.slug,a])).values());
+const CATEGORY_IMAGES={
+  nutrition:{src:"https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=900&q=80",alt:"Healthy nutritious foods"},
+  fitness:{src:"https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=80",alt:"Fitness training in a gym"},
+  "weight-loss":{src:"https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=900&q=80",alt:"Person exercising for weight management"},
+  "body-composition":{src:"https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=900&q=80",alt:"Strength and body composition training"},
+  wellness:{src:"https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=900&q=80",alt:"Calm wellness and meditation"},
+  "health-education":{src:"https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=80",alt:"Health education and healthcare"}
+};
 
 export default function Journal(){
   const[query,setQuery]=useState("");
@@ -11,7 +19,7 @@ export default function Journal(){
   const searchResults=normalized?articles.filter(matches):[];
   return <main className="min-h-screen px-4 py-10 sm:px-6 lg:px-10"><div className="mx-auto max-w-6xl">
 
-    <section className="mt-0" aria-labelledby="explore-topics"><div className="mb-5"><h1 id="explore-topics" className="text-3xl font-bold sm:text-4xl">Explore topics</h1><p className="mt-2 max-w-2xl text-base leading-7 text-muted-foreground">Browse FitMe Pro Journal articles by topic, including nutrition, fitness, weight management, body composition, running and everyday wellness.</p></div><div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{JOURNAL_CATEGORIES.map(c=><Link key={c.slug} to={`/journal/${c.slug}`} className="group rounded-2xl border border-white/10 bg-card p-5 transition hover:border-primary/40"><h2 className="text-lg font-semibold group-hover:text-primary">{c.name}</h2><p className="mt-2 text-sm leading-6 text-muted-foreground">{c.description}</p><span className="mt-4 inline-block text-sm font-medium text-primary">Explore →</span></Link>)}</div></section>
+    <section className="mt-0" aria-labelledby="explore-topics"><div className="mb-5"><h1 id="explore-topics" className="text-3xl font-bold sm:text-4xl">Explore topics</h1><p className="mt-2 max-w-2xl text-base leading-7 text-muted-foreground">Browse FitMe Pro Journal articles by topic, including nutrition, fitness, weight management, body composition, running and everyday wellness.</p></div><div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{JOURNAL_CATEGORIES.map(c=>{const image=CATEGORY_IMAGES[c.slug];return <Link key={c.slug} to={`/journal/${c.slug}`} className="group overflow-hidden rounded-2xl border border-white/10 bg-card transition hover:border-primary/40"><div className="aspect-[16/9] overflow-hidden bg-muted"><img src={image?.src} alt={image?.alt||`${c.name} journal topic`} loading="lazy" className="h-full w-full object-cover transition duration-300 group-hover:scale-105"/></div><div className="p-5"><h2 className="text-lg font-semibold group-hover:text-primary">{c.name}</h2><p className="mt-2 text-sm leading-6 text-muted-foreground">{c.description}</p><span className="mt-4 inline-block text-sm font-medium text-primary">Explore →</span></div></Link>})}</div></section>
 
     <section className="mt-10 rounded-3xl border border-white/10 bg-white/[.04] p-7 sm:p-10">
       <p className="mb-3 text-sm font-semibold uppercase tracking-[.2em] text-primary">FitMe Pro Journal</p>
