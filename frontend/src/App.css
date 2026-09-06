@@ -3,7 +3,69 @@
 
 /* Calculator pages: don't make users pass through the intro hero. The result is the first page content. */
 [data-testid^="seo-page-"] > main > section:first-child { display: none; }
-
-/* Keep long calculator content comfortable on phones. */
 [data-testid^="seo-page-"] > main { min-width: 0; width: 100%; }
 [data-testid^="seo-page-"] > main > section { width: 100%; }
+
+/* Global article/SEO readability: give headings, paragraphs and lists enough breathing room. */
+[data-testid^="seo-page-"] h1,
+[data-testid^="seo-page-"] h2,
+[data-testid^="seo-page-"] h3,
+[data-testid^="seo-page-"] h4,
+[data-testid^="seo-page-"] h5,
+[data-testid^="seo-page-"] h6 {
+  line-height: 1.3;
+  letter-spacing: normal;
+}
+
+[data-testid^="seo-page-"] h1 { margin-top: 0; margin-bottom: 1rem; }
+[data-testid^="seo-page-"] h2 { margin-top: 2.25rem; margin-bottom: 0.9rem; }
+[data-testid^="seo-page-"] h3 { margin-top: 1.75rem; margin-bottom: 0.75rem; }
+[data-testid^="seo-page-"] h4,
+[data-testid^="seo-page-"] h5,
+[data-testid^="seo-page-"] h6 { margin-top: 1.4rem; margin-bottom: 0.6rem; }
+
+[data-testid^="seo-page-"] p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.75;
+}
+
+[data-testid^="seo-page-"] ul,
+[data-testid^="seo-page-"] ol {
+  margin-top: 0.5rem;
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+[data-testid^="seo-page-"] li {
+  margin-bottom: 0.55rem;
+  line-height: 1.7;
+}
+
+[data-testid^="seo-page-"] li:last-child { margin-bottom: 0; }
+
+/* Prevent adjacent blocks from visually running together. */
+[data-testid^="seo-page-"] h2 + p,
+[data-testid^="seo-page-"] h3 + p,
+[data-testid^="seo-page-"] h4 + p,
+[data-testid^="seo-page-"] h5 + p,
+[data-testid^="seo-page-"] h6 + p,
+[data-testid^="seo-page-"] h2 + ul,
+[data-testid^="seo-page-"] h2 + ol,
+[data-testid^="seo-page-"] h3 + ul,
+[data-testid^="seo-page-"] h3 + ol {
+  margin-top: 0.15rem;
+}
+
+/* Related-calculator links should not appear as one continuous string. */
+[data-testid^="seo-page-"] a + a {
+  margin-left: 0.75rem;
+}
+
+@media (max-width: 640px) {
+  [data-testid^="seo-page-"] h2 { margin-top: 1.9rem; margin-bottom: 0.8rem; }
+  [data-testid^="seo-page-"] h3 { margin-top: 1.5rem; margin-bottom: 0.65rem; }
+  [data-testid^="seo-page-"] p { line-height: 1.7; margin-bottom: 0.9rem; }
+  [data-testid^="seo-page-"] li { line-height: 1.65; margin-bottom: 0.5rem; }
+  [data-testid^="seo-page-"] a + a { margin-left: 0.5rem; }
+}
