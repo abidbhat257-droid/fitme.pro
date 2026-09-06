@@ -65,7 +65,7 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "CI=false craco build && node scripts/prerender.js && node scripts/prerenderExtras.js && node scripts/prerenderJournalExpansion.js && node scripts/prerenderJournalExpansion.js && node scripts/prerenderSpecialized.js && node scripts/prerenderCalculatorSEO.js && node scripts/prerenderSEO.js && node scripts/prerenderBMI.js",
+    "build": "CI=false craco build && node scripts/prerender.js && node scripts/prerenderExtras.js && node scripts/prerenderJournalExpansion.js && node scripts/prerenderSpecialized.js && node scripts/prerenderCalculatorSEO.js && node scripts/prerenderSEO.js && node scripts/prerenderBMI.js",
     "test": "craco test"
   },
   "browserslist": {
@@ -97,7 +97,7 @@
     "follow-redirects": "1.16.0",
     "path-to-regexp": "0.1.13",
     "rollup": "2.80.0",
-    "underscore": "1.13.8",
+    "underscore": "1.13.0",
     "uuid": "11.1.1",
     "@tootallnate/once": "2.0.1",
     "webpack-dev-server": "5.2.4",
