@@ -43,7 +43,7 @@
     "dotenv": "17.4.2",
     "embla-carousel-react": "8.6.0",
     "framer-motion": "11.18.0",
-    "input-otp": "1.4.1",
+    "input-otp": "1.4.0",
     "lodash": "4.18.1",
     "lucide-react": "0.516.0",
     "next-themes": "0.4.6",
@@ -65,8 +65,8 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "CI=false craco build && node scripts/prerender.js && node scripts/prerenderExtras.js && node scripts/prerenderJournalExpansion.js && node scripts/prerenderSpecialized.js && node scripts/prerenderCalculatorSEO.js && node scripts/prerenderSEO.js && node scripts/prerenderBMI.js",
-    "test": "CI=false craco test"
+    "build": "CI=false craco build && node scripts/prerender.js && node scripts/prerenderExtras.js && node scripts/prerenderJournalExpansion.js && node scripts/prerenderJournalExpansion.js && node scripts/prerenderSpecialized.js && node scripts/prerenderCalculatorSEO.js && node scripts/prerenderSEO.js && node scripts/prerenderBMI.js",
+    "test": "craco test"
   },
   "browserslist": {
     "production": [">0.2%", "not dead", "not op_mini all"],
