@@ -52,22 +52,6 @@ function exampleFor(calc) {
   return required.map((key) => `${labels[key] || key}: ${values[key] ?? "example value"}${units[key] ? ` ${units[key]}` : ""}`).join(", ") || "the example values shown in the calculator inputs";
 }
 export default function LongFormArticle({ content, calc }) {
-  if (!content) return null;
-  const isDedicatedPhase1 = PHASE1_SEO_SLUGS.has(calc?.slug);
-  const isDedicatedPhase2 = PHASE2_SEO_SLUGS.has(calc?.slug);
-  const isDedicatedPhase3 = PHASE3_SEO_SLUGS.has(calc?.slug);
-  const isDedicatedPhase4 = PHASE4_SEO_SLUGS.has(calc?.slug);
-  const isDedicatedPhase5 = PHASE5_SEO_SLUGS.has(calc?.slug);
-  const isDedicatedPhase6 = PHASE6_SEO_SLUGS.has(calc?.slug);
-  const isDedicatedRemaining = REMAINING_SEO_SLUGS.has(calc?.slug);
-  const isDedicatedComposition = COMPOSITION_SEO_SLUGS.has(calc?.slug);
-  const hasDedicatedSEO = isDedicatedComposition || isDedicatedPhase1 || isDedicatedPhase2 || isDedicatedPhase3 || isDedicatedPhase4 || isDedicatedPhase5 || isDedicatedPhase6 || isDedicatedRemaining || calc?.slug === "bmi";
-  const sections = hasDedicatedSEO ? [] : [...(content.sections || []), ...getExpansionSections(content)];
-  const relatedNames = content.related || [];
-  const relatedLinks = relatedNames.map((name) => { const found = CALCULATORS.find((item) => item.name === name); return found ? { name, slug: found.slug } : null; }).filter(Boolean);
-  const name = content.name || calc?.name || "This Calculator";
-  const example = exampleFor(calc);
-
   useEffect(() => {
     const root = document.querySelector('[data-testid="long-form-seo-content"]');
     if (!root) return;
@@ -86,6 +70,22 @@ export default function LongFormArticle({ content, calc }) {
       workedExample.parentNode.insertBefore(related, workedExample.nextElementSibling);
     }
   });
+
+  if (!content) return null;
+  const isDedicatedPhase1 = PHASE1_SEO_SLUGS.has(calc?.slug);
+  const isDedicatedPhase2 = PHASE2_SEO_SLUGS.has(calc?.slug);
+  const isDedicatedPhase3 = PHASE3_SEO_SLUGS.has(calc?.slug);
+  const isDedicatedPhase4 = PHASE4_SEO_SLUGS.has(calc?.slug);
+  const isDedicatedPhase5 = PHASE5_SEO_SLUGS.has(calc?.slug);
+  const isDedicatedPhase6 = PHASE6_SEO_SLUGS.has(calc?.slug);
+  const isDedicatedRemaining = REMAINING_SEO_SLUGS.has(calc?.slug);
+  const isDedicatedComposition = COMPOSITION_SEO_SLUGS.has(calc?.slug);
+  const hasDedicatedSEO = isDedicatedComposition || isDedicatedPhase1 || isDedicatedPhase2 || isDedicatedPhase3 || isDedicatedPhase4 || isDedicatedPhase5 || isDedicatedPhase6 || isDedicatedRemaining || calc?.slug === "bmi";
+  const sections = hasDedicatedSEO ? [] : [...(content.sections || []), ...getExpansionSections(content)];
+  const relatedNames = content.related || [];
+  const relatedLinks = relatedNames.map((name) => { const found = CALCULATORS.find((item) => item.name === name); return found ? { name, slug: found.slug } : null; }).filter(Boolean);
+  const name = content.name || calc?.name || "This Calculator";
+  const example = exampleFor(calc);
 
   return (
     <article className="border-t border-border pt-10 mt-2 space-y-8" data-testid="long-form-seo-content">
