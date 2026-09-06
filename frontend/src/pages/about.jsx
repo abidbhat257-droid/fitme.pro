@@ -19,10 +19,11 @@ export default function About() {
         </h2>
 
         <p className="mb-8 leading-relaxed text-muted-foreground">
-          FitMe Pro provides 30 calculators covering areas such as body
-          composition, weight, calories, metabolism, and related health and
-          fitness measurements. Each calculator is designed to provide a
-          simple estimate based on the information entered by the user.
+          FitMe Pro provides 100 calculators covering areas such as body
+          composition, weight, calories, metabolism, nutrition, running,
+          strength, fitness, and related health and fitness measurements. Each
+          calculator is designed to provide a simple estimate based on the
+          information entered by the user.
         </p>
 
         <h2 className="mb-3 text-2xl font-semibold">
