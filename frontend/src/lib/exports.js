@@ -108,7 +108,7 @@ export function downloadShareCard(state) {
   // Footer
   ctx.fillStyle = "#94A3B8";
   ctx.font = "500 18px 'Manrope', system-ui, sans-serif";
-  ctx.fillText("30 body-composition calculators · fitme.pro", 60, H - 40);
+  ctx.fillText("100 health & fitness calculators · fitme.pro", 60, H - 40);
 
   canvas.toBlob((blob) => {
     triggerDownload(blob, `fitmepro-share-${dateStamp()}.png`);
