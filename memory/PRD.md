@@ -1,7 +1,7 @@
 # Fitme Pro — PRD
 
 ## Original Problem Statement
-Build a modern, professional web application called **fitme pro** — a responsive health calculator platform featuring 30 body-measurement and obesity calculators. Enter measurements once, auto-calculate every applicable metric, display in organized cards. Support metric+imperial units, dark mode, per-calculator SEO pages, PDF/print/copy/share, and be comparable to Calculator.net with a more modern UI.
+Build a modern, professional web application called **fitme pro** — a responsive health calculator platform featuring 100 health and fitness calculators. Enter measurements once, auto-calculate every applicable metric, display in organized cards. Support metric+imperial units, dark mode, per-calculator SEO pages, PDF/print/copy/share, and be comparable to Calculator.net with a more modern UI.
 
 ## User Choices (from ask_human)
 - Auth: None (session/localStorage only)
@@ -22,15 +22,15 @@ Build a modern, professional web application called **fitme pro** — a responsi
 - Casual health researcher looking up formulas + interpretation.
 
 ## Core Requirements (static)
-- 30 calculators grouped: Basic, Body Composition, Body Shape, Metabolism, Advanced.
+- 100 calculators grouped across body composition, weight management, calories, nutrition, running, strength, and cardiovascular metrics.
 - Metric + Imperial unit toggle.
 - Dark mode toggle (default dark).
 - Instant recompute, no reloads.
 - Copy / Share / Print / Reset.
 - Per-calculator SEO route with formula, steps, FAQ, related calcs, JSON-LD.
 
-## What's Implemented (2026-02)
-- All 30 calculators with formulas + reference ranges + interpretations.
+## What's Implemented (2026-09)
+- 100 calculators with formulas, interpretations, and dedicated calculator routes.
 - Session-persistent MeasurementContext (localStorage).
 - Dashboard with hero, search, category filter, staggered result cards.
 - ResultCard with category color coding, gauge bar for known metrics (BMI, WHtR, WHR, BF%).
