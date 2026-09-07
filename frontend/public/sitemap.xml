@@ -8,7 +8,6 @@
   <url><loc>https://fitme-pro.vercel.app/fat-free-mass-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/relative-fat-mass-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/body-adiposity-index-calculator</loc></url>
-  <url><loc>https://fitme-pro.vercel.app/fmi-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/ffmi-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/waist-hip-ratio-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/waist-height-ratio-calculator</loc></url>
@@ -19,8 +18,6 @@
   <url><loc>https://fitme-pro.vercel.app/body-density-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/body-surface-area-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/body-frame-size-calculator</loc></url>
-  <url><loc>https://fitme-pro.vercel.app/total-body-water-calculator</loc></url>
-  <url><loc>https://fitme-pro.vercel.app/skeletal-muscle-mass-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/ideal-body-weight-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/healthy-weight-range-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/adjusted-body-weight-calculator</loc></url>
@@ -48,7 +45,7 @@
   <url><loc>https://fitme-pro.vercel.app/exercise-calorie-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/walking-calorie-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/running-calorie-calculator</loc></url>
-  <url><loc>https://fitme-pro.vercel.app/cycling-calorie-calculator</loc></url>
+  <url><loc>https://fitme-pro.vercel.app/cycling-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/reverse-diet-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/calorie-per-meal-calculator</loc></url>
   <url><loc>https://fitme-pro.vercel.app/protein-calculator</loc></url>
