@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">FitMe Pro health and fitness calculator logo</title>
+  <desc id="desc">A stylized F-shaped mark combining an active person, a rising fitness chart, and a leaf to represent health, progress, and measurable results.</desc>
+  <defs>
+    <linearGradient id="fitmeGreen" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#10B981"/>
+      <stop offset="1" stop-color="#34D399"/>
+    </linearGradient>
+  </defs>
+  <path d="M84 126c10-47 51-78 100-78h244c-18 55-63 91-121 99l-68 10c-30 4-58 17-81 37l-90 79 16-147z" fill="#102A43"/>
+  <path d="M88 404c55-19 83-56 101-112 14-44 35-78 70-103 29-21 59-31 99-35 47-5 83-28 105-66-8 68-51 119-115 135-38 10-68 25-90 50-24 27-35 58-43 96-9 42-39 67-88 73H88z" fill="url(#fitmeGreen)"/>
+  <circle cx="188" cy="128" r="28" fill="#fff"/>
+  <path d="M132 164c26-22 62-27 91-10 18 11 36 10 54-1 17-11 29-26 42-44-13 34-38 61-69 76-37 18-79 8-118-21z" fill="#fff"/>
+  <path d="M291 345h35v59h-35zM342 317h35v87h-35zM393 278h35v126h-35z" fill="#fff" opacity=".98"/>
+</svg>
