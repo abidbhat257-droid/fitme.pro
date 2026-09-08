@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Sun, Moon, Printer, ArrowCounterClockwise, Barbell, Camera, DownloadSimple, ShareNetwork, GitDiff, CaretDown, Target, BookOpen } from "@phosphor-icons/react";
+import { Sun, Moon, Printer, ArrowCounterClockwise, Camera, DownloadSimple, ShareNetwork, GitDiff, CaretDown, Target, BookOpen } from "@phosphor-icons/react";
 import { useTheme } from "@/context/ThemeContext";
 import { useMeasurements } from "@/context/MeasurementContext";
 import { Button } from "@/components/ui/button";
@@ -19,8 +19,11 @@ export default function Header() {
   const doReset = () => { reset(); toast("All inputs reset"); };
 
   return <header data-testid={NAV.root} className="no-print sticky top-0 z-40 border-b border-border backdrop-blur-xl bg-background/80">
-    <div className="mx-auto max-w-[1600px] flex items-center justify-between px-4 sm:px-8 py-4 pl-16 sm:pl-20">
-      <Link to="/" data-testid={NAV.logo} className="flex items-center gap-2.5 group" aria-label="Fitme Pro home"><div className="h-9 w-9 grid place-items-center bg-[var(--brand-lime)] text-white"><Barbell size={22} weight="duotone" /></div><div className="font-display text-xl tracking-tighter uppercase"><span className="text-foreground">fitme</span><span className="text-[var(--brand-lime)]">.pro</span></div></Link>
+    <div className="mx-auto max-w-[1600px] flex items-center justify-between px-4 sm:px-8 py-3 pl-16 sm:pl-20">
+      <Link to="/" data-testid={NAV.logo} className="flex items-center gap-2.5 group" aria-label="FitMe Pro home" title="FitMe Pro — Health & Fitness Calculators">
+        <img src="/fitme-pro-logo.svg" width="40" height="40" loading="eager" decoding="async" className="h-10 w-10 object-contain shrink-0" alt="FitMe Pro health and fitness calculator logo" />
+        <span className="font-display text-xl tracking-tighter uppercase"><span className="text-foreground">fitme</span><span className="text-[var(--brand-lime)]">.pro</span></span>
+      </Link>
       <div className="flex items-center gap-2 sm:gap-3">
         <Link to="/journal" className="inline-flex sm:hidden items-center justify-center h-9 w-9 border border-border hover:border-[var(--brand-lime)] hover:text-[var(--brand-lime)] transition-colors" aria-label="FitMe Pro Journal" title="Journal"><BookOpen size={18} weight="duotone" /></Link>
         <Link to="/journal" className="hidden sm:inline-flex items-center gap-1.5 border border-border px-3 py-2 text-xs uppercase tracking-[0.15em] font-bold hover:border-[var(--brand-lime)] hover:text-[var(--brand-lime)] transition-colors" aria-label="FitMe Pro Journal"><BookOpen size={15} weight="duotone" /> Journal</Link>
