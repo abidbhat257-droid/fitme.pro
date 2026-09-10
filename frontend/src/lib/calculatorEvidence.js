@@ -65,7 +65,8 @@ export const CALCULATOR_EVIDENCE={
 export const DEFAULT_CALCULATOR_EVIDENCE=[
   {label:"WHO — Healthy diet",url:WHO},
   {label:"NIH — Health information",url:NIH},
-  {label:"CDC — Healthy weight",url:CDC_WEIGHT}
+  {label:"CDC — Healthy weight",url:CDC_WEIGHT},
+  {label:"NHS UK — Weight management",url:NHS}
 ];
 
 export function getCalculatorEvidence(id){return CALCULATOR_EVIDENCE[id]?[CALCULATOR_EVIDENCE[id]]:DEFAULT_CALCULATOR_EVIDENCE;}
