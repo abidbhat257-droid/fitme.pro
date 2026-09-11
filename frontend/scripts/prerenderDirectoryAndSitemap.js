@@ -176,7 +176,14 @@ function calculatorHref(calc) {
     `${siteUrl}/journal/evidence-sources`,
   ]);
   Object.keys(groups).forEach((key) => urls.add(`${siteUrl}/calculator-category/${key}`));
-  all.forEach((calc) => urls.add(`${siteUrl}${calculatorHref(calc)}`));
+  calculators.forEach((calc) => {
+    if (!calc || !calc.id || LEGACY_REDIRECT_SLUGS.has(String(calc.slug || calc.id))) return;
+    urls.add(`${siteUrl}${calculatorHref(calc, "base")}`);
+  });
+  [...specialized, ...missing].forEach((calc) => {
+    if (!calc || !calc.id) return;
+    urls.add(`${siteUrl}${calculatorHref(calc, "dynamic")}`);
+  });
 
   // Add the Journal article routes from the canonical content source when available.
   try {
