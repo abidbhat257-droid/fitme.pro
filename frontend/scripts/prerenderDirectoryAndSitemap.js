@@ -32,7 +32,9 @@ function stripSeoMeta(html) {
     .replace(/<meta\s+property=["']og:(?:type|title|description|url|site_name)["'][^>]*>\s*/gi, "")
     .replace(/<meta\s+name=["']twitter:[^"']+["'][^>]*>\s*/gi, "")
     .replace(/<link\s+rel=["']canonical["'][^>]*>\s*/gi, "");
-}\n\nfunction setMeta(html, title, description, canonical) {
+}
+
+function setMeta(html, title, description, canonical) {
   html = html.replace(/<title>[\s\S]*?<\/title>/i, `<title>${esc(title)}</title>`);
   html = html.replace(/<meta name="description" content="[^"]*"\s*\/?>(\s*)/i, `<meta name="description" content="${esc(description)}" />$1`);
   return html.replace(/<\/head>/i,
@@ -148,7 +150,9 @@ function calculatorHref(calc) {
   const directoryBody = `<main><article style="max-width:1100px;margin:0 auto;padding:40px 20px;font-family:Arial,sans-serif"><p>FitMe Pro Directory</p><h1>100 Health &amp; Fitness Calculators</h1><p>Explore ${all.length} free calculators organized by topic. Each tool explains its inputs, formula, limitations and practical use.</p>${groupHtml}<nav><h2>More FitMe Pro resources</h2><ul><li><a href="/journal">FitMe Pro Journal</a></li><li><a href="/journal/editorial-standards">Editorial Standards</a></li><li><a href="/journal/evidence-sources">Evidence Sources</a></li></ul></nav></article></main>`;
   directory = directory.replace(/<div id="root"><\/div>/i, `<div id="root">${directoryBody}</div>`)
     .replace(/<\/head>/i, `<script type="application/ld+json">${json(directorySchema)}</script></head>`);
-  writeRoute("/calculators", directory);\n\n  const staticPages = [
+  writeRoute("/calculators", directory);
+
+  const staticPages = [
     ["about", "About FitMe Pro", "Learn how FitMe Pro builds free health and fitness calculators and explains their methods, limitations and educational use.", "<h1>About FitMe Pro</h1><p>FitMe Pro provides free health, fitness and body-composition calculators with clear explanations of formulas, inputs, limitations and practical use.</p><h2>Our approach</h2><p>We aim to make calculation methods understandable and useful while clearly distinguishing estimates and screening tools from medical diagnosis.</p>"],
     ["contact", "Contact FitMe Pro", "Contact FitMe Pro about calculator corrections, technical issues, content feedback and general questions.", "<h1>Contact FitMe Pro</h1><p>Use this page for feedback about calculator results, content corrections, technical issues or general questions about FitMe Pro.</p><h2>Content corrections</h2><p>If you spot an inaccurate formula, broken link or unclear explanation, please provide the page URL and describe the issue so it can be reviewed.</p>"],
     ["privacy-policy", "Privacy Policy — FitMe Pro", "Read the FitMe Pro privacy policy and learn how information is handled when you use the site.", "<h1>Privacy Policy</h1><p>FitMe Pro is designed to provide calculators and educational content. Calculator inputs are processed in the browser unless a feature explicitly states otherwise.</p><h2>Analytics and advertising</h2><p>Third-party analytics or advertising services, if enabled, may process information according to their own policies. Review the notices presented on the site for current details.</p>"],
@@ -202,7 +206,12 @@ function calculatorHref(calc) {
     // Sitemap remains valid even if optional Journal metadata is unavailable.
   }
 
-  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${[...urls].sort().map((url) => `  <url><loc>${esc(url)}</loc></url>`).join("\n")}\n</urlset>\n`;
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${[...urls].sort().map((url) => `  <url><loc>${esc(url)}</loc></url>`).join("
+")}
+</urlset>
+`;
   fs.writeFileSync(path.join(build, "sitemap.xml"), sitemap, "utf8");
 
   console.log(`SEO directory/sitemap: ${all.length} unique calculators, ${urls.size} sitemap URLs.`);
