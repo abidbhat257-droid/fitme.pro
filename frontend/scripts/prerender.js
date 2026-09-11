@@ -25,7 +25,14 @@ const RELATED_SLUGS = {
 };
 function relatedLinks(names) { return (names || []).map((name) => { const slug = RELATED_SLUGS[name]; return slug ? `<li><a href="/${slug}">${esc(name)}</a></li>` : `<li>${esc(name)}</li>`; }).join(""); }
 
-function setMeta(html, title, description, canonical, type = "website") {
+function stripSeoMeta(html) {
+  return html
+    .replace(/<meta\s+name=["']description["'][^>]*>\s*/gi, "")
+    .replace(/<meta\s+name=["']robots["'][^>]*>\s*/gi, "")
+    .replace(/<meta\s+property=["']og:(?:type|title|description|url|site_name)["'][^>]*>\s*/gi, "")
+    .replace(/<meta\s+name=["']twitter:[^"']+["'][^>]*>\s*/gi, "")
+    .replace(/<link\s+rel=["']canonical["'][^>]*>\s*/gi, "");
+}\n\nfunction setMeta(html, title, description, canonical, type = "website") {\n  html = stripSeoMeta(html);
   html = html.replace(/<title>[\s\S]*?<\/title>/i, `<title>${esc(title)}</title>`);
   html = html.replace(/<meta name="description" content="[^"]*"\s*\/?>(\s*)/i, `<meta name="description" content="${esc(description)}" />$1`);
   html = html.replace(/<\/head>/i, `<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" /><link rel="canonical" href="${canonical}" /><meta property="og:type" content="${type}" /><meta property="og:title" content="${esc(title)}" /><meta property="og:description" content="${esc(description)}" /><meta property="og:url" content="${canonical}" /></head>`);
@@ -116,7 +123,7 @@ function writeRoute(route, html) {
 })().catch((error)=>{console.error("Prerender failed:",error);process.exit(1);});
 
 function sectionHeading(index,title){
-  const headings=[`What Is ${title}?`,`Why This Calculation Matters`,`Inputs and Measurement Guide`,`The Formula Explained`,`How to Interpret Your Result`,`Accuracy and What Can Affect It`,`Common Mistakes to Avoid`,`Using the Result for Fitness Planning`,`Related Health and Body-Composition Measures`,`Tracking Changes Over Time`,`When to Seek Professional Guidance`,`Key Takeaways`,`Understanding the Calculation as a Model`,`Getting Better Inputs`,`Units and Conversion`,`Why Trends Matter More Than One Reading`,`Understanding Reference Ranges`,`Combining Complementary Measures`,`What Changes During Weight Loss`,`What Changes During Weight Gain`,`Mathematical Precision vs Biological Precision`,`Why Different Equations Disagree`,`Turning the Number Into a Practical Decision`,`Using Numbers Without Obsessing Over Them`,`What to Look for in a Quality Calculator`,`Resolving Unexpected Results`,`Comparing Results Between People`,`Special Populations and Context`,`How Often to Recalculate`,`Final Takeaways`];
-  return headings[index] || title;
+  const headings=[`What Is ${title}?`,`Why This Calculation Matters`,`Inputs and Measurement Guide`,`The Formula Explained`,`How to Interpret Your Result`,`Accuracy and What Can Affect It`,`Common Mistakes to Avoid`,`Using the Result for Fitness Planning`,`Related Health and Body-Composition Measures`,`Tracking Changes Over Time`,`When to Seek Professional Guidance`,`Key Takeaways`,`Understanding the Calculation as a Model`,`Getting Better Inputs`,`Units and Conversion`,`Why Trends Matter More Than One Reading`,`Understanding Reference Ranges`,`Combining Complementary Measures`,`What Changes During Weight Loss`,`What Changes During Weight Gain`,`Mathematical Precision vs Biological Precision`,`Why Different Equations Disagree`,`Turning the Number Into a Practical Decision`,`Using Numbers Without Obsessing Over Them`,`What to Look for in a Quality Calculator`,`Resolving Unexpected Results`,`Comparing Results Between People`,`Special Populations and Context`,`How Often to Recalculate`,`Final Takeaways`,`Interpreting Results Over Time`,`Measurement Quality and Consistency`,`Context Before Conclusions`,`Limits of Population Averages`,`Choosing a Consistent Method`,`Sensitivity to Input Changes`,`Reading Small Changes Carefully`,`Separating Screening From Diagnosis`,`Using Multiple Metrics Together`,`Practical Next Steps`,`Questions to Discuss With a Professional`,`Summary for Everyday Use`,`A Note on Individual Variation`];
+  return headings[index] || `${title}: Section ${index + 1}`;
 }
 function pathToFileURL(filePath){const resolved=path.resolve(filePath).replace(/\\/g,"/");return new URL(`file://${resolved}`);}
