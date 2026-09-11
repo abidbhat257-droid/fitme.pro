@@ -21,7 +21,14 @@ for (const required of [journalPath, expansionPath, longformPath]) {
 const esc = (v) => String(v ?? "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/\"/g,"&quot;").replace(/'/g,"&#39;");
 const json = (v) => JSON.stringify(v).replace(/</g,"\\u003c");
 
-function meta(html,title,description,canonical){
+function stripSeoMeta(html) {
+  return html
+    .replace(/<meta\s+name=["']description["'][^>]*>\s*/gi, "")
+    .replace(/<meta\s+name=["']robots["'][^>]*>\s*/gi, "")
+    .replace(/<meta\s+property=["']og:(?:type|title|description|url|site_name)["'][^>]*>\s*/gi, "")
+    .replace(/<meta\s+name=["']twitter:[^"']+["'][^>]*>\s*/gi, "")
+    .replace(/<link\s+rel=["']canonical["'][^>]*>\s*/gi, "");
+}\n\nfunction meta(html,title,description,canonical){
   html=html.replace(/<title>[\s\S]*?<\/title>/i,`<title>${esc(title)}</title>`);
   html=html.replace(/<meta name="description" content="[^"]*"\s*\/?>(\s*)/i,`<meta name="description" content="${esc(description)}" />$1`);
   return html.replace(/<\/head>/i,`<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" /><link rel="canonical" href="${canonical}" /><meta property="og:type" content="article" /><meta property="og:title" content="${esc(title)}" /><meta property="og:description" content="${esc(description)}" /><meta property="og:url" content="${canonical}" /></head>`);
