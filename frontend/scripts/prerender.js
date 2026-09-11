@@ -32,7 +32,10 @@ function stripSeoMeta(html) {
     .replace(/<meta\s+property=["']og:(?:type|title|description|url|site_name)["'][^>]*>\s*/gi, "")
     .replace(/<meta\s+name=["']twitter:[^"']+["'][^>]*>\s*/gi, "")
     .replace(/<link\s+rel=["']canonical["'][^>]*>\s*/gi, "");
-}\n\nfunction setMeta(html, title, description, canonical, type = "website") {\n  html = stripSeoMeta(html);
+}
+
+function setMeta(html, title, description, canonical, type = "website") {
+  html = stripSeoMeta(html);
   html = html.replace(/<title>[\s\S]*?<\/title>/i, `<title>${esc(title)}</title>`);
   html = html.replace(/<meta name="description" content="[^"]*"\s*\/?>(\s*)/i, `<meta name="description" content="${esc(description)}" />$1`);
   html = html.replace(/<\/head>/i, `<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" /><link rel="canonical" href="${canonical}" /><meta property="og:type" content="${type}" /><meta property="og:title" content="${esc(title)}" /><meta property="og:description" content="${esc(description)}" /><meta property="og:url" content="${canonical}" /></head>`);
@@ -49,7 +52,8 @@ function writeRoute(route, html) {
 (async () => {
   try {
     const source = fs.readFileSync(contentPath, "utf8");
-    fs.writeFileSync(tempModulePath, `${source}\nexport default CALC_CONTENT;`, "utf8");
+    fs.writeFileSync(tempModulePath, `${source}
+export default CALC_CONTENT;`, "utf8");
     fs.writeFileSync(tempLongFormPath, fs.readFileSync(longFormPath, "utf8"), "utf8");
     fs.writeFileSync(tempExpansionPath, fs.readFileSync(expansionPath, "utf8"), "utf8");
     fs.writeFileSync(tempJournalPath, fs.readFileSync(journalPath, "utf8"), "utf8");
