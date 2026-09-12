@@ -64,6 +64,7 @@ export default function MissingCalculatorPage() {
     setMeta("og:description", calc.description, true);
     setMeta("og:type", "website", true);
     setMeta("og:url", `${window.location.origin}/${calc.slug}`, true);
+    setMeta("robots", "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1");
     let canonical = document.head.querySelector('link[rel="canonical"]');
     if (!canonical) { canonical = document.createElement("link"); canonical.rel = "canonical"; document.head.appendChild(canonical); }
     canonical.href = `${window.location.origin}/${calc.slug}`;

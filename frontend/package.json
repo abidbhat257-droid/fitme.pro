@@ -65,7 +65,7 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "CI=false craco build && node scripts/prerender.js && node scripts/prerenderExtras.js && node scripts/prerenderJournalExpansion.js && node scripts/prerenderSpecialized.js && node scripts/prerenderCalculatorSEO.js && node scripts/prerenderSEO.js && node scripts/prerenderDirectoryAndSitemap.js && node scripts/verify-seo-build.js",
+    "build": "craco build && node scripts/prerender.js && node scripts/prerenderExtras.js && node scripts/prerenderJournalExpansion.js && node scripts/prerenderSpecialized.js && node scripts/prerenderCalculatorSEO.js && node scripts/prerenderSEO.js && node scripts/prerenderDirectoryAndSitemap.js && node scripts/verify-seo-build.js",
     "test": "craco test"
   },
   "browserslist": {
