@@ -125,26 +125,26 @@ const DATA = {
 };
 
 function FAQ({ items }) {
-  return <section><h3 className="font-display text-2xl uppercase tracking-tight mb-4">Frequently Asked Questions</h3><div className="space-y-4">{items.map(([q,a]) => <div key={q} className="border-b border-border pb-4"><h4 className="font-bold text-sm mb-2">{q}</h4><p className="text-sm text-muted-foreground leading-7">{a}</p></div>)}</div></section>;
+  return <section><h3 className="font-display text-2xl uppercase tracking-tight mb-3">Frequently Asked Questions</h3><div className="space-y-4">{items.map(([q,a]) => <div key={q} className="border-b border-border pb-4"><h4 className="font-bold text-sm mb-2">{q}</h4><p className="text-sm text-muted-foreground leading-7">{a}</p></div>)}</div></section>;
 }
 
 export default function Phase5SEOContent({ slug }) {
   const d = DATA[slug];
   if (!d) return null;
-  return <div className="space-y-8">
-    <section><h3 className="font-display text-2xl uppercase tracking-tight mb-3">What Does My Result Mean?</h3><p className="text-sm sm:text-base text-muted-foreground leading-8">{d.meaning}</p></section>
-    <section><h3 className="font-display text-2xl uppercase tracking-tight mb-3">Quick Answer</h3><p className="text-sm sm:text-base text-muted-foreground leading-8">{d.quick}</p></section>
+  return <div className="space-y-6">
+    <section><h3 className="font-display text-2xl uppercase tracking-tight mb-3">What Does My Result Mean?</h3><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{d.meaning}</p></section>
+    <section><h3 className="font-display text-2xl uppercase tracking-tight mb-3">Quick Answer</h3><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{d.quick}</p></section>
     <section><h3 className="font-display text-2xl uppercase tracking-tight mb-3">Formula</h3><pre className="font-mono-data text-sm bg-card border border-border p-4 whitespace-pre-wrap">{d.formula}</pre></section>
     <section><h3 className="font-display text-2xl uppercase tracking-tight mb-3">How It Is Calculated</h3><ol className="space-y-3">{d.method.map((x,i)=><li key={i} className="flex gap-3 text-sm sm:text-base text-muted-foreground leading-7"><span className="font-mono-data text-xs bg-[var(--brand-lime)] text-black px-2 py-0.5 h-fit">{String(i+1).padStart(2,"0")}</span><span>{x}</span></li>)}</ol></section>
     <section><h3 className="font-display text-2xl uppercase tracking-tight mb-3">Inputs Explained</h3><div className="grid sm:grid-cols-3 gap-2">{d.inputs.map(x=><div key={x} className="border border-border px-4 py-3 text-sm font-bold">{x}</div>)}</div></section>
-    <section><h3 className="font-display text-2xl uppercase tracking-tight mb-3">Result Interpretation</h3><p className="text-sm sm:text-base text-muted-foreground leading-8">{d.meaning}</p></section>
-    <section><h3 className="font-display text-2xl uppercase tracking-tight mb-3">Worked Example</h3><p className="text-sm sm:text-base text-muted-foreground leading-8">{d.example}</p></section>
-    <section><h3 className="font-display text-2xl uppercase tracking-tight mb-3">Factors That Affect Your Result</h3><p className="text-sm sm:text-base text-muted-foreground leading-8">{d.factors}</p></section>
-    <section><h3 className="font-display text-2xl uppercase tracking-tight mb-3">Accuracy &amp; Limitations</h3><p className="text-sm sm:text-base text-muted-foreground leading-8">{d.limitations}</p></section>
+    <section><h3 className="font-display text-2xl uppercase tracking-tight mb-3">Result Interpretation</h3><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{d.meaning}</p></section>
+    <section><h3 className="font-display text-2xl uppercase tracking-tight mb-3">Worked Example</h3><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{d.example}</p></section>
+    <section><h3 className="font-display text-2xl uppercase tracking-tight mb-3">Factors That Affect Your Result</h3><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{d.factors}</p></section>
+    <section><h3 className="font-display text-2xl uppercase tracking-tight mb-3">Accuracy &amp; Limitations</h3><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{d.limitations}</p></section>
     <FAQ items={d.faqs}/>
-    <section><h3 className="font-display text-2xl uppercase tracking-tight mb-4">Related Calculators</h3><div className="grid sm:grid-cols-2 gap-2">{d.related.map(([name,s])=><Link key={s} to={`/${s}-calculator`} className="border border-border px-4 py-3 text-sm font-bold hover:text-[var(--brand-lime)] hover:border-[var(--brand-lime)] transition-colors">{name}</Link>)}</div></section>
-    <section><h3 className="font-display text-2xl uppercase tracking-tight mb-3">Related FitMe Pro Guides</h3><p className="text-sm sm:text-base text-muted-foreground leading-8">Explore the related calculators above alongside FitMe Pro’s educational Journal for practical guidance on body composition, nutrition, weight management, and fitness. Educational guides provide context and do not replace professional care.</p><Link to="/journal" className="inline-block mt-3 text-sm font-bold underline hover:text-[var(--brand-lime)]">Explore FitMe Pro Journal</Link></section>
-    <section><h3 className="font-display text-2xl uppercase tracking-tight mb-3">Scientific / Official References</h3><p className="text-sm sm:text-base text-muted-foreground leading-8">{d.references}</p></section>
+    <section><h3 className="font-display text-2xl uppercase tracking-tight mb-3">Related Calculators</h3><div className="grid sm:grid-cols-2 gap-2">{d.related.map(([name,s])=><Link key={s} to={`/${s}-calculator`} className="border border-border px-4 py-3 text-sm font-bold hover:text-[var(--brand-lime)] hover:border-[var(--brand-lime)] transition-colors">{name}</Link>)}</div></section>
+    <section><h3 className="font-display text-2xl uppercase tracking-tight mb-3">Related FitMe Pro Guides</h3><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">Explore the related calculators above alongside FitMe Pro’s educational Journal for practical guidance on body composition, nutrition, weight management, and fitness. Educational guides provide context and do not replace professional care.</p><Link to="/journal" className="inline-block mt-3 text-sm font-bold underline hover:text-[var(--brand-lime)]">Explore FitMe Pro Journal</Link></section>
+    <section><h3 className="font-display text-2xl uppercase tracking-tight mb-3">Scientific / Official References</h3><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{d.references}</p></section>
     <section className="border border-border bg-card p-6"><h3 className="font-display text-xl uppercase tracking-tight mb-3">Medical Disclaimer</h3><p className="text-sm text-muted-foreground leading-7">FitMe Pro calculators provide educational estimates and mathematical calculations. They do not diagnose disease, prescribe treatment, or determine medication doses. For medication dosing, unexplained weight change, or health decisions, consult a qualified healthcare professional.</p></section>
   </div>;
 }

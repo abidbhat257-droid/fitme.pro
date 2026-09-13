@@ -106,7 +106,7 @@ function faqFor(calc) {
 export default function SpecializedCalculatorPage({ calculatorId }) {
   const { state, calculatorInputs, updateCalculatorInputs } = useMeasurements();
   const calc = getSpecializedCalculator(calculatorId);
-  const saved = calculatorInputs?.[calculatorId] || {};
+  const saved = useMemo(() => calculatorInputs?.[calculatorId] || {}, [calculatorInputs, calculatorId]);
   const [unit, setUnit] = useState(saved.unit === "lb" ? "lb" : "kg");
   const effectiveCalc = useMemo(() => getEffectiveCalculator(calc, unit), [calc, unit]);
   const initialValues = useMemo(() => {

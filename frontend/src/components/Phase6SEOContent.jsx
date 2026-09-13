@@ -130,20 +130,20 @@ function Section({ title, children }) {
 export default function Phase6SEOContent({ slug }) {
   const d = DATA[slug];
   if (!d) return null;
-  return <div className="space-y-8">
-    <Section title="What Does My Result Mean?"><p className="text-sm sm:text-base text-muted-foreground leading-8">{d.meaning}</p></Section>
-    <Section title="Quick Answer"><p className="text-sm sm:text-base text-muted-foreground leading-8">{d.quick}</p></Section>
+  return <div className="space-y-6">
+    <Section title="What Does My Result Mean?"><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{d.meaning}</p></Section>
+    <Section title="Quick Answer"><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{d.quick}</p></Section>
     <Section title="Formula"><pre className="font-mono-data text-sm bg-card border border-border p-4 whitespace-pre-wrap">{d.formula}</pre></Section>
     <Section title="How It Is Calculated"><ol className="space-y-3">{d.method.map((x,i)=><li key={i} className="flex gap-3 text-sm sm:text-base text-muted-foreground leading-7"><span className="font-mono-data text-xs bg-[var(--brand-lime)] text-black px-2 py-0.5 h-fit">{String(i+1).padStart(2,"0")}</span><span>{x}</span></li>)}</ol></Section>
     <Section title="Inputs Explained"><div className="grid sm:grid-cols-2 gap-3">{d.inputs.map(x=><div key={x} className="border border-border bg-card p-4"><h4 className="font-bold text-sm">{x}</h4><p className="text-sm text-muted-foreground leading-7 mt-1">This input directly affects the calculation and should be measured consistently.</p></div>)}</div></Section>
-    <Section title="Result Interpretation"><p className="text-sm sm:text-base text-muted-foreground leading-8">{d.meaning}</p></Section>
-    <Section title="Example"><div className="border border-border bg-card p-5"><p className="text-sm sm:text-base text-muted-foreground leading-8">{d.example}</p></div></Section>
-    <Section title="Factors That Affect Your Result"><p className="text-sm sm:text-base text-muted-foreground leading-8">{d.factors}</p></Section>
-    <Section title="Accuracy & Limitations"><p className="text-sm sm:text-base text-muted-foreground leading-8">{d.limitations}</p></Section>
+    <Section title="Result Interpretation"><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{d.meaning}</p></Section>
+    <Section title="Example"><div className="border border-border bg-card p-5"><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{d.example}</p></div></Section>
+    <Section title="Factors That Affect Your Result"><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{d.factors}</p></Section>
+    <Section title="Accuracy & Limitations"><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{d.limitations}</p></Section>
     <Section title="Frequently Asked Questions"><div className="space-y-4">{d.faqs.map(([q,a])=><div key={q} className="border-b border-border pb-4"><h4 className="font-bold text-sm mb-2">{q}</h4><p className="text-sm text-muted-foreground leading-7">{a}</p></div>)}</div></Section>
     <Section title="Related Calculators"><div className="grid sm:grid-cols-2 gap-2">{d.related.map(x=><p key={x} className="border border-border bg-card px-4 py-3 text-sm font-bold">{x}</p>)}</div></Section>
-    <Section title="Related FitMe Pro Guides"><p className="text-sm sm:text-base text-muted-foreground leading-8">{d.guides}</p></Section>
-    <Section title="Scientific / Official References"><p className="text-sm sm:text-base text-muted-foreground leading-8">{d.references}</p></Section>
+    <Section title="Related FitMe Pro Guides"><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{d.guides}</p></Section>
+    <Section title="Scientific / Official References"><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{d.references}</p></Section>
     <section className="border border-border bg-card p-6"><h3 className="font-display text-xl uppercase tracking-tight mb-3">Medical Disclaimer</h3><p className="text-sm text-muted-foreground leading-7">FitMe Pro calculators provide educational estimates and mathematical projections. They do not diagnose disease, prescribe treatment, or guarantee a specific health or fitness outcome. Do not use calculator results to make medication or extreme diet decisions without qualified professional guidance.</p></section>
   </div>;
 }

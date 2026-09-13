@@ -60,42 +60,42 @@ export default function CalculatorSEOGuide({ calc, related = [], showFaq = true 
   const faqs = faqFor(calc);
 
   return (
-    <article className="mt-10 max-w-4xl border-t border-border pt-10 space-y-8" data-testid="calculator-seo-guide">
+    <article className="mt-10 max-w-4xl border-t border-border pt-10 space-y-6" data-testid="calculator-seo-guide">
       <section>
         <div className="mb-2 text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)]">Complete Guide</div>
         <h2 className="font-display text-3xl uppercase tracking-tighter">What Is the {calc.name}?</h2>
-        <p className="mt-4 text-sm leading-8 text-muted-foreground">The {calc.name.toLowerCase()} is a calculation tool for {calc.description?.toLowerCase() || "estimating a health or fitness metric"}. FitMe Pro shows the method, inputs and interpretation so you can understand what the number represents instead of treating it as a diagnosis.</p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">The {calc.name.toLowerCase()} is a calculation tool for {calc.description?.toLowerCase() || "estimating a health or fitness metric"}. FitMe Pro shows the method, inputs and interpretation so you can understand what the number represents instead of treating it as a diagnosis.</p>
       </section>
 
       <section>
         <h2 className="font-display text-2xl uppercase tracking-tight">Why This Calculation Matters</h2>
-        <p className="mt-3 text-sm leading-8 text-muted-foreground">{why}</p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{why}</p>
       </section>
 
       <section>
         <h2 className="font-display text-2xl uppercase tracking-tight">Inputs and Measurement Guide</h2>
-        <p className="mt-3 text-sm leading-8 text-muted-foreground">For an example, use {example}. Enter measurements in the units displayed by the calculator and avoid mixing units. When a body measurement is required, measure it consistently and under similar conditions when you are tracking change over time.</p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">For an example, use {example}. Enter measurements in the units displayed by the calculator and avoid mixing units. When a body measurement is required, measure it consistently and under similar conditions when you are tracking change over time.</p>
       </section>
 
       <section>
         <h2 className="font-display text-2xl uppercase tracking-tight">The Formula Explained</h2>
         <pre className="mt-3 overflow-x-auto whitespace-pre-wrap border border-border bg-card p-4 font-mono-data text-sm">{calc.formula || "The calculation method is applied from the inputs described above."}</pre>
-        <p className="mt-3 text-sm leading-8 text-muted-foreground">The formula identifies which inputs influence the result. If an equation is used, it represents a model derived from a reference population or established method; it does not capture every aspect of an individual person.</p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">The formula identifies which inputs influence the result. If an equation is used, it represents a model derived from a reference population or established method; it does not capture every aspect of an individual person.</p>
       </section>
 
       <section>
         <h2 className="font-display text-2xl uppercase tracking-tight">Worked Example</h2>
-        <p className="mt-3 text-sm leading-8 text-muted-foreground">Start with a consistent set of example inputs: {example}. Apply the formula shown above and keep the same units throughout the calculation. The calculator performs the arithmetic automatically, while the formula lets you understand how the result is produced.</p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">Start with a consistent set of example inputs: {example}. Apply the formula shown above and keep the same units throughout the calculation. The calculator performs the arithmetic automatically, while the formula lets you understand how the result is produced.</p>
       </section>
 
       <section>
         <h2 className="font-display text-2xl uppercase tracking-tight">How to Interpret Your Result</h2>
-        <p className="mt-3 text-sm leading-8 text-muted-foreground">Interpret the result according to the reference range, category or explanation supplied by the calculator. A single calculated value rarely describes overall health or fitness. Consider your goal, measurement quality, trends over time and other relevant metrics before drawing conclusions.</p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">Interpret the result according to the reference range, category or explanation supplied by the calculator. A single calculated value rarely describes overall health or fitness. Consider your goal, measurement quality, trends over time and other relevant metrics before drawing conclusions.</p>
       </section>
 
       <section>
         <h2 className="font-display text-2xl uppercase tracking-tight">Accuracy and Limitations</h2>
-        <p className="mt-3 text-sm leading-8 text-muted-foreground">Most health and fitness calculators estimate rather than directly measure. Accuracy can be affected by measurement error, equation choice, population differences, body composition, activity level and other factors. Two valid equations can therefore produce different results. Do not use a calculator result as a medical diagnosis.</p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">Most health and fitness calculators estimate rather than directly measure. Accuracy can be affected by measurement error, equation choice, population differences, body composition, activity level and other factors. Two valid equations can therefore produce different results. Do not use a calculator result as a medical diagnosis.</p>
       </section>
 
       <section>
@@ -111,14 +111,14 @@ export default function CalculatorSEOGuide({ calc, related = [], showFaq = true 
 
       <section>
         <h2 className="font-display text-2xl uppercase tracking-tight">Using the Result Responsibly</h2>
-        <p className="mt-3 text-sm leading-8 text-muted-foreground">Use the result as a planning or tracking signal, not as a verdict about your health. For goals such as weight management or training, combine the calculation with sustainable habits and real-world feedback. If the result relates to a medical concern, medication, symptoms or a diagnosed condition, discuss it with a qualified healthcare professional.</p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">Use the result as a planning or tracking signal, not as a verdict about your health. For goals such as weight management or training, combine the calculation with sustainable habits and real-world feedback. If the result relates to a medical concern, medication, symptoms or a diagnosed condition, discuss it with a qualified healthcare professional.</p>
       </section>
 
       {related.length > 0 && (
         <section className="border border-border bg-card p-6">
           <h2 className="font-display text-2xl uppercase tracking-tight">Related Calculators</h2>
           <p className="mt-2 text-sm leading-7 text-muted-foreground">These calculators provide complementary information and can help put this result in context.</p>
-          <div className="mt-4 grid gap-2 sm:grid-cols-2">
+          <div className="mt-3 grid gap-2 sm:grid-cols-2">
             {related.map((item) => <Link key={item.id} to={`/${item.slug}`} className="border border-border px-4 py-3 text-sm font-bold hover:border-[var(--brand-lime)] hover:text-[var(--brand-lime)]">{item.name}</Link>)}
           </div>
         </section>
@@ -126,7 +126,7 @@ export default function CalculatorSEOGuide({ calc, related = [], showFaq = true 
 
       {showFaq && (
         <section>
-          <h2 className="font-display text-2xl uppercase tracking-tight mb-5">Frequently Asked Questions</h2>
+          <h2 className="font-display text-2xl uppercase tracking-tight mb-3">Frequently Asked Questions</h2>
           <div className="divide-y divide-border border-y border-border">
             {faqs.map(([q, a]) => <details key={q} className="group py-4"><summary className="cursor-pointer list-none pr-6 text-sm font-bold leading-6">{q}</summary><p className="mt-3 text-sm leading-7 text-muted-foreground">{a}</p></details>)}
           </div>

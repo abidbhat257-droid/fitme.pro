@@ -128,17 +128,17 @@ export default function SEOPageCompleteness({ slug }) {
   const data = DATA[slug];
   if (!data) return null;
   return (
-    <div className="space-y-8" data-testid={`seo-completeness-${slug}`}>
+    <div className="space-y-6" data-testid={`seo-completeness-${slug}`}>
       <section>
         <h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">Result Interpretation</h3>
-        <p className="text-sm sm:text-base text-muted-foreground leading-8">{data.interpretation}</p>
+        <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{data.interpretation}</p>
       </section>
       <section>
         <h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">Factors That Affect Your Result</h3>
-        <p className="text-sm sm:text-base text-muted-foreground leading-8">{data.factors}</p>
+        <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{data.factors}</p>
       </section>
       <section>
-        <h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-4">Related FitMe Pro Guides</h3>
+        <h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">Related FitMe Pro Guides</h3>
         <div className="grid sm:grid-cols-2 gap-2">
           {data.guides.map((guide) => (
             <Link key={guide} to="/journal" className="border border-border bg-card px-4 py-3 text-sm font-semibold hover:text-[var(--brand-lime)] hover:border-[var(--brand-lime)] transition-colors">{guide}</Link>
@@ -146,7 +146,7 @@ export default function SEOPageCompleteness({ slug }) {
         </div>
       </section>
       <section>
-        <h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-4">Scientific / Official References</h3>
+        <h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">Scientific / Official References</h3>
         <ul className="space-y-2 text-sm text-muted-foreground leading-7">
           {data.refs.map(([name, url]) => (
             <li key={url}><a href={url} target="_blank" rel="noreferrer" className="underline underline-offset-4 hover:text-foreground">{name}</a></li>

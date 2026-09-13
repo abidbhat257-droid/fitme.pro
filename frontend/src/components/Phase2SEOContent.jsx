@@ -67,17 +67,17 @@ const DATA = {
 export default function Phase2SEOContent({ slug }) {
   const data = DATA[slug];
   if (!data) return null;
-  return <div className="space-y-8" data-testid={`phase2-seo-${slug}`}>
-    <section><h3 className="font-display text-2xl sm:text-3xl uppercase tracking-tight mb-3">{data.title}</h3><p className="text-sm sm:text-base text-muted-foreground leading-8">{data.quick}</p></section>
-    <section><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">Quick Answer</h3><p className="text-sm sm:text-base text-muted-foreground leading-8">{data.quick}</p></section>
-    <section><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">Formula & Method</h3><p className="text-sm sm:text-base text-muted-foreground leading-8">{data.formula}</p></section>
-    <section><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">How It Is Calculated</h3><ol className="list-decimal pl-6 space-y-2 text-sm sm:text-base text-muted-foreground leading-8">{data.method.map((x,i)=><li key={i}>{x}</li>)}</ol></section>
-    <section><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">Inputs Explained</h3><p className="text-sm sm:text-base text-muted-foreground leading-8">{data.inputs}</p></section>
-    <section><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">What Does My Result Mean?</h3><p className="text-sm sm:text-base text-muted-foreground leading-8">{data.meaning}</p></section>
-    <section className="border border-border bg-card p-6"><h3 className="font-display text-xl uppercase tracking-tight mb-3">Worked Example</h3><p className="text-sm sm:text-base text-muted-foreground leading-8">{data.example}</p></section>
-    <section><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">Accuracy & Limitations</h3><p className="text-sm sm:text-base text-muted-foreground leading-8">{data.limits}</p></section>
-    <section><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-4">Frequently Asked Questions</h3><div className="space-y-5">{data.faqs.map(([q,a])=><div key={q}><h4 className="font-semibold mb-1">{q}</h4><p className="text-sm text-muted-foreground leading-7">{a}</p></div>)}</div></section>
-    <section><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-4">Related Calculators</h3><div className="grid sm:grid-cols-2 gap-2">{data.links.map(([label,to])=><Link key={to} to={to} className="border border-border px-4 py-3 text-sm font-bold hover:text-[var(--brand-lime)] hover:border-[var(--brand-lime)] transition-colors">{label}</Link>)}</div></section>
+  return <div className="space-y-6" data-testid={`phase2-seo-${slug}`}>
+    <section><h3 className="font-display text-2xl sm:text-3xl uppercase tracking-tight mb-3">{data.title}</h3><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{data.quick}</p></section>
+    <section><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">Quick Answer</h3><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{data.quick}</p></section>
+    <section><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">Formula & Method</h3><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{data.formula}</p></section>
+    <section><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">How It Is Calculated</h3><ol className="list-decimal pl-6 space-y-2 text-sm sm:text-base text-muted-foreground leading-relaxed">{data.method.map((x,i)=><li key={i}>{x}</li>)}</ol></section>
+    <section><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">Inputs Explained</h3><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{data.inputs}</p></section>
+    <section><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">What Does My Result Mean?</h3><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{data.meaning}</p></section>
+    <section className="border border-border bg-card p-6"><h3 className="font-display text-xl uppercase tracking-tight mb-3">Worked Example</h3><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{data.example}</p></section>
+    <section><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">Accuracy & Limitations</h3><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{data.limits}</p></section>
+    <section><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">Frequently Asked Questions</h3><div className="space-y-5">{data.faqs.map(([q,a])=><div key={q}><h4 className="font-semibold mb-1">{q}</h4><p className="text-sm text-muted-foreground leading-7">{a}</p></div>)}</div></section>
+    <section><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">Related Calculators</h3><div className="grid sm:grid-cols-2 gap-2">{data.links.map(([label,to])=><Link key={to} to={to} className="border border-border px-4 py-3 text-sm font-bold hover:text-[var(--brand-lime)] hover:border-[var(--brand-lime)] transition-colors">{label}</Link>)}</div></section>
     <section className="border border-border p-6 bg-card"><h3 className="font-display text-xl uppercase tracking-tight mb-3">Important Health Note</h3><p className="text-sm text-muted-foreground leading-7">FitMe Pro provides educational estimates and does not diagnose disease or replace professional care. Do not use calculator results as a substitute for individualized medical, nutrition or exercise advice when such advice is needed.</p></section>
   </div>;
 }

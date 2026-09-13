@@ -1,5 +1,6 @@
 import { toMetric, getActivityFactor, formatWeight, formatLength, formatNumber } from "./units";
 import { validateField } from "./validation";
+import { buildCalculatorIndex } from "./calculatorSchema";
 
 // Categories
 export const CATEGORIES = {
@@ -745,6 +746,11 @@ export const CALCULATORS_BY_CATEGORY = Object.values(CATEGORIES).map((cat) => ({
   ...cat,
   items: CALCULATORS.filter((c) => c.category === cat.key),
 }));
+
+const calculatorAudit = buildCalculatorIndex(CALCULATORS, Object.keys(CATEGORIES));
+if (!calculatorAudit.valid) {
+  console.warn("Calculator catalog audit failed:", calculatorAudit.errors);
+}
 
 export function getCalculator(slug) {
   return CALCULATORS.find((c) => c.slug === slug);
