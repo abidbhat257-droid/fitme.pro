@@ -89,11 +89,6 @@ export default function LongFormArticle({ content, calc }) {
 
   return (
     <article className="border-t border-border pt-10 mt-2 space-y-6" data-testid="long-form-seo-content">
-      <header>
-        <div className="text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)] mb-2">Complete Guide</div>
-        <h2 className="font-display text-3xl uppercase tracking-tighter leading-tight">{name}</h2>
-        <p className="mt-3 text-base text-muted-foreground leading-relaxed">This guide explains how the calculation works, what the result can tell you, how to measure inputs consistently, and how to use the number responsibly.</p>
-      </header>
       {calc?.slug === "bmi" && <BMISEOContent />}
       {isDedicatedPhase6 && <Phase6SEOContent slug={calc.slug} />}
       {isDedicatedPhase5 && <Phase5SEOContent slug={calc.slug} />}
