@@ -67,20 +67,20 @@ const DATA = {
 export default function Phase1SEOContent({ slug }) {
   const data = DATA[slug];
   if (!data) return null;
-  return <div className="space-y-8" data-testid={`phase1-seo-${slug}`}>
+  return <div className="space-y-6" data-testid={`phase1-seo-${slug}`}>
     <section>
       <h3 className="font-display text-2xl sm:text-3xl uppercase tracking-tight mb-3">{data.title}</h3>
-      <p className="text-sm sm:text-base text-muted-foreground leading-8">{data.quick}</p>
+      <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{data.quick}</p>
     </section>
-    <section><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">Quick Answer</h3><p className="text-sm sm:text-base text-muted-foreground leading-8">{data.quick}</p></section>
-    <section><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">Formula</h3><p className="text-sm sm:text-base text-muted-foreground leading-8">{data.formula}</p></section>
-    <section><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">How It Is Calculated</h3><ol className="list-decimal pl-6 space-y-2 text-sm sm:text-base text-muted-foreground leading-8">{data.method.map((x,i)=><li key={i}>{x}</li>)}</ol></section>
-    <section><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">Inputs Explained</h3><p className="text-sm sm:text-base text-muted-foreground leading-8">{data.inputs}</p></section>
-    <section><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">What Does My Result Mean?</h3><p className="text-sm sm:text-base text-muted-foreground leading-8">{data.meaning}</p></section>
-    <section className="border border-border bg-card p-6"><h3 className="font-display text-xl uppercase tracking-tight mb-3">Worked Example</h3><p className="text-sm sm:text-base text-muted-foreground leading-8">{data.example}</p></section>
-    <section><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">Accuracy & Limitations</h3><p className="text-sm sm:text-base text-muted-foreground leading-8">{data.limits}</p></section>
-    <section><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-4">Frequently Asked Questions</h3><div className="space-y-5">{data.faqs.map(([q,a])=><div key={q}><h4 className="font-semibold mb-1">{q}</h4><p className="text-sm text-muted-foreground leading-7">{a}</p></div>)}</div></section>
-    <section><h3 className="font-display text-xl uppercase tracking-tight mb-4">Related Calculators</h3><div className="grid sm:grid-cols-2 gap-2">{data.links.map(([label,to])=><Link key={to} to={to} className="border border-border px-4 py-3 text-sm font-bold hover:text-[var(--brand-lime)] hover:border-[var(--brand-lime)] transition-colors">{label}</Link>)}</div></section>
+    <section><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">Quick Answer</h3><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{data.quick}</p></section>
+    <section><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">Formula</h3><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{data.formula}</p></section>
+    <section><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">How It Is Calculated</h3><ol className="list-decimal pl-6 space-y-2 text-sm sm:text-base text-muted-foreground leading-relaxed">{data.method.map((x,i)=><li key={i}>{x}</li>)}</ol></section>
+    <section><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">Inputs Explained</h3><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{data.inputs}</p></section>
+    <section><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">What Does My Result Mean?</h3><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{data.meaning}</p></section>
+    <section className="border border-border bg-card p-6"><h3 className="font-display text-xl uppercase tracking-tight mb-3">Worked Example</h3><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{data.example}</p></section>
+    <section><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">Accuracy & Limitations</h3><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{data.limits}</p></section>
+    <section><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">Frequently Asked Questions</h3><div className="space-y-5">{data.faqs.map(([q,a])=><div key={q}><h4 className="font-semibold mb-1">{q}</h4><p className="text-sm text-muted-foreground leading-7">{a}</p></div>)}</div></section>
+    <section><h3 className="font-display text-xl uppercase tracking-tight mb-3">Related Calculators</h3><div className="grid sm:grid-cols-2 gap-2">{data.links.map(([label,to])=><Link key={to} to={to} className="border border-border px-4 py-3 text-sm font-bold hover:text-[var(--brand-lime)] hover:border-[var(--brand-lime)] transition-colors">{label}</Link>)}</div></section>
     <section className="border border-border p-6 bg-card"><h3 className="font-display text-xl uppercase tracking-tight mb-3">Important Health Note</h3><p className="text-sm text-muted-foreground leading-7">FitMe Pro calculators provide educational estimates. They do not diagnose disease or replace individualized medical or nutrition advice. If you have a medical condition, are pregnant, have a history of disordered eating, or need a therapeutic diet, consult a qualified healthcare professional.</p></section>
     <section><h3 className="font-display text-xl uppercase tracking-tight mb-3">Scientific Method Note</h3><p className="text-sm text-muted-foreground leading-7">The calorie calculators use established predictive equations rather than direct metabolic measurement. For general calorie planning, the result is best used as a starting point and refined using consistent real-world data.</p></section>
   </div>;

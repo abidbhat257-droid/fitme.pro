@@ -225,65 +225,65 @@ export default function CompositionSEOContent({ slug }) {
   const page = PAGES[slug];
   if (!page) return null;
   return (
-    <article className="border-t border-border pt-10 mt-2 space-y-10" aria-label={`${labels[slug]} complete guide`}>
+    <article className="border-t border-border pt-10 mt-2 space-y-6" aria-label={`${labels[slug]} complete guide`}>
       <section>
         <div className="text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)] mb-2">Complete Calculator Guide</div>
         <h2 className="font-display text-3xl sm:text-4xl uppercase tracking-tighter">{page.title}</h2>
-        <p className="mt-4 text-sm sm:text-base text-muted-foreground leading-8">This original guide explains the definition, formula, inputs, calculation method, interpretation, limitations and practical uses of the {labels[slug]} calculator.</p>
+        <p className="mt-3 text-sm sm:text-base text-muted-foreground leading-relaxed">This original guide explains the definition, formula, inputs, calculation method, interpretation, limitations and practical uses of the {labels[slug]} calculator.</p>
       </section>
 
       <section className="border border-border bg-card p-6 sm:p-7">
         <h3 className="font-display text-xl uppercase tracking-tight mb-3">Quick Answer</h3>
-        <p className="text-sm sm:text-base leading-8 text-muted-foreground"><strong className="text-foreground">{page.quick}</strong></p>
+        <p className="text-sm sm:text-base leading-relaxed text-muted-foreground"><strong className="text-foreground">{page.quick}</strong></p>
       </section>
 
       <section>
-        <h3 className="font-display text-2xl uppercase tracking-tight mb-4">What Is {labels[slug]}?</h3>
-        <p className="text-sm sm:text-base text-muted-foreground leading-8">{page.meaning}</p>
+        <h3 className="font-display text-2xl uppercase tracking-tight mb-3">What Is {labels[slug]}?</h3>
+        <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{page.meaning}</p>
       </section>
 
       <section>
-        <h3 className="font-display text-2xl uppercase tracking-tight mb-4">Formula</h3>
-        <div className="border border-border bg-card p-5 font-mono-data text-sm sm:text-base leading-8">{page.formula}</div>
+        <h3 className="font-display text-2xl uppercase tracking-tight mb-3">Formula</h3>
+        <div className="border border-border bg-card p-5 font-mono-data text-sm sm:text-base leading-relaxed">{page.formula}</div>
       </section>
 
       <section>
-        <h3 className="font-display text-2xl uppercase tracking-tight mb-4">How It Is Calculated</h3>
-        <ol className="space-y-4 text-sm sm:text-base text-muted-foreground leading-8">{page.method.map((item, i) => <li key={item}><strong className="text-foreground">{i + 1}.</strong> {item}</li>)}</ol>
+        <h3 className="font-display text-2xl uppercase tracking-tight mb-3">How It Is Calculated</h3>
+        <ol className="space-y-4 text-sm sm:text-base text-muted-foreground leading-relaxed">{page.method.map((item, i) => <li key={item}><strong className="text-foreground">{i + 1}.</strong> {item}</li>)}</ol>
       </section>
 
       <section>
-        <h3 className="font-display text-2xl uppercase tracking-tight mb-4">Worked Example</h3>
-        <div className="border border-border bg-card p-6 text-sm sm:text-base text-muted-foreground leading-8">{page.example}</div>
+        <h3 className="font-display text-2xl uppercase tracking-tight mb-3">Worked Example</h3>
+        <div className="border border-border bg-card p-6 text-sm sm:text-base text-muted-foreground leading-relaxed">{page.example}</div>
       </section>
 
       <section>
-        <h3 className="font-display text-2xl uppercase tracking-tight mb-4">What Your Result Can Tell You</h3>
-        <p className="text-sm sm:text-base text-muted-foreground leading-8">Use the result to understand a particular aspect of body size or composition, then compare it with complementary measures. A number is more useful when the inputs are measured consistently and the same method is used over time.</p>
+        <h3 className="font-display text-2xl uppercase tracking-tight mb-3">What Your Result Can Tell You</h3>
+        <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">Use the result to understand a particular aspect of body size or composition, then compare it with complementary measures. A number is more useful when the inputs are measured consistently and the same method is used over time.</p>
       </section>
 
       <section>
-        <h3 className="font-display text-2xl uppercase tracking-tight mb-4">Accuracy and Limitations</h3>
-        <p className="text-sm sm:text-base text-muted-foreground leading-8">{page.limits} Mathematical precision should not be confused with biological precision: an equation can return several decimal places even when the underlying estimate has substantial uncertainty.</p>
+        <h3 className="font-display text-2xl uppercase tracking-tight mb-3">Accuracy and Limitations</h3>
+        <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{page.limits} Mathematical precision should not be confused with biological precision: an equation can return several decimal places even when the underlying estimate has substantial uncertainty.</p>
       </section>
 
       <section>
-        <h3 className="font-display text-2xl uppercase tracking-tight mb-4">Better Measurements and Tracking</h3>
-        <p className="text-sm sm:text-base text-muted-foreground leading-8">Measure under similar conditions, use reliable equipment, record units carefully and avoid comparing values collected with different techniques. For body-composition tracking, trends over several weeks are generally more informative than a single reading.</p>
+        <h3 className="font-display text-2xl uppercase tracking-tight mb-3">Better Measurements and Tracking</h3>
+        <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">Measure under similar conditions, use reliable equipment, record units carefully and avoid comparing values collected with different techniques. For body-composition tracking, trends over several weeks are generally more informative than a single reading.</p>
       </section>
 
       <section>
-        <h3 className="font-display text-2xl uppercase tracking-tight mb-4">Related FitMe Pro Calculators</h3>
+        <h3 className="font-display text-2xl uppercase tracking-tight mb-3">Related FitMe Pro Calculators</h3>
         <div className="grid sm:grid-cols-2 gap-2">{page.related.map((path) => <Link key={path} to={path} className="border border-border px-4 py-3 text-sm font-bold hover:text-[var(--brand-lime)] hover:border-[var(--brand-lime)] transition-colors">{path.replace(/^\//, "").replace(/-calculator$/, "").split("-").map((x) => x.charAt(0).toUpperCase() + x.slice(1)).join(" ")}</Link>)}</div>
       </section>
 
       <section>
-        <h3 className="font-display text-2xl uppercase tracking-tight mb-4">Frequently Asked Questions</h3>
+        <h3 className="font-display text-2xl uppercase tracking-tight mb-3">Frequently Asked Questions</h3>
         <div className="space-y-5">{page.faqs.map(([q, a]) => <div key={q} className="border-b border-border pb-5"><h4 className="font-bold text-sm sm:text-base">{q}</h4><p className="mt-2 text-sm text-muted-foreground leading-7">{a}</p></div>)}</div>
       </section>
 
       <section>
-        <h3 className="font-display text-2xl uppercase tracking-tight mb-4">Scientific and Health References</h3>
+        <h3 className="font-display text-2xl uppercase tracking-tight mb-3">Scientific and Health References</h3>
         <ul className="space-y-2 text-sm text-muted-foreground leading-7">
           <li><a className="underline underline-offset-4 hover:text-foreground" href="https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight" target="_blank" rel="noreferrer">World Health Organization — Obesity and Overweight</a></li>
           <li><a className="underline underline-offset-4 hover:text-foreground" href="https://www.cdc.gov/healthy-weight-growth/about/index.html" target="_blank" rel="noreferrer">CDC — Healthy Weight and Growth</a></li>
