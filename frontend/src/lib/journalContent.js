@@ -17,6 +17,50 @@ const WHO_SUGAR = "https://www.who.int/publications/i/item/9789241549028";
 const src = (extra = []) => [{ label: "WHO — Healthy diet", url: WHO_DIET }, ...extra];
 
 export const JOURNAL_ARTICLES = [\n  {
+    slug: "egg-calories",
+    category: "Nutrition",
+    categorySlug: "nutrition",
+    title: "Egg Calories and Nutrition: Hard-Boiled, Fried & Scrambled",
+    description: "Learn how many calories are in an egg, including hard-boiled, fried and scrambled eggs, plus protein, fat, carbohydrates and essential micronutrients.",
+    readTime: "12 min read",
+    date: "September 18, 2026",
+    keywords: "egg calories, calories in an egg, egg nutrition, boiled egg calories, fried egg calories, scrambled egg calories, egg protein",
+    quickSummary: [
+      "A typical large whole egg contains roughly 70–80 calories, depending on the preparation and food-composition reference.",
+      "Most of an egg's calories come from fat and protein, while a whole egg contains very little carbohydrate.",
+      "A large egg provides about 6 g of high-quality protein and contains all nine essential amino acids.",
+      "Eggs provide important micronutrients including choline, vitamin B12, selenium, riboflavin and vitamin A.",
+      "Boiling an egg does not require added cooking fat, so its calories remain close to those of the whole egg itself.",
+      "Fried and scrambled eggs can contain more calories when oil, butter, milk, cheese or other ingredients are added.",
+      "For precise calorie tracking, count the egg plus every cooking ingredient rather than treating all egg preparations as nutritionally identical."
+    ],
+    sources: [
+      { label: "USDA FoodData Central", url: "https://fdc.nal.usda.gov/" },
+      { label: "NIH Office of Dietary Supplements — Choline", url: "https://ods.od.nih.gov/factsheets/Choline-HealthProfessional/" },
+      { label: "NIH Office of Dietary Supplements — Vitamin B12", url: "https://ods.od.nih.gov/factsheets/VitaminB12-Consumer/" },
+      { label: "NIH Office of Dietary Supplements — Selenium", url: "https://ods.od.nih.gov/factsheets/Selenium-Consumer/" }
+    ],
+    sections: [
+      ["How Many Calories Are in an Egg?", "A large whole chicken egg contains roughly 70–80 calories. A commonly used reference value for one large raw egg is about 72 calories, while a large hard-boiled egg is around 78 calories. Small differences between databases and preparation methods are normal. The important point for calorie tracking is that the egg itself has a fairly predictable calorie contribution, while added cooking fats and ingredients can change the final meal substantially."],
+      ["Egg Calories by Preparation", "The calorie difference between boiled, fried and scrambled eggs is often driven less by the egg itself and more by what is added during cooking. A hard-boiled egg requires no cooking oil, while fried eggs may be cooked in oil or butter and scrambled eggs may include milk, cream, cheese or butter. For this reason, a preparation should be logged with its ingredients rather than assigned one universal calorie value."],
+      ["Egg Nutrition Facts", "One large whole egg provides roughly 6 g of protein, about 5 g of fat and less than 1 g of carbohydrate. Eggs are also nutrient-dense, supplying several vitamins and minerals in a relatively small food portion. The exact values vary with egg size and the food-composition database used."],
+      ["Essential Micronutrients in Eggs", "Eggs provide several important micronutrients. A large hard-boiled egg contains about 147 mg of choline according to the NIH Office of Dietary Supplements. Choline is needed for cell membranes and for production of acetylcholine, a neurotransmitter involved in memory, mood and muscle control. Eggs also provide vitamin B12, selenium, riboflavin, vitamin A and smaller amounts of other micronutrients. Vitamin B12 supports normal red blood-cell formation, DNA synthesis and nervous-system function. Selenium is an essential mineral found naturally in eggs and other protein-containing foods."],
+      ["Egg Protein: How Much Protein Is in One Egg?", "A large egg provides roughly 6 g of protein. Egg protein contains all nine essential amino acids, making eggs a complete protein source. The protein is distributed between the white and yolk, so eating the whole egg provides both protein and the yolk's fats and micronutrients."],
+      ["Egg White vs Whole Egg Calories", "Egg whites contain most of the egg's protein but very little fat, while the yolk contains much of the egg's fat and many of its micronutrients. A whole egg therefore provides more calories than an egg white alone. Choosing whites or whole eggs depends on your overall dietary goals and preferences rather than one option being universally better."],
+      ["How Many Calories Are in a Hard-Boiled Egg?", "A large hard-boiled egg contains approximately 75–80 calories. Because boiling does not normally require added oil or butter, the calorie content stays close to the calorie content of the egg itself. Salt, spices and herbs add little or no meaningful calories in typical amounts, but sauces and other additions can change the total."],
+      ["How Many Calories Are in a Fried Egg?", "A fried egg can contain roughly the calories of the egg itself plus the cooking fat that remains in the finished serving. The exact total depends on how much oil or butter is used and how much is absorbed or left in the pan. For example, frying an egg with a measured teaspoon of oil adds roughly 40 calories from the oil alone, so the cooking method matters when tracking calories."],
+      ["How Many Calories Are in Scrambled Eggs?", "Scrambled eggs can range from a simple egg-only preparation to a much higher-calorie meal. Eggs scrambled with a small amount of cooking spray may stay close to the calories of the eggs, while butter, milk, cream, cheese or other ingredients can raise the total. When tracking scrambled eggs, add each ingredient separately for a more accurate estimate."],
+      ["Egg Calories by Number of Eggs", "As a simple estimate, one large egg provides about 70–80 calories, two provide about 140–160 calories and three provide about 210–240 calories before added cooking ingredients. Actual values depend on egg size and preparation."],
+      ["Are Eggs Good for Weight Loss?", "Eggs can fit into a weight-loss diet because they provide protein and several micronutrients for a relatively modest calorie contribution. However, no single food causes weight loss by itself. Your overall energy intake, food choices, activity and dietary pattern matter more than whether eggs are included. Cooking methods also matter: eggs fried in substantial amounts of butter or oil can contain considerably more calories than boiled eggs."],
+      ["Are Eggs Good for Muscle Building?", "Eggs can be useful in a muscle-building diet because they provide high-quality protein and essential amino acids. However, total daily protein intake and an appropriate resistance-training program are more important than relying on any single protein food. Eggs can be combined with other protein sources such as dairy, legumes, soy, meat, fish or other foods according to dietary preference."],
+      ["Eggs and Dietary Fat", "The yolk contains most of the egg's fat, including both unsaturated and saturated fatty acids. The amount of fat in the final meal can be much higher if eggs are cooked with butter, ghee, cheese or large amounts of oil. If you are tracking calories, distinguish between the egg's naturally occurring fat and added cooking fat."],
+      ["Eggs and Cholesterol", "Egg yolks contain dietary cholesterol. The relationship between dietary cholesterol and blood cholesterol is complex and varies among individuals and dietary patterns. For people with a medical condition affecting blood lipids or a specific dietary recommendation from a clinician, individualized advice is more appropriate than applying a universal egg limit."],
+      ["India-Specific Nutrition Context", "Eggs are widely used in Indian diets, including breakfast dishes, curries and snacks. Preparation can vary considerably: boiled eggs may be eaten with minimal added fat, while egg bhurji, masala omelettes and other dishes can include oil, butter, dairy and additional ingredients. For calorie tracking, the practical approach is to count the eggs and the added ingredients separately. Broader Indian dietary guidance should be interpreted using current ICMR–NIN resources alongside general food-composition data."],
+      ["Common Mistakes When Counting Egg Calories", "Common mistakes include treating every egg as the same size, ignoring oil or butter used for frying, forgetting milk or cheese in scrambled eggs, comparing a plain boiled egg with a restaurant egg dish, and assuming a preparation has the same calories regardless of ingredients. Measuring cooking oil is especially useful when calorie accuracy matters."],
+      ["How to Track Egg Calories More Precisely", "For consistent tracking, record the number and size of eggs and separately measure added oil, butter, milk, cheese or sauces. If a packaged egg product or prepared meal provides a nutrition label, use the label for that product. For whole foods without a label, use a consistent food-composition database such as USDA FoodData Central."],
+      ["Key Takeaways", "A large whole egg contains roughly 70–80 calories and around 6 g of protein. Eggs are also sources of choline, vitamin B12, selenium and other micronutrients. Boiled eggs generally stay close to the egg's own calorie value, while frying and scrambling can add substantial calories through oil, butter, dairy and cheese. For weight management or muscle-building goals, eggs can be part of a balanced diet, but total daily intake and overall dietary pattern matter most."]
+    ]
+  },\n  {
     slug: "banana-calories",
     category: "Nutrition",
     categorySlug: "nutrition",
