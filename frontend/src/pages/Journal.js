@@ -1,6 +1,6 @@
-import React,{useEffect,useMemo,useState}from"react";import{Link}from"react-router-dom";import{JOURNAL_ARTICLES,JOURNAL_CATEGORIES}from"@/lib/journalContent";import{JOURNAL_EXPANSION_ARTICLES}from"@/lib/journalExpansion";import{SEO_COMPETITOR_ARTICLES}from"@/lib/seoCompetitorArticles";import{SEO_COMPETITOR_ARTICLES_2}from"@/lib/seoCompetitorArticles2";
+import React,{useEffect,useMemo,useState}from"react";import{Link}from"react-router-dom";import{JOURNAL_ARTICLES,JOURNAL_CATEGORIES}from"@/lib/journalContent";import{JOURNAL_EXPANSION_ARTICLES}from"@/lib/journalExpansion";import{SEO_COMPETITOR_ARTICLES}from"@/lib/seoCompetitorArticles";import{SEO_COMPETITOR_ARTICLES_2}from"@/lib/seoCompetitorArticles2";import{JOURNAL_SPECIAL_ARTICLES}from"@/lib/journalSpecialArticles";
 
-const uniqueArticles=()=>Array.from(new Map([...JOURNAL_ARTICLES,...JOURNAL_EXPANSION_ARTICLES,...SEO_COMPETITOR_ARTICLES,...SEO_COMPETITOR_ARTICLES_2].map(a=>[a.slug,a])).values());
+const uniqueArticles=()=>Array.from(new Map([...JOURNAL_ARTICLES,...JOURNAL_EXPANSION_ARTICLES,...JOURNAL_SPECIAL_ARTICLES,...SEO_COMPETITOR_ARTICLES,...SEO_COMPETITOR_ARTICLES_2].map(a=>[a.slug,a])).values());
 const CATEGORY_IMAGES={
   nutrition:{src:"https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=900&q=80",alt:"Healthy nutritious foods"},
   fitness:{src:"https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=80",alt:"Fitness training in a gym"},
