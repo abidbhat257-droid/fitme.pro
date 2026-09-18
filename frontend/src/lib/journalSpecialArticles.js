@@ -1,5 +1,6 @@
 const USDA_FDC = "https://fdc.nal.usda.gov/";
-const NIH_VIT_C = "https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/";\nconst NIH_FOLATE = "https://ods.od.nih.gov/factsheets/Folate-HealthProfessional/";
+const NIH_VIT_C = "https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/";
+const NIH_FOLATE = "https://ods.od.nih.gov/factsheets/Folate-HealthProfessional/";
 const NIH_VIT_E = "https://ods.od.nih.gov/factsheets/VitaminE-HealthProfessional/";
 const NIH_VIT_K = "https://ods.od.nih.gov/factsheets/vitaminK-healthprofessional/";
 const NIH_POTASSIUM = "https://ods.od.nih.gov/factsheets/Potassium-HealthProfessional/";
