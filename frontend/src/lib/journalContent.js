@@ -16,7 +16,46 @@ const WHO_SUGAR = "https://www.who.int/publications/i/item/9789241549028";
 
 const src = (extra = []) => [{ label: "WHO — Healthy diet", url: WHO_DIET }, ...extra];
 
-export const JOURNAL_ARTICLES = [
+export const JOURNAL_ARTICLES = [\n  {
+    slug: "banana-calories",
+    category: "Nutrition",
+    categorySlug: "nutrition",
+    title: "How Many Calories Are in a Banana? Calories, Carbs & Nutrition",
+    description: "Learn how many calories are in a banana by size, plus carbohydrates, protein, fibre and essential micronutrients.",
+    readTime: "10 min read",
+    date: "September 18, 2026",
+    keywords: "banana calories, calories in a banana, banana nutrition, banana carbs, banana protein, banana potassium",
+    quickSummary: [
+      "A medium banana contains roughly 100–110 calories, depending on its edible weight and the food-composition reference used.",
+      "Most of a banana's energy comes from carbohydrates, including naturally occurring sugars and starches.",
+      "A medium banana provides roughly 27 g of carbohydrate and about 3 g of dietary fibre.",
+      "Bananas are naturally very low in fat and provide a small amount of protein.",
+      "Bananas also provide useful micronutrients, especially potassium and vitamin B6, plus vitamin C, magnesium and manganese.",
+      "Banana size matters: weighing the edible portion gives a more precise calorie estimate than assuming every banana is medium-sized.",
+      "A banana can fit into weight-loss, maintenance or performance-focused diets depending on total food intake and individual goals."
+    ],
+    sources: [
+      { label: "USDA — FoodData Central", url: "https://fdc.nal.usda.gov/" },
+      { label: "USDA — Nutritive Value of Foods", url: "https://www.ars.usda.gov/is/np/NutritiveValueofFoods/NutritiveValueofFoods.pdf" },
+      { label: "WHO — Healthy diet", url: WHO_DIET }
+    ],
+    sections: [
+      ["How Many Calories Are in a Banana?", "A medium banana contains approximately 100–110 calories. USDA reference material lists a medium raw banana at about 118 g and approximately 109 calories, while another USDA educational reference uses about 105 calories for a medium banana. The difference is a reminder that food values are estimates and that actual bananas vary in size. For more precise calorie tracking, weigh the edible portion rather than relying only on the label medium."],
+      ["Banana Calories by Size", "Banana calories increase with edible weight. As practical estimates, a small banana may provide around 90 calories, a medium banana around 100–110 calories, a large banana around 120–135 calories, and an extra-large banana around 135–150 or more. These values are approximate and should not be treated as exact measurements for every banana."],
+      ["Banana Nutrition Facts", "A typical medium banana provides roughly 100–110 calories, 27 g of carbohydrate, about 1 g of protein, less than 1 g of fat and around 3 g of dietary fibre. It also contains naturally occurring sugars and a range of vitamins and minerals. Exact values vary by size, variety, ripeness and the food-composition database used."],
+      ["Essential Micronutrients in a Banana", "Bananas provide several essential micronutrients. A medium banana supplies roughly 400 mg of potassium, about 0.4 mg of vitamin B6, around 10 mg of vitamin C, about 30 mg of magnesium, roughly 0.3 mg of manganese and around 25 micrograms of folate. These are approximate values; food composition varies naturally. Potassium supports normal muscle and nerve function and fluid balance. Vitamin B6 is involved in amino-acid metabolism and nervous-system function. Vitamin C supports collagen formation and immune function, while magnesium contributes to normal muscle, nerve and energy metabolism."],
+      ["Banana Calories per 100 g", "Raw banana provides roughly 90 calories per 100 g. A 50 g edible portion would therefore be around 45 calories, 100 g around 90 calories, 118 g around 105–110 calories and 150 g around 135 calories. These calculations are useful for food tracking but remain estimates because actual nutrient composition varies."],
+      ["Do Bananas Have a Lot of Sugar?", "Bananas contain naturally occurring sugars as part of their carbohydrate content. A medium banana provides roughly 14 g of naturally occurring sugars. Whole fruit also contains water, fibre and micronutrients. The presence of naturally occurring sugar does not make a whole banana equivalent to a sugar-sweetened drink or confectionery."],
+      ["Do Bananas Help With Weight Loss?", "A banana can be included in a weight-loss diet because weight change depends on overall energy intake and expenditure over time rather than one food being inherently fattening or fat-burning. A medium banana contributes roughly 100–110 calories, making it easy to include in many calorie targets. The total calories of a banana-based meal can rise substantially when it is combined with ingredients such as peanut butter, nuts, seeds, milk, oats or added sugar."],
+      ["Bananas Before or After Exercise", "Bananas are a convenient carbohydrate-containing food and can fit around exercise. Whether to eat one before or after training depends on the activity, timing, personal tolerance and overall diet. A banana may be useful as a simple snack, but it does not by itself provide all the nutrients needed for exercise recovery."],
+      ["Banana Smoothie Calories", "The banana is only one part of a smoothie. A smoothie made with banana, milk, oats, peanut butter and protein powder can contain several hundred calories. For accurate tracking, calculate each ingredient separately rather than assuming the smoothie has the same calories as the banana alone."],
+      ["Does Banana Size and Variety Matter?", "Yes. Banana size has a direct effect on calories and nutrients because a larger edible portion contains more food. Varieties can also differ in composition. When precise tracking matters, using the actual edible weight is more reliable than assigning one universal calorie value to every banana."],
+      ["India-Specific Nutrition Context", "Bananas are widely available in India and are eaten in many forms and varieties. Individual fruit size and variety can differ, so a single calorie value should not be assumed to apply identically to every banana sold or eaten in India. For broader Indian dietary guidance, FitMe Pro should rely on ICMR–National Institute of Nutrition recommendations alongside international food-composition references."],
+      ["Common Mistakes When Counting Banana Calories", "Common mistakes include assuming every banana has exactly the same calories, forgetting additional ingredients in smoothies, confusing fresh and dried banana products, counting the peel instead of the edible portion, and treating a database estimate as a laboratory measurement. Consistent portion measurement is more useful than false precision."],
+      ["How to Track Banana Calories More Precisely", "If calorie tracking is important, peel the banana, weigh the edible portion in grams and use a consistent food-composition reference. Record the actual serving rather than automatically entering one medium banana. This approach also makes mixed meals and smoothies easier to calculate."],
+      ["Key Takeaways", "A medium banana contains roughly 100–110 calories and about 27 g of carbohydrate. It provides fibre and useful micronutrients, especially potassium and vitamin B6, while being very low in fat. Banana calories are primarily determined by edible weight, so larger bananas contain more calories. Bananas can fit into a balanced diet and weight-management plan when considered as part of the overall dietary pattern."]
+    ]
+  },
   {
     slug: "what-is-a-healthy-diet", category: "Nutrition", categorySlug: "nutrition",
     title: "What Is a Healthy Diet? A Practical Guide to Balanced Eating",
