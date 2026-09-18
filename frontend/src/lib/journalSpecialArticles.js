@@ -6,7 +6,8 @@ const NIH_VIT_K = "https://ods.od.nih.gov/factsheets/vitaminK-healthprofessional
 const NIH_POTASSIUM = "https://ods.od.nih.gov/factsheets/Potassium-HealthProfessional/";
 const WHO_DIET = "https://www.who.int/news-room/fact-sheets/detail/healthy-diet";
 
-export const JOURNAL_SPECIAL_ARTICLES = [\n  {
+export const JOURNAL_SPECIAL_ARTICLES = [
+  {
     slug: "apple-calories-nutrition",
     category: "Nutrition",
     categorySlug: "nutrition",
@@ -97,6 +98,55 @@ export const JOURNAL_SPECIAL_ARTICLES = [\n  {
       ["Key Takeaways", "Avocado is a nutrient-dense fruit that is unusually rich in fat, especially monounsaturated fat. A 100 g portion provides roughly 160 calories, about 15 g of fat and around 7 g of fibre, plus potassium, folate, vitamin K, vitamin E and other micronutrients. It can be part of a balanced diet and can fit weight-management or active-lifestyle goals, but portion size matters because its calorie density is higher than that of many fruits."]
     ]
   }
+
+  {
+    slug: "white-rice-vs-brown-rice",
+    category: "Nutrition",
+    categorySlug: "nutrition",
+    title: "White Rice vs Brown Rice: Calories, Nutrition, Fibre and Which to Choose",
+    description: "White rice vs brown rice explained with calories, carbohydrates, fibre, micronutrients, digestion, weight management and practical serving guidance.",
+    readTime: "14 min read",
+    date: "September 19, 2026",
+    keywords: "white rice vs brown rice, brown rice nutrition, white rice calories, brown rice calories, rice nutrition, brown rice vs white rice, rice for weight loss",
+    quickSummary: [
+      "White and brown rice are both carbohydrate-rich staple foods; the main nutritional difference is that brown rice retains the bran and germ while white rice is more refined.",
+      "Calories per cooked serving can be fairly similar, so choosing brown rice does not automatically create a calorie deficit.",
+      "Brown rice generally provides more fibre, magnesium and manganese than white rice because more of the grain is retained.",
+      "White rice is softer, quicker to digest and can be easier to tolerate for some people; it is not inherently an unhealthy food.",
+      "For weight management, portion size, cooking method and the total meal usually matter more than choosing one rice type exclusively.",
+      "Brown rice can help increase whole-grain intake, while white rice can still fit a balanced diet, especially when paired with vegetables, legumes and a protein source.",
+      "Rice nutrition varies by variety, fortification, cooking method and database, so packaged labels or a consistent food database are useful for precise tracking."
+    ],
+    sources: [
+      { label: "USDA FoodData Central", url: USDA_FDC },
+      { label: "USDA Dietary Guidelines — Grains", url: "https://www.dietaryguidelines.gov/" },
+      { label: "NIH Office of Dietary Supplements — Magnesium", url: "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/" },
+      { label: "NIH Office of Dietary Supplements — Manganese", url: "https://ods.od.nih.gov/factsheets/Manganese-HealthProfessional/" },
+      { label: "NIH Office of Dietary Supplements — Potassium", url: NIH_POTASSIUM }
+    ],
+    sections: [
+      ["White Rice vs Brown Rice: What Is the Difference?", "Brown rice is a whole grain because the bran, germ and endosperm are retained. White rice has the bran and germ removed during milling, leaving mainly the endosperm. This processing changes the texture, cooking time, fibre content and amounts of several nutrients. USDA dietary guidance classifies brown rice as a whole grain and white rice as a refined grain."],
+      ["White Rice vs Brown Rice Calories", "Cooked white and brown rice can have similar calorie values by serving, although the exact number depends on variety, water absorbed during cooking and serving size. A useful tracking principle is to weigh cooked rice consistently rather than assuming every bowl contains the same amount. Brown rice should not be described as a low-calorie rice: its main advantage is its whole-grain nutrient profile, not a dramatic calorie difference."],
+      ["White Rice vs Brown Rice Nutrition Facts", "Both types are mainly carbohydrate foods and provide relatively little fat and protein compared with dedicated protein foods. Brown rice generally contains more fibre and retains more nutrients from the bran and germ. White rice can also contain useful nutrients, particularly when enriched or fortified. Always check the specific food database or package label when exact numbers matter."],
+      ["Why Does Brown Rice Have More Fibre?", "The bran is the outer layer of the grain and contains fibre and other compounds. Because brown rice retains this layer, it generally provides more dietary fibre than ordinary white rice. Fibre contributes to normal bowel function and can make meals more filling. The difference in fibre is one of the clearest nutritional reasons to include whole grains such as brown rice."],
+      ["Essential Micronutrients in White and Brown Rice", "Brown rice is a useful source of several minerals. For example, NIH data list about 42 mg of magnesium in one-half cup of cooked brown rice versus about 10 mg in the same amount of cooked white rice. NIH data also show substantially more manganese in cooked brown rice than in cooked white rice. Potassium is present in both, although the amount varies by rice type and serving. White rice may provide added nutrients when enriched or fortified, so the nutrition label matters."],
+      ["Brown Rice and Magnesium", "Magnesium is involved in hundreds of biochemical reactions, including processes related to protein synthesis, muscle and nerve function, blood glucose regulation and energy production. Whole grains are among the foods that can contribute magnesium, and NIH lists cooked brown rice as a source. This does not mean brown rice is required to meet magnesium needs; nuts, seeds, legumes, leafy greens and other foods can also contribute."],
+      ["White Rice and Enrichment", "Refining removes some nutrients along with the bran and germ. In some countries, white rice may be enriched or fortified to restore selected nutrients. This means the nutritional gap between a particular white-rice product and brown rice can be smaller for some nutrients than a comparison of unfortified foods would suggest. Check the actual label or food database entry rather than assuming all white rice is nutritionally identical."],
+      ["Is Brown Rice Better for Weight Loss?", "Brown rice is not automatically better for weight loss simply because it is brown. Weight change is driven by overall energy balance over time. Brown rice can be useful in a weight-management diet because its higher fibre content may contribute to fullness, but a large serving can still provide substantial calories. White rice can also fit a calorie-controlled diet when portions and the rest of the meal are appropriate."],
+      ["White Rice for Weight Loss: Can You Eat It?", "Yes. White rice can be included in a weight-loss diet. The key variables are portion size, cooking ingredients and the overall calorie intake. A bowl of plain cooked rice paired with dal, vegetables and a protein source is very different from a large serving of rice cooked with substantial oil or served with calorie-dense sauces. There is no nutritional requirement to eliminate white rice solely because you are trying to lose weight."],
+      ["Rice for Muscle Building and Exercise", "Rice is primarily a carbohydrate source, so it can contribute to training fuel and recovery meals. Athletes and active people may choose white rice when they want an easily digested carbohydrate around training, while brown rice can be useful in ordinary meals when they want more fibre and whole-grain nutrition. Neither type is a high-protein food, so pair rice with foods such as eggs, dairy, soy, beans, lentils, poultry or fish when protein intake is a priority."],
+      ["Which Rice Is Easier to Digest?", "White rice is generally softer and lower in fibre than brown rice, so some people find it easier to digest. Brown rice contains more of the grain's outer layers and therefore more fibre, which can be beneficial but may cause temporary digestive discomfort in people who are not accustomed to higher-fibre meals. Individual tolerance matters, and preparation also affects texture and digestibility."],
+      ["White Rice vs Brown Rice: Glycemic Response", "Rice can raise blood glucose because it contains substantial carbohydrate, but the response depends on rice variety, cooking, portion size, meal composition and the individual. It is too simplistic to assume every brown-rice meal has a low glucose response or every white-rice meal has a high one. Adding vegetables, legumes, protein and other foods to a meal can change the overall carbohydrate load and digestion pattern."],
+      ["Basmati Rice vs Brown Rice", "Basmati describes a rice variety rather than a simple whole-versus-refined category. Basmati rice can be white or brown. Therefore, comparing 'basmati' with 'brown rice' is not always an apples-to-apples comparison. When tracking nutrition, identify both the variety and whether the rice is whole-grain or refined, then use the matching database entry."],
+      ["India-Specific Nutrition Context", "Rice is a major staple in many Indian regions, and common choices include white rice, brown rice, parboiled rice and basmati rice. For an Indian meal, the overall plate matters: rice can be paired with dal, rajma, chana, vegetables, curd, eggs, fish, chicken or other protein-rich foods. If switching to brown rice makes a meal less enjoyable or difficult to sustain, portion control and a balanced meal can still be effective with white rice."],
+      ["How Much Rice Should You Eat?", "There is no universal rice portion that is correct for everyone. A useful starting point is to measure a cooked serving and adjust it according to calorie needs, activity, hunger and the rest of the meal. People with higher energy demands may need larger portions, while someone reducing total calorie intake may use a smaller portion and increase vegetables or other lower-calorie foods for volume."],
+      ["Common Mistakes When Comparing White and Brown Rice", "Common mistakes include comparing dry rice with cooked rice, assuming a bowl has a fixed weight, ignoring cooking oil, treating brown rice as automatically low-calorie, and assuming all rice varieties have identical nutrition. Another mistake is judging a whole meal only by the rice colour while ignoring the protein, vegetables, sauces and portion size around it."],
+      ["How to Track Rice Calories More Precisely", "Choose either cooked-weight or dry-weight tracking and stay consistent. If using cooked weight, use a database entry specifically for cooked rice. If using dry weight, use the corresponding uncooked entry and account for the water absorbed during cooking. For packaged rice products, the label is the most relevant source. Mixed dishes such as fried rice, biryani and pulao should be tracked by ingredients when precision matters because oil and other additions can substantially change calories."],
+      ["White Rice vs Brown Rice: Which Should You Choose?", "The practical choice depends on your dietary pattern, preferences, digestion, budget, availability and nutritional goals. Brown rice is a straightforward way to include a whole grain and generally provides more fibre and certain minerals. White rice is softer, versatile and can still be part of a balanced diet. Rather than treating one type as universally superior, use the rice that helps you build a nutritionally adequate and sustainable meal pattern."],
+      ["Key Takeaways", "Brown rice retains the bran and germ and generally provides more fibre, magnesium and manganese than ordinary white rice. White rice is more refined, softer and often easier to digest, and some products are enriched or fortified. The calorie difference between cooked portions is not large enough to make rice colour the deciding factor for weight loss. Portion size, cooking ingredients and the rest of the meal matter greatly. Both can fit a balanced diet when used appropriately."]
+    ]
+  },
+
 ];
 
 export function getSpecialJournalArticle(slug) {
