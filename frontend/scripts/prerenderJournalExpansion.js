@@ -8,13 +8,15 @@ const indexPath = path.join(build, "index.html");
 const journalPath = path.join(root, "src", "lib", "journalContent.js");
 const expansionPath = path.join(root, "src", "lib", "journalExpansion.js");
 const longformPath = path.join(root, "src", "lib", "journalLongform.js");
+const specialPath = path.join(root, "src", "lib", "journalSpecialArticles.js");
 const tempJournalPath = path.join(build, "__fitme_journal.mjs");
 const tempExpansionPath = path.join(build, "__fitme_journal_expansion.mjs");
 const tempLongformPath = path.join(build, "__fitme_journal_longform.mjs");
+const tempSpecialPath = path.join(build, "__fitme_journal_special.mjs");
 const siteUrl = (process.env.SITE_URL || "https://fitme-pro.vercel.app").replace(/\/$/, "");
 
 if (!fs.existsSync(indexPath)) throw new Error(`Build output not found: ${indexPath}`);
-for (const required of [journalPath, expansionPath, longformPath]) {
+for (const required of [journalPath, expansionPath, longformPath, specialPath]) {
   if (!fs.existsSync(required)) throw new Error(`Required Journal source not found: ${required}`);
 }
 
@@ -47,18 +49,21 @@ function write(route,html){
     fs.writeFileSync(tempJournalPath,fs.readFileSync(journalPath,"utf8"),"utf8");
     fs.writeFileSync(tempExpansionPath,fs.readFileSync(expansionPath,"utf8"),"utf8");
     fs.writeFileSync(tempLongformPath,fs.readFileSync(longformPath,"utf8"),"utf8");
+    fs.writeFileSync(tempSpecialPath,fs.readFileSync(specialPath,"utf8"),"utf8");
 
     const journalMod=await import(`${pathToFileURL(tempJournalPath).href}?v=${Date.now()}`);
     const expansionMod=await import(`${pathToFileURL(tempExpansionPath).href}?v=${Date.now()}`);
     const longformMod=await import(`${pathToFileURL(tempLongformPath).href}?v=${Date.now()}`);
+    const specialMod=await import(`${pathToFileURL(tempSpecialPath).href}?v=${Date.now()}`);
 
     const baseArticles=journalMod.JOURNAL_ARTICLES||[];
     const expansionArticles=expansionMod.JOURNAL_EXPANSION_ARTICLES||[];
     const getLongFormJournalArticle=longformMod.getLongFormJournalArticle;
+    const specialArticles=specialMod.JOURNAL_SPECIAL_ARTICLES||[];
     if(typeof getLongFormJournalArticle!=="function") throw new Error("getLongFormJournalArticle was not exported from journalLongform.js");
 
     const bySlug=new Map();
-    for(const article of [...baseArticles,...expansionArticles]) bySlug.set(article.slug,article);
+    for(const article of [...baseArticles,...expansionArticles,...specialArticles]) bySlug.set(article.slug,article);
     const articles=[...bySlug.values()].map(getLongFormJournalArticle);
     const base=fs.readFileSync(indexPath,"utf8");
 
@@ -81,6 +86,6 @@ function write(route,html){
 
     console.log(`Prerendered ${articles.length} long-form Journal articles (base + expanded).`);
   }finally{
-    for(const file of [tempJournalPath,tempExpansionPath,tempLongformPath]){try{fs.unlinkSync(file)}catch(_){} }
+    for(const file of [tempJournalPath,tempExpansionPath,tempLongformPath,tempSpecialPath]){try{fs.unlinkSync(file)}catch(_){} }
   }
 })().catch(e=>{console.error("Journal long-form prerender failed:",e);process.exit(1)});
