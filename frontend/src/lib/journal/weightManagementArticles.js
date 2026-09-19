@@ -1,7 +1,7 @@
 export const weightManagementArticles = [
 {
     slug: "weight-loss-calorie-deficit-meal-management",
-    category: "Weight Loss",
+    category: "Weight Management",
     categorySlug: "weight-loss",
     title: "Weight Loss & Calorie Deficit Meal Management: A Practical Guide",
     description: "Learn how calorie deficits work, how to plan satisfying meals, set realistic calorie targets, manage portions and build a sustainable weight-loss diet without unnecessary food restrictions.",
