@@ -1,21 +1,17 @@
-import { NutritionArticles } from "./journal/nutritionArticles";
-import { WeightLossArticles } from "./journal/weightLossArticles";
-import { GutHealthArticles } from "./journal/gutHealthArticles";
-import { ClinicalNutritionArticles } from "./journal/clinicalNutritionArticles";
-import { MicronutrientArticles } from "./journal/micronutrientArticles";
-import { SportsNutritionArticles } from "./journal/sportsNutritionArticles";
-import { WellnessArticles } from "./journal/wellnessArticles";
-import { FitnessArticles } from "./journal/fitnessArticles";
+import { nutritionArticles } from "./journal/nutritionArticles";
+import { fitnessArticles } from "./journal/fitnessArticles";
+import { weightManagementArticles } from "./journal/weightManagementArticles";
+import { bodyCompositionArticles } from "./journal/bodyCompositionArticles";
+import { wellnessArticles } from "./journal/wellnessArticles";
+import { healthEducationArticles } from "./journal/healthEducationArticles";
 
 export const JOURNAL_SPECIAL_ARTICLES = [
-  ...NutritionArticles,
-  ...WeightLossArticles,
-  ...GutHealthArticles,
-  ...ClinicalNutritionArticles,
-  ...MicronutrientArticles,
-  ...SportsNutritionArticles,
-  ...WellnessArticles,
-  ...FitnessArticles,
+  ...nutritionArticles,
+  ...fitnessArticles,
+  ...weightManagementArticles,
+  ...bodyCompositionArticles,
+  ...wellnessArticles,
+  ...healthEducationArticles,
 ];
 
 export function getSpecialJournalArticle(slug) {
