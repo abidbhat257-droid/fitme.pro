@@ -19,39 +19,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["NIMH — Mental Health Information",
-       "https://www.nimh.nih.gov/health"],
-      ["NHS — Mental Health",
-       "https://www.nhs.uk/mental-health/"],
-      ["WHO — Mental Health",
-       "https://www.who.int/health-topics/mental-health"]
+      {"label":"NIMH — Mental Health Information","url":"https://www.nimh.nih.gov/health"},
+      {"label":"NHS — Mental Health","url":"https://www.nhs.uk/mental-health/"},
+      {"label":"WHO — Mental Health","url":"https://www.who.int/health-topics/mental-health"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the mental or cognitive topic in the title, including recognized symptoms or risk factors, evidence-supported approaches, limits of self-assessment, and when professional support is appropriate."],
-      [
-        "Quick clinical context",
-        "Chest Pain Left Side: Is it a heart issue or anxiety? is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what chest pain left side: is it a heart issue or anxiety? means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Chest Pain Left Side: Is it a heart issue or anxiety? is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what chest pain left side: is it a heart issue or anxiety? means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -72,39 +51,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Medical Encyclopedia",
-       "https://medlineplus.gov/encyclopedia.html"],
-      ["FDA — Medical Products",
-       "https://www.fda.gov/drugs"],
-      ["NHS — Conditions",
-       "https://www.nhs.uk/conditions/"]
+      {"label":"MedlinePlus — Medical Encyclopedia","url":"https://medlineplus.gov/encyclopedia.html"},
+      {"label":"FDA — Medical Products","url":"https://www.fda.gov/drugs"},
+      {"label":"NHS — Conditions","url":"https://www.nhs.uk/conditions/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the treatment or procedure named in the title, including its purpose, common considerations, limitations, potential risks, follow-up, and questions to discuss with a qualified clinician."],
-      [
-        "Quick clinical context",
-        "Persistent Cough Treatment: When to skip home remedies and see a doctor is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what persistent cough treatment: when to skip home remedies and see a doctor means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Persistent Cough Treatment: When to skip home remedies and see a doctor is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what persistent cough treatment: when to skip home remedies and see a doctor means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -125,39 +83,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NHS — Symptoms and conditions",
-       "https://www.nhs.uk/conditions/"],
-      ["CDC — Health Information",
-       "https://www.cdc.gov/health-information/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NHS — Symptoms and conditions","url":"https://www.nhs.uk/conditions/"},
+      {"label":"CDC — Health Information","url":"https://www.cdc.gov/health-information/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the specific symptom in the title: possible causes, accompanying features that change concern, what information a clinician may need, and why one symptom alone usually cannot establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "Chronic Fatigue Causes: Why am I always tired? is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what chronic fatigue causes: why am i always tired? means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Chronic Fatigue Causes: Why am I always tired? is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what chronic fatigue causes: why am i always tired? means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -178,39 +115,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NHS — Symptoms and conditions",
-       "https://www.nhs.uk/conditions/"],
-      ["CDC — Health Information",
-       "https://www.cdc.gov/health-information/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NHS — Symptoms and conditions","url":"https://www.nhs.uk/conditions/"},
+      {"label":"CDC — Health Information","url":"https://www.cdc.gov/health-information/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the specific symptom in the title: possible causes, accompanying features that change concern, what information a clinician may need, and why one symptom alone usually cannot establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "Sudden Lower Back Pain: Immediate stretches and red flags is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what sudden lower back pain: immediate stretches and red flags means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Sudden Lower Back Pain: Immediate stretches and red flags is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what sudden lower back pain: immediate stretches and red flags means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -231,39 +147,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NIDDK — Health Information",
-       "https://www.niddk.nih.gov/health-information"],
-      ["CDC — Chronic Disease",
-       "https://www.cdc.gov/chronic-disease/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NIDDK — Health Information","url":"https://www.niddk.nih.gov/health-information"},
+      {"label":"CDC — Chronic Disease","url":"https://www.cdc.gov/chronic-disease/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the condition named in the title: what it is, common features and risk factors, how it is evaluated, what treatment may involve, and what should not be used for self-diagnosis."],
-      [
-        "Quick clinical context",
-        "Frequent Headaches: Differentiating between tension, sinus, and migraines is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what frequent headaches: differentiating between tension, sinus, and migraines means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Frequent Headaches: Differentiating between tension, sinus, and migraines is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what frequent headaches: differentiating between tension, sinus, and migraines means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -284,39 +179,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NHS — Symptoms and conditions",
-       "https://www.nhs.uk/conditions/"],
-      ["CDC — Health Information",
-       "https://www.cdc.gov/health-information/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NHS — Symptoms and conditions","url":"https://www.nhs.uk/conditions/"},
+      {"label":"CDC — Health Information","url":"https://www.cdc.gov/health-information/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the specific symptom in the title: possible causes, accompanying features that change concern, what information a clinician may need, and why one symptom alone usually cannot establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "Unexplained Weight Gain: Hidden hormonal and lifestyle triggers is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what unexplained weight gain: hidden hormonal and lifestyle triggers means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Unexplained Weight Gain: Hidden hormonal and lifestyle triggers is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what unexplained weight gain: hidden hormonal and lifestyle triggers means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -337,39 +211,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["NIMH — Mental Health Information",
-       "https://www.nimh.nih.gov/health"],
-      ["NHS — Mental Health",
-       "https://www.nhs.uk/mental-health/"],
-      ["WHO — Mental Health",
-       "https://www.who.int/health-topics/mental-health"]
+      {"label":"NIMH — Mental Health Information","url":"https://www.nimh.nih.gov/health"},
+      {"label":"NHS — Mental Health","url":"https://www.nhs.uk/mental-health/"},
+      {"label":"WHO — Mental Health","url":"https://www.who.int/health-topics/mental-health"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the mental or cognitive topic in the title, including recognized symptoms or risk factors, evidence-supported approaches, limits of self-assessment, and when professional support is appropriate."],
-      [
-        "Quick clinical context",
-        "Brain Fog Redux: Top medical reasons behind cognitive lethargy is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what brain fog redux: top medical reasons behind cognitive lethargy means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Brain Fog Redux: Top medical reasons behind cognitive lethargy is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what brain fog redux: top medical reasons behind cognitive lethargy means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -390,39 +243,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["CDC — Prevention",
-       "https://www.cdc.gov/health-topics.html"],
-      ["WHO — Healthy Diet",
-       "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"],
-      ["NHS — Live Well",
-       "https://www.nhs.uk/live-well/"]
+      {"label":"CDC — Prevention","url":"https://www.cdc.gov/health-topics.html"},
+      {"label":"WHO — Healthy Diet","url":"https://www.who.int/news-room/fact-sheets/detail/healthy-diet"},
+      {"label":"NHS — Live Well","url":"https://www.nhs.uk/live-well/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the preventive or lifestyle topic in the title, distinguishing evidence-supported habits from exaggerated claims and showing how it fits into overall health."],
-      [
-        "Quick clinical context",
-        "Joint Pain in Cold Weather: Science-backed prevention steps is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what joint pain in cold weather: science-backed prevention steps means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Joint Pain in Cold Weather: Science-backed prevention steps is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what joint pain in cold weather: science-backed prevention steps means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -443,39 +275,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NHS — Symptoms and conditions",
-       "https://www.nhs.uk/conditions/"],
-      ["CDC — Health Information",
-       "https://www.cdc.gov/health-information/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NHS — Symptoms and conditions","url":"https://www.nhs.uk/conditions/"},
+      {"label":"CDC — Health Information","url":"https://www.cdc.gov/health-information/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the specific symptom in the title: possible causes, accompanying features that change concern, what information a clinician may need, and why one symptom alone usually cannot establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "Bloating After Eating: Mapping symptoms to food intolerances is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what bloating after eating: mapping symptoms to food intolerances means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Bloating After Eating: Mapping symptoms to food intolerances is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what bloating after eating: mapping symptoms to food intolerances means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -496,39 +307,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NHS — Symptoms and conditions",
-       "https://www.nhs.uk/conditions/"],
-      ["CDC — Health Information",
-       "https://www.cdc.gov/health-information/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NHS — Symptoms and conditions","url":"https://www.nhs.uk/conditions/"},
+      {"label":"CDC — Health Information","url":"https://www.cdc.gov/health-information/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the specific symptom in the title: possible causes, accompanying features that change concern, what information a clinician may need, and why one symptom alone usually cannot establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "Dizziness When Standing: When is orthostatic hypotension a concern? is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what dizziness when standing: when is orthostatic hypotension a concern? means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Dizziness When Standing: When is orthostatic hypotension a concern? is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what dizziness when standing: when is orthostatic hypotension a concern? means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -549,39 +339,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NHS — Symptoms and conditions",
-       "https://www.nhs.uk/conditions/"],
-      ["CDC — Health Information",
-       "https://www.cdc.gov/health-information/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NHS — Symptoms and conditions","url":"https://www.nhs.uk/conditions/"},
+      {"label":"CDC — Health Information","url":"https://www.cdc.gov/health-information/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the specific symptom in the title: possible causes, accompanying features that change concern, what information a clinician may need, and why one symptom alone usually cannot establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "Tinnitus Management: How to stop the ringing in your ears is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what tinnitus management: how to stop the ringing in your ears means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Tinnitus Management: How to stop the ringing in your ears is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what tinnitus management: how to stop the ringing in your ears means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -602,39 +371,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NHS — Symptoms and conditions",
-       "https://www.nhs.uk/conditions/"],
-      ["CDC — Health Information",
-       "https://www.cdc.gov/health-information/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NHS — Symptoms and conditions","url":"https://www.nhs.uk/conditions/"},
+      {"label":"CDC — Health Information","url":"https://www.cdc.gov/health-information/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the specific symptom in the title: possible causes, accompanying features that change concern, what information a clinician may need, and why one symptom alone usually cannot establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "Blurry Vision Suddenly: Temporary strain versus ocular emergencies is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what blurry vision suddenly: temporary strain versus ocular emergencies means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Blurry Vision Suddenly: Temporary strain versus ocular emergencies is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what blurry vision suddenly: temporary strain versus ocular emergencies means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -655,39 +403,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NHS — Symptoms and conditions",
-       "https://www.nhs.uk/conditions/"],
-      ["CDC — Health Information",
-       "https://www.cdc.gov/health-information/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NHS — Symptoms and conditions","url":"https://www.nhs.uk/conditions/"},
+      {"label":"CDC — Health Information","url":"https://www.cdc.gov/health-information/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the specific symptom in the title: possible causes, accompanying features that change concern, what information a clinician may need, and why one symptom alone usually cannot establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "Numbness in Fingers: Is it carpal tunnel syndrome or poor circulation? is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what numbness in fingers: is it carpal tunnel syndrome or poor circulation? means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Numbness in Fingers: Is it carpal tunnel syndrome or poor circulation? is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what numbness in fingers: is it carpal tunnel syndrome or poor circulation? means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -708,39 +435,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NHS — Symptoms and conditions",
-       "https://www.nhs.uk/conditions/"],
-      ["CDC — Health Information",
-       "https://www.cdc.gov/health-information/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NHS — Symptoms and conditions","url":"https://www.nhs.uk/conditions/"},
+      {"label":"CDC — Health Information","url":"https://www.cdc.gov/health-information/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the specific symptom in the title: possible causes, accompanying features that change concern, what information a clinician may need, and why one symptom alone usually cannot establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "Chronic Insomnia Help: Re-engineering your circadian rhythm is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what chronic insomnia help: re-engineering your circadian rhythm means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Chronic Insomnia Help: Re-engineering your circadian rhythm is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what chronic insomnia help: re-engineering your circadian rhythm means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -761,39 +467,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NHS — Symptoms and conditions",
-       "https://www.nhs.uk/conditions/"],
-      ["CDC — Health Information",
-       "https://www.cdc.gov/health-information/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NHS — Symptoms and conditions","url":"https://www.nhs.uk/conditions/"},
+      {"label":"CDC — Health Information","url":"https://www.cdc.gov/health-information/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the specific symptom in the title: possible causes, accompanying features that change concern, what information a clinician may need, and why one symptom alone usually cannot establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "Night Sweats in Adults: Identifying hormonal and systemic causes is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what night sweats in adults: identifying hormonal and systemic causes means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Night Sweats in Adults: Identifying hormonal and systemic causes is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what night sweats in adults: identifying hormonal and systemic causes means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -814,39 +499,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NHS — Symptoms and conditions",
-       "https://www.nhs.uk/conditions/"],
-      ["CDC — Health Information",
-       "https://www.cdc.gov/health-information/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NHS — Symptoms and conditions","url":"https://www.nhs.uk/conditions/"},
+      {"label":"CDC — Health Information","url":"https://www.cdc.gov/health-information/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the specific symptom in the title: possible causes, accompanying features that change concern, what information a clinician may need, and why one symptom alone usually cannot establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "Swollen Ankles at Night: Recognizing fluid retention and cardiovascular flags is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what swollen ankles at night: recognizing fluid retention and cardiovascular flags means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Swollen Ankles at Night: Recognizing fluid retention and cardiovascular flags is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what swollen ankles at night: recognizing fluid retention and cardiovascular flags means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -867,39 +531,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NHS — Symptoms and conditions",
-       "https://www.nhs.uk/conditions/"],
-      ["CDC — Health Information",
-       "https://www.cdc.gov/health-information/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NHS — Symptoms and conditions","url":"https://www.nhs.uk/conditions/"},
+      {"label":"CDC — Health Information","url":"https://www.cdc.gov/health-information/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the specific symptom in the title: possible causes, accompanying features that change concern, what information a clinician may need, and why one symptom alone usually cannot establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "Restless Leg Syndrome: Neurological triggers and home remedies is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what restless leg syndrome: neurological triggers and home remedies means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Restless Leg Syndrome: Neurological triggers and home remedies is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what restless leg syndrome: neurological triggers and home remedies means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -920,39 +563,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["NIMH — Mental Health Information",
-       "https://www.nimh.nih.gov/health"],
-      ["NHS — Mental Health",
-       "https://www.nhs.uk/mental-health/"],
-      ["WHO — Mental Health",
-       "https://www.who.int/health-topics/mental-health"]
+      {"label":"NIMH — Mental Health Information","url":"https://www.nimh.nih.gov/health"},
+      {"label":"NHS — Mental Health","url":"https://www.nhs.uk/mental-health/"},
+      {"label":"WHO — Mental Health","url":"https://www.who.int/health-topics/mental-health"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the mental or cognitive topic in the title, including recognized symptoms or risk factors, evidence-supported approaches, limits of self-assessment, and when professional support is appropriate."],
-      [
-        "Quick clinical context",
-        "Persistent Heart Palpitations: Stress vs. arrhythmias is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what persistent heart palpitations: stress vs. arrhythmias means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Persistent Heart Palpitations: Stress vs. arrhythmias is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what persistent heart palpitations: stress vs. arrhythmias means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -973,39 +595,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NHS — Symptoms and conditions",
-       "https://www.nhs.uk/conditions/"],
-      ["CDC — Health Information",
-       "https://www.cdc.gov/health-information/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NHS — Symptoms and conditions","url":"https://www.nhs.uk/conditions/"},
+      {"label":"CDC — Health Information","url":"https://www.cdc.gov/health-information/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the specific symptom in the title: possible causes, accompanying features that change concern, what information a clinician may need, and why one symptom alone usually cannot establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "Loss of Smell/Taste: Evaluating post-viral and neurological symptoms is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what loss of smell/taste: evaluating post-viral and neurological symptoms means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Loss of Smell/Taste: Evaluating post-viral and neurological symptoms is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what loss of smell/taste: evaluating post-viral and neurological symptoms means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -1026,39 +627,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NIDDK — Health Information",
-       "https://www.niddk.nih.gov/health-information"],
-      ["CDC — Chronic Disease",
-       "https://www.cdc.gov/chronic-disease/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NIDDK — Health Information","url":"https://www.niddk.nih.gov/health-information"},
+      {"label":"CDC — Chronic Disease","url":"https://www.cdc.gov/chronic-disease/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the condition named in the title: what it is, common features and risk factors, how it is evaluated, what treatment may involve, and what should not be used for self-diagnosis."],
-      [
-        "Quick clinical context",
-        "Skin Rashes Decoded: Visual guide to distinguishing allergic reactions from eczema? is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what skin rashes decoded: visual guide to distinguishing allergic reactions from eczema? means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Skin Rashes Decoded: Visual guide to distinguishing allergic reactions from eczema? is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what skin rashes decoded: visual guide to distinguishing allergic reactions from eczema? means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -1079,39 +659,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NIDDK — Health Information",
-       "https://www.niddk.nih.gov/health-information"],
-      ["CDC — Chronic Disease",
-       "https://www.cdc.gov/chronic-disease/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NIDDK — Health Information","url":"https://www.niddk.nih.gov/health-information"},
+      {"label":"CDC — Chronic Disease","url":"https://www.cdc.gov/chronic-disease/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the condition named in the title: what it is, common features and risk factors, how it is evaluated, what treatment may involve, and what should not be used for self-diagnosis."],
-      [
-        "Quick clinical context",
-        "Understanding Type 2 Diabetes: Symptoms, tracking blood sugar, and management is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what understanding type 2 diabetes: symptoms, tracking blood sugar, and management means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Understanding Type 2 Diabetes: Symptoms, tracking blood sugar, and management is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what understanding type 2 diabetes: symptoms, tracking blood sugar, and management means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -1132,39 +691,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["NHLBI — Heart and Vascular Diseases",
-       "https://www.nhlbi.nih.gov/health/heart-disease"],
-      ["CDC — Heart Disease",
-       "https://www.cdc.gov/heart-disease/"],
-      ["MedlinePlus — Heart Diseases",
-       "https://medlineplus.gov/heartdiseases.html"]
+      {"label":"NHLBI — Heart and Vascular Diseases","url":"https://www.nhlbi.nih.gov/health/heart-disease"},
+      {"label":"CDC — Heart Disease","url":"https://www.cdc.gov/heart-disease/"},
+      {"label":"MedlinePlus — Heart Diseases","url":"https://medlineplus.gov/heartdiseases.html"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the cardiovascular topic in the title, including symptoms or risk factors, appropriate evaluation, prevention, and urgent warning signs."],
-      [
-        "Quick clinical context",
-        "Hypertension 101: Decoding high blood pressure numbers is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what hypertension 101: decoding high blood pressure numbers means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Hypertension 101: Decoding high blood pressure numbers is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what hypertension 101: decoding high blood pressure numbers means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -1185,39 +723,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["National Institute on Aging — Healthy Aging",
-       "https://www.nia.nih.gov/health/healthy-aging"],
-      ["CDC — Healthy Aging",
-       "https://www.cdc.gov/healthy-aging/"],
-      ["WHO — Ageing and Health",
-       "https://www.who.int/news-room/fact-sheets/detail/ageing-and-health"]
+      {"label":"National Institute on Aging — Healthy Aging","url":"https://www.nia.nih.gov/health/healthy-aging"},
+      {"label":"CDC — Healthy Aging","url":"https://www.cdc.gov/healthy-aging/"},
+      {"label":"WHO — Ageing and Health","url":"https://www.who.int/news-room/fact-sheets/detail/ageing-and-health"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the aging-related topic in the title, including age-related changes, modifiable risk factors, functional health, and the difference between general information and individualized care."],
-      [
-        "Quick clinical context",
-        "Managing High Cholesterol: Dietary modifications versus statin therapy is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what managing high cholesterol: dietary modifications versus statin therapy means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Managing High Cholesterol: Dietary modifications versus statin therapy is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what managing high cholesterol: dietary modifications versus statin therapy means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -1238,39 +755,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NIDDK — Health Information",
-       "https://www.niddk.nih.gov/health-information"],
-      ["CDC — Chronic Disease",
-       "https://www.cdc.gov/chronic-disease/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NIDDK — Health Information","url":"https://www.niddk.nih.gov/health-information"},
+      {"label":"CDC — Chronic Disease","url":"https://www.cdc.gov/chronic-disease/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the condition named in the title: what it is, common features and risk factors, how it is evaluated, what treatment may involve, and what should not be used for self-diagnosis."],
-      [
-        "Quick clinical context",
-        "Fatty Liver Disease: Reversing hepatic fat through targeted lifestyle shifts is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what fatty liver disease: reversing hepatic fat through targeted lifestyle shifts means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Fatty Liver Disease: Reversing hepatic fat through targeted lifestyle shifts is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what fatty liver disease: reversing hepatic fat through targeted lifestyle shifts means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -1291,39 +787,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NIDDK — Health Information",
-       "https://www.niddk.nih.gov/health-information"],
-      ["CDC — Chronic Disease",
-       "https://www.cdc.gov/chronic-disease/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NIDDK — Health Information","url":"https://www.niddk.nih.gov/health-information"},
+      {"label":"CDC — Chronic Disease","url":"https://www.cdc.gov/chronic-disease/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the condition named in the title: what it is, common features and risk factors, how it is evaluated, what treatment may involve, and what should not be used for self-diagnosis."],
-      [
-        "Quick clinical context",
-        "Thyroid Disorders: Signs your metabolism is running too fast or slow is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what thyroid disorders: signs your metabolism is running too fast or slow means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Thyroid Disorders: Signs your metabolism is running too fast or slow is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what thyroid disorders: signs your metabolism is running too fast or slow means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -1344,39 +819,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["NHLBI — Heart and Vascular Diseases",
-       "https://www.nhlbi.nih.gov/health/heart-disease"],
-      ["CDC — Heart Disease",
-       "https://www.cdc.gov/heart-disease/"],
-      ["MedlinePlus — Heart Diseases",
-       "https://medlineplus.gov/heartdiseases.html"]
+      {"label":"NHLBI — Heart and Vascular Diseases","url":"https://www.nhlbi.nih.gov/health/heart-disease"},
+      {"label":"CDC — Heart Disease","url":"https://www.cdc.gov/heart-disease/"},
+      {"label":"MedlinePlus — Heart Diseases","url":"https://medlineplus.gov/heartdiseases.html"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the cardiovascular topic in the title, including symptoms or risk factors, appropriate evaluation, prevention, and urgent warning signs."],
-      [
-        "Quick clinical context",
-        "Cardiovascular Disease: The complete guide to heart disease prevention is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what cardiovascular disease: the complete guide to heart disease prevention means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Cardiovascular Disease: The complete guide to heart disease prevention is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what cardiovascular disease: the complete guide to heart disease prevention means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -1397,39 +851,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["NHLBI — Heart and Vascular Diseases",
-       "https://www.nhlbi.nih.gov/health/heart-disease"],
-      ["CDC — Heart Disease",
-       "https://www.cdc.gov/heart-disease/"],
-      ["MedlinePlus — Heart Diseases",
-       "https://medlineplus.gov/heartdiseases.html"]
+      {"label":"NHLBI — Heart and Vascular Diseases","url":"https://www.nhlbi.nih.gov/health/heart-disease"},
+      {"label":"CDC — Heart Disease","url":"https://www.cdc.gov/heart-disease/"},
+      {"label":"MedlinePlus — Heart Diseases","url":"https://medlineplus.gov/heartdiseases.html"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the cardiovascular topic in the title, including symptoms or risk factors, appropriate evaluation, prevention, and urgent warning signs."],
-      [
-        "Quick clinical context",
-        "Metabolic Syndrome: Connecting the dots between obesity, insulin, and blood pressure is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what metabolic syndrome: connecting the dots between obesity, insulin, and blood pressure means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Metabolic Syndrome: Connecting the dots between obesity, insulin, and blood pressure is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what metabolic syndrome: connecting the dots between obesity, insulin, and blood pressure means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -1450,39 +883,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NIDDK — Health Information",
-       "https://www.niddk.nih.gov/health-information"],
-      ["CDC — Chronic Disease",
-       "https://www.cdc.gov/chronic-disease/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NIDDK — Health Information","url":"https://www.niddk.nih.gov/health-information"},
+      {"label":"CDC — Chronic Disease","url":"https://www.cdc.gov/chronic-disease/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the condition named in the title: what it is, common features and risk factors, how it is evaluated, what treatment may involve, and what should not be used for self-diagnosis."],
-      [
-        "Quick clinical context",
-        "Pre-Diabetes Intervention: Scientific strategies to halt progression is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what pre-diabetes intervention: scientific strategies to halt progression means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Pre-Diabetes Intervention: Scientific strategies to halt progression is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what pre-diabetes intervention: scientific strategies to halt progression means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -1503,39 +915,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NIDDK — Health Information",
-       "https://www.niddk.nih.gov/health-information"],
-      ["CDC — Chronic Disease",
-       "https://www.cdc.gov/chronic-disease/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NIDDK — Health Information","url":"https://www.niddk.nih.gov/health-information"},
+      {"label":"CDC — Chronic Disease","url":"https://www.cdc.gov/chronic-disease/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the condition named in the title: what it is, common features and risk factors, how it is evaluated, what treatment may involve, and what should not be used for self-diagnosis."],
-      [
-        "Quick clinical context",
-        "Anemia Types: Causes, symptoms, and building iron reserves is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what anemia types: causes, symptoms, and building iron reserves means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Anemia Types: Causes, symptoms, and building iron reserves is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what anemia types: causes, symptoms, and building iron reserves means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -1556,39 +947,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NHS — Symptoms and conditions",
-       "https://www.nhs.uk/conditions/"],
-      ["CDC — Health Information",
-       "https://www.cdc.gov/health-information/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NHS — Symptoms and conditions","url":"https://www.nhs.uk/conditions/"},
+      {"label":"CDC — Health Information","url":"https://www.cdc.gov/health-information/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the specific symptom in the title: possible causes, accompanying features that change concern, what information a clinician may need, and why one symptom alone usually cannot establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "Gout Flares: Dietary triggers, purine management, and long-term care is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what gout flares: dietary triggers, purine management, and long-term care means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Gout Flares: Dietary triggers, purine management, and long-term care is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what gout flares: dietary triggers, purine management, and long-term care means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -1609,39 +979,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NIDDK — Health Information",
-       "https://www.niddk.nih.gov/health-information"],
-      ["CDC — Chronic Disease",
-       "https://www.cdc.gov/chronic-disease/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NIDDK — Health Information","url":"https://www.niddk.nih.gov/health-information"},
+      {"label":"CDC — Chronic Disease","url":"https://www.cdc.gov/chronic-disease/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the condition named in the title: what it is, common features and risk factors, how it is evaluated, what treatment may involve, and what should not be used for self-diagnosis."],
-      [
-        "Quick clinical context",
-        "Gut Health Tips: Living with Irritable Bowel Syndrome (IBS) is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what gut health tips: living with irritable bowel syndrome (ibs) means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Gut Health Tips: Living with Irritable Bowel Syndrome (IBS) is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what gut health tips: living with irritable bowel syndrome (ibs) means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -1662,39 +1011,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NHS — Symptoms and conditions",
-       "https://www.nhs.uk/conditions/"],
-      ["CDC — Health Information",
-       "https://www.cdc.gov/health-information/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NHS — Symptoms and conditions","url":"https://www.nhs.uk/conditions/"},
+      {"label":"CDC — Health Information","url":"https://www.cdc.gov/health-information/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the specific symptom in the title: possible causes, accompanying features that change concern, what information a clinician may need, and why one symptom alone usually cannot establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "Celiac Disease vs. Gluten Intolerance: Understanding the critical differences is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what celiac disease vs. gluten intolerance: understanding the critical differences means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Celiac Disease vs. Gluten Intolerance: Understanding the critical differences is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what celiac disease vs. gluten intolerance: understanding the critical differences means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -1715,39 +1043,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["National Institute on Aging — Healthy Aging",
-       "https://www.nia.nih.gov/health/healthy-aging"],
-      ["CDC — Healthy Aging",
-       "https://www.cdc.gov/healthy-aging/"],
-      ["WHO — Ageing and Health",
-       "https://www.who.int/news-room/fact-sheets/detail/ageing-and-health"]
+      {"label":"National Institute on Aging — Healthy Aging","url":"https://www.nia.nih.gov/health/healthy-aging"},
+      {"label":"CDC — Healthy Aging","url":"https://www.cdc.gov/healthy-aging/"},
+      {"label":"WHO — Ageing and Health","url":"https://www.who.int/news-room/fact-sheets/detail/ageing-and-health"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the aging-related topic in the title, including age-related changes, modifiable risk factors, functional health, and the difference between general information and individualized care."],
-      [
-        "Quick clinical context",
-        "Rheumatoid Arthritis: Managing chronic joint inflammation and pain is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what rheumatoid arthritis: managing chronic joint inflammation and pain means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Rheumatoid Arthritis: Managing chronic joint inflammation and pain is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what rheumatoid arthritis: managing chronic joint inflammation and pain means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -1768,39 +1075,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NHS — Symptoms and conditions",
-       "https://www.nhs.uk/conditions/"],
-      ["CDC — Health Information",
-       "https://www.cdc.gov/health-information/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NHS — Symptoms and conditions","url":"https://www.nhs.uk/conditions/"},
+      {"label":"CDC — Health Information","url":"https://www.cdc.gov/health-information/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the specific symptom in the title: possible causes, accompanying features that change concern, what information a clinician may need, and why one symptom alone usually cannot establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "Leaky Gut Syndrome: Separating medical myth from clinical fact is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what leaky gut syndrome: separating medical myth from clinical fact means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Leaky Gut Syndrome: Separating medical myth from clinical fact is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what leaky gut syndrome: separating medical myth from clinical fact means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -1821,39 +1107,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Medical Encyclopedia",
-       "https://medlineplus.gov/encyclopedia.html"],
-      ["FDA — Medical Products",
-       "https://www.fda.gov/drugs"],
-      ["NHS — Conditions",
-       "https://www.nhs.uk/conditions/"]
+      {"label":"MedlinePlus — Medical Encyclopedia","url":"https://medlineplus.gov/encyclopedia.html"},
+      {"label":"FDA — Medical Products","url":"https://www.fda.gov/drugs"},
+      {"label":"NHS — Conditions","url":"https://www.nhs.uk/conditions/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the treatment or procedure named in the title, including its purpose, common considerations, limitations, potential risks, follow-up, and questions to discuss with a qualified clinician."],
-      [
-        "Quick clinical context",
-        "GERD & Acid Reflux: Long-term damage prevention and treatment adjustments is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what gerd & acid reflux: long-term damage prevention and treatment adjustments means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"GERD & Acid Reflux: Long-term damage prevention and treatment adjustments is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what gerd & acid reflux: long-term damage prevention and treatment adjustments means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -1874,39 +1139,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["NIMH — Mental Health Information",
-       "https://www.nimh.nih.gov/health"],
-      ["NHS — Mental Health",
-       "https://www.nhs.uk/mental-health/"],
-      ["WHO — Mental Health",
-       "https://www.who.int/health-topics/mental-health"]
+      {"label":"NIMH — Mental Health Information","url":"https://www.nimh.nih.gov/health"},
+      {"label":"NHS — Mental Health","url":"https://www.nhs.uk/mental-health/"},
+      {"label":"WHO — Mental Health","url":"https://www.who.int/health-topics/mental-health"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the mental or cognitive topic in the title, including recognized symptoms or risk factors, evidence-supported approaches, limits of self-assessment, and when professional support is appropriate."],
-      [
-        "Quick clinical context",
-        "Autoimmune Flare-ups: Identifying environmental and stress-based triggers is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what autoimmune flare-ups: identifying environmental and stress-based triggers means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Autoimmune Flare-ups: Identifying environmental and stress-based triggers is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what autoimmune flare-ups: identifying environmental and stress-based triggers means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -1927,39 +1171,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NIDDK — Health Information",
-       "https://www.niddk.nih.gov/health-information"],
-      ["CDC — Chronic Disease",
-       "https://www.cdc.gov/chronic-disease/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NIDDK — Health Information","url":"https://www.niddk.nih.gov/health-information"},
+      {"label":"CDC — Chronic Disease","url":"https://www.cdc.gov/chronic-disease/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the condition named in the title: what it is, common features and risk factors, how it is evaluated, what treatment may involve, and what should not be used for self-diagnosis."],
-      [
-        "Quick clinical context",
-        "Fibromyalgia Guide: Navigating widespread chronic muscular pain is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what fibromyalgia guide: navigating widespread chronic muscular pain means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Fibromyalgia Guide: Navigating widespread chronic muscular pain is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what fibromyalgia guide: navigating widespread chronic muscular pain means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -1980,39 +1203,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Medical Encyclopedia",
-       "https://medlineplus.gov/encyclopedia.html"],
-      ["FDA — Medical Products",
-       "https://www.fda.gov/drugs"],
-      ["NHS — Conditions",
-       "https://www.nhs.uk/conditions/"]
+      {"label":"MedlinePlus — Medical Encyclopedia","url":"https://medlineplus.gov/encyclopedia.html"},
+      {"label":"FDA — Medical Products","url":"https://www.fda.gov/drugs"},
+      {"label":"NHS — Conditions","url":"https://www.nhs.uk/conditions/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the treatment or procedure named in the title, including its purpose, common considerations, limitations, potential risks, follow-up, and questions to discuss with a qualified clinician."],
-      [
-        "Quick clinical context",
-        "Osteoarthritis vs. RA: Complete structural and treatment comparison is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what osteoarthritis vs. ra: complete structural and treatment comparison means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Osteoarthritis vs. RA: Complete structural and treatment comparison is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what osteoarthritis vs. ra: complete structural and treatment comparison means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -2033,39 +1235,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NHS — Symptoms and conditions",
-       "https://www.nhs.uk/conditions/"],
-      ["CDC — Health Information",
-       "https://www.cdc.gov/health-information/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NHS — Symptoms and conditions","url":"https://www.nhs.uk/conditions/"},
+      {"label":"CDC — Health Information","url":"https://www.cdc.gov/health-information/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the specific symptom in the title: possible causes, accompanying features that change concern, what information a clinician may need, and why one symptom alone usually cannot establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "Crohn's & Colitis: Nutritional roadmaps for inflammatory bowel diseases is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what crohn's & colitis: nutritional roadmaps for inflammatory bowel diseases means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Crohn's & Colitis: Nutritional roadmaps for inflammatory bowel diseases is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what crohn's & colitis: nutritional roadmaps for inflammatory bowel diseases means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -2086,39 +1267,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["National Institute on Aging — Healthy Aging",
-       "https://www.nia.nih.gov/health/healthy-aging"],
-      ["CDC — Healthy Aging",
-       "https://www.cdc.gov/healthy-aging/"],
-      ["WHO — Ageing and Health",
-       "https://www.who.int/news-room/fact-sheets/detail/ageing-and-health"]
+      {"label":"National Institute on Aging — Healthy Aging","url":"https://www.nia.nih.gov/health/healthy-aging"},
+      {"label":"CDC — Healthy Aging","url":"https://www.cdc.gov/healthy-aging/"},
+      {"label":"WHO — Ageing and Health","url":"https://www.who.int/news-room/fact-sheets/detail/ageing-and-health"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the aging-related topic in the title, including age-related changes, modifiable risk factors, functional health, and the difference between general information and individualized care."],
-      [
-        "Quick clinical context",
-        "Psoriasis Care: Managing systemic inflammation from skin to joints is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what psoriasis care: managing systemic inflammation from skin to joints means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Psoriasis Care: Managing systemic inflammation from skin to joints is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what psoriasis care: managing systemic inflammation from skin to joints means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -2139,39 +1299,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Medical Encyclopedia",
-       "https://medlineplus.gov/encyclopedia.html"],
-      ["FDA — Medical Products",
-       "https://www.fda.gov/drugs"],
-      ["NHS — Conditions",
-       "https://www.nhs.uk/conditions/"]
+      {"label":"MedlinePlus — Medical Encyclopedia","url":"https://medlineplus.gov/encyclopedia.html"},
+      {"label":"FDA — Medical Products","url":"https://www.fda.gov/drugs"},
+      {"label":"NHS — Conditions","url":"https://www.nhs.uk/conditions/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the treatment or procedure named in the title, including its purpose, common considerations, limitations, potential risks, follow-up, and questions to discuss with a qualified clinician."],
-      [
-        "Quick clinical context",
-        "Knee Replacement Surgery: Recovery timelines, physical therapy, and long-term success is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what knee replacement surgery: recovery timelines, physical therapy, and long-term success means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Knee Replacement Surgery: Recovery timelines, physical therapy, and long-term success is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what knee replacement surgery: recovery timelines, physical therapy, and long-term success means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -2192,39 +1331,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Medical Tests",
-       "https://medlineplus.gov/lab-tests/"],
-      ["FDA — Medical Devices",
-       "https://www.fda.gov/medical-devices"],
-      ["NIH — Health Information",
-       "https://www.nih.gov/health-information"]
+      {"label":"MedlinePlus — Medical Tests","url":"https://medlineplus.gov/lab-tests/"},
+      {"label":"FDA — Medical Devices","url":"https://www.fda.gov/medical-devices"},
+      {"label":"NIH — Health Information","url":"https://www.nih.gov/health-information"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the test or evaluation named in the title, explaining what it measures, why it may be ordered, how results are interpreted in context, and why an isolated result does not always establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "Hip Arthroplasty Explainer: What to expect during your hospital stay is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what hip arthroplasty explainer: what to expect during your hospital stay means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Hip Arthroplasty Explainer: What to expect during your hospital stay is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what hip arthroplasty explainer: what to expect during your hospital stay means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -2245,39 +1363,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Medical Encyclopedia",
-       "https://medlineplus.gov/encyclopedia.html"],
-      ["FDA — Medical Products",
-       "https://www.fda.gov/drugs"],
-      ["NHS — Conditions",
-       "https://www.nhs.uk/conditions/"]
+      {"label":"MedlinePlus — Medical Encyclopedia","url":"https://medlineplus.gov/encyclopedia.html"},
+      {"label":"FDA — Medical Products","url":"https://www.fda.gov/drugs"},
+      {"label":"NHS — Conditions","url":"https://www.nhs.uk/conditions/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the treatment or procedure named in the title, including its purpose, common considerations, limitations, potential risks, follow-up, and questions to discuss with a qualified clinician."],
-      [
-        "Quick clinical context",
-        "LASIK Eye Surgery: Evaluating candidacy, risks, and vision recovery outcomes is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what lasik eye surgery: evaluating candidacy, risks, and vision recovery outcomes means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"LASIK Eye Surgery: Evaluating candidacy, risks, and vision recovery outcomes is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what lasik eye surgery: evaluating candidacy, risks, and vision recovery outcomes means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -2298,39 +1395,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NHS — Symptoms and conditions",
-       "https://www.nhs.uk/conditions/"],
-      ["CDC — Health Information",
-       "https://www.cdc.gov/health-information/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NHS — Symptoms and conditions","url":"https://www.nhs.uk/conditions/"},
+      {"label":"CDC — Health Information","url":"https://www.cdc.gov/health-information/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the specific symptom in the title: possible causes, accompanying features that change concern, what information a clinician may need, and why one symptom alone usually cannot establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "Gallbladder Removal: Adapting your post-operative digestive diet is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what gallbladder removal: adapting your post-operative digestive diet means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Gallbladder Removal: Adapting your post-operative digestive diet is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what gallbladder removal: adapting your post-operative digestive diet means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -2351,39 +1427,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NHS — Symptoms and conditions",
-       "https://www.nhs.uk/conditions/"],
-      ["CDC — Health Information",
-       "https://www.cdc.gov/health-information/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NHS — Symptoms and conditions","url":"https://www.nhs.uk/conditions/"},
+      {"label":"CDC — Health Information","url":"https://www.cdc.gov/health-information/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the specific symptom in the title: possible causes, accompanying features that change concern, what information a clinician may need, and why one symptom alone usually cannot establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "C-Section Recovery: Physical healing, core engagement, and scar tissue management is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what c-section recovery: physical healing, core engagement, and scar tissue management means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"C-Section Recovery: Physical healing, core engagement, and scar tissue management is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what c-section recovery: physical healing, core engagement, and scar tissue management means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -2404,39 +1459,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Medical Tests",
-       "https://medlineplus.gov/lab-tests/"],
-      ["FDA — Medical Devices",
-       "https://www.fda.gov/medical-devices"],
-      ["NIH — Health Information",
-       "https://www.nih.gov/health-information"]
+      {"label":"MedlinePlus — Medical Tests","url":"https://medlineplus.gov/lab-tests/"},
+      {"label":"FDA — Medical Devices","url":"https://www.fda.gov/medical-devices"},
+      {"label":"NIH — Health Information","url":"https://www.nih.gov/health-information"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the test or evaluation named in the title, explaining what it measures, why it may be ordered, how results are interpreted in context, and why an isolated result does not always establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "Cataract Surgery Options: Monofocal vs. premium multifocal lenses is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what cataract surgery options: monofocal vs. premium multifocal lenses means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Cataract Surgery Options: Monofocal vs. premium multifocal lenses is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what cataract surgery options: monofocal vs. premium multifocal lenses means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -2457,39 +1491,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Medical Encyclopedia",
-       "https://medlineplus.gov/encyclopedia.html"],
-      ["FDA — Medical Products",
-       "https://www.fda.gov/drugs"],
-      ["NHS — Conditions",
-       "https://www.nhs.uk/conditions/"]
+      {"label":"MedlinePlus — Medical Encyclopedia","url":"https://medlineplus.gov/encyclopedia.html"},
+      {"label":"FDA — Medical Products","url":"https://www.fda.gov/drugs"},
+      {"label":"NHS — Conditions","url":"https://www.nhs.uk/conditions/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the treatment or procedure named in the title, including its purpose, common considerations, limitations, potential risks, follow-up, and questions to discuss with a qualified clinician."],
-      [
-        "Quick clinical context",
-        "Bariatric Surgery Pathways: Evaluating gastric sleeve vs. bypass benefits is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what bariatric surgery pathways: evaluating gastric sleeve vs. bypass benefits means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Bariatric Surgery Pathways: Evaluating gastric sleeve vs. bypass benefits is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what bariatric surgery pathways: evaluating gastric sleeve vs. bypass benefits means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -2510,39 +1523,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Medical Tests",
-       "https://medlineplus.gov/lab-tests/"],
-      ["FDA — Medical Devices",
-       "https://www.fda.gov/medical-devices"],
-      ["NIH — Health Information",
-       "https://www.nih.gov/health-information"]
+      {"label":"MedlinePlus — Medical Tests","url":"https://medlineplus.gov/lab-tests/"},
+      {"label":"FDA — Medical Devices","url":"https://www.fda.gov/medical-devices"},
+      {"label":"NIH — Health Information","url":"https://www.nih.gov/health-information"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the test or evaluation named in the title, explaining what it measures, why it may be ordered, how results are interpreted in context, and why an isolated result does not always establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "Endoscopy vs. Colonoscopy: Preparing your body for preventative screenings is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what endoscopy vs. colonoscopy: preparing your body for preventative screenings means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Endoscopy vs. Colonoscopy: Preparing your body for preventative screenings is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what endoscopy vs. colonoscopy: preparing your body for preventative screenings means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -2563,39 +1555,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Medical Encyclopedia",
-       "https://medlineplus.gov/encyclopedia.html"],
-      ["FDA — Medical Products",
-       "https://www.fda.gov/drugs"],
-      ["NHS — Conditions",
-       "https://www.nhs.uk/conditions/"]
+      {"label":"MedlinePlus — Medical Encyclopedia","url":"https://medlineplus.gov/encyclopedia.html"},
+      {"label":"FDA — Medical Products","url":"https://www.fda.gov/drugs"},
+      {"label":"NHS — Conditions","url":"https://www.nhs.uk/conditions/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the treatment or procedure named in the title, including its purpose, common considerations, limitations, potential risks, follow-up, and questions to discuss with a qualified clinician."],
-      [
-        "Quick clinical context",
-        "Hernia Repair Techniques: Laparoscopic vs. open surgery differences is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what hernia repair techniques: laparoscopic vs. open surgery differences means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Hernia Repair Techniques: Laparoscopic vs. open surgery differences is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what hernia repair techniques: laparoscopic vs. open surgery differences means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -2616,39 +1587,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["CDC — Prevention",
-       "https://www.cdc.gov/health-topics.html"],
-      ["WHO — Healthy Diet",
-       "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"],
-      ["NHS — Live Well",
-       "https://www.nhs.uk/live-well/"]
+      {"label":"CDC — Prevention","url":"https://www.cdc.gov/health-topics.html"},
+      {"label":"WHO — Healthy Diet","url":"https://www.who.int/news-room/fact-sheets/detail/healthy-diet"},
+      {"label":"NHS — Live Well","url":"https://www.nhs.uk/live-well/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the preventive or lifestyle topic in the title, distinguishing evidence-supported habits from exaggerated claims and showing how it fits into overall health."],
-      [
-        "Quick clinical context",
-        "Wisdom Teeth Extraction: Preventing dry socket during recovery is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what wisdom teeth extraction: preventing dry socket during recovery means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Wisdom Teeth Extraction: Preventing dry socket during recovery is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what wisdom teeth extraction: preventing dry socket during recovery means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -2669,39 +1619,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Medical Encyclopedia",
-       "https://medlineplus.gov/encyclopedia.html"],
-      ["FDA — Medical Products",
-       "https://www.fda.gov/drugs"],
-      ["NHS — Conditions",
-       "https://www.nhs.uk/conditions/"]
+      {"label":"MedlinePlus — Medical Encyclopedia","url":"https://medlineplus.gov/encyclopedia.html"},
+      {"label":"FDA — Medical Products","url":"https://www.fda.gov/drugs"},
+      {"label":"NHS — Conditions","url":"https://www.nhs.uk/conditions/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the treatment or procedure named in the title, including its purpose, common considerations, limitations, potential risks, follow-up, and questions to discuss with a qualified clinician."],
-      [
-        "Quick clinical context",
-        "Physical Therapy for Herniated Discs: Core stabilization exercises is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what physical therapy for herniated discs: core stabilization exercises means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Physical Therapy for Herniated Discs: Core stabilization exercises is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what physical therapy for herniated discs: core stabilization exercises means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -2722,39 +1651,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Medical Encyclopedia",
-       "https://medlineplus.gov/encyclopedia.html"],
-      ["FDA — Medical Products",
-       "https://www.fda.gov/drugs"],
-      ["NHS — Conditions",
-       "https://www.nhs.uk/conditions/"]
+      {"label":"MedlinePlus — Medical Encyclopedia","url":"https://medlineplus.gov/encyclopedia.html"},
+      {"label":"FDA — Medical Products","url":"https://www.fda.gov/drugs"},
+      {"label":"NHS — Conditions","url":"https://www.nhs.uk/conditions/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the treatment or procedure named in the title, including its purpose, common considerations, limitations, potential risks, follow-up, and questions to discuss with a qualified clinician."],
-      [
-        "Quick clinical context",
-        "IVF Treatment Guide: Navigating cycles, success factors, and hormone therapy is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what ivf treatment guide: navigating cycles, success factors, and hormone therapy means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"IVF Treatment Guide: Navigating cycles, success factors, and hormone therapy is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what ivf treatment guide: navigating cycles, success factors, and hormone therapy means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -2775,39 +1683,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Medical Encyclopedia",
-       "https://medlineplus.gov/encyclopedia.html"],
-      ["FDA — Medical Products",
-       "https://www.fda.gov/drugs"],
-      ["NHS — Conditions",
-       "https://www.nhs.uk/conditions/"]
+      {"label":"MedlinePlus — Medical Encyclopedia","url":"https://medlineplus.gov/encyclopedia.html"},
+      {"label":"FDA — Medical Products","url":"https://www.fda.gov/drugs"},
+      {"label":"NHS — Conditions","url":"https://www.nhs.uk/conditions/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the treatment or procedure named in the title, including its purpose, common considerations, limitations, potential risks, follow-up, and questions to discuss with a qualified clinician."],
-      [
-        "Quick clinical context",
-        "Chiropractic Care for Neck Pain: Clinical safety and manual therapy is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what chiropractic care for neck pain: clinical safety and manual therapy means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Chiropractic Care for Neck Pain: Clinical safety and manual therapy is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what chiropractic care for neck pain: clinical safety and manual therapy means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -2828,39 +1715,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NHS — Symptoms and conditions",
-       "https://www.nhs.uk/conditions/"],
-      ["CDC — Health Information",
-       "https://www.cdc.gov/health-information/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NHS — Symptoms and conditions","url":"https://www.nhs.uk/conditions/"},
+      {"label":"CDC — Health Information","url":"https://www.cdc.gov/health-information/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the specific symptom in the title: possible causes, accompanying features that change concern, what information a clinician may need, and why one symptom alone usually cannot establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "Dialysis Modalities: Comparing hemodialysis and peritoneal options is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what dialysis modalities: comparing hemodialysis and peritoneal options means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Dialysis Modalities: Comparing hemodialysis and peritoneal options is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what dialysis modalities: comparing hemodialysis and peritoneal options means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -2881,39 +1747,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["NIMH — Mental Health Information",
-       "https://www.nimh.nih.gov/health"],
-      ["NHS — Mental Health",
-       "https://www.nhs.uk/mental-health/"],
-      ["WHO — Mental Health",
-       "https://www.who.int/health-topics/mental-health"]
+      {"label":"NIMH — Mental Health Information","url":"https://www.nimh.nih.gov/health"},
+      {"label":"NHS — Mental Health","url":"https://www.nhs.uk/mental-health/"},
+      {"label":"WHO — Mental Health","url":"https://www.who.int/health-topics/mental-health"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the mental or cognitive topic in the title, including recognized symptoms or risk factors, evidence-supported approaches, limits of self-assessment, and when professional support is appropriate."],
-      [
-        "Quick clinical context",
-        "Cognitive Behavioral Therapy (CBT): How it rewires chronic anxiety patterns is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what cognitive behavioral therapy (cbt): how it rewires chronic anxiety patterns means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Cognitive Behavioral Therapy (CBT): How it rewires chronic anxiety patterns is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what cognitive behavioral therapy (cbt): how it rewires chronic anxiety patterns means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -2934,39 +1779,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["NIMH — Mental Health Information",
-       "https://www.nimh.nih.gov/health"],
-      ["NHS — Mental Health",
-       "https://www.nhs.uk/mental-health/"],
-      ["WHO — Mental Health",
-       "https://www.who.int/health-topics/mental-health"]
+      {"label":"NIMH — Mental Health Information","url":"https://www.nimh.nih.gov/health"},
+      {"label":"NHS — Mental Health","url":"https://www.nhs.uk/mental-health/"},
+      {"label":"WHO — Mental Health","url":"https://www.who.int/health-topics/mental-health"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the mental or cognitive topic in the title, including recognized symptoms or risk factors, evidence-supported approaches, limits of self-assessment, and when professional support is appropriate."],
-      [
-        "Quick clinical context",
-        "Sleep Apnea CPAP Therapy: Adapting to masks and structural alternatives is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what sleep apnea cpap therapy: adapting to masks and structural alternatives means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Sleep Apnea CPAP Therapy: Adapting to masks and structural alternatives is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what sleep apnea cpap therapy: adapting to masks and structural alternatives means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -2987,39 +1811,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["NHLBI — Heart and Vascular Diseases",
-       "https://www.nhlbi.nih.gov/health/heart-disease"],
-      ["CDC — Heart Disease",
-       "https://www.cdc.gov/heart-disease/"],
-      ["MedlinePlus — Heart Diseases",
-       "https://medlineplus.gov/heartdiseases.html"]
+      {"label":"NHLBI — Heart and Vascular Diseases","url":"https://www.nhlbi.nih.gov/health/heart-disease"},
+      {"label":"CDC — Heart Disease","url":"https://www.cdc.gov/heart-disease/"},
+      {"label":"MedlinePlus — Heart Diseases","url":"https://medlineplus.gov/heartdiseases.html"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the cardiovascular topic in the title, including symptoms or risk factors, appropriate evaluation, prevention, and urgent warning signs."],
-      [
-        "Quick clinical context",
-        "Occupational Therapy: Regaining independence after a major stroke is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what occupational therapy: regaining independence after a major stroke means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Occupational Therapy: Regaining independence after a major stroke is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what occupational therapy: regaining independence after a major stroke means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -3040,39 +1843,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["NHLBI — Heart and Vascular Diseases",
-       "https://www.nhlbi.nih.gov/health/heart-disease"],
-      ["CDC — Heart Disease",
-       "https://www.cdc.gov/heart-disease/"],
-      ["MedlinePlus — Heart Diseases",
-       "https://medlineplus.gov/heartdiseases.html"]
+      {"label":"NHLBI — Heart and Vascular Diseases","url":"https://www.nhlbi.nih.gov/health/heart-disease"},
+      {"label":"CDC — Heart Disease","url":"https://www.cdc.gov/heart-disease/"},
+      {"label":"MedlinePlus — Heart Diseases","url":"https://medlineplus.gov/heartdiseases.html"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the cardiovascular topic in the title, including symptoms or risk factors, appropriate evaluation, prevention, and urgent warning signs."],
-      [
-        "Quick clinical context",
-        "Cardiac Rehabilitation: Safe training guidelines after a heart attack is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what cardiac rehabilitation: safe training guidelines after a heart attack means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Cardiac Rehabilitation: Safe training guidelines after a heart attack is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what cardiac rehabilitation: safe training guidelines after a heart attack means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -3093,39 +1875,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Medical Encyclopedia",
-       "https://medlineplus.gov/encyclopedia.html"],
-      ["FDA — Medical Products",
-       "https://www.fda.gov/drugs"],
-      ["NHS — Conditions",
-       "https://www.nhs.uk/conditions/"]
+      {"label":"MedlinePlus — Medical Encyclopedia","url":"https://medlineplus.gov/encyclopedia.html"},
+      {"label":"FDA — Medical Products","url":"https://www.fda.gov/drugs"},
+      {"label":"NHS — Conditions","url":"https://www.nhs.uk/conditions/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the treatment or procedure named in the title, including its purpose, common considerations, limitations, potential risks, follow-up, and questions to discuss with a qualified clinician."],
-      [
-        "Quick clinical context",
-        "Speech Therapy for Adults: Overcoming neurological speech deficits is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what speech therapy for adults: overcoming neurological speech deficits means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Speech Therapy for Adults: Overcoming neurological speech deficits is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what speech therapy for adults: overcoming neurological speech deficits means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -3146,39 +1907,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NHS — Symptoms and conditions",
-       "https://www.nhs.uk/conditions/"],
-      ["CDC — Health Information",
-       "https://www.cdc.gov/health-information/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NHS — Symptoms and conditions","url":"https://www.nhs.uk/conditions/"},
+      {"label":"CDC — Health Information","url":"https://www.cdc.gov/health-information/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the specific symptom in the title: possible causes, accompanying features that change concern, what information a clinician may need, and why one symptom alone usually cannot establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "Acupuncture for Pain Management: Exploring the clinical evidence is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what acupuncture for pain management: exploring the clinical evidence means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Acupuncture for Pain Management: Exploring the clinical evidence is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what acupuncture for pain management: exploring the clinical evidence means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -3199,39 +1939,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NHS — Symptoms and conditions",
-       "https://www.nhs.uk/conditions/"],
-      ["CDC — Health Information",
-       "https://www.cdc.gov/health-information/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NHS — Symptoms and conditions","url":"https://www.nhs.uk/conditions/"},
+      {"label":"CDC — Health Information","url":"https://www.cdc.gov/health-information/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the specific symptom in the title: possible causes, accompanying features that change concern, what information a clinician may need, and why one symptom alone usually cannot establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "Healthy Eating Habits: Establishing sustainable macronutrient balances is best understood as a preventive health and everyday health literacy topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what healthy eating habits: establishing sustainable macronutrient balances means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Healthy Eating Habits: Establishing sustainable macronutrient balances is best understood as a preventive health and everyday health literacy topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what healthy eating habits: establishing sustainable macronutrient balances means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -3252,39 +1971,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["CDC — Prevention",
-       "https://www.cdc.gov/health-topics.html"],
-      ["WHO — Healthy Diet",
-       "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"],
-      ["NHS — Live Well",
-       "https://www.nhs.uk/live-well/"]
+      {"label":"CDC — Prevention","url":"https://www.cdc.gov/health-topics.html"},
+      {"label":"WHO — Healthy Diet","url":"https://www.who.int/news-room/fact-sheets/detail/healthy-diet"},
+      {"label":"NHS — Live Well","url":"https://www.nhs.uk/live-well/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the preventive or lifestyle topic in the title, distinguishing evidence-supported habits from exaggerated claims and showing how it fits into overall health."],
-      [
-        "Quick clinical context",
-        "Mindful Eating Practices: Overcoming emotional eating cycles is best understood as a preventive health and everyday health literacy topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what mindful eating practices: overcoming emotional eating cycles means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Mindful Eating Practices: Overcoming emotional eating cycles is best understood as a preventive health and everyday health literacy topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what mindful eating practices: overcoming emotional eating cycles means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -3305,39 +2003,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["NHLBI — Heart and Vascular Diseases",
-       "https://www.nhlbi.nih.gov/health/heart-disease"],
-      ["CDC — Heart Disease",
-       "https://www.cdc.gov/heart-disease/"],
-      ["MedlinePlus — Heart Diseases",
-       "https://medlineplus.gov/heartdiseases.html"]
+      {"label":"NHLBI — Heart and Vascular Diseases","url":"https://www.nhlbi.nih.gov/health/heart-disease"},
+      {"label":"CDC — Heart Disease","url":"https://www.cdc.gov/heart-disease/"},
+      {"label":"MedlinePlus — Heart Diseases","url":"https://medlineplus.gov/heartdiseases.html"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the cardiovascular topic in the title, including symptoms or risk factors, appropriate evaluation, prevention, and urgent warning signs."],
-      [
-        "Quick clinical context",
-        "Mediterranean Diet Framework: Why it remains the gold standard for heart health is best understood as a preventive health and everyday health literacy topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what mediterranean diet framework: why it remains the gold standard for heart health means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Mediterranean Diet Framework: Why it remains the gold standard for heart health is best understood as a preventive health and everyday health literacy topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what mediterranean diet framework: why it remains the gold standard for heart health means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -3358,39 +2035,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Medical Tests",
-       "https://medlineplus.gov/lab-tests/"],
-      ["FDA — Medical Devices",
-       "https://www.fda.gov/medical-devices"],
-      ["NIH — Health Information",
-       "https://www.nih.gov/health-information"]
+      {"label":"MedlinePlus — Medical Tests","url":"https://medlineplus.gov/lab-tests/"},
+      {"label":"FDA — Medical Devices","url":"https://www.fda.gov/medical-devices"},
+      {"label":"NIH — Health Information","url":"https://www.nih.gov/health-information"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the test or evaluation named in the title, explaining what it measures, why it may be ordered, how results are interpreted in context, and why an isolated result does not always establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "Hydration Science: Calculating your exact fluid and electrolyte needs is best understood as a preventive health and everyday health literacy topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what hydration science: calculating your exact fluid and electrolyte needs means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Hydration Science: Calculating your exact fluid and electrolyte needs is best understood as a preventive health and everyday health literacy topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what hydration science: calculating your exact fluid and electrolyte needs means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -3411,39 +2067,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["National Institute on Aging — Healthy Aging",
-       "https://www.nia.nih.gov/health/healthy-aging"],
-      ["CDC — Healthy Aging",
-       "https://www.cdc.gov/healthy-aging/"],
-      ["WHO — Ageing and Health",
-       "https://www.who.int/news-room/fact-sheets/detail/ageing-and-health"]
+      {"label":"National Institute on Aging — Healthy Aging","url":"https://www.nia.nih.gov/health/healthy-aging"},
+      {"label":"CDC — Healthy Aging","url":"https://www.cdc.gov/healthy-aging/"},
+      {"label":"WHO — Ageing and Health","url":"https://www.who.int/news-room/fact-sheets/detail/ageing-and-health"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the aging-related topic in the title, including age-related changes, modifiable risk factors, functional health, and the difference between general information and individualized care."],
-      [
-        "Quick clinical context",
-        "Processed Foods vs. Whole Foods: Cellular impacts on cellular longevity is best understood as a preventive health and everyday health literacy topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what processed foods vs. whole foods: cellular impacts on cellular longevity means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Processed Foods vs. Whole Foods: Cellular impacts on cellular longevity is best understood as a preventive health and everyday health literacy topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what processed foods vs. whole foods: cellular impacts on cellular longevity means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -3464,39 +2099,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NHS — Symptoms and conditions",
-       "https://www.nhs.uk/conditions/"],
-      ["CDC — Health Information",
-       "https://www.cdc.gov/health-information/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NHS — Symptoms and conditions","url":"https://www.nhs.uk/conditions/"},
+      {"label":"CDC — Health Information","url":"https://www.cdc.gov/health-information/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the specific symptom in the title: possible causes, accompanying features that change concern, what information a clinician may need, and why one symptom alone usually cannot establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "Plant-Based Nutrition: Ensuring adequate B12, iron, and protein intake is best understood as a preventive health and everyday health literacy topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what plant-based nutrition: ensuring adequate b12, iron, and protein intake means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Plant-Based Nutrition: Ensuring adequate B12, iron, and protein intake is best understood as a preventive health and everyday health literacy topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what plant-based nutrition: ensuring adequate b12, iron, and protein intake means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -3517,39 +2131,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["CDC — Prevention",
-       "https://www.cdc.gov/health-topics.html"],
-      ["WHO — Healthy Diet",
-       "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"],
-      ["NHS — Live Well",
-       "https://www.nhs.uk/live-well/"]
+      {"label":"CDC — Prevention","url":"https://www.cdc.gov/health-topics.html"},
+      {"label":"WHO — Healthy Diet","url":"https://www.who.int/news-room/fact-sheets/detail/healthy-diet"},
+      {"label":"NHS — Live Well","url":"https://www.nhs.uk/live-well/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the preventive or lifestyle topic in the title, distinguishing evidence-supported habits from exaggerated claims and showing how it fits into overall health."],
-      [
-        "Quick clinical context",
-        "Posture Correction Routines: Undoing the damage of sedentary desk work is best understood as a preventive health and everyday health literacy topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what posture correction routines: undoing the damage of sedentary desk work means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Posture Correction Routines: Undoing the damage of sedentary desk work is best understood as a preventive health and everyday health literacy topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what posture correction routines: undoing the damage of sedentary desk work means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -3570,39 +2163,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["CDC — Prevention",
-       "https://www.cdc.gov/health-topics.html"],
-      ["WHO — Healthy Diet",
-       "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"],
-      ["NHS — Live Well",
-       "https://www.nhs.uk/live-well/"]
+      {"label":"CDC — Prevention","url":"https://www.cdc.gov/health-topics.html"},
+      {"label":"WHO — Healthy Diet","url":"https://www.who.int/news-room/fact-sheets/detail/healthy-diet"},
+      {"label":"NHS — Live Well","url":"https://www.nhs.uk/live-well/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the preventive or lifestyle topic in the title, distinguishing evidence-supported habits from exaggerated claims and showing how it fits into overall health."],
-      [
-        "Quick clinical context",
-        "Flexibility vs. Mobility: Why stretching alone won’t fix tight joints is best understood as a preventive health and everyday health literacy topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what flexibility vs. mobility: why stretching alone won’t fix tight joints means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Flexibility vs. Mobility: Why stretching alone won’t fix tight joints is best understood as a preventive health and everyday health literacy topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what flexibility vs. mobility: why stretching alone won’t fix tight joints means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -3623,39 +2195,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["National Institute on Aging — Healthy Aging",
-       "https://www.nia.nih.gov/health/healthy-aging"],
-      ["CDC — Healthy Aging",
-       "https://www.cdc.gov/healthy-aging/"],
-      ["WHO — Ageing and Health",
-       "https://www.who.int/news-room/fact-sheets/detail/ageing-and-health"]
+      {"label":"National Institute on Aging — Healthy Aging","url":"https://www.nia.nih.gov/health/healthy-aging"},
+      {"label":"CDC — Healthy Aging","url":"https://www.cdc.gov/healthy-aging/"},
+      {"label":"WHO — Ageing and Health","url":"https://www.who.int/news-room/fact-sheets/detail/ageing-and-health"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the aging-related topic in the title, including age-related changes, modifiable risk factors, functional health, and the difference between general information and individualized care."],
-      [
-        "Quick clinical context",
-        "Walking for Longevity: Optimizing step count, pace, and metabolic outputs is best understood as a preventive health and everyday health literacy topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what walking for longevity: optimizing step count, pace, and metabolic outputs means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Walking for Longevity: Optimizing step count, pace, and metabolic outputs is best understood as a preventive health and everyday health literacy topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what walking for longevity: optimizing step count, pace, and metabolic outputs means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -3676,39 +2227,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["CDC — Prevention",
-       "https://www.cdc.gov/health-topics.html"],
-      ["WHO — Healthy Diet",
-       "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"],
-      ["NHS — Live Well",
-       "https://www.nhs.uk/live-well/"]
+      {"label":"CDC — Prevention","url":"https://www.cdc.gov/health-topics.html"},
+      {"label":"WHO — Healthy Diet","url":"https://www.who.int/news-room/fact-sheets/detail/healthy-diet"},
+      {"label":"NHS — Live Well","url":"https://www.nhs.uk/live-well/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the preventive or lifestyle topic in the title, distinguishing evidence-supported habits from exaggerated claims and showing how it fits into overall health."],
-      [
-        "Quick clinical context",
-        "Active Recovery Protocols: Maximizing recovery between high-exertion training days is best understood as a preventive health and everyday health literacy topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what active recovery protocols: maximizing recovery between high-exertion training days means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Active Recovery Protocols: Maximizing recovery between high-exertion training days is best understood as a preventive health and everyday health literacy topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what active recovery protocols: maximizing recovery between high-exertion training days means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -3729,39 +2259,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["NIMH — Mental Health Information",
-       "https://www.nimh.nih.gov/health"],
-      ["NHS — Mental Health",
-       "https://www.nhs.uk/mental-health/"],
-      ["WHO — Mental Health",
-       "https://www.who.int/health-topics/mental-health"]
+      {"label":"NIMH — Mental Health Information","url":"https://www.nimh.nih.gov/health"},
+      {"label":"NHS — Mental Health","url":"https://www.nhs.uk/mental-health/"},
+      {"label":"WHO — Mental Health","url":"https://www.who.int/health-topics/mental-health"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the mental or cognitive topic in the title, including recognized symptoms or risk factors, evidence-supported approaches, limits of self-assessment, and when professional support is appropriate."],
-      [
-        "Quick clinical context",
-        "Stress Relief Methods: Managing cortisol through somatic work is best understood as a mental health and behavioral wellbeing topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what stress relief methods: managing cortisol through somatic work means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Stress Relief Methods: Managing cortisol through somatic work is best understood as a mental health and behavioral wellbeing topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what stress relief methods: managing cortisol through somatic work means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -3782,39 +2291,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["NIMH — Mental Health Information",
-       "https://www.nimh.nih.gov/health"],
-      ["NHS — Mental Health",
-       "https://www.nhs.uk/mental-health/"],
-      ["WHO — Mental Health",
-       "https://www.who.int/health-topics/mental-health"]
+      {"label":"NIMH — Mental Health Information","url":"https://www.nimh.nih.gov/health"},
+      {"label":"NHS — Mental Health","url":"https://www.nhs.uk/mental-health/"},
+      {"label":"WHO — Mental Health","url":"https://www.who.int/health-topics/mental-health"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the mental or cognitive topic in the title, including recognized symptoms or risk factors, evidence-supported approaches, limits of self-assessment, and when professional support is appropriate."],
-      [
-        "Quick clinical context",
-        "Anxiety Symptoms vs. Panic Attacks: Learning to spot physical differences is best understood as a mental health and behavioral wellbeing topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what anxiety symptoms vs. panic attacks: learning to spot physical differences means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Anxiety Symptoms vs. Panic Attacks: Learning to spot physical differences is best understood as a mental health and behavioral wellbeing topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what anxiety symptoms vs. panic attacks: learning to spot physical differences means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -3835,39 +2323,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["NIMH — Mental Health Information",
-       "https://www.nimh.nih.gov/health"],
-      ["NHS — Mental Health",
-       "https://www.nhs.uk/mental-health/"],
-      ["WHO — Mental Health",
-       "https://www.who.int/health-topics/mental-health"]
+      {"label":"NIMH — Mental Health Information","url":"https://www.nimh.nih.gov/health"},
+      {"label":"NHS — Mental Health","url":"https://www.nhs.uk/mental-health/"},
+      {"label":"WHO — Mental Health","url":"https://www.who.int/health-topics/mental-health"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the mental or cognitive topic in the title, including recognized symptoms or risk factors, evidence-supported approaches, limits of self-assessment, and when professional support is appropriate."],
-      [
-        "Quick clinical context",
-        "Burnout Recovery Checklist: Rebuilding capacity after severe workplace stress is best understood as a mental health and behavioral wellbeing topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what burnout recovery checklist: rebuilding capacity after severe workplace stress means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Burnout Recovery Checklist: Rebuilding capacity after severe workplace stress is best understood as a mental health and behavioral wellbeing topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what burnout recovery checklist: rebuilding capacity after severe workplace stress means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -3888,39 +2355,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NHS — Symptoms and conditions",
-       "https://www.nhs.uk/conditions/"],
-      ["CDC — Health Information",
-       "https://www.cdc.gov/health-information/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NHS — Symptoms and conditions","url":"https://www.nhs.uk/conditions/"},
+      {"label":"CDC — Health Information","url":"https://www.cdc.gov/health-information/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the specific symptom in the title: possible causes, accompanying features that change concern, what information a clinician may need, and why one symptom alone usually cannot establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "Mindfulness for Neurodiverse Brains: Tailoring meditation formats is best understood as a mental health and behavioral wellbeing topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what mindfulness for neurodiverse brains: tailoring meditation formats means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Mindfulness for Neurodiverse Brains: Tailoring meditation formats is best understood as a mental health and behavioral wellbeing topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what mindfulness for neurodiverse brains: tailoring meditation formats means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -3941,39 +2387,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NHS — Symptoms and conditions",
-       "https://www.nhs.uk/conditions/"],
-      ["CDC — Health Information",
-       "https://www.cdc.gov/health-information/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NHS — Symptoms and conditions","url":"https://www.nhs.uk/conditions/"},
+      {"label":"CDC — Health Information","url":"https://www.cdc.gov/health-information/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the specific symptom in the title: possible causes, accompanying features that change concern, what information a clinician may need, and why one symptom alone usually cannot establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "Vagus Nerve Stimulation: Science-backed hacks to turn off your fight-or-flight reflex is best understood as a mental health and behavioral wellbeing topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what vagus nerve stimulation: science-backed hacks to turn off your fight-or-flight reflex means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Vagus Nerve Stimulation: Science-backed hacks to turn off your fight-or-flight reflex is best understood as a mental health and behavioral wellbeing topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what vagus nerve stimulation: science-backed hacks to turn off your fight-or-flight reflex means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -3994,39 +2419,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["NIMH — Mental Health Information",
-       "https://www.nimh.nih.gov/health"],
-      ["NHS — Mental Health",
-       "https://www.nhs.uk/mental-health/"],
-      ["WHO — Mental Health",
-       "https://www.who.int/health-topics/mental-health"]
+      {"label":"NIMH — Mental Health Information","url":"https://www.nimh.nih.gov/health"},
+      {"label":"NHS — Mental Health","url":"https://www.nhs.uk/mental-health/"},
+      {"label":"WHO — Mental Health","url":"https://www.who.int/health-topics/mental-health"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the mental or cognitive topic in the title, including recognized symptoms or risk factors, evidence-supported approaches, limits of self-assessment, and when professional support is appropriate."],
-      [
-        "Quick clinical context",
-        "High-Functioning Anxiety: Recognizing signs of internal panic behind productivity is best understood as a mental health and behavioral wellbeing topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what high-functioning anxiety: recognizing signs of internal panic behind productivity means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"High-Functioning Anxiety: Recognizing signs of internal panic behind productivity is best understood as a mental health and behavioral wellbeing topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what high-functioning anxiety: recognizing signs of internal panic behind productivity means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -4047,39 +2451,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Medical Encyclopedia",
-       "https://medlineplus.gov/encyclopedia.html"],
-      ["FDA — Medical Products",
-       "https://www.fda.gov/drugs"],
-      ["NHS — Conditions",
-       "https://www.nhs.uk/conditions/"]
+      {"label":"MedlinePlus — Medical Encyclopedia","url":"https://medlineplus.gov/encyclopedia.html"},
+      {"label":"FDA — Medical Products","url":"https://www.fda.gov/drugs"},
+      {"label":"NHS — Conditions","url":"https://www.nhs.uk/conditions/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the treatment or procedure named in the title, including its purpose, common considerations, limitations, potential risks, follow-up, and questions to discuss with a qualified clinician."],
-      [
-        "Quick clinical context",
-        "Seasonal Affective Disorder (SAD): Light therapy, vitamin D, and morning routines is best understood as a mental health and behavioral wellbeing topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what seasonal affective disorder (sad): light therapy, vitamin d, and morning routines means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Seasonal Affective Disorder (SAD): Light therapy, vitamin D, and morning routines is best understood as a mental health and behavioral wellbeing topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what seasonal affective disorder (sad): light therapy, vitamin d, and morning routines means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -4100,39 +2483,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NHS — Symptoms and conditions",
-       "https://www.nhs.uk/conditions/"],
-      ["CDC — Health Information",
-       "https://www.cdc.gov/health-information/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NHS — Symptoms and conditions","url":"https://www.nhs.uk/conditions/"},
+      {"label":"CDC — Health Information","url":"https://www.cdc.gov/health-information/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the specific symptom in the title: possible causes, accompanying features that change concern, what information a clinician may need, and why one symptom alone usually cannot establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "Daily Wellness Habits: Building an actionable micro-routine for emotional balance is best understood as a mental health and behavioral wellbeing topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what daily wellness habits: building an actionable micro-routine for emotional balance means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Daily Wellness Habits: Building an actionable micro-routine for emotional balance is best understood as a mental health and behavioral wellbeing topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what daily wellness habits: building an actionable micro-routine for emotional balance means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -4153,39 +2515,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NHS — Symptoms and conditions",
-       "https://www.nhs.uk/conditions/"],
-      ["CDC — Health Information",
-       "https://www.cdc.gov/health-information/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NHS — Symptoms and conditions","url":"https://www.nhs.uk/conditions/"},
+      {"label":"CDC — Health Information","url":"https://www.cdc.gov/health-information/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the specific symptom in the title: possible causes, accompanying features that change concern, what information a clinician may need, and why one symptom alone usually cannot establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "Impulsive Behaviors Management: Neurological pathways and behavioral breaks is best understood as a mental health and behavioral wellbeing topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what impulsive behaviors management: neurological pathways and behavioral breaks means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Impulsive Behaviors Management: Neurological pathways and behavioral breaks is best understood as a mental health and behavioral wellbeing topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what impulsive behaviors management: neurological pathways and behavioral breaks means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -4206,39 +2547,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["NIMH — Mental Health Information",
-       "https://www.nimh.nih.gov/health"],
-      ["NHS — Mental Health",
-       "https://www.nhs.uk/mental-health/"],
-      ["WHO — Mental Health",
-       "https://www.who.int/health-topics/mental-health"]
+      {"label":"NIMH — Mental Health Information","url":"https://www.nimh.nih.gov/health"},
+      {"label":"NHS — Mental Health","url":"https://www.nhs.uk/mental-health/"},
+      {"label":"WHO — Mental Health","url":"https://www.who.int/health-topics/mental-health"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the mental or cognitive topic in the title, including recognized symptoms or risk factors, evidence-supported approaches, limits of self-assessment, and when professional support is appropriate."],
-      [
-        "Quick clinical context",
-        "Journaling for Mental Health: Cognitive reframing prompts that clear your mind is best understood as a mental health and behavioral wellbeing topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what journaling for mental health: cognitive reframing prompts that clear your mind means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Journaling for Mental Health: Cognitive reframing prompts that clear your mind is best understood as a mental health and behavioral wellbeing topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what journaling for mental health: cognitive reframing prompts that clear your mind means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -4259,39 +2579,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["NIMH — Mental Health Information",
-       "https://www.nimh.nih.gov/health"],
-      ["NHS — Mental Health",
-       "https://www.nhs.uk/mental-health/"],
-      ["WHO — Mental Health",
-       "https://www.who.int/health-topics/mental-health"]
+      {"label":"NIMH — Mental Health Information","url":"https://www.nimh.nih.gov/health"},
+      {"label":"NHS — Mental Health","url":"https://www.nhs.uk/mental-health/"},
+      {"label":"WHO — Mental Health","url":"https://www.who.int/health-topics/mental-health"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the mental or cognitive topic in the title, including recognized symptoms or risk factors, evidence-supported approaches, limits of self-assessment, and when professional support is appropriate."],
-      [
-        "Quick clinical context",
-        "Pediatric Developmental Milestones: Year-one speech and motor skills check is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what pediatric developmental milestones: year-one speech and motor skills check means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Pediatric Developmental Milestones: Year-one speech and motor skills check is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what pediatric developmental milestones: year-one speech and motor skills check means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -4312,39 +2611,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["NIMH — Mental Health Information",
-       "https://www.nimh.nih.gov/health"],
-      ["NHS — Mental Health",
-       "https://www.nhs.uk/mental-health/"],
-      ["WHO — Mental Health",
-       "https://www.who.int/health-topics/mental-health"]
+      {"label":"NIMH — Mental Health Information","url":"https://www.nimh.nih.gov/health"},
+      {"label":"NHS — Mental Health","url":"https://www.nhs.uk/mental-health/"},
+      {"label":"WHO — Mental Health","url":"https://www.who.int/health-topics/mental-health"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the mental or cognitive topic in the title, including recognized symptoms or risk factors, evidence-supported approaches, limits of self-assessment, and when professional support is appropriate."],
-      [
-        "Quick clinical context",
-        "Newborn Sleep Training: Establishing gentle, healthy sleeping patterns is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what newborn sleep training: establishing gentle, healthy sleeping patterns means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Newborn Sleep Training: Establishing gentle, healthy sleeping patterns is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what newborn sleep training: establishing gentle, healthy sleeping patterns means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -4365,39 +2643,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["NIMH — Mental Health Information",
-       "https://www.nimh.nih.gov/health"],
-      ["NHS — Mental Health",
-       "https://www.nhs.uk/mental-health/"],
-      ["WHO — Mental Health",
-       "https://www.who.int/health-topics/mental-health"]
+      {"label":"NIMH — Mental Health Information","url":"https://www.nimh.nih.gov/health"},
+      {"label":"NHS — Mental Health","url":"https://www.nhs.uk/mental-health/"},
+      {"label":"WHO — Mental Health","url":"https://www.who.int/health-topics/mental-health"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the mental or cognitive topic in the title, including recognized symptoms or risk factors, evidence-supported approaches, limits of self-assessment, and when professional support is appropriate."],
-      [
-        "Quick clinical context",
-        "Postpartum Depression Identification: Recognizing signs and building safety nets is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what postpartum depression identification: recognizing signs and building safety nets means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Postpartum Depression Identification: Recognizing signs and building safety nets is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what postpartum depression identification: recognizing signs and building safety nets means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -4418,39 +2675,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["CDC — Child Development",
-       "https://www.cdc.gov/child-development/"],
-      ["MedlinePlus — Child Health",
-       "https://medlineplus.gov/childrenshealth.html"],
-      ["WHO — Child Health",
-       "https://www.who.int/health-topics/child-health"]
+      {"label":"CDC — Child Development","url":"https://www.cdc.gov/child-development/"},
+      {"label":"MedlinePlus — Child Health","url":"https://medlineplus.gov/childrenshealth.html"},
+      {"label":"WHO — Child Health","url":"https://www.who.int/health-topics/child-health"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the child or adolescent topic in the title, including age-appropriate expectations, warning signs, development or risk factors, and when pediatric assessment may be appropriate."],
-      [
-        "Quick clinical context",
-        "Toddler Nutrition Roadmaps: Overcoming picky eating with nutrient-dense options is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what toddler nutrition roadmaps: overcoming picky eating with nutrient-dense options means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Toddler Nutrition Roadmaps: Overcoming picky eating with nutrient-dense options is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what toddler nutrition roadmaps: overcoming picky eating with nutrient-dense options means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -4471,39 +2707,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["CDC — Child Development",
-       "https://www.cdc.gov/child-development/"],
-      ["MedlinePlus — Child Health",
-       "https://medlineplus.gov/childrenshealth.html"],
-      ["WHO — Child Health",
-       "https://www.who.int/health-topics/child-health"]
+      {"label":"CDC — Child Development","url":"https://www.cdc.gov/child-development/"},
+      {"label":"MedlinePlus — Child Health","url":"https://medlineplus.gov/childrenshealth.html"},
+      {"label":"WHO — Child Health","url":"https://www.who.int/health-topics/child-health"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the child or adolescent topic in the title, including age-appropriate expectations, warning signs, development or risk factors, and when pediatric assessment may be appropriate."],
-      [
-        "Quick clinical context",
-        "Childhood Screen Time Limits: Protecting developing nervous and visual systems is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what childhood screen time limits: protecting developing nervous and visual systems means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Childhood Screen Time Limits: Protecting developing nervous and visual systems is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what childhood screen time limits: protecting developing nervous and visual systems means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -4524,39 +2739,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["CDC — Pregnancy",
-       "https://www.cdc.gov/maternal-infant-health/pregnancy/"],
-      ["WHO — Maternal Health",
-       "https://www.who.int/health-topics/maternal-health"],
-      ["NHS — Pregnancy",
-       "https://www.nhs.uk/pregnancy/"]
+      {"label":"CDC — Pregnancy","url":"https://www.cdc.gov/maternal-infant-health/pregnancy/"},
+      {"label":"WHO — Maternal Health","url":"https://www.who.int/health-topics/maternal-health"},
+      {"label":"NHS — Pregnancy","url":"https://www.nhs.uk/pregnancy/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the pregnancy or postpartum topic in the title, including expected versus concerning changes, relevant risk factors, routine care, and when prompt professional assessment is important."],
-      [
-        "Quick clinical context",
-        "Pregnancy Trimester Guidelines: Nutrient additions and safe activity profiles is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what pregnancy trimester guidelines: nutrient additions and safe activity profiles means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Pregnancy Trimester Guidelines: Nutrient additions and safe activity profiles is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what pregnancy trimester guidelines: nutrient additions and safe activity profiles means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -4577,39 +2771,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["CDC — Child Development",
-       "https://www.cdc.gov/child-development/"],
-      ["MedlinePlus — Child Health",
-       "https://medlineplus.gov/childrenshealth.html"],
-      ["WHO — Child Health",
-       "https://www.who.int/health-topics/child-health"]
+      {"label":"CDC — Child Development","url":"https://www.cdc.gov/child-development/"},
+      {"label":"MedlinePlus — Child Health","url":"https://medlineplus.gov/childrenshealth.html"},
+      {"label":"WHO — Child Health","url":"https://www.who.int/health-topics/child-health"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the child or adolescent topic in the title, including age-appropriate expectations, warning signs, development or risk factors, and when pediatric assessment may be appropriate."],
-      [
-        "Quick clinical context",
-        "Managing Childhood Asthma: Identifying home allergens and rescue triggers is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what managing childhood asthma: identifying home allergens and rescue triggers means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Managing Childhood Asthma: Identifying home allergens and rescue triggers is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what managing childhood asthma: identifying home allergens and rescue triggers means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -4630,39 +2803,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["NIMH — Mental Health Information",
-       "https://www.nimh.nih.gov/health"],
-      ["NHS — Mental Health",
-       "https://www.nhs.uk/mental-health/"],
-      ["WHO — Mental Health",
-       "https://www.who.int/health-topics/mental-health"]
+      {"label":"NIMH — Mental Health Information","url":"https://www.nimh.nih.gov/health"},
+      {"label":"NHS — Mental Health","url":"https://www.nhs.uk/mental-health/"},
+      {"label":"WHO — Mental Health","url":"https://www.who.int/health-topics/mental-health"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the mental or cognitive topic in the title, including recognized symptoms or risk factors, evidence-supported approaches, limits of self-assessment, and when professional support is appropriate."],
-      [
-        "Quick clinical context",
-        "Teen Mental Health: Navigating social anxiety and digital device addictions is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what teen mental health: navigating social anxiety and digital device addictions means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Teen Mental Health: Navigating social anxiety and digital device addictions is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what teen mental health: navigating social anxiety and digital device addictions means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -4683,39 +2835,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["CDC — Child Development",
-       "https://www.cdc.gov/child-development/"],
-      ["MedlinePlus — Child Health",
-       "https://medlineplus.gov/childrenshealth.html"],
-      ["WHO — Child Health",
-       "https://www.who.int/health-topics/child-health"]
+      {"label":"CDC — Child Development","url":"https://www.cdc.gov/child-development/"},
+      {"label":"MedlinePlus — Child Health","url":"https://medlineplus.gov/childrenshealth.html"},
+      {"label":"WHO — Child Health","url":"https://www.who.int/health-topics/child-health"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the child or adolescent topic in the title, including age-appropriate expectations, warning signs, development or risk factors, and when pediatric assessment may be appropriate."],
-      [
-        "Quick clinical context",
-        "Infant Colic Solutions: Safe soothing techniques for digestive pain is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what infant colic solutions: safe soothing techniques for digestive pain means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Infant Colic Solutions: Safe soothing techniques for digestive pain is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what infant colic solutions: safe soothing techniques for digestive pain means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -4736,39 +2867,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Health Topics",
-       "https://medlineplus.gov/healthtopics.html"],
-      ["NHS — Symptoms and conditions",
-       "https://www.nhs.uk/conditions/"],
-      ["CDC — Health Information",
-       "https://www.cdc.gov/health-information/"]
+      {"label":"MedlinePlus — Health Topics","url":"https://medlineplus.gov/healthtopics.html"},
+      {"label":"NHS — Symptoms and conditions","url":"https://www.nhs.uk/conditions/"},
+      {"label":"CDC — Health Information","url":"https://www.cdc.gov/health-information/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the specific symptom in the title: possible causes, accompanying features that change concern, what information a clinician may need, and why one symptom alone usually cannot establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "Strengthening Immunity in Kids: Science-backed baseline health practices is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what strengthening immunity in kids: science-backed baseline health practices means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Strengthening Immunity in Kids: Science-backed baseline health practices is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what strengthening immunity in kids: science-backed baseline health practices means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -4789,39 +2899,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["Office on Women's Health — Health Topics",
-       "https://womenshealth.gov/a-z-topics"],
-      ["CDC — Women's Health",
-       "https://www.cdc.gov/womens-health/"],
-      ["NHS — Women's Health",
-       "https://www.nhs.uk/womens-health/"]
+      {"label":"Office on Women's Health — Health Topics","url":"https://womenshealth.gov/a-z-topics"},
+      {"label":"CDC — Women's Health","url":"https://www.cdc.gov/womens-health/"},
+      {"label":"NHS — Women's Health","url":"https://www.nhs.uk/womens-health/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the women’s-health topic in the title, including sex-specific considerations, common symptoms or risk factors, appropriate evaluation, and how care can vary across life stages."],
-      [
-        "Quick clinical context",
-        "Perimenopause Decoded: Recognizing early hormonal shifts and skin changes is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what perimenopause decoded: recognizing early hormonal shifts and skin changes means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Perimenopause Decoded: Recognizing early hormonal shifts and skin changes is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what perimenopause decoded: recognizing early hormonal shifts and skin changes means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -4842,39 +2931,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["NHLBI — Heart and Vascular Diseases",
-       "https://www.nhlbi.nih.gov/health/heart-disease"],
-      ["CDC — Heart Disease",
-       "https://www.cdc.gov/heart-disease/"],
-      ["MedlinePlus — Heart Diseases",
-       "https://medlineplus.gov/heartdiseases.html"]
+      {"label":"NHLBI — Heart and Vascular Diseases","url":"https://www.nhlbi.nih.gov/health/heart-disease"},
+      {"label":"CDC — Heart Disease","url":"https://www.cdc.gov/heart-disease/"},
+      {"label":"MedlinePlus — Heart Diseases","url":"https://medlineplus.gov/heartdiseases.html"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the cardiovascular topic in the title, including symptoms or risk factors, appropriate evaluation, prevention, and urgent warning signs."],
-      [
-        "Quick clinical context",
-        "Hormone Replacement Therapy (HRT): Evaluating safety metrics and cardiac benefits is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what hormone replacement therapy (hrt): evaluating safety metrics and cardiac benefits means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Hormone Replacement Therapy (HRT): Evaluating safety metrics and cardiac benefits is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what hormone replacement therapy (hrt): evaluating safety metrics and cardiac benefits means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -4895,39 +2963,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["CDC — Prevention",
-       "https://www.cdc.gov/health-topics.html"],
-      ["WHO — Healthy Diet",
-       "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"],
-      ["NHS — Live Well",
-       "https://www.nhs.uk/live-well/"]
+      {"label":"CDC — Prevention","url":"https://www.cdc.gov/health-topics.html"},
+      {"label":"WHO — Healthy Diet","url":"https://www.who.int/news-room/fact-sheets/detail/healthy-diet"},
+      {"label":"NHS — Live Well","url":"https://www.nhs.uk/live-well/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the preventive or lifestyle topic in the title, distinguishing evidence-supported habits from exaggerated claims and showing how it fits into overall health."],
-      [
-        "Quick clinical context",
-        "Sarcopenia Prevention: Retaining muscle tissue past the age of 50 is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what sarcopenia prevention: retaining muscle tissue past the age of 50 means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Sarcopenia Prevention: Retaining muscle tissue past the age of 50 is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what sarcopenia prevention: retaining muscle tissue past the age of 50 means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -4948,39 +2995,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Medical Tests",
-       "https://medlineplus.gov/lab-tests/"],
-      ["FDA — Medical Devices",
-       "https://www.fda.gov/medical-devices"],
-      ["NIH — Health Information",
-       "https://www.nih.gov/health-information"]
+      {"label":"MedlinePlus — Medical Tests","url":"https://medlineplus.gov/lab-tests/"},
+      {"label":"FDA — Medical Devices","url":"https://www.fda.gov/medical-devices"},
+      {"label":"NIH — Health Information","url":"https://www.nih.gov/health-information"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the test or evaluation named in the title, explaining what it measures, why it may be ordered, how results are interpreted in context, and why an isolated result does not always establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "Osteoporosis Screenings: When should you get a DEXA bone density scan? is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what osteoporosis screenings: when should you get a dexa bone density scan? means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Osteoporosis Screenings: When should you get a DEXA bone density scan? is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what osteoporosis screenings: when should you get a dexa bone density scan? means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -5001,39 +3027,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["Office on Women's Health — Health Topics",
-       "https://womenshealth.gov/a-z-topics"],
-      ["CDC — Women's Health",
-       "https://www.cdc.gov/womens-health/"],
-      ["NHS — Women's Health",
-       "https://www.nhs.uk/womens-health/"]
+      {"label":"Office on Women's Health — Health Topics","url":"https://womenshealth.gov/a-z-topics"},
+      {"label":"CDC — Women's Health","url":"https://www.cdc.gov/womens-health/"},
+      {"label":"NHS — Women's Health","url":"https://www.nhs.uk/womens-health/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the women’s-health topic in the title, including sex-specific considerations, common symptoms or risk factors, appropriate evaluation, and how care can vary across life stages."],
-      [
-        "Quick clinical context",
-        "Pelvic Floor Health: Ending urinary incontinence through targeted physical therapy is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what pelvic floor health: ending urinary incontinence through targeted physical therapy means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Pelvic Floor Health: Ending urinary incontinence through targeted physical therapy is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what pelvic floor health: ending urinary incontinence through targeted physical therapy means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -5054,39 +3059,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["NIMH — Mental Health Information",
-       "https://www.nimh.nih.gov/health"],
-      ["NHS — Mental Health",
-       "https://www.nhs.uk/mental-health/"],
-      ["WHO — Mental Health",
-       "https://www.who.int/health-topics/mental-health"]
+      {"label":"NIMH — Mental Health Information","url":"https://www.nimh.nih.gov/health"},
+      {"label":"NHS — Mental Health","url":"https://www.nhs.uk/mental-health/"},
+      {"label":"WHO — Mental Health","url":"https://www.who.int/health-topics/mental-health"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the mental or cognitive topic in the title, including recognized symptoms or risk factors, evidence-supported approaches, limits of self-assessment, and when professional support is appropriate."],
-      [
-        "Quick clinical context",
-        "Cognitive Reserve Building: Lifestyle choices that actively lower dementia risks is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what cognitive reserve building: lifestyle choices that actively lower dementia risks means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Cognitive Reserve Building: Lifestyle choices that actively lower dementia risks is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what cognitive reserve building: lifestyle choices that actively lower dementia risks means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -5107,39 +3091,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["MedlinePlus — Medical Tests",
-       "https://medlineplus.gov/lab-tests/"],
-      ["FDA — Medical Devices",
-       "https://www.fda.gov/medical-devices"],
-      ["NIH — Health Information",
-       "https://www.nih.gov/health-information"]
+      {"label":"MedlinePlus — Medical Tests","url":"https://medlineplus.gov/lab-tests/"},
+      {"label":"FDA — Medical Devices","url":"https://www.fda.gov/medical-devices"},
+      {"label":"NIH — Health Information","url":"https://www.nih.gov/health-information"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the test or evaluation named in the title, explaining what it measures, why it may be ordered, how results are interpreted in context, and why an isolated result does not always establish a diagnosis."],
-      [
-        "Quick clinical context",
-        "Andropause Symptoms: Addressing age-related low testosterone levels safely is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what andropause symptoms: addressing age-related low testosterone levels safely means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Andropause Symptoms: Addressing age-related low testosterone levels safely is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what andropause symptoms: addressing age-related low testosterone levels safely means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -5160,39 +3123,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["National Institute on Aging — Healthy Aging",
-       "https://www.nia.nih.gov/health/healthy-aging"],
-      ["CDC — Healthy Aging",
-       "https://www.cdc.gov/healthy-aging/"],
-      ["WHO — Ageing and Health",
-       "https://www.who.int/news-room/fact-sheets/detail/ageing-and-health"]
+      {"label":"National Institute on Aging — Healthy Aging","url":"https://www.nia.nih.gov/health/healthy-aging"},
+      {"label":"CDC — Healthy Aging","url":"https://www.cdc.gov/healthy-aging/"},
+      {"label":"WHO — Ageing and Health","url":"https://www.who.int/news-room/fact-sheets/detail/ageing-and-health"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the aging-related topic in the title, including age-related changes, modifiable risk factors, functional health, and the difference between general information and individualized care."],
-      [
-        "Quick clinical context",
-        "Joint Longevity Past 60: Low-impact exercises for active mobility is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what joint longevity past 60: low-impact exercises for active mobility means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Joint Longevity Past 60: Low-impact exercises for active mobility is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what joint longevity past 60: low-impact exercises for active mobility means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -5213,39 +3155,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["Office on Women's Health — Health Topics",
-       "https://womenshealth.gov/a-z-topics"],
-      ["CDC — Women's Health",
-       "https://www.cdc.gov/womens-health/"],
-      ["NHS — Women's Health",
-       "https://www.nhs.uk/womens-health/"]
+      {"label":"Office on Women's Health — Health Topics","url":"https://womenshealth.gov/a-z-topics"},
+      {"label":"CDC — Women's Health","url":"https://www.cdc.gov/womens-health/"},
+      {"label":"NHS — Women's Health","url":"https://www.nhs.uk/womens-health/"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the women’s-health topic in the title, including sex-specific considerations, common symptoms or risk factors, appropriate evaluation, and how care can vary across life stages."],
-      [
-        "Quick clinical context",
-        "Heart Health for Women: Distinct cardiac symptoms that are often missed is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what heart health for women: distinct cardiac symptoms that are often missed means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Heart Health for Women: Distinct cardiac symptoms that are often missed is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what heart health for women: distinct cardiac symptoms that are often missed means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   },
   {
@@ -5266,39 +3187,18 @@ export const healthEducationArticles = [
       "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
-      ["NIMH — Mental Health Information",
-       "https://www.nimh.nih.gov/health"],
-      ["NHS — Mental Health",
-       "https://www.nhs.uk/mental-health/"],
-      ["WHO — Mental Health",
-       "https://www.who.int/health-topics/mental-health"]
+      {"label":"NIMH — Mental Health Information","url":"https://www.nimh.nih.gov/health"},
+      {"label":"NHS — Mental Health","url":"https://www.nhs.uk/mental-health/"},
+      {"label":"WHO — Mental Health","url":"https://www.who.int/health-topics/mental-health"}
     ],
     "sections": [
       ["Topic-specific focus", "This guide focuses on the mental or cognitive topic in the title, including recognized symptoms or risk factors, evidence-supported approaches, limits of self-assessment, and when professional support is appropriate."],
-      [
-        "Quick clinical context",
-        "Longevity Strategies for Adults: Balancing sleep, diet, and movement benchmarks is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
-      ],
-      [
-        "What the evidence means",
-        "The useful question is not only what longevity strategies for adults: balancing sleep, diet, and movement benchmarks means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
-      ],
-      [
-        "What to look for",
-        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
-      ],
-      [
-        "Testing and professional care",
-        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
-      ],
-      [
-        "Common misconceptions",
-        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
-      ],
-      [
-        "When to seek help",
-        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
-      ]
+      {"label":"Quick clinical context","url":"Longevity Strategies for Adults: Balancing sleep, diet, and movement benchmarks is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."},
+      {"label":"What the evidence means","url":"The useful question is not only what longevity strategies for adults: balancing sleep, diet, and movement benchmarks means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."},
+      {"label":"What to look for","url":"Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."},
+      {"label":"Testing and professional care","url":"When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."},
+      {"label":"Common misconceptions","url":"Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."},
+      {"label":"When to seek help","url":"Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."}
     ]
   }
 ];
