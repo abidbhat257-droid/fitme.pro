@@ -5800,3 +5800,202 @@ export const bodyCompositionArticles = [
     ]
   }
 ];
+
+
+/**
+ * Topic-specific section layer.
+ * Keeps the 100-article catalog compact while giving each search intent
+ * a dedicated explanation, practical framework, limitations and FAQ angle.
+ */
+function getBodyCompositionSpecificSections(article) {
+  const t = article.title.toLowerCase();
+
+  if (t.includes("vs. bmi") || t.includes("bmi")) {
+    return [
+      ["Quick answer", "BMI estimates weight relative to height; body-composition measures try to describe how that weight is distributed between fat and fat-free tissues. Neither number should be interpreted in isolation."],
+      ["BMI versus body composition", "Explain what BMI can and cannot capture, then contrast it with body-fat percentage, lean mass, waist measurements and other composition measures. Include examples showing why two people with the same BMI can have different body-composition profiles."],
+      ["How to interpret the numbers", "Use age, sex, training status, waist size, health history and measurement method as context. A scale weight or BMI change does not automatically tell you how much fat or lean tissue changed."],
+      ["Practical tracking", "Choose one repeatable method, measure under similar conditions and look at multi-week trends rather than reacting to one reading."],
+      ["Common mistakes", "Do not treat BMI as a direct body-fat test, assume a smart scale is a clinical measurement, or describe normal day-to-day water changes as fat gain or loss."],
+      ["FAQ", "Cover whether BMI is useful, when waist circumference adds information, why athletes can have higher BMI, and which measurements can complement BMI."]
+    ];
+  }
+
+  if (t.includes("lean body mass") || t.includes("fat-free mass") || t.includes("ffm")) {
+    return [
+      ["Quick answer", "Lean body mass and fat-free mass are related but not always identical terms. Fat-free mass includes all body tissue other than fat, while practical calculators often use estimates derived from body weight and body-fat percentage."],
+      ["What lean and fat-free mass mean", "Define the terms clearly and explain that muscle is only one component of fat-free mass; water, organs, connective tissue and bone mineral also contribute."],
+      ["How to calculate it", "Show the common estimate: fat-free mass = body weight × (1 − body-fat fraction). Give a worked example and explain how an error in body-fat percentage carries into the result."],
+      ["Why the number changes", "Explain hydration, glycogen, food volume and measurement error before interpreting a short-term change as tissue gain or loss."],
+      ["Practical use", "Use the estimate to monitor longer-term trends, set realistic resistance-training and nutrition goals, and compare results collected with the same method."],
+      ["FAQ", "Answer whether lean mass equals muscle, whether water can change the reading, and when a clinical body-composition assessment may be useful."]
+    ];
+  }
+
+  if (t.includes("body fat percentage") || t.includes("body fat range") || t.includes("low body fat") || t.includes("dangerous level")) {
+    return [
+      ["Quick answer", "A healthy body-fat level is not one universal percentage. Interpretation depends on sex, age, measurement method, symptoms, athletic context and overall health."],
+      ["What body-fat percentage tells you", "Explain the difference between fat mass and fat-free mass and why a percentage is a proportion rather than a complete health assessment."],
+      ["Ranges, context and uncertainty", "Discuss why reference ranges differ by population and method. Emphasize that equations, bioimpedance devices and visual estimates can have meaningful error."],
+      ["When very low body fat becomes a concern", "Focus on signs of inadequate energy availability, impaired recovery, menstrual or reproductive changes, persistent fatigue, declining performance and other health signals rather than chasing a single threshold."],
+      ["How to track safely", "Use consistent measurements and combine them with performance, waist trend, recovery and general wellbeing. Avoid aggressive restriction based on a calculator estimate."],
+      ["FAQ", "Cover differences between men and women, whether visible abs imply health, why readings fluctuate, and when professional assessment is appropriate."]
+    ];
+  }
+
+  if (t.includes("dex") || t.includes("dxa") || t.includes("bod pod") || t.includes("air displacement") || t.includes("hydrostatic") || t.includes("underwater weighing")) {
+    return [
+      ["Quick answer", "Laboratory body-composition methods estimate fat mass and fat-free mass using different physical principles. Their results should be compared cautiously because methods are not interchangeable."],
+      ["How the method works", "Explain the measurement principle, what is actually measured, and how the device or equation converts that measurement into body-composition estimates."],
+      ["Accuracy and sources of error", "Discuss assumptions, hydration, equipment calibration, positioning, operator technique and population-specific equations where relevant."],
+      ["When the method is useful", "Explain situations where a laboratory assessment can add useful information, while noting that repeatability and consistent conditions often matter more for tracking change."],
+      ["How to prepare and compare results", "Keep timing, food, hydration and exercise conditions consistent when the facility's protocol allows. Do not compare numbers from different methods as if they were identical."],
+      ["FAQ", "Cover cost and availability only when known locally, whether repeated scans are necessary, and what a report can and cannot tell you."]
+    ];
+  }
+
+  if (t.includes("bioimpedance") || t.includes("bia") || t.includes("smart scale") || t.includes("smart scales")) {
+    return [
+      ["Quick answer", "Bioelectrical impedance estimates body composition from electrical properties of the body plus prediction equations. It can be useful for trends when measured consistently, but individual readings can be sensitive to conditions."],
+      ["How BIA works", "Explain impedance, prediction equations and why the device does not directly 'see' body fat."],
+      ["Why readings fluctuate", "Cover hydration, recent food and drink, exercise, skin temperature, time of day and device configuration as potential influences."],
+      ["How to improve repeatability", "Measure under similar conditions, use the same device and follow its instructions. Focus on trends rather than isolated percentages."],
+      ["BIA versus other methods", "Explain why a BIA result should not be treated as interchangeable with DXA, skinfolds or another method."],
+      ["FAQ", "Address whether smart scales are accurate, whether morning readings are preferable, and what to do when readings suddenly change."]
+    ];
+  }
+
+  if (t.includes("skinfold") || t.includes("caliper")) {
+    return [
+      ["Quick answer", "Skinfold assessment estimates subcutaneous fat thickness at standardized sites and uses equations to estimate body-fat percentage."],
+      ["How skinfold assessment works", "Explain site selection, pinching technique, caliper pressure and why the equation used matters."],
+      ["Accuracy and repeatability", "Discuss operator skill, site-location errors, tissue compression and equation selection. A trained assessor can improve consistency."],
+      ["How to track progress", "Use the same assessor, sites, equipment and protocol when possible, and compare trends rather than demanding exact precision from one reading."],
+      ["Common mistakes", "Do not switch equations between measurements, measure different sites each time, or treat estimated body-fat percentage as laboratory truth."],
+      ["FAQ", "Cover self-measurement, how many sites may be used, and why two assessors can produce different results."]
+    ];
+  }
+
+  if (t.includes("waist") || t.includes("hip") || t.includes("neck") || t.includes("tape measure") || t.includes("circumference")) {
+    return [
+      ["Quick answer", "Body circumferences are inexpensive, repeatable tracking measures that can add context to body weight and body-fat estimates."],
+      ["Where and how to measure", "Describe consistent anatomical landmarks, tape placement, posture, breathing and avoiding compression of the soft tissue."],
+      ["Why technique matters", "A small change in tape location or tension can create a misleading trend. Standardization is more useful than chasing a perfect single reading."],
+      ["Interpreting changes", "Explain how waist, hip and other circumferences can change with fat loss, muscle gain, bloating, posture and measurement conditions."],
+      ["Practical tracking protocol", "Measure at the same time of day and under similar conditions, record the method, and review several readings over time."],
+      ["FAQ", "Address whether to measure after meals, how often to measure, and why circumference should complement rather than replace clinical assessment."]
+    ];
+  }
+
+  if (t.includes("recomp") || t.includes("recomposition") || t.includes("bulk") || t.includes("cut") || t.includes("muscle gain") || t.includes("fat loss")) {
+    return [
+      ["Quick answer", "Body recomposition means changing the relative amounts of fat and lean tissue rather than focusing only on scale weight. Progress is usually best assessed with several measures."],
+      ["What recomposition looks like", "Explain how fat loss and muscle gain can occur over overlapping periods, why scale weight may move slowly, and why training status matters."],
+      ["Nutrition strategy", "Discuss energy balance, adequate protein, food quality and sustainable intake without prescribing an extreme deficit or surplus."],
+      ["Training strategy", "Explain progressive resistance training, recovery and the role of activity. Cardio can support health and energy expenditure without replacing resistance training."],
+      ["How to measure progress", "Combine body weight trends, waist measurements, performance and a consistent body-composition method. Photos can be useful when standardized."],
+      ["FAQ", "Compare recomp with separate bulk-and-cut phases descriptively, explain realistic expectations, and identify situations where professional guidance is appropriate."]
+    ];
+  }
+
+  if (t.includes("protein") || t.includes("calorie") || t.includes("deficit") || t.includes("diet") || t.includes("nutrition") || t.includes("macronutrient") || t.includes("carb") || t.includes("fat intake")) {
+    return [
+      ["Quick answer", "Nutrition influences body composition mainly through energy balance, protein and overall diet quality. No single food or macro ratio determines the outcome."],
+      ["Energy balance and body composition", "Explain calorie intake and expenditure, why maintenance needs vary, and why short-term scale changes include water and glycogen."],
+      ["Protein and lean tissue", "Explain the role of adequate dietary protein alongside resistance training, while avoiding claims that a specific intake guarantees muscle gain."],
+      ["Carbohydrate and fat", "Describe how both can fit a body-composition plan and why individual preference, training demands and dietary quality matter."],
+      ["Building a sustainable plan", "Focus on gradual changes, sufficient micronutrients, fiber, hydration and adherence rather than aggressive restriction."],
+      ["FAQ", "Address protein timing, calorie deficits, cheat meals, supplements and why a day of eating cannot predict long-term body-composition change."]
+    ];
+  }
+
+  if (t.includes("creatine") || t.includes("supplement") || t.includes("ashwagandha") || t.includes("caffeine")) {
+    return [
+      ["Quick answer", "Supplements should be judged by the quality of human evidence, expected effect size, safety, dose, product quality and whether the underlying diet and training are already appropriate."],
+      ["What the evidence actually measures", "Separate changes in body weight, lean mass, strength, fat mass and subjective outcomes. A supplement can affect one outcome without producing a meaningful change in overall body composition."],
+      ["What is known and uncertain", "Distinguish established findings from small trials, mixed results and marketing claims. Avoid treating association or mechanistic theory as proof of a body-composition effect."],
+      ["Safety and product quality", "Discuss contraindications, medication interactions and third-party quality considerations where relevant. People with medical conditions should check with a qualified clinician before use."],
+      ["Practical decision framework", "Ask whether the supplement has human evidence, a plausible benefit for the specific goal, a reasonable safety profile and a meaningful effect compared with sleep, diet and training."],
+      ["FAQ", "Cover whether the supplement changes fat directly, whether effects persist after stopping, and what outcomes should actually be tracked."]
+    ];
+  }
+
+  if (t.includes("hormone") || t.includes("thyroid") || t.includes("insulin") || t.includes("menopause") || t.includes("testosterone") || t.includes("cortisol") || t.includes("pcos")) {
+    return [
+      ["Quick answer", "Hormones influence appetite, energy expenditure, nutrient handling and tissue physiology, but body composition cannot be explained by one hormone or one laboratory value."],
+      ["The physiology", "Explain the relevant hormone pathway in plain language and distinguish normal physiological variation from a diagnosed endocrine disorder."],
+      ["What affects the measurement", "Discuss sleep, energy intake, training, medications, menstrual status or life stage when relevant, and why laboratory results require clinical context."],
+      ["Body-composition implications", "Explain which changes may be plausible while avoiding claims that a single hormone reading predicts fat loss or muscle gain."],
+      ["When to seek evaluation", "Persistent unexplained weight change, major fatigue, menstrual or reproductive changes, or other concerning symptoms warrant discussion with a qualified clinician rather than self-treatment."],
+      ["FAQ", "Address common myths about hormones and fat loss, and clarify what body-composition calculators cannot diagnose."]
+    ];
+  }
+
+  if (t.includes("women") || t.includes("women's") || t.includes("female") || t.includes("men") || t.includes("male") || t.includes("teen") || t.includes("older adult") || t.includes("senior") || t.includes("age") || t.includes("pregnan") || t.includes("postpartum")) {
+    return [
+      ["Quick answer", "Body composition changes across sex, age and life stage, so interpretation should use population-appropriate reference information rather than a single universal target."],
+      ["Why the context changes", "Explain differences in fat distribution, muscle mass, bone mass, hormonal environment and measurement assumptions where relevant."],
+      ["Special considerations", "Discuss the specific life stage named in the article and identify where standard adult equations may be less appropriate."],
+      ["Safe tracking", "Prioritize health, function, recovery and clinically meaningful outcomes over appearance-driven targets, especially during growth, pregnancy, postpartum recovery or older age."],
+      ["What calculators can and cannot do", "Use estimates as educational tools and avoid treating them as diagnostic thresholds for children, pregnancy or medical conditions."],
+      ["FAQ", "Answer the most common population-specific questions while identifying when a dietitian, physician or other qualified professional should guide interpretation."]
+    ];
+  }
+
+  if (t.includes("athlete") || t.includes("runner") || t.includes("lifting") || t.includes("strength") || t.includes("cardio") || t.includes("workout") || t.includes("training") || t.includes("exercise") || t.includes("hypertrophy")) {
+    return [
+      ["Quick answer", "Training changes body composition through a combination of resistance exercise, physical activity, recovery and nutrition. The most useful plan depends on the person's goal and training history."],
+      ["How training affects tissue", "Explain the roles of resistance training, aerobic activity, progressive overload and recovery without promising a specific rate of fat loss or muscle gain."],
+      ["Cardio and resistance training", "Compare their different effects and practical trade-offs without declaring a universal winner. A combined approach can address both health and composition goals."],
+      ["Tracking performance with composition", "Use strength, endurance, waist, body weight trends and a consistent composition method together. Performance can improve even when scale weight changes little."],
+      ["Recovery and energy availability", "Cover sleep, rest days and adequate energy intake, particularly for high-volume training."],
+      ["FAQ", "Address training frequency, soreness, plateaus, cardio interference and how to adjust tracking when training volume changes."]
+    ];
+  }
+
+  if (t.includes("visceral") || t.includes("metabolic") || t.includes("insulin") || t.includes("fat distribution") || t.includes("apple") || t.includes("android") || t.includes("android")) {
+    return [
+      ["Quick answer", "Where fat is stored can matter for health, but visceral fat is difficult to measure precisely outside validated clinical or research methods. Waist trends can provide useful context."],
+      ["Visceral versus subcutaneous fat", "Explain the anatomical difference and why visceral adipose tissue is discussed in relation to metabolic health."],
+      ["How it is assessed", "Compare direct imaging with practical proxies such as waist circumference, explaining the uncertainty of indirect estimates."],
+      ["What can influence visceral fat", "Discuss sustained energy balance, physical activity, diet quality, sleep and other health factors without implying that one intervention selectively targets visceral fat."],
+      ["Tracking change", "Use consistent waist measurements and broader health markers rather than expecting a consumer device to precisely quantify visceral fat."],
+      ["FAQ", "Address how quickly changes may occur, whether spot reduction works, and when medical evaluation is warranted."]
+    ];
+  }
+
+  if (t.includes("goal") || t.includes("track") || t.includes("progress") || t.includes("plateau") || t.includes("stalled") || t.includes("scale") || t.includes("calibrate")) {
+    return [
+      ["Quick answer", "Body-composition progress is noisy. A useful tracking system combines several measures and uses consistent conditions so that normal fluctuations are not mistaken for failure or success."],
+      ["Choose meaningful metrics", "Match the metric to the goal: waist and body weight for general trend tracking, strength or performance for training outcomes, and a validated composition method when more detail is needed."],
+      ["Standardize the measurement", "Keep device, time of day, hydration, recent exercise and measurement technique as consistent as practical."],
+      ["Handle plateaus and unexpected changes", "Review the trend over several weeks before changing the plan. Check adherence, training changes, sleep, sodium, carbohydrate intake and other causes of water-weight variation."],
+      ["When to recalibrate goals", "Adjust targets when the goal, training phase, body weight or circumstances materially change rather than reacting to every individual reading."],
+      ["FAQ", "Cover how often to measure, how long to wait before judging a trend, and what signals justify a professional assessment."]
+    ];
+  }
+
+  if (t.includes("brown adipose") || t.includes("bat") || t.includes("metabolism") || t.includes("caloric burn")) {
+    return [
+      ["Quick answer", "Brown adipose tissue can produce heat through thermogenesis, but its contribution to total daily energy expenditure varies and should not be treated as a shortcut for substantial fat loss."],
+      ["What brown fat does", "Explain thermogenesis and the biological role of brown adipose tissue, distinguishing established physiology from claims about deliberately increasing calorie burn."],
+      ["What the evidence can and cannot show", "Separate laboratory findings from real-world effects on body weight and body composition. Avoid turning mechanistic findings into guaranteed outcomes."],
+      ["Practical implications", "Prioritize established drivers of health and energy balance such as physical activity, dietary intake, sleep and overall lifestyle rather than relying on BAT-focused hacks."],
+      ["Common misconceptions", "Address cold exposure, supplements and claims of dramatically increased metabolism with careful attention to evidence and safety."],
+      ["FAQ", "Explain whether adults have brown fat, whether cold exposure is a weight-loss strategy, and why BAT should not be treated as a magic calorie-burning switch."]
+    ];
+  }
+
+  return [
+    ["Quick answer", `This guide explains ${article.title} by defining the topic, showing how it relates to body composition, and separating useful evidence from estimates or marketing claims.`],
+    ["What the concept means", `Start with the precise definition of ${article.title}, then explain the relevant physiology, measurement method or practical strategy in plain language.`],
+    ["What affects the result", "Discuss the major biological, behavioral and measurement factors that can change the outcome, including hydration, recent food or exercise, training status and individual variation when relevant."],
+    ["How to use the information", "Give a practical framework for tracking or applying the concept. Use repeatable measurements and judge progress from trends rather than a single reading."],
+    ["Limitations and common mistakes", "Identify the biggest sources of uncertainty and explain why a calculator or consumer measurement should not be treated as a diagnosis."],
+    ["FAQ", `Answer the questions readers are most likely to have after searching for ${article.title}, including what the number means, how reliable it is, and when professional guidance is appropriate.`]
+  ];
+}
+
+for (const article of bodyCompositionArticles) {
+  article.sections = getBodyCompositionSpecificSections(article);
+}
