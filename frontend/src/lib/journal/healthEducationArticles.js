@@ -1,5666 +1,5803 @@
+// Health Education: 100 curated clinical and health-literacy topics.
+// Topic list supplied by the site owner; the ten most category-overlapping concepts were consolidated into the existing Nutrition/Fitness/Wellness coverage.
 export const healthEducationArticles = [
-{
-  "slug": "health-screening-vs-diagnosis-understanding-the-difference",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Health Screening vs. Diagnosis: Understanding the Difference",
-  "description": "Health Screening vs. Diagnosis: Understanding the Difference: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "health, screening, vs, diagnosis, understanding, the, difference",
-  "quickSummary": [
-    "Learn the key concepts behind Health Screening vs. Diagnosis: Understanding the Difference.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Health Screening vs. Diagnosis: Understanding the Difference in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Health Screening vs. Diagnosis: Understanding the Difference, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "how-to-read-common-health-measurements-without-misinterpreting-them",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "How to Read Common Health Measurements Without Misinterpreting Them",
-  "description": "How to Read Common Health Measurements Without Misinterpreting Them: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "how, to, read, common, health, measurements, without, misinterpreting, them",
-  "quickSummary": [
-    "Learn the key concepts behind How to Read Common Health Measurements Without Misinterpreting Them.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains How to Read Common Health Measurements Without Misinterpreting Them in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about How to Read Common Health Measurements Without Misinterpreting Them, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "blood-pressure-explained-what-the-numbers-mean",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Blood Pressure Explained: What the Numbers Mean",
-  "description": "Blood Pressure Explained: What the Numbers Mean: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "blood, pressure, explained, what, the, numbers, mean",
-  "quickSummary": [
-    "Learn the key concepts behind Blood Pressure Explained: What the Numbers Mean.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Blood Pressure Explained: What the Numbers Mean in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Blood Pressure Explained: What the Numbers Mean, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "resting-heart-rate-what-it-can-and-cannot-tell-you",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Resting Heart Rate: What It Can and Cannot Tell You",
-  "description": "Resting Heart Rate: What It Can and Cannot Tell You: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "resting, heart, rate, what, it, can, and, cannot, tell, you",
-  "quickSummary": [
-    "Learn the key concepts behind Resting Heart Rate: What It Can and Cannot Tell You.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Resting Heart Rate: What It Can and Cannot Tell You in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Resting Heart Rate: What It Can and Cannot Tell You, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "cholesterol-explained-ldl-hdl-and-triglycerides",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Cholesterol Explained: LDL, HDL and Triglycerides",
-  "description": "Cholesterol Explained: LDL, HDL and Triglycerides: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "cholesterol, explained, ldl, hdl, and, triglycerides",
-  "quickSummary": [
-    "Learn the key concepts behind Cholesterol Explained: LDL, HDL and Triglycerides.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Cholesterol Explained: LDL, HDL and Triglycerides in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Cholesterol Explained: LDL, HDL and Triglycerides, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "blood-glucose-and-hba1c-understanding-the-basics",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Blood Glucose and HbA1c: Understanding the Basics",
-  "description": "Blood Glucose and HbA1c: Understanding the Basics: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "blood, glucose, and, hba1c, understanding, the, basics",
-  "quickSummary": [
-    "Learn the key concepts behind Blood Glucose and HbA1c: Understanding the Basics.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Blood Glucose and HbA1c: Understanding the Basics in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Blood Glucose and HbA1c: Understanding the Basics, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "understanding-insulin-resistance-and-metabolic-health",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Understanding Insulin Resistance and Metabolic Health",
-  "description": "Understanding Insulin Resistance and Metabolic Health: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "understanding, insulin, resistance, and, metabolic, health",
-  "quickSummary": [
-    "Learn the key concepts behind Understanding Insulin Resistance and Metabolic Health.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Understanding Insulin Resistance and Metabolic Health in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Understanding Insulin Resistance and Metabolic Health, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "kidney-function-tests-creatinine-and-egfr-explained",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Kidney Function Tests: Creatinine and eGFR Explained",
-  "description": "Kidney Function Tests: Creatinine and eGFR Explained: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "kidney, function, tests, creatinine, and, egfr, explained",
-  "quickSummary": [
-    "Learn the key concepts behind Kidney Function Tests: Creatinine and eGFR Explained.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Kidney Function Tests: Creatinine and eGFR Explained in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Kidney Function Tests: Creatinine and eGFR Explained, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "liver-function-tests-alt-ast-and-other-common-markers",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Liver Function Tests: ALT, AST and Other Common Markers",
-  "description": "Liver Function Tests: ALT, AST and Other Common Markers: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "liver, function, tests, alt, ast, and, other, common, markers",
-  "quickSummary": [
-    "Learn the key concepts behind Liver Function Tests: ALT, AST and Other Common Markers.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Liver Function Tests: ALT, AST and Other Common Markers in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Liver Function Tests: ALT, AST and Other Common Markers, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "complete-blood-count-cbc-what-the-main-values-mean",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Complete Blood Count (CBC): What the Main Values Mean",
-  "description": "Complete Blood Count (CBC): What the Main Values Mean: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "complete, blood, count, cbc, what, the, main, values, mean",
-  "quickSummary": [
-    "Learn the key concepts behind Complete Blood Count (CBC): What the Main Values Mean.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Complete Blood Count (CBC): What the Main Values Mean in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Complete Blood Count (CBC): What the Main Values Mean, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "hemoglobin-and-hematocrit-understanding-the-basics",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Hemoglobin and Hematocrit: Understanding the Basics",
-  "description": "Hemoglobin and Hematocrit: Understanding the Basics: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "hemoglobin, and, hematocrit, understanding, the, basics",
-  "quickSummary": [
-    "Learn the key concepts behind Hemoglobin and Hematocrit: Understanding the Basics.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Hemoglobin and Hematocrit: Understanding the Basics in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Hemoglobin and Hematocrit: Understanding the Basics, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "vitamin-d-tests-when-they-are-used-and-what-results-mean",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Vitamin D Tests: When They Are Used and What Results Mean",
-  "description": "Vitamin D Tests: When They Are Used and What Results Mean: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "vitamin, d, tests, when, they, are, used, and, what, results, mean",
-  "quickSummary": [
-    "Learn the key concepts behind Vitamin D Tests: When They Are Used and What Results Mean.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Vitamin D Tests: When They Are Used and What Results Mean in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Vitamin D Tests: When They Are Used and What Results Mean, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "iron-tests-ferritin-hemoglobin-and-transferrin-saturation",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Iron Tests: Ferritin, Hemoglobin and Transferrin Saturation",
-  "description": "Iron Tests: Ferritin, Hemoglobin and Transferrin Saturation: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "iron, tests, ferritin, hemoglobin, and, transferrin, saturation",
-  "quickSummary": [
-    "Learn the key concepts behind Iron Tests: Ferritin, Hemoglobin and Transferrin Saturation.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Iron Tests: Ferritin, Hemoglobin and Transferrin Saturation in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Iron Tests: Ferritin, Hemoglobin and Transferrin Saturation, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "vitamin-b12-and-folate-why-they-matter",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Vitamin B12 and Folate: Why They Matter",
-  "description": "Vitamin B12 and Folate: Why They Matter: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "vitamin, b12, and, folate, why, they, matter",
-  "quickSummary": [
-    "Learn the key concepts behind Vitamin B12 and Folate: Why They Matter.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Vitamin B12 and Folate: Why They Matter in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Vitamin B12 and Folate: Why They Matter, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "thyroid-tests-tsh-t4-and-t3-explained",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Thyroid Tests: TSH, T4 and T3 Explained",
-  "description": "Thyroid Tests: TSH, T4 and T3 Explained: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "thyroid, tests, tsh, t4, and, t3, explained",
-  "quickSummary": [
-    "Learn the key concepts behind Thyroid Tests: TSH, T4 and T3 Explained.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Thyroid Tests: TSH, T4 and T3 Explained in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Thyroid Tests: TSH, T4 and T3 Explained, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "electrolytes-explained-sodium-potassium-and-more",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Electrolytes Explained: Sodium, Potassium and More",
-  "description": "Electrolytes Explained: Sodium, Potassium and More: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "electrolytes, explained, sodium, potassium, and, more",
-  "quickSummary": [
-    "Learn the key concepts behind Electrolytes Explained: Sodium, Potassium and More.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Electrolytes Explained: Sodium, Potassium and More in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Electrolytes Explained: Sodium, Potassium and More, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "understanding-c-reactive-protein-crp",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Understanding C-Reactive Protein (CRP)",
-  "description": "Understanding C-Reactive Protein (CRP): a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "understanding, c-reactive, protein, crp",
-  "quickSummary": [
-    "Learn the key concepts behind Understanding C-Reactive Protein (CRP).",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Understanding C-Reactive Protein (CRP) in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Understanding C-Reactive Protein (CRP), then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "urinalysis-explained-what-common-results-can-mean",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Urinalysis Explained: What Common Results Can Mean",
-  "description": "Urinalysis Explained: What Common Results Can Mean: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "urinalysis, explained, what, common, results, can, mean",
-  "quickSummary": [
-    "Learn the key concepts behind Urinalysis Explained: What Common Results Can Mean.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Urinalysis Explained: What Common Results Can Mean in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Urinalysis Explained: What Common Results Can Mean, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "how-to-prepare-for-common-blood-tests",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "How to Prepare for Common Blood Tests",
-  "description": "How to Prepare for Common Blood Tests: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "how, to, prepare, for, common, blood, tests",
-  "quickSummary": [
-    "Learn the key concepts behind How to Prepare for Common Blood Tests.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains How to Prepare for Common Blood Tests in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about How to Prepare for Common Blood Tests, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "why-reference-ranges-differ-between-laboratories",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Why Reference Ranges Differ Between Laboratories",
-  "description": "Why Reference Ranges Differ Between Laboratories: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "why, reference, ranges, differ, between, laboratories",
-  "quickSummary": [
-    "Learn the key concepts behind Why Reference Ranges Differ Between Laboratories.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Why Reference Ranges Differ Between Laboratories in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Why Reference Ranges Differ Between Laboratories, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "fasting-blood-tests-when-fasting-is-required",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Fasting Blood Tests: When Fasting Is Required",
-  "description": "Fasting Blood Tests: When Fasting Is Required: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "fasting, blood, tests, when, fasting, is, required",
-  "quickSummary": [
-    "Learn the key concepts behind Fasting Blood Tests: When Fasting Is Required.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Fasting Blood Tests: When Fasting Is Required in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Fasting Blood Tests: When Fasting Is Required, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "how-to-read-a-lab-report-without-self-diagnosing",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "How to Read a Lab Report Without Self-Diagnosing",
-  "description": "How to Read a Lab Report Without Self-Diagnosing: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "how, to, read, a, lab, report, without, self-diagnosing",
-  "quickSummary": [
-    "Learn the key concepts behind How to Read a Lab Report Without Self-Diagnosing.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains How to Read a Lab Report Without Self-Diagnosing in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about How to Read a Lab Report Without Self-Diagnosing, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "common-reasons-lab-results-can-be-abnormal",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Common Reasons Lab Results Can Be Abnormal",
-  "description": "Common Reasons Lab Results Can Be Abnormal: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "common, reasons, lab, results, can, be, abnormal",
-  "quickSummary": [
-    "Learn the key concepts behind Common Reasons Lab Results Can Be Abnormal.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Common Reasons Lab Results Can Be Abnormal in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Common Reasons Lab Results Can Be Abnormal, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "when-a-lab-result-needs-follow-up",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "When a Lab Result Needs Follow-Up",
-  "description": "When a Lab Result Needs Follow-Up: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "when, a, lab, result, needs, follow-up",
-  "quickSummary": [
-    "Learn the key concepts behind When a Lab Result Needs Follow-Up.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains When a Lab Result Needs Follow-Up in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about When a Lab Result Needs Follow-Up, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "why-one-abnormal-test-does-not-always-mean-disease",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Why One Abnormal Test Does Not Always Mean Disease",
-  "description": "Why One Abnormal Test Does Not Always Mean Disease: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "why, one, abnormal, test, does, not, always, mean, disease",
-  "quickSummary": [
-    "Learn the key concepts behind Why One Abnormal Test Does Not Always Mean Disease.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Why One Abnormal Test Does Not Always Mean Disease in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Why One Abnormal Test Does Not Always Mean Disease, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "understanding-preventive-health-checkups",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Understanding Preventive Health Checkups",
-  "description": "Understanding Preventive Health Checkups: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "understanding, preventive, health, checkups",
-  "quickSummary": [
-    "Learn the key concepts behind Understanding Preventive Health Checkups.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Understanding Preventive Health Checkups in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Understanding Preventive Health Checkups, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "how-often-should-adults-have-routine-health-checks",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "How Often Should Adults Have Routine Health Checks?",
-  "description": "How Often Should Adults Have Routine Health Checks: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "how, often, should, adults, have, routine, health, checks",
-  "quickSummary": [
-    "Learn the key concepts behind How Often Should Adults Have Routine Health Checks.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains How Often Should Adults Have Routine Health Checks in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about How Often Should Adults Have Routine Health Checks, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "vaccines-for-adults-understanding-routine-prevention",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Vaccines for Adults: Understanding Routine Prevention",
-  "description": "Vaccines for Adults: Understanding Routine Prevention: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "vaccines, for, adults, understanding, routine, prevention",
-  "quickSummary": [
-    "Learn the key concepts behind Vaccines for Adults: Understanding Routine Prevention.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Vaccines for Adults: Understanding Routine Prevention in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Vaccines for Adults: Understanding Routine Prevention, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "sleep-and-health-why-sleep-duration-and-quality-matter",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Sleep and Health: Why Sleep Duration and Quality Matter",
-  "description": "Sleep and Health: Why Sleep Duration and Quality Matter: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "sleep, and, health, why, sleep, duration, and, quality, matter",
-  "quickSummary": [
-    "Learn the key concepts behind Sleep and Health: Why Sleep Duration and Quality Matter.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Sleep and Health: Why Sleep Duration and Quality Matter in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Sleep and Health: Why Sleep Duration and Quality Matter, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "stress-and-physical-health-understanding-the-connection",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Stress and Physical Health: Understanding the Connection",
-  "description": "Stress and Physical Health: Understanding the Connection: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "stress, and, physical, health, understanding, the, connection",
-  "quickSummary": [
-    "Learn the key concepts behind Stress and Physical Health: Understanding the Connection.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Stress and Physical Health: Understanding the Connection in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Stress and Physical Health: Understanding the Connection, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "physical-activity-and-long-term-health",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Physical Activity and Long-Term Health",
-  "description": "Physical Activity and Long-Term Health: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "physical, activity, and, long-term, health",
-  "quickSummary": [
-    "Learn the key concepts behind Physical Activity and Long-Term Health.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Physical Activity and Long-Term Health in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Physical Activity and Long-Term Health, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "healthy-eating-patterns-the-basics-of-nutrient-dense-diets",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Healthy Eating Patterns: The Basics of Nutrient-Dense Diets",
-  "description": "Healthy Eating Patterns: The Basics of Nutrient-Dense Diets: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "healthy, eating, patterns, the, basics, of, nutrient-dense, diets",
-  "quickSummary": [
-    "Learn the key concepts behind Healthy Eating Patterns: The Basics of Nutrient-Dense Diets.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Healthy Eating Patterns: The Basics of Nutrient-Dense Diets in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Healthy Eating Patterns: The Basics of Nutrient-Dense Diets, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "hydration-how-much-fluid-do-you-need",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Hydration: How Much Fluid Do You Need?",
-  "description": "Hydration: How Much Fluid Do You Need: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "hydration, how, much, fluid, do, you, need",
-  "quickSummary": [
-    "Learn the key concepts behind Hydration: How Much Fluid Do You Need.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Hydration: How Much Fluid Do You Need in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Hydration: How Much Fluid Do You Need, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "fiber-and-digestive-health-what-to-know",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Fiber and Digestive Health: What to Know",
-  "description": "Fiber and Digestive Health: What to Know: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "fiber, and, digestive, health, what, to, know",
-  "quickSummary": [
-    "Learn the key concepts behind Fiber and Digestive Health: What to Know.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Fiber and Digestive Health: What to Know in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Fiber and Digestive Health: What to Know, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "understanding-dietary-supplements-and-when-they-may-help",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Understanding Dietary Supplements and When They May Help",
-  "description": "Understanding Dietary Supplements and When They May Help: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "understanding, dietary, supplements, and, when, they, may, help",
-  "quickSummary": [
-    "Learn the key concepts behind Understanding Dietary Supplements and When They May Help.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Understanding Dietary Supplements and When They May Help in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Understanding Dietary Supplements and When They May Help, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "how-to-evaluate-health-claims-on-social-media",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "How to Evaluate Health Claims on Social Media",
-  "description": "How to Evaluate Health Claims on Social Media: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "how, to, evaluate, health, claims, on, social, media",
-  "quickSummary": [
-    "Learn the key concepts behind How to Evaluate Health Claims on Social Media.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains How to Evaluate Health Claims on Social Media in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about How to Evaluate Health Claims on Social Media, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "how-to-identify-reliable-health-information-online",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "How to Identify Reliable Health Information Online",
-  "description": "How to Identify Reliable Health Information Online: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "how, to, identify, reliable, health, information, online",
-  "quickSummary": [
-    "Learn the key concepts behind How to Identify Reliable Health Information Online.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains How to Identify Reliable Health Information Online in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about How to Identify Reliable Health Information Online, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "health-myths-vs-evidence-how-to-check-a-claim",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Health Myths vs. Evidence: How to Check a Claim",
-  "description": "Health Myths vs. Evidence: How to Check a Claim: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "health, myths, vs, evidence, how, to, check, a, claim",
-  "quickSummary": [
-    "Learn the key concepts behind Health Myths vs. Evidence: How to Check a Claim.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Health Myths vs. Evidence: How to Check a Claim in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Health Myths vs. Evidence: How to Check a Claim, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "why-correlation-does-not-prove-causation-in-health",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Why Correlation Does Not Prove Causation in Health",
-  "description": "Why Correlation Does Not Prove Causation in Health: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "why, correlation, does, not, prove, causation, in, health",
-  "quickSummary": [
-    "Learn the key concepts behind Why Correlation Does Not Prove Causation in Health.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Why Correlation Does Not Prove Causation in Health in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Why Correlation Does Not Prove Causation in Health, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "absolute-risk-vs-relative-risk-explained",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Absolute Risk vs. Relative Risk Explained",
-  "description": "Absolute Risk vs. Relative Risk Explained: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "absolute, risk, vs, relative, risk, explained",
-  "quickSummary": [
-    "Learn the key concepts behind Absolute Risk vs. Relative Risk Explained.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Absolute Risk vs. Relative Risk Explained in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Absolute Risk vs. Relative Risk Explained, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "understanding-sensitivity-and-specificity-in-medical-tests",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Understanding Sensitivity and Specificity in Medical Tests",
-  "description": "Understanding Sensitivity and Specificity in Medical Tests: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "understanding, sensitivity, and, specificity, in, medical, tests",
-  "quickSummary": [
-    "Learn the key concepts behind Understanding Sensitivity and Specificity in Medical Tests.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Understanding Sensitivity and Specificity in Medical Tests in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Understanding Sensitivity and Specificity in Medical Tests, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "screening-tests-benefits-harms-and-false-positives",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Screening Tests: Benefits, Harms and False Positives",
-  "description": "Screening Tests: Benefits, Harms and False Positives: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "screening, tests, benefits, harms, and, false, positives",
-  "quickSummary": [
-    "Learn the key concepts behind Screening Tests: Benefits, Harms and False Positives.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Screening Tests: Benefits, Harms and False Positives in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Screening Tests: Benefits, Harms and False Positives, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "understanding-false-positives-and-false-negatives",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Understanding False Positives and False Negatives",
-  "description": "Understanding False Positives and False Negatives: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "understanding, false, positives, and, false, negatives",
-  "quickSummary": [
-    "Learn the key concepts behind Understanding False Positives and False Negatives.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Understanding False Positives and False Negatives in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Understanding False Positives and False Negatives, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "genetic-risk-vs-actual-disease-risk",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Genetic Risk vs. Actual Disease Risk",
-  "description": "Genetic Risk vs. Actual Disease Risk: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "genetic, risk, vs, actual, disease, risk",
-  "quickSummary": [
-    "Learn the key concepts behind Genetic Risk vs. Actual Disease Risk.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Genetic Risk vs. Actual Disease Risk in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Genetic Risk vs. Actual Disease Risk, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "family-history-and-preventive-health",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Family History and Preventive Health",
-  "description": "Family History and Preventive Health: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "family, history, and, preventive, health",
-  "quickSummary": [
-    "Learn the key concepts behind Family History and Preventive Health.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Family History and Preventive Health in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Family History and Preventive Health, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "how-lifestyle-risk-factors-add-up-over-time",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "How Lifestyle Risk Factors Add Up Over Time",
-  "description": "How Lifestyle Risk Factors Add Up Over Time: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "how, lifestyle, risk, factors, add, up, over, time",
-  "quickSummary": [
-    "Learn the key concepts behind How Lifestyle Risk Factors Add Up Over Time.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains How Lifestyle Risk Factors Add Up Over Time in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about How Lifestyle Risk Factors Add Up Over Time, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "understanding-chronic-disease-risk-factors",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Understanding Chronic Disease Risk Factors",
-  "description": "Understanding Chronic Disease Risk Factors: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "understanding, chronic, disease, risk, factors",
-  "quickSummary": [
-    "Learn the key concepts behind Understanding Chronic Disease Risk Factors.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Understanding Chronic Disease Risk Factors in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Understanding Chronic Disease Risk Factors, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "health-checklists-what-to-discuss-with-your-doctor",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Health Checklists: What to Discuss With Your Doctor",
-  "description": "Health Checklists: What to Discuss With Your Doctor: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "health, checklists, what, to, discuss, with, your, doctor",
-  "quickSummary": [
-    "Learn the key concepts behind Health Checklists: What to Discuss With Your Doctor.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Health Checklists: What to Discuss With Your Doctor in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Health Checklists: What to Discuss With Your Doctor, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "when-should-you-seek-urgent-medical-care",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "When Should You Seek Urgent Medical Care?",
-  "description": "When Should You Seek Urgent Medical Care: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "when, should, you, seek, urgent, medical, care",
-  "quickSummary": [
-    "Learn the key concepts behind When Should You Seek Urgent Medical Care.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains When Should You Seek Urgent Medical Care in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about When Should You Seek Urgent Medical Care, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "medication-labels-how-to-read-directions-and-warnings",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Medication Labels: How to Read Directions and Warnings",
-  "description": "Medication Labels: How to Read Directions and Warnings: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "medication, labels, how, to, read, directions, and, warnings",
-  "quickSummary": [
-    "Learn the key concepts behind Medication Labels: How to Read Directions and Warnings.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Medication Labels: How to Read Directions and Warnings in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Medication Labels: How to Read Directions and Warnings, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "understanding-drug-interactions-and-why-they-matter",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Understanding Drug Interactions and Why They Matter",
-  "description": "Understanding Drug Interactions and Why They Matter: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "understanding, drug, interactions, and, why, they, matter",
-  "quickSummary": [
-    "Learn the key concepts behind Understanding Drug Interactions and Why They Matter.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Understanding Drug Interactions and Why They Matter in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Understanding Drug Interactions and Why They Matter, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "how-to-keep-a-personal-health-record",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "How to Keep a Personal Health Record",
-  "description": "How to Keep a Personal Health Record: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "how, to, keep, a, personal, health, record",
-  "quickSummary": [
-    "Learn the key concepts behind How to Keep a Personal Health Record.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains How to Keep a Personal Health Record in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about How to Keep a Personal Health Record, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "questions-to-ask-before-starting-a-new-treatment",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Questions to Ask Before Starting a New Treatment",
-  "description": "Questions to Ask Before Starting a New Treatment: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "questions, to, ask, before, starting, a, new, treatment",
-  "quickSummary": [
-    "Learn the key concepts behind Questions to Ask Before Starting a New Treatment.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Questions to Ask Before Starting a New Treatment in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Questions to Ask Before Starting a New Treatment, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "shared-decision-making-how-patients-and-clinicians-work-together",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Shared Decision-Making: How Patients and Clinicians Work Together",
-  "description": "Shared Decision-Making: How Patients and Clinicians Work Together: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "shared, decision-making, how, patients, and, clinicians, work, together",
-  "quickSummary": [
-    "Learn the key concepts behind Shared Decision-Making: How Patients and Clinicians Work Together.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Shared Decision-Making: How Patients and Clinicians Work Together in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Shared Decision-Making: How Patients and Clinicians Work Together, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "understanding-informed-consent",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Understanding Informed Consent",
-  "description": "Understanding Informed Consent: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "understanding, informed, consent",
-  "quickSummary": [
-    "Learn the key concepts behind Understanding Informed Consent.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Understanding Informed Consent in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Understanding Informed Consent, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "how-clinical-guidelines-are-developed",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "How Clinical Guidelines Are Developed",
-  "description": "How Clinical Guidelines Are Developed: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "how, clinical, guidelines, are, developed",
-  "quickSummary": [
-    "Learn the key concepts behind How Clinical Guidelines Are Developed.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains How Clinical Guidelines Are Developed in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about How Clinical Guidelines Are Developed, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "evidence-based-medicine-what-it-means",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Evidence-Based Medicine: What It Means",
-  "description": "Evidence-Based Medicine: What It Means: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "evidence-based, medicine, what, it, means",
-  "quickSummary": [
-    "Learn the key concepts behind Evidence-Based Medicine: What It Means.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Evidence-Based Medicine: What It Means in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Evidence-Based Medicine: What It Means, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "clinical-trials-explained-for-beginners",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Clinical Trials Explained for Beginners",
-  "description": "Clinical Trials Explained for Beginners: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "clinical, trials, explained, for, beginners",
-  "quickSummary": [
-    "Learn the key concepts behind Clinical Trials Explained for Beginners.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Clinical Trials Explained for Beginners in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Clinical Trials Explained for Beginners, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "placebo-and-nocebo-effects-what-they-mean",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Placebo and Nocebo Effects: What They Mean",
-  "description": "Placebo and Nocebo Effects: What They Mean: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "placebo, and, nocebo, effects, what, they, mean",
-  "quickSummary": [
-    "Learn the key concepts behind Placebo and Nocebo Effects: What They Mean.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Placebo and Nocebo Effects: What They Mean in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Placebo and Nocebo Effects: What They Mean, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "observational-studies-vs-randomized-controlled-trials",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Observational Studies vs. Randomized Controlled Trials",
-  "description": "Observational Studies vs. Randomized Controlled Trials: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "observational, studies, vs, randomized, controlled, trials",
-  "quickSummary": [
-    "Learn the key concepts behind Observational Studies vs. Randomized Controlled Trials.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Observational Studies vs. Randomized Controlled Trials in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Observational Studies vs. Randomized Controlled Trials, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "systematic-reviews-and-meta-analyses-explained",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Systematic Reviews and Meta-Analyses Explained",
-  "description": "Systematic Reviews and Meta-Analyses Explained: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "systematic, reviews, and, meta-analyses, explained",
-  "quickSummary": [
-    "Learn the key concepts behind Systematic Reviews and Meta-Analyses Explained.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Systematic Reviews and Meta-Analyses Explained in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Systematic Reviews and Meta-Analyses Explained, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "how-to-read-a-health-study-without-getting-misled",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "How to Read a Health Study Without Getting Misled",
-  "description": "How to Read a Health Study Without Getting Misled: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "how, to, read, a, health, study, without, getting, misled",
-  "quickSummary": [
-    "Learn the key concepts behind How to Read a Health Study Without Getting Misled.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains How to Read a Health Study Without Getting Misled in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about How to Read a Health Study Without Getting Misled, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "understanding-medical-uncertainty",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Understanding Medical Uncertainty",
-  "description": "Understanding Medical Uncertainty: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "understanding, medical, uncertainty",
-  "quickSummary": [
-    "Learn the key concepts behind Understanding Medical Uncertainty.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Understanding Medical Uncertainty in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Understanding Medical Uncertainty, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "why-individual-health-results-vary",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Why Individual Health Results Vary",
-  "description": "Why Individual Health Results Vary: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "why, individual, health, results, vary",
-  "quickSummary": [
-    "Learn the key concepts behind Why Individual Health Results Vary.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Why Individual Health Results Vary in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Why Individual Health Results Vary, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "health-literacy-skills-for-better-health-decisions",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Health Literacy: Skills for Better Health Decisions",
-  "description": "Health Literacy: Skills for Better Health Decisions: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "health, literacy, skills, for, better, health, decisions",
-  "quickSummary": [
-    "Learn the key concepts behind Health Literacy: Skills for Better Health Decisions.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Health Literacy: Skills for Better Health Decisions in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Health Literacy: Skills for Better Health Decisions, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "how-to-talk-to-your-doctor-about-a-health-concern",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "How to Talk to Your Doctor About a Health Concern",
-  "description": "How to Talk to Your Doctor About a Health Concern: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "how, to, talk, to, your, doctor, about, a, health, concern",
-  "quickSummary": [
-    "Learn the key concepts behind How to Talk to Your Doctor About a Health Concern.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains How to Talk to Your Doctor About a Health Concern in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about How to Talk to Your Doctor About a Health Concern, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "preparing-for-a-doctor-appointment",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Preparing for a Doctor Appointment",
-  "description": "Preparing for a Doctor Appointment: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "preparing, for, a, doctor, appointment",
-  "quickSummary": [
-    "Learn the key concepts behind Preparing for a Doctor Appointment.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Preparing for a Doctor Appointment in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Preparing for a Doctor Appointment, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "how-to-organize-symptoms-and-questions-before-a-visit",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "How to Organize Symptoms and Questions Before a Visit",
-  "description": "How to Organize Symptoms and Questions Before a Visit: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "how, to, organize, symptoms, and, questions, before, a, visit",
-  "quickSummary": [
-    "Learn the key concepts behind How to Organize Symptoms and Questions Before a Visit.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains How to Organize Symptoms and Questions Before a Visit in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about How to Organize Symptoms and Questions Before a Visit, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "understanding-medical-referrals-and-specialists",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Understanding Medical Referrals and Specialists",
-  "description": "Understanding Medical Referrals and Specialists: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "understanding, medical, referrals, and, specialists",
-  "quickSummary": [
-    "Learn the key concepts behind Understanding Medical Referrals and Specialists.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Understanding Medical Referrals and Specialists in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Understanding Medical Referrals and Specialists, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "primary-care-vs-specialist-care-whats-the-difference",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Primary Care vs. Specialist Care: What’s the Difference?",
-  "description": "Primary Care vs. Specialist Care: What’s the Difference: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "primary, care, vs, specialist, care, whats, the, difference",
-  "quickSummary": [
-    "Learn the key concepts behind Primary Care vs. Specialist Care: What’s the Difference.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Primary Care vs. Specialist Care: What’s the Difference in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Primary Care vs. Specialist Care: What’s the Difference, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "telehealth-what-to-know-before-a-virtual-appointment",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Telehealth: What to Know Before a Virtual Appointment",
-  "description": "Telehealth: What to Know Before a Virtual Appointment: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "telehealth, what, to, know, before, a, virtual, appointment",
-  "quickSummary": [
-    "Learn the key concepts behind Telehealth: What to Know Before a Virtual Appointment.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Telehealth: What to Know Before a Virtual Appointment in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Telehealth: What to Know Before a Virtual Appointment, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "second-opinions-when-and-how-they-can-help",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Second Opinions: When and How They Can Help",
-  "description": "Second Opinions: When and How They Can Help: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "second, opinions, when, and, how, they, can, help",
-  "quickSummary": [
-    "Learn the key concepts behind Second Opinions: When and How They Can Help.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Second Opinions: When and How They Can Help in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Second Opinions: When and How They Can Help, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "understanding-health-checkup-packages",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Understanding Health Checkup Packages",
-  "description": "Understanding Health Checkup Packages: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "understanding, health, checkup, packages",
-  "quickSummary": [
-    "Learn the key concepts behind Understanding Health Checkup Packages.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Understanding Health Checkup Packages in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Understanding Health Checkup Packages, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "how-to-keep-health-information-private-online",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "How to Keep Health Information Private Online",
-  "description": "How to Keep Health Information Private Online: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "how, to, keep, health, information, private, online",
-  "quickSummary": [
-    "Learn the key concepts behind How to Keep Health Information Private Online.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains How to Keep Health Information Private Online in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about How to Keep Health Information Private Online, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "medical-records-what-patients-should-know",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Medical Records: What Patients Should Know",
-  "description": "Medical Records: What Patients Should Know: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "medical, records, what, patients, should, know",
-  "quickSummary": [
-    "Learn the key concepts behind Medical Records: What Patients Should Know.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Medical Records: What Patients Should Know in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Medical Records: What Patients Should Know, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "understanding-common-medical-abbreviations",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Understanding Common Medical Abbreviations",
-  "description": "Understanding Common Medical Abbreviations: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "understanding, common, medical, abbreviations",
-  "quickSummary": [
-    "Learn the key concepts behind Understanding Common Medical Abbreviations.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Understanding Common Medical Abbreviations in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Understanding Common Medical Abbreviations, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "how-to-read-medication-dosage-instructions",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "How to Read Medication Dosage Instructions",
-  "description": "How to Read Medication Dosage Instructions: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "how, to, read, medication, dosage, instructions",
-  "quickSummary": [
-    "Learn the key concepts behind How to Read Medication Dosage Instructions.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains How to Read Medication Dosage Instructions in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about How to Read Medication Dosage Instructions, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "understanding-over-the-counter-vs-prescription-medicines",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Understanding Over-the-Counter vs. Prescription Medicines",
-  "description": "Understanding Over-the-Counter vs. Prescription Medicines: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "understanding, over-the-counter, vs, prescription, medicines",
-  "quickSummary": [
-    "Learn the key concepts behind Understanding Over-the-Counter vs. Prescription Medicines.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Understanding Over-the-Counter vs. Prescription Medicines in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Understanding Over-the-Counter vs. Prescription Medicines, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "safe-medication-storage-and-disposal",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Safe Medication Storage and Disposal",
-  "description": "Safe Medication Storage and Disposal: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "safe, medication, storage, and, disposal",
-  "quickSummary": [
-    "Learn the key concepts behind Safe Medication Storage and Disposal.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Safe Medication Storage and Disposal in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Safe Medication Storage and Disposal, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "why-antibiotics-do-not-treat-viral-infections",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Why Antibiotics Do Not Treat Viral Infections",
-  "description": "Why Antibiotics Do Not Treat Viral Infections: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "why, antibiotics, do, not, treat, viral, infections",
-  "quickSummary": [
-    "Learn the key concepts behind Why Antibiotics Do Not Treat Viral Infections.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Why Antibiotics Do Not Treat Viral Infections in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Why Antibiotics Do Not Treat Viral Infections, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "antibiotic-resistance-what-everyone-should-know",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Antibiotic Resistance: What Everyone Should Know",
-  "description": "Antibiotic Resistance: What Everyone Should Know: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "antibiotic, resistance, what, everyone, should, know",
-  "quickSummary": [
-    "Learn the key concepts behind Antibiotic Resistance: What Everyone Should Know.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Antibiotic Resistance: What Everyone Should Know in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Antibiotic Resistance: What Everyone Should Know, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "understanding-infection-prevention-and-hand-hygiene",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Understanding Infection Prevention and Hand Hygiene",
-  "description": "Understanding Infection Prevention and Hand Hygiene: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "understanding, infection, prevention, and, hand, hygiene",
-  "quickSummary": [
-    "Learn the key concepts behind Understanding Infection Prevention and Hand Hygiene.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Understanding Infection Prevention and Hand Hygiene in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Understanding Infection Prevention and Hand Hygiene, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "food-safety-basics-for-everyday-health",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Food Safety Basics for Everyday Health",
-  "description": "Food Safety Basics for Everyday Health: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "food, safety, basics, for, everyday, health",
-  "quickSummary": [
-    "Learn the key concepts behind Food Safety Basics for Everyday Health.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Food Safety Basics for Everyday Health in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Food Safety Basics for Everyday Health, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "sun-safety-and-skin-protection",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Sun Safety and Skin Protection",
-  "description": "Sun Safety and Skin Protection: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "sun, safety, and, skin, protection",
-  "quickSummary": [
-    "Learn the key concepts behind Sun Safety and Skin Protection.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Sun Safety and Skin Protection in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Sun Safety and Skin Protection, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "healthy-aging-core-health-priorities",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Healthy Aging: Core Health Priorities",
-  "description": "Healthy Aging: Core Health Priorities: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "healthy, aging, core, health, priorities",
-  "quickSummary": [
-    "Learn the key concepts behind Healthy Aging: Core Health Priorities.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Healthy Aging: Core Health Priorities in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Healthy Aging: Core Health Priorities, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "mens-preventive-health-common-topics-to-discuss",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Men’s Preventive Health: Common Topics to Discuss",
-  "description": "Men’s Preventive Health: Common Topics to Discuss: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "mens, preventive, health, common, topics, to, discuss",
-  "quickSummary": [
-    "Learn the key concepts behind Men’s Preventive Health: Common Topics to Discuss.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Men’s Preventive Health: Common Topics to Discuss in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Men’s Preventive Health: Common Topics to Discuss, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "womens-preventive-health-common-topics-to-discuss",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Women’s Preventive Health: Common Topics to Discuss",
-  "description": "Women’s Preventive Health: Common Topics to Discuss: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "womens, preventive, health, common, topics, to, discuss",
-  "quickSummary": [
-    "Learn the key concepts behind Women’s Preventive Health: Common Topics to Discuss.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Women’s Preventive Health: Common Topics to Discuss in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Women’s Preventive Health: Common Topics to Discuss, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "health-education-for-college-students",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Health Education for College Students",
-  "description": "Health Education for College Students: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "health, education, for, college, students",
-  "quickSummary": [
-    "Learn the key concepts behind Health Education for College Students.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Health Education for College Students in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Health Education for College Students, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "travel-health-basics-before-an-international-trip",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Travel Health Basics Before an International Trip",
-  "description": "Travel Health Basics Before an International Trip: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "travel, health, basics, before, an, international, trip",
-  "quickSummary": [
-    "Learn the key concepts behind Travel Health Basics Before an International Trip.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Travel Health Basics Before an International Trip in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Travel Health Basics Before an International Trip, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "understanding-health-insurance-terms",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Understanding Health Insurance Terms",
-  "description": "Understanding Health Insurance Terms: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "understanding, health, insurance, terms",
-  "quickSummary": [
-    "Learn the key concepts behind Understanding Health Insurance Terms.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Understanding Health Insurance Terms in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Understanding Health Insurance Terms, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "emergency-vs-routine-care-choosing-the-right-level-of-care",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Emergency vs. Routine Care: Choosing the Right Level of Care",
-  "description": "Emergency vs. Routine Care: Choosing the Right Level of Care: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "emergency, vs, routine, care, choosing, the, right, level, of, care",
-  "quickSummary": [
-    "Learn the key concepts behind Emergency vs. Routine Care: Choosing the Right Level of Care.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Emergency vs. Routine Care: Choosing the Right Level of Care in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Emergency vs. Routine Care: Choosing the Right Level of Care, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-},
-{
-  "slug": "building-a-personal-preventive-health-plan",
-  "category": "Health Education",
-  "categorySlug": "health-education",
-  "title": "Building a Personal Preventive Health Plan",
-  "description": "Building a Personal Preventive Health Plan: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
-  "readTime": "9 min read",
-  "date": "September 19, 2026",
-  "keywords": "building, a, personal, preventive, health, plan",
-  "quickSummary": [
-    "Learn the key concepts behind Building a Personal Preventive Health Plan.",
-    "The article separates useful health information from conclusions that require individualized assessment.",
-    "Measurements and estimates can have meaningful limitations, so trends and context matter.",
-    "Different people can have different results even when a single metric looks similar.",
-    "Reliable sources are more useful than isolated claims, screenshots or social-media health advice.",
-    "Use the information to prepare better questions for a qualified healthcare professional when needed."
-  ],
-  "sources": [
-    {
-      "label": "NIH — Health Information",
-      "url": "https://www.nih.gov/health-information"
-    },
-    {
-      "label": "CDC",
-      "url": "https://www.cdc.gov/"
-    },
-    {
-      "label": "WHO",
-      "url": "https://www.who.int/health-topics"
-    }
-  ],
-  "sections": [
-    [
-      "What It Means",
-      "This guide explains Building a Personal Preventive Health Plan in plain language and describes what the measure, concept or health topic can and cannot tell you."
-    ],
-    [
-      "How to Understand It",
-      "Health information is most useful when interpreted in context. Age, sex, medical history, medications, symptoms, measurement method and the reason a test or metric was obtained can change its meaning."
-    ],
-    [
-      "What It Does Not Tell You",
-      "A single measurement, symptom or online calculator result rarely provides a complete picture of health. Avoid treating an educational explanation as a diagnosis or personalized treatment plan."
-    ],
-    [
-      "Practical Interpretation",
-      "Look at trends, measurement quality and relevant accompanying information. When a result is unexpected, persistent, severe or associated with concerning symptoms, appropriate clinical follow-up is more useful than self-diagnosis."
-    ],
-    [
-      "Common Mistakes",
-      "Common mistakes include comparing results from different methods, ignoring reference ranges, assuming correlation proves causation, and making major health decisions from one number."
-    ],
-    [
-      "Key Takeaway",
-      "Use this guide as health education about Building a Personal Preventive Health Plan, then consider the full clinical context when making personal health decisions."
-    ]
-  ]
-}
-,
   {
-    "slug": "how-to-read-a-basic-health-checkup-report",
+    "slug": "chest-pain-left-side-is-it-a-heart-issue-or-anxiety",
     "category": "Health Education",
     "categorySlug": "health-education",
-    "title": "How to Read a Basic Health Checkup Report",
-    "description": "A plain-language guide to how to read a basic health checkup report with an emphasis on context, evidence and safe interpretation.",
+    "title": "Chest Pain Left Side: Is it a heart issue or anxiety?",
+    "description": "Chest Pain Left Side: Is it a heart issue or anxiety? — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
     "readTime": "10 min read",
     "date": "September 19, 2026",
-    "keywords": "how to read a basic health checkup report, health education, health literacy",
+    "keywords": "chest, pain, left, side, is, it, a, heart, issue, or, anxiety",
     "quickSummary": [
-      "Understand the main concepts behind how to read a basic health checkup report and how to interpret them.",
-      "Use measurements and health information in context rather than relying on one number.",
-      "Methods can differ in accuracy, repeatability and usefulness for different people.",
-      "Trends over time are often more informative than isolated measurements.",
-      "Educational information does not replace individualized clinical assessment."
+      "Understand the key concepts behind Chest Pain Left Side: Is it a heart issue or anxiety?.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
       [
-        "NIH",
-        "https://www.nih.gov/"
+        "MedlinePlus — Health Topics",
+        "https://medlineplus.gov/healthtopics.html"
+      ],
+      [
+        "NHS — Symptoms",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "CDC — Health Information",
+        "https://www.cdc.gov/health-information/"
       ]
     ],
     "sections": [
       [
-        "What It Means",
-        "This guide explains How to Read a Basic Health Checkup Report in practical terms and outlines what the topic can and cannot tell you."
+        "Quick clinical context",
+        "Chest Pain Left Side: Is it a heart issue or anxiety? is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
       ],
       [
-        "How to Interpret It",
-        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+        "What the evidence means",
+        "The useful question is not only what chest pain left side: is it a heart issue or anxiety? means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
       ],
       [
-        "Common Mistakes",
-        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
       ],
       [
-        "Practical Takeaway",
-        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
       ]
     ]
   },
   {
-    "slug": "reference-ranges-vs-optimal-ranges-what-lab-results-actually-mean",
+    "slug": "persistent-cough-treatment-when-to-skip-home-remedies-and-see-a-doctor",
     "category": "Health Education",
     "categorySlug": "health-education",
-    "title": "Reference Ranges vs Optimal Ranges: What Lab Results Actually Mean",
-    "description": "A plain-language guide to reference ranges vs optimal ranges: what lab results actually mean with an emphasis on context, evidence and safe interpretation.",
+    "title": "Persistent Cough Treatment: When to skip home remedies and see a doctor",
+    "description": "Persistent Cough Treatment: When to skip home remedies and see a doctor — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
     "readTime": "10 min read",
     "date": "September 19, 2026",
-    "keywords": "reference ranges vs optimal ranges: what lab results actually mean, health education, health literacy",
+    "keywords": "persistent, cough, treatment, when, to, skip, home, remedies, and, see, a, doctor",
     "quickSummary": [
-      "Understand the main concepts behind reference ranges vs optimal ranges: what lab results actually mean and how to interpret them.",
-      "Use measurements and health information in context rather than relying on one number.",
-      "Methods can differ in accuracy, repeatability and usefulness for different people.",
-      "Trends over time are often more informative than isolated measurements.",
-      "Educational information does not replace individualized clinical assessment."
+      "Understand the key concepts behind Persistent Cough Treatment: When to skip home remedies and see a doctor.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
       [
-        "NIH",
-        "https://www.nih.gov/"
+        "MedlinePlus — Health Topics",
+        "https://medlineplus.gov/healthtopics.html"
+      ],
+      [
+        "NHS — Symptoms",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "CDC — Health Information",
+        "https://www.cdc.gov/health-information/"
       ]
     ],
     "sections": [
       [
-        "What It Means",
-        "This guide explains Reference Ranges vs Optimal Ranges: What Lab Results Actually Mean in practical terms and outlines what the topic can and cannot tell you."
+        "Quick clinical context",
+        "Persistent Cough Treatment: When to skip home remedies and see a doctor is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
       ],
       [
-        "How to Interpret It",
-        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+        "What the evidence means",
+        "The useful question is not only what persistent cough treatment: when to skip home remedies and see a doctor means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
       ],
       [
-        "Common Mistakes",
-        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
       ],
       [
-        "Practical Takeaway",
-        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
       ]
     ]
   },
   {
-    "slug": "critical-values-vs-mild-abnormal-results-understanding-lab-alerts",
+    "slug": "chronic-fatigue-causes-why-am-i-always-tired",
     "category": "Health Education",
     "categorySlug": "health-education",
-    "title": "Critical Values vs Mild Abnormal Results: Understanding Lab Alerts",
-    "description": "A plain-language guide to critical values vs mild abnormal results: understanding lab alerts with an emphasis on context, evidence and safe interpretation.",
+    "title": "Chronic Fatigue Causes: Why am I always tired?",
+    "description": "Chronic Fatigue Causes: Why am I always tired? — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
     "readTime": "10 min read",
     "date": "September 19, 2026",
-    "keywords": "critical values vs mild abnormal results: understanding lab alerts, health education, health literacy",
+    "keywords": "chronic, fatigue, causes, why, am, i, always, tired",
     "quickSummary": [
-      "Understand the main concepts behind critical values vs mild abnormal results: understanding lab alerts and how to interpret them.",
-      "Use measurements and health information in context rather than relying on one number.",
-      "Methods can differ in accuracy, repeatability and usefulness for different people.",
-      "Trends over time are often more informative than isolated measurements.",
-      "Educational information does not replace individualized clinical assessment."
+      "Understand the key concepts behind Chronic Fatigue Causes: Why am I always tired?.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
       [
-        "NIH",
-        "https://www.nih.gov/"
+        "MedlinePlus — Health Topics",
+        "https://medlineplus.gov/healthtopics.html"
+      ],
+      [
+        "NHS — Symptoms",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "CDC — Health Information",
+        "https://www.cdc.gov/health-information/"
       ]
     ],
     "sections": [
       [
-        "What It Means",
-        "This guide explains Critical Values vs Mild Abnormal Results: Understanding Lab Alerts in practical terms and outlines what the topic can and cannot tell you."
+        "Quick clinical context",
+        "Chronic Fatigue Causes: Why am I always tired? is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
       ],
       [
-        "How to Interpret It",
-        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+        "What the evidence means",
+        "The useful question is not only what chronic fatigue causes: why am i always tired? means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
       ],
       [
-        "Common Mistakes",
-        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
       ],
       [
-        "Practical Takeaway",
-        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
       ]
     ]
   },
   {
-    "slug": "when-to-repeat-an-abnormal-lab-test",
+    "slug": "sudden-lower-back-pain-immediate-stretches-and-red-flags",
     "category": "Health Education",
     "categorySlug": "health-education",
-    "title": "When to Repeat an Abnormal Lab Test",
-    "description": "A plain-language guide to when to repeat an abnormal lab test with an emphasis on context, evidence and safe interpretation.",
+    "title": "Sudden Lower Back Pain: Immediate stretches and red flags",
+    "description": "Sudden Lower Back Pain: Immediate stretches and red flags — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
     "readTime": "10 min read",
     "date": "September 19, 2026",
-    "keywords": "when to repeat an abnormal lab test, health education, health literacy",
+    "keywords": "sudden, lower, back, pain, immediate, stretches, and, red, flags",
     "quickSummary": [
-      "Understand the main concepts behind when to repeat an abnormal lab test and how to interpret them.",
-      "Use measurements and health information in context rather than relying on one number.",
-      "Methods can differ in accuracy, repeatability and usefulness for different people.",
-      "Trends over time are often more informative than isolated measurements.",
-      "Educational information does not replace individualized clinical assessment."
+      "Understand the key concepts behind Sudden Lower Back Pain: Immediate stretches and red flags.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
       [
-        "NIH",
-        "https://www.nih.gov/"
+        "MedlinePlus — Health Topics",
+        "https://medlineplus.gov/healthtopics.html"
+      ],
+      [
+        "NHS — Symptoms",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "CDC — Health Information",
+        "https://www.cdc.gov/health-information/"
       ]
     ],
     "sections": [
       [
-        "What It Means",
-        "This guide explains When to Repeat an Abnormal Lab Test in practical terms and outlines what the topic can and cannot tell you."
+        "Quick clinical context",
+        "Sudden Lower Back Pain: Immediate stretches and red flags is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
       ],
       [
-        "How to Interpret It",
-        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+        "What the evidence means",
+        "The useful question is not only what sudden lower back pain: immediate stretches and red flags means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
       ],
       [
-        "Common Mistakes",
-        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
       ],
       [
-        "Practical Takeaway",
-        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
       ]
     ]
   },
   {
-    "slug": "how-to-prepare-questions-for-a-doctor-appointment",
+    "slug": "frequent-headaches-differentiating-between-tension-sinus-and-migraines",
     "category": "Health Education",
     "categorySlug": "health-education",
-    "title": "How to Prepare Questions for a Doctor Appointment",
-    "description": "A plain-language guide to how to prepare questions for a doctor appointment with an emphasis on context, evidence and safe interpretation.",
+    "title": "Frequent Headaches: Differentiating between tension, sinus, and migraines",
+    "description": "Frequent Headaches: Differentiating between tension, sinus, and migraines — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
     "readTime": "10 min read",
     "date": "September 19, 2026",
-    "keywords": "how to prepare questions for a doctor appointment, health education, health literacy",
+    "keywords": "frequent, headaches, differentiating, between, tension, sinus, and, migraines",
     "quickSummary": [
-      "Understand the main concepts behind how to prepare questions for a doctor appointment and how to interpret them.",
-      "Use measurements and health information in context rather than relying on one number.",
-      "Methods can differ in accuracy, repeatability and usefulness for different people.",
-      "Trends over time are often more informative than isolated measurements.",
-      "Educational information does not replace individualized clinical assessment."
+      "Understand the key concepts behind Frequent Headaches: Differentiating between tension, sinus, and migraines.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
       [
-        "NIH",
-        "https://www.nih.gov/"
+        "MedlinePlus — Health Topics",
+        "https://medlineplus.gov/healthtopics.html"
+      ],
+      [
+        "NHS — Symptoms",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "CDC — Health Information",
+        "https://www.cdc.gov/health-information/"
       ]
     ],
     "sections": [
       [
-        "What It Means",
-        "This guide explains How to Prepare Questions for a Doctor Appointment in practical terms and outlines what the topic can and cannot tell you."
+        "Quick clinical context",
+        "Frequent Headaches: Differentiating between tension, sinus, and migraines is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
       ],
       [
-        "How to Interpret It",
-        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+        "What the evidence means",
+        "The useful question is not only what frequent headaches: differentiating between tension, sinus, and migraines means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
       ],
       [
-        "Common Mistakes",
-        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
       ],
       [
-        "Practical Takeaway",
-        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
       ]
     ]
   },
   {
-    "slug": "how-to-keep-an-accurate-personal-medication-list",
+    "slug": "unexplained-weight-gain-hidden-hormonal-and-lifestyle-triggers",
     "category": "Health Education",
     "categorySlug": "health-education",
-    "title": "How to Keep an Accurate Personal Medication List",
-    "description": "A plain-language guide to how to keep an accurate personal medication list with an emphasis on context, evidence and safe interpretation.",
+    "title": "Unexplained Weight Gain: Hidden hormonal and lifestyle triggers",
+    "description": "Unexplained Weight Gain: Hidden hormonal and lifestyle triggers — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
     "readTime": "10 min read",
     "date": "September 19, 2026",
-    "keywords": "how to keep an accurate personal medication list, health education, health literacy",
+    "keywords": "unexplained, weight, gain, hidden, hormonal, and, lifestyle, triggers",
     "quickSummary": [
-      "Understand the main concepts behind how to keep an accurate personal medication list and how to interpret them.",
-      "Use measurements and health information in context rather than relying on one number.",
-      "Methods can differ in accuracy, repeatability and usefulness for different people.",
-      "Trends over time are often more informative than isolated measurements.",
-      "Educational information does not replace individualized clinical assessment."
+      "Understand the key concepts behind Unexplained Weight Gain: Hidden hormonal and lifestyle triggers.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
       [
-        "NIH",
-        "https://www.nih.gov/"
+        "MedlinePlus — Health Topics",
+        "https://medlineplus.gov/healthtopics.html"
+      ],
+      [
+        "NHS — Symptoms",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "CDC — Health Information",
+        "https://www.cdc.gov/health-information/"
       ]
     ],
     "sections": [
       [
-        "What It Means",
-        "This guide explains How to Keep an Accurate Personal Medication List in practical terms and outlines what the topic can and cannot tell you."
+        "Quick clinical context",
+        "Unexplained Weight Gain: Hidden hormonal and lifestyle triggers is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
       ],
       [
-        "How to Interpret It",
-        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+        "What the evidence means",
+        "The useful question is not only what unexplained weight gain: hidden hormonal and lifestyle triggers means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
       ],
       [
-        "Common Mistakes",
-        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
       ],
       [
-        "Practical Takeaway",
-        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
       ]
     ]
   },
   {
-    "slug": "how-to-compare-health-information-from-different-sources",
+    "slug": "brain-fog-redux-top-medical-reasons-behind-cognitive-lethargy",
     "category": "Health Education",
     "categorySlug": "health-education",
-    "title": "How to Compare Health Information From Different Sources",
-    "description": "A plain-language guide to how to compare health information from different sources with an emphasis on context, evidence and safe interpretation.",
+    "title": "Brain Fog Redux: Top medical reasons behind cognitive lethargy",
+    "description": "Brain Fog Redux: Top medical reasons behind cognitive lethargy — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
     "readTime": "10 min read",
     "date": "September 19, 2026",
-    "keywords": "how to compare health information from different sources, health education, health literacy",
+    "keywords": "brain, fog, redux, top, medical, reasons, behind, cognitive, lethargy",
     "quickSummary": [
-      "Understand the main concepts behind how to compare health information from different sources and how to interpret them.",
-      "Use measurements and health information in context rather than relying on one number.",
-      "Methods can differ in accuracy, repeatability and usefulness for different people.",
-      "Trends over time are often more informative than isolated measurements.",
-      "Educational information does not replace individualized clinical assessment."
+      "Understand the key concepts behind Brain Fog Redux: Top medical reasons behind cognitive lethargy.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
       [
-        "NIH",
-        "https://www.nih.gov/"
+        "MedlinePlus — Health Topics",
+        "https://medlineplus.gov/healthtopics.html"
+      ],
+      [
+        "NHS — Symptoms",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "CDC — Health Information",
+        "https://www.cdc.gov/health-information/"
       ]
     ],
     "sections": [
       [
-        "What It Means",
-        "This guide explains How to Compare Health Information From Different Sources in practical terms and outlines what the topic can and cannot tell you."
+        "Quick clinical context",
+        "Brain Fog Redux: Top medical reasons behind cognitive lethargy is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
       ],
       [
-        "How to Interpret It",
-        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+        "What the evidence means",
+        "The useful question is not only what brain fog redux: top medical reasons behind cognitive lethargy means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
       ],
       [
-        "Common Mistakes",
-        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
       ],
       [
-        "Practical Takeaway",
-        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
       ]
     ]
   },
   {
-    "slug": "how-to-organize-your-health-records-for-future-appointments",
+    "slug": "joint-pain-in-cold-weather-science-backed-prevention-steps",
     "category": "Health Education",
     "categorySlug": "health-education",
-    "title": "How to Organize Your Health Records for Future Appointments",
-    "description": "A plain-language guide to how to organize your health records for future appointments with an emphasis on context, evidence and safe interpretation.",
+    "title": "Joint Pain in Cold Weather: Science-backed prevention steps",
+    "description": "Joint Pain in Cold Weather: Science-backed prevention steps — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
     "readTime": "10 min read",
     "date": "September 19, 2026",
-    "keywords": "how to organize your health records for future appointments, health education, health literacy",
+    "keywords": "joint, pain, in, cold, weather, science-backed, prevention, steps",
     "quickSummary": [
-      "Understand the main concepts behind how to organize your health records for future appointments and how to interpret them.",
-      "Use measurements and health information in context rather than relying on one number.",
-      "Methods can differ in accuracy, repeatability and usefulness for different people.",
-      "Trends over time are often more informative than isolated measurements.",
-      "Educational information does not replace individualized clinical assessment."
+      "Understand the key concepts behind Joint Pain in Cold Weather: Science-backed prevention steps.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
     ],
     "sources": [
       [
-        "NIH",
-        "https://www.nih.gov/"
+        "MedlinePlus — Health Topics",
+        "https://medlineplus.gov/healthtopics.html"
+      ],
+      [
+        "NHS — Symptoms",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "CDC — Health Information",
+        "https://www.cdc.gov/health-information/"
       ]
     ],
     "sections": [
       [
-        "What It Means",
-        "This guide explains How to Organize Your Health Records for Future Appointments in practical terms and outlines what the topic can and cannot tell you."
+        "Quick clinical context",
+        "Joint Pain in Cold Weather: Science-backed prevention steps is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
       ],
       [
-        "How to Interpret It",
-        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+        "What the evidence means",
+        "The useful question is not only what joint pain in cold weather: science-backed prevention steps means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
       ],
       [
-        "Common Mistakes",
-        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
       ],
       [
-        "Practical Takeaway",
-        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "bloating-after-eating-mapping-symptoms-to-food-intolerances",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Bloating After Eating: Mapping symptoms to food intolerances",
+    "description": "Bloating After Eating: Mapping symptoms to food intolerances — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "bloating, after, eating, mapping, symptoms, to, food, intolerances",
+    "quickSummary": [
+      "Understand the key concepts behind Bloating After Eating: Mapping symptoms to food intolerances.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "MedlinePlus — Health Topics",
+        "https://medlineplus.gov/healthtopics.html"
+      ],
+      [
+        "NHS — Symptoms",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "CDC — Health Information",
+        "https://www.cdc.gov/health-information/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Bloating After Eating: Mapping symptoms to food intolerances is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what bloating after eating: mapping symptoms to food intolerances means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "dizziness-when-standing-when-is-orthostatic-hypotension-a-concern",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Dizziness When Standing: When is orthostatic hypotension a concern?",
+    "description": "Dizziness When Standing: When is orthostatic hypotension a concern? — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "dizziness, when, standing, is, orthostatic, hypotension, a, concern",
+    "quickSummary": [
+      "Understand the key concepts behind Dizziness When Standing: When is orthostatic hypotension a concern?.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "MedlinePlus — Health Topics",
+        "https://medlineplus.gov/healthtopics.html"
+      ],
+      [
+        "NHS — Symptoms",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "CDC — Health Information",
+        "https://www.cdc.gov/health-information/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Dizziness When Standing: When is orthostatic hypotension a concern? is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what dizziness when standing: when is orthostatic hypotension a concern? means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "tinnitus-management-how-to-stop-the-ringing-in-your-ears",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Tinnitus Management: How to stop the ringing in your ears",
+    "description": "Tinnitus Management: How to stop the ringing in your ears — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "tinnitus, management, how, to, stop, the, ringing, in, your, ears",
+    "quickSummary": [
+      "Understand the key concepts behind Tinnitus Management: How to stop the ringing in your ears.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "MedlinePlus — Health Topics",
+        "https://medlineplus.gov/healthtopics.html"
+      ],
+      [
+        "NHS — Symptoms",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "CDC — Health Information",
+        "https://www.cdc.gov/health-information/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Tinnitus Management: How to stop the ringing in your ears is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what tinnitus management: how to stop the ringing in your ears means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "blurry-vision-suddenly-temporary-strain-versus-ocular-emergencies",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Blurry Vision Suddenly: Temporary strain versus ocular emergencies",
+    "description": "Blurry Vision Suddenly: Temporary strain versus ocular emergencies — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "blurry, vision, suddenly, temporary, strain, versus, ocular, emergencies",
+    "quickSummary": [
+      "Understand the key concepts behind Blurry Vision Suddenly: Temporary strain versus ocular emergencies.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "MedlinePlus — Health Topics",
+        "https://medlineplus.gov/healthtopics.html"
+      ],
+      [
+        "NHS — Symptoms",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "CDC — Health Information",
+        "https://www.cdc.gov/health-information/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Blurry Vision Suddenly: Temporary strain versus ocular emergencies is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what blurry vision suddenly: temporary strain versus ocular emergencies means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "numbness-in-fingers-is-it-carpal-tunnel-syndrome-or-poor-circulation",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Numbness in Fingers: Is it carpal tunnel syndrome or poor circulation?",
+    "description": "Numbness in Fingers: Is it carpal tunnel syndrome or poor circulation? — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "numbness, in, fingers, is, it, carpal, tunnel, syndrome, or, poor, circulation",
+    "quickSummary": [
+      "Understand the key concepts behind Numbness in Fingers: Is it carpal tunnel syndrome or poor circulation?.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "MedlinePlus — Health Topics",
+        "https://medlineplus.gov/healthtopics.html"
+      ],
+      [
+        "NHS — Symptoms",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "CDC — Health Information",
+        "https://www.cdc.gov/health-information/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Numbness in Fingers: Is it carpal tunnel syndrome or poor circulation? is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what numbness in fingers: is it carpal tunnel syndrome or poor circulation? means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "chronic-insomnia-help-re-engineering-your-circadian-rhythm",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Chronic Insomnia Help: Re-engineering your circadian rhythm",
+    "description": "Chronic Insomnia Help: Re-engineering your circadian rhythm — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "chronic, insomnia, help, re-engineering, your, circadian, rhythm",
+    "quickSummary": [
+      "Understand the key concepts behind Chronic Insomnia Help: Re-engineering your circadian rhythm.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "MedlinePlus — Health Topics",
+        "https://medlineplus.gov/healthtopics.html"
+      ],
+      [
+        "NHS — Symptoms",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "CDC — Health Information",
+        "https://www.cdc.gov/health-information/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Chronic Insomnia Help: Re-engineering your circadian rhythm is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what chronic insomnia help: re-engineering your circadian rhythm means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "night-sweats-in-adults-identifying-hormonal-and-systemic-causes",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Night Sweats in Adults: Identifying hormonal and systemic causes",
+    "description": "Night Sweats in Adults: Identifying hormonal and systemic causes — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "night, sweats, in, adults, identifying, hormonal, and, systemic, causes",
+    "quickSummary": [
+      "Understand the key concepts behind Night Sweats in Adults: Identifying hormonal and systemic causes.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "MedlinePlus — Health Topics",
+        "https://medlineplus.gov/healthtopics.html"
+      ],
+      [
+        "NHS — Symptoms",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "CDC — Health Information",
+        "https://www.cdc.gov/health-information/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Night Sweats in Adults: Identifying hormonal and systemic causes is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what night sweats in adults: identifying hormonal and systemic causes means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "swollen-ankles-at-night-recognizing-fluid-retention-and-cardiovascular-flags",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Swollen Ankles at Night: Recognizing fluid retention and cardiovascular flags",
+    "description": "Swollen Ankles at Night: Recognizing fluid retention and cardiovascular flags — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "swollen, ankles, at, night, recognizing, fluid, retention, and, cardiovascular, flags",
+    "quickSummary": [
+      "Understand the key concepts behind Swollen Ankles at Night: Recognizing fluid retention and cardiovascular flags.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "MedlinePlus — Health Topics",
+        "https://medlineplus.gov/healthtopics.html"
+      ],
+      [
+        "NHS — Symptoms",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "CDC — Health Information",
+        "https://www.cdc.gov/health-information/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Swollen Ankles at Night: Recognizing fluid retention and cardiovascular flags is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what swollen ankles at night: recognizing fluid retention and cardiovascular flags means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "restless-leg-syndrome-neurological-triggers-and-home-remedies",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Restless Leg Syndrome: Neurological triggers and home remedies",
+    "description": "Restless Leg Syndrome: Neurological triggers and home remedies — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "restless, leg, syndrome, neurological, triggers, and, home, remedies",
+    "quickSummary": [
+      "Understand the key concepts behind Restless Leg Syndrome: Neurological triggers and home remedies.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "MedlinePlus — Health Topics",
+        "https://medlineplus.gov/healthtopics.html"
+      ],
+      [
+        "NHS — Symptoms",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "CDC — Health Information",
+        "https://www.cdc.gov/health-information/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Restless Leg Syndrome: Neurological triggers and home remedies is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what restless leg syndrome: neurological triggers and home remedies means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "persistent-heart-palpitations-stress-vs-arrhythmias",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Persistent Heart Palpitations: Stress vs. arrhythmias",
+    "description": "Persistent Heart Palpitations: Stress vs. arrhythmias — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "persistent, heart, palpitations, stress, vs., arrhythmias",
+    "quickSummary": [
+      "Understand the key concepts behind Persistent Heart Palpitations: Stress vs. arrhythmias.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "MedlinePlus — Health Topics",
+        "https://medlineplus.gov/healthtopics.html"
+      ],
+      [
+        "NHS — Symptoms",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "CDC — Health Information",
+        "https://www.cdc.gov/health-information/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Persistent Heart Palpitations: Stress vs. arrhythmias is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what persistent heart palpitations: stress vs. arrhythmias means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "loss-of-smell-taste-evaluating-post-viral-and-neurological-symptoms",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Loss of Smell/Taste: Evaluating post-viral and neurological symptoms",
+    "description": "Loss of Smell/Taste: Evaluating post-viral and neurological symptoms — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "loss, of, smell/taste, evaluating, post-viral, and, neurological, symptoms",
+    "quickSummary": [
+      "Understand the key concepts behind Loss of Smell/Taste: Evaluating post-viral and neurological symptoms.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "MedlinePlus — Health Topics",
+        "https://medlineplus.gov/healthtopics.html"
+      ],
+      [
+        "NHS — Symptoms",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "CDC — Health Information",
+        "https://www.cdc.gov/health-information/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Loss of Smell/Taste: Evaluating post-viral and neurological symptoms is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what loss of smell/taste: evaluating post-viral and neurological symptoms means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "skin-rashes-decoded-visual-guide-to-distinguishing-allergic-reactions-from-eczema",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Skin Rashes Decoded: Visual guide to distinguishing allergic reactions from eczema?",
+    "description": "Skin Rashes Decoded: Visual guide to distinguishing allergic reactions from eczema? — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "skin, rashes, decoded, visual, guide, to, distinguishing, allergic, reactions, from, eczema",
+    "quickSummary": [
+      "Understand the key concepts behind Skin Rashes Decoded: Visual guide to distinguishing allergic reactions from eczema?.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "MedlinePlus — Health Topics",
+        "https://medlineplus.gov/healthtopics.html"
+      ],
+      [
+        "NHS — Symptoms",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "CDC — Health Information",
+        "https://www.cdc.gov/health-information/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Skin Rashes Decoded: Visual guide to distinguishing allergic reactions from eczema? is best understood as a symptoms and early warning signs topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what skin rashes decoded: visual guide to distinguishing allergic reactions from eczema? means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "understanding-type-2-diabetes-symptoms-tracking-blood-sugar-and-management",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Understanding Type 2 Diabetes: Symptoms, tracking blood sugar, and management",
+    "description": "Understanding Type 2 Diabetes: Symptoms, tracking blood sugar, and management — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "understanding, type, 2, diabetes, symptoms, tracking, blood, sugar, and, management",
+    "quickSummary": [
+      "Understand the key concepts behind Understanding Type 2 Diabetes: Symptoms, tracking blood sugar, and management.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "NIDDK — Health Information",
+        "https://www.niddk.nih.gov/health-information"
+      ],
+      [
+        "NHLBI — Health Topics",
+        "https://www.nhlbi.nih.gov/health"
+      ],
+      [
+        "CDC — Chronic Disease",
+        "https://www.cdc.gov/chronic-disease/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Understanding Type 2 Diabetes: Symptoms, tracking blood sugar, and management is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what understanding type 2 diabetes: symptoms, tracking blood sugar, and management means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "hypertension-101-decoding-high-blood-pressure-numbers",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Hypertension 101: Decoding high blood pressure numbers",
+    "description": "Hypertension 101: Decoding high blood pressure numbers — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "hypertension, 101, decoding, high, blood, pressure, numbers",
+    "quickSummary": [
+      "Understand the key concepts behind Hypertension 101: Decoding high blood pressure numbers.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "NIDDK — Health Information",
+        "https://www.niddk.nih.gov/health-information"
+      ],
+      [
+        "NHLBI — Health Topics",
+        "https://www.nhlbi.nih.gov/health"
+      ],
+      [
+        "CDC — Chronic Disease",
+        "https://www.cdc.gov/chronic-disease/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Hypertension 101: Decoding high blood pressure numbers is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what hypertension 101: decoding high blood pressure numbers means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "managing-high-cholesterol-dietary-modifications-versus-statin-therapy",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Managing High Cholesterol: Dietary modifications versus statin therapy",
+    "description": "Managing High Cholesterol: Dietary modifications versus statin therapy — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "managing, high, cholesterol, dietary, modifications, versus, statin, therapy",
+    "quickSummary": [
+      "Understand the key concepts behind Managing High Cholesterol: Dietary modifications versus statin therapy.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "NIDDK — Health Information",
+        "https://www.niddk.nih.gov/health-information"
+      ],
+      [
+        "NHLBI — Health Topics",
+        "https://www.nhlbi.nih.gov/health"
+      ],
+      [
+        "CDC — Chronic Disease",
+        "https://www.cdc.gov/chronic-disease/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Managing High Cholesterol: Dietary modifications versus statin therapy is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what managing high cholesterol: dietary modifications versus statin therapy means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "fatty-liver-disease-reversing-hepatic-fat-through-targeted-lifestyle-shifts",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Fatty Liver Disease: Reversing hepatic fat through targeted lifestyle shifts",
+    "description": "Fatty Liver Disease: Reversing hepatic fat through targeted lifestyle shifts — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "fatty, liver, disease, reversing, hepatic, fat, through, targeted, lifestyle, shifts",
+    "quickSummary": [
+      "Understand the key concepts behind Fatty Liver Disease: Reversing hepatic fat through targeted lifestyle shifts.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "NIDDK — Health Information",
+        "https://www.niddk.nih.gov/health-information"
+      ],
+      [
+        "NHLBI — Health Topics",
+        "https://www.nhlbi.nih.gov/health"
+      ],
+      [
+        "CDC — Chronic Disease",
+        "https://www.cdc.gov/chronic-disease/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Fatty Liver Disease: Reversing hepatic fat through targeted lifestyle shifts is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what fatty liver disease: reversing hepatic fat through targeted lifestyle shifts means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "thyroid-disorders-signs-your-metabolism-is-running-too-fast-or-slow",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Thyroid Disorders: Signs your metabolism is running too fast or slow",
+    "description": "Thyroid Disorders: Signs your metabolism is running too fast or slow — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "thyroid, disorders, signs, your, metabolism, is, running, too, fast, or, slow",
+    "quickSummary": [
+      "Understand the key concepts behind Thyroid Disorders: Signs your metabolism is running too fast or slow.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "NIDDK — Health Information",
+        "https://www.niddk.nih.gov/health-information"
+      ],
+      [
+        "NHLBI — Health Topics",
+        "https://www.nhlbi.nih.gov/health"
+      ],
+      [
+        "CDC — Chronic Disease",
+        "https://www.cdc.gov/chronic-disease/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Thyroid Disorders: Signs your metabolism is running too fast or slow is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what thyroid disorders: signs your metabolism is running too fast or slow means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "cardiovascular-disease-the-complete-guide-to-heart-disease-prevention",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Cardiovascular Disease: The complete guide to heart disease prevention",
+    "description": "Cardiovascular Disease: The complete guide to heart disease prevention — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "cardiovascular, disease, the, complete, guide, to, heart, prevention",
+    "quickSummary": [
+      "Understand the key concepts behind Cardiovascular Disease: The complete guide to heart disease prevention.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "NIDDK — Health Information",
+        "https://www.niddk.nih.gov/health-information"
+      ],
+      [
+        "NHLBI — Health Topics",
+        "https://www.nhlbi.nih.gov/health"
+      ],
+      [
+        "CDC — Chronic Disease",
+        "https://www.cdc.gov/chronic-disease/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Cardiovascular Disease: The complete guide to heart disease prevention is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what cardiovascular disease: the complete guide to heart disease prevention means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "metabolic-syndrome-connecting-the-dots-between-obesity-insulin-and-blood-pressure",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Metabolic Syndrome: Connecting the dots between obesity, insulin, and blood pressure",
+    "description": "Metabolic Syndrome: Connecting the dots between obesity, insulin, and blood pressure — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "metabolic, syndrome, connecting, the, dots, between, obesity, insulin, and, blood, pressure",
+    "quickSummary": [
+      "Understand the key concepts behind Metabolic Syndrome: Connecting the dots between obesity, insulin, and blood pressure.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "NIDDK — Health Information",
+        "https://www.niddk.nih.gov/health-information"
+      ],
+      [
+        "NHLBI — Health Topics",
+        "https://www.nhlbi.nih.gov/health"
+      ],
+      [
+        "CDC — Chronic Disease",
+        "https://www.cdc.gov/chronic-disease/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Metabolic Syndrome: Connecting the dots between obesity, insulin, and blood pressure is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what metabolic syndrome: connecting the dots between obesity, insulin, and blood pressure means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "pre-diabetes-intervention-scientific-strategies-to-halt-progression",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Pre-Diabetes Intervention: Scientific strategies to halt progression",
+    "description": "Pre-Diabetes Intervention: Scientific strategies to halt progression — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "pre-diabetes, intervention, scientific, strategies, to, halt, progression",
+    "quickSummary": [
+      "Understand the key concepts behind Pre-Diabetes Intervention: Scientific strategies to halt progression.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "NIDDK — Health Information",
+        "https://www.niddk.nih.gov/health-information"
+      ],
+      [
+        "NHLBI — Health Topics",
+        "https://www.nhlbi.nih.gov/health"
+      ],
+      [
+        "CDC — Chronic Disease",
+        "https://www.cdc.gov/chronic-disease/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Pre-Diabetes Intervention: Scientific strategies to halt progression is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what pre-diabetes intervention: scientific strategies to halt progression means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "anemia-types-causes-symptoms-and-building-iron-reserves",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Anemia Types: Causes, symptoms, and building iron reserves",
+    "description": "Anemia Types: Causes, symptoms, and building iron reserves — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "anemia, types, causes, symptoms, and, building, iron, reserves",
+    "quickSummary": [
+      "Understand the key concepts behind Anemia Types: Causes, symptoms, and building iron reserves.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "NIDDK — Health Information",
+        "https://www.niddk.nih.gov/health-information"
+      ],
+      [
+        "NHLBI — Health Topics",
+        "https://www.nhlbi.nih.gov/health"
+      ],
+      [
+        "CDC — Chronic Disease",
+        "https://www.cdc.gov/chronic-disease/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Anemia Types: Causes, symptoms, and building iron reserves is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what anemia types: causes, symptoms, and building iron reserves means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "gout-flares-dietary-triggers-purine-management-and-long-term-care",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Gout Flares: Dietary triggers, purine management, and long-term care",
+    "description": "Gout Flares: Dietary triggers, purine management, and long-term care — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "gout, flares, dietary, triggers, purine, management, and, long-term, care",
+    "quickSummary": [
+      "Understand the key concepts behind Gout Flares: Dietary triggers, purine management, and long-term care.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "NIDDK — Health Information",
+        "https://www.niddk.nih.gov/health-information"
+      ],
+      [
+        "NHLBI — Health Topics",
+        "https://www.nhlbi.nih.gov/health"
+      ],
+      [
+        "CDC — Chronic Disease",
+        "https://www.cdc.gov/chronic-disease/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Gout Flares: Dietary triggers, purine management, and long-term care is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what gout flares: dietary triggers, purine management, and long-term care means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "gut-health-tips-living-with-irritable-bowel-syndrome-ibs",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Gut Health Tips: Living with Irritable Bowel Syndrome (IBS)",
+    "description": "Gut Health Tips: Living with Irritable Bowel Syndrome (IBS) — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "gut, health, tips, living, with, irritable, bowel, syndrome, (ibs)",
+    "quickSummary": [
+      "Understand the key concepts behind Gut Health Tips: Living with Irritable Bowel Syndrome (IBS).",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "NIDDK — Health Information",
+        "https://www.niddk.nih.gov/health-information"
+      ],
+      [
+        "NHLBI — Health Topics",
+        "https://www.nhlbi.nih.gov/health"
+      ],
+      [
+        "CDC — Chronic Disease",
+        "https://www.cdc.gov/chronic-disease/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Gut Health Tips: Living with Irritable Bowel Syndrome (IBS) is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what gut health tips: living with irritable bowel syndrome (ibs) means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "celiac-disease-vs-gluten-intolerance-understanding-the-critical-differences",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Celiac Disease vs. Gluten Intolerance: Understanding the critical differences",
+    "description": "Celiac Disease vs. Gluten Intolerance: Understanding the critical differences — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "celiac, disease, vs., gluten, intolerance, understanding, the, critical, differences",
+    "quickSummary": [
+      "Understand the key concepts behind Celiac Disease vs. Gluten Intolerance: Understanding the critical differences.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "NIDDK — Health Information",
+        "https://www.niddk.nih.gov/health-information"
+      ],
+      [
+        "NHLBI — Health Topics",
+        "https://www.nhlbi.nih.gov/health"
+      ],
+      [
+        "CDC — Chronic Disease",
+        "https://www.cdc.gov/chronic-disease/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Celiac Disease vs. Gluten Intolerance: Understanding the critical differences is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what celiac disease vs. gluten intolerance: understanding the critical differences means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "rheumatoid-arthritis-managing-chronic-joint-inflammation-and-pain",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Rheumatoid Arthritis: Managing chronic joint inflammation and pain",
+    "description": "Rheumatoid Arthritis: Managing chronic joint inflammation and pain — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "rheumatoid, arthritis, managing, chronic, joint, inflammation, and, pain",
+    "quickSummary": [
+      "Understand the key concepts behind Rheumatoid Arthritis: Managing chronic joint inflammation and pain.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "NIDDK — Health Information",
+        "https://www.niddk.nih.gov/health-information"
+      ],
+      [
+        "NHLBI — Health Topics",
+        "https://www.nhlbi.nih.gov/health"
+      ],
+      [
+        "CDC — Chronic Disease",
+        "https://www.cdc.gov/chronic-disease/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Rheumatoid Arthritis: Managing chronic joint inflammation and pain is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what rheumatoid arthritis: managing chronic joint inflammation and pain means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "leaky-gut-syndrome-separating-medical-myth-from-clinical-fact",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Leaky Gut Syndrome: Separating medical myth from clinical fact",
+    "description": "Leaky Gut Syndrome: Separating medical myth from clinical fact — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "leaky, gut, syndrome, separating, medical, myth, from, clinical, fact",
+    "quickSummary": [
+      "Understand the key concepts behind Leaky Gut Syndrome: Separating medical myth from clinical fact.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "NIDDK — Health Information",
+        "https://www.niddk.nih.gov/health-information"
+      ],
+      [
+        "NHLBI — Health Topics",
+        "https://www.nhlbi.nih.gov/health"
+      ],
+      [
+        "CDC — Chronic Disease",
+        "https://www.cdc.gov/chronic-disease/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Leaky Gut Syndrome: Separating medical myth from clinical fact is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what leaky gut syndrome: separating medical myth from clinical fact means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "gerd-and-acid-reflux-long-term-damage-prevention-and-treatment-adjustments",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "GERD & Acid Reflux: Long-term damage prevention and treatment adjustments",
+    "description": "GERD & Acid Reflux: Long-term damage prevention and treatment adjustments — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "gerd, &, acid, reflux, long-term, damage, prevention, and, treatment, adjustments",
+    "quickSummary": [
+      "Understand the key concepts behind GERD & Acid Reflux: Long-term damage prevention and treatment adjustments.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "NIDDK — Health Information",
+        "https://www.niddk.nih.gov/health-information"
+      ],
+      [
+        "NHLBI — Health Topics",
+        "https://www.nhlbi.nih.gov/health"
+      ],
+      [
+        "CDC — Chronic Disease",
+        "https://www.cdc.gov/chronic-disease/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "GERD & Acid Reflux: Long-term damage prevention and treatment adjustments is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what gerd & acid reflux: long-term damage prevention and treatment adjustments means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "autoimmune-flare-ups-identifying-environmental-and-stress-based-triggers",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Autoimmune Flare-ups: Identifying environmental and stress-based triggers",
+    "description": "Autoimmune Flare-ups: Identifying environmental and stress-based triggers — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "autoimmune, flare-ups, identifying, environmental, and, stress-based, triggers",
+    "quickSummary": [
+      "Understand the key concepts behind Autoimmune Flare-ups: Identifying environmental and stress-based triggers.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "NIDDK — Health Information",
+        "https://www.niddk.nih.gov/health-information"
+      ],
+      [
+        "NHLBI — Health Topics",
+        "https://www.nhlbi.nih.gov/health"
+      ],
+      [
+        "CDC — Chronic Disease",
+        "https://www.cdc.gov/chronic-disease/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Autoimmune Flare-ups: Identifying environmental and stress-based triggers is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what autoimmune flare-ups: identifying environmental and stress-based triggers means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "fibromyalgia-guide-navigating-widespread-chronic-muscular-pain",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Fibromyalgia Guide: Navigating widespread chronic muscular pain",
+    "description": "Fibromyalgia Guide: Navigating widespread chronic muscular pain — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "fibromyalgia, guide, navigating, widespread, chronic, muscular, pain",
+    "quickSummary": [
+      "Understand the key concepts behind Fibromyalgia Guide: Navigating widespread chronic muscular pain.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "NIDDK — Health Information",
+        "https://www.niddk.nih.gov/health-information"
+      ],
+      [
+        "NHLBI — Health Topics",
+        "https://www.nhlbi.nih.gov/health"
+      ],
+      [
+        "CDC — Chronic Disease",
+        "https://www.cdc.gov/chronic-disease/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Fibromyalgia Guide: Navigating widespread chronic muscular pain is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what fibromyalgia guide: navigating widespread chronic muscular pain means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "osteoarthritis-vs-ra-complete-structural-and-treatment-comparison",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Osteoarthritis vs. RA: Complete structural and treatment comparison",
+    "description": "Osteoarthritis vs. RA: Complete structural and treatment comparison — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "osteoarthritis, vs., ra, complete, structural, and, treatment, comparison",
+    "quickSummary": [
+      "Understand the key concepts behind Osteoarthritis vs. RA: Complete structural and treatment comparison.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "NIDDK — Health Information",
+        "https://www.niddk.nih.gov/health-information"
+      ],
+      [
+        "NHLBI — Health Topics",
+        "https://www.nhlbi.nih.gov/health"
+      ],
+      [
+        "CDC — Chronic Disease",
+        "https://www.cdc.gov/chronic-disease/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Osteoarthritis vs. RA: Complete structural and treatment comparison is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what osteoarthritis vs. ra: complete structural and treatment comparison means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "crohns-and-colitis-nutritional-roadmaps-for-inflammatory-bowel-diseases",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Crohn's & Colitis: Nutritional roadmaps for inflammatory bowel diseases",
+    "description": "Crohn's & Colitis: Nutritional roadmaps for inflammatory bowel diseases — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "crohn's, &, colitis, nutritional, roadmaps, for, inflammatory, bowel, diseases",
+    "quickSummary": [
+      "Understand the key concepts behind Crohn's & Colitis: Nutritional roadmaps for inflammatory bowel diseases.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "NIDDK — Health Information",
+        "https://www.niddk.nih.gov/health-information"
+      ],
+      [
+        "NHLBI — Health Topics",
+        "https://www.nhlbi.nih.gov/health"
+      ],
+      [
+        "CDC — Chronic Disease",
+        "https://www.cdc.gov/chronic-disease/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Crohn's & Colitis: Nutritional roadmaps for inflammatory bowel diseases is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what crohn's & colitis: nutritional roadmaps for inflammatory bowel diseases means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "psoriasis-care-managing-systemic-inflammation-from-skin-to-joints",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Psoriasis Care: Managing systemic inflammation from skin to joints",
+    "description": "Psoriasis Care: Managing systemic inflammation from skin to joints — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "psoriasis, care, managing, systemic, inflammation, from, skin, to, joints",
+    "quickSummary": [
+      "Understand the key concepts behind Psoriasis Care: Managing systemic inflammation from skin to joints.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "NIDDK — Health Information",
+        "https://www.niddk.nih.gov/health-information"
+      ],
+      [
+        "NHLBI — Health Topics",
+        "https://www.nhlbi.nih.gov/health"
+      ],
+      [
+        "CDC — Chronic Disease",
+        "https://www.cdc.gov/chronic-disease/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Psoriasis Care: Managing systemic inflammation from skin to joints is best understood as a chronic conditions and metabolic health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what psoriasis care: managing systemic inflammation from skin to joints means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "knee-replacement-surgery-recovery-timelines-physical-therapy-and-long-term-success",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Knee Replacement Surgery: Recovery timelines, physical therapy, and long-term success",
+    "description": "Knee Replacement Surgery: Recovery timelines, physical therapy, and long-term success — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "knee, replacement, surgery, recovery, timelines, physical, therapy, and, long-term, success",
+    "quickSummary": [
+      "Understand the key concepts behind Knee Replacement Surgery: Recovery timelines, physical therapy, and long-term success.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "MedlinePlus — Medical Tests",
+        "https://medlineplus.gov/lab-tests/"
+      ],
+      [
+        "NHS — Treatment",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "FDA — Medical Devices",
+        "https://www.fda.gov/medical-devices"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Knee Replacement Surgery: Recovery timelines, physical therapy, and long-term success is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what knee replacement surgery: recovery timelines, physical therapy, and long-term success means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "hip-arthroplasty-explainer-what-to-expect-during-your-hospital-stay",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Hip Arthroplasty Explainer: What to expect during your hospital stay",
+    "description": "Hip Arthroplasty Explainer: What to expect during your hospital stay — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "hip, arthroplasty, explainer, what, to, expect, during, your, hospital, stay",
+    "quickSummary": [
+      "Understand the key concepts behind Hip Arthroplasty Explainer: What to expect during your hospital stay.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "MedlinePlus — Medical Tests",
+        "https://medlineplus.gov/lab-tests/"
+      ],
+      [
+        "NHS — Treatment",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "FDA — Medical Devices",
+        "https://www.fda.gov/medical-devices"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Hip Arthroplasty Explainer: What to expect during your hospital stay is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what hip arthroplasty explainer: what to expect during your hospital stay means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "lasik-eye-surgery-evaluating-candidacy-risks-and-vision-recovery-outcomes",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "LASIK Eye Surgery: Evaluating candidacy, risks, and vision recovery outcomes",
+    "description": "LASIK Eye Surgery: Evaluating candidacy, risks, and vision recovery outcomes — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "lasik, eye, surgery, evaluating, candidacy, risks, and, vision, recovery, outcomes",
+    "quickSummary": [
+      "Understand the key concepts behind LASIK Eye Surgery: Evaluating candidacy, risks, and vision recovery outcomes.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "MedlinePlus — Medical Tests",
+        "https://medlineplus.gov/lab-tests/"
+      ],
+      [
+        "NHS — Treatment",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "FDA — Medical Devices",
+        "https://www.fda.gov/medical-devices"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "LASIK Eye Surgery: Evaluating candidacy, risks, and vision recovery outcomes is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what lasik eye surgery: evaluating candidacy, risks, and vision recovery outcomes means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "gallbladder-removal-adapting-your-post-operative-digestive-diet",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Gallbladder Removal: Adapting your post-operative digestive diet",
+    "description": "Gallbladder Removal: Adapting your post-operative digestive diet — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "gallbladder, removal, adapting, your, post-operative, digestive, diet",
+    "quickSummary": [
+      "Understand the key concepts behind Gallbladder Removal: Adapting your post-operative digestive diet.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "MedlinePlus — Medical Tests",
+        "https://medlineplus.gov/lab-tests/"
+      ],
+      [
+        "NHS — Treatment",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "FDA — Medical Devices",
+        "https://www.fda.gov/medical-devices"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Gallbladder Removal: Adapting your post-operative digestive diet is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what gallbladder removal: adapting your post-operative digestive diet means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "c-section-recovery-physical-healing-core-engagement-and-scar-tissue-management",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "C-Section Recovery: Physical healing, core engagement, and scar tissue management",
+    "description": "C-Section Recovery: Physical healing, core engagement, and scar tissue management — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "c-section, recovery, physical, healing, core, engagement, and, scar, tissue, management",
+    "quickSummary": [
+      "Understand the key concepts behind C-Section Recovery: Physical healing, core engagement, and scar tissue management.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "MedlinePlus — Medical Tests",
+        "https://medlineplus.gov/lab-tests/"
+      ],
+      [
+        "NHS — Treatment",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "FDA — Medical Devices",
+        "https://www.fda.gov/medical-devices"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "C-Section Recovery: Physical healing, core engagement, and scar tissue management is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what c-section recovery: physical healing, core engagement, and scar tissue management means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "cataract-surgery-options-monofocal-vs-premium-multifocal-lenses",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Cataract Surgery Options: Monofocal vs. premium multifocal lenses",
+    "description": "Cataract Surgery Options: Monofocal vs. premium multifocal lenses — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "cataract, surgery, options, monofocal, vs., premium, multifocal, lenses",
+    "quickSummary": [
+      "Understand the key concepts behind Cataract Surgery Options: Monofocal vs. premium multifocal lenses.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "MedlinePlus — Medical Tests",
+        "https://medlineplus.gov/lab-tests/"
+      ],
+      [
+        "NHS — Treatment",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "FDA — Medical Devices",
+        "https://www.fda.gov/medical-devices"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Cataract Surgery Options: Monofocal vs. premium multifocal lenses is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what cataract surgery options: monofocal vs. premium multifocal lenses means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "bariatric-surgery-pathways-evaluating-gastric-sleeve-vs-bypass-benefits",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Bariatric Surgery Pathways: Evaluating gastric sleeve vs. bypass benefits",
+    "description": "Bariatric Surgery Pathways: Evaluating gastric sleeve vs. bypass benefits — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "bariatric, surgery, pathways, evaluating, gastric, sleeve, vs., bypass, benefits",
+    "quickSummary": [
+      "Understand the key concepts behind Bariatric Surgery Pathways: Evaluating gastric sleeve vs. bypass benefits.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "MedlinePlus — Medical Tests",
+        "https://medlineplus.gov/lab-tests/"
+      ],
+      [
+        "NHS — Treatment",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "FDA — Medical Devices",
+        "https://www.fda.gov/medical-devices"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Bariatric Surgery Pathways: Evaluating gastric sleeve vs. bypass benefits is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what bariatric surgery pathways: evaluating gastric sleeve vs. bypass benefits means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "endoscopy-vs-colonoscopy-preparing-your-body-for-preventative-screenings",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Endoscopy vs. Colonoscopy: Preparing your body for preventative screenings",
+    "description": "Endoscopy vs. Colonoscopy: Preparing your body for preventative screenings — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "endoscopy, vs., colonoscopy, preparing, your, body, for, preventative, screenings",
+    "quickSummary": [
+      "Understand the key concepts behind Endoscopy vs. Colonoscopy: Preparing your body for preventative screenings.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "MedlinePlus — Medical Tests",
+        "https://medlineplus.gov/lab-tests/"
+      ],
+      [
+        "NHS — Treatment",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "FDA — Medical Devices",
+        "https://www.fda.gov/medical-devices"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Endoscopy vs. Colonoscopy: Preparing your body for preventative screenings is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what endoscopy vs. colonoscopy: preparing your body for preventative screenings means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "hernia-repair-techniques-laparoscopic-vs-open-surgery-differences",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Hernia Repair Techniques: Laparoscopic vs. open surgery differences",
+    "description": "Hernia Repair Techniques: Laparoscopic vs. open surgery differences — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "hernia, repair, techniques, laparoscopic, vs., open, surgery, differences",
+    "quickSummary": [
+      "Understand the key concepts behind Hernia Repair Techniques: Laparoscopic vs. open surgery differences.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "MedlinePlus — Medical Tests",
+        "https://medlineplus.gov/lab-tests/"
+      ],
+      [
+        "NHS — Treatment",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "FDA — Medical Devices",
+        "https://www.fda.gov/medical-devices"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Hernia Repair Techniques: Laparoscopic vs. open surgery differences is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what hernia repair techniques: laparoscopic vs. open surgery differences means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "wisdom-teeth-extraction-preventing-dry-socket-during-recovery",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Wisdom Teeth Extraction: Preventing dry socket during recovery",
+    "description": "Wisdom Teeth Extraction: Preventing dry socket during recovery — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "wisdom, teeth, extraction, preventing, dry, socket, during, recovery",
+    "quickSummary": [
+      "Understand the key concepts behind Wisdom Teeth Extraction: Preventing dry socket during recovery.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "MedlinePlus — Medical Tests",
+        "https://medlineplus.gov/lab-tests/"
+      ],
+      [
+        "NHS — Treatment",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "FDA — Medical Devices",
+        "https://www.fda.gov/medical-devices"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Wisdom Teeth Extraction: Preventing dry socket during recovery is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what wisdom teeth extraction: preventing dry socket during recovery means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "physical-therapy-for-herniated-discs-core-stabilization-exercises",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Physical Therapy for Herniated Discs: Core stabilization exercises",
+    "description": "Physical Therapy for Herniated Discs: Core stabilization exercises — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "physical, therapy, for, herniated, discs, core, stabilization, exercises",
+    "quickSummary": [
+      "Understand the key concepts behind Physical Therapy for Herniated Discs: Core stabilization exercises.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "MedlinePlus — Medical Tests",
+        "https://medlineplus.gov/lab-tests/"
+      ],
+      [
+        "NHS — Treatment",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "FDA — Medical Devices",
+        "https://www.fda.gov/medical-devices"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Physical Therapy for Herniated Discs: Core stabilization exercises is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what physical therapy for herniated discs: core stabilization exercises means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "ivf-treatment-guide-navigating-cycles-success-factors-and-hormone-therapy",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "IVF Treatment Guide: Navigating cycles, success factors, and hormone therapy",
+    "description": "IVF Treatment Guide: Navigating cycles, success factors, and hormone therapy — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "ivf, treatment, guide, navigating, cycles, success, factors, and, hormone, therapy",
+    "quickSummary": [
+      "Understand the key concepts behind IVF Treatment Guide: Navigating cycles, success factors, and hormone therapy.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "MedlinePlus — Medical Tests",
+        "https://medlineplus.gov/lab-tests/"
+      ],
+      [
+        "NHS — Treatment",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "FDA — Medical Devices",
+        "https://www.fda.gov/medical-devices"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "IVF Treatment Guide: Navigating cycles, success factors, and hormone therapy is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what ivf treatment guide: navigating cycles, success factors, and hormone therapy means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "chiropractic-care-for-neck-pain-clinical-safety-and-manual-therapy",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Chiropractic Care for Neck Pain: Clinical safety and manual therapy",
+    "description": "Chiropractic Care for Neck Pain: Clinical safety and manual therapy — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "chiropractic, care, for, neck, pain, clinical, safety, and, manual, therapy",
+    "quickSummary": [
+      "Understand the key concepts behind Chiropractic Care for Neck Pain: Clinical safety and manual therapy.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "MedlinePlus — Medical Tests",
+        "https://medlineplus.gov/lab-tests/"
+      ],
+      [
+        "NHS — Treatment",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "FDA — Medical Devices",
+        "https://www.fda.gov/medical-devices"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Chiropractic Care for Neck Pain: Clinical safety and manual therapy is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what chiropractic care for neck pain: clinical safety and manual therapy means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "dialysis-modalities-comparing-hemodialysis-and-peritoneal-options",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Dialysis Modalities: Comparing hemodialysis and peritoneal options",
+    "description": "Dialysis Modalities: Comparing hemodialysis and peritoneal options — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "dialysis, modalities, comparing, hemodialysis, and, peritoneal, options",
+    "quickSummary": [
+      "Understand the key concepts behind Dialysis Modalities: Comparing hemodialysis and peritoneal options.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "MedlinePlus — Medical Tests",
+        "https://medlineplus.gov/lab-tests/"
+      ],
+      [
+        "NHS — Treatment",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "FDA — Medical Devices",
+        "https://www.fda.gov/medical-devices"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Dialysis Modalities: Comparing hemodialysis and peritoneal options is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what dialysis modalities: comparing hemodialysis and peritoneal options means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "cognitive-behavioral-therapy-cbt-how-it-rewires-chronic-anxiety-patterns",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Cognitive Behavioral Therapy (CBT): How it rewires chronic anxiety patterns",
+    "description": "Cognitive Behavioral Therapy (CBT): How it rewires chronic anxiety patterns — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "cognitive, behavioral, therapy, (cbt), how, it, rewires, chronic, anxiety, patterns",
+    "quickSummary": [
+      "Understand the key concepts behind Cognitive Behavioral Therapy (CBT): How it rewires chronic anxiety patterns.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "MedlinePlus — Medical Tests",
+        "https://medlineplus.gov/lab-tests/"
+      ],
+      [
+        "NHS — Treatment",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "FDA — Medical Devices",
+        "https://www.fda.gov/medical-devices"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Cognitive Behavioral Therapy (CBT): How it rewires chronic anxiety patterns is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what cognitive behavioral therapy (cbt): how it rewires chronic anxiety patterns means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "sleep-apnea-cpap-therapy-adapting-to-masks-and-structural-alternatives",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Sleep Apnea CPAP Therapy: Adapting to masks and structural alternatives",
+    "description": "Sleep Apnea CPAP Therapy: Adapting to masks and structural alternatives — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "sleep, apnea, cpap, therapy, adapting, to, masks, and, structural, alternatives",
+    "quickSummary": [
+      "Understand the key concepts behind Sleep Apnea CPAP Therapy: Adapting to masks and structural alternatives.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "MedlinePlus — Medical Tests",
+        "https://medlineplus.gov/lab-tests/"
+      ],
+      [
+        "NHS — Treatment",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "FDA — Medical Devices",
+        "https://www.fda.gov/medical-devices"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Sleep Apnea CPAP Therapy: Adapting to masks and structural alternatives is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what sleep apnea cpap therapy: adapting to masks and structural alternatives means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "occupational-therapy-regaining-independence-after-a-major-stroke",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Occupational Therapy: Regaining independence after a major stroke",
+    "description": "Occupational Therapy: Regaining independence after a major stroke — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "occupational, therapy, regaining, independence, after, a, major, stroke",
+    "quickSummary": [
+      "Understand the key concepts behind Occupational Therapy: Regaining independence after a major stroke.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "MedlinePlus — Medical Tests",
+        "https://medlineplus.gov/lab-tests/"
+      ],
+      [
+        "NHS — Treatment",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "FDA — Medical Devices",
+        "https://www.fda.gov/medical-devices"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Occupational Therapy: Regaining independence after a major stroke is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what occupational therapy: regaining independence after a major stroke means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "cardiac-rehabilitation-safe-training-guidelines-after-a-heart-attack",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Cardiac Rehabilitation: Safe training guidelines after a heart attack",
+    "description": "Cardiac Rehabilitation: Safe training guidelines after a heart attack — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "cardiac, rehabilitation, safe, training, guidelines, after, a, heart, attack",
+    "quickSummary": [
+      "Understand the key concepts behind Cardiac Rehabilitation: Safe training guidelines after a heart attack.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "MedlinePlus — Medical Tests",
+        "https://medlineplus.gov/lab-tests/"
+      ],
+      [
+        "NHS — Treatment",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "FDA — Medical Devices",
+        "https://www.fda.gov/medical-devices"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Cardiac Rehabilitation: Safe training guidelines after a heart attack is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what cardiac rehabilitation: safe training guidelines after a heart attack means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "speech-therapy-for-adults-overcoming-neurological-speech-deficits",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Speech Therapy for Adults: Overcoming neurological speech deficits",
+    "description": "Speech Therapy for Adults: Overcoming neurological speech deficits — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "speech, therapy, for, adults, overcoming, neurological, deficits",
+    "quickSummary": [
+      "Understand the key concepts behind Speech Therapy for Adults: Overcoming neurological speech deficits.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "MedlinePlus — Medical Tests",
+        "https://medlineplus.gov/lab-tests/"
+      ],
+      [
+        "NHS — Treatment",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "FDA — Medical Devices",
+        "https://www.fda.gov/medical-devices"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Speech Therapy for Adults: Overcoming neurological speech deficits is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what speech therapy for adults: overcoming neurological speech deficits means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "acupuncture-for-pain-management-exploring-the-clinical-evidence",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Acupuncture for Pain Management: Exploring the clinical evidence",
+    "description": "Acupuncture for Pain Management: Exploring the clinical evidence — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "acupuncture, for, pain, management, exploring, the, clinical, evidence",
+    "quickSummary": [
+      "Understand the key concepts behind Acupuncture for Pain Management: Exploring the clinical evidence.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "MedlinePlus — Medical Tests",
+        "https://medlineplus.gov/lab-tests/"
+      ],
+      [
+        "NHS — Treatment",
+        "https://www.nhs.uk/conditions/"
+      ],
+      [
+        "FDA — Medical Devices",
+        "https://www.fda.gov/medical-devices"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Acupuncture for Pain Management: Exploring the clinical evidence is best understood as a treatments, procedures, rehabilitation and clinical care topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what acupuncture for pain management: exploring the clinical evidence means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "healthy-eating-habits-establishing-sustainable-macronutrient-balances",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Healthy Eating Habits: Establishing sustainable macronutrient balances",
+    "description": "Healthy Eating Habits: Establishing sustainable macronutrient balances — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "healthy, eating, habits, establishing, sustainable, macronutrient, balances",
+    "quickSummary": [
+      "Understand the key concepts behind Healthy Eating Habits: Establishing sustainable macronutrient balances.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "CDC — Healthy Living",
+        "https://www.cdc.gov/healthy-weight-growth/"
+      ],
+      [
+        "WHO — Healthy Diet",
+        "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
+      ],
+      [
+        "NHS — Live Well",
+        "https://www.nhs.uk/live-well/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Healthy Eating Habits: Establishing sustainable macronutrient balances is best understood as a preventive health and everyday health literacy topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what healthy eating habits: establishing sustainable macronutrient balances means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "mindful-eating-practices-overcoming-emotional-eating-cycles",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Mindful Eating Practices: Overcoming emotional eating cycles",
+    "description": "Mindful Eating Practices: Overcoming emotional eating cycles — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "mindful, eating, practices, overcoming, emotional, cycles",
+    "quickSummary": [
+      "Understand the key concepts behind Mindful Eating Practices: Overcoming emotional eating cycles.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "CDC — Healthy Living",
+        "https://www.cdc.gov/healthy-weight-growth/"
+      ],
+      [
+        "WHO — Healthy Diet",
+        "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
+      ],
+      [
+        "NHS — Live Well",
+        "https://www.nhs.uk/live-well/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Mindful Eating Practices: Overcoming emotional eating cycles is best understood as a preventive health and everyday health literacy topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what mindful eating practices: overcoming emotional eating cycles means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "mediterranean-diet-framework-why-it-remains-the-gold-standard-for-heart-health",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Mediterranean Diet Framework: Why it remains the gold standard for heart health",
+    "description": "Mediterranean Diet Framework: Why it remains the gold standard for heart health — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "mediterranean, diet, framework, why, it, remains, the, gold, standard, for, heart, health",
+    "quickSummary": [
+      "Understand the key concepts behind Mediterranean Diet Framework: Why it remains the gold standard for heart health.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "CDC — Healthy Living",
+        "https://www.cdc.gov/healthy-weight-growth/"
+      ],
+      [
+        "WHO — Healthy Diet",
+        "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
+      ],
+      [
+        "NHS — Live Well",
+        "https://www.nhs.uk/live-well/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Mediterranean Diet Framework: Why it remains the gold standard for heart health is best understood as a preventive health and everyday health literacy topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what mediterranean diet framework: why it remains the gold standard for heart health means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "hydration-science-calculating-your-exact-fluid-and-electrolyte-needs",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Hydration Science: Calculating your exact fluid and electrolyte needs",
+    "description": "Hydration Science: Calculating your exact fluid and electrolyte needs — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "hydration, science, calculating, your, exact, fluid, and, electrolyte, needs",
+    "quickSummary": [
+      "Understand the key concepts behind Hydration Science: Calculating your exact fluid and electrolyte needs.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "CDC — Healthy Living",
+        "https://www.cdc.gov/healthy-weight-growth/"
+      ],
+      [
+        "WHO — Healthy Diet",
+        "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
+      ],
+      [
+        "NHS — Live Well",
+        "https://www.nhs.uk/live-well/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Hydration Science: Calculating your exact fluid and electrolyte needs is best understood as a preventive health and everyday health literacy topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what hydration science: calculating your exact fluid and electrolyte needs means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "processed-foods-vs-whole-foods-cellular-impacts-on-cellular-longevity",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Processed Foods vs. Whole Foods: Cellular impacts on cellular longevity",
+    "description": "Processed Foods vs. Whole Foods: Cellular impacts on cellular longevity — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "processed, foods, vs., whole, cellular, impacts, on, longevity",
+    "quickSummary": [
+      "Understand the key concepts behind Processed Foods vs. Whole Foods: Cellular impacts on cellular longevity.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "CDC — Healthy Living",
+        "https://www.cdc.gov/healthy-weight-growth/"
+      ],
+      [
+        "WHO — Healthy Diet",
+        "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
+      ],
+      [
+        "NHS — Live Well",
+        "https://www.nhs.uk/live-well/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Processed Foods vs. Whole Foods: Cellular impacts on cellular longevity is best understood as a preventive health and everyday health literacy topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what processed foods vs. whole foods: cellular impacts on cellular longevity means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "plant-based-nutrition-ensuring-adequate-b12-iron-and-protein-intake",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Plant-Based Nutrition: Ensuring adequate B12, iron, and protein intake",
+    "description": "Plant-Based Nutrition: Ensuring adequate B12, iron, and protein intake — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "plant-based, nutrition, ensuring, adequate, b12, iron, and, protein, intake",
+    "quickSummary": [
+      "Understand the key concepts behind Plant-Based Nutrition: Ensuring adequate B12, iron, and protein intake.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "CDC — Healthy Living",
+        "https://www.cdc.gov/healthy-weight-growth/"
+      ],
+      [
+        "WHO — Healthy Diet",
+        "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
+      ],
+      [
+        "NHS — Live Well",
+        "https://www.nhs.uk/live-well/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Plant-Based Nutrition: Ensuring adequate B12, iron, and protein intake is best understood as a preventive health and everyday health literacy topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what plant-based nutrition: ensuring adequate b12, iron, and protein intake means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "posture-correction-routines-undoing-the-damage-of-sedentary-desk-work",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Posture Correction Routines: Undoing the damage of sedentary desk work",
+    "description": "Posture Correction Routines: Undoing the damage of sedentary desk work — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "posture, correction, routines, undoing, the, damage, of, sedentary, desk, work",
+    "quickSummary": [
+      "Understand the key concepts behind Posture Correction Routines: Undoing the damage of sedentary desk work.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "CDC — Healthy Living",
+        "https://www.cdc.gov/healthy-weight-growth/"
+      ],
+      [
+        "WHO — Healthy Diet",
+        "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
+      ],
+      [
+        "NHS — Live Well",
+        "https://www.nhs.uk/live-well/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Posture Correction Routines: Undoing the damage of sedentary desk work is best understood as a preventive health and everyday health literacy topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what posture correction routines: undoing the damage of sedentary desk work means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "flexibility-vs-mobility-why-stretching-alone-wont-fix-tight-joints",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Flexibility vs. Mobility: Why stretching alone won’t fix tight joints",
+    "description": "Flexibility vs. Mobility: Why stretching alone won’t fix tight joints — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "flexibility, vs., mobility, why, stretching, alone, won’t, fix, tight, joints",
+    "quickSummary": [
+      "Understand the key concepts behind Flexibility vs. Mobility: Why stretching alone won’t fix tight joints.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "CDC — Healthy Living",
+        "https://www.cdc.gov/healthy-weight-growth/"
+      ],
+      [
+        "WHO — Healthy Diet",
+        "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
+      ],
+      [
+        "NHS — Live Well",
+        "https://www.nhs.uk/live-well/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Flexibility vs. Mobility: Why stretching alone won’t fix tight joints is best understood as a preventive health and everyday health literacy topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what flexibility vs. mobility: why stretching alone won’t fix tight joints means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "walking-for-longevity-optimizing-step-count-pace-and-metabolic-outputs",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Walking for Longevity: Optimizing step count, pace, and metabolic outputs",
+    "description": "Walking for Longevity: Optimizing step count, pace, and metabolic outputs — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "walking, for, longevity, optimizing, step, count, pace, and, metabolic, outputs",
+    "quickSummary": [
+      "Understand the key concepts behind Walking for Longevity: Optimizing step count, pace, and metabolic outputs.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "CDC — Healthy Living",
+        "https://www.cdc.gov/healthy-weight-growth/"
+      ],
+      [
+        "WHO — Healthy Diet",
+        "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
+      ],
+      [
+        "NHS — Live Well",
+        "https://www.nhs.uk/live-well/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Walking for Longevity: Optimizing step count, pace, and metabolic outputs is best understood as a preventive health and everyday health literacy topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what walking for longevity: optimizing step count, pace, and metabolic outputs means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "active-recovery-protocols-maximizing-recovery-between-high-exertion-training-days",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Active Recovery Protocols: Maximizing recovery between high-exertion training days",
+    "description": "Active Recovery Protocols: Maximizing recovery between high-exertion training days — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "active, recovery, protocols, maximizing, between, high-exertion, training, days",
+    "quickSummary": [
+      "Understand the key concepts behind Active Recovery Protocols: Maximizing recovery between high-exertion training days.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "CDC — Healthy Living",
+        "https://www.cdc.gov/healthy-weight-growth/"
+      ],
+      [
+        "WHO — Healthy Diet",
+        "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
+      ],
+      [
+        "NHS — Live Well",
+        "https://www.nhs.uk/live-well/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Active Recovery Protocols: Maximizing recovery between high-exertion training days is best understood as a preventive health and everyday health literacy topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what active recovery protocols: maximizing recovery between high-exertion training days means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "stress-relief-methods-managing-cortisol-through-somatic-work",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Stress Relief Methods: Managing cortisol through somatic work",
+    "description": "Stress Relief Methods: Managing cortisol through somatic work — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "stress, relief, methods, managing, cortisol, through, somatic, work",
+    "quickSummary": [
+      "Understand the key concepts behind Stress Relief Methods: Managing cortisol through somatic work.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "NIMH — Mental Health",
+        "https://www.nimh.nih.gov/health"
+      ],
+      [
+        "NHS — Mental Health",
+        "https://www.nhs.uk/mental-health/"
+      ],
+      [
+        "WHO — Mental Health",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Stress Relief Methods: Managing cortisol through somatic work is best understood as a mental health and behavioral wellbeing topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what stress relief methods: managing cortisol through somatic work means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "anxiety-symptoms-vs-panic-attacks-learning-to-spot-physical-differences",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Anxiety Symptoms vs. Panic Attacks: Learning to spot physical differences",
+    "description": "Anxiety Symptoms vs. Panic Attacks: Learning to spot physical differences — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "anxiety, symptoms, vs., panic, attacks, learning, to, spot, physical, differences",
+    "quickSummary": [
+      "Understand the key concepts behind Anxiety Symptoms vs. Panic Attacks: Learning to spot physical differences.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "NIMH — Mental Health",
+        "https://www.nimh.nih.gov/health"
+      ],
+      [
+        "NHS — Mental Health",
+        "https://www.nhs.uk/mental-health/"
+      ],
+      [
+        "WHO — Mental Health",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Anxiety Symptoms vs. Panic Attacks: Learning to spot physical differences is best understood as a mental health and behavioral wellbeing topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what anxiety symptoms vs. panic attacks: learning to spot physical differences means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "burnout-recovery-checklist-rebuilding-capacity-after-severe-workplace-stress",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Burnout Recovery Checklist: Rebuilding capacity after severe workplace stress",
+    "description": "Burnout Recovery Checklist: Rebuilding capacity after severe workplace stress — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "burnout, recovery, checklist, rebuilding, capacity, after, severe, workplace, stress",
+    "quickSummary": [
+      "Understand the key concepts behind Burnout Recovery Checklist: Rebuilding capacity after severe workplace stress.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "NIMH — Mental Health",
+        "https://www.nimh.nih.gov/health"
+      ],
+      [
+        "NHS — Mental Health",
+        "https://www.nhs.uk/mental-health/"
+      ],
+      [
+        "WHO — Mental Health",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Burnout Recovery Checklist: Rebuilding capacity after severe workplace stress is best understood as a mental health and behavioral wellbeing topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what burnout recovery checklist: rebuilding capacity after severe workplace stress means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "mindfulness-for-neurodiverse-brains-tailoring-meditation-formats",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Mindfulness for Neurodiverse Brains: Tailoring meditation formats",
+    "description": "Mindfulness for Neurodiverse Brains: Tailoring meditation formats — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "mindfulness, for, neurodiverse, brains, tailoring, meditation, formats",
+    "quickSummary": [
+      "Understand the key concepts behind Mindfulness for Neurodiverse Brains: Tailoring meditation formats.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "NIMH — Mental Health",
+        "https://www.nimh.nih.gov/health"
+      ],
+      [
+        "NHS — Mental Health",
+        "https://www.nhs.uk/mental-health/"
+      ],
+      [
+        "WHO — Mental Health",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Mindfulness for Neurodiverse Brains: Tailoring meditation formats is best understood as a mental health and behavioral wellbeing topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what mindfulness for neurodiverse brains: tailoring meditation formats means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "vagus-nerve-stimulation-science-backed-hacks-to-turn-off-your-fight-or-flight-reflex",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Vagus Nerve Stimulation: Science-backed hacks to turn off your fight-or-flight reflex",
+    "description": "Vagus Nerve Stimulation: Science-backed hacks to turn off your fight-or-flight reflex — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "vagus, nerve, stimulation, science-backed, hacks, to, turn, off, your, fight-or-flight, reflex",
+    "quickSummary": [
+      "Understand the key concepts behind Vagus Nerve Stimulation: Science-backed hacks to turn off your fight-or-flight reflex.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "NIMH — Mental Health",
+        "https://www.nimh.nih.gov/health"
+      ],
+      [
+        "NHS — Mental Health",
+        "https://www.nhs.uk/mental-health/"
+      ],
+      [
+        "WHO — Mental Health",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Vagus Nerve Stimulation: Science-backed hacks to turn off your fight-or-flight reflex is best understood as a mental health and behavioral wellbeing topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what vagus nerve stimulation: science-backed hacks to turn off your fight-or-flight reflex means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "high-functioning-anxiety-recognizing-signs-of-internal-panic-behind-productivity",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "High-Functioning Anxiety: Recognizing signs of internal panic behind productivity",
+    "description": "High-Functioning Anxiety: Recognizing signs of internal panic behind productivity — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "high-functioning, anxiety, recognizing, signs, of, internal, panic, behind, productivity",
+    "quickSummary": [
+      "Understand the key concepts behind High-Functioning Anxiety: Recognizing signs of internal panic behind productivity.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "NIMH — Mental Health",
+        "https://www.nimh.nih.gov/health"
+      ],
+      [
+        "NHS — Mental Health",
+        "https://www.nhs.uk/mental-health/"
+      ],
+      [
+        "WHO — Mental Health",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "High-Functioning Anxiety: Recognizing signs of internal panic behind productivity is best understood as a mental health and behavioral wellbeing topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what high-functioning anxiety: recognizing signs of internal panic behind productivity means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "seasonal-affective-disorder-sad-light-therapy-vitamin-d-and-morning-routines",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Seasonal Affective Disorder (SAD): Light therapy, vitamin D, and morning routines",
+    "description": "Seasonal Affective Disorder (SAD): Light therapy, vitamin D, and morning routines — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "seasonal, affective, disorder, (sad), light, therapy, vitamin, d, and, morning, routines",
+    "quickSummary": [
+      "Understand the key concepts behind Seasonal Affective Disorder (SAD): Light therapy, vitamin D, and morning routines.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "NIMH — Mental Health",
+        "https://www.nimh.nih.gov/health"
+      ],
+      [
+        "NHS — Mental Health",
+        "https://www.nhs.uk/mental-health/"
+      ],
+      [
+        "WHO — Mental Health",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Seasonal Affective Disorder (SAD): Light therapy, vitamin D, and morning routines is best understood as a mental health and behavioral wellbeing topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what seasonal affective disorder (sad): light therapy, vitamin d, and morning routines means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "daily-wellness-habits-building-an-actionable-micro-routine-for-emotional-balance",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Daily Wellness Habits: Building an actionable micro-routine for emotional balance",
+    "description": "Daily Wellness Habits: Building an actionable micro-routine for emotional balance — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "daily, wellness, habits, building, an, actionable, micro-routine, for, emotional, balance",
+    "quickSummary": [
+      "Understand the key concepts behind Daily Wellness Habits: Building an actionable micro-routine for emotional balance.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "NIMH — Mental Health",
+        "https://www.nimh.nih.gov/health"
+      ],
+      [
+        "NHS — Mental Health",
+        "https://www.nhs.uk/mental-health/"
+      ],
+      [
+        "WHO — Mental Health",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Daily Wellness Habits: Building an actionable micro-routine for emotional balance is best understood as a mental health and behavioral wellbeing topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what daily wellness habits: building an actionable micro-routine for emotional balance means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "impulsive-behaviors-management-neurological-pathways-and-behavioral-breaks",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Impulsive Behaviors Management: Neurological pathways and behavioral breaks",
+    "description": "Impulsive Behaviors Management: Neurological pathways and behavioral breaks — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "impulsive, behaviors, management, neurological, pathways, and, behavioral, breaks",
+    "quickSummary": [
+      "Understand the key concepts behind Impulsive Behaviors Management: Neurological pathways and behavioral breaks.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "NIMH — Mental Health",
+        "https://www.nimh.nih.gov/health"
+      ],
+      [
+        "NHS — Mental Health",
+        "https://www.nhs.uk/mental-health/"
+      ],
+      [
+        "WHO — Mental Health",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Impulsive Behaviors Management: Neurological pathways and behavioral breaks is best understood as a mental health and behavioral wellbeing topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what impulsive behaviors management: neurological pathways and behavioral breaks means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "journaling-for-mental-health-cognitive-reframing-prompts-that-clear-your-mind",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Journaling for Mental Health: Cognitive reframing prompts that clear your mind",
+    "description": "Journaling for Mental Health: Cognitive reframing prompts that clear your mind — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "journaling, for, mental, health, cognitive, reframing, prompts, that, clear, your, mind",
+    "quickSummary": [
+      "Understand the key concepts behind Journaling for Mental Health: Cognitive reframing prompts that clear your mind.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "NIMH — Mental Health",
+        "https://www.nimh.nih.gov/health"
+      ],
+      [
+        "NHS — Mental Health",
+        "https://www.nhs.uk/mental-health/"
+      ],
+      [
+        "WHO — Mental Health",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Journaling for Mental Health: Cognitive reframing prompts that clear your mind is best understood as a mental health and behavioral wellbeing topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what journaling for mental health: cognitive reframing prompts that clear your mind means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "pediatric-developmental-milestones-year-one-speech-and-motor-skills-check",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Pediatric Developmental Milestones: Year-one speech and motor skills check",
+    "description": "Pediatric Developmental Milestones: Year-one speech and motor skills check — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "pediatric, developmental, milestones, year-one, speech, and, motor, skills, check",
+    "quickSummary": [
+      "Understand the key concepts behind Pediatric Developmental Milestones: Year-one speech and motor skills check.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "CDC — Child and Adolescent Health",
+        "https://www.cdc.gov/child-development/"
+      ],
+      [
+        "WHO — Maternal and Child Health",
+        "https://www.who.int/health-topics/maternal-health"
+      ],
+      [
+        "NHS — Pregnancy and Baby",
+        "https://www.nhs.uk/pregnancy/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Pediatric Developmental Milestones: Year-one speech and motor skills check is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what pediatric developmental milestones: year-one speech and motor skills check means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "newborn-sleep-training-establishing-gentle-healthy-sleeping-patterns",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Newborn Sleep Training: Establishing gentle, healthy sleeping patterns",
+    "description": "Newborn Sleep Training: Establishing gentle, healthy sleeping patterns — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "newborn, sleep, training, establishing, gentle, healthy, sleeping, patterns",
+    "quickSummary": [
+      "Understand the key concepts behind Newborn Sleep Training: Establishing gentle, healthy sleeping patterns.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "CDC — Child and Adolescent Health",
+        "https://www.cdc.gov/child-development/"
+      ],
+      [
+        "WHO — Maternal and Child Health",
+        "https://www.who.int/health-topics/maternal-health"
+      ],
+      [
+        "NHS — Pregnancy and Baby",
+        "https://www.nhs.uk/pregnancy/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Newborn Sleep Training: Establishing gentle, healthy sleeping patterns is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what newborn sleep training: establishing gentle, healthy sleeping patterns means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "postpartum-depression-identification-recognizing-signs-and-building-safety-nets",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Postpartum Depression Identification: Recognizing signs and building safety nets",
+    "description": "Postpartum Depression Identification: Recognizing signs and building safety nets — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "postpartum, depression, identification, recognizing, signs, and, building, safety, nets",
+    "quickSummary": [
+      "Understand the key concepts behind Postpartum Depression Identification: Recognizing signs and building safety nets.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "CDC — Child and Adolescent Health",
+        "https://www.cdc.gov/child-development/"
+      ],
+      [
+        "WHO — Maternal and Child Health",
+        "https://www.who.int/health-topics/maternal-health"
+      ],
+      [
+        "NHS — Pregnancy and Baby",
+        "https://www.nhs.uk/pregnancy/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Postpartum Depression Identification: Recognizing signs and building safety nets is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what postpartum depression identification: recognizing signs and building safety nets means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "toddler-nutrition-roadmaps-overcoming-picky-eating-with-nutrient-dense-options",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Toddler Nutrition Roadmaps: Overcoming picky eating with nutrient-dense options",
+    "description": "Toddler Nutrition Roadmaps: Overcoming picky eating with nutrient-dense options — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "toddler, nutrition, roadmaps, overcoming, picky, eating, with, nutrient-dense, options",
+    "quickSummary": [
+      "Understand the key concepts behind Toddler Nutrition Roadmaps: Overcoming picky eating with nutrient-dense options.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "CDC — Child and Adolescent Health",
+        "https://www.cdc.gov/child-development/"
+      ],
+      [
+        "WHO — Maternal and Child Health",
+        "https://www.who.int/health-topics/maternal-health"
+      ],
+      [
+        "NHS — Pregnancy and Baby",
+        "https://www.nhs.uk/pregnancy/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Toddler Nutrition Roadmaps: Overcoming picky eating with nutrient-dense options is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what toddler nutrition roadmaps: overcoming picky eating with nutrient-dense options means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "childhood-screen-time-limits-protecting-developing-nervous-and-visual-systems",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Childhood Screen Time Limits: Protecting developing nervous and visual systems",
+    "description": "Childhood Screen Time Limits: Protecting developing nervous and visual systems — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "childhood, screen, time, limits, protecting, developing, nervous, and, visual, systems",
+    "quickSummary": [
+      "Understand the key concepts behind Childhood Screen Time Limits: Protecting developing nervous and visual systems.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "CDC — Child and Adolescent Health",
+        "https://www.cdc.gov/child-development/"
+      ],
+      [
+        "WHO — Maternal and Child Health",
+        "https://www.who.int/health-topics/maternal-health"
+      ],
+      [
+        "NHS — Pregnancy and Baby",
+        "https://www.nhs.uk/pregnancy/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Childhood Screen Time Limits: Protecting developing nervous and visual systems is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what childhood screen time limits: protecting developing nervous and visual systems means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "pregnancy-trimester-guidelines-nutrient-additions-and-safe-activity-profiles",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Pregnancy Trimester Guidelines: Nutrient additions and safe activity profiles",
+    "description": "Pregnancy Trimester Guidelines: Nutrient additions and safe activity profiles — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "pregnancy, trimester, guidelines, nutrient, additions, and, safe, activity, profiles",
+    "quickSummary": [
+      "Understand the key concepts behind Pregnancy Trimester Guidelines: Nutrient additions and safe activity profiles.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "CDC — Child and Adolescent Health",
+        "https://www.cdc.gov/child-development/"
+      ],
+      [
+        "WHO — Maternal and Child Health",
+        "https://www.who.int/health-topics/maternal-health"
+      ],
+      [
+        "NHS — Pregnancy and Baby",
+        "https://www.nhs.uk/pregnancy/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Pregnancy Trimester Guidelines: Nutrient additions and safe activity profiles is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what pregnancy trimester guidelines: nutrient additions and safe activity profiles means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "managing-childhood-asthma-identifying-home-allergens-and-rescue-triggers",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Managing Childhood Asthma: Identifying home allergens and rescue triggers",
+    "description": "Managing Childhood Asthma: Identifying home allergens and rescue triggers — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "managing, childhood, asthma, identifying, home, allergens, and, rescue, triggers",
+    "quickSummary": [
+      "Understand the key concepts behind Managing Childhood Asthma: Identifying home allergens and rescue triggers.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "CDC — Child and Adolescent Health",
+        "https://www.cdc.gov/child-development/"
+      ],
+      [
+        "WHO — Maternal and Child Health",
+        "https://www.who.int/health-topics/maternal-health"
+      ],
+      [
+        "NHS — Pregnancy and Baby",
+        "https://www.nhs.uk/pregnancy/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Managing Childhood Asthma: Identifying home allergens and rescue triggers is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what managing childhood asthma: identifying home allergens and rescue triggers means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "teen-mental-health-navigating-social-anxiety-and-digital-device-addictions",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Teen Mental Health: Navigating social anxiety and digital device addictions",
+    "description": "Teen Mental Health: Navigating social anxiety and digital device addictions — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "teen, mental, health, navigating, social, anxiety, and, digital, device, addictions",
+    "quickSummary": [
+      "Understand the key concepts behind Teen Mental Health: Navigating social anxiety and digital device addictions.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "CDC — Child and Adolescent Health",
+        "https://www.cdc.gov/child-development/"
+      ],
+      [
+        "WHO — Maternal and Child Health",
+        "https://www.who.int/health-topics/maternal-health"
+      ],
+      [
+        "NHS — Pregnancy and Baby",
+        "https://www.nhs.uk/pregnancy/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Teen Mental Health: Navigating social anxiety and digital device addictions is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what teen mental health: navigating social anxiety and digital device addictions means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "infant-colic-solutions-safe-soothing-techniques-for-digestive-pain",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Infant Colic Solutions: Safe soothing techniques for digestive pain",
+    "description": "Infant Colic Solutions: Safe soothing techniques for digestive pain — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "infant, colic, solutions, safe, soothing, techniques, for, digestive, pain",
+    "quickSummary": [
+      "Understand the key concepts behind Infant Colic Solutions: Safe soothing techniques for digestive pain.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "CDC — Child and Adolescent Health",
+        "https://www.cdc.gov/child-development/"
+      ],
+      [
+        "WHO — Maternal and Child Health",
+        "https://www.who.int/health-topics/maternal-health"
+      ],
+      [
+        "NHS — Pregnancy and Baby",
+        "https://www.nhs.uk/pregnancy/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Infant Colic Solutions: Safe soothing techniques for digestive pain is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what infant colic solutions: safe soothing techniques for digestive pain means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "strengthening-immunity-in-kids-science-backed-baseline-health-practices",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Strengthening Immunity in Kids: Science-backed baseline health practices",
+    "description": "Strengthening Immunity in Kids: Science-backed baseline health practices — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "strengthening, immunity, in, kids, science-backed, baseline, health, practices",
+    "quickSummary": [
+      "Understand the key concepts behind Strengthening Immunity in Kids: Science-backed baseline health practices.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "CDC — Child and Adolescent Health",
+        "https://www.cdc.gov/child-development/"
+      ],
+      [
+        "WHO — Maternal and Child Health",
+        "https://www.who.int/health-topics/maternal-health"
+      ],
+      [
+        "NHS — Pregnancy and Baby",
+        "https://www.nhs.uk/pregnancy/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Strengthening Immunity in Kids: Science-backed baseline health practices is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what strengthening immunity in kids: science-backed baseline health practices means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "perimenopause-decoded-recognizing-early-hormonal-shifts-and-skin-changes",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Perimenopause Decoded: Recognizing early hormonal shifts and skin changes",
+    "description": "Perimenopause Decoded: Recognizing early hormonal shifts and skin changes — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "perimenopause, decoded, recognizing, early, hormonal, shifts, and, skin, changes",
+    "quickSummary": [
+      "Understand the key concepts behind Perimenopause Decoded: Recognizing early hormonal shifts and skin changes.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "CDC — Child and Adolescent Health",
+        "https://www.cdc.gov/child-development/"
+      ],
+      [
+        "WHO — Maternal and Child Health",
+        "https://www.who.int/health-topics/maternal-health"
+      ],
+      [
+        "NHS — Pregnancy and Baby",
+        "https://www.nhs.uk/pregnancy/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Perimenopause Decoded: Recognizing early hormonal shifts and skin changes is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what perimenopause decoded: recognizing early hormonal shifts and skin changes means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "hormone-replacement-therapy-hrt-evaluating-safety-metrics-and-cardiac-benefits",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Hormone Replacement Therapy (HRT): Evaluating safety metrics and cardiac benefits",
+    "description": "Hormone Replacement Therapy (HRT): Evaluating safety metrics and cardiac benefits — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "hormone, replacement, therapy, (hrt), evaluating, safety, metrics, and, cardiac, benefits",
+    "quickSummary": [
+      "Understand the key concepts behind Hormone Replacement Therapy (HRT): Evaluating safety metrics and cardiac benefits.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "CDC — Child and Adolescent Health",
+        "https://www.cdc.gov/child-development/"
+      ],
+      [
+        "WHO — Maternal and Child Health",
+        "https://www.who.int/health-topics/maternal-health"
+      ],
+      [
+        "NHS — Pregnancy and Baby",
+        "https://www.nhs.uk/pregnancy/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Hormone Replacement Therapy (HRT): Evaluating safety metrics and cardiac benefits is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what hormone replacement therapy (hrt): evaluating safety metrics and cardiac benefits means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "sarcopenia-prevention-retaining-muscle-tissue-past-the-age-of-50",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Sarcopenia Prevention: Retaining muscle tissue past the age of 50",
+    "description": "Sarcopenia Prevention: Retaining muscle tissue past the age of 50 — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "sarcopenia, prevention, retaining, muscle, tissue, past, the, age, of, 50",
+    "quickSummary": [
+      "Understand the key concepts behind Sarcopenia Prevention: Retaining muscle tissue past the age of 50.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "CDC — Child and Adolescent Health",
+        "https://www.cdc.gov/child-development/"
+      ],
+      [
+        "WHO — Maternal and Child Health",
+        "https://www.who.int/health-topics/maternal-health"
+      ],
+      [
+        "NHS — Pregnancy and Baby",
+        "https://www.nhs.uk/pregnancy/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Sarcopenia Prevention: Retaining muscle tissue past the age of 50 is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what sarcopenia prevention: retaining muscle tissue past the age of 50 means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "osteoporosis-screenings-when-should-you-get-a-dexa-bone-density-scan",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Osteoporosis Screenings: When should you get a DEXA bone density scan?",
+    "description": "Osteoporosis Screenings: When should you get a DEXA bone density scan? — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "osteoporosis, screenings, when, should, you, get, a, dexa, bone, density, scan",
+    "quickSummary": [
+      "Understand the key concepts behind Osteoporosis Screenings: When should you get a DEXA bone density scan?.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "CDC — Child and Adolescent Health",
+        "https://www.cdc.gov/child-development/"
+      ],
+      [
+        "WHO — Maternal and Child Health",
+        "https://www.who.int/health-topics/maternal-health"
+      ],
+      [
+        "NHS — Pregnancy and Baby",
+        "https://www.nhs.uk/pregnancy/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Osteoporosis Screenings: When should you get a DEXA bone density scan? is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what osteoporosis screenings: when should you get a dexa bone density scan? means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "pelvic-floor-health-ending-urinary-incontinence-through-targeted-physical-therapy",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Pelvic Floor Health: Ending urinary incontinence through targeted physical therapy",
+    "description": "Pelvic Floor Health: Ending urinary incontinence through targeted physical therapy — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "pelvic, floor, health, ending, urinary, incontinence, through, targeted, physical, therapy",
+    "quickSummary": [
+      "Understand the key concepts behind Pelvic Floor Health: Ending urinary incontinence through targeted physical therapy.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "CDC — Child and Adolescent Health",
+        "https://www.cdc.gov/child-development/"
+      ],
+      [
+        "WHO — Maternal and Child Health",
+        "https://www.who.int/health-topics/maternal-health"
+      ],
+      [
+        "NHS — Pregnancy and Baby",
+        "https://www.nhs.uk/pregnancy/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Pelvic Floor Health: Ending urinary incontinence through targeted physical therapy is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what pelvic floor health: ending urinary incontinence through targeted physical therapy means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "cognitive-reserve-building-lifestyle-choices-that-actively-lower-dementia-risks",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Cognitive Reserve Building: Lifestyle choices that actively lower dementia risks",
+    "description": "Cognitive Reserve Building: Lifestyle choices that actively lower dementia risks — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "cognitive, reserve, building, lifestyle, choices, that, actively, lower, dementia, risks",
+    "quickSummary": [
+      "Understand the key concepts behind Cognitive Reserve Building: Lifestyle choices that actively lower dementia risks.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "CDC — Child and Adolescent Health",
+        "https://www.cdc.gov/child-development/"
+      ],
+      [
+        "WHO — Maternal and Child Health",
+        "https://www.who.int/health-topics/maternal-health"
+      ],
+      [
+        "NHS — Pregnancy and Baby",
+        "https://www.nhs.uk/pregnancy/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Cognitive Reserve Building: Lifestyle choices that actively lower dementia risks is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what cognitive reserve building: lifestyle choices that actively lower dementia risks means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "andropause-symptoms-addressing-age-related-low-testosterone-levels-safely",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Andropause Symptoms: Addressing age-related low testosterone levels safely",
+    "description": "Andropause Symptoms: Addressing age-related low testosterone levels safely — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "andropause, symptoms, addressing, age-related, low, testosterone, levels, safely",
+    "quickSummary": [
+      "Understand the key concepts behind Andropause Symptoms: Addressing age-related low testosterone levels safely.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "CDC — Child and Adolescent Health",
+        "https://www.cdc.gov/child-development/"
+      ],
+      [
+        "WHO — Maternal and Child Health",
+        "https://www.who.int/health-topics/maternal-health"
+      ],
+      [
+        "NHS — Pregnancy and Baby",
+        "https://www.nhs.uk/pregnancy/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Andropause Symptoms: Addressing age-related low testosterone levels safely is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what andropause symptoms: addressing age-related low testosterone levels safely means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "joint-longevity-past-60-low-impact-exercises-for-active-mobility",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Joint Longevity Past 60: Low-impact exercises for active mobility",
+    "description": "Joint Longevity Past 60: Low-impact exercises for active mobility — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "joint, longevity, past, 60, low-impact, exercises, for, active, mobility",
+    "quickSummary": [
+      "Understand the key concepts behind Joint Longevity Past 60: Low-impact exercises for active mobility.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "CDC — Child and Adolescent Health",
+        "https://www.cdc.gov/child-development/"
+      ],
+      [
+        "WHO — Maternal and Child Health",
+        "https://www.who.int/health-topics/maternal-health"
+      ],
+      [
+        "NHS — Pregnancy and Baby",
+        "https://www.nhs.uk/pregnancy/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Joint Longevity Past 60: Low-impact exercises for active mobility is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what joint longevity past 60: low-impact exercises for active mobility means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "heart-health-for-women-distinct-cardiac-symptoms-that-are-often-missed",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Heart Health for Women: Distinct cardiac symptoms that are often missed",
+    "description": "Heart Health for Women: Distinct cardiac symptoms that are often missed — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "heart, health, for, women, distinct, cardiac, symptoms, that, are, often, missed",
+    "quickSummary": [
+      "Understand the key concepts behind Heart Health for Women: Distinct cardiac symptoms that are often missed.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "CDC — Child and Adolescent Health",
+        "https://www.cdc.gov/child-development/"
+      ],
+      [
+        "WHO — Maternal and Child Health",
+        "https://www.who.int/health-topics/maternal-health"
+      ],
+      [
+        "NHS — Pregnancy and Baby",
+        "https://www.nhs.uk/pregnancy/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Heart Health for Women: Distinct cardiac symptoms that are often missed is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what heart health for women: distinct cardiac symptoms that are often missed means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
+      ]
+    ]
+  },
+  {
+    "slug": "longevity-strategies-for-adults-balancing-sleep-diet-and-movement-benchmarks",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Longevity Strategies for Adults: Balancing sleep, diet, and movement benchmarks",
+    "description": "Longevity Strategies for Adults: Balancing sleep, diet, and movement benchmarks — a plain-language, evidence-informed health education guide covering symptoms, interpretation, evidence, limitations, and when professional care may be appropriate.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "longevity, strategies, for, adults, balancing, sleep, diet, and, movement, benchmarks",
+    "quickSummary": [
+      "Understand the key concepts behind Longevity Strategies for Adults: Balancing sleep, diet, and movement benchmarks.",
+      "Learn which symptoms, measurements or risk factors matter most.",
+      "Understand what general health information can and cannot establish.",
+      "See when testing, monitoring or professional assessment may be appropriate.",
+      "Avoid common interpretation and self-treatment mistakes.",
+      "Use the guide to prepare informed questions for a qualified healthcare professional."
+    ],
+    "sources": [
+      [
+        "CDC — Child and Adolescent Health",
+        "https://www.cdc.gov/child-development/"
+      ],
+      [
+        "WHO — Maternal and Child Health",
+        "https://www.who.int/health-topics/maternal-health"
+      ],
+      [
+        "NHS — Pregnancy and Baby",
+        "https://www.nhs.uk/pregnancy/"
+      ]
+    ],
+    "sections": [
+      [
+        "Quick clinical context",
+        "Longevity Strategies for Adults: Balancing sleep, diet, and movement benchmarks is best understood as a age-, sex- and life-stage health topic. This guide explains the core concepts in plain language while separating general education from diagnosis or individualized treatment."
+      ],
+      [
+        "What the evidence means",
+        "The useful question is not only what longevity strategies for adults: balancing sleep, diet, and movement benchmarks means, but how symptoms, measurements, risk factors, medical history and testing fit together. Evidence-based guidance can differ by age, pregnancy status, medications and existing conditions."
+      ],
+      [
+        "What to look for",
+        "Focus on the features that change urgency or interpretation. A persistent, worsening, severe or unexplained problem deserves more attention than an isolated mild finding, and symptoms should be considered together rather than interpreted from a single sign."
+      ],
+      [
+        "Testing and professional care",
+        "When testing or treatment is relevant, the purpose, limitations and expected follow-up matter. Online information can help someone prepare questions, but a clinician may need an examination, history, laboratory testing or imaging to determine the cause."
+      ],
+      [
+        "Common misconceptions",
+        "Avoid assuming that one symptom proves a diagnosis, that a normal result rules out every condition, or that a popular home remedy is automatically safe. Treatment choices should account for benefits, risks, contraindications and the person's clinical context."
+      ],
+      [
+        "When to seek help",
+        "Urgent symptoms should be assessed promptly rather than managed from an article. For non-urgent concerns, keeping a clear record of symptoms, timing, medications and relevant measurements can make a healthcare appointment more useful."
       ]
     ]
   }
