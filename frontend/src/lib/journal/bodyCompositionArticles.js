@@ -2899,4 +2899,2055 @@ export const bodyCompositionArticles = [
     ]
   ]
 }
+,
+  {
+    "slug": "body-fat-percentage-how-to-set-realistic-ranges-and-goals",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Body Fat Percentage: How to Set Realistic Ranges and Goals",
+    "description": "A practical guide to body fat percentage: how to set realistic ranges and goals, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "body fat percentage: how to set realistic ranges and goals, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind body fat percentage: how to set realistic ranges and goals and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Body Fat Percentage: How to Set Realistic Ranges and Goals in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "lean-mass-vs-muscle-mass-what-is-the-difference",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Lean Mass vs Muscle Mass: What Is the Difference?",
+    "description": "A practical guide to lean mass vs muscle mass: what is the difference?, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "lean mass vs muscle mass: what is the difference?, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind lean mass vs muscle mass: what is the difference? and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Lean Mass vs Muscle Mass: What Is the Difference? in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "fat-free-mass-index-ffmi-how-to-calculate-and-interpret-it",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Fat-Free Mass Index (FFMI): How to Calculate and Interpret It",
+    "description": "A practical guide to fat-free mass index (ffmi): how to calculate and interpret it, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "fat-free mass index (ffmi): how to calculate and interpret it, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind fat-free mass index (ffmi): how to calculate and interpret it and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Fat-Free Mass Index (FFMI): How to Calculate and Interpret It in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "fat-mass-index-fmi-a-better-companion-to-body-fat-percentage",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Fat Mass Index (FMI): A Better Companion to Body Fat Percentage?",
+    "description": "A practical guide to fat mass index (fmi): a better companion to body fat percentage?, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "fat mass index (fmi): a better companion to body fat percentage?, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind fat mass index (fmi): a better companion to body fat percentage? and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Fat Mass Index (FMI): A Better Companion to Body Fat Percentage? in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "visceral-fat-vs-subcutaneous-fat-why-the-location-matters",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Visceral Fat vs Subcutaneous Fat: Why the Location Matters",
+    "description": "A practical guide to visceral fat vs subcutaneous fat: why the location matters, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "visceral fat vs subcutaneous fat: why the location matters, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind visceral fat vs subcutaneous fat: why the location matters and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Visceral Fat vs Subcutaneous Fat: Why the Location Matters in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "waist-to-height-ratio-how-to-measure-and-interpret-it",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Waist-to-Height Ratio: How to Measure and Interpret It",
+    "description": "A practical guide to waist-to-height ratio: how to measure and interpret it, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "waist-to-height ratio: how to measure and interpret it, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind waist-to-height ratio: how to measure and interpret it and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Waist-to-Height Ratio: How to Measure and Interpret It in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "waist-to-hip-ratio-what-it-measures-and-its-limitations",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Waist-to-Hip Ratio: What It Measures and Its Limitations",
+    "description": "A practical guide to waist-to-hip ratio: what it measures and its limitations, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "waist-to-hip ratio: what it measures and its limitations, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind waist-to-hip ratio: what it measures and its limitations and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Waist-to-Hip Ratio: What It Measures and Its Limitations in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "relative-fat-mass-rfm-formula-uses-and-limitations",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Relative Fat Mass (RFM): Formula, Uses and Limitations",
+    "description": "A practical guide to relative fat mass (rfm): formula, uses and limitations, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "relative fat mass (rfm): formula, uses and limitations, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind relative fat mass (rfm): formula, uses and limitations and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Relative Fat Mass (RFM): Formula, Uses and Limitations in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "body-roundness-index-bri-what-the-metric-means",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Body Roundness Index (BRI): What the Metric Means",
+    "description": "A practical guide to body roundness index (bri): what the metric means, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "body roundness index (bri): what the metric means, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind body roundness index (bri): what the metric means and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Body Roundness Index (BRI): What the Metric Means in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "a-body-shape-index-absi-what-it-can-and-cannot-tell-you",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "A Body Shape Index (ABSI): What It Can and Cannot Tell You",
+    "description": "A practical guide to a body shape index (absi): what it can and cannot tell you, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "a body shape index (absi): what it can and cannot tell you, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind a body shape index (absi): what it can and cannot tell you and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains A Body Shape Index (ABSI): What It Can and Cannot Tell You in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "conicity-index-understanding-abdominal-fat-distribution",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Conicity Index: Understanding Abdominal Fat Distribution",
+    "description": "A practical guide to conicity index: understanding abdominal fat distribution, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "conicity index: understanding abdominal fat distribution, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind conicity index: understanding abdominal fat distribution and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Conicity Index: Understanding Abdominal Fat Distribution in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "dexa-body-composition-scans-what-the-results-mean",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "DEXA Body Composition Scans: What the Results Mean",
+    "description": "A practical guide to dexa body composition scans: what the results mean, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "dexa body composition scans: what the results mean, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind dexa body composition scans: what the results mean and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains DEXA Body Composition Scans: What the Results Mean in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "bioelectrical-impedance-analysis-bia-accuracy-and-best-practices",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Bioelectrical Impedance Analysis (BIA): Accuracy and Best Practices",
+    "description": "A practical guide to bioelectrical impedance analysis (bia): accuracy and best practices, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "bioelectrical impedance analysis (bia): accuracy and best practices, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind bioelectrical impedance analysis (bia): accuracy and best practices and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Bioelectrical Impedance Analysis (BIA): Accuracy and Best Practices in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "skinfold-calipers-how-body-fat-estimates-are-made",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Skinfold Calipers: How Body Fat Estimates Are Made",
+    "description": "A practical guide to skinfold calipers: how body fat estimates are made, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "skinfold calipers: how body fat estimates are made, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind skinfold calipers: how body fat estimates are made and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Skinfold Calipers: How Body Fat Estimates Are Made in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "hydrostatic-weighing-how-accurate-is-it",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Hydrostatic Weighing: How Accurate Is It?",
+    "description": "A practical guide to hydrostatic weighing: how accurate is it?, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "hydrostatic weighing: how accurate is it?, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind hydrostatic weighing: how accurate is it? and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Hydrostatic Weighing: How Accurate Is It? in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "air-displacement-plethysmography-what-to-expect",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Air Displacement Plethysmography: What to Expect",
+    "description": "A practical guide to air displacement plethysmography: what to expect, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "air displacement plethysmography: what to expect, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind air displacement plethysmography: what to expect and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Air Displacement Plethysmography: What to Expect in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "body-composition-tracking-how-often-should-you-measure",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Body Composition Tracking: How Often Should You Measure?",
+    "description": "A practical guide to body composition tracking: how often should you measure?, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "body composition tracking: how often should you measure?, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind body composition tracking: how often should you measure? and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Body Composition Tracking: How Often Should You Measure? in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "why-body-weight-can-change-without-changes-in-body-fat",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Why Body Weight Can Change Without Changes in Body Fat",
+    "description": "A practical guide to why body weight can change without changes in body fat, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "why body weight can change without changes in body fat, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind why body weight can change without changes in body fat and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Why Body Weight Can Change Without Changes in Body Fat in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "water-weight-vs-fat-gain-how-to-tell-the-difference",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Water Weight vs Fat Gain: How to Tell the Difference",
+    "description": "A practical guide to water weight vs fat gain: how to tell the difference, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "water weight vs fat gain: how to tell the difference, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind water weight vs fat gain: how to tell the difference and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Water Weight vs Fat Gain: How to Tell the Difference in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "muscle-memory-and-changes-in-body-composition",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Muscle Memory and Changes in Body Composition",
+    "description": "A practical guide to muscle memory and changes in body composition, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "muscle memory and changes in body composition, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind muscle memory and changes in body composition and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Muscle Memory and Changes in Body Composition in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "body-recomposition-for-beginners-losing-fat-while-gaining-muscle",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Body Recomposition for Beginners: Losing Fat While Gaining Muscle",
+    "description": "A practical guide to body recomposition for beginners: losing fat while gaining muscle, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "body recomposition for beginners: losing fat while gaining muscle, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind body recomposition for beginners: losing fat while gaining muscle and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Body Recomposition for Beginners: Losing Fat While Gaining Muscle in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "can-you-gain-muscle-while-in-a-calorie-deficit",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Can You Gain Muscle While in a Calorie Deficit?",
+    "description": "A practical guide to can you gain muscle while in a calorie deficit?, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "can you gain muscle while in a calorie deficit?, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind can you gain muscle while in a calorie deficit? and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Can You Gain Muscle While in a Calorie Deficit? in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "how-resistance-training-changes-body-composition",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "How Resistance Training Changes Body Composition",
+    "description": "A practical guide to how resistance training changes body composition, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "how resistance training changes body composition, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind how resistance training changes body composition and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains How Resistance Training Changes Body Composition in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "protein-intake-and-lean-mass-during-fat-loss",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Protein Intake and Lean Mass During Fat Loss",
+    "description": "A practical guide to protein intake and lean mass during fat loss, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "protein intake and lean mass during fat loss, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind protein intake and lean mass during fat loss and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Protein Intake and Lean Mass During Fat Loss in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "why-rapid-weight-loss-can-reduce-lean-mass",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Why Rapid Weight Loss Can Reduce Lean Mass",
+    "description": "A practical guide to why rapid weight loss can reduce lean mass, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "why rapid weight loss can reduce lean mass, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind why rapid weight loss can reduce lean mass and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Why Rapid Weight Loss Can Reduce Lean Mass in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "energy-availability-and-body-composition-in-athletes",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Energy Availability and Body Composition in Athletes",
+    "description": "A practical guide to energy availability and body composition in athletes, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "energy availability and body composition in athletes, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind energy availability and body composition in athletes and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Energy Availability and Body Composition in Athletes in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "body-composition-and-athletic-performance",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Body Composition and Athletic Performance",
+    "description": "A practical guide to body composition and athletic performance, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "body composition and athletic performance, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind body composition and athletic performance and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Body Composition and Athletic Performance in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "muscle-quality-strength-relative-to-muscle-size",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Muscle Quality: Strength Relative to Muscle Size",
+    "description": "A practical guide to muscle quality: strength relative to muscle size, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "muscle quality: strength relative to muscle size, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind muscle quality: strength relative to muscle size and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Muscle Quality: Strength Relative to Muscle Size in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "appendicular-lean-mass-what-it-means",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Appendicular Lean Mass: What It Means",
+    "description": "A practical guide to appendicular lean mass: what it means, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "appendicular lean mass: what it means, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind appendicular lean mass: what it means and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Appendicular Lean Mass: What It Means in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "sarcopenia-and-body-composition-in-older-adults",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Sarcopenia and Body Composition in Older Adults",
+    "description": "A practical guide to sarcopenia and body composition in older adults, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "sarcopenia and body composition in older adults, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind sarcopenia and body composition in older adults and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Sarcopenia and Body Composition in Older Adults in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "body-composition-changes-during-menopause",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Body Composition Changes During Menopause",
+    "description": "A practical guide to body composition changes during menopause, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "body composition changes during menopause, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind body composition changes during menopause and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Body Composition Changes During Menopause in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "body-composition-after-pregnancy-understanding-normal-changes",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Body Composition After Pregnancy: Understanding Normal Changes",
+    "description": "A practical guide to body composition after pregnancy: understanding normal changes, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "body composition after pregnancy: understanding normal changes, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind body composition after pregnancy: understanding normal changes and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Body Composition After Pregnancy: Understanding Normal Changes in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "body-composition-in-adolescence-why-growth-matters",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Body Composition in Adolescence: Why Growth Matters",
+    "description": "A practical guide to body composition in adolescence: why growth matters, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "body composition in adolescence: why growth matters, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind body composition in adolescence: why growth matters and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Body Composition in Adolescence: Why Growth Matters in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "body-composition-differences-between-men-and-women",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Body Composition Differences Between Men and Women",
+    "description": "A practical guide to body composition differences between men and women, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "body composition differences between men and women, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind body composition differences between men and women and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Body Composition Differences Between Men and Women in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "how-aging-changes-fat-distribution",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "How Aging Changes Fat Distribution",
+    "description": "A practical guide to how aging changes fat distribution, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "how aging changes fat distribution, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind how aging changes fat distribution and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains How Aging Changes Fat Distribution in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "genetics-and-body-fat-distribution-what-you-can-and-cannot-change",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Genetics and Body Fat Distribution: What You Can and Cannot Change",
+    "description": "A practical guide to genetics and body fat distribution: what you can and cannot change, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "genetics and body fat distribution: what you can and cannot change, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind genetics and body fat distribution: what you can and cannot change and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Genetics and Body Fat Distribution: What You Can and Cannot Change in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "where-you-lose-fat-first-genetics-and-fat-distribution",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Where You Lose Fat First: Genetics and Fat Distribution",
+    "description": "A practical guide to where you lose fat first: genetics and fat distribution, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "where you lose fat first: genetics and fat distribution, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind where you lose fat first: genetics and fat distribution and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Where You Lose Fat First: Genetics and Fat Distribution in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "spot-reduction-why-targeted-fat-loss-is-misunderstood",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Spot Reduction: Why Targeted Fat Loss Is Misunderstood",
+    "description": "A practical guide to spot reduction: why targeted fat loss is misunderstood, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "spot reduction: why targeted fat loss is misunderstood, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind spot reduction: why targeted fat loss is misunderstood and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Spot Reduction: Why Targeted Fat Loss Is Misunderstood in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "abdominal-fat-and-metabolic-health",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Abdominal Fat and Metabolic Health",
+    "description": "A practical guide to abdominal fat and metabolic health, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "abdominal fat and metabolic health, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind abdominal fat and metabolic health and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Abdominal Fat and Metabolic Health in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "why-bmi-and-body-fat-percentage-are-not-the-same",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Why BMI and Body Fat Percentage Are Not the Same",
+    "description": "A practical guide to why bmi and body fat percentage are not the same, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "why bmi and body fat percentage are not the same, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind why bmi and body fat percentage are not the same and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Why BMI and Body Fat Percentage Are Not the Same in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "combining-bmi-waist-size-and-body-composition",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Combining BMI, Waist Size and Body Composition",
+    "description": "A practical guide to combining bmi, waist size and body composition, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "combining bmi, waist size and body composition, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind combining bmi, waist size and body composition and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Combining BMI, Waist Size and Body Composition in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "how-hydration-changes-bia-body-fat-readings",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "How Hydration Changes BIA Body Fat Readings",
+    "description": "A practical guide to how hydration changes bia body fat readings, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "how hydration changes bia body fat readings, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind how hydration changes bia body fat readings and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains How Hydration Changes BIA Body Fat Readings in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "exercise-before-a-body-composition-test-does-it-matter",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Exercise Before a Body Composition Test: Does It Matter?",
+    "description": "A practical guide to exercise before a body composition test: does it matter?, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "exercise before a body composition test: does it matter?, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind exercise before a body composition test: does it matter? and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Exercise Before a Body Composition Test: Does It Matter? in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "food-and-fluid-intake-before-body-composition-testing",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Food and Fluid Intake Before Body Composition Testing",
+    "description": "A practical guide to food and fluid intake before body composition testing, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "food and fluid intake before body composition testing, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind food and fluid intake before body composition testing and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Food and Fluid Intake Before Body Composition Testing in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "how-clothing-and-scale-conditions-affect-measurements",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "How Clothing and Scale Conditions Affect Measurements",
+    "description": "A practical guide to how clothing and scale conditions affect measurements, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "how clothing and scale conditions affect measurements, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind how clothing and scale conditions affect measurements and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains How Clothing and Scale Conditions Affect Measurements in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "standardizing-body-composition-measurements-at-home",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Standardizing Body Composition Measurements at Home",
+    "description": "A practical guide to standardizing body composition measurements at home, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "standardizing body composition measurements at home, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind standardizing body composition measurements at home and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Standardizing Body Composition Measurements at Home in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "body-composition-goals-for-strength-training",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Body Composition Goals for Strength Training",
+    "description": "A practical guide to body composition goals for strength training, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "body composition goals for strength training, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind body composition goals for strength training and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Body Composition Goals for Strength Training in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "body-composition-goals-for-endurance-athletes",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Body Composition Goals for Endurance Athletes",
+    "description": "A practical guide to body composition goals for endurance athletes, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "body composition goals for endurance athletes, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind body composition goals for endurance athletes and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Body Composition Goals for Endurance Athletes in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "maintaining-lean-mass-after-weight-loss",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "Maintaining Lean Mass After Weight Loss",
+    "description": "A practical guide to maintaining lean mass after weight loss, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "maintaining lean mass after weight loss, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind maintaining lean mass after weight loss and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Maintaining Lean Mass After Weight Loss in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "how-to-evaluate-body-composition-progress-without-obsessing-over-numbers",
+    "category": "Body Composition",
+    "categorySlug": "body-composition",
+    "title": "How to Evaluate Body Composition Progress Without Obsessing Over Numbers",
+    "description": "A practical guide to how to evaluate body composition progress without obsessing over numbers, including measurement, interpretation and common limitations.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "how to evaluate body composition progress without obsessing over numbers, body composition, body fat, lean mass",
+    "quickSummary": [
+      "Understand the main concepts behind how to evaluate body composition progress without obsessing over numbers and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "ACSM",
+        "https://www.acsm.org/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains How to Evaluate Body Composition Progress Without Obsessing Over Numbers in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  }
 ];
