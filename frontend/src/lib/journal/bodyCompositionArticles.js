@@ -1395,13 +1395,13 @@ export const bodyCompositionArticles = [
     "slug": "the-best-home-body-composition-scales-of-2026",
     "category": "Body Composition",
     "categorySlug": "body-composition",
-    "title": "The Best Home Body Composition Scales of [Current_Year]",
-    "description": "The Best Home Body Composition Scales of [Current_Year]: an evidence-informed FitMe Pro guide explaining the science, practical use, limitations, measurement considerations and key takeaways.",
+    "title": "The Best Home Body Composition Scales of 2026",
+    "description": "The Best Home Body Composition Scales of 2026: an evidence-informed FitMe Pro guide explaining the science, practical use, limitations, measurement considerations and key takeaways.",
     "readTime": "10 min read",
     "date": "September 19, 2026",
     "keywords": "the best home body composition scales of current_year, body composition, body fat, lean mass",
     "quickSummary": [
-      "Understand the core concepts behind The Best Home Body Composition Scales of [Current_Year].",
+      "Understand the core concepts behind The Best Home Body Composition Scales of 2026.",
       "Learn what the measure, method or strategy can tell you—and what it cannot.",
       "See how measurement conditions, individual context and method choice can affect interpretation.",
       "Use trends and consistent methods rather than overinterpreting a single number.",
@@ -1425,7 +1425,7 @@ export const bodyCompositionArticles = [
     "sections": [
       [
         "Quick answer",
-        "This article explains The Best Home Body Composition Scales of [Current_Year] in plain language, starting with the key definition or question and the evidence needed to interpret it responsibly."
+        "This article explains The Best Home Body Composition Scales of 2026 in plain language, starting with the key definition or question and the evidence needed to interpret it responsibly."
       ],
       [
         "The science and what the evidence shows",
@@ -1445,7 +1445,7 @@ export const bodyCompositionArticles = [
       ],
       [
         "FAQ",
-        "Common questions about The Best Home Body Composition Scales of [Current_Year] are best answered by separating what is well established from estimates, individual variation and situations that require professional assessment."
+        "Common questions about The Best Home Body Composition Scales of 2026 are best answered by separating what is well established from estimates, individual variation and situations that require professional assessment."
       ]
     ]
   },
