@@ -444,4 +444,169 @@ export const nutritionArticles = [
 {slug:"marathon-nutrition",category:"Sports Nutrition",categorySlug:"sports-nutrition",title:"Marathon Nutrition Plan: Carbohydrate, Hydration and Race-Day Fueling",description:"A practical framework for marathon fueling before, during and after the race, including carbohydrate loading and hydration.",readTime:"12 min read",date:"September 19, 2026",keywords:"marathon nutrition, marathon fueling, marathon diet, marathon carb loading",quickSummary:["Marathon preparation requires adequate total energy and carbohydrate availability during training.","Carbohydrate loading can maximize glycogen before the event.","During the marathon, carbohydrate and fluids should be planned according to pace, duration, conditions and tolerance.","Race-day foods should be tested during long training runs.","Recovery after the marathon requires carbohydrate, protein and fluids."],sources:[["ACSM — Nutrition and Athletic Performance","https://pubmed.ncbi.nlm.nih.gov/27899702/"],["Australian Institute of Sport","https://www.ais.gov.au/nutrition"]].map(([label,url])=>({label,url})),sections:[["Before","Use familiar carbohydrate-rich meals and begin well hydrated."],["During","Use practiced carbohydrate and fluid strategies."],["After","Replace carbohydrate, protein and fluids and prioritize recovery."],["Key Takeaways","A marathon nutrition plan should be rehearsed in training and individualized to the athlete."]]},
 {slug:"vegetarian-athlete-nutrition",category:"Sports Nutrition",categorySlug:"sports-nutrition",title:"Vegetarian Athlete Nutrition: Protein, Iron, B12, Calcium and Performance",description:"Learn how vegetarian athletes can meet protein and micronutrient needs while supporting training and recovery.",readTime:"12 min read",date:"September 19, 2026",keywords:"vegetarian athlete nutrition, vegetarian sports diet, athlete protein vegetarian, vegetarian muscle building",quickSummary:["Vegetarian athletes can meet protein needs using dairy, eggs, soy, legumes and grains.","Iron, B12, calcium, vitamin D and omega-3 intake deserve attention depending on the diet.","Carbohydrate-rich grains, potatoes, fruit and legumes can support training fuel.","A vegan pattern requires a dependable B12 strategy; vegetarian patterns vary according to dairy and egg intake.","Total energy intake is important because high training loads increase needs."],sources:[["NIH — Protein","https://ods.od.nih.gov/factsheets/Protein-HealthProfessional/"],["NIH — Iron","https://ods.od.nih.gov/factsheets/Iron-Consumer/"],["NIH — Vitamin B12","https://ods.od.nih.gov/factsheets/VitaminB12-Consumer/"]].map(([label,url])=>({label,url})),sections:[["Protein","Use eggs, dairy, tofu, soy chunks, lentils, beans and protein powders as needed."],["Iron","Combine plant iron sources with vitamin C and monitor status when risk is high."],["B12","Use dairy/eggs or fortified foods and supplements according to the diet."],["Key Takeaways","Vegetarian athletes can perform well with deliberate protein, energy and micronutrient planning."]]},
 {slug:"sleep-and-nutrition",category:"Sports Nutrition",categorySlug:"sports-nutrition",title:"Sleep and Nutrition for Athletes: Food Timing, Caffeine and Recovery",description:"Understand how nutrition, caffeine, meal timing and adequate energy can interact with sleep and athletic recovery.",readTime:"12 min read",date:"September 19, 2026",keywords:"sleep nutrition, athlete sleep, caffeine sleep, nutrition recovery sleep",quickSummary:["Sleep is essential for recovery, performance and health.","Caffeine can improve performance but late-day intake can interfere with sleep.","Very large meals immediately before bed may cause discomfort for some people, while a small protein-rich snack may be useful for athletes with high protein needs.","Under-fueling can also impair sleep and recovery.","There is no single sleep-promoting food that replaces good sleep habits."],sources:[["CDC — Sleep","https://www.cdc.gov/sleep/about/index.html"],["NIH — Caffeine","https://www.fda.gov/consumers/consumer-updates/spilling-beans-how-much-caffeine-too-much"],["NIH — Exercise and Athletic Performance","https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/"]].map(([label,url])=>({label,url})),sections:[["Caffeine","Protect sleep by managing total caffeine and timing."],["Evening Meals","Use meal sizes that feel comfortable before bed."],["Energy Availability","Adequate total calories support normal recovery and sleep."],["Key Takeaways","Athletic recovery depends on both nutrition and sleep. Protect sleep while using performance nutrition strategically."]]}
+,
+  {
+    "slug": "potassium-rich-foods-sources-functions-and-practical-intake",
+    "category": "Nutrition",
+    "categorySlug": "nutrition",
+    "title": "Potassium-Rich Foods: Sources, Functions and Practical Intake",
+    "description": "A practical nutrition guide to potassium-rich foods: sources, functions and practical intake, including food sources, functions and useful dietary context.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "potassium-rich foods: sources, functions and practical intake, nutrition, healthy diet",
+    "quickSummary": [
+      "Understand the main concepts behind potassium-rich foods: sources, functions and practical intake and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "USDA FoodData Central",
+        "https://fdc.nal.usda.gov/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Potassium-Rich Foods: Sources, Functions and Practical Intake in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "magnesium-rich-foods-whole-grains-nuts-seeds-and-legumes",
+    "category": "Nutrition",
+    "categorySlug": "nutrition",
+    "title": "Magnesium-Rich Foods: Whole Grains, Nuts, Seeds and Legumes",
+    "description": "A practical nutrition guide to magnesium-rich foods: whole grains, nuts, seeds and legumes, including food sources, functions and useful dietary context.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "magnesium-rich foods: whole grains, nuts, seeds and legumes, nutrition, healthy diet",
+    "quickSummary": [
+      "Understand the main concepts behind magnesium-rich foods: whole grains, nuts, seeds and legumes and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "USDA FoodData Central",
+        "https://fdc.nal.usda.gov/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Magnesium-Rich Foods: Whole Grains, Nuts, Seeds and Legumes in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "calcium-rich-foods-dairy-and-plant-sources-for-bone-health",
+    "category": "Nutrition",
+    "categorySlug": "nutrition",
+    "title": "Calcium-Rich Foods: Dairy and Plant Sources for Bone Health",
+    "description": "A practical nutrition guide to calcium-rich foods: dairy and plant sources for bone health, including food sources, functions and useful dietary context.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "calcium-rich foods: dairy and plant sources for bone health, nutrition, healthy diet",
+    "quickSummary": [
+      "Understand the main concepts behind calcium-rich foods: dairy and plant sources for bone health and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "USDA FoodData Central",
+        "https://fdc.nal.usda.gov/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Calcium-Rich Foods: Dairy and Plant Sources for Bone Health in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "iron-rich-foods-heme-iron-plant-iron-and-absorption",
+    "category": "Nutrition",
+    "categorySlug": "nutrition",
+    "title": "Iron-Rich Foods: Heme Iron, Plant Iron and Absorption",
+    "description": "A practical nutrition guide to iron-rich foods: heme iron, plant iron and absorption, including food sources, functions and useful dietary context.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "iron-rich foods: heme iron, plant iron and absorption, nutrition, healthy diet",
+    "quickSummary": [
+      "Understand the main concepts behind iron-rich foods: heme iron, plant iron and absorption and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "USDA FoodData Central",
+        "https://fdc.nal.usda.gov/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Iron-Rich Foods: Heme Iron, Plant Iron and Absorption in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  }
 ];
