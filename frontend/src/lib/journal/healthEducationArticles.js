@@ -5335,4 +5335,333 @@ export const healthEducationArticles = [
     ]
   ]
 }
+,
+  {
+    "slug": "how-to-read-a-basic-health-checkup-report",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "How to Read a Basic Health Checkup Report",
+    "description": "A plain-language guide to how to read a basic health checkup report with an emphasis on context, evidence and safe interpretation.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "how to read a basic health checkup report, health education, health literacy",
+    "quickSummary": [
+      "Understand the main concepts behind how to read a basic health checkup report and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "NIH",
+        "https://www.nih.gov/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains How to Read a Basic Health Checkup Report in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "reference-ranges-vs-optimal-ranges-what-lab-results-actually-mean",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Reference Ranges vs Optimal Ranges: What Lab Results Actually Mean",
+    "description": "A plain-language guide to reference ranges vs optimal ranges: what lab results actually mean with an emphasis on context, evidence and safe interpretation.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "reference ranges vs optimal ranges: what lab results actually mean, health education, health literacy",
+    "quickSummary": [
+      "Understand the main concepts behind reference ranges vs optimal ranges: what lab results actually mean and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "NIH",
+        "https://www.nih.gov/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Reference Ranges vs Optimal Ranges: What Lab Results Actually Mean in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "critical-values-vs-mild-abnormal-results-understanding-lab-alerts",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "Critical Values vs Mild Abnormal Results: Understanding Lab Alerts",
+    "description": "A plain-language guide to critical values vs mild abnormal results: understanding lab alerts with an emphasis on context, evidence and safe interpretation.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "critical values vs mild abnormal results: understanding lab alerts, health education, health literacy",
+    "quickSummary": [
+      "Understand the main concepts behind critical values vs mild abnormal results: understanding lab alerts and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "NIH",
+        "https://www.nih.gov/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains Critical Values vs Mild Abnormal Results: Understanding Lab Alerts in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "when-to-repeat-an-abnormal-lab-test",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "When to Repeat an Abnormal Lab Test",
+    "description": "A plain-language guide to when to repeat an abnormal lab test with an emphasis on context, evidence and safe interpretation.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "when to repeat an abnormal lab test, health education, health literacy",
+    "quickSummary": [
+      "Understand the main concepts behind when to repeat an abnormal lab test and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "NIH",
+        "https://www.nih.gov/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains When to Repeat an Abnormal Lab Test in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "how-to-prepare-questions-for-a-doctor-appointment",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "How to Prepare Questions for a Doctor Appointment",
+    "description": "A plain-language guide to how to prepare questions for a doctor appointment with an emphasis on context, evidence and safe interpretation.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "how to prepare questions for a doctor appointment, health education, health literacy",
+    "quickSummary": [
+      "Understand the main concepts behind how to prepare questions for a doctor appointment and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "NIH",
+        "https://www.nih.gov/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains How to Prepare Questions for a Doctor Appointment in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "how-to-keep-an-accurate-personal-medication-list",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "How to Keep an Accurate Personal Medication List",
+    "description": "A plain-language guide to how to keep an accurate personal medication list with an emphasis on context, evidence and safe interpretation.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "how to keep an accurate personal medication list, health education, health literacy",
+    "quickSummary": [
+      "Understand the main concepts behind how to keep an accurate personal medication list and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "NIH",
+        "https://www.nih.gov/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains How to Keep an Accurate Personal Medication List in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "how-to-compare-health-information-from-different-sources",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "How to Compare Health Information From Different Sources",
+    "description": "A plain-language guide to how to compare health information from different sources with an emphasis on context, evidence and safe interpretation.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "how to compare health information from different sources, health education, health literacy",
+    "quickSummary": [
+      "Understand the main concepts behind how to compare health information from different sources and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "NIH",
+        "https://www.nih.gov/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains How to Compare Health Information From Different Sources in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  },
+  {
+    "slug": "how-to-organize-your-health-records-for-future-appointments",
+    "category": "Health Education",
+    "categorySlug": "health-education",
+    "title": "How to Organize Your Health Records for Future Appointments",
+    "description": "A plain-language guide to how to organize your health records for future appointments with an emphasis on context, evidence and safe interpretation.",
+    "readTime": "10 min read",
+    "date": "September 19, 2026",
+    "keywords": "how to organize your health records for future appointments, health education, health literacy",
+    "quickSummary": [
+      "Understand the main concepts behind how to organize your health records for future appointments and how to interpret them.",
+      "Use measurements and health information in context rather than relying on one number.",
+      "Methods can differ in accuracy, repeatability and usefulness for different people.",
+      "Trends over time are often more informative than isolated measurements.",
+      "Educational information does not replace individualized clinical assessment."
+    ],
+    "sources": [
+      [
+        "NIH",
+        "https://www.nih.gov/"
+      ]
+    ],
+    "sections": [
+      [
+        "What It Means",
+        "This guide explains How to Organize Your Health Records for Future Appointments in practical terms and outlines what the topic can and cannot tell you."
+      ],
+      [
+        "How to Interpret It",
+        "Interpret results in context, considering age, sex, training status, health history, medications, measurement method and the reason the metric was obtained."
+      ],
+      [
+        "Common Mistakes",
+        "Avoid treating one measurement as a diagnosis, comparing results from incompatible methods, or making major decisions from a single result."
+      ],
+      [
+        "Practical Takeaway",
+        "Use consistent methods, track meaningful trends and seek qualified professional guidance when results are unexpected, persistent or clinically concerning."
+      ]
+    ]
+  }
 ];
