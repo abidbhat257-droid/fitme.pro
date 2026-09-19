@@ -352,7 +352,7 @@ export const bodyCompositionArticles = [
   "category": "Body Composition",
   "categorySlug": "body-composition",
   "title": "Waist-to-Hip Ratio: What It Measures and Its Limitations",
-  "description": "Waist-to-Hip Ratio: What It Measures and Its Limitations: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
+  "description": "Waist Circumference: How to Measure It Consistently for Body Composition Tracking: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
   "readTime": "9 min read",
   "date": "September 19, 2026",
   "keywords": "waist-to-hip, ratio, what, it, measures, and, its, limitations",
@@ -2092,7 +2092,7 @@ export const bodyCompositionArticles = [
   "category": "Body Composition",
   "categorySlug": "body-composition",
   "title": "Body Composition After Pregnancy: Understanding Normal Changes",
-  "description": "Body Composition After Pregnancy: Understanding Normal Changes: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
+  "description": "Postpartum Body Composition: Tracking Recovery Without Overinterpreting the Scale: a plain-language, evidence-informed guide covering what it means, how to interpret it, common limitations, and when professional advice may be appropriate.",
   "readTime": "9 min read",
   "date": "September 19, 2026",
   "keywords": "body, composition, after, pregnancy, understanding, normal, changes",
@@ -3147,7 +3147,7 @@ export const bodyCompositionArticles = [
     ]
   },
   {
-    "slug": "waist-to-hip-ratio-what-it-measures-and-its-limitations",
+    "slug": "waist-circumference-how-to-measure-it-consistently-for-body-composition-tracking",
     "category": "Body Composition",
     "categorySlug": "body-composition",
     "title": "Waist-to-Hip Ratio: What It Measures and Its Limitations",
@@ -4172,7 +4172,7 @@ export const bodyCompositionArticles = [
     ]
   },
   {
-    "slug": "body-composition-after-pregnancy-understanding-normal-changes",
+    "slug": "postpartum-body-composition-tracking-recovery-without-overinterpreting-the-scale",
     "category": "Body Composition",
     "categorySlug": "body-composition",
     "title": "Body Composition After Pregnancy: Understanding Normal Changes",
