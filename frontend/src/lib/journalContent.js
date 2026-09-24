@@ -1,3 +1,4 @@
+// Journal content source
 export const JOURNAL_CATEGORIES = [
   { slug: "nutrition", name: "Nutrition", description: "Evidence-informed guidance on healthy eating, calories, protein, carbohydrates, fats, fibre and hydration for people worldwide." },
   { slug: "fitness", name: "Fitness", description: "Movement, strength, cardio, recovery and practical ways to build a more active life." },
