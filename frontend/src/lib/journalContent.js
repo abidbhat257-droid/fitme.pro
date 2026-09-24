@@ -16,7 +16,8 @@ const WHO_SUGAR = "https://www.who.int/publications/i/item/9789241549028";
 
 const src = (extra = []) => [{ label: "WHO — Healthy diet", url: WHO_DIET }, ...extra];
 
-export const JOURNAL_ARTICLES = [\n  {
+export const JOURNAL_ARTICLES = [
+  {
     slug: "egg-calories",
     category: "Nutrition",
     categorySlug: "nutrition",
