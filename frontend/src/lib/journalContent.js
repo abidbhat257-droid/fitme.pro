@@ -61,7 +61,8 @@ export const JOURNAL_ARTICLES = [
       ["How to Track Egg Calories More Precisely", "For consistent tracking, record the number and size of eggs and separately measure added oil, butter, milk, cheese or sauces. If a packaged egg product or prepared meal provides a nutrition label, use the label for that product. For whole foods without a label, use a consistent food-composition database such as USDA FoodData Central."],
       ["Key Takeaways", "A large whole egg contains roughly 70–80 calories and around 6 g of protein. Eggs are also sources of choline, vitamin B12, selenium and other micronutrients. Boiled eggs generally stay close to the egg's own calorie value, while frying and scrambling can add substantial calories through oil, butter, dairy and cheese. For weight management or muscle-building goals, eggs can be part of a balanced diet, but total daily intake and overall dietary pattern matter most."]
     ]
-  },\n  {
+  },
+  {
     slug: "banana-calories",
     category: "Nutrition",
     categorySlug: "nutrition",
