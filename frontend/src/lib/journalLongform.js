@@ -57,7 +57,21 @@ export function getLongFormJournalArticle(article) {
   if (!article) return article;
 
   const sections = [["Introduction", articleIntro(article)]];
-  (article.sections || []).forEach(([heading, text], index) => {
+  // Normalize section records because some imported journal sets use
+  // {label, url} objects while the renderer expects [heading, text] tuples.
+  // Without this normalization, array destructuring throws "object is not iterable".
+  const normalizedSections = (Array.isArray(article.sections) ? article.sections : []).map((section) => {
+    if (Array.isArray(section)) {
+      return [section[0] || "Section", section[1] || ""];
+    }
+    if (section && typeof section === "object") {
+      return [section.label || "Section", section.text ?? section.url ?? ""];
+    }
+    return ["Section", String(section ?? "")];
+  });
+
+  const sections = [["Introduction", articleIntro(article)]];
+  normalizedSections.forEach(([heading, text], index) => {
     const expanded = sectionExpansion(article, heading, text, index).join(" ");
     sections.push([heading, limitSentences(expanded, 220)]);
   });
