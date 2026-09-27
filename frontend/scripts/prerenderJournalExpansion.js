@@ -71,7 +71,7 @@ function write(route,html){
       const canonical=`${siteUrl}/journal/${article.categorySlug}/${article.slug}`;
       const schema={"@context":"https://schema.org","@type":"Article",headline:article.title,description:article.description,datePublished:article.date || "2026-09-19",dateModified:article.dateModified || article.date || "2026-09-19",mainEntityOfPage:{"@type":"WebPage","@id":canonical},author:{"@type":"Organization",name:"FitMe Pro"},publisher:{"@type":"Organization",name:"FitMe Pro",url:siteUrl},articleSection:article.category,keywords:article.keywords,isAccessibleForFree:true};
 
-      const quickSummary=Array.isArray(article.quickSummary)?\`<section style="margin:0 0 28px;padding:22px;border:1px solid #ddd;border-radius:20px"><h2 style="margin:0 0 10px;line-height:1.25;letter-spacing:normal;word-spacing:normal">Quick Summary</h2><ul style="margin:0;padding-left:22px;line-height:1.65">\${article.quickSummary.map(p=>\`<li style="margin-bottom:8px">\${esc(p)}</li>\`).join("")}</ul></section>\`:"";
+      const quickSummary=Array.isArray(article.quickSummary)?`<section style="margin:0 0 28px;padding:22px;border:1px solid #ddd;border-radius:20px"><h2 style="margin:0 0 10px;line-height:1.25;letter-spacing:normal;word-spacing:normal">Quick Summary</h2><ul style="margin:0;padding-left:22px;line-height:1.65">${article.quickSummary.map(p=>`<li style="margin-bottom:8px">${esc(p)}</li>`).join("")}</ul></section>`:"";
       const sections=article.sections
         .filter(([h]) => h !== "Introduction")
         .map(([h,t])=>`<section style="margin:0 0 28px"><h2 style="margin:0 0 10px;line-height:1.25;letter-spacing:normal;word-spacing:normal">${esc(h)}</h2><p style="margin:0;line-height:1.65">${esc(t)}</p></section>`)
