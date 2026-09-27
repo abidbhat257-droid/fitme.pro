@@ -44,8 +44,11 @@ function articleIntro(article) {
 }
 
 function faq(article) {
-  const first = article.sections?.[0]?.[0] || "this topic";
-  const last = article.sections?.[article.sections.length - 1]?.[0] || "the information in this guide";
+  const rawSections = Array.isArray(article.sections) ? article.sections : [];
+  const firstSection = rawSections[0];
+  const lastSection = rawSections[rawSections.length - 1];
+  const first = Array.isArray(firstSection) ? firstSection[0] : (firstSection?.label || "this topic");
+  const last = Array.isArray(lastSection) ? lastSection[0] : (lastSection?.label || "the information in this guide");
   return [
     ["Can I use this information for my own plan?", `You can use this guide as general education and as a starting point for questions. Your appropriate target may differ because of age, health status, activity, medications, dietary needs and personal goals. ${first} should therefore be interpreted as guidance rather than a diagnosis or individualized prescription.`],
     ["What if I cannot follow every recommendation?", "That is normal. Focus on changes that are realistic and meaningful for you. A sustainable routine with a few repeatable improvements is usually more useful than a perfect plan that lasts only a short time. Review progress over time and adjust gradually rather than treating one imperfect day as failure."],
@@ -56,7 +59,6 @@ function faq(article) {
 export function getLongFormJournalArticle(article) {
   if (!article) return article;
 
-  const sections = [["Introduction", articleIntro(article)]];
   // Normalize section records because some imported journal sets use
   // {label, url} objects while the renderer expects [heading, text] tuples.
   // Without this normalization, array destructuring throws "object is not iterable".
