@@ -78,7 +78,32 @@ function write(route,html){
 
     const bySlug=new Map();
     for(const article of [...baseArticles,...expansionArticles,...specialArticles]) bySlug.set(article.slug,article);
-    const articles=[...bySlug.values()].map(getLongFormJournalArticle);
+    const articles=[];
+    for (const article of bySlug.values()) {
+      try {
+        const rendered=getLongFormJournalArticle(article);
+        if (!rendered || !Array.isArray(rendered.sections)) {
+          throw new Error("Long-form renderer returned an invalid article/sections structure");
+        }
+        // Final safety normalization: the HTML renderer below requires tuple sections.
+        rendered.sections = rendered.sections.map((section) => {
+          if (Array.isArray(section)) return [section[0] || "Section", section[1] || ""];
+          if (section && typeof section === "object") {
+            return [section.label || "Section", section.text ?? section.url ?? ""];
+          }
+          return ["Section", String(section ?? "")];
+        });
+        rendered.sources = Array.isArray(rendered.sources)
+          ? rendered.sources.filter(Boolean).map((source) => ({
+              label: source?.label || source?.title || "Source",
+              url: source?.url || source?.href || "#"
+            }))
+          : [];
+        articles.push(rendered);
+      } catch (error) {
+        throw new Error(`Failed to render Journal article "${article?.slug || "unknown-slug"}": ${error?.stack || error}`);
+      }
+    }
     const base=fs.readFileSync(indexPath,"utf8");
 
     for(const article of articles){
@@ -91,7 +116,7 @@ function write(route,html){
         .map(([h,t])=>`<section style="margin:0 0 28px"><h2 style="margin:0 0 10px;line-height:1.25;letter-spacing:normal;word-spacing:normal">${esc(h)}</h2><p style="margin:0;line-height:1.65">${esc(t)}</p></section>`)
         .join("");
 
-      const sources=article.sources.map(s=>`<li style="margin-bottom:8px"><a href="${esc(s.url)}">${esc(s.label)}</a></li>`).join("");
+      const sources=(Array.isArray(article.sources) ? article.sources : []).map(s=>`<li style="margin-bottom:8px"><a href="${esc(s.url)}">${esc(s.label)}</a></li>`).join("");
       const body=`<main><article style="max-width:900px;margin:0 auto;padding:40px 20px;font-family:Arial,sans-serif;overflow-wrap:anywhere"><a href="/journal/${article.categorySlug}" style="display:inline-block;margin-bottom:20px">← ${esc(article.category)} Journal</a><header style="margin-bottom:32px;padding-bottom:24px;border-bottom:1px solid #ddd"><p style="margin-bottom:10px;letter-spacing:.04em">${esc(article.category)} · ${esc(article.readTime)}</p><h1 style="margin:0 0 16px;line-height:1.15;letter-spacing:normal;word-spacing:normal;overflow-wrap:anywhere">${esc(article.title)}</h1><p style="margin:0 0 14px;line-height:1.65">${esc(article.description)}</p><p style="margin:0">Published ${esc(article.date || "September 19, 2026")} · FitMe Pro Journal</p></header>${quickSummary}${sections}<section style="margin:0 0 28px;padding:22px;border:1px solid #ddd;border-radius:20px"><h2 style="margin:0 0 10px;line-height:1.25;letter-spacing:normal;word-spacing:normal">Health and wellness calculators</h2><p style="line-height:1.65;margin:0 0 10px">Use our calculators to explore estimates alongside the information in this guide.</p><ul style="margin:0;padding-left:20px"><li><a href="/bmr-calculator">BMR Calculator</a></li><li><a href="/tdee-calculator">TDEE Calculator</a></li><li><a href="/protein-calculator">Protein Calculator</a></li><li><a href="/calorie-deficit-calculator">Calorie Deficit Calculator</a></li></ul></section><section style="padding-top:24px;border-top:1px solid #ddd"><h2 style="margin:0 0 10px;line-height:1.25;letter-spacing:normal;word-spacing:normal">Sources & further reading</h2><ul style="margin:0;padding-left:20px">${sources}</ul><p style="margin-top:18px;line-height:1.6">FitMe Pro uses authoritative public-health guidance as a reference and does not reproduce source publications. Content is educational and should not replace individualized medical advice.</p></section></article></main>`;
       let html=meta(base,`${article.title} | FitMe Pro Journal`,article.description,canonical);
       html=html.replace(/<div id="root"><\/div>/i,`<div id="root">${body}</div>`).replace(/<\/head>/i,`<script type="application/ld+json">${json(schema)}</script></head>`);
