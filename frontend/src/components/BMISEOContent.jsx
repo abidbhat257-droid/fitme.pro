@@ -14,6 +14,609 @@ const faqs = [
   ["Does FitMe Pro's BMI calculator diagnose obesity?", "No. FitMe Pro provides an educational BMI estimate. A BMI category is a screening result and should not be treated as a medical diagnosis."],
 ];
 
+const bmiQuestions = [
+  {
+    "number": 1,
+    "category": "Core Definitions & Basics",
+    "question": "What is BMI?",
+    "answer": "BMI is a calculated measure of weight relative to height. For adults it is used as a screening measure, not a diagnosis."
+  },
+  {
+    "number": 2,
+    "category": "Core Definitions & Basics",
+    "question": "What does BMI stand for?",
+    "answer": "BMI is a calculated measure of weight relative to height. For adults it is used as a screening measure, not a diagnosis."
+  },
+  {
+    "number": 3,
+    "category": "Core Definitions & Basics",
+    "question": "Why is BMI used?",
+    "answer": "BMI is a calculated measure of weight relative to height. For adults it is used as a screening measure, not a diagnosis."
+  },
+  {
+    "number": 4,
+    "category": "Core Definitions & Basics",
+    "question": "Is BMI a measurement of body fat?",
+    "answer": "BMI is a calculated measure of weight relative to height. For adults it is used as a screening measure, not a diagnosis."
+  },
+  {
+    "number": 5,
+    "category": "Core Definitions & Basics",
+    "question": "What is a healthy BMI for adults?",
+    "answer": "BMI is a calculated measure of weight relative to height. For adults it is used as a screening measure, not a diagnosis."
+  },
+  {
+    "number": 6,
+    "category": "Core Definitions & Basics",
+    "question": "What does a BMI number tell me?",
+    "answer": "BMI is a calculated measure of weight relative to height. For adults it is used as a screening measure, not a diagnosis."
+  },
+  {
+    "number": 7,
+    "category": "Core Definitions & Basics",
+    "question": "Is BMI a health score?",
+    "answer": "BMI is a calculated measure of weight relative to height. For adults it is used as a screening measure, not a diagnosis."
+  },
+  {
+    "number": 8,
+    "category": "Core Definitions & Basics",
+    "question": "Is BMI a diagnosis?",
+    "answer": "BMI is a calculated measure of weight relative to height. For adults it is used as a screening measure, not a diagnosis."
+  },
+  {
+    "number": 9,
+    "category": "Core Definitions & Basics",
+    "question": "Why is BMI called a screening measure?",
+    "answer": "BMI is a calculated measure of weight relative to height. For adults it is used as a screening measure, not a diagnosis."
+  },
+  {
+    "number": 10,
+    "category": "Core Definitions & Basics",
+    "question": "What is the difference between BMI and body weight?",
+    "answer": "BMI is a calculated measure of weight relative to height. For adults it is used as a screening measure, not a diagnosis."
+  },
+  {
+    "number": 11,
+    "category": "Calculation & Formulas",
+    "question": "How do I calculate BMI?",
+    "answer": "BMI is calculated from height and weight. Metric BMI is weight in kilograms divided by height in meters squared; imperial BMI uses 703 × pounds divided by inches squared."
+  },
+  {
+    "number": 12,
+    "category": "Calculation & Formulas",
+    "question": "What is the BMI formula in metric units?",
+    "answer": "BMI is calculated from height and weight. Metric BMI is weight in kilograms divided by height in meters squared; imperial BMI uses 703 × pounds divided by inches squared."
+  },
+  {
+    "number": 13,
+    "category": "Calculation & Formulas",
+    "question": "What is the BMI formula in pounds and inches?",
+    "answer": "BMI is calculated from height and weight. Metric BMI is weight in kilograms divided by height in meters squared; imperial BMI uses 703 × pounds divided by inches squared."
+  },
+  {
+    "number": 14,
+    "category": "Calculation & Formulas",
+    "question": "How do I calculate BMI from kilograms and centimeters?",
+    "answer": "BMI is calculated from height and weight. Metric BMI is weight in kilograms divided by height in meters squared; imperial BMI uses 703 × pounds divided by inches squared."
+  },
+  {
+    "number": 15,
+    "category": "Calculation & Formulas",
+    "question": "How do I calculate BMI from pounds and feet?",
+    "answer": "BMI is calculated from height and weight. Metric BMI is weight in kilograms divided by height in meters squared; imperial BMI uses 703 × pounds divided by inches squared."
+  },
+  {
+    "number": 16,
+    "category": "Calculation & Formulas",
+    "question": "Why is height squared in the BMI formula?",
+    "answer": "BMI is calculated from height and weight. Metric BMI is weight in kilograms divided by height in meters squared; imperial BMI uses 703 × pounds divided by inches squared."
+  },
+  {
+    "number": 17,
+    "category": "Calculation & Formulas",
+    "question": "What units does BMI use?",
+    "answer": "BMI is calculated from height and weight. Metric BMI is weight in kilograms divided by height in meters squared; imperial BMI uses 703 × pounds divided by inches squared."
+  },
+  {
+    "number": 18,
+    "category": "Calculation & Formulas",
+    "question": "How do I convert centimeters to meters for BMI?",
+    "answer": "BMI is calculated from height and weight. Metric BMI is weight in kilograms divided by height in meters squared; imperial BMI uses 703 × pounds divided by inches squared."
+  },
+  {
+    "number": 19,
+    "category": "Calculation & Formulas",
+    "question": "How do I convert pounds to kilograms for BMI?",
+    "answer": "BMI is calculated from height and weight. Metric BMI is weight in kilograms divided by height in meters squared; imperial BMI uses 703 × pounds divided by inches squared."
+  },
+  {
+    "number": 20,
+    "category": "Calculation & Formulas",
+    "question": "How do I convert feet and inches to centimeters?",
+    "answer": "BMI is calculated from height and weight. Metric BMI is weight in kilograms divided by height in meters squared; imperial BMI uses 703 × pounds divided by inches squared."
+  },
+  {
+    "number": 21,
+    "category": "Calculation & Formulas",
+    "question": "Does rounding height change BMI?",
+    "answer": "BMI is calculated from height and weight. Metric BMI is weight in kilograms divided by height in meters squared; imperial BMI uses 703 × pounds divided by inches squared."
+  },
+  {
+    "number": 22,
+    "category": "Calculation & Formulas",
+    "question": "Why can two BMI calculators give slightly different results?",
+    "answer": "BMI is calculated from height and weight. Metric BMI is weight in kilograms divided by height in meters squared; imperial BMI uses 703 × pounds divided by inches squared."
+  },
+  {
+    "number": 23,
+    "category": "Ranges, Categories & Charts",
+    "question": "What are the adult BMI categories?",
+    "answer": "For adults 20 and older, common categories are underweight below 18.5, healthy weight 18.5 to less than 25, overweight 25 to less than 30, and obesity 30 or greater."
+  },
+  {
+    "number": 24,
+    "category": "Ranges, Categories & Charts",
+    "question": "What BMI is underweight?",
+    "answer": "For adults 20 and older, common categories are underweight below 18.5, healthy weight 18.5 to less than 25, overweight 25 to less than 30, and obesity 30 or greater."
+  },
+  {
+    "number": 25,
+    "category": "Ranges, Categories & Charts",
+    "question": "What BMI is healthy weight?",
+    "answer": "For adults 20 and older, common categories are underweight below 18.5, healthy weight 18.5 to less than 25, overweight 25 to less than 30, and obesity 30 or greater."
+  },
+  {
+    "number": 26,
+    "category": "Ranges, Categories & Charts",
+    "question": "What BMI is overweight?",
+    "answer": "For adults 20 and older, common categories are underweight below 18.5, healthy weight 18.5 to less than 25, overweight 25 to less than 30, and obesity 30 or greater."
+  },
+  {
+    "number": 27,
+    "category": "Ranges, Categories & Charts",
+    "question": "What BMI is obesity?",
+    "answer": "For adults 20 and older, common categories are underweight below 18.5, healthy weight 18.5 to less than 25, overweight 25 to less than 30, and obesity 30 or greater."
+  },
+  {
+    "number": 28,
+    "category": "Ranges, Categories & Charts",
+    "question": "What is Class 1 obesity BMI?",
+    "answer": "For adults 20 and older, common categories are underweight below 18.5, healthy weight 18.5 to less than 25, overweight 25 to less than 30, and obesity 30 or greater."
+  },
+  {
+    "number": 29,
+    "category": "Ranges, Categories & Charts",
+    "question": "What is Class 2 obesity BMI?",
+    "answer": "For adults 20 and older, common categories are underweight below 18.5, healthy weight 18.5 to less than 25, overweight 25 to less than 30, and obesity 30 or greater."
+  },
+  {
+    "number": 30,
+    "category": "Ranges, Categories & Charts",
+    "question": "What is Class 3 obesity BMI?",
+    "answer": "For adults 20 and older, common categories are underweight below 18.5, healthy weight 18.5 to less than 25, overweight 25 to less than 30, and obesity 30 or greater."
+  },
+  {
+    "number": 31,
+    "category": "Ranges, Categories & Charts",
+    "question": "Is BMI 18.5 healthy?",
+    "answer": "For adults 20 and older, common categories are underweight below 18.5, healthy weight 18.5 to less than 25, overweight 25 to less than 30, and obesity 30 or greater."
+  },
+  {
+    "number": 32,
+    "category": "Ranges, Categories & Charts",
+    "question": "Is BMI 24.9 healthy?",
+    "answer": "For adults 20 and older, common categories are underweight below 18.5, healthy weight 18.5 to less than 25, overweight 25 to less than 30, and obesity 30 or greater."
+  },
+  {
+    "number": 33,
+    "category": "Ranges, Categories & Charts",
+    "question": "Is BMI 25 overweight?",
+    "answer": "For adults 20 and older, common categories are underweight below 18.5, healthy weight 18.5 to less than 25, overweight 25 to less than 30, and obesity 30 or greater."
+  },
+  {
+    "number": 34,
+    "category": "Ranges, Categories & Charts",
+    "question": "Is BMI 30 obesity?",
+    "answer": "For adults 20 and older, common categories are underweight below 18.5, healthy weight 18.5 to less than 25, overweight 25 to less than 30, and obesity 30 or greater."
+  },
+  {
+    "number": 35,
+    "category": "Ranges, Categories & Charts",
+    "question": "How do I calculate the weight range for a BMI category?",
+    "answer": "For adults 20 and older, common categories are underweight below 18.5, healthy weight 18.5 to less than 25, overweight 25 to less than 30, and obesity 30 or greater."
+  },
+  {
+    "number": 36,
+    "category": "Age-Specific BMI",
+    "question": "Does BMI change with age?",
+    "answer": "Children and teens are interpreted differently from adults. Ages 2–19 use sex-specific BMI-for-age percentiles, while adults 20 and older use adult BMI categories."
+  },
+  {
+    "number": 37,
+    "category": "Age-Specific BMI",
+    "question": "Does BMI work for teenagers?",
+    "answer": "Children and teens are interpreted differently from adults. Ages 2–19 use sex-specific BMI-for-age percentiles, while adults 20 and older use adult BMI categories."
+  },
+  {
+    "number": 38,
+    "category": "Age-Specific BMI",
+    "question": "Does BMI work for children?",
+    "answer": "Children and teens are interpreted differently from adults. Ages 2–19 use sex-specific BMI-for-age percentiles, while adults 20 and older use adult BMI categories."
+  },
+  {
+    "number": 39,
+    "category": "Age-Specific BMI",
+    "question": "How is BMI interpreted for a 15-year-old?",
+    "answer": "Children and teens are interpreted differently from adults. Ages 2–19 use sex-specific BMI-for-age percentiles, while adults 20 and older use adult BMI categories."
+  },
+  {
+    "number": 40,
+    "category": "Age-Specific BMI",
+    "question": "How is BMI interpreted for a 10-year-old?",
+    "answer": "Children and teens are interpreted differently from adults. Ages 2–19 use sex-specific BMI-for-age percentiles, while adults 20 and older use adult BMI categories."
+  },
+  {
+    "number": 41,
+    "category": "Age-Specific BMI",
+    "question": "Does BMI work for babies?",
+    "answer": "Children and teens are interpreted differently from adults. Ages 2–19 use sex-specific BMI-for-age percentiles, while adults 20 and older use adult BMI categories."
+  },
+  {
+    "number": 42,
+    "category": "Age-Specific BMI",
+    "question": "What BMI is healthy for a 20-year-old?",
+    "answer": "Children and teens are interpreted differently from adults. Ages 2–19 use sex-specific BMI-for-age percentiles, while adults 20 and older use adult BMI categories."
+  },
+  {
+    "number": 43,
+    "category": "Age-Specific BMI",
+    "question": "What BMI is healthy for a 30-year-old?",
+    "answer": "Children and teens are interpreted differently from adults. Ages 2–19 use sex-specific BMI-for-age percentiles, while adults 20 and older use adult BMI categories."
+  },
+  {
+    "number": 44,
+    "category": "Age-Specific BMI",
+    "question": "What BMI is healthy for a 40-year-old?",
+    "answer": "Children and teens are interpreted differently from adults. Ages 2–19 use sex-specific BMI-for-age percentiles, while adults 20 and older use adult BMI categories."
+  },
+  {
+    "number": 45,
+    "category": "Age-Specific BMI",
+    "question": "What BMI is healthy for a 50-year-old?",
+    "answer": "Children and teens are interpreted differently from adults. Ages 2–19 use sex-specific BMI-for-age percentiles, while adults 20 and older use adult BMI categories."
+  },
+  {
+    "number": 46,
+    "category": "Age-Specific BMI",
+    "question": "What BMI is healthy for a 60-year-old?",
+    "answer": "Children and teens are interpreted differently from adults. Ages 2–19 use sex-specific BMI-for-age percentiles, while adults 20 and older use adult BMI categories."
+  },
+  {
+    "number": 47,
+    "category": "Age-Specific BMI",
+    "question": "What BMI is healthy for a 70-year-old?",
+    "answer": "Children and teens are interpreted differently from adults. Ages 2–19 use sex-specific BMI-for-age percentiles, while adults 20 and older use adult BMI categories."
+  },
+  {
+    "number": 48,
+    "category": "Age-Specific BMI",
+    "question": "Why is BMI-for-age used for children instead of adult BMI?",
+    "answer": "Children and teens are interpreted differently from adults. Ages 2–19 use sex-specific BMI-for-age percentiles, while adults 20 and older use adult BMI categories."
+  },
+  {
+    "number": 49,
+    "category": "Gender & Demographic Differences",
+    "question": "Is BMI different for men and women?",
+    "answer": "The standard adult BMI calculation and CDC category cutoffs do not change by sex or race, although body composition and health-risk relationships can differ between populations."
+  },
+  {
+    "number": 50,
+    "category": "Gender & Demographic Differences",
+    "question": "Do men and women use the same BMI formula?",
+    "answer": "The standard adult BMI calculation and CDC category cutoffs do not change by sex or race, although body composition and health-risk relationships can differ between populations."
+  },
+  {
+    "number": 51,
+    "category": "Gender & Demographic Differences",
+    "question": "Are adult BMI cutoffs different by sex?",
+    "answer": "The standard adult BMI calculation and CDC category cutoffs do not change by sex or race, although body composition and health-risk relationships can differ between populations."
+  },
+  {
+    "number": 52,
+    "category": "Gender & Demographic Differences",
+    "question": "Does ethnicity affect BMI interpretation?",
+    "answer": "The standard adult BMI calculation and CDC category cutoffs do not change by sex or race, although body composition and health-risk relationships can differ between populations."
+  },
+  {
+    "number": 53,
+    "category": "Gender & Demographic Differences",
+    "question": "Does BMI work the same for every ethnic group?",
+    "answer": "The standard adult BMI calculation and CDC category cutoffs do not change by sex or race, although body composition and health-risk relationships can differ between populations."
+  },
+  {
+    "number": 54,
+    "category": "Gender & Demographic Differences",
+    "question": "Are BMI cutoffs different for Asian adults?",
+    "answer": "The standard adult BMI calculation and CDC category cutoffs do not change by sex or race, although body composition and health-risk relationships can differ between populations."
+  },
+  {
+    "number": 55,
+    "category": "Gender & Demographic Differences",
+    "question": "Is BMI different for athletes?",
+    "answer": "The standard adult BMI calculation and CDC category cutoffs do not change by sex or race, although body composition and health-risk relationships can differ between populations."
+  },
+  {
+    "number": 56,
+    "category": "Gender & Demographic Differences",
+    "question": "Is BMI accurate for bodybuilders?",
+    "answer": "The standard adult BMI calculation and CDC category cutoffs do not change by sex or race, although body composition and health-risk relationships can differ between populations."
+  },
+  {
+    "number": 57,
+    "category": "Gender & Demographic Differences",
+    "question": "Is BMI accurate for older adults?",
+    "answer": "The standard adult BMI calculation and CDC category cutoffs do not change by sex or race, although body composition and health-risk relationships can differ between populations."
+  },
+  {
+    "number": 58,
+    "category": "Gender & Demographic Differences",
+    "question": "Is BMI accurate during pregnancy?",
+    "answer": "The standard adult BMI calculation and CDC category cutoffs do not change by sex or race, although body composition and health-risk relationships can differ between populations."
+  },
+  {
+    "number": 59,
+    "category": "Accuracy, Limitations & Misconceptions",
+    "question": "How accurate is BMI?",
+    "answer": "BMI can be useful for screening but cannot directly measure body fat, muscle, fat distribution, fitness, or many other factors that affect health."
+  },
+  {
+    "number": 60,
+    "category": "Accuracy, Limitations & Misconceptions",
+    "question": "Can BMI be misleading?",
+    "answer": "BMI can be useful for screening but cannot directly measure body fat, muscle, fat distribution, fitness, or many other factors that affect health."
+  },
+  {
+    "number": 61,
+    "category": "Accuracy, Limitations & Misconceptions",
+    "question": "Can two people have the same BMI but different body fat?",
+    "answer": "BMI can be useful for screening but cannot directly measure body fat, muscle, fat distribution, fitness, or many other factors that affect health."
+  },
+  {
+    "number": 62,
+    "category": "Accuracy, Limitations & Misconceptions",
+    "question": "Can BMI be high without high body fat?",
+    "answer": "BMI can be useful for screening but cannot directly measure body fat, muscle, fat distribution, fitness, or many other factors that affect health."
+  },
+  {
+    "number": 63,
+    "category": "Accuracy, Limitations & Misconceptions",
+    "question": "Can BMI be low with high body fat?",
+    "answer": "BMI can be useful for screening but cannot directly measure body fat, muscle, fat distribution, fitness, or many other factors that affect health."
+  },
+  {
+    "number": 64,
+    "category": "Accuracy, Limitations & Misconceptions",
+    "question": "Does BMI measure visceral fat?",
+    "answer": "BMI can be useful for screening but cannot directly measure body fat, muscle, fat distribution, fitness, or many other factors that affect health."
+  },
+  {
+    "number": 65,
+    "category": "Accuracy, Limitations & Misconceptions",
+    "question": "Does BMI measure muscle?",
+    "answer": "BMI can be useful for screening but cannot directly measure body fat, muscle, fat distribution, fitness, or many other factors that affect health."
+  },
+  {
+    "number": 66,
+    "category": "Accuracy, Limitations & Misconceptions",
+    "question": "Does BMI measure bone density?",
+    "answer": "BMI can be useful for screening but cannot directly measure body fat, muscle, fat distribution, fitness, or many other factors that affect health."
+  },
+  {
+    "number": 67,
+    "category": "Accuracy, Limitations & Misconceptions",
+    "question": "Does BMI measure fitness?",
+    "answer": "BMI can be useful for screening but cannot directly measure body fat, muscle, fat distribution, fitness, or many other factors that affect health."
+  },
+  {
+    "number": 68,
+    "category": "Accuracy, Limitations & Misconceptions",
+    "question": "Does BMI account for body-fat distribution?",
+    "answer": "BMI can be useful for screening but cannot directly measure body fat, muscle, fat distribution, fitness, or many other factors that affect health."
+  },
+  {
+    "number": 69,
+    "category": "Accuracy, Limitations & Misconceptions",
+    "question": "Does BMI account for muscle mass?",
+    "answer": "BMI can be useful for screening but cannot directly measure body fat, muscle, fat distribution, fitness, or many other factors that affect health."
+  },
+  {
+    "number": 70,
+    "category": "Accuracy, Limitations & Misconceptions",
+    "question": "How often should I calculate BMI?",
+    "answer": "BMI can be useful for screening but cannot directly measure body fat, muscle, fat distribution, fitness, or many other factors that affect health."
+  },
+  {
+    "number": 71,
+    "category": "Accuracy, Limitations & Misconceptions",
+    "question": "What should I use with BMI for a fuller picture?",
+    "answer": "BMI can be useful for screening but cannot directly measure body fat, muscle, fat distribution, fitness, or many other factors that affect health."
+  },
+  {
+    "number": 72,
+    "category": "Accuracy, Limitations & Misconceptions",
+    "question": "Is a lower BMI always healthier?",
+    "answer": "BMI can be useful for screening but cannot directly measure body fat, muscle, fat distribution, fitness, or many other factors that affect health."
+  },
+  {
+    "number": 73,
+    "category": "Health Risks & Medical Implications",
+    "question": "Does BMI predict health by itself?",
+    "answer": "BMI is associated with health risks at a population level, but individual risk depends on many factors and BMI should be considered alongside other health information."
+  },
+  {
+    "number": 74,
+    "category": "Health Risks & Medical Implications",
+    "question": "What health risks are associated with higher BMI?",
+    "answer": "BMI is associated with health risks at a population level, but individual risk depends on many factors and BMI should be considered alongside other health information."
+  },
+  {
+    "number": 75,
+    "category": "Health Risks & Medical Implications",
+    "question": "Can high BMI increase diabetes risk?",
+    "answer": "BMI is associated with health risks at a population level, but individual risk depends on many factors and BMI should be considered alongside other health information."
+  },
+  {
+    "number": 76,
+    "category": "Health Risks & Medical Implications",
+    "question": "Can high BMI increase heart disease risk?",
+    "answer": "BMI is associated with health risks at a population level, but individual risk depends on many factors and BMI should be considered alongside other health information."
+  },
+  {
+    "number": 77,
+    "category": "Health Risks & Medical Implications",
+    "question": "Can high BMI increase blood pressure risk?",
+    "answer": "BMI is associated with health risks at a population level, but individual risk depends on many factors and BMI should be considered alongside other health information."
+  },
+  {
+    "number": 78,
+    "category": "Health Risks & Medical Implications",
+    "question": "Does low BMI have health risks?",
+    "answer": "BMI is associated with health risks at a population level, but individual risk depends on many factors and BMI should be considered alongside other health information."
+  },
+  {
+    "number": 79,
+    "category": "Health Risks & Medical Implications",
+    "question": "Is a higher BMI always unhealthy?",
+    "answer": "BMI is associated with health risks at a population level, but individual risk depends on many factors and BMI should be considered alongside other health information."
+  },
+  {
+    "number": 80,
+    "category": "Health Risks & Medical Implications",
+    "question": "Can gaining muscle increase BMI?",
+    "answer": "BMI is associated with health risks at a population level, but individual risk depends on many factors and BMI should be considered alongside other health information."
+  },
+  {
+    "number": 81,
+    "category": "Health Risks & Medical Implications",
+    "question": "Can losing weight lower BMI?",
+    "answer": "BMI is associated with health risks at a population level, but individual risk depends on many factors and BMI should be considered alongside other health information."
+  },
+  {
+    "number": 82,
+    "category": "Health Risks & Medical Implications",
+    "question": "Can BMI be used to monitor weight loss?",
+    "answer": "BMI is associated with health risks at a population level, but individual risk depends on many factors and BMI should be considered alongside other health information."
+  },
+  {
+    "number": 83,
+    "category": "Health Risks & Medical Implications",
+    "question": "Can BMI alone determine whether someone is healthy?",
+    "answer": "BMI is associated with health risks at a population level, but individual risk depends on many factors and BMI should be considered alongside other health information."
+  },
+  {
+    "number": 84,
+    "category": "Health Risks & Medical Implications",
+    "question": "When should I discuss my BMI with a healthcare professional?",
+    "answer": "BMI is associated with health risks at a population level, but individual risk depends on many factors and BMI should be considered alongside other health information."
+  },
+  {
+    "number": 85,
+    "category": "Weight Loss, Fitness & Goals",
+    "question": "Should I lose weight based only on BMI?",
+    "answer": "BMI can help describe changes in weight relative to height, but it should not be used alone to set individualized weight-loss or fitness targets."
+  },
+  {
+    "number": 86,
+    "category": "Weight Loss, Fitness & Goals",
+    "question": "Can BMI tell me how much weight I should lose?",
+    "answer": "BMI can help describe changes in weight relative to height, but it should not be used alone to set individualized weight-loss or fitness targets."
+  },
+  {
+    "number": 87,
+    "category": "Weight Loss, Fitness & Goals",
+    "question": "Can BMI tell me my ideal weight?",
+    "answer": "BMI can help describe changes in weight relative to height, but it should not be used alone to set individualized weight-loss or fitness targets."
+  },
+  {
+    "number": 88,
+    "category": "Weight Loss, Fitness & Goals",
+    "question": "What weight corresponds to a healthy BMI?",
+    "answer": "BMI can help describe changes in weight relative to height, but it should not be used alone to set individualized weight-loss or fitness targets."
+  },
+  {
+    "number": 89,
+    "category": "Weight Loss, Fitness & Goals",
+    "question": "Can I use BMI to set a fitness goal?",
+    "answer": "BMI can help describe changes in weight relative to height, but it should not be used alone to set individualized weight-loss or fitness targets."
+  },
+  {
+    "number": 90,
+    "category": "Weight Loss, Fitness & Goals",
+    "question": "Should athletes use BMI for goal setting?",
+    "answer": "BMI can help describe changes in weight relative to height, but it should not be used alone to set individualized weight-loss or fitness targets."
+  },
+  {
+    "number": 91,
+    "category": "Weight Loss, Fitness & Goals",
+    "question": "Can BMI help track a weight-loss goal?",
+    "answer": "BMI can help describe changes in weight relative to height, but it should not be used alone to set individualized weight-loss or fitness targets."
+  },
+  {
+    "number": 92,
+    "category": "Weight Loss, Fitness & Goals",
+    "question": "Can BMI help track a muscle-gain goal?",
+    "answer": "BMI can help describe changes in weight relative to height, but it should not be used alone to set individualized weight-loss or fitness targets."
+  },
+  {
+    "number": 93,
+    "category": "Weight Loss, Fitness & Goals",
+    "question": "How can BMI be used alongside body-fat percentage?",
+    "answer": "BMI can help describe changes in weight relative to height, but it should not be used alone to set individualized weight-loss or fitness targets."
+  },
+  {
+    "number": 94,
+    "category": "Weight Loss, Fitness & Goals",
+    "question": "What other measurements should I track with BMI?",
+    "answer": "BMI can help describe changes in weight relative to height, but it should not be used alone to set individualized weight-loss or fitness targets."
+  },
+  {
+    "number": 95,
+    "category": "Medical, Clinical & Industry Cutoffs",
+    "question": "What is the clinical BMI cutoff for obesity?",
+    "answer": "BMI thresholds are standardized screening categories in many clinical and public-health settings. Medical decisions should consider BMI together with other relevant information."
+  },
+  {
+    "number": 96,
+    "category": "Medical, Clinical & Industry Cutoffs",
+    "question": "What is the clinical BMI cutoff for overweight?",
+    "answer": "BMI thresholds are standardized screening categories in many clinical and public-health settings. Medical decisions should consider BMI together with other relevant information."
+  },
+  {
+    "number": 97,
+    "category": "Medical, Clinical & Industry Cutoffs",
+    "question": "What is the clinical BMI cutoff for underweight?",
+    "answer": "BMI thresholds are standardized screening categories in many clinical and public-health settings. Medical decisions should consider BMI together with other relevant information."
+  },
+  {
+    "number": 98,
+    "category": "Medical, Clinical & Industry Cutoffs",
+    "question": "How is BMI used in clinical practice?",
+    "answer": "BMI thresholds are standardized screening categories in many clinical and public-health settings. Medical decisions should consider BMI together with other relevant information."
+  },
+  {
+    "number": 99,
+    "category": "Medical, Clinical & Industry Cutoffs",
+    "question": "How is BMI used in public health?",
+    "answer": "BMI thresholds are standardized screening categories in many clinical and public-health settings. Medical decisions should consider BMI together with other relevant information."
+  },
+  {
+    "number": 100,
+    "category": "Medical, Clinical & Industry Cutoffs",
+    "question": "Can BMI be used for medical decisions?",
+    "answer": "BMI thresholds are standardized screening categories in many clinical and public-health settings. Medical decisions should consider BMI together with other relevant information."
+  }
+];
+
 export default function BMISEOContent() {
   return (
     <article className="border-t border-border pt-10 mt-2 space-y-6" aria-label="BMI Calculator complete guide">
@@ -133,6 +736,25 @@ export default function BMISEOContent() {
               <h4 className="font-bold text-sm sm:text-base">{q}</h4>
               <p className="mt-2 text-sm text-muted-foreground leading-7">{a}</p>
             </div>
+          ))}
+        </div>
+      </section>
+
+
+      <section>
+        <h3 className="font-display text-2xl uppercase tracking-tight mb-3">100 BMI Questions: Beginner to Advanced</h3>
+        <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-5">
+          Explore common BMI questions in a learning sequence, from basic definitions and calculations through age, demographics, limitations, health implications, weight-management use, and clinical applications.
+        </p>
+        <div className="space-y-3">
+          {bmiQuestions.map(({ number, category, question, answer }) => (
+            <details key={number} className="border border-border bg-card p-4">
+              <summary className="cursor-pointer font-bold text-sm sm:text-base">
+                <span className="text-muted-foreground mr-2">{number}.</span>{question}
+              </summary>
+              <p className="mt-3 text-sm text-muted-foreground leading-7">{answer}</p>
+              <div className="mt-2 text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">{category}</div>
+            </details>
           ))}
         </div>
       </section>
