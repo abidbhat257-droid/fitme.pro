@@ -13,6 +13,8 @@ const tempJournalPath = path.join(build, "__fitme_journal.mjs");
 const tempExpansionPath = path.join(build, "__fitme_journal_expansion.mjs");
 const tempLongformPath = path.join(build, "__fitme_journal_longform.mjs");
 const tempSpecialPath = path.join(build, "__fitme_journal_special.mjs");
+const journalDataDir = path.join(build, "journal");
+const specialArticleFiles = ["nutritionArticles.js","fitnessArticles.js","weightManagementArticles.js","bodyCompositionArticles.js","wellnessArticles.js","healthEducationArticles.js"];
 const siteUrl = (process.env.SITE_URL || "https://fitme-pro.vercel.app").replace(/\/$/, "");
 
 if (!fs.existsSync(indexPath)) throw new Error(`Build output not found: ${indexPath}`);
@@ -49,7 +51,19 @@ function write(route,html){
     fs.writeFileSync(tempJournalPath,fs.readFileSync(journalPath,"utf8"),"utf8");
     fs.writeFileSync(tempExpansionPath,fs.readFileSync(expansionPath,"utf8"),"utf8");
     fs.writeFileSync(tempLongformPath,fs.readFileSync(longformPath,"utf8"),"utf8");
-    fs.writeFileSync(tempSpecialPath,fs.readFileSync(specialPath,"utf8"),"utf8");
+    fs.mkdirSync(journalDataDir,{recursive:true});
+    for(const file of specialArticleFiles){
+      const source=path.join(root,"src","lib","journal",file);
+      const dest=path.join(journalDataDir,file.replace(/\\.js$/,".mjs"));
+      if(!fs.existsSync(source)) throw new Error(`Required Journal article source not found: ${source}`);
+      fs.writeFileSync(dest,fs.readFileSync(source,"utf8"),"utf8");
+    }
+    let specialSource=fs.readFileSync(specialPath,"utf8");
+    for(const file of specialArticleFiles){
+      const base=file.replace(/\\.js$/,"");
+      specialSource=specialSource.replaceAll(`./journal/${base}`,`./journal/${base}.mjs`);
+    }
+    fs.writeFileSync(tempSpecialPath,specialSource,"utf8");
 
     const journalMod=await import(`${pathToFileURL(tempJournalPath).href}?v=${Date.now()}`);
     const expansionMod=await import(`${pathToFileURL(tempExpansionPath).href}?v=${Date.now()}`);
@@ -87,5 +101,7 @@ function write(route,html){
     console.log(`Prerendered ${articles.length} long-form Journal articles (base + expanded).`);
   }finally{
     for(const file of [tempJournalPath,tempExpansionPath,tempLongformPath,tempSpecialPath]){try{fs.unlinkSync(file)}catch(_){} }
+    for(const file of specialArticleFiles){try{fs.unlinkSync(path.join(journalDataDir,file.replace(/\\.js$/,".mjs")))}catch(_){} }
+    try{fs.rmdirSync(journalDataDir)}catch(_){}
   }
 })().catch(e=>{console.error("Journal long-form prerender failed:",e);process.exit(1)});
