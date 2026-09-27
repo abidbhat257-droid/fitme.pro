@@ -54,13 +54,13 @@ function write(route,html){
     fs.mkdirSync(journalDataDir,{recursive:true});
     for(const file of specialArticleFiles){
       const source=path.join(root,"src","lib","journal",file);
-      const dest=path.join(journalDataDir,file.replace(/\\.js$/,".mjs"));
+      const dest=path.join(journalDataDir,file.endsWith(".js") ? file.slice(0, -3) + ".mjs" : file);
       if(!fs.existsSync(source)) throw new Error(`Required Journal article source not found: ${source}`);
       fs.writeFileSync(dest,fs.readFileSync(source,"utf8"),"utf8");
     }
     let specialSource=fs.readFileSync(specialPath,"utf8");
     for(const file of specialArticleFiles){
-      const base=file.replace(/\\.js$/,"");
+      const base=file.endsWith(".js") ? file.slice(0, -3) : file;
       specialSource=specialSource.replaceAll(`./journal/${base}`,`./journal/${base}.mjs`);
     }
     fs.writeFileSync(tempSpecialPath,specialSource,"utf8");
@@ -101,7 +101,7 @@ function write(route,html){
     console.log(`Prerendered ${articles.length} long-form Journal articles (base + expanded).`);
   }finally{
     for(const file of [tempJournalPath,tempExpansionPath,tempLongformPath,tempSpecialPath]){try{fs.unlinkSync(file)}catch(_){} }
-    for(const file of specialArticleFiles){try{fs.unlinkSync(path.join(journalDataDir,file.replace(/\\.js$/,".mjs")))}catch(_){} }
+    for(const file of specialArticleFiles){try{fs.unlinkSync(path.join(journalDataDir,file.endsWith(".js") ? file.slice(0, -3) + ".mjs" : file))}catch(_){} }
     try{fs.rmdirSync(journalDataDir)}catch(_){}
   }
 })().catch(e=>{console.error("Journal long-form prerender failed:",e);process.exit(1)});
