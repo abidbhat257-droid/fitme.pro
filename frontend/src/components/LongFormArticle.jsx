@@ -13,14 +13,14 @@ import Phase6SEOContent from "@/components/Phase6SEOContent";
 import RemainingSEOContent from "@/components/RemainingSEOContent";
 import SEOPageCompleteness from "@/components/SEOPageCompleteness";
 
-const PHASE1_SEO_SLUGS = new Set(["daily-calorie-needs", "bmr", "ideal-body-weight", "tdee", "maintenance-calories"]);
+const PHASE1_SEO_SLUGS = new Set(["daily-calorie-needs", "bmr", "ideal-body-weight", "bmi-prime", "tdee", "maintenance-calories"]);
 const PHASE2_SEO_SLUGS = new Set(["calorie", "body-fat", "calorie-deficit", "calories-burned", "water-intake"]);
 const PHASE3_SEO_SLUGS = new Set(["protein", "pace", "one-rep-max", "maximum-heart-rate", "heart-rate-zone"]);
 const PHASE4_SEO_SLUGS = new Set(["walking-calories", "macro-calculator", "vo2-max", "healthy-weight-range", "body-surface-area"]);
 const PHASE5_SEO_SLUGS = new Set(["adjusted-body-weight", "target-weight", "target-weight-bmi", "weight-loss-percentage", "weight-gain-percentage"]);
 const PHASE6_SEO_SLUGS = new Set(["weight-change", "weight-loss-timeline", "goal-weight-date", "weekly-weight-loss", "calories-to-lose-kg"]);
 const REMAINING_SEO_SLUGS = new Set([
-  "calories-to-gain-1-kg", "obesity-class", "bmi-prime", "calorie-surplus", "weight-loss-calorie", "weight-gain-calorie", "exercise-calorie", "running-calorie", "cycling-calorie", "reverse-diet", "calorie-per-meal",
+  "calories-to-gain-1-kg", "obesity-class", "calorie-surplus", "weight-loss-calorie", "weight-gain-calorie", "exercise-calorie", "running-calorie", "cycling-calorie", "reverse-diet", "calorie-per-meal",
   "protein-per-meal", "protein-to-calorie-ratio", "macro-percentage", "carbohydrate", "fat-intake", "fiber-intake", "net-carbohydrate", "sodium-intake", "caffeine-intake", "micronutrient-intake", "daily-calorie-macro", "meal-macro",
   "running-speed", "pace-to-speed", "5k-time-predictor", "10k-time-predictor", "half-marathon-time-predictor", "marathon-time-predictor", "race-time", "running-split", "training-pace", "cardio-fitness-level", "aerobic-training-zone", "anaerobic-threshold", "fitness-age",
   "bench-press-1rm", "squat-1rm", "deadlift-1rm", "rep-max", "strength-level", "strength-to-weight-ratio", "training-volume", "wilks-score", "dots-score",
