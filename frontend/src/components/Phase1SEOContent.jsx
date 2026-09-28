@@ -138,8 +138,9 @@ const DATA = {
       ["What is a realistic timeline to safely achieve ideal body weight?","The timeline depends on starting weight, health, medications and the size of the change. Gradual, sustainable progress is generally preferable."],
       ["Is it dangerous to weigh significantly below ideal body weight?","Being below an IBW estimate does not itself diagnose illness, but very low or unintentional weight can be associated with inadequate nutrition, low muscle or illness."],
       ["Should my personal goal weight match my calculated ideal body weight?","Not necessarily. A personal goal should consider body composition, health markers, lifestyle, preferences and professional guidance when appropriate."]
-    ],
-    "bmi-prime": {
+    ]
+  },
+  "bmi-prime": {
       title: "BMI Prime Calculator: Calculate Your BMI Relative to the Normal Upper Limit",
       quick: "BMI Prime is a ratio calculated by dividing BMI by 25 kg/m². A value of 1.00 corresponds to BMI 25, while values below or above 1 indicate BMI below or above that reference.",
       formula: "BMI Prime = BMI ÷ 25; BMI = weight (kg) ÷ height (m)².",
