@@ -176,14 +176,7 @@ const DATA = {
       ["Which is better: body fat percentage calculator or healthy weight range calculator?", "They answer different questions. A healthy-weight calculator relates weight to height, while body-fat estimation focuses on body composition. Neither provides a complete assessment of health on its own."],
       ["What is the most reliable metric for overall health: BMI, weight range, or waist size?", "There is no single best metric for everyone. BMI and weight range provide screening information, while waist size adds information about central fat. Health history, fitness, blood pressure and laboratory measures may also matter."]
     ],
-      ["Is the healthy weight range the same as ideal weight?", "No. A BMI-based range is different from formula-based ideal-weight estimates and should not be treated as a personal target."],
-      ["How is healthy weight calculated from height?", "Weight is calculated from BMI multiplied by height squared, using the selected BMI boundaries."],
-      ["Does age change the adult BMI range?", "The standard adult BMI categories are generally applied to adults, but BMI interpretation can require additional context."],
-      ["Does muscle affect BMI?", "Yes. People with high muscle mass can have a higher BMI without having high body fat."],
-      ["Can I use this range during pregnancy?", "Pregnancy requires specialized guidance; a standard adult BMI-based weight range should not be used as a pregnancy target."],
-      ["What should I use with a healthy weight range?", "Consider complementary measures such as waist circumference, body composition and overall health context."],
-      ["Can a healthy weight range diagnose health?", "No. It is a screening reference based on BMI and is not a diagnosis."],
-    ],
+        ],
     related: ["BMI Calculator", "Ideal Body Weight", "Body Fat Percentage", "Waist-to-Height Ratio"],
   },
   "body-surface-area": {
