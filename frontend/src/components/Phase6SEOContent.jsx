@@ -41,6 +41,21 @@ const DATA = {
     guides: "Pair a timeline estimate with FitMe Pro's calorie-deficit and weight-change calculators and review actual trends over time.",
     references: "Weight-management guidance from major health organizations emphasizes sustainable, individualized approaches rather than treating a fixed mathematical timeline as a guarantee."
   },
+  "weight-gain-goal": {
+    title: "Weight Gain Goal Calculator",
+    quick: "A weight-gain goal calculator estimates how much weight you want to gain and an approximate timeline. It is a planning estimate because real weight gain varies with body composition, appetite, activity, and health.",
+    formula: "Weight to Gain = Target Weight − Current Weight; Estimated Time = Weight to Gain ÷ Planned Average Weekly Gain",
+    method: ["Enter your current weight.", "Enter a target weight appropriate for your goals and health.", "Calculate the difference between current and target weight.", "Choose a gradual average rate of gain and estimate the timeline.", "Adjust calorie intake using your actual multi-week weight trend rather than assuming the calculator is exact."],
+    inputs: ["Current Weight", "Target Weight", "Planned Weekly Weight Gain"],
+    meaning: "The result describes planned scale-weight gain and the timeline implied by your assumptions. It cannot predict how much of the gain will be muscle, fat, water, or glycogen.",
+    example: "If current weight is 60 kg, target weight is 65 kg, and planned average gain is 0.25 kg per week, the simple timeline estimate is 20 weeks.",
+    factors: "Energy intake, appetite, activity, resistance training, protein intake, sleep, digestion and absorption, medications, illness, genetics, and starting body composition can affect the rate and composition of weight gain.",
+    limitations: "Weight-gain calculations are estimates. Traditional calorie-per-pound or calorie-per-kilogram conversions are simplified models, not fixed biological laws. Children and adolescents, pregnancy, significant underweight, unexplained weight loss, eating disorders, and medical conditions require individualized guidance.",
+    faqs: weightGainGoalFAQs,
+    related: ["Weight Gain Calorie", "Weight Gain Percentage", "Target Weight", "TDEE"],
+    guides: "Use the goal estimate alongside FitMe Pro's calorie, TDEE, target-weight, and body-composition tools, and adjust the plan using longer-term real-world trends.",
+    references: "Healthy weight restoration and muscle-gain goals depend on individual circumstances. Calculator outputs are educational estimates and should not replace clinical nutrition advice when medical concerns are present."
+  },
   "goal-weight-date": {
     title: "Goal Weight Date Calculator",
     quick: "A goal-weight date calculator estimates when a target weight could be reached using a starting weight, target weight, and assumed average weekly rate of change. The date is an estimate rather than a promise.",
