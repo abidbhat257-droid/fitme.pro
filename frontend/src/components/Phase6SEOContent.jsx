@@ -1,6 +1,7 @@
 import React from "react";
 import weightLossGoalFAQs from "@/lib/weightLossGoalFAQs";
 import weightGainGoalFAQs from "@/lib/weightGainGoalFAQs";
+import { QUESTION_BANK_FAQS } from "@/lib/questionBankFAQs";
 
 const DATA = {
   "weight-change": {
@@ -13,16 +14,7 @@ const DATA = {
     example: "If weight changes from 85 kg to 80 kg, the change is −5 kg, which is a 5.9% decrease from the starting weight.",
     factors: "Hydration, glycogen, food contents, fat mass, lean tissue, activity, nutrition, medications, and measurement timing can all affect scale weight.",
     limitations: "A scale cannot determine from weight alone whether a change came from fat, muscle, water, glycogen, or other tissue. Short-term changes can be noisy, so trends are more useful than isolated readings.",
-    faqs: [
-      ["How is weight change calculated?", "Subtract the starting weight from the ending or current weight."],
-      ["What does a negative weight change mean?", "It means the ending weight is lower than the starting weight."],
-      ["Does weight change equal fat loss?", "No. Scale weight includes water, glycogen, lean tissue, fat, and other mass."],
-      ["How do I calculate percentage weight change?", "Divide the weight change by the starting weight and multiply by 100."],
-      ["Why can my weight change quickly?", "Fluid balance, glycogen, food volume, and measurement conditions can cause short-term changes."],
-      ["Should I compare weights taken at different times of day?", "For useful trend tracking, use reasonably consistent conditions, such as similar time and clothing."],
-      ["Can I use this for muscle gain?", "Yes, but pair scale weight with strength, measurements, and body-composition indicators because weight alone cannot identify muscle gain."],
-      ["How often should I track weight?", "Choose a schedule you can follow consistently and evaluate the trend rather than reacting to every individual reading."]
-    ],
+    faqs: QUESTION_BANK_FAQS["weight-change"],
     related: ["Weight Loss Percentage", "Weight Gain Percentage", "Target Weight", "Weight Loss Timeline"],
     guides: "Use weight change alongside FitMe Pro's weight-goal, calorie, body-composition, and nutrition tools rather than treating one scale measurement as a complete health assessment.",
     references: "CDC and WHO describe body weight and BMI as useful population-level measures but emphasize that weight-related assessment is broader than one number."
@@ -37,8 +29,7 @@ const DATA = {
     example: "If 10 kg must be lost and the planning rate is 0.5 kg per week, the simple estimate is 20 weeks.",
     factors: "Starting body size, energy intake, activity, metabolic adaptation, adherence, water balance, illness, medications, sleep, and changes in energy expenditure can affect the actual timeline.",
     limitations: "The calculator cannot predict an exact completion date. A constant weekly rate is a simplification, and aggressive targets may be inappropriate for some people. Pregnancy, eating disorders, medical conditions, and other clinical situations require individualized guidance.",
-    faqs: weightLossGoalFAQs,    related: ["Weight Loss Percentage", "Weekly Weight Loss", "Calorie Deficit", "Target Weight"],
-    guides: "Pair a timeline estimate with FitMe Pro's calorie-deficit and weight-change calculators and review actual trends over time.",
+    faqs: QUESTION_BANK_FAQS["weight-loss-timeline"],    guides: "Pair a timeline estimate with FitMe Pro's calorie-deficit and weight-change calculators and review actual trends over time.",
     references: "Weight-management guidance from major health organizations emphasizes sustainable, individualized approaches rather than treating a fixed mathematical timeline as a guarantee."
   },
   "weight-gain-goal": {
@@ -66,16 +57,7 @@ const DATA = {
     example: "If 8 kg separates current and target weight and the assumed average change is 0.5 kg per week, the model gives 16 weeks; the date is 16 weeks after the selected start date.",
     factors: "Weekly rate, starting weight, target weight, adherence, activity, nutrition, fluid balance, metabolic changes, illness, and other circumstances can alter the real timeline.",
     limitations: "Calendar precision can make an uncertain biological process look more exact than it is. The calculated date should be used for planning, not as a deadline or medical target.",
-    faqs: [
-      ["How does the goal-weight date calculator work?", "It divides the planned weight change by an assumed average weekly rate and adds the resulting time to the chosen start date."],
-      ["Is the goal date accurate?", "It is only as realistic as the assumptions. Actual weight change rarely follows a perfectly constant rate."],
-      ["Can I use it for weight gain?", "Yes. The same time-based method can be used when the target weight is higher than current weight."],
-      ["Why does the date change when I change weekly rate?", "A faster assumed rate produces fewer estimated weeks, while a slower rate produces more."],
-      ["Should I treat the date as a deadline?", "No. It is better used as a planning reference than a rigid deadline."],
-      ["Why can my actual date differ?", "Energy expenditure, adherence, water balance, body-composition changes, and normal fluctuations can shift the real trajectory."],
-      ["How often should I update the estimate?", "Review it when your longer-term trend or target changes rather than recalculating from every daily fluctuation."],
-      ["What if my weight stops changing?", "Review measurement consistency, the assumptions behind the plan, and relevant health factors; seek professional guidance when appropriate."]
-    ],
+    faqs: QUESTION_BANK_FAQS["goal-weight-date"],
     related: ["Weight Loss Timeline", "Weight Change", "Weekly Weight Loss", "Target Weight"],
     guides: "Use the date estimate with FitMe Pro's weight-change and timeline tools, while evaluating progress from longer-term trends.",
     references: "The date is a mathematical projection. Individual weight-management decisions should account for health status, nutrition, activity, and professional advice when needed."
@@ -90,16 +72,7 @@ const DATA = {
     example: "If weight decreases from 90 kg to 84 kg over 12 weeks, the average weekly loss is 6 ÷ 12 = 0.5 kg per week.",
     factors: "Water and glycogen shifts, food intake, activity, energy expenditure, adherence, sleep, stress, illness, medications, and measurement timing can change weekly scale readings.",
     limitations: "An average weekly rate does not reveal body composition and should not be interpreted as a guaranteed future rate. Very rapid or unexplained weight changes warrant appropriate professional attention.",
-    faqs: [
-      ["How do I calculate weekly weight loss?", "Divide total weight lost by the number of weeks in the measurement period."],
-      ["Should I lose the same amount every week?", "No. Normal fluctuations mean individual weeks can differ substantially from the average."],
-      ["Does weekly weight loss equal weekly fat loss?", "No. Scale weight includes water, glycogen, lean tissue, fat, and other mass."],
-      ["Why did I gain weight during a weight-loss week?", "Short-term water and food-volume changes can temporarily outweigh underlying fat-loss trends on the scale."],
-      ["Is a faster weekly rate always better?", "No. A faster rate is not automatically safer or more appropriate and can be difficult to sustain."],
-      ["How should I measure weekly progress?", "Use consistent measurement conditions and focus on the trend over several weeks."],
-      ["Can I use this during weight gain?", "This calculator is designed to describe loss; a weight-change calculation can describe increases."],
-      ["When should I update my rate?", "Reassess the average rate after enough consistent data has accumulated to show a meaningful trend."]
-    ],
+    faqs: QUESTION_BANK_FAQS["weekly-weight-loss"],
     related: ["Weight Loss Timeline", "Weight Loss Percentage", "Calorie Deficit", "Weight Change"],
     guides: "Combine weekly-rate tracking with FitMe Pro calorie and weight-change tools, using trends rather than single-week fluctuations.",
     references: "Weekly weight change is a descriptive mathematical metric. Appropriate goals depend on individual health and circumstances."
@@ -114,16 +87,7 @@ const DATA = {
     example: "Using a simplified 7,700 kcal-per-kg assumption, 1 kg corresponds to about 7,700 kcal of cumulative energy deficit in the model.",
     factors: "Body composition, adaptive changes in energy expenditure, water and glycogen shifts, food intake, activity, metabolic differences, and the duration of the deficit affect real-world weight change.",
     limitations: "The commonly used calorie-per-kilogram rule is a simplification. Human weight change is dynamic, and the energy content of tissue gained or lost is not identical in every situation. Do not use this number as a reason to create an extreme calorie deficit.",
-    faqs: [
-      ["How many calories are in 1 kg of fat?", "A commonly used planning approximation is about 7,700 kcal per kg, but real-world weight loss is more complex than this fixed conversion."],
-      ["Does a 7,700 calorie deficit always mean 1 kg lost?", "No. It is a simplified model; actual scale and fat-mass changes vary over time."],
-      ["Is this 7,700 kcal number scientifically exact?", "No. It is a useful approximation for simple calculations, not a universal biological constant."],
-      ["Can I create a 7,700 calorie deficit in one day?", "That would be an extreme approach and should not be treated as a safe weight-loss strategy. Deficits should be planned conservatively and individually."],
-      ["Does the calculator measure fat loss?", "No. It estimates an energy equivalent for weight change and cannot determine tissue composition."],
-      ["Why does weight loss slow over time?", "As body weight and energy expenditure change, the same intake can produce a different energy balance."],
-      ["Should I combine this with a TDEE calculator?", "TDEE can provide an estimate of maintenance energy, but it should be used as an estimate and adjusted using real-world trends."],
-      ["Why is my actual weight change different?", "Water, glycogen, food contents, lean tissue, adaptive changes, and differences between estimated and actual energy expenditure can all contribute."]
-    ],
+    faqs: QUESTION_BANK_FAQS["calories-to-lose-1-kg"],
     related: ["Calorie Deficit", "TDEE", "Weight Loss Timeline", "Weight Loss Percentage"],
     guides: "For planning, pair this estimate with FitMe Pro's TDEE, maintenance-calorie, calorie-deficit, and weight-loss timeline calculators.",
     references: "Energy-balance models are useful for estimation, but body-weight regulation is dynamic. FitMe Pro presents this calculation as an educational approximation rather than a fixed physiological law."
