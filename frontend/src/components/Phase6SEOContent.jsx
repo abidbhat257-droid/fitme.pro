@@ -1,5 +1,6 @@
 import React from "react";
 import weightLossGoalFAQs from "@/lib/weightLossGoalFAQs";
+import weightGainGoalFAQs from "@/lib/weightGainGoalFAQs";
 
 const DATA = {
   "weight-change": {
