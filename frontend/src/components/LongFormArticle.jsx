@@ -18,7 +18,7 @@ const PHASE2_SEO_SLUGS = new Set(["calorie", "body-fat", "calorie-deficit", "cal
 const PHASE3_SEO_SLUGS = new Set(["protein", "pace", "one-rep-max", "maximum-heart-rate", "heart-rate-zone"]);
 const PHASE4_SEO_SLUGS = new Set(["walking-calories", "macro-calculator", "vo2-max", "healthy-weight-range", "body-surface-area"]);
 const PHASE5_SEO_SLUGS = new Set(["adjusted-body-weight", "target-weight", "target-weight-bmi", "weight-loss-percentage", "weight-gain-percentage"]);
-const PHASE6_SEO_SLUGS = new Set(["weight-change", "weight-loss-timeline", "weight-gain-goal", "goal-weight-date", "weekly-weight-loss", "calories-to-lose-kg"]);
+const PHASE6_SEO_SLUGS = new Set(["weight-change", "weight-loss-timeline", "weight-gain-goal", "goal-weight-date", "weekly-weight-loss", "calories-to-lose-1-kg"]);
 const REMAINING_SEO_SLUGS = new Set([
   "calories-to-gain-1-kg", "obesity-class", "calorie-surplus", "weight-loss-calorie", "weight-gain-calorie", "exercise-calorie", "running-calorie", "cycling-calorie", "reverse-diet", "calorie-per-meal",
   "protein-per-meal", "protein-to-calorie-ratio", "macro-percentage", "carbohydrate", "fat-intake", "fiber-intake", "net-carbohydrate", "sodium-intake", "caffeine-intake", "micronutrient-intake", "daily-calorie-macro", "meal-macro",
