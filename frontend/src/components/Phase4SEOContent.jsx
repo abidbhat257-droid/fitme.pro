@@ -176,7 +176,6 @@ const DATA = {
       ["Which is better: body fat percentage calculator or healthy weight range calculator?", "They answer different questions. A healthy-weight calculator relates weight to height, while body-fat estimation focuses on body composition. Neither provides a complete assessment of health on its own."],
       ["What is the most reliable metric for overall health: BMI, weight range, or waist size?", "There is no single best metric for everyone. BMI and weight range provide screening information, while waist size adds information about central fat. Health history, fitness, blood pressure and laboratory measures may also matter."]
     ],
-        ],
     related: ["BMI Calculator", "Ideal Body Weight", "Body Fat Percentage", "Waist-to-Height Ratio"],
   },
   "body-surface-area": {
