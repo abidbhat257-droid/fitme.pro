@@ -1,4 +1,5 @@
 import React from "react";
+import weightLossGoalFAQs from "@/lib/weightLossGoalFAQs";
 
 const DATA = {
   "weight-change": {
@@ -35,17 +36,7 @@ const DATA = {
     example: "If 10 kg must be lost and the planning rate is 0.5 kg per week, the simple estimate is 20 weeks.",
     factors: "Starting body size, energy intake, activity, metabolic adaptation, adherence, water balance, illness, medications, sleep, and changes in energy expenditure can affect the actual timeline.",
     limitations: "The calculator cannot predict an exact completion date. A constant weekly rate is a simplification, and aggressive targets may be inappropriate for some people. Pregnancy, eating disorders, medical conditions, and other clinical situations require individualized guidance.",
-    faqs: [
-      ["Can a weight-loss calculator predict my exact goal date?", "No. It provides a mathematical estimate based on an assumed average rate."],
-      ["Why does real weight loss slow down?", "As body weight and energy needs change, the same food intake and activity can produce a different energy balance."],
-      ["Is losing the same amount every week realistic?", "Not always. Weekly changes naturally fluctuate because of water, glycogen, food contents, and changing energy expenditure."],
-      ["What rate should I enter?", "Use a realistic rate appropriate to your circumstances rather than choosing the fastest possible number."],
-      ["Does the timeline measure fat loss?", "No. It is based on scale-weight change and cannot determine the composition of that change."],
-      ["Should I recalculate the timeline?", "Yes, periodically reviewing the estimate with updated weight trends can make planning more realistic."],
-      ["Why did I lose more or less than the estimate?", "The assumed rate is only a model; real energy intake, expenditure, water balance, and adherence vary."],
-      ["When should I seek professional advice?", "Seek qualified guidance when weight change is medically important, unusually rapid, difficult to control, or associated with symptoms or a medical condition."]
-    ],
-    related: ["Weight Loss Percentage", "Weekly Weight Loss", "Calorie Deficit", "Target Weight"],
+    faqs: weightLossGoalFAQs,    related: ["Weight Loss Percentage", "Weekly Weight Loss", "Calorie Deficit", "Target Weight"],
     guides: "Pair a timeline estimate with FitMe Pro's calorie-deficit and weight-change calculators and review actual trends over time.",
     references: "Weight-management guidance from major health organizations emphasizes sustainable, individualized approaches rather than treating a fixed mathematical timeline as a guarantee."
   },
