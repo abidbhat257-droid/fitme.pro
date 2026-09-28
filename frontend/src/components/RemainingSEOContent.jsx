@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { CALCULATORS } from "@/lib/calculators";
+import { QUESTION_BANK_FAQS } from "@/lib/questionBankFAQs";
 
 const REMAINING_SEO_SLUGS = new Set([
   "calories-to-gain-1-kg", "obesity-class", "bmi-prime",
@@ -80,7 +81,7 @@ export default function RemainingSEOContent({ calc }) {
   const formula = calc.formula || "the calculator's implemented equation";
   const name = calc.name;
   const exampleInputs = (calc.requires || []).join(", ") || "the inputs displayed in the calculator";
-  const faqsList = faqs(name, formula);
+  const faqsList = QUESTION_BANK_FAQS[calc.slug] || faqs(name, formula);
   return (
     <div className="space-y-6">
       <section>
