@@ -151,7 +151,7 @@ const DATA = {
       links: [["BMI Calculator","/bmi-calculator"],["Healthy Weight Range Calculator","/healthy-weight-range-calculator"],["Body Fat Calculator","/body-fat-calculator"],["Waist Circumference Health Risk Calculator","/waist-circumference-health-risk-calculator"]],
       faqs: bmiPrimeFAQs
     },
-  tdee: {
+  "tdee": {
     title: "TDEE Calculator: Calculate Total Daily Energy Expenditure",
     quick: "TDEE (Total Daily Energy Expenditure) estimates the calories you burn across a typical day. It starts with BMR and adjusts it using an activity factor.",
     formula: "TDEE = BMR × activity multiplier. FitMe Pro's BMR foundation uses Mifflin-St Jeor.",
