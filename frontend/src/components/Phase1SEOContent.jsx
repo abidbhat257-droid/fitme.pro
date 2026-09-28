@@ -138,7 +138,20 @@ const DATA = {
       ["What is a realistic timeline to safely achieve ideal body weight?","The timeline depends on starting weight, health, medications and the size of the change. Gradual, sustainable progress is generally preferable."],
       ["Is it dangerous to weigh significantly below ideal body weight?","Being below an IBW estimate does not itself diagnose illness, but very low or unintentional weight can be associated with inadequate nutrition, low muscle or illness."],
       ["Should my personal goal weight match my calculated ideal body weight?","Not necessarily. A personal goal should consider body composition, health markers, lifestyle, preferences and professional guidance when appropriate."]
-    ] tdee: {
+    ],
+    "bmi-prime": {
+      title: "BMI Prime Calculator: Calculate Your BMI Relative to the Normal Upper Limit",
+      quick: "BMI Prime is a ratio calculated by dividing BMI by 25 kg/m². A value of 1.00 corresponds to BMI 25, while values below or above 1 indicate BMI below or above that reference.",
+      formula: "BMI Prime = BMI ÷ 25; BMI = weight (kg) ÷ height (m)².",
+      inputs: "Weight and height. Use kilograms and meters for the metric BMI equation, or pounds and inches with the standard 703 conversion.",
+      method: ["Calculate BMI from weight and height.", "Divide the BMI by 25 kg/m².", "Interpret the resulting dimensionless ratio using the adult BMI reference categories when appropriate.", "For children and adolescents, use age- and sex-specific BMI-for-age methods instead of adult BMI Prime thresholds."],
+      meaning: "BMI Prime is a rescaled representation of BMI rather than a separate measure of body fat. For adults, a value of 1.00 corresponds to BMI 25; about 0.74 corresponds to BMI 18.5. It does not remove BMI's limitations.",
+      example: "If BMI is 22.5, BMI Prime = 22.5 ÷ 25 = 0.90. If BMI is 30, BMI Prime = 1.20. Multiplying BMI Prime by 25 converts it back to BMI.",
+      limits: "BMI Prime inherits the limitations of BMI: it does not distinguish fat from lean mass, does not directly measure visceral fat, and should not be used as a standalone diagnosis. Adult BMI categories are not used the same way for children and adolescents.",
+      links: [["BMI Calculator","/bmi-calculator"],["Healthy Weight Range Calculator","/healthy-weight-range-calculator"],["Body Fat Calculator","/body-fat-calculator"],["Waist Circumference Health Risk Calculator","/waist-circumference-health-risk-calculator"]],
+      faqs: bmiPrimeFAQs
+    },
+  tdee: {
     title: "TDEE Calculator: Calculate Total Daily Energy Expenditure",
     quick: "TDEE (Total Daily Energy Expenditure) estimates the calories you burn across a typical day. It starts with BMR and adjusts it using an activity factor.",
     formula: "TDEE = BMR × activity multiplier. FitMe Pro's BMR foundation uses Mifflin-St Jeor.",
