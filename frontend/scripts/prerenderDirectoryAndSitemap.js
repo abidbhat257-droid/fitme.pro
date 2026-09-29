@@ -6,7 +6,7 @@ if(!fs.existsSync(indexPath))throw new Error(`Build output not found: ${indexPat
 const esc=v=>String(v??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
 function stripSeoMeta(html){return html.replace(/<meta\s+name=["']description["'][^>]*>\s*/gi,'').replace(/<meta\s+name=["']robots["'][^>]*>\s*/gi,'').replace(/<meta\s+property=["']og:(?:type|title|description|url|site_name)["'][^>]*>\s*/gi,'').replace(/<meta\s+name=["']twitter:[^"']+["'][^>]*>\s*/gi,'').replace(/<link\s+rel=["']canonical["'][^>]*>\s*/gi,'')}
 function setMeta(html,title,description,canonical){html=stripSeoMeta(html).replace(/<title>[\s\S]*?<\/title>/i,`<title>${esc(title)}</title>`);return html.replace(/<\/head>/i,`<meta name="description" content="${esc(description)}" /><meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" /><link rel="canonical" href="${canonical}" /><meta property="og:type" content="website" /><meta property="og:title" content="${esc(title)}" /><meta property="og:description" content="${esc(description)}" /><meta property="og:url" content="${canonical}" /></head>`)}
-function writeRoute(route,html){const clean=route.replace(/^\\//,'').replace(/\\/$/,'');const dir=path.join(build,clean);fs.mkdirSync(dir,{recursive:true});fs.writeFileSync(path.join(dir,'index.html'),html,'utf8')}
+function writeRoute(route,html){const clean=route.replace(/^\//,'').replace(/\/$/,'');const dir=path.join(build,clean);fs.mkdirSync(dir,{recursive:true});fs.writeFileSync(path.join(dir,'index.html'),html,'utf8')}
 
 function normalizeSeo(html, route) {
   const canonical = site + (route || '/');
