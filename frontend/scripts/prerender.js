@@ -63,12 +63,10 @@ export default CALC_CONTENT;`, "utf8");
     const journalMod = await import(`${pathToFileURL(tempJournalPath).href}?v=${Date.now()}`);
     const pages = mod.CALC_CONTENT || mod.default;
     const getLongFormContent = longMod.getLongFormContent;
-    const getExpansionSections = expansionMod.getExpansionSections;
-    const articles = journalMod.JOURNAL_ARTICLES || [];
+        const articles = journalMod.JOURNAL_ARTICLES || [];
     const categories = journalMod.JOURNAL_CATEGORIES || [];
     if (!pages || typeof pages !== "object") throw new Error("CALC_CONTENT was not exported from src/lib/content.js");
     if (typeof getLongFormContent !== "function") throw new Error("getLongFormContent was not exported from longFormContent.js");
-    if (typeof getExpansionSections !== "function") throw new Error("getExpansionSections was not exported from longFormExpansion.js");
 
     const base = fs.readFileSync(indexPath, "utf8");
     if (!/<h1\b[^>]*>/i.test(base)) {
@@ -79,7 +77,7 @@ export default CALC_CONTENT;`, "utf8");
       if (!page || typeof page !== "object") continue;
       const canonical = `${siteUrl}/${slug}-calculator`;
       const longForm = getLongFormContent(slug);
-      const sections = longForm ? [...longForm.sections, ...getExpansionSections(longForm)] : [];
+      const sections = longForm?.sections ? [...longForm.sections] : [];
       const faq = longForm?.faqs?.length ? longForm.faqs : (Array.isArray(page.faq) ? page.faq : []);
       const steps = Array.isArray(page.steps) ? page.steps.map((s, i) => `<li><strong>Step ${i + 1}:</strong> ${esc(s)}</li>`).join("") : "";
       const faqs = faq.map((f) => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join("");
