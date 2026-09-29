@@ -70,7 +70,7 @@ for (const url of urls) {
   if (!title) problems.push(`Missing <title>: ${route}`);
   if (!description) problems.push(`Missing meta description: ${route}`);
   if (!canonical) problems.push(`Missing canonical: ${route}`);
-  if (canonical && canonical.replace(/\\/$/, "") !== url.replace(/\\/$/, "")) problems.push(`Canonical mismatch: ${route} -> ${canonical}`);
+  if (canonical && canonical.replace(/\/$/, "") !== url.replace(/\/$/, "")) problems.push(`Canonical mismatch: ${route} -> ${canonical}`);
   if (robots.includes("noindex")) problems.push(`Sitemap URL is noindex: ${route}`);
   if (countTag(html, "h1") !== 1) problems.push(`Expected exactly one H1: ${route}`);
 
@@ -111,7 +111,7 @@ const robotsFile = path.join(build, "robots.txt");
 if (fs.existsSync(robotsFile)) {
   const robots = fs.readFileSync(robotsFile, "utf8");
   if (!/User-agent:\s*\*/i.test(robots)) problems.push("robots.txt is missing a wildcard User-agent rule");
-  if (!/Sitemap:\s*https:\/\/[^\\s]+\/sitemap\.xml/i.test(robots)) problems.push("robots.txt is missing a sitemap declaration");
+  if (!/Sitemap:\s*https:\/\/[^\s]+\/sitemap\.xml/i.test(robots)) problems.push("robots.txt is missing a sitemap declaration");
 }
 
 const report = {
