@@ -29,7 +29,6 @@ const json = (v) => JSON.stringify(v).replace(/</g,"\\u003c");
 
 function stripSeoMeta(html) {
   return html
-    .replace(/<meta\s+name=["']description["'][^>]*>\s*/gi, "")
     .replace(/<meta\s+name=["']robots["'][^>]*>\s*/gi, "")
     .replace(/<meta\s+property=["']og:(?:type|title|description|url|site_name)["'][^>]*>\s*/gi, "")
     .replace(/<meta\s+name=["']twitter:[^"']+["'][^>]*>\s*/gi, "")
