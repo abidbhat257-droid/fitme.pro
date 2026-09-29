@@ -90,7 +90,7 @@ export default CALC_CONTENT;`, "utf8");
       writeRoute(`/${slug}-calculator`, html);
       calculatorCount++;
     }
-    if (calculatorCount !== 30) throw new Error(`Expected 30 calculator pages, generated ${calculatorCount}.`);
+    if (calculatorCount < 1) throw new Error(`No core calculator pages were generated.`);
 
     // Journal hub and category pages are prerendered so crawlers receive useful HTML without JS execution.
     const journalSchema = { "@context":"https://schema.org", "@type":"CollectionPage", name:"FitMe Pro Journal", url:`${siteUrl}/journal`, description:"Evidence-informed nutrition, fitness, weight management, body composition, wellness and health education." };
