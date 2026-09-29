@@ -1,7 +1,6 @@
 const fs=require("fs");const path=require("path");const{pathToFileURL}=require("url");const root=path.resolve(__dirname,"..");const build=path.join(root,"build");const site=(process.env.SITE_URL||"https://fitme-pro.vercel.app").replace(/\/$/,"");const sources=[path.join(root,"src","lib","seoCompetitorArticles.js"),path.join(root,"src","lib","seoCompetitorArticles2.js")];const temps=sources.map((_,i)=>path.join(build,`__fitme_seo_articles_${i}.mjs`));const esc=v=>String(v??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/\"/g,"&quot;").replace(/'/g,"&#39;");function stripSeoMeta(html) {
   return html
-    .replace(/<meta\s+name=["']description["'][^>]*>\s*/gi, "")
-    .replace(/<meta\s+name=["']robots["'][^>]*>\s*/gi, "")
+        .replace(/<meta\s+name=["']robots["'][^>]*>\s*/gi, "")
     .replace(/<meta\s+property=["']og:(?:type|title|description|url|site_name)["'][^>]*>\s*/gi, "")
     .replace(/<meta\s+name=["']twitter:[^"']+["'][^>]*>\s*/gi, "")
     .replace(/<link\s+rel=["']canonical["'][^>]*>\s*/gi, "");
