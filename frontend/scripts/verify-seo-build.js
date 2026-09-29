@@ -31,10 +31,10 @@ function countTag(html, tag) {
 
 function attr(html, tag, name, value) {
   const pattern = value
-    ? `<${tag}\\\\b[^>]*\\\\b${name}=["']\\\\s*${value}\\\\s*["'][^>]*>`
-    : `<${tag}\\\\b[^>]*\\\\b${name}=["']([^"']+)["'][^>]*>`;
+    ? "<" + tag + "[^>]*\\\\b" + name + "=[\\\"']\\\\s*" + value + "\\\\s*[\\\"'][^>]*>"
+    : "<" + tag + "[^>]*\\\\b" + name + "=[\\\"']([^\\\"']+)[\\\"'][^>]*>";
   const match = html.match(new RegExp(pattern, "i"));
-  return match ? (value ? value : match[1]).trim() : "";
+  return match ? (value || match[1]).trim() : "";
 }
 
 const registrySource = fs.readFileSync(registryPath, "utf8");
