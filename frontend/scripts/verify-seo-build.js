@@ -31,8 +31,8 @@ function countTag(html, tag) {
 
 function attr(html, tag, name, value) {
   const pattern = value
-    ? "<" + tag + "[^>]*\\\\b" + name + "=[\\\"']\\\\s*" + value + "\\\\s*[\\\"'][^>]*>"
-    : "<" + tag + "[^>]*\\\\b" + name + "=[\\\"']([^\\\"']+)[\\\"'][^>]*>";
+    ? "<" + tag + "[^>]*" + name + "=[\\\"']\\\\s*" + value + "\\\\s*[\\\"'][^>]*>"
+    : "<" + tag + "[^>]*" + name + "=[\\\"']([^\\\"']+)[\\\"'][^>]*>";
   const match = html.match(new RegExp(pattern, "i"));
   return match ? (value || match[1]).trim() : "";
 }
