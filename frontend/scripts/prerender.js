@@ -71,6 +71,9 @@ export default CALC_CONTENT;`, "utf8");
     if (typeof getExpansionSections !== "function") throw new Error("getExpansionSections was not exported from longFormExpansion.js");
 
     const base = fs.readFileSync(indexPath, "utf8");
+    if (!/<h1\b[^>]*>/i.test(base)) {
+      fs.writeFileSync(indexPath, base.replace(/<div id="root"><\/div>/i, '<div id="root"><main><h1>Free Health & Fitness Calculators</h1></main></div>'), "utf8");
+    }
     let calculatorCount = 0;
     for (const [slug, page] of Object.entries(pages)) {
       if (!page || typeof page !== "object") continue;
