@@ -29,9 +29,12 @@ function countTag(html, tag) {
   return (html.match(new RegExp(`<${tag}\\b`, "gi")) || []).length;
 }
 
-function attr(html, tag, name) {
-  const match = html.match(new RegExp(`<${tag}\\b[^>]*\\b${name}=["']([^"']+)["'][^>]*>`, "i"));
-  return match ? match[1].trim() : "";
+function attr(html, tag, name, value) {
+  const pattern = value
+    ? `<${tag}\\\\b[^>]*\\\\b${name}=["']\\\\s*${value}\\\\s*["'][^>]*>`
+    : `<${tag}\\\\b[^>]*\\\\b${name}=["']([^"']+)["'][^>]*>`;
+  const match = html.match(new RegExp(pattern, "i"));
+  return match ? (value ? value : match[1]).trim() : "";
 }
 
 const registrySource = fs.readFileSync(registryPath, "utf8");
@@ -60,9 +63,9 @@ for (const url of urls) {
 
   const html = fs.readFileSync(file, "utf8");
   const title = (html.match(/<title>([\\s\\S]*?)<\\/title>/i) || [,""])[1].trim();
-  const description = attr(html, "meta", "name=[\\\"']description") || attr(html, "meta", "property=[\\\"']og:description");
-  const canonical = attr(html, "link", "rel=[\\\"']canonical");
-  const robots = attr(html, "meta", "name=[\\\"']robots").toLowerCase();
+  const description = attr(html, "meta", "name", "description") || attr(html, "meta", "property", "og:description");
+  const canonical = attr(html, "link", "rel", "canonical");
+  const robots = attr(html, "meta", "name", "robots").toLowerCase();
 
   if (!title) problems.push(`Missing <title>: ${route}`);
   if (!description) problems.push(`Missing meta description: ${route}`);
