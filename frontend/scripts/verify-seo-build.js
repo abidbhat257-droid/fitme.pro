@@ -62,7 +62,7 @@ for (const url of urls) {
   }
 
   const html = fs.readFileSync(file, "utf8");
-  const title = (html.match(/<title>([\\s\\S]*?)<\\/title>/i) || [,""])[1].trim();
+  const title = (html.match(/<title>([\s\S]*?)<\/title>/i) || [,""])[1].trim();
   const description = attr(html, "meta", "name", "description") || attr(html, "meta", "property", "og:description");
   const canonical = attr(html, "link", "rel", "canonical");
   const robots = attr(html, "meta", "name", "robots").toLowerCase();
