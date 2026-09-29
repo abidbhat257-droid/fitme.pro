@@ -25,6 +25,10 @@ const pages = [
 ];
 
 function setMeta(html, title, description, canonical) {
+  html = html
+    .replace(/<meta\s+name=["']robots["'][^>]*>\s*/gi, "")
+    .replace(/<meta\s+property=["']og:(?:type|title|description|url|site_name)["'][^>]*>\s*/gi, "")
+    .replace(/<link\s+rel=["']canonical["'][^>]*>\s*/gi, "");
   html = html.replace(/<title>[\s\S]*?<\/title>/i, `<title>${esc(title)}</title>`);
   html = html.replace(/<meta name="description" content="[^"]*"\s*\/?>(\s*)/i, `<meta name="description" content="${esc(description)}" />$1`);
   return html.replace(/<\/head>/i, `<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" /><link rel="canonical" href="${canonical}" /><meta property="og:type" content="website" /><meta property="og:title" content="${esc(title)}" /><meta property="og:description" content="${esc(description)}" /><meta property="og:url" content="${canonical}" /></head>`);
