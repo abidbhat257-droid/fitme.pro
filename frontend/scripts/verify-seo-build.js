@@ -30,11 +30,17 @@ function countTag(html, tag) {
 }
 
 function attr(html, tag, name, value) {
-  const pattern = value
-    ? "<" + tag + "[^>]*" + name + "=[\\\"']" + value + "[\\\"'][^>]*>"
-    : "<" + tag + "[^>]*" + name + "=[\\\"']([^\\\"']+)[\\\"'][^>]*>";
-  const match = html.match(new RegExp(pattern, "i"));
-  return match ? (value || match[1]).trim() : "";
+  const tags = html.match(new RegExp(`<${tag}\\b[^>]*>`, "gi")) || [];
+  for (const tagHtml of tags) {
+    const marker = tagHtml.match(new RegExp(`\\b${name}=["']([^"']+)["']`, "i"));
+    if (!marker) continue;
+    if (value && marker[1].trim().toLowerCase() !== value.toLowerCase()) continue;
+
+    const targetName = tag.toLowerCase() === "meta" ? "content" : "href";
+    const target = tagHtml.match(new RegExp(`\\b${targetName}=["']([^"']+)["']`, "i"));
+    if (target) return target[1].trim();
+  }
+  return "";
 }
 
 const registrySource = fs.readFileSync(registryPath, "utf8");
@@ -49,7 +55,7 @@ if (duplicateSitemapUrls.length) throw new Error(`Sitemap contains duplicate URL
 
 const seenCanonicals = new Map();
 const problems = [];
-const calculatorUrls = urls.filter((url) => /-calculator\/?$/.test(new URL(url).pathname));
+const calculatorUrls = urls.filter((url) => /(?:-calculator|-predictor|-converter)\/?$/.test(new URL(url).pathname));
 
 for (const url of urls) {
   const parsed = new URL(url);
@@ -62,7 +68,7 @@ for (const url of urls) {
   }
 
   const html = fs.readFileSync(file, "utf8");
-  const title = (html.match(/<title>([\s\S]*?)<\/title>/i) || [,""])[1].trim();
+  const title = (html.match(/<title>([\s\S]*?)<\/title>/i) || [, ""])[1].trim();
   const description = attr(html, "meta", "name", "description") || attr(html, "meta", "property", "og:description");
   const canonical = attr(html, "link", "rel", "canonical");
   const robots = attr(html, "meta", "name", "robots").toLowerCase();
