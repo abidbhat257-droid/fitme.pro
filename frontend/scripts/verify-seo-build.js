@@ -1,16 +1,137 @@
-const fs=require('fs');const path=require('path');
-const build=path.resolve(__dirname,'..','build');const sitemapPath=path.join(build,'sitemap.xml');
-if(!fs.existsSync(sitemapPath))throw new Error('Missing build/sitemap.xml');
-const site=(process.env.SITE_URL||'https://fitme-pro.vercel.app').replace(/\/$/,'');
-function esc(v){return String(v??'').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
-function htmlFiles(dir){let out=[];for(const e of fs.readdirSync(dir,{withFileTypes:true})){if(e.name==='static')continue;const p=path.join(dir,e.name);if(e.isDirectory())out.push(...htmlFiles(p));else if(e.name==='index.html')out.push(p)}return out}
-function normalizeSeo(file){let html=fs.readFileSync(file,'utf8');const rel=path.relative(build,file).replace(/\\/g,'/');const route=rel==='index.html'?'':rel.replace(/\/index\.html$/,'');const canonical=route?`${site}/${route}`:`${site}/`;const title=(html.match(/<title>([\s\S]*?)<\/title>/i)||[])[1]||'FitMe Pro';let desc=(html.match(/<meta\s+name=["']description["'][^>]*content=["']([^"']*)["'][^>]*>/i)||[])[1];if(!desc)desc=(html.match(/<meta\s+property=["']og:description["'][^>]*content=["']([^"']*)["'][^>]*>/i)||[])[1];if(!desc)desc=`${title.replace(/\s*[·|—-]\s*FitMe Pro.*$/,'')} — free health and fitness calculator from FitMe Pro.`;html=html.replace(/<meta\s+name=["']description["'][^>]*>\s*/gi,'').replace(/<meta\s+name=["']robots["'][^>]*>\s*/gi,'').replace(/<link\s+rel=["']canonical["'][^>]*>\s*/gi,'');html=html.replace(/<head>/i,`<head><meta name="description" content="${esc(desc)}" /><meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" /><link rel="canonical" href="${canonical}" />`);fs.writeFileSync(file,html,'utf8')}
-const allFiles=htmlFiles(build);for(const file of allFiles)normalizeSeo(file);
-const xml=fs.readFileSync(sitemapPath,'utf8');const urls=[...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);const missing=[];for(const url of urls){const pathname=new URL(url).pathname.replace(/^\//,'').replace(/\/$/,'');const target=pathname?path.join(build,pathname,'index.html'):path.join(build,'index.html');if(!fs.existsSync(target))missing.push(new URL(url).pathname)}
-const calculatorUrls=urls.filter(url=>/(?:-calculator|-predictor|-converter)\/?$/.test(new URL(url).pathname));
-const samplePages=['bmi-calculator','tdee-calculator','absi-calculator','protein-calculator','pace-calculator'];const duplicateReport=[];for(const slug of samplePages){const file=path.join(build,slug,'index.html');if(!fs.existsSync(file)){duplicateReport.push({slug,missing:true});continue}const html=fs.readFileSync(file,'utf8');duplicateReport.push({slug,canonical:(html.match(/rel=["']canonical["']/gi)||[]).length,description:(html.match(/<meta\s+name=["']description["']/gi)||[]).length})}
-const flagship=['tdee-calculator','obesity-class-calculator','ponderal-index-calculator','body-density-calculator','waist-height-ratio-calculator'];const headingReport=[];for(const slug of flagship){const file=path.join(build,slug,'index.html');if(!fs.existsSync(file)){headingReport.push({slug,missing:true});continue}const html=fs.readFileSync(file,'utf8');const headings=[...html.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/gi)].map(m=>m[1].replace(/<[^>]+>/g,'').replace(/&amp;/g,'&').trim());const counts=new Map();for(const h of headings)counts.set(h,(counts.get(h)||0)+1);headingReport.push({slug,h2:headings.length,duplicates:[...counts.entries()].filter(([,n])=>n>1)})}
-const bmi=fs.readFileSync(path.join(build,'bmi-calculator','index.html'),'utf8');const bmiReport={jsonLd:(bmi.match(/<script\s+type=["']application\/ld\+json["']/gi)||[]).length,robots:(bmi.match(/<meta\s+name=["']robots["']/gi)||[]).length};
-console.log(JSON.stringify({sitemapUrls:urls.length,calculatorUrls:calculatorUrls.length,expectedCalculatorUrls:100,sitemapMissing:missing,samplePages:duplicateReport,flagshipHeadings:headingReport,bmi:bmiReport,normalizedFiles:allFiles.length},null,2));
-if(missing.length)process.exit(2);if(duplicateReport.some(x=>x.missing||x.canonical!==1||x.description!==1))process.exit(3);if(headingReport.some(x=>x.missing||x.duplicates.length))process.exit(4);if(bmiReport.jsonLd!==1||bmiReport.robots!==1)process.exit(5);
-if(calculatorUrls.length!==100)process.exit(6);
+const fs = require("fs");
+const path = require("path");
+
+const build = path.resolve(__dirname, "..", "build");
+const sitemapPath = path.join(build, "sitemap.xml");
+const registryPath = path.resolve(__dirname, "..", "src", "lib", "allCalculators.js");
+const site = (process.env.SITE_URL || "https://fitme-pro.vercel.app").replace(/\/$/, "");
+
+if (!fs.existsSync(sitemapPath)) throw new Error("Missing build/sitemap.xml");
+if (!fs.existsSync(registryPath)) throw new Error("Missing canonical calculator registry");
+
+function htmlFiles(dir) {
+  const out = [];
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    if (entry.name === "static") continue;
+    const file = path.join(dir, entry.name);
+    if (entry.isDirectory()) out.push(...htmlFiles(file));
+    else if (entry.name === "index.html") out.push(file);
+  }
+  return out;
+}
+
+function routeToFile(route) {
+  const clean = route.replace(/^\//, "").replace(/\/$/, "");
+  return clean ? path.join(build, clean, "index.html") : path.join(build, "index.html");
+}
+
+function countTag(html, tag) {
+  return (html.match(new RegExp(`<${tag}\\b`, "gi")) || []).length;
+}
+
+function attr(html, tag, name, value) {
+  const tags = html.match(new RegExp(`<${tag}\\b[^>]*>`, "gi")) || [];
+  for (const tagHtml of tags) {
+    const marker = tagHtml.match(new RegExp(`\\b${name}=["']([^"']+)["']`, "i"));
+    if (!marker) continue;
+    if (value && marker[1].trim().toLowerCase() !== value.toLowerCase()) continue;
+
+    const targetName = tag.toLowerCase() === "meta" ? "content" : "href";
+    const target = tagHtml.match(new RegExp(`\\b${targetName}=["']([^"']+)["']`, "i"));
+    if (target) return target[1].trim();
+  }
+  return "";
+}
+
+const registrySource = fs.readFileSync(registryPath, "utf8");
+if (!/ALL_CALCULATORS\.length\s*!==\s*100/.test(registrySource)) {
+  throw new Error("Canonical calculator registry no longer enforces exactly 100 calculators.");
+}
+
+const xml = fs.readFileSync(sitemapPath, "utf8");
+const urls = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
+const duplicateSitemapUrls = urls.filter((url, index) => urls.indexOf(url) !== index);
+if (duplicateSitemapUrls.length) throw new Error(`Sitemap contains duplicate URLs: ${duplicateSitemapUrls.join(", ")}`);
+
+const seenCanonicals = new Map();
+const problems = [];
+const calculatorUrls = urls.filter((url) => /(?:-calculator|-predictor|-converter)\/?$/.test(new URL(url).pathname));
+
+for (const url of urls) {
+  const parsed = new URL(url);
+  if (parsed.origin !== site) problems.push(`Sitemap URL has unexpected origin: ${url}`);
+  const route = parsed.pathname;
+  const file = routeToFile(route);
+  if (!fs.existsSync(file)) {
+    problems.push(`Sitemap URL has no built HTML: ${route}`);
+    continue;
+  }
+
+  const html = fs.readFileSync(file, "utf8");
+  const title = (html.match(/<title>([\s\S]*?)<\/title>/i) || [, ""])[1].trim();
+  const description = attr(html, "meta", "name", "description") || attr(html, "meta", "property", "og:description");
+  const canonical = attr(html, "link", "rel", "canonical");
+  const robots = attr(html, "meta", "name", "robots").toLowerCase();
+
+  if (!title) problems.push(`Missing <title>: ${route}`);
+  if (!description) problems.push(`Missing meta description: ${route}`);
+  if (!canonical) problems.push(`Missing canonical: ${route}`);
+  if (canonical && canonical.replace(/\/$/, "") !== url.replace(/\/$/, "")) problems.push(`Canonical mismatch: ${route} -> ${canonical}`);
+  if (robots.includes("noindex")) problems.push(`Sitemap URL is noindex: ${route}`);
+  if (countTag(html, "h1") !== 1) problems.push(`Expected exactly one H1: ${route}`);
+
+  if (canonical) {
+    if (seenCanonicals.has(canonical)) {
+      problems.push(`Duplicate canonical ${canonical}: ${seenCanonicals.get(canonical)} and ${route}`);
+    } else {
+      seenCanonicals.set(canonical, route);
+    }
+  }
+}
+
+if (calculatorUrls.length !== 100) {
+  problems.push(`Expected 100 calculator URLs in sitemap, found ${calculatorUrls.length}`);
+}
+
+const requiredCalculatorSlugs = [
+  "bmi-calculator",
+  "bmr-calculator",
+  "tdee-calculator",
+  "body-fat-calculator",
+  "navy-body-fat-calculator",
+  "relative-fat-mass-calculator",
+  "absi-calculator",
+  "bri-calculator",
+  "ponderal-index-calculator",
+  "adjusted-body-weight-calculator",
+  "one-rep-max-calculator",
+  "pace-calculator",
+];
+
+for (const slug of requiredCalculatorSlugs) {
+  const url = `${site}/${slug}`;
+  if (!urls.includes(url)) problems.push(`Required calculator missing from sitemap: /${slug}`);
+}
+
+const robotsFile = path.join(build, "robots.txt");
+if (fs.existsSync(robotsFile)) {
+  const robots = fs.readFileSync(robotsFile, "utf8");
+  if (!/User-agent:\s*\*/i.test(robots)) problems.push("robots.txt is missing a wildcard User-agent rule");
+  if (!/Sitemap:\s*https:\/\/[^\s]+\/sitemap\.xml/i.test(robots)) problems.push("robots.txt is missing a sitemap declaration");
+}
+
+const report = {
+  sitemapUrls: urls.length,
+  calculatorUrls: calculatorUrls.length,
+  htmlFiles: htmlFiles(build).length,
+  duplicateSitemapUrls: duplicateSitemapUrls.length,
+  checkedSitemapPages: urls.length,
+  problems,
+};
+
+fs.writeFileSync(path.join(build, "seo-build-report.json"), JSON.stringify(report, null, 2) + "\n", "utf8");
+console.log(JSON.stringify(report, null, 2));
+
+if (problems.length) {
+  throw new Error(`SEO build verification failed with ${problems.length} problem(s).`);
+}

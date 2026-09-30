@@ -65,8 +65,9 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "craco build && node scripts/prerender.js && node scripts/prerenderExtras.js && node scripts/prerenderJournalExpansion.js && node scripts/prerenderSpecialized.js && node scripts/prerenderCalculatorSEO.js && node scripts/prerenderSEO.js && node scripts/prerenderDirectoryAndSitemap.js && node scripts/verify-seo-build.js",
-    "test": "craco test"
+    "build": "yarn test:ci && craco build && node scripts/prerender.js && node scripts/prerenderExtras.js && node scripts/prerenderJournalExpansion.js && node scripts/prerenderSpecialized.js && node scripts/prerenderCalculatorSEO.js && node scripts/prerenderSEO.js && node scripts/prerenderDirectoryAndSitemap.js && node scripts/verify-seo-build.js",
+    "test": "craco test",
+    "test:ci": "craco test --watchAll=false --runInBand"
   },
   "browserslist": {
     "production": [

@@ -5,7 +5,7 @@ const paceSeconds = (v) => totalSeconds(v) / Math.max(0.0001, n(v, "distance", 1
 const epley = (v) => n(v, "load") * (1 + Math.min(30, n(v, "reps")) / 30);
 const riegel = (v, target) => (n(v, "minutes") + n(v, "seconds") / 60) * Math.pow(target / Math.max(0.0001, n(v, "distance", 1)), 1.06);
 
-const make = (id, name, category, description, formula, inputFields, compute, interpretation, faqs = []) => ({ id, slug: id, name, category, description, formula, extraInputs: true, inputFields, compute, interpretation, faqs });
+const make = (id, name, category, description, formula, inputFields, compute, interpretation, faqs = []) => ({ id, slug: id, name, category, description, formula, requires: [], extraInputs: true, inputFields, compute, interpretation, faqs });
 
 export const MISSING_CALCULATORS = [
   make("sleep-duration-calculator", "Sleep Duration Calculator", "Wellness & Recovery", "Calculate total sleep duration from bedtime and wake time.", "Sleep duration = wake time − bedtime", [field("bedtime", "Bedtime / hour", 22, "Enter bedtime as an hour from 0 to 23."), field("wakeTime", "Wake time / hour", 6, "Enter wake time as an hour from 0 to 23.")], v => { const start = n(v, "bedtime"), end = n(v, "wakeTime"); const hours = ((end - start + 24) % 24); return hours > 0 ? { value: hours.toFixed(1), unit: "hours", category: "Estimated sleep duration", interpretation: "The elapsed time between the entered bedtime and wake time." } : null; }, "Sleep duration is not the same as sleep quality; awakenings, schedule consistency and individual needs also matter."),
