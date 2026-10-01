@@ -6,7 +6,7 @@ if(!fs.existsSync(indexPath))throw new Error("Build output not found");
 const esc=v=>String(v??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/\"/g,"&quot;").replace(/'/g,"&#39;");const json=v=>JSON.stringify(v).replace(/</g,"\\u003c");
 function write(route,html){const dir=path.join(build,route.replace(/^\//,"").replace(/\/$/,""));fs.mkdirSync(dir,{recursive:true});fs.writeFileSync(path.join(dir,"index.html"),html,"utf8")}
 function faqSet(c){
-  if(c.slug==="bench-press-1rm-calculator")return[[
+  if(c.slug==="bench-press-1rm-calculator")return[
     "What is a bench press 1RM?","It is the heaviest bench-press load a lifter can complete for one repetition under a defined technique standard. This calculator estimates it from a completed set.",
     "Which 1RM formula does FitMe Pro use?","It uses the Epley equation: 1RM = load × (1 + reps ÷ 30).",
     "How do Epley, Brzycki and Lombardi differ?","They use different mathematical relationships between load and repetitions, so the same set can produce different estimates.",
