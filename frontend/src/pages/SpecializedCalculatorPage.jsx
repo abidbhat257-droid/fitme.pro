@@ -91,15 +91,57 @@ function setJsonLd(calc, faqs) {
 }
 
 function faqFor(calc) {
+  if (calc?.id === "bench-press-1rm-calculator") return [
+    ["What is a bench press 1RM?", "A bench press one-repetition maximum is the heaviest load you can lift for one complete repetition under a defined technique standard. FitMe Pro estimates it from a completed set rather than testing a maximum directly."],
+    ["Which 1RM formula does FitMe Pro use?", "The calculator uses the Epley equation: estimated 1RM = load × (1 + repetitions ÷ 30)."],
+    ["How do Epley, Brzycki and Lombardi estimates differ?", "They use different mathematical relationships between load and repetitions, so the same set can produce different estimates. The page shows all three for comparison."],
+    ["How should I use the rep-max percentage table?", "Use the percentages as planning loads derived from the estimated 1RM. Recalculate after changing your input set and adjust for technique, fatigue and the actual exercise."],
+    ["Is an estimated 1RM the same as a tested 1RM?", "No. It is a prediction from a submaximal set. A tested maximum can differ because of technique, fatigue, equipment and individual performance."],
+    ["What repetition range works best for an estimated 1RM?", "Prediction equations are generally more useful for moderate repetition sets than very high-repetition sets. The Epley implementation limits the repetition contribution to 30."],
+    ["Can I use the estimate to choose a training load?", "It can be used as a starting point for planning, but the estimate should not be treated as a guaranteed safe load. Use appropriate technique and conservative progression."],
+    ["Why do different calculators give different 1RM results?", "Different tools may use Epley, Brzycki, Lombardi or another equation, with different repetition limits and rounding rules."]
+  ];
+  if (calc?.id === "vo2-max-calculator") return [
+    ["What does a VO₂ max calculator estimate?", "It estimates maximal oxygen uptake from a field-test result. The FitMe Pro calculator uses the 12-minute Cooper test distance."],
+    ["What is the Cooper 12-minute test?", "It is a field test in which you cover as much distance as possible in 12 minutes. FitMe Pro uses the Cooper equation implemented in the calculator."],
+    ["What is the Cooper formula used here?", "VO₂ max ≈ (distance in metres − 504.9) ÷ 44.73."],
+    ["Is a field-test VO₂ max the same as a laboratory measurement?", "No. A field-test value is an estimate and can be affected by pacing, terrain, weather, motivation and measurement conditions."],
+    ["What is the Rockport test?", "The Rockport One-Mile Walk is another field protocol that estimates aerobic capacity from a one-mile walk and participant characteristics. It is not the formula currently used by this calculator."],
+    ["How should I interpret my VO₂ max estimate?", "Use it as an approximate aerobic-fitness metric and compare repeated tests performed with the same protocol and similar conditions rather than treating it as a diagnostic measurement."]
+  ];
+  if (calc?.id === "target-heart-rate-calculator") return [
+    ["What is a target heart-rate zone?", "It is a training range intended to help describe exercise intensity. FitMe Pro uses heart-rate reserve with a resting heart rate for this calculator."],
+    ["What is the Karvonen method?", "The Karvonen method calculates heart-rate reserve as maximum heart rate minus resting heart rate, then adds a chosen fraction of that reserve to resting heart rate."],
+    ["Why do I need resting heart rate?", "Resting heart rate personalizes a heart-rate-reserve calculation instead of relying only on a percentage of estimated maximum heart rate."],
+    ["How should I measure resting heart rate?", "Measure after waking or after sitting quietly, before caffeine or exercise when practical. Take several readings under similar conditions and use a consistent method."],
+    ["What are the five named zones?", "FitMe Pro describes Recovery, Fat-burning, Cardio, Threshold and Peak zones using increasing percentages of heart-rate reserve. The table on this page shows the calculation ranges."],
+    ["Are target heart-rate zones medical limits?", "No. They are training estimates. Medication, illness, temperature, hydration and individual physiology can change heart-rate response."]
+  ];
+  if (calc?.id === "aerobic-training-zone-calculator") return [
+    ["What is an aerobic training zone?", "It is a heart-rate range used to describe aerobic exercise intensity. FitMe Pro calculates it with heart-rate reserve from age and resting heart rate."],
+    ["How does the Karvonen method work?", "HRR = estimated maximum heart rate − resting heart rate; target heart rate = resting heart rate + HRR × intensity."],
+    ["How should I measure resting heart rate?", "Use a consistent resting measurement, ideally after waking or after several quiet minutes. Repeat under similar conditions when tracking changes."],
+    ["What are the five named training zones?", "Recovery, Fat-burning, Cardio, Threshold and Peak are descriptive training zones shown on this page with increasing heart-rate-reserve percentages."],
+    ["Why can my actual heart rate differ from the calculated zone?", "Heart rate changes with fitness, heat, hydration, stress, fatigue, medication and exercise conditions, while age equations are population estimates."],
+    ["Can this calculator diagnose cardiovascular fitness?", "No. It provides a training estimate and is not a diagnostic test."]
+  ];
+  if (calc?.id === "anaerobic-threshold-calculator") return [
+    ["What does an anaerobic-threshold calculator estimate?", "It provides a simple heart-rate estimate for threshold-oriented training from maximum heart rate and a selected percentage."],
+    ["What formula does FitMe Pro use?", "The calculator uses estimated threshold HR ≈ maximum heart rate × selected percentage, with a default of 88%."],
+    ["Is this the same as a measured lactate threshold?", "No. A percentage-based estimate is not a laboratory measurement of lactate or ventilatory threshold."],
+    ["Why can threshold heart rate differ between runners?", "Threshold response depends on training status, physiology, protocol and exercise conditions, so a single percentage cannot precisely describe every person."],
+    ["Can I use the result to guide training?", "It can be a planning reference, but actual effort, performance and validated testing should also be considered."],
+    ["Is the result medical advice?", "No. It is an educational training estimate and should not be used to diagnose a cardiovascular condition."]
+  ];
   return [
     [`What does the ${calc.name} calculate?`, `${calc.name} applies the stated method to the inputs on this page to produce a health, nutrition or fitness estimate.`],
     [`How does the ${calc.name} work?`, `Enter the requested values and FitMe Pro applies the displayed formula. The result updates as your inputs change.`],
-    [`What inputs are required?`, calc.extraInputs ? "This calculator uses dedicated activity-specific inputs shown in the Calculator Inputs section." : "This calculator uses the measurements in your shared Body Profile."],
+    ["What inputs are required?", calc.extraInputs ? "This calculator uses dedicated activity-specific inputs shown in the Calculator Inputs section." : "This calculator uses the measurements in your shared Body Profile."],
     [`How accurate is the ${calc.name}?`, "The result is an estimate when it is based on an equation or prediction model. Measurement quality, individual differences and the chosen method can affect accuracy."],
-    [`Why can another calculator show a different result?`, "Different calculators may use different equations, assumptions, reference populations or rounding rules. Compare methodology before comparing numbers."],
-    [`Can I use the result to track progress?`, "Yes. Repeating the calculation with consistent inputs can help you monitor trends, especially when combined with other relevant measures."],
-    [`Is this calculator free?`, "Yes. FitMe Pro calculators are free to use in the browser."],
-    [`Can this result diagnose a medical condition?`, "No. FitMe Pro provides educational estimates and does not diagnose disease or replace professional medical assessment."]
+    ["Why can another calculator show a different result?", "Different calculators may use different equations, assumptions, reference populations or rounding rules. Compare methodology before comparing numbers."],
+    ["Can I use the result to track progress?", "Yes. Repeating the calculation with consistent inputs can help you monitor trends, especially when combined with other relevant measures."],
+    ["Is this calculator free?", "Yes. FitMe Pro calculators are free to use in the browser."],
+    ["Can this result diagnose a medical condition?", "No. FitMe Pro provides educational estimates and does not diagnose disease or replace professional medical assessment."]
   ];
 }
 
