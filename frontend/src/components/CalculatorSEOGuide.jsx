@@ -53,11 +53,11 @@ function faqFor(calc) {
   ];
 }
 
-export default function CalculatorSEOGuide({ calc, related = [], showFaq = true }) {
+export default function CalculatorSEOGuide({ calc, related = [], showFaq = true, result = null, faqs: faqItems = null }) {
   if (!calc) return null;
   const why = categoryWhy[calc.category] || "This calculator provides a structured way to turn the available inputs into a useful health or fitness estimate. Use the result as one piece of information rather than as a standalone measure of health.";
   const example = defaultExample(calc);
-  const faqs = faqFor(calc);
+  const faqs = faqItems || faqFor(calc);
 
   return (
     <article className="mt-10 max-w-4xl border-t border-border pt-10 space-y-6" data-testid="calculator-seo-guide">
@@ -78,6 +78,24 @@ export default function CalculatorSEOGuide({ calc, related = [], showFaq = true 
       </section>
 
       <section>
+      {calc.id === "bench-press-1rm-calculator" && (() => {
+        const load = Number(calc.inputFields?.find(f => f.name === "load")?.default || 60);
+        const reps = Number(calc.inputFields?.find(f => f.name === "reps")?.default || 8);
+        const epley = load * (1 + Math.min(30, reps) / 30);
+        const brzycki = reps < 37 ? load * 36 / (37 - reps) : NaN;
+        const lombardi = load * Math.pow(reps, 0.10);
+        const methods = [["Epley", epley],["Brzycki", brzycki],["Lombardi", lombardi]];
+        const pct = [100,95,90,85,80,75,70,65,60,55,50];
+        return <section>
+          <h2 className="font-display text-2xl uppercase tracking-tight">1RM Methods Compared</h2>
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">FitMe Pro calculates the primary estimate with Epley. Brzycki and Lombardi are useful comparison equations. For the default example of {load} kg × {reps} reps, the three estimates are shown below.</p>
+          <div className="mt-4 overflow-x-auto"><table className="w-full border-collapse text-sm"><thead><tr><th className="border border-border p-2 text-left">Method</th><th className="border border-border p-2 text-right">Estimated 1RM</th></tr></thead><tbody>{methods.map(([name,value])=><tr key={name}><td className="border border-border p-2">{name}</td><td className="border border-border p-2 text-right">{Number.isFinite(value) ? value.toFixed(1) : "Not suitable"} kg</td></tr>)}</tbody></table></div>
+          <h3 className="mt-6 font-display text-xl uppercase tracking-tight">Rep-Max Percentage Table</h3>
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">Suggested loads below are percentages of the Epley estimate for the example. Recalculate after changing your set; these are not universal training prescriptions.</p>
+          <div className="mt-4 overflow-x-auto"><table className="w-full border-collapse text-sm"><thead><tr><th className="border border-border p-2 text-left">% of 1RM</th><th className="border border-border p-2 text-right">Suggested load</th></tr></thead><tbody>{pct.map(p=> <tr key={p}><td className="border border-border p-2">{p}%</td><td className="border border-border p-2 text-right">{(epley*p/100).toFixed(1)} kg</td></tr>)}</tbody></table></div>
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">A predicted 1RM is an estimate, not a tested maximum. Technique, fatigue, range of motion and equipment can change the actual result.</p>
+        </section>;
+      })()}
         <h2 className="font-display text-2xl uppercase tracking-tight">The Formula Explained</h2>
         <pre className="mt-3 overflow-x-auto whitespace-pre-wrap border border-border bg-card p-4 font-mono-data text-sm">{calc.formula || "The calculation method is applied from the inputs described above."}</pre>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">The formula identifies which inputs influence the result. If an equation is used, it represents a model derived from a reference population or established method; it does not capture every aspect of an individual person.</p>
