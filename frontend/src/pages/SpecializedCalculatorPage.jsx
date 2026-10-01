@@ -18,20 +18,18 @@ function sharedReady(calc, state) {
 function wilksScore(totalKg, bodyWeightKg, sex) {
   const x = bodyWeightKg;
   const female = String(sex).toLowerCase() === "female";
-  // Male branch corrected to the original Wilks coefficients. The female
-  // branch intentionally preserves the site's existing tested behavior.
   const c = female
-    ? [-125.4255398, 13.71219419, -0.0330725, 0.00007114, -0.000000065, 0.000000000019]
-    : [-216.0475144, 16.2606339, -0.002388645, -0.00113732, 0.00000701863, -0.00000001291];
+    ? [-125.425539779509, 13.7121941940668, -0.0330725063103405, -0.0010504000506583, 0.00000938773881462799, -0.000000023334613884954]
+    : [47.4617885411949, 8.47206137941125, 0.073694103462609, -0.00139583381094385, 0.00000707665973070743, -0.0000000120804336482315];
   const denominator = c[0] + c[1] * x + c[2] * x ** 2 + c[3] * x ** 3 + c[4] * x ** 4 + c[5] * x ** 5;
-  return denominator > 0 ? totalKg * 500 / denominator : null;
+  return denominator > 0 ? totalKg * 600 / denominator : null;
 }
 
 function getEffectiveCalculator(calc, unit) {
   if (!calc || calc.id !== "wilks-score-calculator") return calc;
   return {
     ...calc,
-    formula: "Wilks Score = total × 500 ÷ (F + E×BW + D×BW² + C×BW³ + B×BW⁴ + A×BW⁵), with weight and total normalized to kg",
+    formula: "Wilks 2020 = total × 600 ÷ (a + b×BW + c×BW² + d×BW³ + e×BW⁴ + f×BW⁵), with weight and total normalized to kg",
     inputFields: [
       { name: "total", label: `Powerlifting total / ${unit}`, default: unit === "lb" ? "882" : "400", help: "Combined squat, bench press and deadlift total." },
       { name: "bodyWeight", label: `Body weight / ${unit}`, default: unit === "lb" ? "165" : "75", help: "Body weight used by the Wilks formula." },
@@ -48,7 +46,7 @@ function getEffectiveCalculator(calc, unit) {
         raw: score,
         unit: "points",
         category: "Wilks score",
-        interpretation: "Total and body weight are converted to kilograms before the calculation. The score is unitless, so the same physical lifts produce the same result in kg or lb.",
+        interpretation: "Total and body weight are converted to kilograms before the calculation. The score is unitless, so the same physical lifts produce the same result in kg or lb. Source: International Powerlifting Federation, Models Evaluation-I (2020), Appendix 1, Wilks-2 Formula.",
       };
     },
   };
