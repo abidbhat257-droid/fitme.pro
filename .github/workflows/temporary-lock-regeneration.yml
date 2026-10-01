@@ -6,22 +6,20 @@ on:
       - frontend/yarn.lock
 permissions:
   contents: write
+  actions: read
 jobs:
   regen:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: frontend
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 24
-      - name: Regenerate and commit lockfile
+      - name: Restore regenerated lockfile artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
-          rm -f yarn.lock
-          yarn install --non-interactive
-          cd ..
+          gh run download 36897973477 --repo ${{ github.repository }} --name regenerated-yarn-lock --dir /tmp/lock-artifact
+          cp /tmp/lock-artifact/yarn.lock frontend/yarn.lock
+      - name: Commit regenerated lockfile
+        run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add frontend/yarn.lock
