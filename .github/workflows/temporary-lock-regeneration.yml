@@ -1,0 +1,23 @@
+name: Temporary lockfile regeneration
+on:
+  push:
+    branches: [main]
+jobs:
+  regen:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: yarn
+          cache-dependency-path: frontend/yarn.lock
+      - name: Regenerate lockfile
+        run: |
+          yarn install --non-interactive
+          echo '---LOCK-DIFF-BEGIN---'
+          git diff -- yarn.lock
+          echo '---LOCK-DIFF-END---'
