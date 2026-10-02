@@ -59,9 +59,6 @@ function faq(article) {
 export function getLongFormJournalArticle(article) {
   if (!article) return article;
 
-  // Normalize section records because some imported journal sets use
-  // {label, url} objects while the renderer expects [heading, text] tuples.
-  // Without this normalization, array destructuring throws "object is not iterable".
   const normalizedSections = (Array.isArray(article.sections) ? article.sections : []).map((section) => {
     if (Array.isArray(section)) {
       return [section[0] || "Section", section[1] || ""];
@@ -73,35 +70,44 @@ export function getLongFormJournalArticle(article) {
   });
 
   if (article.pilot) {
-    const pilotWordCount = normalizedSections.reduce((sum, [, text]) => sum + countWords(text), 0) + countWords(article.description || "");
+    const pilotWordCount = normalizedSections.reduce((sum, [, text]) => sum + countWords(text), 0)
+      + countWords(article.description || "")
+      + (Array.isArray(article.quickSummary) ? article.quickSummary.reduce((sum, text) => sum + countWords(text), 0) : 0)
+      + (Array.isArray(article.faqs) ? article.faqs.reduce((sum, pair) => sum + countWords(pair?.[0] || "") + countWords(pair?.[1] || ""), 0) : 0);
     return {
       ...article,
-      sections: [...normalizedSections, ...(article.extraSections || []), ...(article.extraSections2 || [])],
+      sections: [["Introduction", normalizedSections[0]?.[1] || article.description || ""], ...normalizedSections.slice(1)],
       readTime: `${Math.max(8, Math.round(pilotWordCount / 180))} min read`,
     };
   }
 
-  const sections = [["Introduction", articleIntro(article)]];
-  normalizedSections.forEach(([heading, text], index) => {
-    const expanded = sectionExpansion(article, heading, text, index).join(" ");
-    sections.push([heading, limitSentences(expanded, 220)]);
-  });
-  sections.push(["Putting the information into practice", `Use the ideas in this article as a decision-making framework. Start with the smallest change that addresses your main goal, make it specific enough to repeat, and review how it is working over several weeks. Keep useful habits, modify approaches that are not practical, and avoid making large changes based on a single day's result. ${article.description || "The central aim is a realistic, evidence-informed approach that can fit ordinary life."}`]);
-  sections.push(["Common questions", faq(article).map(([q,a]) => `${q} ${a}`).join(" ")]);
+  // The non-pilot journal sets already contain their article-specific sections.
+  // Do not append the old generic expansion paragraphs, generic FAQ answers, or
+  // repeated safety/checklist prose. The shared note is rendered once at the
+  // bottom of each page by prerenderJournalExpansion.js.
+  const cleanedSections = normalizedSections
+    .filter(([heading]) => !/^(FAQ|Common questions|Safety and When to Get Help|Important Health Note)$/i.test(String(heading).trim()))
+    .map(([heading, text]) => {
+      let cleaned = clean(text);
+      cleaned = cleaned.replace(/FitMe Pro uses authoritative public-health guidance as a reference and does not reproduce source publications\.?/gi, "");
+      cleaned = cleaned.replace(/Before applying the information, define your main goal[^.]*\.?/gi, "");
+      cleaned = cleaned.replace(/This information does not replace individualized clinical assessment\.?/gi, "");
+      cleaned = clean(cleaned);
+      return [heading, cleaned];
+    })
+    .filter(([, text]) => countWords(text) >= 12);
 
-  let total = sections.reduce((sum, [, text]) => sum + countWords(text), 0);
-  if (total < 1500) {
-    sections.push(["A practical checklist", `Before applying the information, define your main goal, identify the measurement or behavior that actually reflects that goal, and choose a change you can repeat. Check your assumptions, use consistent units, avoid comparing your result with another person's result without context, and review trends instead of isolated observations. Give a new routine enough time to evaluate it fairly. If something is difficult to sustain, simplify it rather than assuming that greater restriction or effort is automatically better. Remember that public-health recommendations describe broad evidence, while individual care may require more detailed assessment.`]);
-    total = sections.reduce((sum, [, text]) => sum + countWords(text), 0);
-  }
-  if (total > 2000) {
-    for (let i = 1; i < sections.length && total > 1950; i++) {
-      const current = sections[i][1];
-      const reduced = limitSentences(current, Math.max(120, Math.floor(countWords(current) * 0.78)));
-      sections[i][1] = reduced;
-      total = sections.reduce((sum, [, text]) => sum + countWords(text), 0);
-    }
-  }
+  const total = cleanedSections.reduce((sum, [, text]) => sum + countWords(text), 0)
+    + countWords(article.description || "")
+    + (Array.isArray(article.quickSummary) ? article.quickSummary.reduce((sum, text) => sum + countWords(text), 0) : 0);
+
+  return {
+    ...article,
+    sections: cleanedSections,
+    readTime: `${Math.max(3, Math.round(total / 180))} min read`,
+  };
+}
+
   const bodyCompositionSources = [
     {label:"NIH / NIDDK — Weight Management",url:"https://www.niddk.nih.gov/health-information/weight-management"},
     {label:"CDC — Healthy Weight",url:"https://www.cdc.gov/healthy-weight-growth/"},
