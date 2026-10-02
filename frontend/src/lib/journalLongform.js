@@ -72,6 +72,15 @@ export function getLongFormJournalArticle(article) {
     return ["Section", String(section ?? "")];
   });
 
+  if (article.pilot) {
+    const pilotWordCount = normalizedSections.reduce((sum, [, text]) => sum + countWords(text), 0) + countWords(article.description || "");
+    return {
+      ...article,
+      sections: [["Introduction", normalizedSections[0]?.[1] || article.description || ""], ...normalizedSections.slice(1)],
+      readTime: `${Math.max(8, Math.round(pilotWordCount / 180))} min read`,
+    };
+  }
+
   const sections = [["Introduction", articleIntro(article)]];
   normalizedSections.forEach(([heading, text], index) => {
     const expanded = sectionExpansion(article, heading, text, index).join(" ");
