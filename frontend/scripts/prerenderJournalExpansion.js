@@ -110,7 +110,7 @@ function write(route,html){
 
     for(const article of articles){
       const canonical=`${siteUrl}/journal/${article.categorySlug}/${article.slug}`;
-      const schema={"@context":"https://schema.org","@graph":[{"@type":"Article",headline:article.title,description:article.description,datePublished:article.date || "2026-09-19",dateModified:article.dateModified || article.date || "2026-09-19",mainEntityOfPage:{"@type":"WebPage","@id":canonical},author:{"@type":"Organization",name:"FitMe Pro"},publisher:{"@type":"Organization",name:"FitMe Pro",url:siteUrl},articleSection:article.category,keywords:article.keywords,isAccessibleForFree:true}];
+      const schema={"@context":"https://schema.org","@graph":[{"@type":"Article",headline:article.title,description:article.description,datePublished:article.date || "2026-09-19",dateModified:article.dateModified || article.date || "2026-09-19",mainEntityOfPage:{"@type":"WebPage","@id":canonical},author:{"@type":"Organization",name:"FitMe Pro"},publisher:{"@type":"Organization",name:"FitMe Pro",url:siteUrl},articleSection:article.category,keywords:article.keywords,isAccessibleForFree:true}]};
       if(Array.isArray(article.faqs) && article.faqs.length){
         schema["@graph"].push({"@type":"FAQPage",mainEntity:article.faqs.map(([q,a])=>({"@type":"Question",name:q,acceptedAnswer:{"@type":"Answer",text:a}}))});
       }
