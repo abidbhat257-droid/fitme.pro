@@ -1,6 +1,6 @@
 export const JOURNAL_PILOT_ARTICLES = [
 {
-slug:"how-to-calculate-a-calorie-deficit-for-safe-steady-weight-loss",category:"Weight Management",categorySlug:"weight-loss",
+slug:"how-to-calculate-a-calorie-deficit-for-safe-steady-weight-loss",category:"Weight Management",categorySlug:"weight-loss",pilot:true,
 title:"How to Calculate a Calorie Deficit for Weight Loss",
 description:"A worked, calculator-linked explanation of calorie deficits, using FitMe Pro's BMR and TDEE formulas and showing how to turn an estimate into a starting target.",
 readTime:"10 min read",date:"October 2, 2026",
@@ -30,7 +30,7 @@ faqs:[
 ]
 },
 {
-slug:"top-10-high-volume-low-calorie-foods-that-keep-you-full",category:"Weight Management",categorySlug:"weight-loss",
+slug:"top-10-high-volume-low-calorie-foods-that-keep-you-full",category:"Weight Management",categorySlug:"weight-loss",pilot:true,
 title:"10 High-Volume, Lower-Calorie Foods for Weight Loss",
 description:"A practical list of ten foods that can add volume to meals, with guidance on why food volume is useful and how to build filling plates.",
 readTime:"9 min read",date:"October 2, 2026",
@@ -58,7 +58,7 @@ faqs:[
 ]
 },
 {
-slug:"keto-vs-low-carb-which-diet-strategy-wins-for-long-term-weight-loss",category:"Weight Management",categorySlug:"weight-loss",
+slug:"keto-vs-low-carb-which-diet-strategy-wins-for-long-term-weight-loss",category:"Weight Management",categorySlug:"weight-loss",pilot:true,
 title:"Keto vs Low-Carb: What Is the Difference for Weight Loss?",
 description:"A neutral comparison of ketogenic and broader low-carbohydrate eating patterns, including what changes, what stays important and where the evidence has limits.",
 readTime:"11 min read",date:"October 2, 2026",
@@ -86,7 +86,7 @@ faqs:[
 ]
 },
 {
-slug:"how-to-use-a-smart-scale-to-track-weight-management-progress",category:"Weight Management",categorySlug:"weight-loss",
+slug:"how-to-use-a-smart-scale-to-track-weight-management-progress",category:"Weight Management",categorySlug:"weight-loss",pilot:true,
 title:"How to Use a Smart Scale Without Overreading the Numbers",
 description:"Learn what a smart scale can track, why body-composition readings fluctuate and how to combine scale data with weight and waist trends.",
 readTime:"10 min read",date:"October 2, 2026",
@@ -114,7 +114,7 @@ faqs:[
 ]
 },
 {
-slug:"why-hasnt-my-increased-activity-led-to-weight-loss",category:"Weight Management",categorySlug:"weight-loss",
+slug:"why-hasnt-my-increased-activity-led-to-weight-loss",category:"Weight Management",categorySlug:"weight-loss",pilot:true,
 title:"Why More Activity Does Not Always Mean Faster Weight Loss",
 description:"Why adding exercise can produce a smaller-than-expected scale change, and how to separate measurement noise from a real plateau.",
 readTime:"10 min read",date:"October 2, 2026",
@@ -142,7 +142,7 @@ faqs:[
 ]
 },
 {
-slug:"a-7-day-high-protein-meal-plan-for-sustainable-weight-management",category:"Weight Management",categorySlug:"weight-loss",
+slug:"a-7-day-high-protein-meal-plan-for-sustainable-weight-management",category:"Weight Management",categorySlug:"weight-loss",pilot:true,
 title:"7-Day High-Protein Meal Plan for Weight Management",
 description:"A flexible seven-day meal framework showing how to distribute protein-rich foods without turning one menu into a universal prescription.",
 readTime:"12 min read",date:"October 2, 2026",
@@ -170,7 +170,7 @@ faqs:[
 ]
 },
 {
-slug:"how-walking-10-000-steps-a-day-impacts-weight-loss-maintenance",category:"Weight Management",categorySlug:"weight-loss",
+slug:"how-walking-10-000-steps-a-day-impacts-weight-loss-maintenance",category:"Weight Management",categorySlug:"weight-loss",pilot:true,
 title:"What 10,000 Steps a Day Can and Cannot Tell You About Weight",
 description:"What a 10,000-step target means for activity, why calorie estimates vary and how to use step counts without treating them as a guaranteed weight-loss dose.",
 readTime:"9 min read",date:"October 2, 2026",
@@ -198,7 +198,7 @@ faqs:[
 ]
 },
 {
-slug:"how-to-measure-progress-beyond-the-scale-body-composition-metrics",category:"Weight Management",categorySlug:"weight-loss",
+slug:"how-to-measure-progress-beyond-the-scale-body-composition-metrics",category:"Weight Management",categorySlug:"weight-loss",pilot:true,
 title:"How to Measure Weight-Loss Progress Beyond the Scale",
 description:"A practical tracking system using weight trend, waist circumference, performance and body-composition estimates without treating any single metric as the whole story.",
 readTime:"10 min read",date:"October 2, 2026",
@@ -226,7 +226,7 @@ faqs:[
 ]
 },
 {
-slug:"body-composition-vs-bmi-why-your-scale-is-lying-to-you",category:"Body Composition",categorySlug:"body-composition",
+slug:"body-composition-vs-bmi-why-your-scale-is-lying-to-you",category:"Body Composition",categorySlug:"body-composition",pilot:true,
 title:"BMI vs Body Composition: What the Scale Cannot Tell You",
 description:"BMI is a weight-to-height index; body composition asks how that weight is divided among fat, lean tissue and other compartments. They answer different questions.",
 readTime:"9 min read",date:"October 2, 2026",
@@ -254,7 +254,7 @@ faqs:[
 ]
 },
 {
-slug:"what-is-lean-body-mass-and-how-do-you-calculate-it",category:"Body Composition",categorySlug:"body-composition",
+slug:"what-is-lean-body-mass-and-how-do-you-calculate-it",category:"Body Composition",categorySlug:"body-composition",pilot:true,
 title:"What Is Lean Body Mass and How Is It Calculated?",
 description:"Learn what lean body mass means, how FitMe Pro applies the Boer equation and what the result does and does not represent.",
 readTime:"9 min read",date:"October 2, 2026",
@@ -282,7 +282,7 @@ faqs:[
 ]
 },
 {
-slug:"what-counts-as-a-healthy-body-fat-percentage",category:"Body Composition",categorySlug:"body-composition",
+slug:"what-counts-as-a-healthy-body-fat-percentage",category:"Body Composition",categorySlug:"body-composition",pilot:true,
 title:"What Is a Healthy Body-Fat Percentage?",
 description:"How to interpret body-fat percentage without treating one reference range as a universal diagnosis or target.",
 readTime:"10 min read",date:"October 2, 2026",
@@ -310,7 +310,7 @@ faqs:[
 ]
 },
 {
-slug:"bioelectrical-impedance-analysis-bia-pros-cons-and-accuracy",category:"Body Composition",categorySlug:"body-composition",
+slug:"bioelectrical-impedance-analysis-bia-pros-cons-and-accuracy",category:"Body Composition",categorySlug:"body-composition",pilot:true,
 title:"BIA Body-Fat Scales: How Accurate Are They?",
 description:"How bioelectrical impedance analysis works, why readings change and what a home BIA scale can reasonably tell you.",
 readTime:"10 min read",date:"October 2, 2026",
@@ -338,7 +338,7 @@ faqs:[
 ]
 },
 {
-slug:"how-to-achieve-body-recomposition-lose-fat-and-gain-muscle-together",category:"Body Composition",categorySlug:"body-composition",
+slug:"how-to-achieve-body-recomposition-lose-fat-and-gain-muscle-together",category:"Body Composition",categorySlug:"body-composition",pilot:true,
 title:"How to Approach Body Recomposition: Lose Fat While Building Muscle",
 description:"A practical body-recomposition framework covering energy intake, resistance training, protein, recovery and progress tracking without promising a fixed rate.",
 readTime:"12 min read",date:"October 2, 2026",
@@ -367,7 +367,7 @@ faqs:[
 ]
 },
 {
-slug:"can-you-build-muscle-in-a-calorie-deficit-the-science-of-recomping",category:"Body Composition",categorySlug:"body-composition",
+slug:"can-you-build-muscle-in-a-calorie-deficit-the-science-of-recomping",category:"Body Composition",categorySlug:"body-composition",pilot:true,
 title:"Can You Build Muscle in a Calorie Deficit?",
 description:"What the evidence on resistance training, energy restriction and body recomposition can and cannot establish.",
 readTime:"10 min read",date:"October 2, 2026",
@@ -395,7 +395,7 @@ faqs:[
 ]
 },
 {
-slug:"body-recomposition-calculators-how-to-find-your-tdee-and-macros",category:"Body Composition",categorySlug:"body-composition",
+slug:"body-recomposition-calculators-how-to-find-your-tdee-and-macros",category:"Body Composition",categorySlug:"body-composition",pilot:true,
 title:"Body Recomposition Calculators: TDEE, Calories and Macros",
 description:"A calculator-linked worked example showing how TDEE and macro tools fit into a body-recomposition plan without turning estimates into prescriptions.",
 readTime:"11 min read",date:"October 2, 2026",
