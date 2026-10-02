@@ -76,7 +76,7 @@ export function getLongFormJournalArticle(article) {
       + (Array.isArray(article.faqs) ? article.faqs.reduce((sum, pair) => sum + countWords(pair?.[0] || "") + countWords(pair?.[1] || ""), 0) : 0);
     return {
       ...article,
-      sections: [...normalizedSections, ...(article.extraSections || []), ...(article.extraSections2 || []), ...(article.extraSections3 || []), ...(article.extraSections4 || [])],
+      sections: [...normalizedSections, ...(article.extraSections || []), ...(article.extraSections2 || []), ...(article.extraSections3 || []), ...(article.extraSections4 || []), ...(article.extraSections5 || [])],
       readTime: `${Math.max(8, Math.round(pilotWordCount / 180))} min read`,
     };
   }
