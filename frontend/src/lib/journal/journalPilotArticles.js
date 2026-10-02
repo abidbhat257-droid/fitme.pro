@@ -4,7 +4,7 @@ export const JOURNAL_PILOT_ARTICLES = [
 slug:"how-to-calculate-a-calorie-deficit-for-safe-steady-weight-loss",category:"Weight Management",categorySlug:"weight-loss",pilot:true,
 title:"How to Calculate a Calorie Deficit for Weight Loss",
 description:"A worked, calculator-linked explanation of calorie deficits, using FitMe Pro's BMR and TDEE formulas and showing how to turn an estimate into a starting target.",
-readTime:"10 min read",date:"October 2, 2026",
+readTime:"",date:"October 2, 2026",
 keywords:"how to calculate a calorie deficit, calorie deficit calculator, TDEE, BMR, weight loss calories",
 quickSummary:["A calorie deficit is the gap between estimated daily energy expenditure and planned calorie intake.","FitMe Pro first estimates BMR with Mifflin-St Jeor, then estimates TDEE by applying an activity factor.","A worked 80 kg, 175 cm example gives a BMR of about 1,739 kcal/day and a moderate-activity TDEE of about 2,695 kcal/day.","The calculation is a starting estimate, not a guarantee of a particular weekly weight change.","Compare the target with your multi-week weight trend before making another adjustment."],
 sources:[
@@ -35,7 +35,7 @@ extraSections2:[["How activity assumptions change the result","The activity mult
 slug:"top-10-high-volume-low-calorie-foods-that-keep-you-full",category:"Weight Management",categorySlug:"weight-loss",pilot:true,
 title:"10 High-Volume, Lower-Calorie Foods for Weight Loss",
 description:"A practical list of ten foods that can add volume to meals, with guidance on why food volume is useful and how to build filling plates.",
-readTime:"9 min read",date:"October 2, 2026",
+readTime:"",date:"October 2, 2026",
 keywords:"high volume low calorie foods, filling foods, weight loss foods, low calorie meals",
 quickSummary:["Food volume describes how much physical food you get for a given amount of energy.","Vegetables, fruit, broth-based dishes, legumes and other minimally processed foods can help build larger meals.","No food automatically causes fat loss; the overall energy intake and dietary pattern still matter.","Protein and fibre can make a high-volume meal more substantial than a plate built from low-fibre snack foods.","Portions still matter for calorie-dense foods such as oils, nuts and sauces."],
 sources:[
@@ -65,7 +65,7 @@ extraSections2:[["Use recipes, not ingredient labels alone","A food's calorie de
 slug:"keto-vs-low-carb-which-diet-strategy-wins-for-long-term-weight-loss",category:"Weight Management",categorySlug:"weight-loss",pilot:true,
 title:"Keto vs Low-Carb: What Is the Difference for Weight Loss?",
 description:"A neutral comparison of ketogenic and broader low-carbohydrate eating patterns, including what changes, what stays important and where the evidence has limits.",
-readTime:"11 min read",date:"October 2, 2026",
+readTime:"",date:"October 2, 2026",
 keywords:"keto vs low carb, ketogenic diet weight loss, low carb diet comparison",
 quickSummary:["A ketogenic diet is a more restrictive form of carbohydrate reduction; not every low-carb diet is ketogenic.","Both approaches can reduce calorie intake for some people, but adherence and total dietary intake remain central.","Short-term scale changes can include changes in stored carbohydrate and body water, so early losses are not identical to fat loss.","Diet quality, protein, fibre, micronutrients and sustainability matter regardless of carbohydrate level.","The comparison should be based on the question being asked, not on a universal winner."],
 sources:[
@@ -94,7 +94,7 @@ extraSections2:[["The role of food quality","Lower carbohydrate intake does not 
 slug:"how-to-use-a-smart-scale-to-track-weight-management-progress",category:"Weight Management",categorySlug:"weight-loss",pilot:true,
 title:"How to Use a Smart Scale Without Overreading the Numbers",
 description:"Learn what a smart scale can track, why body-composition readings fluctuate and how to combine scale data with weight and waist trends.",
-readTime:"10 min read",date:"October 2, 2026",
+readTime:"",date:"October 2, 2026",
 keywords:"smart scale accuracy, smart scale body fat, weight tracking, BIA scale",
 quickSummary:["A smart scale's body-composition output is an estimate, not a direct scan of fat tissue.","Hydration, recent food, exercise, skin temperature and measurement conditions can affect impedance-based readings.","Body weight is usually the simplest trend to interpret from a home scale.","Use the same device and similar conditions when tracking changes.","Do not let one surprising body-fat percentage determine a major diet or training decision."],
 sources:[
@@ -123,7 +123,7 @@ extraSections2:[["A trend can be useful without being exact","Suppose the same d
 slug:"why-hasnt-my-increased-activity-led-to-weight-loss",category:"Weight Management",categorySlug:"weight-loss",pilot:true,
 title:"Why More Activity Does Not Always Mean Faster Weight Loss",
 description:"Why adding exercise can produce a smaller-than-expected scale change, and how to separate measurement noise from a real plateau.",
-readTime:"10 min read",date:"October 2, 2026",
+readTime:"",date:"October 2, 2026",
 keywords:"more exercise not losing weight, increased activity weight loss plateau, exercise calories",
 quickSummary:["More physical activity can improve health and fitness even when the scale changes slowly.","Exercise calories are estimates, and people can unconsciously change food intake or other movement after activity increases.","Body water can temporarily hide fat loss on the scale.","A plateau should be judged from a trend, not a few weigh-ins.","Review the full routine before concluding that exercise 'doesn't work'."],
 sources:[
@@ -152,7 +152,7 @@ extraSections2:[["Water can hide a short-term change","Harder training can chang
 slug:"a-7-day-high-protein-meal-plan-for-sustainable-weight-management",category:"Weight Management",categorySlug:"weight-loss",pilot:true,
 title:"7-Day High-Protein Meal Plan for Weight Management",
 description:"A flexible seven-day meal framework showing how to distribute protein-rich foods without turning one menu into a universal prescription.",
-readTime:"12 min read",date:"October 2, 2026",
+readTime:"",date:"October 2, 2026",
 keywords:"high protein meal plan, 7 day weight loss meal plan, protein meals",
 quickSummary:["A useful high-protein plan starts with foods you can buy, prepare and repeat.","The seven-day outline uses interchangeable protein sources rather than requiring one cuisine.","Portions should be matched to the person's energy needs and dietary preferences.","Protein is only one part of a nutritionally adequate weight-management pattern.","Use FitMe Pro's calorie and protein tools to personalize the framework instead of copying a fixed calorie prescription."],
 sources:[
@@ -181,7 +181,7 @@ extraSections2:[["Budget substitutions","A high-protein plan does not need premi
 slug:"how-walking-10-000-steps-a-day-impacts-weight-loss-maintenance",category:"Weight Management",categorySlug:"weight-loss",pilot:true,
 title:"What 10,000 Steps a Day Can and Cannot Tell You About Weight",
 description:"What a 10,000-step target means for activity, why calorie estimates vary and how to use step counts without treating them as a guaranteed weight-loss dose.",
-readTime:"9 min read",date:"October 2, 2026",
+readTime:"",date:"October 2, 2026",
 keywords:"10000 steps weight loss, steps per day, walking weight management",
 quickSummary:["10,000 steps is a popular activity target, not a universal biological threshold.","The energy cost of walking depends on body size, pace, terrain and individual movement efficiency.","Step counts are useful for monitoring activity consistency but do not directly measure fat loss.","Walking can be combined with resistance training and other aerobic activity.","Use trends in steps and body weight together rather than converting every step into an exact calorie number."],
 sources:[
@@ -210,7 +210,7 @@ extraSections2:[["Pace changes the walking stimulus","Ten thousand slow househol
 slug:"how-to-measure-progress-beyond-the-scale-body-composition-metrics",category:"Weight Management",categorySlug:"weight-loss",pilot:true,
 title:"How to Measure Weight-Loss Progress Beyond the Scale",
 description:"A practical tracking system using weight trend, waist circumference, performance and body-composition estimates without treating any single metric as the whole story.",
-readTime:"10 min read",date:"October 2, 2026",
+readTime:"",date:"October 2, 2026",
 keywords:"measure weight loss progress, body composition tracking, waist circumference",
 quickSummary:["Scale weight is useful, but it is only one measurement.","Waist circumference and performance can add different information about change.","Body-composition estimates are more uncertain than direct body weight measurements.","Standardized conditions make trends easier to interpret.","A good tracking system is small enough that you will actually maintain it."],
 sources:[
@@ -239,7 +239,7 @@ extraSections2:[["Photographs can add context","Standardized progress photograph
 slug:"body-composition-vs-bmi-why-your-scale-is-lying-to-you",category:"Body Composition",categorySlug:"body-composition",pilot:true,
 title:"BMI vs Body Composition: What the Scale Cannot Tell You",
 description:"BMI is a weight-to-height index; body composition asks how that weight is divided among fat, lean tissue and other compartments. They answer different questions.",
-readTime:"9 min read",date:"October 2, 2026",
+readTime:"",date:"October 2, 2026",
 keywords:"BMI vs body composition, BMI limitations, body fat vs BMI",
 quickSummary:["BMI is calculated from body weight and height; it is not a direct body-fat measurement.","Body composition describes components such as fat mass and lean mass.","A higher BMI can occur with different body-composition patterns.","A lower BMI does not prove that body fat or metabolic health is ideal.","Use BMI as one screening metric rather than a complete body-composition assessment."],
 sources:[
@@ -268,7 +268,7 @@ extraSections2:[["Distribution is another missing piece","BMI also says nothing 
 slug:"what-is-lean-body-mass-and-how-do-you-calculate-it",category:"Body Composition",categorySlug:"body-composition",pilot:true,
 title:"What Is Lean Body Mass and How Is It Calculated?",
 description:"Learn what lean body mass means, how FitMe Pro applies the Boer equation and what the result does and does not represent.",
-readTime:"9 min read",date:"October 2, 2026",
+readTime:"",date:"October 2, 2026",
 keywords:"lean body mass, LBM calculator, Boer formula, lean mass",
 quickSummary:["Lean body mass is broader than skeletal muscle alone.","FitMe Pro's Lean Body Mass Calculator uses the Boer equation with weight, height and sex.","For an 80 kg, 175 cm male example, the Boer estimate is about 60.1 kg.","The result is an equation-based estimate, not a scan of muscle tissue.","Use the same formula when comparing FitMe Pro results over time."],
 sources:[
@@ -297,7 +297,7 @@ extraSections2:[["Why height matters in the Boer equation","The equation include
 slug:"what-counts-as-a-healthy-body-fat-percentage",category:"Body Composition",categorySlug:"body-composition",pilot:true,
 title:"What Is a Healthy Body-Fat Percentage?",
 description:"How to interpret body-fat percentage without treating one reference range as a universal diagnosis or target.",
-readTime:"10 min read",date:"October 2, 2026",
+readTime:"",date:"October 2, 2026",
 keywords:"healthy body fat percentage, body fat range, body fat calculator",
 quickSummary:["Body-fat percentage is the proportion of body weight estimated to be fat.","There is no single percentage that defines health for every adult.","Reference values depend on sex, age, population and measurement method.","A calculator estimate can differ from an instrument-based measurement.","Use the number as context rather than as a standalone diagnosis."],
 sources:[
@@ -326,7 +326,7 @@ extraSections2:[["Measurement error can exceed apparent progress","If one method
 slug:"bioelectrical-impedance-analysis-bia-pros-cons-and-accuracy",category:"Body Composition",categorySlug:"body-composition",pilot:true,
 title:"BIA Body-Fat Scales: How Accurate Are They?",
 description:"How bioelectrical impedance analysis works, why readings change and what a home BIA scale can reasonably tell you.",
-readTime:"10 min read",date:"October 2, 2026",
+readTime:"",date:"October 2, 2026",
 keywords:"BIA accuracy, bioelectrical impedance analysis, body fat scale, smart scale",
 quickSummary:["BIA estimates body composition from electrical impedance plus a prediction model.","Hydration and measurement conditions can influence the estimate.","Different devices can use different equations and algorithms.","A device can be useful for consistent trends without being exact for one person.","Compare readings from the same device and protocol when tracking change."],
 sources:[
@@ -355,7 +355,7 @@ extraSections2:[["Frequency is not a guarantee of accuracy","Some BIA devices us
 slug:"how-to-achieve-body-recomposition-lose-fat-and-gain-muscle-together",category:"Body Composition",categorySlug:"body-composition",pilot:true,
 title:"How to Approach Body Recomposition: Lose Fat While Building Muscle",
 description:"A practical body-recomposition framework covering energy intake, resistance training, protein, recovery and progress tracking without promising a fixed rate.",
-readTime:"12 min read",date:"October 2, 2026",
+readTime:"",date:"October 2, 2026",
 keywords:"body recomposition, lose fat gain muscle, recomp plan, muscle gain fat loss",
 quickSummary:["Body recomposition means changing the relative amounts of fat and lean tissue over time.","Resistance training and adequate protein are central pieces of the plan.","A large calorie deficit is not required to prove that a plan is working and may make training harder.","Use body weight, waist, strength and consistent body-composition measurements together.","Expect progress to be individual rather than following a universal weekly formula."],
 sources:[
@@ -385,7 +385,7 @@ extraSections2:[["Food quality still matters","A recomp diet should not be reduc
 slug:"can-you-build-muscle-in-a-calorie-deficit-the-science-of-recomping",category:"Body Composition",categorySlug:"body-composition",pilot:true,
 title:"Can You Build Muscle in a Calorie Deficit?",
 description:"What the evidence on resistance training, energy restriction and body recomposition can and cannot establish.",
-readTime:"10 min read",date:"October 2, 2026",
+readTime:"",date:"October 2, 2026",
 keywords:"build muscle calorie deficit, muscle gain while losing fat, body recomposition",
 quickSummary:["Muscle gain during an energy deficit is possible in some circumstances, but it is not guaranteed.","Training status, protein intake, deficit size and individual characteristics influence the outcome.","Beginners can respond differently from experienced lifters.","A deficit large enough to impair training and recovery makes the goal harder.","Use performance and body-composition trends rather than expecting the scale to prove muscle gain."],
 sources:[
@@ -414,7 +414,7 @@ extraSections2:[["What the scale can hide","A calorie deficit can reduce body we
 slug:"body-recomposition-calculators-how-to-find-your-tdee-and-macros",category:"Body Composition",categorySlug:"body-composition",pilot:true,
 title:"Body Recomposition Calculators: TDEE, Calories and Macros",
 description:"A calculator-linked worked example showing how TDEE and macro tools fit into a body-recomposition plan without turning estimates into prescriptions.",
-readTime:"11 min read",date:"October 2, 2026",
+readTime:"",date:"October 2, 2026",
 keywords:"body recomposition calculator, TDEE macros, recomp calories, macro calculator",
 quickSummary:["TDEE estimates daily energy expenditure; it does not measure metabolism directly.","A macro calculator converts a calorie target into estimated protein, carbohydrate and fat grams according to its selected percentages.","Recomposition requires monitoring outcomes, not just generating a target once.","The worked example uses the same FitMe Pro formulas as the calculators.","Calculator outputs are starting points that should be evaluated against real-world trends."],
 sources:[
