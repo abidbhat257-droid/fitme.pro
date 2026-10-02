@@ -24,4 +24,4 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Production build
-        run: yarn build
+        run: rm -rf build && yarn build
