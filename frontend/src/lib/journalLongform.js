@@ -76,7 +76,7 @@ export function getLongFormJournalArticle(article) {
     const pilotWordCount = normalizedSections.reduce((sum, [, text]) => sum + countWords(text), 0) + countWords(article.description || "");
     return {
       ...article,
-      sections: [...normalizedSections, ...(article.extraSections || [])],
+      sections: [...normalizedSections, ...(article.extraSections || []), ...(article.extraSections2 || [])],
       readTime: `${Math.max(8, Math.round(pilotWordCount / 180))} min read`,
     };
   }
