@@ -4,7 +4,7 @@ import { weightManagementArticles } from "./journal/weightManagementArticles";
 import { bodyCompositionArticles } from "./journal/bodyCompositionArticles";
 import { wellnessArticles } from "./journal/wellnessArticles";
 import { healthEducationArticles } from "./journal/healthEducationArticles";
-import { JOURNAL_PILOT_ARTICLES } from "./journalPilotArticles";
+import { JOURNAL_PILOT_ARTICLES } from "./journal/journalPilotArticles";
 
 const BASE_JOURNAL_SPECIAL_ARTICLES = [
   ...nutritionArticles,
