@@ -4,14 +4,22 @@ import { weightManagementArticles } from "./journal/weightManagementArticles";
 import { bodyCompositionArticles } from "./journal/bodyCompositionArticles";
 import { wellnessArticles } from "./journal/wellnessArticles";
 import { healthEducationArticles } from "./journal/healthEducationArticles";
+import { JOURNAL_PILOT_ARTICLES } from "./journalPilotArticles";
 
-export const JOURNAL_SPECIAL_ARTICLES = [
+const BASE_JOURNAL_SPECIAL_ARTICLES = [
   ...nutritionArticles,
   ...fitnessArticles,
   ...weightManagementArticles,
   ...bodyCompositionArticles,
   ...wellnessArticles,
   ...healthEducationArticles,
+];
+
+const JOURNAL_PILOT_BY_SLUG = new Map(JOURNAL_PILOT_ARTICLES.map((article) => [article.slug, article]));
+
+export const JOURNAL_SPECIAL_ARTICLES = [
+  ...BASE_JOURNAL_SPECIAL_ARTICLES.filter((article) => !JOURNAL_PILOT_BY_SLUG.has(article.slug)),
+  ...JOURNAL_PILOT_ARTICLES,
 ];
 
 export function getSpecialJournalArticle(slug) {
