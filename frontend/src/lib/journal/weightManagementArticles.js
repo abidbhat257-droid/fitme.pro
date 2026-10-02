@@ -99,7 +99,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use this article to prepare informed questions about The Ultimate Guide to Medical Weight Loss Programs: What to Expect, then compare the answers with guidance from a qualified healthcare professional."
+      "For The Ultimate Guide to Medical Weight Loss Programs: What to Expect, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -153,7 +153,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use this article to prepare informed questions about How Does Semaglutide Work for Weight Loss? A Doctor’s Breakdown, then compare the answers with guidance from a qualified healthcare professional."
+      "For How Does Semaglutide Work for Weight Loss? A Doctor’s Breakdown, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -207,7 +207,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use this article to prepare informed questions about Tirzepatide vs. Semaglutide: Which Weight Loss Injection Is Right for You, then compare the answers with guidance from a qualified healthcare professional."
+      "For Tirzepatide vs. Semaglutide: Which Weight Loss Injection Is Right for You?, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -261,7 +261,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use this article to prepare informed questions about The Best FDA-Approved Weight Loss Medications: An Overview, then compare the answers with guidance from a qualified healthcare professional."
+      "For The Best FDA-Approved Weight Loss Medications: An Overview, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -315,7 +315,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use this article to prepare informed questions about How to Qualify for Prescription Weight Loss Drugs, then compare the answers with guidance from a qualified healthcare professional."
+      "For How to Qualify for Prescription Weight Loss Drugs, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -369,7 +369,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use this article to prepare informed questions about Compounded GLP-1 Medications: Safety, Efficacy, and What to Know, then compare the answers with guidance from a qualified healthcare professional."
+      "For Compounded GLP-1 Medications: Safety, Efficacy, and What to Know, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -423,7 +423,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use this article to prepare informed questions about Managing GLP-1 Side Effects: How to Deal with Nausea and Fatigue, then compare the answers with guidance from a qualified healthcare professional."
+      "For Managing GLP-1 Side Effects: How to Deal with Nausea and Fatigue, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -477,7 +477,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use this article to prepare informed questions about What Is a Custom Medical Weight Loss Plan, then compare the answers with guidance from a qualified healthcare professional."
+      "For What Is a Custom Medical Weight Loss Plan?, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -531,7 +531,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use this article to prepare informed questions about Top Non-Surgical Weight Loss Options for Adults Over 50, then compare the answers with guidance from a qualified healthcare professional."
+      "For Top Non-Surgical Weight Loss Options for Adults Over 50, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -585,7 +585,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use this article to prepare informed questions about How to Find a Reputable Medical Weight Loss Clinic Near Me, then compare the answers with guidance from a qualified healthcare professional."
+      "For How to Find a Reputable Medical Weight Loss Clinic Near Me, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -639,7 +639,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use this article to prepare informed questions about What Happens When You Stop Taking Weight Loss Injections, then compare the answers with guidance from a qualified healthcare professional."
+      "For What Happens When You Stop Taking Weight Loss Injections?, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -693,7 +693,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use this article to prepare informed questions about How to Avoid Muscle Loss While on GLP-1 Weight Loss Drugs, then compare the answers with guidance from a qualified healthcare professional."
+      "For How to Avoid Muscle Loss While on GLP-1 Weight Loss Drugs, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -747,7 +747,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use this article to prepare informed questions about Ozempic Alternatives: Natural and Clinical Options Explained, then compare the answers with guidance from a qualified healthcare professional."
+      "For Ozempic Alternatives: Natural and Clinical Options Explained, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -801,7 +801,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use this article to prepare informed questions about A Patient’s Guide to the Initial Weight Loss Consultation, then compare the answers with guidance from a qualified healthcare professional."
+      "For A Patient’s Guide to the Initial Weight Loss Consultation, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -855,7 +855,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use this article to prepare informed questions about Oral vs. Injectable Weight Loss Medications: Pros and Cons, then compare the answers with guidance from a qualified healthcare professional."
+      "For Oral vs. Injectable Weight Loss Medications: Pros and Cons, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -909,7 +909,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Choose the least restrictive approach that still supports your goal and nutritional needs, and adjust it using real-world progress rather than promises about a specific diet."
+      "For A Beginner’s Guide to the Mediterranean Diet for Weight Management, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -963,7 +963,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Choose the least restrictive approach that still supports your goal and nutritional needs, and adjust it using real-world progress rather than promises about a specific diet."
+      "For How Intermittent Fasting Affects Metabolism and Fat Loss, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -1017,7 +1017,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Choose the least restrictive approach that still supports your goal and nutritional needs, and adjust it using real-world progress rather than promises about a specific diet."
+      "For Keto vs. Low-Carb: Which Diet Strategy Wins for Long-Term Weight Loss?, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -1071,7 +1071,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Choose the least restrictive approach that still supports your goal and nutritional needs, and adjust it using real-world progress rather than promises about a specific diet."
+      "For A 7-Day High-Protein Meal Plan for Sustainable Weight Management, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -1125,7 +1125,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Choose the least restrictive approach that still supports your goal and nutritional needs, and adjust it using real-world progress rather than promises about a specific diet."
+      "For How to Calculate a Calorie Deficit for Safe, Steady Weight Loss, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -1179,7 +1179,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Choose the least restrictive approach that still supports your goal and nutritional needs, and adjust it using real-world progress rather than promises about a specific diet."
+      "For Top 10 High-Volume, Low-Calorie Foods That Keep You Full, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -1233,7 +1233,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Choose the least restrictive approach that still supports your goal and nutritional needs, and adjust it using real-world progress rather than promises about a specific diet."
+      "For Does a Very-Low-Carbohydrate Diet Actually Sustain Long-Term Weight Maintenance?, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -1287,7 +1287,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Choose the least restrictive approach that still supports your goal and nutritional needs, and adjust it using real-world progress rather than promises about a specific diet."
+      "For How to Plan Healthy Meals for Weight Loss on a Busy Schedule, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -1341,7 +1341,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Choose the least restrictive approach that still supports your goal and nutritional needs, and adjust it using real-world progress rather than promises about a specific diet."
+      "For The Role of Macronutrients in Weight Management: Carbs, Proteins, and Fats, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -1395,7 +1395,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Choose the least restrictive approach that still supports your goal and nutritional needs, and adjust it using real-world progress rather than promises about a specific diet."
+      "For Top 15 Healthy Weight Loss Smoothies for Breakfast, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -1449,7 +1449,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Choose the least restrictive approach that still supports your goal and nutritional needs, and adjust it using real-world progress rather than promises about a specific diet."
+      "For How to Transition Off a Strict Diet Without Regaining Weight, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -1503,7 +1503,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Choose the least restrictive approach that still supports your goal and nutritional needs, and adjust it using real-world progress rather than promises about a specific diet."
+      "For The Truth About Sugar Substitutes and Weight Management, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -1557,7 +1557,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Choose the least restrictive approach that still supports your goal and nutritional needs, and adjust it using real-world progress rather than promises about a specific diet."
+      "For How Anti-Inflammatory Diets Help Control Body Weight, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -1611,7 +1611,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Choose the least restrictive approach that still supports your goal and nutritional needs, and adjust it using real-world progress rather than promises about a specific diet."
+      "For Why You Should Focus on Nutrient Density Over Calorie Counting, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -1665,7 +1665,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Choose the least restrictive approach that still supports your goal and nutritional needs, and adjust it using real-world progress rather than promises about a specific diet."
+      "For The Best Foods for Gut Health and Weight Management, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -1719,7 +1719,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use activity as a long-term health behavior rather than a punishment for eating. Choose a routine you can repeat and progress gradually."
+      "For The Best Exercises for Weight Loss: Cardio vs. Strength Training, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -1773,7 +1773,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use activity as a long-term health behavior rather than a punishment for eating. Choose a routine you can repeat and progress gradually."
+      "For Why Strength Training Is Essential for Permanent Weight Management, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -1827,7 +1827,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use activity as a long-term health behavior rather than a punishment for eating. Choose a routine you can repeat and progress gradually."
+      "For HIIT Workouts for Beginners: Burn Fat in Less Time, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -1881,7 +1881,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use activity as a long-term health behavior rather than a punishment for eating. Choose a routine you can repeat and progress gradually."
+      "For How to Build Lean Muscle Mass While Losing Body Fat, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -1935,7 +1935,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use activity as a long-term health behavior rather than a punishment for eating. Choose a routine you can repeat and progress gradually."
+      "For Why Hasn’t My Increased Activity Led to Weight Loss?, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -1989,7 +1989,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use activity as a long-term health behavior rather than a punishment for eating. Choose a routine you can repeat and progress gradually."
+      "For How to Safely Reduce Waist Circumference and Visceral Fat, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -2043,7 +2043,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use activity as a long-term health behavior rather than a punishment for eating. Choose a routine you can repeat and progress gradually."
+      "For The Benefits of Zone 2 Cardio for Metabolic Health and Fat Burning, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -2097,7 +2097,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use activity as a long-term health behavior rather than a punishment for eating. Choose a routine you can repeat and progress gradually."
+      "For A Weekly Workout Routine for Sustainable Weight Management, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -2151,7 +2151,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use activity as a long-term health behavior rather than a punishment for eating. Choose a routine you can repeat and progress gradually."
+      "For How Walking 10,000 Steps a Day Impacts Weight Loss Maintenance, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -2205,7 +2205,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use activity as a long-term health behavior rather than a punishment for eating. Choose a routine you can repeat and progress gradually."
+      "For The Role of Resistance Training in Preventing Metabolic Slowdown, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -2259,7 +2259,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use activity as a long-term health behavior rather than a punishment for eating. Choose a routine you can repeat and progress gradually."
+      "For How to Measure Progress Beyond the Scale: Body Composition Metrics, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -2313,7 +2313,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use activity as a long-term health behavior rather than a punishment for eating. Choose a routine you can repeat and progress gradually."
+      "For Active Recovery: What to Do on Rest Days for Optimal Fat Loss, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -2367,7 +2367,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use activity as a long-term health behavior rather than a punishment for eating. Choose a routine you can repeat and progress gradually."
+      "For How Lack of Physical Activity Contributes to Long-Term Weight Gain, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -2421,7 +2421,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use activity as a long-term health behavior rather than a punishment for eating. Choose a routine you can repeat and progress gradually."
+      "For The Best Home Workouts for Weight Loss (No Equipment Needed), focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -2475,7 +2475,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use activity as a long-term health behavior rather than a punishment for eating. Choose a routine you can repeat and progress gradually."
+      "For How Athletes Can Manage Weight Without Low Energy Availability, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -2529,7 +2529,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Aim for repeatable behaviors and realistic expectations. Long-term consistency matters more than a short period of perfection."
+      "For How to Master Emotional Eating: Tips from a Weight Management Educator, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -2583,7 +2583,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Aim for repeatable behaviors and realistic expectations. Long-term consistency matters more than a short period of perfection."
+      "For The Psychology of Weight Management: Setting Realistic Goals, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -2637,7 +2637,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Aim for repeatable behaviors and realistic expectations. Long-term consistency matters more than a short period of perfection."
+      "For Why Sleep Is the Underrated Secret Weapon for Weight Loss, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -2691,7 +2691,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Aim for repeatable behaviors and realistic expectations. Long-term consistency matters more than a short period of perfection."
+      "For How Cortisol and Chronic Stress Affect Body Weight, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -2745,7 +2745,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Aim for repeatable behaviors and realistic expectations. Long-term consistency matters more than a short period of perfection."
+      "For Mindful Eating Exercises to Help Control Cravings, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -2799,7 +2799,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Aim for repeatable behaviors and realistic expectations. Long-term consistency matters more than a short period of perfection."
+      "For How to Overcome a Weight Loss Plateau: Science-Backed Strategies, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -2853,7 +2853,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Aim for repeatable behaviors and realistic expectations. Long-term consistency matters more than a short period of perfection."
+      "For Building Sustainable Habits for Permanent Weight Management, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -2907,7 +2907,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Aim for repeatable behaviors and realistic expectations. Long-term consistency matters more than a short period of perfection."
+      "For The Impact of Body Image and Mental Health on Weight Journeys, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -2961,7 +2961,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Aim for repeatable behaviors and realistic expectations. Long-term consistency matters more than a short period of perfection."
+      "For How Accountability Partners and Support Groups Drive Weight Success, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -3015,7 +3015,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Aim for repeatable behaviors and realistic expectations. Long-term consistency matters more than a short period of perfection."
+      "For Combating Treatment-Related Stigma in the Age of GLP-1 Drugs, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -3069,7 +3069,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Aim for repeatable behaviors and realistic expectations. Long-term consistency matters more than a short period of perfection."
+      "For How Digital Companion Apps Help Secure Long-Term Habits, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -3123,7 +3123,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Aim for repeatable behaviors and realistic expectations. Long-term consistency matters more than a short period of perfection."
+      "For Why Crash Diets Fail: The Science Behind the Yo-Yo Effect, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -3177,7 +3177,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Aim for repeatable behaviors and realistic expectations. Long-term consistency matters more than a short period of perfection."
+      "For How to Handle Peer Pressure and Social Situations While Managing Weight, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -3231,7 +3231,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Aim for repeatable behaviors and realistic expectations. Long-term consistency matters more than a short period of perfection."
+      "For Shifting from a Weight-Loss Mindset to a Weight-Inclusive Health Goals Mindset, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -3285,7 +3285,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use weight-management strategies alongside appropriate preventive and clinical care, not instead of it."
+      "For The Connection Between Weight Management and Type 2 Diabetes Remission, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -3339,7 +3339,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use weight-management strategies alongside appropriate preventive and clinical care, not instead of it."
+      "For How Losing 5–10% of Body Weight Can Improve Cardiovascular Risk Factors, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -3393,7 +3393,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use weight-management strategies alongside appropriate preventive and clinical care, not instead of it."
+      "For Managing PCOS Symptoms Through Strategic Weight Management, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -3447,7 +3447,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use weight-management strategies alongside appropriate preventive and clinical care, not instead of it."
+      "For What Is Insulin Resistance, and How Does It Affect Weight Loss?, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -3501,7 +3501,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use weight-management strategies alongside appropriate preventive and clinical care, not instead of it."
+      "For How Weight Loss Can Affect Symptoms of Obesity-Related Kidney Disease, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -3555,7 +3555,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use weight-management strategies alongside appropriate preventive and clinical care, not instead of it."
+      "For The Link Between Metabolic Syndrome and Excess Abdominal Fat, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -3609,7 +3609,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use weight-management strategies alongside appropriate preventive and clinical care, not instead of it."
+      "For How Metabolic Dysfunction-Associated Steatotic Liver Disease Can Improve with Weight Management, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -3663,7 +3663,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use weight-management strategies alongside appropriate preventive and clinical care, not instead of it."
+      "For Can Weight Loss Surgery Improve Hormonal Balance and Fertility?, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -3717,7 +3717,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use weight-management strategies alongside appropriate preventive and clinical care, not instead of it."
+      "For How Excess Weight Affects Joint Pain and Osteoarthritis Symptoms, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -3771,7 +3771,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use weight-management strategies alongside appropriate preventive and clinical care, not instead of it."
+      "For Understanding the Biomarkers of Healthy Metabolism, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -3825,7 +3825,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use weight-management strategies alongside appropriate preventive and clinical care, not instead of it."
+      "For Thyroid Health and Weight Management: Hypothyroidism Explained, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -3879,7 +3879,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use weight-management strategies alongside appropriate preventive and clinical care, not instead of it."
+      "For How Improving Blood Pressure Is Linked to Healthy Weight Management, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -3933,7 +3933,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Think of bariatric surgery as a long-term treatment pathway rather than a one-time event, and use an accredited clinical team for individualized care."
+      "For Gastric Sleeve vs. Gastric Bypass: Comparing the Top Bariatric Procedures, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -3987,7 +3987,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Think of bariatric surgery as a long-term treatment pathway rather than a one-time event, and use an accredited clinical team for individualized care."
+      "For Am I a Candidate for Bariatric Surgery? Eligibility Criteria Explained, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -4041,7 +4041,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Think of bariatric surgery as a long-term treatment pathway rather than a one-time event, and use an accredited clinical team for individualized care."
+      "For What to Expect During Recovery After Sleeve Gastrectomy, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -4095,7 +4095,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Think of bariatric surgery as a long-term treatment pathway rather than a one-time event, and use an accredited clinical team for individualized care."
+      "For The Ultimate Pre-Bariatric Surgery Diet Guide, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -4149,7 +4149,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Think of bariatric surgery as a long-term treatment pathway rather than a one-time event, and use an accredited clinical team for individualized care."
+      "For Long-Term Nutritional Requirements After Weight Loss Surgery, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -4203,7 +4203,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Think of bariatric surgery as a long-term treatment pathway rather than a one-time event, and use an accredited clinical team for individualized care."
+      "For Understanding the Cost of Bariatric Surgery: Insurance and Self-Pay Options, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -4257,7 +4257,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Think of bariatric surgery as a long-term treatment pathway rather than a one-time event, and use an accredited clinical team for individualized care."
+      "For Life After Weight Loss Surgery: Dumping Syndrome and How to Reduce Risk, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -4311,7 +4311,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Think of bariatric surgery as a long-term treatment pathway rather than a one-time event, and use an accredited clinical team for individualized care."
+      "For How Bariatric Surgery Can Change Hunger and Satiety Signals, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -4365,7 +4365,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Think of bariatric surgery as a long-term treatment pathway rather than a one-time event, and use an accredited clinical team for individualized care."
+      "For The Importance of Psychological Evaluations Before Bariatric Surgery, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -4419,7 +4419,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Think of bariatric surgery as a long-term treatment pathway rather than a one-time event, and use an accredited clinical team for individualized care."
+      "For How to Manage Skin Laxity and Excess Skin After Major Weight Loss, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -4473,7 +4473,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use digital tools as support systems, not as authorities. Cross-check important health claims with reliable medical or public-health sources."
+      "For The Best Weight Loss Apps for Meal and Calorie Tracking, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -4527,7 +4527,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use digital tools as support systems, not as authorities. Cross-check important health claims with reliable medical or public-health sources."
+      "For MyFitnessPal vs. Weight Watchers: Comparing Tracking Approaches, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -4581,7 +4581,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use digital tools as support systems, not as authorities. Cross-check important health claims with reliable medical or public-health sources."
+      "For How to Choose a Safe and Effective Online Weight Loss Program, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -4635,7 +4635,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use digital tools as support systems, not as authorities. Cross-check important health claims with reliable medical or public-health sources."
+      "For Do Weight Loss Supplements and Fat Burners Actually Work?, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -4689,7 +4689,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use digital tools as support systems, not as authorities. Cross-check important health claims with reliable medical or public-health sources."
+      "For How to Use a Smart Scale to Track Weight Management Progress, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -4743,7 +4743,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use digital tools as support systems, not as authorities. Cross-check important health claims with reliable medical or public-health sources."
+      "For Top Digital Health Tools for Remote Weight Management Tracking, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -4797,7 +4797,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use digital tools as support systems, not as authorities. Cross-check important health claims with reliable medical or public-health sources."
+      "For Noom-Style Psychology-Based Weight Loss Apps: What to Look For, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -4851,7 +4851,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use digital tools as support systems, not as authorities. Cross-check important health claims with reliable medical or public-health sources."
+      "For Pros and Cons of Prepared Meal Delivery Services for Weight Loss, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
@@ -4905,7 +4905,7 @@ export const weightManagementArticles = [
     ],
     [
       "Practical Takeaway",
-      "Use digital tools as support systems, not as authorities. Cross-check important health claims with reliable medical or public-health sources."
+      "For How to Safely Choose Probiotics for Weight Management, focus on the article's specific evidence and practical context rather than applying a generic weight-management rule. Use the information to identify realistic next steps, track meaningful progress over time, and discuss medication, medical conditions or other individual concerns with a qualified professional when relevant."
     ]
   ]
 },
