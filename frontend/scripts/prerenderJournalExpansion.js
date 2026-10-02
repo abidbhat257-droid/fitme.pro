@@ -122,8 +122,8 @@ function write(route,html){
         .filter(([h]) => !(["Weight Management","Body Composition"].includes(article.category) && /^(Safety|Who Should|Important Health Note|FAQ)$/i.test(String(h).trim())))
         .map(([h,t]) => {
           let text=String(t ?? "");
-          text=text.replace(/FitMe Pro uses authoritative public-health guidance as a reference and does not reproduce source publications\\.?/gi,"");
-          text=text.replace(/Before applying the information, define your main goal[^.]*\\.?/gi,"");
+          text=text.replace(/FitMe Pro uses authoritative public-health guidance as a reference and does not reproduce source publications\.?/gi,"");
+          text=text.replace(/Before applying the information, define your main goal[^.]*\.?/gi,"");
           return [h,text.trim()];
         })
         .filter(([,t]) => t.length > 20)
