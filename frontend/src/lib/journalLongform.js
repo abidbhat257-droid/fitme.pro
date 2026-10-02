@@ -108,11 +108,3 @@ export function getLongFormJournalArticle(article) {
   };
 }
 
-  const bodyCompositionSources = [
-    {label:"NIH / NIDDK — Weight Management",url:"https://www.niddk.nih.gov/health-information/weight-management"},
-    {label:"CDC — Healthy Weight",url:"https://www.cdc.gov/healthy-weight-growth/"},
-    {label:"American College of Sports Medicine",url:"https://www.acsm.org/"},
-    {label:"International Society for Clinical Densitometry",url:"https://iscd.org/"}
-  ];
-  return {...article, sources: article.category === "Body Composition" ? bodyCompositionSources : article.sources, sections, readTime:`${Math.max(8,Math.round(total/220))} min read`};
-}
