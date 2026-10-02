@@ -1,0 +1,41 @@
+name: Temporary clean production build
+
+on:
+  push:
+    paths-ignore:
+      - ".github/workflows/temporary-clean-build.yml"
+      - "build-report.txt"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: yarn
+          cache-dependency-path: frontend/yarn.lock
+      - name: Clean build
+        shell: bash
+        run: |
+          set +e
+          cd frontend
+          rm -rf build
+          yarn --version
+          node --version
+          yarn install --frozen-lockfile
+          yarn build 2>&1 | tee ../build-report.txt
+          code=${PIPESTATUS[0]}
+          echo "" >> ../build-report.txt
+          echo "BUILD_EXIT_CODE=$code" >> ../build-report.txt
+          exit $code
+      - name: Commit build report
+        if: always()
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add build-report.txt
+          git commit -m "temporary build report" || exit 0
+          git push
