@@ -60,16 +60,28 @@ const esc = (value) => String(value ?? "")
   .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
   .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
 
+const sitemapUrls = [...fs.readFileSync(path.join(build, "sitemap.xml"), "utf8").matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => new URL(m[1]).pathname.replace(/\/$/, "") || "/");
+const configuredUrlSet = new Set(allCalculators.map((calculator) => calculator.url));
+const canonicalOverrides = {
+  "/bmi-calculator": { id: "bmi", slug: "bmi-calculator", name: "BMI Calculator", category: "basic" },
+  "/bmr-calculator": { id: "bmr", slug: "bmr-calculator", name: "Basal Metabolic Rate", category: "metabolism" },
+  "/tdee-calculator": { id: "tdee", slug: "tdee-calculator", name: "Total Daily Energy Expenditure", category: "metabolism" },
+  "/absi-calculator": { id: "absi", slug: "absi-calculator", name: "A Body Shape Index", category: "shape" },
+  "/ffmi-calculator": { id: "ffmi", slug: "ffmi-calculator", name: "Fat-Free Mass Index", category: "composition" },
+  "/bri-calculator": { id: "bri", slug: "bri-calculator", name: "Body Roundness Index", category: "shape" },
+};
+const sitemapCalculatorUrls = sitemapUrls.filter((url) => configuredUrlSet.has(url) || Object.prototype.hasOwnProperty.call(canonicalOverrides, url));
+if (sitemapCalculatorUrls.length !== 100) throw new Error("Homepage/sitemap calculator mismatch: expected 100, found " + sitemapCalculatorUrls.length);
+const displayNames = { basic: "Basic Health Calculators", composition: "Body Composition", shape: "Body Shape", metabolism: "Metabolism & Energy", advanced: "Advanced Calculators" };
+const sitemapCalculatorSet = new Set(sitemapCalculatorUrls);
 const groups = [];
 const byCategory = new Map();
-for (const calculator of allCalculators) {
-  const category = String(calculator.category || "Other Calculators").trim() || "Other Calculators";
-  if (!byCategory.has(category)) {
-    const group = { category, items: [] };
-    byCategory.set(category, group);
-    groups.push(group);
-  }
-  byCategory.get(category).items.push(calculator);
+for (const url of sitemapCalculatorUrls) {
+  const calculator = byUrl.get(url) || canonicalOverrides[url];
+  if (!calculator) throw new Error("Sitemap calculator URL has no calculator metadata: " + url);
+  const category = displayNames[calculator.category] || String(calculator.category || "Other Calculators").trim() || "Other Calculators";
+  if (!byCategory.has(category)) { const group = { category, items: [] }; byCategory.set(category, group); groups.push(group); }
+  if (!byCategory.get(category).items.some((item) => item.url === url)) byCategory.get(category).items.push({ ...calculator, url });
 }
 
 const calculatorSections = groups.map(({ category, items }) => `
@@ -86,7 +98,7 @@ const journalLinks = [
   ["/journal/wellness", "Wellness"],
   ["/journal/health-education", "Health Education"],
   ["/journal/nutrition", "Nutrition"],
-  ["/journal/weight-management", "Weight Management"],
+  ["/journal/weight-loss", "Weight Management"],
   ["/journal/body-composition", "Body Composition"],
   ["/about", "About"],
   ["/contact", "Contact"],
