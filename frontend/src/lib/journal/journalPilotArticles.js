@@ -4,7 +4,7 @@ export const JOURNAL_PILOT_ARTICLES = [
 slug:"how-to-calculate-a-calorie-deficit-for-safe-steady-weight-loss",category:"Weight Management",categorySlug:"weight-loss",pilot:true,
 title:"How to Calculate a Calorie Deficit for Weight Loss",
 description:"A worked, calculator-linked explanation of calorie deficits, using FitMe Pro's BMR and TDEE formulas and showing how to turn an estimate into a starting target.",
-readTime:"7 min read",date:"October 2, 2026",
+readTime:"6 min read",date:"October 2, 2026",
 keywords:"how to calculate a calorie deficit, calorie deficit calculator, TDEE, BMR, weight loss calories",
 quickSummary:["A calorie deficit is the gap between estimated daily energy expenditure and planned calorie intake.","FitMe Pro first estimates BMR with Mifflin-St Jeor, then estimates TDEE by applying an activity factor.","A worked 80 kg, 175 cm example gives a BMR of about 1,739 kcal/day and a moderate-activity TDEE of about 2,695 kcal/day.","The calculation is a starting estimate, not a guarantee of a particular weekly weight change.","Compare the target with your multi-week weight trend before making another adjustment."],
 sources:[
@@ -35,7 +35,7 @@ extraSections2:[["How activity assumptions change the result","The activity mult
 slug:"top-10-high-volume-low-calorie-foods-that-keep-you-full",category:"Weight Management",categorySlug:"weight-loss",pilot:true,
 title:"10 High-Volume, Lower-Calorie Foods for Weight Loss",
 description:"A practical list of ten foods that can add volume to meals, with guidance on why food volume is useful and how to build filling plates.",
-readTime:"6 min read",date:"October 2, 2026",
+readTime:"7 min read",date:"October 2, 2026",
 keywords:"high volume low calorie foods, filling foods, weight loss foods, low calorie meals",
 quickSummary:["Food volume describes how much physical food you get for a given amount of energy.","Vegetables, fruit, broth-based dishes, legumes and other minimally processed foods can help build larger meals.","No food automatically causes fat loss; the overall energy intake and dietary pattern still matter.","Protein and fibre can make a high-volume meal more substantial than a plate built from low-fibre snack foods.","Portions still matter for calorie-dense foods such as oils, nuts and sauces."],
 sources:[
@@ -297,7 +297,7 @@ extraSections2:[["Why height matters in the Boer equation","The equation include
 slug:"what-counts-as-a-healthy-body-fat-percentage",category:"Body Composition",categorySlug:"body-composition",pilot:true,
 title:"What Is a Healthy Body-Fat Percentage?",
 description:"How to interpret body-fat percentage without treating one reference range as a universal diagnosis or target.",
-readTime:"6 min read",date:"October 2, 2026",
+readTime:"5 min read",date:"October 2, 2026",
 keywords:"healthy body fat percentage, body fat range, body fat calculator",
 quickSummary:["Body-fat percentage is the proportion of body weight estimated to be fat.","There is no single percentage that defines health for every adult.","Reference values depend on sex, age, population and measurement method.","A calculator estimate can differ from an instrument-based measurement.","Use the number as context rather than as a standalone diagnosis."],
 sources:[
@@ -326,7 +326,7 @@ extraSections2:[["Measurement error can exceed apparent progress","If one method
 slug:"bioelectrical-impedance-analysis-bia-pros-cons-and-accuracy",category:"Body Composition",categorySlug:"body-composition",pilot:true,
 title:"BIA Body-Fat Scales: How Accurate Are They?",
 description:"How bioelectrical impedance analysis works, why readings change and what a home BIA scale can reasonably tell you.",
-readTime:"6 min read",date:"October 2, 2026",
+readTime:"5 min read",date:"October 2, 2026",
 keywords:"BIA accuracy, bioelectrical impedance analysis, body fat scale, smart scale",
 quickSummary:["BIA estimates body composition from electrical impedance plus a prediction model.","Hydration and measurement conditions can influence the estimate.","Different devices can use different equations and algorithms.","A device can be useful for consistent trends without being exact for one person.","Compare readings from the same device and protocol when tracking change."],
 sources:[
@@ -385,7 +385,7 @@ extraSections2:[["Food quality still matters","A recomp diet should not be reduc
 slug:"can-you-build-muscle-in-a-calorie-deficit-the-science-of-recomping",category:"Body Composition",categorySlug:"body-composition",pilot:true,
 title:"Can You Build Muscle in a Calorie Deficit?",
 description:"What the evidence on resistance training, energy restriction and body recomposition can and cannot establish.",
-readTime:"6 min read",date:"October 2, 2026",
+readTime:"5 min read",date:"October 2, 2026",
 keywords:"build muscle calorie deficit, muscle gain while losing fat, body recomposition",
 quickSummary:["Muscle gain during an energy deficit is possible in some circumstances, but it is not guaranteed.","Training status, protein intake, deficit size and individual characteristics influence the outcome.","Beginners can respond differently from experienced lifters.","A deficit large enough to impair training and recovery makes the goal harder.","Use performance and body-composition trends rather than expecting the scale to prove muscle gain."],
 sources:[
