@@ -65,7 +65,7 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "node -e \"require(\u0027fs\u0027).rmSync(\u0027build\u0027,{recursive:true,force:true})\" && craco build && node scripts/prerender.js && node scripts/prerenderExtras.js && node scripts/prerenderJournalExpansion.js && node scripts/prerenderSpecialized.js && node scripts/prerenderCalculatorSEO.js && node scripts/prerenderSEO.js && node scripts/prerenderDirectoryAndSitemap.js && node scripts/prerenderHomepage.js && node scripts/measure-repeated-content.js && node scripts/verify-seo-build.js",
+    "build": "node -e \"require(\u0027fs\u0027).rmSync(\u0027build\u0027,{recursive:true,force:true})\" && craco build && node scripts/prerender.js && node scripts/prerenderExtras.js && node scripts/prerenderJournalExpansion.js && node scripts/prerenderSpecialized.js && node scripts/prerenderCalculatorSEO.js && node scripts/prerenderSEO.js && node scripts/prerenderDirectoryAndSitemap.js && node scripts/prerenderHomepage.js && node scripts/remove-journal-boilerplate.js && node scripts/measure-repeated-content.js && node scripts/verify-seo-build.js",
     "test": "craco test"
   },
   "browserslist": {
