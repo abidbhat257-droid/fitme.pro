@@ -17,7 +17,7 @@ function htmlFiles(dir) {
 }
 
 function articleHtml(html) {
-  const match = html.match(/<article\\b[^>]*>([\\s\\S]*?)<\\/article>/i);
+  const match = html.match(/<article\b[^>]*>([\\s\\S]*?)<\/article>/i);
   return match ? match[1] : "";
 }
 
@@ -33,16 +33,16 @@ function decode(text) {
 function textFromHtml(html) {
   return decode(
     html
-      .replace(/<script[\\s\\S]*?<\\/script>/gi, " ")
-      .replace(/<style[\\s\\S]*?<\\/style>/gi, " ")
+      .replace(/<script[\s\S]*?<\/script>/gi, " ")
+      .replace(/<style[\s\S]*?<\/style>/gi, " ")
       .replace(/<[^>]+>/g, " ")
-      .replace(/\\s+/g, " ")
+      .replace(/\s+/g, " ")
       .trim()
   );
 }
 
 function words(text) {
-  return text ? text.split(/\\s+/).filter(Boolean).length : 0;
+  return text ? text.split(/\s+/).filter(Boolean).length : 0;
 }
 
 const articles = [];
@@ -50,12 +50,12 @@ for (const category of categories) {
   const dir = path.join(build, "journal", category);
   if (!fs.existsSync(dir)) continue;
   for (const file of htmlFiles(dir)) {
-    const rel = path.relative(build, file).replace(/\\\\/g, "/");
+    const rel = path.relative(build, file).replace(/\\/g, "/");
     if (!rel.startsWith("journal/" + category + "/")) continue;
     const slug = rel.split("/")[2];
     const html = fs.readFileSync(file, "utf8");
     const article = articleHtml(html);
-    const paragraphs = [...article.matchAll(/<p\\b[^>]*>([\\s\\S]*?)<\\/p>/gi)]
+    const paragraphs = [...article.matchAll(/<p\b[^>]*>([\\s\\S]*?)<\/p>/gi)]
       .map((m) => textFromHtml(m[1]))
       .filter((p) => p.length > 60);
     articles.push({ category, slug, file, text: textFromHtml(article), paragraphs });
