@@ -32,7 +32,7 @@ function paragraphTexts(html){const match=html.match(/<article\b[^>]*>([\s\S]*?)
 function wordCountText(text){return text?text.split(/\s+/).filter(Boolean).length:0;}
 function evaluateArithmeticExpression(expression){
   const normalized=expression.replace(/,/g,"").replace(/[×x]/g,"*").replace(/−/g,"-").replace(/÷/g,"/");
-  if(!/^[0-9.+\\-*/\\s]+$/.test(normalized))return NaN;
+  if(!/^[0-9.,+*/\s-]+$/.test(normalized))return NaN;
   try{return Function("\"use strict\";return ("+normalized+")")();}catch(_){return NaN;}
 }
 function checkWorkedExampleArithmetic(text){
