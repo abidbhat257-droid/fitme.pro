@@ -29,7 +29,7 @@ export const PHASE3_BATCH1_ARTICLES = [
       ],
       [
         "Worked example: comparing two daily energy patterns",
-        "Suppose a person's estimated maintenance intake is 2,400 kcal per day. A planned 400-kcal reduction gives a target of 2,000 kcal: 2,400 − 400 = 2,000 kcal. A lower-carbohydrate version might provide 120 g carbohydrate, 150 g protein and 88.9 g fat. Using 4 kcal/g for carbohydrate and protein and 9 kcal/g for fat gives 120×4 = 480 kcal, 150×4 = 600 kcal, and 88.9×9 ≈ 800 kcal; total ≈ 1,880 kcal. That is not 2,000 kcal, so another 120 kcal would need to come from the chosen foods. The example shows why a diet label does not determine the calorie total."
+        "Suppose a person's estimated maintenance intake is 2,400 kcal per day. A planned 400-kcal reduction gives a target of 2,000 kcal: 2,400 − 400 = 2,000 kcal. A lower-carbohydrate version might provide 120 g carbohydrate, 150 g protein and about 102.2 g fat. Using 4 kcal/g for carbohydrate and protein and 9 kcal/g for fat gives 120×4 = 480 kcal, 150×4 = 600 kcal, and 102.2×9 = 919.8 kcal; the total is 1,999.8 kcal, which rounds to the 2,000-kcal target. The example shows why the macronutrient grams need to reconcile with the stated calorie target."
       ],
       [
         "What to monitor over eight weeks",
