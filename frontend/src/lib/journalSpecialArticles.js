@@ -4,7 +4,7 @@ import { weightManagementArticles } from "./journal/weightManagementArticles";
 import { bodyCompositionArticles } from "./journal/bodyCompositionArticles";
 import { wellnessArticles } from "./journal/wellnessArticles";
 import { healthEducationArticles } from "./journal/healthEducationArticles";
-import { JOURNAL_PILOT_ARTICLES } from "./journal/JOURNAL_PILOT_ARTICLES";
+import { JOURNAL_PILOT_ARTICLES } from "./journal/journalPilotArticles";
 
 const pilotBySlug = new Map(JOURNAL_PILOT_ARTICLES.map((article) => [article.slug, article]));
 const replacePilots = (articles) => articles.map((article) => pilotBySlug.get(article.slug) || article);
