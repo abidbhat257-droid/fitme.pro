@@ -1,0 +1,94 @@
+{
+  "measurement_rule": "Use only text inside <article>; paragraphs longer than 60 characters; shared means exact paragraph text appears in 10+ articles; affected means >50% of article words are in shared paragraphs.",
+  "baseline_summary": {
+    "weight-loss": {
+      "total": 112,
+      "affected": 74
+    },
+    "body-composition": {
+      "total": 119,
+      "affected": 20
+    },
+    "wellness": {
+      "total": 100,
+      "affected": 100,
+      "noindex": true
+    },
+    "health-education": {
+      "total": 100,
+      "affected": 100,
+      "noindex": true
+    },
+    "fitness": {
+      "total": 0,
+      "affected": 0
+    },
+    "nutrition": {
+      "total": 0,
+      "affected": 0
+    }
+  },
+  "queue_note": "The first 12 affected Weight Management entries were tied by the repeated generic five-section template in the source/build structure; this queue preserves article order among that tied worst group.",
+  "articles": [
+    {
+      "rank": 1,
+      "slug": "does-a-very-low-carbohydrate-diet-actually-sustain-long-term-weight-maintenance",
+      "title": "Can a Very-Low-Carbohydrate Diet Sustain Long-Term Weight Loss?"
+    },
+    {
+      "rank": 2,
+      "slug": "how-to-plan-healthy-meals-for-weight-loss-on-a-busy-schedule",
+      "title": "How to Plan Healthy Meals for Weight Loss on a Busy Schedule"
+    },
+    {
+      "rank": 3,
+      "slug": "the-role-of-macronutrients-in-weight-management-carbs-proteins-and-fats",
+      "title": "Macronutrients for Weight Management: How Carbs, Protein and Fat Fit Together"
+    },
+    {
+      "rank": 4,
+      "slug": "top-15-healthy-weight-loss-smoothies-for-breakfast",
+      "title": "15 Healthy Weight-Loss Smoothie Ideas for Breakfast"
+    },
+    {
+      "rank": 5,
+      "slug": "how-to-transition-off-a-strict-diet-without-regaining-weight",
+      "title": "How to Transition Off a Strict Diet Without Regaining Weight"
+    },
+    {
+      "rank": 6,
+      "slug": "the-truth-about-sugar-substitutes-and-weight-management",
+      "title": "Sugar Substitutes and Weight Management: What the Evidence Can Tell You"
+    },
+    {
+      "rank": 7,
+      "slug": "how-anti-inflammatory-diets-help-control-body-weight",
+      "title": "Anti-Inflammatory Diets and Body Weight: What They Can Realistically Do"
+    },
+    {
+      "rank": 8,
+      "slug": "why-you-should-focus-on-nutrient-density-over-calorie-counting",
+      "title": "Nutrient Density vs. Calorie Counting for Weight Loss"
+    },
+    {
+      "rank": 9,
+      "slug": "the-best-foods-for-gut-health-and-weight-management",
+      "title": "Best Foods for Gut Health and Weight Management"
+    },
+    {
+      "rank": 10,
+      "slug": "the-best-exercises-for-weight-loss-cardio-vs-strength-training",
+      "title": "Cardio vs. Strength Training for Weight Loss: How to Combine Them"
+    },
+    {
+      "rank": 11,
+      "slug": "why-strength-training-is-essential-for-permanent-weight-management",
+      "title": "Why Strength Training Matters During Weight Loss and Maintenance"
+    },
+    {
+      "rank": 12,
+      "slug": "hiit-workouts-for-beginners-burn-fat-in-less-time",
+      "title": "HIIT for Beginners: How to Use Intervals Without Overdoing It"
+    }
+  ]
+}
