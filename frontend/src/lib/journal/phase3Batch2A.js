@@ -26,7 +26,7 @@ export const PHASE3_BATCH2A_ARTICLES = [
       ],
       [
         "Worked example: setting a starting calorie and protein plan",
-        "Suppose a person estimates maintenance at 2,500 kcal and chooses a 300-kcal deficit. The starting target is 2,500 − 300 = 2,200 kcal per day. If protein is 150 g, it contributes 150 × 4 = 600 kcal. If fat is 70 g, it contributes 70 × 9 = 630 kcal. The remaining 970 kcal can come from carbohydrate: 2,200 − 600 − 630 = 970 kcal, or 970 ÷ 4 = 242.5 g carbohydrate. The arithmetic reconciles to 2,200 kcal; the allocation is a starting example, not a guarantee of recomposition."
+        "Suppose a person estimates maintenance at 2,500 kcal and chooses a 300-kcal deficit. The starting target is 2,500 − 300 = 2,200 kcal per day. If protein is 150 g, it contributes 150 × 4 = 600 kcal. If fat is 70 g, it contributes 70 × 9 = 630 kcal. The remaining 970 kcal can come from carbohydrate: 2,200 − 600 − 630 = 970 kcal, or 970 ÷ 4 = 242.5 g carbohydrate; equivalently, 242.5 × 4 = 970 kcal. The arithmetic reconciles to 2,200 kcal; the allocation is a starting example, not a guarantee of recomposition."
       ],
       [
         "How to measure progress without fooling yourself",
