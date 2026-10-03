@@ -88,7 +88,7 @@ function write(route,html){
     const articles=[];
     for (const article of bySlug.values()) {
       try {
-        const rendered=article.pilot===true ? { ...article } : getLongFormJournalArticle(article);
+        const rendered=(article.pilot===true || article.phase3===true) ? { ...article } : getLongFormJournalArticle(article);
         if (!rendered || !Array.isArray(rendered.sections)) {
           throw new Error("Long-form renderer returned an invalid article/sections structure");
         }
