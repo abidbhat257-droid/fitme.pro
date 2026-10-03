@@ -1,0 +1,72 @@
+name: FitMe Pro Clean Production Build
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  clean-production-build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node 24.21.0
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24.21.0
+          cache: yarn
+          cache-dependency-path: frontend/yarn.lock
+
+      - name: Enable Yarn 1.22.22
+        run: |
+          corepack enable
+          corepack prepare yarn@1.22.22 --activate
+          yarn --version
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Clean build directory
+        run: node -e "require('fs').rmSync('build',{recursive:true,force:true})"
+
+      - name: Build React production bundle
+        run: yarn craco build
+
+      - name: Prerender base pages
+        run: node scripts/prerender.js
+
+      - name: Prerender extra pages
+        run: node scripts/prerenderExtras.js
+
+      - name: Prerender Journal expansion
+        run: node scripts/prerenderJournalExpansion.js
+
+      - name: Prerender specialized pages
+        run: node scripts/prerenderSpecialized.js
+
+      - name: Prerender calculator SEO
+        run: node scripts/prerenderCalculatorSEO.js
+
+      - name: Prerender SEO
+        run: node scripts/prerenderSEO.js
+
+      - name: Prerender directory and sitemap
+        run: node scripts/prerenderDirectoryAndSitemap.js
+
+      - name: Prerender homepage
+        run: node scripts/prerenderHomepage.js
+
+      - name: Write Phase 3 Batch 2 audit text
+        run: node scripts/write-phase3-batch2-text.js
+
+      - name: Measure repeated content
+        run: node scripts/measure-repeated-content.js
+
+      - name: Verify SEO build
+        run: node scripts/verify-seo-build.js
