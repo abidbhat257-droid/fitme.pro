@@ -10,9 +10,10 @@ import { PHASE3_BATCH2A_ARTICLES } from "./journal/phase3Batch2A";
 import { PHASE3_BATCH2B_ARTICLES } from "./journal/phase3Batch2B";
 import { PHASE3_BATCH2C_ARTICLES } from "./journal/phase3Batch2C";
 import { PHASE3_BATCH2_EXTRA_SECTIONS } from "./journal/phase3Batch2ExtraSections";
+import { PHASE3_BATCH2_EXTRA_SECTIONS2 } from "./journal/phase3Batch2ExtraSections2";
 
 const pilotBySlug = new Map(JOURNAL_PILOT_ARTICLES.map((article) => [article.slug, article]));
-const phase3Articles = [...PHASE3_BATCH1_ARTICLES, ...PHASE3_BATCH2A_ARTICLES, ...PHASE3_BATCH2B_ARTICLES, ...PHASE3_BATCH2C_ARTICLES].map((article) => PHASE3_BATCH2_EXTRA_SECTIONS[article.slug] ? { ...article, extraSections: PHASE3_BATCH2_EXTRA_SECTIONS[article.slug] } : article);
+const phase3Articles = [...PHASE3_BATCH1_ARTICLES, ...PHASE3_BATCH2A_ARTICLES, ...PHASE3_BATCH2B_ARTICLES, ...PHASE3_BATCH2C_ARTICLES].map((article) => { const extra1=PHASE3_BATCH2_EXTRA_SECTIONS[article.slug]||[]; const extra2=PHASE3_BATCH2_EXTRA_SECTIONS2[article.slug]||[]; return (extra1.length||extra2.length) ? { ...article, extraSections:[...extra1,...extra2] } : article; });
 const phase3BySlug = new Map(phase3Articles.map((article) => [article.slug, article]));
 const replaceSpecialArticles = (articles) => articles.map((article) => phase3BySlug.get(article.slug) || pilotBySlug.get(article.slug) || article);
 
