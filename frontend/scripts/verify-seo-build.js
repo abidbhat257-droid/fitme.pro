@@ -27,14 +27,9 @@ const pilotSource=fs.readFileSync(path.join(sourceRoot,"lib","journal","journalP
 const pilotEntries=[...pilotSource.matchAll(/slug:\s*"([^"]+)"\s*,category:\s*"([^"]+)"\s*,categorySlug:\s*"([^"]+)"/g)].map((m)=>({slug:m[1],category:m[2],categorySlug:m[3]}));
 const genericPilotHeadings=["What This Approach Means","How It May Affect Weight Management","Common Misunderstandings","Practical Takeaway","A practical checklist"];
 function articleTextFromHtml(html){
-  const match=html.match(/<article\b[^>]*>([\\s\\S]*?)<\/article>/i);
+  const match=html.match(/<article\b[^>]*>([\s\S]*?)<\/article>/i);
   if(!match)return "";
-  return match[1]
-    .replace(/<script[\\s\\S]*?<\/script>/gi," ")
-    .replace(/<style[\\s\\S]*?<\/style>/gi," ")
-    .replace(/<[^>]+>/g," ")
-    .replace(/&amp;/g,"&").replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&quot;/g,'"').replace(/&#39;/g,"'")
-    .replace(/\s+/g," ").trim();
+  return match[1].replace(/<script[\s\S]*?<\/script>/gi," ").replace(/<style[\s\S]*?<\/style>/gi," ").replace(/<[^>]+>/g," ").replace(/&amp;/g,"&").replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/\s+/g," ").trim();
 }
 const pilotReport=pilotEntries.map(({slug,category,categorySlug})=>{
   const file=path.join(build,"journal",categorySlug,slug,"index.html");
@@ -42,16 +37,11 @@ const pilotReport=pilotEntries.map(({slug,category,categorySlug})=>{
   const html=fs.readFileSync(file,"utf8");
   const articleText=articleTextFromHtml(html);
   const wordCount=articleText?articleText.split(/\s+/).filter(Boolean).length:0;
-  const h2=[...html.matchAll(/<h2[^>]*>([\\s\\S]*?)<\/h2>/gi)].map((m)=>m[1].replace(/<[^>]+>/g,"").replace(/&amp;/g,"&").trim());
-  const faqSection=html.match(/<h2[^>]*>Frequently Asked Questions<\/h2>([\\s\\S]*?)<\/section>/i);
+  const h2=[...html.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/gi)].map((m)=>m[1].replace(/<[^>]+>/g,"").replace(/&amp;/g,"&").trim());
+  const faqSection=html.match(/<h2[^>]*>Frequently Asked Questions<\/h2>([\s\S]*?)<\/section>/i);
   const faqCount=faqSection?(faqSection[1].match(/<h3[^>]*>/gi)||[]).length:0;
-  const schemaFaqCount=[...html.matchAll(/<script[^>]*type=["']application\/ld\+json["'][^>]*>([\\s\\S]*?)<\/script>/gi)].reduce((count,m)=>{
-    try{
-      const parsed=JSON.parse(m[1]);
-      const graphs=Array.isArray(parsed["@graph"])?parsed["@graph"]:[parsed];
-      const faq=graphs.find((x)=>x&&x["@type"]==="FAQPage");
-      return count+(faq&&Array.isArray(faq.mainEntity)?faq.mainEntity.length:0);
-    }catch{return count;}
+  const schemaFaqCount=[...html.matchAll(/<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)].reduce((count,m)=>{
+    try{const parsed=JSON.parse(m[1]);const graphs=Array.isArray(parsed["@graph"])?parsed["@graph"]:[parsed];const faq=graphs.find((x)=>x&&x["@type"]==="FAQPage");return count+(faq&&Array.isArray(faq.mainEntity)?faq.mainEntity.length:0);}catch{return count;}
   },0);
   const readTimeMatch=html.match(/\b(\d+) min read\b/i);
   const readTime=readTimeMatch?readTimeMatch[0]:"";
