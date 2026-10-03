@@ -9,7 +9,7 @@ const journalPath = path.join(root, "src", "lib", "journalContent.js");
 const expansionPath = path.join(root, "src", "lib", "journalExpansion.js");
 const longformPath = path.join(root, "src", "lib", "journalLongform.js");
 const specialPath = path.join(root, "src", "lib", "journalSpecialArticles.js");
-const pilotPath = path.join(root, "src", "lib", "journalPilotArticles.js");
+const pilotPath = path.join(root, "src", "lib", "journal", "journalPilotArticles.js");
 const tempJournalPath = path.join(build, "__fitme_journal.mjs");
 const tempExpansionPath = path.join(build, "__fitme_journal_expansion.mjs");
 const tempLongformPath = path.join(build, "__fitme_journal_longform.mjs");
@@ -66,7 +66,7 @@ function write(route,html){
     for(const file of specialArticleFiles){
       const base=file.endsWith(".js") ? file.slice(0, -3) : file;
       specialSource=specialSource.replaceAll(`./journal/${base}`,`./journal/${base}.mjs`);
-    specialSource=specialSource.replaceAll("./journalPilotArticles","./__fitme_journal_pilots.mjs");
+    specialSource=specialSource.replaceAll("./journal/journalPilotArticles","./__fitme_journal_pilots.mjs");
     }
     fs.writeFileSync(tempSpecialPath,specialSource,"utf8");
     fs.writeFileSync(tempPilotPath,fs.readFileSync(pilotPath,"utf8"),"utf8");
@@ -120,14 +120,19 @@ function write(route,html){
       if(isPilot) schema["@graph"]=[{...schema},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":faqItems.map(([name,text])=>({"@type":"Question",name,acceptedAnswer:{"@type":"Answer",text}}))}];
 
       const quickSummary=Array.isArray(article.quickSummary)?`<section style="margin:0 0 28px;padding:22px;border:1px solid #ddd;border-radius:20px"><h2 style="margin:0 0 10px;line-height:1.25;letter-spacing:normal;word-spacing:normal">Quick Summary</h2><ul style="margin:0;padding-left:22px;line-height:1.65">${article.quickSummary.map(p=>`<li style="margin-bottom:8px">${esc(p)}</li>`).join("")}</ul></section>`:"";
-      const cleanedSections=article.sections
-        .filter(([h]) => h !== "Introduction")
+      const renderedSections=[...(article.sections||[])].filter(([h]) => h !== "Introduction");
+      for (const key of ["extraSections","extraSections2","extraSections3","extraSections4","extraSections5","extraSections6"]) {
+        if (Array.isArray(article[key])) renderedSections.push(...article[key]);
+      }
+      const cleanedSections=renderedSections
+        .filter((section) => Array.isArray(section) && section.length >= 2)
         .map(([h,t])=>`<section style="margin:0 0 28px"><h2 style="margin:0 0 10px;line-height:1.25;letter-spacing:normal;word-spacing:normal">${esc(h)}</h2><p style="margin:0;line-height:1.65">${esc(t)}</p></section>`)
         .join("");
       const articleText=[article.title,article.description,...(Array.isArray(article.quickSummary)?article.quickSummary:[]),...(Array.isArray(article.sections)?article.sections.flat():[]),...(Array.isArray(article.extraSections)?article.extraSections.flat():[]),...(Array.isArray(article.extraSections2)?article.extraSections2.flat():[]),...(Array.isArray(article.extraSections3)?article.extraSections3.flat():[]),...(Array.isArray(article.extraSections4)?article.extraSections4.flat():[]),...(Array.isArray(article.extraSections5)?article.extraSections5.flat():[]),article.workedExample,...(Array.isArray(article.faqs)?article.faqs.flat():[])].filter(Boolean).join(" ");
       const articleWordCount=articleText.trim().split(/\s+/).filter(Boolean).length;
       const readTime=isPilot ? (Math.max(1,Math.ceil(articleWordCount/200)) + " min read") : article.readTime;
       if(isPilot&&faqItems.length!==4)throw new Error("Pilot article "+article.slug+" must contain exactly 4 FAQs");
+      if(isPilot&&!renderedSections.some(([h]) => /worked example/i.test(String(h)))) throw new Error("Pilot article "+article.slug+" is missing a worked example section");
       const workedExampleHtml=isPilot&&article.workedExample ? "<section style=\"margin:0 0 28px\"><h2 style=\"margin:0 0 10px;line-height:1.25\">Worked Example</h2><p style=\"margin:0;line-height:1.65\">"+esc(article.workedExample)+"</p></section>" : "";
       const faqHtml=faqItems.length ? "<section style=\"margin:0 0 28px\"><h2 style=\"margin:0 0 10px;line-height:1.25\">Frequently Asked Questions</h2>"+faqItems.map(([q,a])=>"<div style=\"margin:0 0 18px\"><h3 style=\"margin:0 0 6px;line-height:1.35\">"+esc(q)+"</h3><p style=\"margin:0;line-height:1.65\">"+esc(a)+"</p></div>").join("")+"</section>" : "";
 
