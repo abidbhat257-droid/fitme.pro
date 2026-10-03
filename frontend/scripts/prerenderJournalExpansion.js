@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const { pathToFileURL } = require("url");
+const { calculatePilotReadTime } = require("./pilotReadTime");
 
 const root = path.resolve(__dirname, "..");
 const build = path.join(root, "build");
@@ -130,7 +131,7 @@ function write(route,html){
         .join("");
       const articleText=[article.title,article.description,...(Array.isArray(article.quickSummary)?article.quickSummary:[]),...(Array.isArray(article.sections)?article.sections.flat():[]),...(Array.isArray(article.extraSections)?article.extraSections.flat():[]),...(Array.isArray(article.extraSections2)?article.extraSections2.flat():[]),...(Array.isArray(article.extraSections3)?article.extraSections3.flat():[]),...(Array.isArray(article.extraSections4)?article.extraSections4.flat():[]),...(Array.isArray(article.extraSections5)?article.extraSections5.flat():[]),article.workedExample,...(Array.isArray(article.faqs)?article.faqs.flat():[])].filter(Boolean).join(" ");
       const articleWordCount=articleText.trim().split(/\s+/).filter(Boolean).length;
-      const readTime=isPilot ? (Math.max(1,Math.ceil(articleWordCount/200)) + " min read") : article.readTime;
+      const readTime=isPilot ? (calculatePilotReadTime(articleWordCount) + " min read") : article.readTime;
       if(isPilot&&faqItems.length!==4)throw new Error("Pilot article "+article.slug+" must contain exactly 4 FAQs");
       if(isPilot&&!renderedSections.some(([h]) => /worked example/i.test(String(h)))) throw new Error("Pilot article "+article.slug+" is missing a worked example section");
       const workedExampleHtml=isPilot&&article.workedExample ? "<section style=\"margin:0 0 28px\"><h2 style=\"margin:0 0 10px;line-height:1.25\">Worked Example</h2><p style=\"margin:0;line-height:1.65\">"+esc(article.workedExample)+"</p></section>" : "";
