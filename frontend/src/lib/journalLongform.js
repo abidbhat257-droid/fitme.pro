@@ -81,10 +81,6 @@ export function getLongFormJournalArticle(article) {
   sections.push(["Common questions", faq(article).map(([q,a]) => `${q} ${a}`).join(" ")]);
 
   let total = sections.reduce((sum, [, text]) => sum + countWords(text), 0);
-  if (total < 1500) {
-    sections.push(["A practical checklist", `Before applying the information, define your main goal, identify the measurement or behavior that actually reflects that goal, and choose a change you can repeat. Check your assumptions, use consistent units, avoid comparing your result with another person's result without context, and review trends instead of isolated observations. Give a new routine enough time to evaluate it fairly. If something is difficult to sustain, simplify it rather than assuming that greater restriction or effort is automatically better. Remember that public-health recommendations describe broad evidence, while individual care may require more detailed assessment.`]);
-    total = sections.reduce((sum, [, text]) => sum + countWords(text), 0);
-  }
   if (total > 2000) {
     for (let i = 1; i < sections.length && total > 1950; i++) {
       const current = sections[i][1];
