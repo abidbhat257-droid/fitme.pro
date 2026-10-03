@@ -1,4 +1,5 @@
 const fs=require('fs');const path=require('path');
+const { calculatePilotReadTime } = require("./pilotReadTime");
 const build=path.resolve(__dirname,'..','build');const sitemapPath=path.join(build,'sitemap.xml');
 if(!fs.existsSync(sitemapPath))throw new Error('Missing build/sitemap.xml');
 const site=(process.env.SITE_URL||'https://fitme-pro.vercel.app').replace(/\/$/,'');
@@ -45,7 +46,7 @@ const pilotReport=pilotEntries.map(({slug,category,categorySlug})=>{
   },0);
   const readTimeMatch=html.match(/\b(\d+) min read\b/i);
   const readTime=readTimeMatch?readTimeMatch[0]:"";
-  const expectedReadTime=Math.max(1,Math.ceil(wordCount/200));
+  const expectedReadTime=calculatePilotReadTime(wordCount);
   const workedExample=h2.some((heading)=>/worked example/i.test(heading));
   const genericHeadings=h2.filter((heading)=>genericPilotHeadings.includes(heading));
   return{slug,category,categorySlug,wordCount,h2,faqCount,schemaFaqCount,workedExample,readTime,expectedReadTime,genericHeadings};
