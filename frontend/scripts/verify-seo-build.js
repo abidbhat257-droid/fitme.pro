@@ -30,20 +30,24 @@ const phase3GenericHeadings=["What This Approach Means","How It May Affect Weigh
 function journalArticleText(html){const match=html.match(/<article\b[^>]*>([\s\S]*?)<\/article>/i);if(!match)return "";return match[1].replace(/<script[\s\S]*?<\/script>/gi," ").replace(/<style[\s\S]*?<\/style>/gi," ").replace(/<[^>]+>/g," ").replace(/&amp;/g,"&").replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/\s+/g," ").trim();}
 function paragraphTexts(html){const match=html.match(/<article\b[^>]*>([\s\S]*?)<\/article>/i);if(!match)return [];return [...match[1].matchAll(/<p\b[^>]*>([\s\S]*?)<\/p>/gi)].map(m=>m[1].replace(/<[^>]+>/g," ").replace(/&amp;/g,"&").replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/\s+/g," ").trim()).filter(p=>p.length>40);}
 function wordCountText(text){return text?text.split(/\s+/).filter(Boolean).length:0;}
+function evaluateArithmeticExpression(expression){
+  const normalized=expression.replace(/,/g,"").replace(/[×x]/g,"*").replace(/−/g,"-").replace(/÷/g,"/");
+  if(!/^[0-9.+\\-*/\\s]+$/.test(normalized))return NaN;
+  try{return Function("\"use strict\";return ("+normalized+")")();}catch(_){return NaN;}
+}
 function checkWorkedExampleArithmetic(text){
-  const equations=[...text.matchAll(/([0-9][0-9,.]*)\s*([×x*+−\\-÷/])\s*([0-9][0-9,.]*)\s*=\s*([0-9][0-9,.]*)(?:\s*kcal)?/gi)];
+  const equations=[...text.matchAll(/([0-9][0-9,.]*(?:\s*[×x*+−\\-÷/]\s*[0-9][0-9,.]*)+)\s*=\s*([0-9][0-9,.]*)(?:\s*kcal)?/gi)];
   const errors=[];
   for(const m of equations){
-    const a=Number(m[1].replace(/,/g,"")),b=Number(m[3].replace(/,/g,"")),actual=Number(m[4].replace(/,/g,""));
-    const op=m[2];
-    const expected=op==="+"?a+b:op==="−"||op==="-"?a-b:op==="×"||op.toLowerCase()==="x"||op==="*"?a*b:op==="÷"||op==="/" ? a/b:NaN;
-    if(Number.isFinite(expected)&&Math.abs(expected-actual)>0.51) errors.push(`Equation mismatch: ${m[0]}`);
+    const expected=evaluateArithmeticExpression(m[1]);
+    const actual=Number(m[2].replace(/,/g,""));
+    if(Number.isFinite(expected)&&Math.abs(expected-actual)>0.51)errors.push(`Equation mismatch: ${m[0]}`);
   }
   const kcalComponents=[...text.matchAll(/([0-9][0-9,.]*)\s*[×x*]\s*([0-9][0-9,.]*)\s*=\s*([0-9][0-9,.]*)\s*kcal/gi)].map(m=>Number(m[3].replace(/,/g,"")));
-  const stated=[...text.matchAll(/\b(?:total|target|daily target|intake)\b[^.]{0,90}?([0-9][0-9,.]*)\s*kcal/gi)].map(m=>Number(m[1].replace(/,/g,"")));
+  const stated=[...text.matchAll(/\b(?:total|target|daily intake|calorie target|intake target)\b[^.]{0,90}?([0-9][0-9,.]*)\s*kcal/gi)].map(m=>Number(m[1].replace(/,/g,"")));
   if(kcalComponents.length>=2&&stated.length){
     const sum=kcalComponents.reduce((a,b)=>a+b,0);
-    for(const value of stated) if(Math.abs(sum-value)>1) errors.push(`Calorie total mismatch: component kcal sum ${sum} vs stated ${value}`);
+    for(const value of stated)if(Math.abs(sum-value)>1)errors.push(`Calorie total mismatch: component kcal sum ${sum} vs stated ${value}`);
   }
   return errors;
 }
