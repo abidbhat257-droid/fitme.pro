@@ -259,7 +259,7 @@ export const PHASE3_BATCH1_ARTICLES = [
       ],
       [
         "Worked example: converting macros into calories",
-        "Suppose the daily target is 2,000 kcal with 150 g protein, 70 g fat and 180 g carbohydrate. Protein contributes 150×4 = 600 kcal. Fat contributes 70×9 = 630 kcal. Carbohydrate contributes 180×4 = 720 kcal. The total is 1,950 kcal, so 50 kcal remain. If those calories are assigned to carbohydrate, adding 12.5 g gives 50 kcal and produces a final total of 2,000 kcal. The arithmetic uses the standard 4/4/9 energy factors; food labels can differ slightly because of rounding and fiber."
+        "Suppose the daily target is 2,000 kcal with 150 g protein, 70 g fat and 180 g carbohydrate. Protein contributes 150×4 = 600 kcal. Fat contributes 70×9 = 630 kcal. Carbohydrate contributes 180×4 = 720 kcal. The total is 1,950 kcal, so 50 kcal remain. If those calories are assigned to carbohydrate, 12.5 × 4 = 50 kcal, producing a final total of 2,000 kcal. The arithmetic uses the standard 4/4/9 energy factors; food labels can differ slightly because of rounding and fiber."
       ],
       [
         "Macro flexibility across training days",
