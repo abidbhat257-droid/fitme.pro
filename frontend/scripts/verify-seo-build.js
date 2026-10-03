@@ -1,5 +1,5 @@
 const fs=require('fs');const path=require('path');
-const { calculatePilotReadTime } = require("./pilotReadTime");
+const { countArticleWords, calculatePilotReadTime } = require("./pilotReadTime");
 const build=path.resolve(__dirname,'..','build');const sitemapPath=path.join(build,'sitemap.xml');
 if(!fs.existsSync(sitemapPath))throw new Error('Missing build/sitemap.xml');
 const site=(process.env.SITE_URL||'https://fitme-pro.vercel.app').replace(/\/$/,'');
@@ -36,8 +36,7 @@ const pilotReport=pilotEntries.map(({slug,category,categorySlug})=>{
   const file=path.join(build,"journal",categorySlug,slug,"index.html");
   if(!fs.existsSync(file))return{slug,category,categorySlug,missing:true};
   const html=fs.readFileSync(file,"utf8");
-  const articleText=articleTextFromHtml(html);
-  const wordCount=articleText?articleText.split(/\s+/).filter(Boolean).length:0;
+  const wordCount=countArticleWords(html);
   const h2=[...html.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/gi)].map((m)=>m[1].replace(/<[^>]+>/g,"").replace(/&amp;/g,"&").trim());
   const faqSection=html.match(/<h2[^>]*>Frequently Asked Questions<\/h2>([\s\S]*?)<\/section>/i);
   const faqCount=faqSection?(faqSection[1].match(/<h3[^>]*>/gi)||[]).length:0;
