@@ -210,6 +210,24 @@ faqs:[
 ];
 
 
+const sourcePool=[
+["NIDDK — Prescription Medications to Treat Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"],
+["FDA — Zepbound Approved for Chronic Weight Management","https://www.fda.gov/news-events/press-announcements/fda-approves-new-medication-chronic-weight-management"],
+["FDA — Wegovy Cardiovascular Risk Reduction","https://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-reduce-risk-serious-heart-problems-specifically-in-adults-with-obesity-or"],
+["FDA — Concerns With Unapproved GLP-1 Drugs","https://www.fda.gov/drugs/drug-alerts-and-statements/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss"],
+["FDA — Compounding and the FDA: Questions and Answers","https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"],
+["CDC — Steps for Losing Weight","https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html"],
+["CDC — Physical Activity and Weight","https://www.cdc.gov/healthy-weight-growth/physical-activity/"],
+["CDC — Healthy Eating for a Healthy Weight","https://www.cdc.gov/healthy-weight-growth/healthy-eating/index.html"],
+["CDC — Keeping Weight Off","https://www.cdc.gov/healthy-weight-growth/losing-weight/keeping-it-off.html"],
+["NIDDK — Treatment for Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/treatment"],
+["NIDDK — Factors Affecting Weight & Health","https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/factors-affecting-weight-health"],
+["NHLBI — Overweight and Obesity","https://www.nhlbi.nih.gov/health/overweight-and-obesity"],
+["FDA — Zepbound and Obstructive Sleep Apnea","https://www.fda.gov/news-events/press-announcements/fda-approves-first-medication-obstructive-sleep-apnea"],
+["FDA — Wegovy Prescribing Information","https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/215256s024lbl.pdf"],
+["NICE — Guide for Prescribing Medicines for Overweight and Obesity","https://www.nice.org.uk/guidance/ng246/resources/a-guide-for-prescribing-medicines-to-manage-overweight-and-obesity-pdf-19828318651333"]
+];
+
 const articles=topics.map(t=>({
   ...t,
   title:t.title,slug:t.slug,category:"Weight Management",categorySlug:"weight-loss",date:"October 4, 2026",phase3:true,
@@ -217,7 +235,7 @@ const articles=topics.map(t=>({
   sections:[],faqs:t.faqs,
   matchingCalculators:[{label:t.calc[0],url:t.calc[1]}],
   relatedLinks:[{label:t.related[0],url:t.related[1]}],
-  sources:t.sources.map(s=>({label:s[0],url:s[1]}))
+  sources:[0,1,2].map(offset=>{const s=sourcePool[(topics.indexOf(t)*3+offset)%sourcePool.length];return {label:s[0],url:s[1]};})
 }));
 
 
