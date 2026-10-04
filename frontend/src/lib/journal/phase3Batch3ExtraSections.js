@@ -1,76 +1,198 @@
 export const PHASE3_BATCH3_EXTRA_SECTIONS = {
-"long-term-nutritional-requirements-after-weight-loss-surgery":[
-["How procedure type changes the nutrition conversation","A sleeve and a gastric bypass do not create the same nutritional situation. The amount of stomach tissue that remains, the route food takes through the intestine and the patient's ability to tolerate foods can all influence the long-term plan. That is why a supplement list copied from a friend or an online forum may be inappropriate even when the operations sound similar. Patients should know the name of their procedure and keep the operative and follow-up records available. At appointments, ask which laboratory tests are being monitored, what symptoms should trigger an earlier visit and whether supplements need adjustment as recovery progresses. Nutrition after surgery is a continuing clinical process rather than a short diet phase."],
-["Making follow-up information easy to use","A simple personal record can make long-term bariatric care more effective. Note the prescribed supplements, approximate timing, foods that are consistently tolerated, fluid intake problems and any new symptoms. Bring laboratory results and medication lists to visits rather than trying to remember everything. If a supplement causes nausea or constipation, report that instead of quietly stopping it for months. The care team can often change the formulation or schedule when there is a legitimate problem. This approach also helps distinguish a temporary food-tolerance issue from a persistent nutritional concern. Good records do not replace clinical care; they make the clinical conversation more precise."]
-],
-"understanding-the-biomarkers-of-healthy-metabolism":[
-["How trends are more useful than isolated values","Metabolic markers are easier to understand when they are viewed as trends under comparable conditions. A single blood-pressure reading can differ from another because of timing or stress, and laboratory values can vary for reasons unrelated to a recent meal. When a clinician is monitoring a risk factor, use the requested testing schedule rather than creating a private testing routine that generates anxiety. Record the date, relevant medication changes and major health changes alongside results. A trend can show whether an intervention is associated with improvement, stability or worsening, but it still requires clinical interpretation. The aim is useful information, not perfect numbers every day."],
-["Separating screening from diagnosis","Screening measurements help identify people who may need closer assessment. Diagnosis requires appropriate clinical criteria and, in many cases, repeated or confirmatory testing. This distinction matters because online calculators often present a numerical output that looks more definitive than it really is. A BMI result can prompt a discussion about weight-related risk; it cannot diagnose diabetes. A waist measurement can signal abdominal-risk concerns; it cannot measure visceral fat directly. Treat each tool according to what it actually measures. That keeps the interpretation evidence-based and prevents a convenient number from becoming an unsupported medical label."]
-],
-"managing-pcos-symptoms-through-strategic-weight-management":[
-["Choosing outcomes that are meaningful in PCOS","Progress in PCOS should be defined by the problem being treated. Someone may care most about more regular cycles, improved glucose markers, better fitness, reduced sleep problems or fertility planning. Another person may not need weight loss at all but may benefit from activity and nutritional improvements. Recording the relevant outcome prevents the scale from becoming the sole measure of success. If menstrual changes, androgen-related symptoms or fertility concerns persist, medical review remains important even when weight is changing. A plan is stronger when it has more than one success measure and does not promise that every symptom will respond to the same intervention."],
-["Avoiding the cycle of restriction and rebound","Very restrictive diets can make eating feel like a short-term treatment rather than a sustainable routine. For someone with PCOS, a better structure is often one that can be repeated across workdays, weekends and social meals. Build meals around foods the person can afford and enjoy, then adjust portions or meal composition when clinically appropriate. If repeated dieting has produced guilt, binge episodes or loss of control, behavioral support may be more useful than another restrictive menu. PCOS management should improve health without turning food into a constant test of willpower."]
-],
-"the-ultimate-pre-bariatric-surgery-diet-guide":[
-["Shopping and preparation before the diet starts","Preparation is easier when the prescribed foods are available before the first day. Ask the bariatric team for the approved food list, portion instructions and product requirements. Check whether protein drinks, broths or other products need a particular nutritional profile. Plan meals around the work schedule and arrange support for situations in which food is normally purchased spontaneously. This is especially useful for patients who have diabetes or other conditions requiring medication coordination. Preparation should reduce improvisation, not encourage the patient to make the diet more restrictive than prescribed. If the plan is unclear, contact the dietitian before surgery rather than relying on a social-media version."],
-["How to judge whether the plan is working","The success of a pre-operative diet is not measured only by how hungry the patient can tolerate being. The team may be looking for appropriate preparation, adequate hydration and readiness for the next stage. If the patient experiences repeated vomiting, severe weakness, dizziness, dehydration or uncontrolled glucose, the plan needs clinical review. A person should report difficulty rather than assuming that suffering means the diet is more effective. The purpose of the pre-operative period is to arrive at surgery safely and prepared for the post-operative pathway. That makes communication with the clinical team more important than achieving the lowest possible scale reading."]
-],
-"thyroid-health-and-weight-management-hypothyroidism-explained":[
-["What a realistic thyroid-weight plan looks like","After thyroid treatment is established, weight management can use the same practical tools used for many other adults: consistent meals, appropriate portions, physical activity, sleep and a multi-week trend. The difference is that thyroid status is a medical variable that should be monitored separately. If thyroid tests are stable but weight changes unexpectedly, investigate other contributors instead of assuming the dose needs to rise. Conversely, if thyroid symptoms return, speak with the clinician rather than trying to solve them through a harsher diet. Keeping thyroid care and weight-management decisions in their proper roles prevents both undertreatment and unnecessary restriction."],
-["Why 'slow metabolism' is an incomplete explanation","People often describe difficulty losing weight as a slow metabolism, but body weight reflects energy intake, expenditure, body composition, activity, appetite and many environmental and biological factors. Hypothyroidism can contribute to the picture when it is present, but correcting it does not make all other factors disappear. This distinction is useful because it directs attention to what can actually be measured and changed. A clinician can assess thyroid function, while the patient can monitor food patterns, activity and weight trends. Neither side needs to be reduced to a single explanation."]
-],
-"how-bariatric-surgery-can-change-hunger-and-satiety-signals":[
-["Meal satisfaction is more than stomach size","Feeling satisfied after surgery can depend on portion size, protein content, food texture, eating speed and physiological signals. A very small meal that is eaten quickly may feel different from a small meal eaten slowly and attentively. Patients should therefore learn the eating pattern recommended by their program rather than focusing only on the maximum amount the stomach can hold. If meals consistently leave the person weak, dizzy or unable to meet nutrition goals, the solution is not to suppress appetite further. The dietitian can review meal composition and timing and make adjustments that protect nutrition."],
-["Why appetite should be tracked without judgment","A brief appetite log can record hunger before meals, fullness afterward, sleep quality and unusual stress. The purpose is to identify patterns, not to grade the patient. Hunger may increase after poor sleep or long gaps between meals and may decrease during illness. If the pattern changes dramatically without an obvious reason, share the record with the bariatric team. This can be more informative than relying on memory. The long-term objective is a workable relationship with hunger and fullness, not the permanent absence of appetite."]
-],
-"am-i-a-candidate-for-bariatric-surgery-eligibility-criteria-explained":[
-["Medical readiness is different from numerical eligibility","Even when a person appears to meet a BMI-based screening criterion, the team still has to assess whether the operation is appropriate now. Medical readiness can include control of major conditions, medication review, nutritional status and an understanding of post-operative care. Some issues may need treatment before surgery, while others may change the choice of procedure. This is not an arbitrary extra hurdle. Surgery has risks, and the team needs enough information to balance those risks against expected benefit. A good evaluation should leave the patient understanding why surgery is being considered and what alternatives remain."],
-["Insurance criteria and clinical criteria are not identical","A patient may encounter two separate questions: whether surgery is medically appropriate and whether a particular insurer or health system will pay for it. Those questions can have different rules. A clinic can help with documentation, but the patient should verify coverage directly with the payer. Ask which requirements are clinical, which are administrative and which are specific to the chosen facility. Keeping these categories separate prevents a denial of coverage from being mistaken for a medical judgment that surgery is inappropriate, or vice versa."]
-],
-
-"can-weight-loss-surgery-improve-hormonal-balance-and-fertility":[
-["Planning pregnancy around changing nutrition","Pregnancy planning after bariatric surgery should include a review of weight trajectory, supplements, laboratory results and medications. The rapid-loss period is different from the later maintenance phase, and nutritional requirements become especially important once pregnancy begins. A person should tell the obstetric team about the exact operation because anatomy can affect nutritional management. If nausea or food intolerance makes it difficult to meet needs, early contact with the care team is preferable to waiting for a routine appointment. The goal is not simply to reach a certain weight before conception; it is to enter pregnancy with an appropriate medical and nutritional plan."],
-["Why fertility outcomes cannot be promised","Weight loss can improve some contributors to reproductive dysfunction, but fertility is influenced by age, ovarian or testicular function, tubal factors, sperm health and many other variables. A person who becomes more fertile after surgery may still need fertility treatment, while another may not see a reproductive change despite substantial weight loss. Avoid websites that promise a specific pregnancy rate from a particular operation. A specialist can explain which factors are known in the individual case and which remain uncertain."]
-],
-"gastric-sleeve-vs-gastric-bypass-comparing-the-top-bariatric-procedures":[
-["Questions about medications and anatomy","The altered digestive route after bypass can affect how some medicines and nutrients are handled, while sleeve surgery creates a different anatomical situation. Patients should provide a complete medication and supplement list before choosing an operation. The surgical team can explain whether a medicine needs a different formulation, timing or monitoring. This is particularly important for medicines with a narrow therapeutic range or for conditions that require stable dosing. A procedure comparison that ignores medication management is incomplete."],
-["Thinking beyond the first year","The relevant comparison is not only what happens during the first months of weight loss. Patients should ask what long-term nutritional monitoring is required, how reflux or other symptoms are handled, how weight regain is addressed and what revision options exist. A procedure can be successful while still requiring ongoing care. Understanding the maintenance phase before surgery makes the decision more realistic and reduces the temptation to treat the operation as a one-time fix."]
-],
-"how-excess-weight-affects-joint-pain-and-osteoarthritis-symptoms":[
-["Reducing joint load without waiting for major weight loss","A person with painful knees does not have to wait for a large scale change before making activity easier. Lower-impact movement, strength exercises and pacing can reduce the gap between current ability and desired activity. Simple changes such as shorter walks spread across the day may be more manageable than one long session. Supportive footwear and physical-therapy advice can also matter. These strategies do not replace diagnosis or treatment, but they can make movement more accessible while weight management progresses."],
-["How to judge progress in joint health","Track function as well as pain. Useful questions include whether stairs are easier, whether walking distance has increased, whether sleep is less disrupted and whether ordinary tasks require fewer breaks. Pain can fluctuate even when the overall trajectory is improving, so a single bad day should not automatically end an activity program. If symptoms steadily worsen or new swelling or instability appears, reassessment is appropriate. Functional improvement is a meaningful outcome even if the scale moves slowly."]
-],
-"the-link-between-metabolic-syndrome-and-excess-abdominal-fat":[
-["Why visceral fat is not the same as waist size","Waist circumference is a practical proxy for abdominal size, but it cannot distinguish visceral fat from subcutaneous fat. Two people with the same waist measurement can have different internal fat distributions. Imaging can provide more direct information in selected clinical settings, but it is not needed for routine screening. This distinction prevents a common mistake: treating a tape-measure result as if it were a direct measurement of the organs. The waist is useful because it is simple, repeatable and associated with metabolic risk, not because it reveals anatomy perfectly."],
-["Turning risk information into action","If several metabolic risk factors are present, choose actions that can influence more than one at once. Regular activity can support fitness, glucose regulation and blood pressure. A balanced eating pattern can support weight and lipid management. Smoking cessation, sleep and medication adherence may be equally important. The best plan depends on which risks are actually abnormal. Rather than trying to shrink the waist as quickly as possible, use the measurements to guide a broader risk-reduction plan with appropriate clinical follow-up."]
-],
-"understanding-the-cost-of-bariatric-surgery-insurance-and-self-pay-options":[
-["Questions that expose hidden costs","Ask whether the quoted amount includes the initial surgeon consultation, anesthesia, hospital stay, pathology or laboratory tests, dietitian appointments, supplements and routine post-operative reviews. Also ask how complications are billed and whether emergency treatment outside the original hospital is covered. If the quote is a package, request the list of included services in writing. These questions make two providers easier to compare because the same categories are being considered. They also reveal recurring expenses that can be overlooked when patients focus on the operation date."],
-["Planning for the maintenance phase","Bariatric surgery can create costs long after the operation. Supplements, laboratory monitoring, transportation to follow-up visits and occasional additional consultations may continue. Someone considering self-pay surgery should include these recurring costs in the decision rather than treating them as optional. Insurance patients should also check annual deductibles and coverage limits where relevant. A financially sustainable plan is part of medical preparation because financial stress can interfere with follow-up and adherence."]
-],
-"the-importance-of-psychological-evaluations-before-bariatric-surgery":[
-["What patients should disclose","Be open about binge eating, emotional eating, substance use, depression, anxiety, trauma, sleep problems and major social stressors when asked. Disclosure is useful because it allows the team to plan support. Hiding a problem does not make it disappear after surgery, when eating patterns and coping strategies may change quickly. Patients can also ask which findings are considered temporary barriers, which require treatment and which simply lead to additional support. Understanding the purpose of the questions can make the evaluation feel less like a judgment."],
-["Building a support plan before the operation","Identify who can help with shopping, meals, appointments, activity and emotional support during recovery. If the patient already has a therapist or psychiatrist, coordination may be useful when permitted. Practical support matters because the early post-operative period includes many new routines. A written support plan can include contact information for the surgical team, nutrition team and mental-health professional. Preparing these resources before surgery is often easier than trying to find them during a difficult recovery."]
-],
-
-"what-to-expect-during-recovery-after-sleeve-gastrectomy":[
-["Food stages are a clinical progression","A staged diet after sleeve surgery is designed around healing and tolerance. A patient may be instructed to use liquids, pureed foods, soft foods and later regular textures, but the exact sequence differs by program. The presence of a particular food in another patient's recovery story does not mean it is safe at the same time for someone else. Follow the written plan and ask before advancing a texture. Repeated vomiting can interfere with hydration and nutrition and should not be treated as a normal inconvenience simply because the operation was recent."],
-["Preparing for the transition home","Before discharge, patients should know how to take prescribed medicines, how to meet fluid goals, what symptoms require urgent contact and when the first follow-up occurs. It helps to have approved foods and drinks available at home and to arrange transportation and support. A simple checklist can reduce decision-making while the body is recovering. If the discharge instructions conflict with an internet article, the treating hospital's instructions take priority because they reflect the actual operation and clinical course."]
-],
-"how-improving-blood-pressure-is-linked-to-healthy-weight-management":[
-["Why a lower scale reading is not the same as controlled hypertension","A person can lose weight and still have high blood pressure. Conversely, someone can improve blood pressure before losing much weight. Blood pressure is a clinical outcome in its own right, so it should be measured rather than inferred from the scale. When medication is prescribed, the patient should continue it unless the clinician changes the plan. This distinction protects against a common mistake: assuming that a successful weight-loss trend automatically means cardiovascular treatment is finished."],
-["Building a blood-pressure-friendly routine","A practical routine can combine regular movement, an eating pattern that fits the person's medical needs, adequate sleep and medication adherence. Use home monitoring only as instructed and bring the readings to appointments. If exercise is new, start at a manageable level and increase gradually. The aim is consistency. A single intense workout does not compensate for weeks of inactivity, and a single high-sodium meal does not define the whole diet. Long-term patterns matter more than isolated events."]
-],
-"how-weight-loss-can-affect-symptoms-of-obesity-related-kidney-disease":[
-["Why renal nutrition should not be copied from fitness advice","Fitness diets often emphasize high protein, large fluid intake or supplements. Those recommendations may be inappropriate for someone with chronic kidney disease. Kidney function determines how the body handles several nutrients and medicines, and the correct limits can change over time. A renal dietitian can adapt the weight-management plan to laboratory results and treatment stage. This is a major reason a general protein or calorie calculator should not be treated as a prescription for kidney disease."],
-["Separating fat loss from fluid changes","A scale can rise because of body fat, food in the digestive tract or fluid. In kidney or heart disease, fluid changes can be clinically important. A rapid increase over a short period, particularly with swelling or breathlessness, should be discussed promptly. Likewise, an unexpectedly rapid decrease can reflect dehydration rather than successful fat loss. Weight is useful information, but its meaning depends on the medical context in which it is measured."]
-],
-"the-connection-between-weight-management-and-type-2-diabetes-remission":[
-["Remission needs continued surveillance","Even when glucose improves dramatically, diabetes follow-up does not become unnecessary. The clinician may continue checking A1C, kidney health, blood pressure, lipids and other risk factors. A person in remission should also know what symptoms or changes should prompt earlier testing. This protects against the assumption that a previous diagnosis has permanently disappeared. Remission is a state that can be monitored, not a reason to abandon preventive care."],
-["Building a maintenance plan after major improvement","The behaviors that supported weight loss need a place in ordinary life after the initial goal. Plan for holidays, travel, illness, stressful periods and changes in activity before they occur. If weight begins to rise or glucose worsens, early contact with the diabetes team can prevent a small change from becoming a large setback. Maintenance is not about perfect adherence. It is about noticing changes and responding while they are still manageable."]
-],
-"how-to-manage-skin-laxity-and-excess-skin-after-major-weight-loss":[
-["Why location changes the practical problem","Loose skin around the abdomen may affect clothing and movement, while folds under the arms or thighs may create different functional or skin-care issues. The amount of tissue, friction and moisture exposure all influence whether the problem is mainly cosmetic or also medical. Describe the exact location and symptoms to a clinician rather than simply saying 'I have loose skin.' Specific information helps determine whether skin care, physical support or a surgical consultation is appropriate."],
-["Setting expectations for body-contouring surgery","Body-contouring procedures can remove excess tissue but involve scars, recovery time and surgical risks. The final appearance is not completely predictable, and additional procedures may sometimes be considered for different body areas. A consultation should cover the expected benefit, wound-healing considerations, nutritional status and recovery restrictions. Patients after bariatric surgery should make sure their nutritional deficiencies are addressed before elective surgery. The decision is personal and should be made after weight stability and medical readiness are established."]
-],
+  "long-term-nutritional-requirements-after-weight-loss-surgery": [
+    [
+      "How procedure type changes the nutrition conversation",
+      "A sleeve and a gastric bypass do not create the same nutritional situation. The amount of stomach tissue that remains, the route food takes through the intestine and the patient's ability to tolerate foods can all influence the long-term plan. That is why a supplement list copied from a friend or an online forum may be inappropriate even when the operations sound similar. Patients should know the name of their procedure and keep the operative and follow-up records available. At appointments, ask which laboratory tests are being monitored, what symptoms should trigger an earlier visit and whether supplements need adjustment as recovery progresses. Nutrition after surgery is a continuing clinical process rather than a short diet phase."
+    ],
+    [
+      "Making follow-up information easy to use",
+      "A simple personal record can make long-term bariatric care more effective. Note the prescribed supplements, approximate timing, foods that are consistently tolerated, fluid intake problems and any new symptoms. Bring laboratory results and medication lists to visits rather than trying to remember everything. If a supplement causes nausea or constipation, report that instead of quietly stopping it for months. The care team can often change the formulation or schedule when there is a legitimate problem. This approach also helps distinguish a temporary food-tolerance issue from a persistent nutritional concern. Good records do not replace clinical care; they make the clinical conversation more precise."
+    ]
+  ],
+  "understanding-the-biomarkers-of-healthy-metabolism": [
+    [
+      "How trends are more useful than isolated values",
+      "Metabolic markers are easier to understand when they are viewed as trends under comparable conditions. A single blood-pressure reading can differ from another because of timing or stress, and laboratory values can vary for reasons unrelated to a recent meal. When a clinician is monitoring a risk factor, use the requested testing schedule rather than creating a private testing routine that generates anxiety. Record the date, relevant medication changes and major health changes alongside results. A trend can show whether an intervention is associated with improvement, stability or worsening, but it still requires clinical interpretation. The aim is useful information, not perfect numbers every day."
+    ],
+    [
+      "Separating screening from diagnosis",
+      "Screening measurements help identify people who may need closer assessment. Diagnosis requires appropriate clinical criteria and, in many cases, repeated or confirmatory testing. This distinction matters because online calculators often present a numerical output that looks more definitive than it really is. A BMI result can prompt a discussion about weight-related risk; it cannot diagnose diabetes. A waist measurement can signal abdominal-risk concerns; it cannot measure visceral fat directly. Treat each tool according to what it actually measures. That keeps the interpretation evidence-based and prevents a convenient number from becoming an unsupported medical label."
+    ]
+  ],
+  "managing-pcos-symptoms-through-strategic-weight-management": [
+    [
+      "Choosing outcomes that are meaningful in PCOS",
+      "Progress in PCOS should be defined by the problem being treated. Someone may care most about more regular cycles, improved glucose markers, better fitness, reduced sleep problems or fertility planning. Another person may not need weight loss at all but may benefit from activity and nutritional improvements. Recording the relevant outcome prevents the scale from becoming the sole measure of success. If menstrual changes, androgen-related symptoms or fertility concerns persist, medical review remains important even when weight is changing. A plan is stronger when it has more than one success measure and does not promise that every symptom will respond to the same intervention."
+    ],
+    [
+      "Avoiding the cycle of restriction and rebound",
+      "Very restrictive diets can make eating feel like a short-term treatment rather than a sustainable routine. For someone with PCOS, a better structure is often one that can be repeated across workdays, weekends and social meals. Build meals around foods the person can afford and enjoy, then adjust portions or meal composition when clinically appropriate. If repeated dieting has produced guilt, binge episodes or loss of control, behavioral support may be more useful than another restrictive menu. PCOS management should improve health without turning food into a constant test of willpower."
+    ]
+  ],
+  "the-ultimate-pre-bariatric-surgery-diet-guide": [
+    [
+      "Shopping and preparation before the diet starts",
+      "Preparation is easier when the prescribed foods are available before the first day. Ask the bariatric team for the approved food list, portion instructions and product requirements. Check whether protein drinks, broths or other products need a particular nutritional profile. Plan meals around the work schedule and arrange support for situations in which food is normally purchased spontaneously. This is especially useful for patients who have diabetes or other conditions requiring medication coordination. Preparation should reduce improvisation, not encourage the patient to make the diet more restrictive than prescribed. If the plan is unclear, contact the dietitian before surgery rather than relying on a social-media version."
+    ],
+    [
+      "How to judge whether the plan is working",
+      "The success of a pre-operative diet is not measured only by how hungry the patient can tolerate being. The team may be looking for appropriate preparation, adequate hydration and readiness for the next stage. If the patient experiences repeated vomiting, severe weakness, dizziness, dehydration or uncontrolled glucose, the plan needs clinical review. A person should report difficulty rather than assuming that suffering means the diet is more effective. The purpose of the pre-operative period is to arrive at surgery safely and prepared for the post-operative pathway. That makes communication with the clinical team more important than achieving the lowest possible scale reading."
+    ]
+  ],
+  "thyroid-health-and-weight-management-hypothyroidism-explained": [
+    [
+      "What a realistic thyroid-weight plan looks like",
+      "After thyroid treatment is established, weight management can use the same practical tools used for many other adults: consistent meals, appropriate portions, physical activity, sleep and a multi-week trend. The difference is that thyroid status is a medical variable that should be monitored separately. If thyroid tests are stable but weight changes unexpectedly, investigate other contributors instead of assuming the dose needs to rise. Conversely, if thyroid symptoms return, speak with the clinician rather than trying to solve them through a harsher diet. Keeping thyroid care and weight-management decisions in their proper roles prevents both undertreatment and unnecessary restriction."
+    ],
+    [
+      "Why 'slow metabolism' is an incomplete explanation",
+      "People often describe difficulty losing weight as a slow metabolism, but body weight reflects energy intake, expenditure, body composition, activity, appetite and many environmental and biological factors. Hypothyroidism can contribute to the picture when it is present, but correcting it does not make all other factors disappear. This distinction is useful because it directs attention to what can actually be measured and changed. A clinician can assess thyroid function, while the patient can monitor food patterns, activity and weight trends. Neither side needs to be reduced to a single explanation."
+    ]
+  ],
+  "how-bariatric-surgery-can-change-hunger-and-satiety-signals": [
+    [
+      "Meal satisfaction is more than stomach size",
+      "Feeling satisfied after surgery can depend on portion size, protein content, food texture, eating speed and physiological signals. A very small meal that is eaten quickly may feel different from a small meal eaten slowly and attentively. Patients should therefore learn the eating pattern recommended by their program rather than focusing only on the maximum amount the stomach can hold. If meals consistently leave the person weak, dizzy or unable to meet nutrition goals, the solution is not to suppress appetite further. The dietitian can review meal composition and timing and make adjustments that protect nutrition."
+    ],
+    [
+      "Why appetite should be tracked without judgment",
+      "A brief appetite log can record hunger before meals, fullness afterward, sleep quality and unusual stress. The purpose is to identify patterns, not to grade the patient. Hunger may increase after poor sleep or long gaps between meals and may decrease during illness. If the pattern changes dramatically without an obvious reason, share the record with the bariatric team. This can be more informative than relying on memory. The long-term objective is a workable relationship with hunger and fullness, not the permanent absence of appetite."
+    ]
+  ],
+  "am-i-a-candidate-for-bariatric-surgery-eligibility-criteria-explained": [
+    [
+      "Medical readiness is different from numerical eligibility",
+      "Even when a person appears to meet a BMI-based screening criterion, the team still has to assess whether the operation is appropriate now. Medical readiness can include control of major conditions, medication review, nutritional status and an understanding of post-operative care. Some issues may need treatment before surgery, while others may change the choice of procedure. This is not an arbitrary extra hurdle. Surgery has risks, and the team needs enough information to balance those risks against expected benefit. A good evaluation should leave the patient understanding why surgery is being considered and what alternatives remain."
+    ],
+    [
+      "Insurance criteria and clinical criteria are not identical",
+      "A patient may encounter two separate questions: whether surgery is medically appropriate and whether a particular insurer or health system will pay for it. Those questions can have different rules. A clinic can help with documentation, but the patient should verify coverage directly with the payer. Ask which requirements are clinical, which are administrative and which are specific to the chosen facility. Keeping these categories separate prevents a denial of coverage from being mistaken for a medical judgment that surgery is inappropriate, or vice versa."
+    ]
+  ],
+  "can-weight-loss-surgery-improve-hormonal-balance-and-fertility": [
+    [
+      "Planning pregnancy around changing nutrition",
+      "Pregnancy planning after bariatric surgery should include a review of weight trajectory, supplements, laboratory results and medications. The rapid-loss period is different from the later maintenance phase, and nutritional requirements become especially important once pregnancy begins. A person should tell the obstetric team about the exact operation because anatomy can affect nutritional management. If nausea or food intolerance makes it difficult to meet needs, early contact with the care team is preferable to waiting for a routine appointment. The goal is not simply to reach a certain weight before conception; it is to enter pregnancy with an appropriate medical and nutritional plan."
+    ],
+    [
+      "Why fertility outcomes cannot be promised",
+      "Weight loss can improve some contributors to reproductive dysfunction, but fertility is influenced by age, ovarian or testicular function, tubal factors, sperm health and many other variables. A person who becomes more fertile after surgery may still need fertility treatment, while another may not see a reproductive change despite substantial weight loss. Avoid websites that promise a specific pregnancy rate from a particular operation. A specialist can explain which factors are known in the individual case and which remain uncertain."
+    ]
+  ],
+  "gastric-sleeve-vs-gastric-bypass-comparing-the-top-bariatric-procedures": [
+    [
+      "Questions about medications and anatomy",
+      "The altered digestive route after bypass can affect how some medicines and nutrients are handled, while sleeve surgery creates a different anatomical situation. Patients should provide a complete medication and supplement list before choosing an operation. The surgical team can explain whether a medicine needs a different formulation, timing or monitoring. This is particularly important for medicines with a narrow therapeutic range or for conditions that require stable dosing. A procedure comparison that ignores medication management is incomplete."
+    ],
+    [
+      "Thinking beyond the first year",
+      "The relevant comparison is not only what happens during the first months of weight loss. Patients should ask what long-term nutritional monitoring is required, how reflux or other symptoms are handled, how weight regain is addressed and what revision options exist. A procedure can be successful while still requiring ongoing care. Understanding the maintenance phase before surgery makes the decision more realistic and reduces the temptation to treat the operation as a one-time fix."
+    ],
+    [
+      "How the decision changes with patient priorities",
+      "A useful consultation starts with the problems the patient most wants treated and the risks they most want to avoid. Reflux, diabetes, nutritional concerns, medication needs and previous abdominal operations can change the balance between procedures. Ask the surgeon to explain how each factor applies to the individual rather than relying on a general ranking. This keeps the comparison patient-specific and avoids turning one study result into a promise."
+    ]
+  ],
+  "how-excess-weight-affects-joint-pain-and-osteoarthritis-symptoms": [
+    [
+      "Reducing joint load without waiting for major weight loss",
+      "A person with painful knees does not have to wait for a large scale change before making activity easier. Lower-impact movement, strength exercises and pacing can reduce the gap between current ability and desired activity. Simple changes such as shorter walks spread across the day may be more manageable than one long session. Supportive footwear and physical-therapy advice can also matter. These strategies do not replace diagnosis or treatment, but they can make movement more accessible while weight management progresses."
+    ],
+    [
+      "How to judge progress in joint health",
+      "Track function as well as pain. Useful questions include whether stairs are easier, whether walking distance has increased, whether sleep is less disrupted and whether ordinary tasks require fewer breaks. Pain can fluctuate even when the overall trajectory is improving, so a single bad day should not automatically end an activity program. If symptoms steadily worsen or new swelling or instability appears, reassessment is appropriate. Functional improvement is a meaningful outcome even if the scale moves slowly."
+    ]
+  ],
+  "the-link-between-metabolic-syndrome-and-excess-abdominal-fat": [
+    [
+      "Why visceral fat is not the same as waist size",
+      "Waist circumference is a practical proxy for abdominal size, but it cannot distinguish visceral fat from subcutaneous fat. Two people with the same waist measurement can have different internal fat distributions. Imaging can provide more direct information in selected clinical settings, but it is not needed for routine screening. This distinction prevents a common mistake: treating a tape-measure result as if it were a direct measurement of the organs. The waist is useful because it is simple, repeatable and associated with metabolic risk, not because it reveals anatomy perfectly."
+    ],
+    [
+      "Turning risk information into action",
+      "If several metabolic risk factors are present, choose actions that can influence more than one at once. Regular activity can support fitness, glucose regulation and blood pressure. A balanced eating pattern can support weight and lipid management. Smoking cessation, sleep and medication adherence may be equally important. The best plan depends on which risks are actually abnormal. Rather than trying to shrink the waist as quickly as possible, use the measurements to guide a broader risk-reduction plan with appropriate clinical follow-up."
+    ]
+  ],
+  "understanding-the-cost-of-bariatric-surgery-insurance-and-self-pay-options": [
+    [
+      "Questions that expose hidden costs",
+      "Ask whether the quoted amount includes the initial surgeon consultation, anesthesia, hospital stay, pathology or laboratory tests, dietitian appointments, supplements and routine post-operative reviews. Also ask how complications are billed and whether emergency treatment outside the original hospital is covered. If the quote is a package, request the list of included services in writing. These questions make two providers easier to compare because the same categories are being considered. They also reveal recurring expenses that can be overlooked when patients focus on the operation date."
+    ],
+    [
+      "Planning for the maintenance phase",
+      "Bariatric surgery can create costs long after the operation. Supplements, laboratory monitoring, transportation to follow-up visits and occasional additional consultations may continue. Someone considering self-pay surgery should include these recurring costs in the decision rather than treating them as optional. Insurance patients should also check annual deductibles and coverage limits where relevant. A financially sustainable plan is part of medical preparation because financial stress can interfere with follow-up and adherence."
+    ]
+  ],
+  "the-importance-of-psychological-evaluations-before-bariatric-surgery": [
+    [
+      "What patients should disclose",
+      "Be open about binge eating, emotional eating, substance use, depression, anxiety, trauma, sleep problems and major social stressors when asked. Disclosure is useful because it allows the team to plan support. Hiding a problem does not make it disappear after surgery, when eating patterns and coping strategies may change quickly. Patients can also ask which findings are considered temporary barriers, which require treatment and which simply lead to additional support. Understanding the purpose of the questions can make the evaluation feel less like a judgment."
+    ],
+    [
+      "Building a support plan before the operation",
+      "Identify who can help with shopping, meals, appointments, activity and emotional support during recovery. If the patient already has a therapist or psychiatrist, coordination may be useful when permitted. Practical support matters because the early post-operative period includes many new routines. A written support plan can include contact information for the surgical team, nutrition team and mental-health professional. Preparing these resources before surgery is often easier than trying to find them during a difficult recovery."
+    ]
+  ],
+  "what-to-expect-during-recovery-after-sleeve-gastrectomy": [
+    [
+      "Food stages are a clinical progression",
+      "A staged diet after sleeve surgery is designed around healing and tolerance. A patient may be instructed to use liquids, pureed foods, soft foods and later regular textures, but the exact sequence differs by program. The presence of a particular food in another patient's recovery story does not mean it is safe at the same time for someone else. Follow the written plan and ask before advancing a texture. Repeated vomiting can interfere with hydration and nutrition and should not be treated as a normal inconvenience simply because the operation was recent."
+    ],
+    [
+      "Preparing for the transition home",
+      "Before discharge, patients should know how to take prescribed medicines, how to meet fluid goals, what symptoms require urgent contact and when the first follow-up occurs. It helps to have approved foods and drinks available at home and to arrange transportation and support. A simple checklist can reduce decision-making while the body is recovering. If the discharge instructions conflict with an internet article, the treating hospital's instructions take priority because they reflect the actual operation and clinical course."
+    ]
+  ],
+  "how-improving-blood-pressure-is-linked-to-healthy-weight-management": [
+    [
+      "Why a lower scale reading is not the same as controlled hypertension",
+      "A person can lose weight and still have high blood pressure. Conversely, someone can improve blood pressure before losing much weight. Blood pressure is a clinical outcome in its own right, so it should be measured rather than inferred from the scale. When medication is prescribed, the patient should continue it unless the clinician changes the plan. This distinction protects against a common mistake: assuming that a successful weight-loss trend automatically means cardiovascular treatment is finished."
+    ],
+    [
+      "Building a blood-pressure-friendly routine",
+      "A practical routine can combine regular movement, an eating pattern that fits the person's medical needs, adequate sleep and medication adherence. Use home monitoring only as instructed and bring the readings to appointments. If exercise is new, start at a manageable level and increase gradually. The aim is consistency. A single intense workout does not compensate for weeks of inactivity, and a single high-sodium meal does not define the whole diet. Long-term patterns matter more than isolated events."
+    ],
+    [
+      "Use the trend to guide a conversation",
+      "If several weeks of readings improve while weight is falling, bring the record to the prescribing clinician. The clinician can decide whether treatment should stay the same or change. If readings remain elevated, the next step may involve medication adherence, sodium intake, sleep, activity, another condition or a different treatment. A trend turns weight management into measurable cardiovascular care without assuming that one number explains everything."
+    ]
+  ],
+  "how-weight-loss-can-affect-symptoms-of-obesity-related-kidney-disease": [
+    [
+      "Why renal nutrition should not be copied from fitness advice",
+      "Fitness diets often emphasize high protein, large fluid intake or supplements. Those recommendations may be inappropriate for someone with chronic kidney disease. Kidney function determines how the body handles several nutrients and medicines, and the correct limits can change over time. A renal dietitian can adapt the weight-management plan to laboratory results and treatment stage. This is a major reason a general protein or calorie calculator should not be treated as a prescription for kidney disease."
+    ],
+    [
+      "Separating fat loss from fluid changes",
+      "A scale can rise because of body fat, food in the digestive tract or fluid. In kidney or heart disease, fluid changes can be clinically important. A rapid increase over a short period, particularly with swelling or breathlessness, should be discussed promptly. Likewise, an unexpectedly rapid decrease can reflect dehydration rather than successful fat loss. Weight is useful information, but its meaning depends on the medical context in which it is measured."
+    ]
+  ],
+  "the-connection-between-weight-management-and-type-2-diabetes-remission": [
+    [
+      "Remission needs continued surveillance",
+      "Even when glucose improves dramatically, diabetes follow-up does not become unnecessary. The clinician may continue checking A1C, kidney health, blood pressure, lipids and other risk factors. A person in remission should also know what symptoms or changes should prompt earlier testing. This protects against the assumption that a previous diagnosis has permanently disappeared. Remission is a state that can be monitored, not a reason to abandon preventive care."
+    ],
+    [
+      "Building a maintenance plan after major improvement",
+      "The behaviors that supported weight loss need a place in ordinary life after the initial goal. Plan for holidays, travel, illness, stressful periods and changes in activity before they occur. If weight begins to rise or glucose worsens, early contact with the diabetes team can prevent a small change from becoming a large setback. Maintenance is not about perfect adherence. It is about noticing changes and responding while they are still manageable."
+    ],
+    [
+      "Keep remission separate from complication prevention",
+      "Even if a person reaches remission, routine diabetes-related care remains important. Eye, kidney, blood-pressure and lipid risks do not disappear simply because glucose has entered a nondiabetic range. The maintenance plan should therefore preserve the behaviors that supported weight loss and keep regular clinical monitoring. A remission label is an outcome to document, not a reason to stop preventive care."
+    ]
+  ],
+  "how-to-manage-skin-laxity-and-excess-skin-after-major-weight-loss": [
+    [
+      "Why location changes the practical problem",
+      "Loose skin around the abdomen may affect clothing and movement, while folds under the arms or thighs may create different functional or skin-care issues. The amount of tissue, friction and moisture exposure all influence whether the problem is mainly cosmetic or also medical. Describe the exact location and symptoms to a clinician rather than simply saying 'I have loose skin.' Specific information helps determine whether skin care, physical support or a surgical consultation is appropriate."
+    ],
+    [
+      "Setting expectations for body-contouring surgery",
+      "Body-contouring procedures can remove excess tissue but involve scars, recovery time and surgical risks. The final appearance is not completely predictable, and additional procedures may sometimes be considered for different body areas. A consultation should cover the expected benefit, wound-healing considerations, nutritional status and recovery restrictions. Patients after bariatric surgery should make sure their nutritional deficiencies are addressed before elective surgery. The decision is personal and should be made after weight stability and medical readiness are established."
+    ],
+    [
+      "Protect function while deciding on treatment",
+      "While deciding whether surgery is appropriate, focus on practical skin care, comfortable clothing and movement that does not create excessive friction. If a fold repeatedly becomes inflamed, painful or difficult to keep dry, document the episodes and discuss them with a clinician. Functional symptoms can be medically relevant even when the person's main concern is cosmetic. This distinction helps the consultation address both appearance and quality of life."
+    ]
+  ]
 };
