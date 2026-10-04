@@ -10,7 +10,8 @@ function loadSlugs(file){
 const byBatch={};for(const [batch,names] of Object.entries(groups)){byBatch[batch]=[];for(const file of names) byBatch[batch].push(...loadSlugs(file));}
 function walk(dir,out=[]){for(const e of fs.readdirSync(dir,{withFileTypes:true})){const p=path.join(dir,e.name);if(e.isDirectory())walk(p,out);else if(e.name==="index.html")out.push(p)}return out}
 function clean(html){
- let x=html.replace(/<script[\s\S]*?<\/script>/gi," ").replace(/<style[\s\S]*?<\/style>/gi," ");
+ let x=html.replace(/<header[\s\S]*?<\/header>/gi," ").replace(/<script[\s\S]*?<\/script>/gi," ").replace(/<style[\s\S]*?<\/style>/gi," ");
+ x=x.replace(/<section[\s\S]*?<h2[^>]*>(?:Use the matching FitMe Pro calculator|Check the numbers with FitMe Pro|Related FitMe Pro tools and guides|Health and wellness calculators)<\/h2>[\s\S]*?<\/section>/gi," ");
  x=x.replace(/<section[\s\S]*?<h2[^>]*>Frequently Asked Questions<\/h2>[\s\S]*?<\/section>/gi," ");
  x=x.replace(/<section[\s\S]*?<h2[^>]*>Sources(?:\s*&amp;|\s*&)?\s*further reading<\/h2>[\s\S]*?<\/section>/gi," ");
  x=x.replace(/<[^>]+>/g," ").replace(/https?:\/\/\S+/g," URL ").replace(/&amp;/g,"&").replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/\s+/g," ").trim();
