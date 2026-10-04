@@ -132,7 +132,7 @@ function write(route,html){
         .join("");
       const readTimePlaceholder=(isPilot||isPhase3) ? "0 min read" : article.readTime;
       if((isPilot||isPhase3)&&faqItems.length!==4)throw new Error(`${isPilot?"Pilot":"Phase 3"} article ${article.slug} must contain exactly 4 FAQs`);
-      if((isPilot||isPhase3)&&!renderedSections.some(([h]) => /^Worked example/i.test(String(h)))) throw new Error(`${isPilot?"Pilot":"Phase 3"} article ${article.slug} is missing a worked example section`);
+      if((isPilot||isPhase3)&&!renderedSections.some(([h]) => /^(?:Example|Worked example)\\b/i.test(String(h)))) throw new Error(`${isPilot?"Pilot":"Phase 3"} article ${article.slug} is missing a worked example section`);
       const workedExampleHtml=isPilot&&article.workedExample ? "<section style=\"margin:0 0 28px\"><h2 style=\"margin:0 0 10px;line-height:1.25\">Worked Example</h2><p style=\"margin:0;line-height:1.65\">"+esc(article.workedExample)+"</p></section>" : "";
       const faqHtml=faqItems.length ? "<section style=\"margin:0 0 28px\"><h2 style=\"margin:0 0 10px;line-height:1.25\">Frequently Asked Questions</h2>"+faqItems.map(([q,a])=>"<div style=\"margin:0 0 18px\"><h3 style=\"margin:0 0 6px;line-height:1.35\">"+esc(q)+"</h3><p style=\"margin:0;line-height:1.65\">"+esc(a)+"</p></div>").join("")+"</section>" : "";
 
