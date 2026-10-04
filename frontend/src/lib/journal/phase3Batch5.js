@@ -587,28 +587,3 @@ for(const article of PHASE3_BATCH5_ARTICLES){
   article.sources=article.sources.map(([label,url])=>({label,url}));
   article.relatedLinks=[];
 }
-import { PHASE3_BATCH5_PART2 } from "./phase3Batch5Part2";
-export const PHASE3_BATCH5_ALL = [...PHASE3_BATCH5_ARTICLES, ...PHASE3_BATCH5_PART2];
-const BATCH5_SOURCE_POOL = [
-["NIDDK weight management","https://www.niddk.nih.gov/health-information/weight-management"],
-["NIDDK safe weight-loss program","https://www.niddk.nih.gov/health-information/weight-management/choosing-a-safe-and-successful-weight-loss-program"],
-["NIDDK Body Weight Planner","https://www.niddk.nih.gov/bwp"],
-["CDC physical activity basics","https://www.cdc.gov/physical-activity-basics/"],
-["CDC physical activity guidelines","https://www.cdc.gov/physical-activity-basics/guidelines/index.html"],
-["CDC healthy weight","https://www.cdc.gov/healthy-weight-growth/"],
-["CDC losing weight","https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html"],
-["CDC heart disease risk factors","https://www.cdc.gov/heart-disease/risk-factors/index.html"],
-["NHLBI metabolic syndrome","https://www.nhlbi.nih.gov/health/metabolic-syndrome"],
-["NHLBI healthy weight","https://www.nhlbi.nih.gov/health/educational/lose_wt/index.htm"],
-["WHO physical activity","https://www.who.int/publications/i/item/9789240015128"],
-["WHO healthy diet","https://www.who.int/news-room/fact-sheets/detail/healthy-diet"],
-["USDA Dietary Guidelines","https://www.dietaryguidelines.gov/"],
-["USDA MyPlate","https://www.myplate.gov/"],
-["HHS Physical Activity Guidelines","https://health.gov/sites/default/files/2019-09/Physical_Activity_Guidelines_2nd_edition.pdf"],
-["ACSM resistance training","https://www.acsm.org/education-resources/trending-topics-resources/resistance-training"],
-["ACSM physical activity guidance","https://www.acsm.org/education-resources/trending-topics-resources/physical-activity-guidelines"],
-["NIH ODS exercise performance","https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/"],
-["ACOG exercise","https://www.acog.org/womens-health/faqs/exercise-during-pregnancy"],
-["Office on Women's Health physical activity","https://womenshealth.gov/healthy-living/physical-activity"]
-];
-for(let i=0;i<PHASE3_BATCH5_ALL.length;i++){PHASE3_BATCH5_ALL[i].sources=[BATCH5_SOURCE_POOL[i%BATCH5_SOURCE_POOL.length],BATCH5_SOURCE_POOL[(i+10)%BATCH5_SOURCE_POOL.length]];}
