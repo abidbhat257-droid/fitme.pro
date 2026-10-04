@@ -43,9 +43,15 @@ function checkWorkedExampleArithmetic(text){
     const actual=Number(m[2].replace(/,/g,""));
     if(Number.isFinite(expected)&&Math.abs(expected-actual)>0.51)errors.push(`Equation mismatch: ${m[0]}`);
   }
-  const kcalComponents=[...text.matchAll(/([0-9][0-9,.]*)\s*[×x*]\s*([0-9][0-9,.]*)\s*=\s*([0-9][0-9,.]*)\s*kcal/gi)].map(m=>Number(m[3].replace(/,/g,"")));
+  const kcalEquationMatches=[...text.matchAll(/([0-9][0-9,.]*)\s*[×x*]\s*([0-9][0-9,.]*)\s*=\s*([0-9][0-9,.]*)\s*kcal/gi)];
   const remainingMatches=[...text.matchAll(/(?:the\s+)?remaining\s+([0-9][0-9,.]*)\s*kcal\b/gi)];
   const remainingComponents=remainingMatches.map(m=>Number(m[1].replace(/,/g,"")));
+  const kcalComponents=kcalEquationMatches
+    .filter(m=>{
+      const value=Number(m[3].replace(/,/g,""));
+      return !remainingMatches.some(rm=>Number(rm[1].replace(/,/g,""))===value&&rm.index<m.index&&m.index-rm.index<180);
+    })
+    .map(m=>Number(m[3].replace(/,/g,"")));
   const sourceMatches=[...text.matchAll(/([0-9][0-9,.]*)\s*kcal\s+(?:can|could|may)\s+come\s+from\s+(?:carbohydrate|fat|protein)\b/gi)];
   const sourceComponents=sourceMatches
     .filter(m=>!remainingMatches.some(rm=>m.index>=rm.index&&m.index<rm.index+rm[0].length))
