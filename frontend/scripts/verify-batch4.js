@@ -9,6 +9,7 @@ function htmlFor(slug){const file=path.join(build,"journal","weight-loss",slug,"
 function text(html){return String(html).replace(/<script[\s\S]*?<\/script>/gi," ").replace(/<style[\s\S]*?<\/style>/gi," ").replace(/<[^>]+>/g," ").replace(/&amp;/g,"&").replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/\s+/g," ").trim();}
 function words(html){const m=html.match(/<article\b[^>]*>([\s\S]*?)<\/article>/i);return m?text(m[1]).split(/\s+/).filter(Boolean).length:0;}
 const rows=[];
+const batch4HeadingCounts=new Map();
 for(const a of articles){
  const html=htmlFor(a.slug);
  if(!html){failures.push(a.slug+": missing built page");continue;}
@@ -27,8 +28,10 @@ for(const a of articles){
  if(sourceCount<2||sourceCount>4)failures.push(a.slug+": source count "+sourceCount);
  if(!calculatorOk)failures.push(a.slug+": matching calculator link missing");
  if(forbidden.length)failures.push(a.slug+": forbidden heading "+forbidden.join(", "));
- rows.push({title:a.title,slug:a.slug,wordCount:wc,faqs:faqCount,example:hasExample?"yes":"no",readTime:Math.max(1,Math.round(wc/200))+" min read"});
+ rows.push({title:a.title,slug:a.slug,wordCount:wc,faqs:faqCount,example:hasExample?"yes":"no",readTime:Math.max(1,Math.round(wc/200))+" min read",headings});
+ for(const h of new Set(headings.filter(h=>!/^(Frequently Asked Questions|Sources(?: &| and)? further reading)$/i.test(h)))) batch4HeadingCounts.set(h,(batch4HeadingCounts.get(h)||0)+1);
 }
+for(const row of rows){row.uniqueHeadings=row.headings.filter(h=>(batch4HeadingCounts.get(h)||0)===1).length;delete row.headings;}
 const sourceCounts={};for(const a of articles)for(const s of a.sources)sourceCounts[s.url]=(sourceCounts[s.url]||0)+1;
 for(const [url,count] of Object.entries(sourceCounts))if(count>3)failures.push("source reused more than 3 times: "+url+" ("+count+")");
 const allBuilt=[];function walk(dir){for(const e of fs.readdirSync(dir,{withFileTypes:true})){const f=path.join(dir,e.name);if(e.isDirectory())walk(f);else if(e.name==="index.html")allBuilt.push(f);}}walk(build);
