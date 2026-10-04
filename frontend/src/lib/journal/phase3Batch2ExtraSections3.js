@@ -114,11 +114,29 @@ export const PHASE3_BATCH2_EXTRA_SECTIONS3={
       "Final check",
       "Practice the skill during ordinary meals before using it during strong cravings. The goal is awareness and choice, not perfect restraint. Stop if the exercise increases food anxiety or rigid rules."
     ]
+,
+    [
+      "Practice mindful eating across different situations",
+      "The skill becomes more useful when it is tested outside a quiet meal. Try the same brief check-in at breakfast, during a rushed lunch, or when a familiar snack appears after a stressful day. Notice what changes: hunger may be stronger after a long gap between meals, attention may be lower when eating at a desk, and an emotional trigger may be clearer in the evening. The point is not to produce the same decision every time. It is to learn which signals are present and choose a response that fits the situation. If a craving is driven by genuine hunger, eating a satisfying meal is a reasonable response. If the urge is mainly habit or emotion, a short pause can create room for another option without making food forbidden."
+    ],
+    [
+      "Build a repeatable craving plan",
+      "Write a simple if-then plan for one recurring situation. For example: if I notice a strong urge to snack while working late, I will pause for one minute, check whether I have eaten recently, and then choose either a planned snack or another short break. Keep the plan flexible rather than turning it into a rule that must be followed perfectly. After several attempts, review whether the pause improves awareness, reduces automatic eating, or simply adds frustration. A useful strategy is one that fits real life and can be repeated. If cravings involve frequent loss of control, compensatory behaviors, or significant distress, self-help exercises should not replace assessment and treatment from an appropriate professional."
+    ]
   ],
   "how-to-overcome-a-weight-loss-plateau-science-backed-strategies": [
     [
       "Final check",
       "Confirm the trend, review intake and activity, then change one variable. This troubleshooting sequence reduces the risk of responding to normal water variation with an unnecessarily aggressive diet."
+    ]
+,
+    [
+      "Distinguish a true plateau from a noisy scale",
+      "A plateau becomes more convincing when several weeks of comparable weigh-ins show little or no downward trend despite a reasonably consistent routine. Before making a change, check whether sodium intake, carbohydrate intake, menstrual cycle where relevant, bowel patterns, travel, sleep or a new training block could explain temporary scale changes. Waist measurements, clothing fit and training performance can add context, but they should also be collected consistently. The purpose of this review is not to find a reason to dismiss the result; it is to avoid changing a plan because of ordinary short-term noise."
+    ],
+    [
+      "Troubleshoot adherence without blame",
+      "An intended calorie target is not always the same as actual average intake. Compare the planned routine with what happens across weekdays, weekends, social meals and drinks. Look for changes in portion size, cooking fats, snacks, restaurant meals and activity rather than assuming that one food caused the plateau. If tracking becomes stressful, use a simpler method such as repeating a few meals, standardizing portions, or monitoring a small number of behaviors. The aim is accurate feedback, not perfect logging. Once the likely source of the plateau is identified, make one modest adjustment and watch the trend before making another."
     ]
   ]
 };
