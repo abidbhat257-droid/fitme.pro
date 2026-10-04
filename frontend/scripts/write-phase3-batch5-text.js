@@ -2,7 +2,8 @@ const fs=require("fs"),path=require("path");
 const root=path.resolve(__dirname,"..");
 (async()=>{
  const mod=await import(path.join(root,"src","lib","journal","phase3Batch5.js"));
- const articles=mod.PHASE3_BATCH5_ALL||[];
+ const mod2=await import(path.join(root,"src","lib","journal","phase3Batch5Part2.js"));
+ const articles=[...(mod.PHASE3_BATCH5_ARTICLES||[]),...(mod2.PHASE3_BATCH5_PART2||[])];
  const lines=["# Phase 3 Body Composition Batch 5","","Generated from the 20 quarantined Body-Composition rewrite records.",""];
  for(const a of articles){
    lines.push("## "+a.title,"",a.description,"");
