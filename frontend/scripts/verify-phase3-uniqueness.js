@@ -27,7 +27,7 @@ function headings(html){
  return [...html.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/gi)].map(m=>m[1].replace(/<[^>]+>/g," ").replace(/&amp;/g,"&").replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/\s+/g," ").trim()).filter(h=>!/^(Frequently Asked Questions|Sources(?:\s*&| and)?\s*further reading|Use the matching FitMe Pro calculator|Check the numbers with FitMe Pro|Related FitMe Pro tools and guides|Health and wellness calculators)$/i.test(h));
 }
 const built=walk(build),lookup=new Map();
-for(const file of built){const rel=path.relative(build,file).replace(/\\/g,"/");const m=rel.match(/^journal\/weight-loss\/([^/]+)\/index\.html$/);if(m)lookup.set(m[1],fs.readFileSync(file,"utf8"));}
+for(const file of built){const rel=path.relative(build,file).replace(/\\/g,"/");const m=rel.match(/^journal\/[^/]+\/([^/]+)\/index\.html$/);if(m)lookup.set(m[1],fs.readFileSync(file,"utf8"));}
 const reports=[],failures=[];
 for(const [batch,slugs] of Object.entries(byBatch)){
  const arts=slugs.map(slug=>({slug,html:lookup.get(slug)})).filter(a=>a.html);
