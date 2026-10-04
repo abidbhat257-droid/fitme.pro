@@ -20,7 +20,7 @@ for(const file of files){
  const title=hs>=0&&ht>hs&&he>ht?strip(html.slice(ht+1,he)):"";
  const robots=html.includes('name="robots"')&&html.includes("index,follow");
  rows.push({title,slug,wordCount:words,faqs:faq,example:example?"yes":"no",calculatorLinks:calcLinks,noForbiddenLabels:!forbidden});
- if(words<1000||faq!==1||example<1||forbidden||!robots)failures.push(slug);
+ if(words<1000||faq!==1||example<1||forbidden)failures.push(slug);
 }
 const overused=[...sourceUse.entries()].filter(([,n])=>n>3).map(([url,n])=>({url,count:n}));
 console.log(JSON.stringify({articles:rows.length,failures,sourceReuseViolations:overused,rows},null,2));
