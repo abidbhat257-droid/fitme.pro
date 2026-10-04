@@ -120,7 +120,9 @@ for(const slug of batch3Slugs){
 }
 for(const [heading,slugs] of batch3HeadingMap)if(slugs.length>1)batch3HeadingDuplicates.push({heading,slugs});
 const batch3ProtectedOverlap=[...new Set([...pilotEntries.map(x=>x.slug),...phase3Entries.filter(x=>!batch3Slugs.includes(x)).map(x=>x)].filter(x=>batch3Slugs.includes(x)))];
-const batch3ExtraSource=fs.readFileSync(path.join(sourceRoot,"lib","journal","phase3Batch3ExtraSections.js"),"utf8");
+const batch3SourceText=fs.readFileSync(path.join(sourceRoot,"lib","journal","phase3Batch3.js"),"utf8");
+const batch3SourceArticles=new Function(batch3SourceText.replace(/export\s+const\s+PHASE3_BATCH3_ARTICLES\s*=\s*/,"return "))();
+const batch3SourceBySlug=new Map(batch3SourceArticles.map(article=>[article.slug,article]));
 const batch3ExternalLinksBySlug=new Map();
 const batch3SpecificFailures=[];
 for(const slug of batch3Slugs){
@@ -131,11 +133,12 @@ for(const slug of batch3Slugs){
   const workedPos=html.search(/<h2[^>]*>Worked example[^<]*<\/h2>/i);
   const afterWorked=workedPos>=0?html.slice(workedPos):"";
   const calculatorAfterWorked=/(Calorie Deficit Calculator|Protein Calculator|TDEE Calculator|BMI Calculator|Waist-to-Height Ratio Calculator|Weight Loss Calculator)/i.test(afterWorked);
-  const sourceSection=(html.match(/<h2[^>]*>Sources & further reading<\/h2>([\\s\\S]*?)(?=<h2|<\/article>)/i)||[])[1]||"";
-  const externalLinks=(sourceSection.match(/href=["']https?:\/\/[^"']+["']/gi)||[]).length;
-  batch3ExternalLinksBySlug.set(slug,externalLinks);
+  const sourceUrls=Array.isArray(batch3SourceBySlug.get(slug)?.sources)?batch3SourceBySlug.get(slug).sources.map(source=>source.url):[];
+  const sourceCount=sourceUrls.length;
+  const missingSourceUrls=sourceUrls.filter(url=>!html.includes(url));
+  batch3ExternalLinksBySlug.set(slug,sourceCount);
   if(wordCount<1000)batch3SpecificFailures.push({slug,reason:"wordCount",wordCount});
-  if(externalLinks<2||externalLinks>4)batch3SpecificFailures.push({slug,reason:"sourceLinkCount",externalLinks});
+  if(sourceCount<2||sourceCount>4||missingSourceUrls.length)batch3SpecificFailures.push({slug,reason:"sourceLinkCount",sourceCount,missingSourceUrls});
   if(!calculatorAfterWorked)batch3SpecificFailures.push({slug,reason:"calculatorAfterWorked"});
 }
 const batch3CountCheck={expected:18,actual:batch3Slugs.length,pass:batch3Slugs.length===18};
