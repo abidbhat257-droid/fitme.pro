@@ -65,6 +65,9 @@ jobs:
       - name: Write Phase 3 Batch 2 audit text
         run: node scripts/write-phase3-batch2-text.js
 
+      - name: Write Phase 3 Batch 3 audit text
+        run: node scripts/write-phase3-batch3-text.js
+
       - name: Measure repeated content
         run: node scripts/measure-repeated-content.js
 
