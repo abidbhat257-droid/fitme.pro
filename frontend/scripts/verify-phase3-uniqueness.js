@@ -7,7 +7,7 @@ function loadSlugs(file){
  const src=fs.readFileSync(path.join(root,"src","lib","journal",file),"utf8");
  return [...src.matchAll(/slug\s*:\s*["']([^"']+)["']/g)].map(m=>m[1]);
 }
-const byBatch={};for(const [batch,names] of Object.entries(groups)){byBatch[batch]=[];for(const file of names){const arr=loadArticles(file);byBatch[batch].push(...arr.map(a=>a.slug));}}
+const byBatch={};for(const [batch,names] of Object.entries(groups)){byBatch[batch]=[];for(const file of names) byBatch[batch].push(...loadSlugs(file));}
 function walk(dir,out=[]){for(const e of fs.readdirSync(dir,{withFileTypes:true})){const p=path.join(dir,e.name);if(e.isDirectory())walk(p,out);else if(e.name==="index.html")out.push(p)}return out}
 function clean(html){
  let x=html.replace(/<script[\s\S]*?<\/script>/gi," ").replace(/<style[\s\S]*?<\/style>/gi," ");
