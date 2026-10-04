@@ -240,18 +240,32 @@ const articles=topics.map(t=>({
 
 
 function sections(t){
-  const detail={"ozempic-alternatives-natural-and-clinical-options-explained":"Ozempic contains semaglutide and is approved for type 2 diabetes; alternatives should be compared by indication, not brand popularity. NIDDK lists several long-term obesity medicines, while FDA warns against unapproved GLP-1 products.","the-best-fda-approved-weight-loss-medications-an-overview":"NIDDK lists orlistat, phentermine-topiramate, naltrexone-bupropion, liraglutide, semaglutide and tirzepatide for long-term weight management, with setmelanotide reserved for certain rare genetic disorders.","how-to-qualify-for-prescription-weight-loss-drugs":"NIDDK describes adult medication consideration at BMI 30 or greater, or BMI 27 or greater with a weight-related health problem, but product-specific labeling and contraindications still control the decision.","what-is-a-custom-medical-weight-loss-plan":"A custom plan can combine nutrition, activity, behavior support, medication and treatment of other conditions; a calorie estimate is only one input.","compounded-glp-1-medications-safety-efficacy-and-what-to-know":"FDA distinguishes compounded medicines from approved products and has warned about dosing errors and unapproved GLP-1 products; concentration and pharmacy instructions therefore matter.","top-non-surgical-weight-loss-options-for-adults-over-50":"After 50, preserving strength, mobility and adequate nutrition can be as important as reducing weight, so resistance training and individualized nutrition deserve attention.","what-happens-when-you-stop-taking-weight-loss-injections":"NIDDK says some weight regain is likely after stopping weight-management medicines; the reason for stopping determines what the maintenance conversation should cover.","a-patients-guide-to-the-initial-weight-loss-consultation":"The first consultation should review medicines, diagnoses, weight history, eating, activity, sleep and previous attempts before a treatment is selected.","oral-vs-injectable-weight-loss-medications-pros-and-cons":"Oral and injectable medicines are not two single drug classes; orlistat, phentermine-topiramate, naltrexone-bupropion, liraglutide, semaglutide and tirzepatide have different mechanisms and warnings.","how-does-semaglutide-work-for-weight-loss-a-doctors-breakdown":"Semaglutide is a GLP-1 receptor agonist that affects appetite and food intake. Wegovy and Ozempic contain the same active ingredient but have different approved uses.","the-ultimate-guide-to-medical-weight-loss-programs-what-to-expect":"A credible program should identify the clinician, exact medicine, indication, pharmacy, monitoring process, cost and plan if the first treatment fails.","tirzepatide-vs-semaglutide-which-weight-loss-injection-is-right-for-you":"Tirzepatide activates GIP and GLP-1 receptors, while semaglutide activates GLP-1 receptors. Zepbound and Wegovy have different approved indications and labeling.","managing-glp-1-side-effects-how-to-deal-with-nausea-and-fatigue":"Nausea is a recognized GLP-1 adverse effect, while fatigue can also reflect dehydration, low intake, sleep problems or another cause; severe symptoms need prompt review.","how-to-find-a-reputable-medical-weight-loss-clinic-near-me":"A medical weight-loss service should disclose the prescriber, medicine, pharmacy, follow-up and total cost. FDA warnings make vague GLP-1 marketing and unclear dosing important red flags.","how-to-avoid-muscle-loss-while-on-glp-1-weight-loss-drugs":"Weight loss can include lean tissue. Resistance training, adequate nutrition and attention to strength and intake are practical priorities during GLP-1-assisted weight loss."}[t.slug] || t.focus;
-  const titleWords=t.title.replace(/[^A-Za-z0-9 ]/g,"").split(/\s+/).filter(Boolean);
-  const seed=titleWords.slice(0,5).join(" "); const uniquePrefix=seed+" — article-specific context "+(titleWords.length+1)+" ";
+  const detail={
+    "ozempic-alternatives-natural-and-clinical-options-explained":"Ozempic contains semaglutide and is approved for type 2 diabetes; alternatives should be compared by indication, not brand popularity. NIDDK lists several long-term obesity medicines, while FDA warns against unapproved GLP-1 products.",
+    "the-best-fda-approved-weight-loss-medications-an-overview":"NIDDK lists orlistat, phentermine-topiramate, naltrexone-bupropion, liraglutide, semaglutide and tirzepatide for long-term weight management, with setmelanotide reserved for certain rare genetic disorders.",
+    "how-to-qualify-for-prescription-weight-loss-drugs":"NIDDK describes adult medication consideration at BMI 30 or greater, or BMI 27 or greater with a weight-related health problem, but product-specific labeling and contraindications still control the decision.",
+    "what-is-a-custom-medical-weight-loss-plan":"A custom plan can combine nutrition, activity, behavior support, medication and treatment of other conditions; a calorie estimate is only one input.",
+    "compounded-glp-1-medications-safety-efficacy-and-what-to-know":"FDA distinguishes compounded medicines from approved products and has warned about dosing errors and unapproved GLP-1 products; concentration and pharmacy instructions therefore matter.",
+    "top-non-surgical-weight-loss-options-for-adults-over-50":"After 50, preserving strength, mobility and adequate nutrition can be as important as reducing weight, so resistance training and individualized nutrition deserve attention.",
+    "what-happens-when-you-stop-taking-weight-loss-injections":"NIDDK says some weight regain is likely after stopping weight-management medicines; the reason for stopping determines what the maintenance conversation should cover.",
+    "a-patients-guide-to-the-initial-weight-loss-consultation":"The first consultation should review medicines, diagnoses, weight history, eating, activity, sleep and previous attempts before a treatment is selected.",
+    "oral-vs-injectable-weight-loss-medications-pros-and-cons":"Oral and injectable medicines are not two single drug classes; orlistat, phentermine-topiramate, naltrexone-bupropion, liraglutide, semaglutide and tirzepatide have different mechanisms and warnings.",
+    "how-does-semaglutide-work-for-weight-loss-a-doctors-breakdown":"Semaglutide is a GLP-1 receptor agonist that affects appetite and food intake. Wegovy and Ozempic contain the same active ingredient but have different approved uses.",
+    "the-ultimate-guide-to-medical-weight-loss-programs-what-to-expect":"A credible program should identify the clinician, exact medicine, indication, pharmacy, monitoring process, cost and plan if the first treatment fails.",
+    "tirzepatide-vs-semaglutide-which-weight-loss-injection-is-right-for-you":"Tirzepatide activates GIP and GLP-1 receptors, while semaglutide activates GLP-1 receptors. Zepbound and Wegovy have different approved indications and labeling.",
+    "managing-glp-1-side-effects-how-to-deal-with-nausea-and-fatigue":"Nausea is a recognized GLP-1 adverse effect, while fatigue can also reflect dehydration, low intake, sleep problems or another cause; severe symptoms need prompt review.",
+    "how-to-find-a-reputable-medical-weight-loss-clinic-near-me":"A medical weight-loss service should disclose the prescriber, medicine, pharmacy, follow-up and total cost. FDA warnings make vague GLP-1 marketing and unclear dosing important red flags.",
+    "how-to-avoid-muscle-loss-while-on-glp-1-weight-loss-drugs":"Weight loss can include lean tissue. Resistance training, adequate nutrition and attention to strength and intake are practical priorities during GLP-1-assisted weight loss."
+  }[t.slug] || t.focus;
   const headings=[
-    seed+" — the question behind the search",
-    seed+" — mechanism and meaning",
-    seed+" — patient factors that alter the decision",
-    seed+" — details short summaries miss",
-    "Example: "+seed+" in a realistic situation",
-    seed+" — safety signals worth knowing",
-    seed+" — judging the real-world result",
-    seed+" — the next clinical conversation"
+    "What this means",
+    "How it works",
+    "What can change the decision",
+    "Important details",
+    "Worked example",
+    "Safety and monitoring",
+    "How to assess progress",
+    "What to discuss with a clinician"
   ];
   const sentenceSets=[
     [
@@ -337,7 +351,7 @@ function sections(t){
   ];
   return headings.map((heading,i)=>{
     const fill=(s)=>s.replace(/\{d\}/g,detail).replace(/\{m\}/g,t.mechanism).replace(/\{r\}/g,t.risks).replace(/\{o\}/g,t.options).replace(/\{b\}/g,t.boundary).replace(/\{f\}/g,t.focus);
-    return [heading, sentenceSets[i].map((s,j)=>uniquePrefix+"section "+(i+1)+" point "+(j+1)+": "+fill(s)).join(" ")];
+    return [heading, sentenceSets[i].map(fill).join(" ")];
   });
 }
 const rewrittenBatch4 = articles.map((article)=>{
@@ -345,6 +359,6 @@ const rewrittenBatch4 = articles.map((article)=>{
     "how-does-semaglutide-work-for-weight-loss-a-doctors-breakdown":"How Does Semaglutide Work for Weight Loss?",
     "how-to-find-a-reputable-medical-weight-loss-clinic-near-me":"How to Evaluate a Medical Weight Loss Program"
   };
-  return {...article,title:titleOverrides[article.slug]||article.title,description:"A topic-specific FitMe Pro guide covering the mechanism, clinical context, practical decisions, safety considerations and realistic use of "+article.focus+".",sections:sections(article),faqs:article.faqs.map(([q,a])=>[q,article.focus+" — "+a]),matchingCalculators:article.matchingCalculators};
+  return {...article,title:titleOverrides[article.slug]||article.title,description:"A topic-specific FitMe Pro guide covering the mechanism, clinical context, practical decisions, safety considerations and realistic use of "+article.focus+".",sections:sections(article),faqs:article.faqs,matchingCalculators:article.matchingCalculators};
 });
 export const PHASE3_BATCH4_ARTICLES = rewrittenBatch4;
