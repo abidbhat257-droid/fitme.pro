@@ -1,8 +1,8 @@
 const fs=require("fs"),path=require("path");
 const root=path.resolve(__dirname,".."),build=path.join(root,"build"),journal=path.join(build,"journal");
 if(!fs.existsSync(journal)) throw new Error("Missing built Journal directory.");
-const files=fs.readdirSync(path.join(root,"src","lib","journal")).filter(f=>/^phase3Batch(?:1|2[ABC]|3|4)\.js$/.test(f)).sort();
-const groups={Batch1:files.filter(f=>f==="phase3Batch1.js"),Batch2:files.filter(f=>/^phase3Batch2[ABC]\.js$/.test(f)),Batch3:files.filter(f=>f==="phase3Batch3.js"),Batch4:files.filter(f=>f==="phase3Batch4.js")};
+const files=fs.readdirSync(path.join(root,"src","lib","journal")).filter(f=>/^phase3Batch(?:1|2[ABC]|3|4|5(?:Part2)?)\.js$/.test(f)).sort();
+const groups={Batch1:files.filter(f=>f==="phase3Batch1.js"),Batch2:files.filter(f=>/^phase3Batch2[ABC]\.js$/.test(f)),Batch3:files.filter(f=>f==="phase3Batch3.js"),Batch4:files.filter(f=>f==="phase3Batch4.js"),Batch5:files.filter(f=>/^phase3Batch5(?:Part2)?\.js$/.test(f))};
 function loadSlugs(file){
  const src=fs.readFileSync(path.join(root,"src","lib","journal",file),"utf8");
  return [...src.matchAll(/["\']?slug["\']?\s*:\s*["\']([^"\']+)["\']/g)].map(m=>m[1]);
@@ -35,20 +35,29 @@ for(const [batch,slugs] of Object.entries(byBatch)){
    continue;
  }
  const arts=slugs.map(slug=>({slug,html:lookup.get(slug)})).filter(a=>a.html);
- const sentMap=new Map(), headMap=new Map(), grams=new Map();
+ const sentMap=new Map(), headMap=new Map(), grams=new Map(), topicSentMap=new Map();
  for(const a of arts){
    const text=clean(a.html);
    for(const s of new Set(sentences(text))){const key=s.toLowerCase();if(!sentMap.has(key))sentMap.set(key,new Set());sentMap.get(key).add(a.slug);}
    for(const h of new Set(headings(a.html))){const key=h.toLowerCase();if(!headMap.has(key))headMap.set(key,new Set());headMap.get(key).add(a.slug);}
    grams.set(a.slug,sixgrams(text));
+   if(batch==="Batch5"){
+     const m=a.html.match(/<h1[^>]*>([\\s\\S]*?)<\\/h1>/i);
+     const topic=(m?m[1]:"").replace(/<[^>]+>/g," ").replace(/&amp;/g,"&").replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/\\s+/g," ").trim();
+     const normalized=topic?text.toLowerCase().split(topic.toLowerCase()).join("x"):text.toLowerCase();
+     for(const s of new Set(sentences(normalized))){const key=s.toLowerCase();if(!topicSentMap.has(key))topicSentMap.set(key,new Set());topicSentMap.get(key).add(a.slug);}
+   }
  }
  const sentenceViolations=[...sentMap.entries()].filter(([,s])=>s.size>2).map(([sentence,s])=>({sentence,articles:[...s]}));
  const headingViolations=[...headMap.entries()].filter(([,s])=>s.size>3).map(([heading,s])=>({heading,articles:[...s]}));
  let highest={percent:0,a:"",b:"",shared:0,denominator:0};
  for(let i=0;i<arts.length;i++)for(let j=i+1;j<arts.length;j++){const A=grams.get(arts[i].slug),B=grams.get(arts[j].slug),shared=[...A].filter(x=>B.has(x)).length,den=Math.min(A.size,B.size),pct=den?shared/den*100:0;if(pct>highest.percent)highest={percent:Number(pct.toFixed(2)),a:arts[i].slug,b:arts[j].slug,shared,denominator:den};}
- const report={articles:arts.length,sentenceMaxShared:sentenceViolations.length?Math.max(...sentenceViolations.map(v=>v.articles.length)):0,sentenceViolations:sentenceViolations.length,highestSixWordPhraseOverlapPercent:highest.percent,highestSixWordPhrasePair:[highest.a,highest.b],headingMaxShared:headingViolations.length?Math.max(...headingViolations.map(v=>v.articles.length)):0,headingViolations:headingViolations.length};
+ const topicSentenceViolations=[...topicSentMap.entries()].filter(([,s])=>s.size>=3).map(([sentence,s])=>({sentence,articles:[...s]}));
+ const topicSentenceTotal=arts.reduce((sum,a)=>sum+sentences(clean(a.html)).length,0);
+ const topicSentenceViolationPercent=topicSentenceTotal?Number((topicSentenceViolations.reduce((sum,v)=>sum+v.articles.length,0)/topicSentenceTotal*100).toFixed(2)):0;
+ const report={articles:arts.length,sentenceMaxShared:sentenceViolations.length?Math.max(...sentenceViolations.map(v=>v.articles.length)):0,sentenceViolations:sentenceViolations.length,highestSixWordPhraseOverlapPercent:highest.percent,highestSixWordPhrasePair:[highest.a,highest.b],headingMaxShared:headingViolations.length?Math.max(...headingViolations.map(v=>v.articles.length)):0,headingViolations:headingViolations.length,topicSentenceViolations:topicSentenceViolations.length,topicSentenceViolationPercent};
  reports.push({batch,...report});
- if(sentenceViolations.length||highest.percent>=10||headingViolations.length)failures.push({batch,sentenceViolations:sentenceViolations.slice(0,5),highest,headingViolations:headingViolations.slice(0,5)});
+ if(sentenceViolations.length||highest.percent>=10||headingViolations.length||(batch==="Batch5"&&topicSentenceViolationPercent>5))failures.push({batch,sentenceViolations:sentenceViolations.slice(0,5),highest,headingViolations:headingViolations.slice(0,5),topicSentenceViolations:topicSentenceViolations.slice(0,5),topicSentenceViolationPercent});
 }
 console.log(JSON.stringify({ruleA:"No sentence of 8+ words may occur in more than 2 articles of a batch.",ruleB:"Highest shared unique 6-word-phrase overlap must be <10% of the smaller article phrase set.",ruleC:"No section heading may occur in more than 3 articles, excluding FAQ and Sources headings.",reports,failures},null,2));
 if(failures.length)process.exit(23);
