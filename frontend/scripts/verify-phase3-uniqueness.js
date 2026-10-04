@@ -10,7 +10,7 @@ function loadSlugs(file){
 const byBatch={};for(const [batch,names] of Object.entries(groups)){byBatch[batch]=[];for(const file of names) byBatch[batch].push(...loadSlugs(file));}
 function walk(dir,out=[]){for(const e of fs.readdirSync(dir,{withFileTypes:true})){const p=path.join(dir,e.name);if(e.isDirectory())walk(p,out);else if(e.name==="index.html")out.push(p)}return out}
 function clean(html){
- let x=html.replace(/<header[\s\S]*?<\/header>/gi," ").replace(/<script[\s\S]*?<\/script>/gi," ").replace(/<style[\s\S]*?<\/style>/gi," ");
+ const am=html.match(/<article\\b[^>]*>([\\s\\S]*?)<\\/article>/i); let x=am?am[1]:html;html.replace(/<header[\s\S]*?<\/header>/gi," ").replace(/<script[\s\S]*?<\/script>/gi," ").replace(/<style[\s\S]*?<\/style>/gi," ");
  x=x.replace(/<section[\s\S]*?<h2[^>]*>(?:Use the matching FitMe Pro calculator|Check the numbers with FitMe Pro|Related FitMe Pro tools and guides|Health and wellness calculators)<\/h2>[\s\S]*?<\/section>/gi," ");
  x=x.replace(/<section[\s\S]*?<h2[^>]*>Frequently Asked Questions<\/h2>[\s\S]*?<\/section>/gi," ");
  x=x.replace(/<section[\s\S]*?<h2[^>]*>Sources(?:\s*&amp;|\s*&)?\s*further reading<\/h2>[\s\S]*?<\/section>/gi," ");
@@ -19,7 +19,7 @@ function clean(html){
 }
 function sentences(text){return text.split(/(?<=[.!?])\s+/).map(s=>s.trim()).filter(s=>s.split(/\s+/).length>=8);}
 function sixgrams(text){const w=text.toLowerCase().replace(/[^a-z0-9'\s]/g," ").split(/\s+/).filter(Boolean),set=new Set();for(let i=0;i<=w.length-6;i++)set.add(w.slice(i,i+6).join(" "));return set;}
-function headings(html){return [...html.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/gi)].map(m=>m[1].replace(/<[^>]+>/g," ").replace(/&amp;/g,"&").replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/\s+/g," ").trim()).filter(h=>!/^(Frequently Asked Questions|Sources(?:\s*&| and)?\s*further reading)$/i.test(h));}
+function headings(html){const am=html.match(/<article\\b[^>]*>([\\s\\S]*?)<\\/article>/i); html=am?am[1]:html; return [...html.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/gi)].map(m=>m[1].replace(/<[^>]+>/g," ").replace(/&amp;/g,"&").replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/\s+/g," ").trim()).filter(h=>!/^(Frequently Asked Questions|Sources(?:\s*&| and)?\s*further reading)$/i.test(h));}
 const built=walk(build),lookup=new Map();
 for(const file of built){const rel=path.relative(build,file).replace(/\\/g,"/");const m=rel.match(/^journal\/weight-loss\/([^/]+)\/index\.html$/);if(m)lookup.set(m[1],fs.readFileSync(file,"utf8"));}
 const reports=[],failures=[];
