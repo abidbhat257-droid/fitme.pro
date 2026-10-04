@@ -209,44 +209,113 @@ faqs:[
 ]}
 ];
 
+
 function sections(t){
-  return [
-    ["The direct answer",t.focus+" should be approached as a medical or health-management question rather than a promise of a particular scale result. The practical answer is to match the intervention to the person's health goal, current condition, previous treatment and ability to follow the plan. In this topic, "+t.mechanism+". That distinction matters because two people can search the same phrase while needing different treatment. The useful question is whether the proposed approach is appropriate, evidence-supported and sustainable for this individual. Current NIDDK and FDA information emphasizes the role of clinical assessment for prescription treatment. Lifestyle measures remain relevant even when medication is used."],
-    ["How the treatment works",t.focus+" is sometimes explained too simply online. The important detail is that "+t.mechanism+". This does not mean the intervention works independently of the rest of the person's physiology. Food intake, activity, sleep, medical conditions and treatment adherence can all affect the outcome. A clear explanation should separate the mechanism from the expected result. It should also distinguish a treatment that changes appetite or energy intake from one that treats a related condition. Understanding what the intervention actually changes makes it easier to recognize exaggerated claims and to know when a lack of progress or a new symptom deserves professional review."],
-    ["Who may benefit", "The appropriate candidate depends on "+t.risks+". For prescription treatment, the approved indication and a clinician's assessment matter. For lifestyle treatment, the starting point should reflect current fitness, eating patterns, schedule and health status. Someone with the same BMI as another person may need a different approach because of diabetes, blood pressure, medication use, mobility, pregnancy planning, gastrointestinal symptoms or previous treatment response. A useful assessment identifies the health problem first and then compares available options. This prevents choosing a treatment simply because it is popular or because another person reported a dramatic result."],
-    ["What to discuss with a clinician","A focused appointment should cover the treatment goal, expected benefit, important risks, other medicines, practical requirements and follow-up. For "+t.focus+", ask specifically about "+t.risks+". If medication is involved, ask for the exact generic and brand name, the approved indication, dose instructions, common adverse effects, warning symptoms and what happens if the response is inadequate. If lifestyle treatment is the main intervention, ask how progress will be measured and what would trigger a change. Written instructions are useful because weight-management decisions can involve several moving parts."],
-    ["Common mistakes to avoid","A common mistake is treating a general recommendation as a personal prescription. In "+t.focus+", other errors include changing medication without medical advice, assuming a supplement is equivalent to a prescription product, ignoring side effects because the scale is moving, or setting an overly aggressive target. Another mistake is measuring success only by body weight when the real goal also involves blood pressure, glucose, mobility, sleep, strength or quality of life. A better approach is to define the outcome before starting and then review the trend. When something is not working, reassessment is safer than automatically adding more restriction or another product."],
-    ["Safety and evidence boundaries","Evidence has limits, and those limits matter. A trial average cannot predict one person's exact result, and a calculator cannot diagnose a medical condition. For "+t.focus+", an important boundary is that "+t.boundary+". Product approvals, prescribing rules and clinical recommendations can also change, so current official sources should be used for medication decisions. If someone is pregnant, planning pregnancy, has a significant chronic condition, takes several medicines or develops severe symptoms, individualized medical advice becomes more important. Educational information can prepare useful questions, but it does not replace diagnosis, prescribing or emergency care."],
-    ["A practical day-to-day approach","A workable routine makes the evidence usable. Start with one or two actions that directly support the treatment goal, record the relevant outcome, and review the trend rather than reacting to one day. If appetite changes, note food tolerance and hydration. If exercise is part of the plan, track consistency and function. If medication is used, keep the product name, dose instructions and follow-up date accessible. Cost and access also belong in the plan because a treatment that cannot be obtained consistently is difficult to maintain. Sustainable care is usually less dramatic than social-media transformations, but it is easier to evaluate and adjust."],
-    ["Example: a realistic decision","Imagine a person researching "+t.focus+". The person has a specific health goal and is unsure which information online is reliable. Instead of copying another person's routine, the person lists current medicines, recent weight history, relevant diagnoses, typical eating and activity patterns, and the main reason for seeking treatment. A clinician can then compare the available options and explain expected benefits and risks. The person leaves with a defined next step, a monitoring plan and a clear point for reassessment. The scenario shows how a broad search question can become a concrete decision without promising a particular amount of weight loss."]
+  const detail={"ozempic-alternatives-natural-and-clinical-options-explained":"Ozempic contains semaglutide and is approved for type 2 diabetes; alternatives should be compared by indication, not brand popularity. NIDDK lists several long-term obesity medicines, while FDA warns against unapproved GLP-1 products.","the-best-fda-approved-weight-loss-medications-an-overview":"NIDDK lists orlistat, phentermine-topiramate, naltrexone-bupropion, liraglutide, semaglutide and tirzepatide for long-term weight management, with setmelanotide reserved for certain rare genetic disorders.","how-to-qualify-for-prescription-weight-loss-drugs":"NIDDK describes adult medication consideration at BMI 30 or greater, or BMI 27 or greater with a weight-related health problem, but product-specific labeling and contraindications still control the decision.","what-is-a-custom-medical-weight-loss-plan":"A custom plan can combine nutrition, activity, behavior support, medication and treatment of other conditions; a calorie estimate is only one input.","compounded-glp-1-medications-safety-efficacy-and-what-to-know":"FDA distinguishes compounded medicines from approved products and has warned about dosing errors and unapproved GLP-1 products; concentration and pharmacy instructions therefore matter.","top-non-surgical-weight-loss-options-for-adults-over-50":"After 50, preserving strength, mobility and adequate nutrition can be as important as reducing weight, so resistance training and individualized nutrition deserve attention.","what-happens-when-you-stop-taking-weight-loss-injections":"NIDDK says some weight regain is likely after stopping weight-management medicines; the reason for stopping determines what the maintenance conversation should cover.","a-patients-guide-to-the-initial-weight-loss-consultation":"The first consultation should review medicines, diagnoses, weight history, eating, activity, sleep and previous attempts before a treatment is selected.","oral-vs-injectable-weight-loss-medications-pros-and-cons":"Oral and injectable medicines are not two single drug classes; orlistat, phentermine-topiramate, naltrexone-bupropion, liraglutide, semaglutide and tirzepatide have different mechanisms and warnings.","how-does-semaglutide-work-for-weight-loss-a-doctors-breakdown":"Semaglutide is a GLP-1 receptor agonist that affects appetite and food intake. Wegovy and Ozempic contain the same active ingredient but have different approved uses.","the-ultimate-guide-to-medical-weight-loss-programs-what-to-expect":"A credible program should identify the clinician, exact medicine, indication, pharmacy, monitoring process, cost and plan if the first treatment fails.","tirzepatide-vs-semaglutide-which-weight-loss-injection-is-right-for-you":"Tirzepatide activates GIP and GLP-1 receptors, while semaglutide activates GLP-1 receptors. Zepbound and Wegovy have different approved indications and labeling.","managing-glp-1-side-effects-how-to-deal-with-nausea-and-fatigue":"Nausea is a recognized GLP-1 adverse effect, while fatigue can also reflect dehydration, low intake, sleep problems or another cause; severe symptoms need prompt review.","how-to-find-a-reputable-medical-weight-loss-clinic-near-me":"A medical weight-loss service should disclose the prescriber, medicine, pharmacy, follow-up and total cost. FDA warnings make vague GLP-1 marketing and unclear dosing important red flags.","how-to-avoid-muscle-loss-while-on-glp-1-weight-loss-drugs":"Weight loss can include lean tissue. Resistance training, adequate nutrition and attention to strength and intake are practical priorities during GLP-1-assisted weight loss."}[t.slug] || t.focus;
+  const titleWords=t.title.replace(/[^A-Za-z0-9 ]/g,"").split(/\s+/).filter(Boolean);
+  const seed=titleWords.slice(0,4).join(" ");
+  const headings=[
+    seed+" — the question behind the search",
+    "What the body, treatment, or decision actually involves",
+    "The patient factors that can change the answer",
+    "Details that are easy to miss in short summaries",
+    "Example: "+t.focus+" in an ordinary clinical situation",
+    "Safety signals and reasons to seek help",
+    "How to judge whether the approach is working",
+    "What a sensible next conversation looks like"
   ];
+  const sentenceSets=[
+    [
+      "The central point is {d}.",
+      "That fact gives the topic a narrower meaning than a generic weight-loss slogan.",
+      "The relevant mechanism is {m}.",
+      "A reader should not turn that mechanism into a promise about a personal result.",
+      "The person's goal matters because {r}.",
+      "A useful decision starts by identifying the problem being treated.",
+      "That keeps an educational explanation separate from an individualized prescription.",
+      "The exact product or intervention should be identified before practical instructions are copied."
+    ],
+    [
+      "The physiology matters because {m}.",
+      "That mechanism explains why {o}.",
+      "It does not establish that every person will respond in the same way.",
+      "Clinical context can change the balance between benefit and burden.",
+      "The relevant context here includes {r}.",
+      "Those factors belong in the assessment rather than in a generic checklist.",
+      "The safest interpretation is to use current authoritative information for treatment decisions.",
+      "A patient can then ask a more precise question at the next appointment."
+    ],
+    [
+      "The candidate for this approach is not defined by one search result.",
+      "The important background is {d}.",
+      "A clinician may also consider {r}.",
+      "Those details can make two apparently similar patients different treatment candidates.",
+      "The practical option may be {o}.",
+      "That option still needs to fit the person's health status and preferences.",
+      "If circumstances change, the plan can be reassessed.",
+      "That is more reliable than copying a routine from someone with a different history."
+    ],
+    [
+      "One overlooked detail is {d}.",
+      "Another is that {o}.",
+      "This matters when the person is deciding between alternatives.",
+      "The treatment should be evaluated against its intended outcome rather than popularity.",
+      "The boundary is {b}.",
+      "That boundary prevents a calculator, supplement, advertisement, or anecdote from becoming a diagnosis.",
+      "The patient should know what information would change the plan.",
+      "Clear information makes follow-up more useful."
+    ],
+    [
+      "Example: imagine a person researching {f}.",
+      "The person writes down the main goal, current medicines, relevant diagnoses and previous attempts.",
+      "The clinician then considers {d}.",
+      "The discussion also covers {r}.",
+      "If the proposed approach is appropriate, the patient receives a specific monitoring plan rather than a vague promise.",
+      "If it is not appropriate, the next option is explained.",
+      "The person leaves knowing what to do and what would trigger reassessment.",
+      "The scenario stays realistic because it does not assume a guaranteed amount of weight loss."
+    ],
+    [
+      "Safety depends on more than the intended benefit.",
+      "For this topic, {r}.",
+      "Severe or rapidly worsening symptoms should not be managed from an internet article.",
+      "Medication users should keep the exact product information available.",
+      "People should also disclose pregnancy plans, other medicines and relevant medical conditions when appropriate.",
+      "A change in treatment should be discussed with the responsible clinician.",
+      "That is especially important when a product has specific contraindications or interactions.",
+      "The goal is useful treatment without avoidable harm."
+    ],
+    [
+      "Progress should be measured against the original goal.",
+      "Depending on the topic, that may include weight, waist, blood pressure, glucose, symptoms, strength, mobility, appetite or treatment tolerance.",
+      "A single scale reading cannot answer every clinical question.",
+      "The useful trend is the one that reflects the reason treatment began.",
+      "If the result is inadequate, review adherence, access, sleep, medicines and the original diagnosis.",
+      "Do not automatically respond to a plateau with extreme restriction.",
+      "A clinician can decide whether the current strategy should continue or change.",
+      "This creates a feedback loop rather than a one-time decision."
+    ],
+    [
+      "Before changing treatment, ask which exact intervention is being used.",
+      "Confirm the indication, instructions, common adverse effects and warning symptoms.",
+      "Ask how long the plan will be reviewed and what counts as an inadequate response.",
+      "If cost or access is a problem, raise it before doses are skipped or altered.",
+      "If the treatment is stopped, ask what maintenance strategy replaces it.",
+      "The practical option remains {o}.",
+      "The evidence boundary remains {b}.",
+      "A clear next conversation is safer than improvising a new regimen."
+    ]
+  ];
+  return headings.map((heading,i)=>{
+    const fill=(s)=>s.replace(/\{d\}/g,detail).replace(/\{m\}/g,t.mechanism).replace(/\{r\}/g,t.risks).replace(/\{o\}/g,t.options).replace(/\{b\}/g,t.boundary).replace(/\{f\}/g,t.focus);
+    return [heading, sentenceSets[i].map(fill).join(" ")];
+  });
 }
-const articles=topics.map(t=>({
- title:t.title,slug:t.slug,category:"Weight Management",categorySlug:"weight-loss",date:"October 4, 2026",phase3:true,
- description:"This evidence-informed guide explains "+t.focus+" in practical terms, including how the approach works, who may benefit, safety considerations, common mistakes and questions to discuss with a qualified professional.",
- sections:[...sections(t),["How to judge progress with "+t.focus,"Progress should be judged against the goal that brought the person to "+t.focus+". A useful review looks at the relevant trend rather than a single day: weight and waist when appropriate, symptoms and treatment tolerance for medicines, strength and function when preserving muscle matters, and practical adherence when the plan depends on daily routines. If the expected outcome is not appearing, review the intervention, access, adherence and medical context before adding another product or making a drastic change. This creates a clear feedback loop and gives the patient and clinician a specific reason to continue, adjust or replace the current approach."]],faqs:t.faqs,
- matchingCalculators:[{label:t.calc[0],url:t.calc[1]}],relatedLinks:[{label:t.related[0],url:t.related[1]}],
- sources:t.sources.map(s=>({label:s[0],url:s[1]}))
-}));
-const sourcePool = [
-["NIDDK — Prescription Medications for Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"],
-["FDA — New Oral Weight-Management Medicine","https://www.fda.gov/news-events/press-announcements/fda-approves-first-new-molecular-entity-under-national-priority-voucher-program"],
-["FDA — Weight Loss Product Notifications","https://www.fda.gov/drugs/medication-health-fraud-notifications/weight-loss-product-notifications"],
-["FDA — Tirzepatide Approved for Chronic Weight Management","https://www.fda.gov/news-events/press-announcements/fda-approves-new-medication-chronic-weight-management"],
-["FDA — Wegovy Prescribing Information","https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215256s031lbl218316s003lbl.pdf"],
-["NICE — Guide for Prescribing Medicines for Overweight and Obesity","https://www.nice.org.uk/guidance/ng246/resources/a-guide-for-prescribing-medicines-to-manage-overweight-and-obesity-pdf-19828318651333"],
-["CDC — Steps for Losing Weight","https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html"],
-["NIDDK — Weight Management for Health Professionals","https://www.niddk.nih.gov/health-information/professionals/clinical-tools-patient-management/weight-management"],
-["CDC — Physical Activity and Weight","https://www.cdc.gov/healthy-weight-growth/physical-activity/"],
-["CDC — Healthy Eating for a Healthy Weight","https://www.cdc.gov/healthy-weight-growth/healthy-eating/index.html"],
-["CDC — Tips for Keeping Weight Off","https://www.cdc.gov/healthy-weight-growth/losing-weight/keeping-it-off.html"],
-["FDA — Concerns With Unapproved GLP-1 Drugs","https://www.fda.gov/drugs/drug-alerts-and-statements/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss"],
-["FDA — Compounding and the FDA: Questions and Answers","https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"],
-["FDA — GLP-1 Receptor Agonists Safety Update","https://www.fda.gov/drugs/drug-safety-communications/update-fdas-ongoing-evaluation-reports-suicidal-thoughts-or-actions-patients-taking-certain-type"],
-["NIDDK — Semaglutide and Weight Management in Diabetes","https://www.niddk.nih.gov/health-information/professionals/diabetes-discoveries-practice/new-in-medications-for-weight-management"]
-];
-articles.forEach((article,index)=>{
-  const start=(index*3)%sourcePool.length;
-  article.sources=[0,1,2].map(offset=>{const s=sourcePool[(start+offset)%sourcePool.length];return {label:s[0],url:s[1]};});
+const rewrittenBatch4 = articles.map((article)=>{
+  const titleOverrides={
+    "how-does-semaglutide-work-for-weight-loss-a-doctors-breakdown":"How Does Semaglutide Work for Weight Loss?",
+    "how-to-find-a-reputable-medical-weight-loss-clinic-near-me":"How to Evaluate a Medical Weight Loss Program"
+  };
+  return {...article,title:titleOverrides[article.slug]||article.title,description:"A topic-specific FitMe Pro guide covering the mechanism, clinical context, practical decisions, safety considerations and realistic use of "+article.focus+".",sections:sections(article),faqs:article.faqs.map(([q,a])=>[q,article.focus+" — "+a]),matchingCalculators:article.matchingCalculators};
 });
-export const PHASE3_BATCH4_ARTICLES = articles;
+export const PHASE3_BATCH4_ARTICLES = rewrittenBatch4;
