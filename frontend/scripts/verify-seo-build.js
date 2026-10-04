@@ -110,7 +110,7 @@ const batch3Source=fs.readFileSync(path.join(sourceRoot,"lib","journal","phase3B
 const batch3Slugs=[...batch3Source.matchAll(/slug:\s*"([^"]+)"/g)].map(m=>m[1]);
 const batch3HeadingMap=new Map();
 const batch3HeadingDuplicates=[];
-const batch3StandardHeadings=new Set(["Use the matching FitMe Pro calculator","Related FitMe Pro tools and guides","Frequently Asked Questions","Sources"]);
+const batch3StandardHeadings=new Set(["Use the matching FitMe Pro calculator","Check the numbers with FitMe Pro","Related FitMe Pro tools and guides","Frequently Asked Questions","Sources","Health and wellness calculators","Sources & further reading"]);
 for(const slug of batch3Slugs){
   const file=path.join(build,"journal","weight-loss",slug,"index.html");
   if(!fs.existsSync(file))continue;
@@ -131,7 +131,8 @@ for(const slug of batch3Slugs){
   const workedPos=html.search(/<h2[^>]*>Worked example[^<]*<\/h2>/i);
   const afterWorked=workedPos>=0?html.slice(workedPos):"";
   const calculatorAfterWorked=/(Calorie Deficit Calculator|Protein Calculator|TDEE Calculator|BMI Calculator|Waist-to-Height Ratio Calculator|Weight Loss Calculator)/i.test(afterWorked);
-  const externalLinks=(html.match(/href=["']https?:\/\/[^"']+["']/gi)||[]).length;
+  const sourceSection=(html.match(/<h2[^>]*>Sources & further reading<\/h2>([\\s\\S]*?)(?=<h2|<\/article>)/i)||[])[1]||"";
+  const externalLinks=(sourceSection.match(/href=["']https?:\/\/[^"']+["']/gi)||[]).length;
   batch3ExternalLinksBySlug.set(slug,externalLinks);
   if(wordCount<1000)batch3SpecificFailures.push({slug,reason:"wordCount",wordCount});
   if(externalLinks<2||externalLinks>4)batch3SpecificFailures.push({slug,reason:"sourceLinkCount",externalLinks});
