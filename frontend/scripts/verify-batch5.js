@@ -8,7 +8,7 @@ const rows=[],failures=[],sourceUse=new Map();
 for(const file of files){
  const html=fs.readFileSync(file,"utf8"),rel=path.relative(journal,file).replace(/\\/g,"/"),slug=rel.split("/")[1];
  const words=strip(html).split(" ").filter(Boolean).length;
- const faq=html.includes(">Frequently Asked Questions</h2>")?1:0;
+ const faqStart=html.indexOf(">Frequently Asked Questions</h2>"),faqEnd=html.indexOf("</section>",faqStart); const faq=faqStart>=0&&faqEnd>faqStart?(html.slice(faqStart,faqEnd).match(/<h3/g)||[]).length:0;
  const example=/<h2[^>]*>Example(?:\b|:)/i.test(html)?1:0;
  const external=[...new Set((html.match(/https?:\/\/[^"' <]+/g)||[]))];
  for(const u of external)sourceUse.set(u,(sourceUse.get(u)||0)+1);
