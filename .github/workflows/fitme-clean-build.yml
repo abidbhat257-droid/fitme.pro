@@ -77,5 +77,8 @@ jobs:
       - name: Verify SEO build
         run: node scripts/verify-seo-build.js
 
+      - name: Verify Phase 3 content uniqueness
+        run: node scripts/verify-phase3-uniqueness.js
+
       - name: Verify Batch 4 and arithmetic phrase
         run: node scripts/verify-batch4.js
