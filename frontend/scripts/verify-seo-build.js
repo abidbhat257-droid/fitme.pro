@@ -103,7 +103,7 @@ const pilotReport=pilotEntries.map(({slug,category,categorySlug})=>{
   const readTimeMatch=html.match(/\b(\d+) min read\b/i);
   const readTime=readTimeMatch?readTimeMatch[0]:"";
   const expectedReadTime=calculatePilotReadTime(wordCount);
-  const workedExample=h2.some((heading)=>/^(?:example|worked example)\\b/i.test(heading));
+  const workedExample=h2.some((heading)=>/^(?:example|worked example)\b/i.test(heading));
   const genericHeadings=h2.filter((heading)=>genericPilotHeadings.includes(heading));
   return{slug,category,categorySlug,wordCount,h2,faqCount,schemaFaqCount,workedExample,readTime,expectedReadTime,genericHeadings};
 });
