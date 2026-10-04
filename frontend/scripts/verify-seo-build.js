@@ -46,7 +46,7 @@ function checkWorkedExampleArithmetic(text){
   const kcalComponents=[...text.matchAll(/([0-9][0-9,.]*)\s*[×x*]\s*([0-9][0-9,.]*)\s*=\s*([0-9][0-9,.]*)\s*kcal/gi)].map(m=>Number(m[3].replace(/,/g,"")));
   const remainingMatches=[...text.matchAll(/(?:the\s+)?remaining\s+([0-9][0-9,.]*)\s*kcal\b/gi)];
   const remainingComponents=remainingMatches.map(m=>Number(m[1].replace(/,/g,"")));
-  const sourceMatches=[...text.matchAll(/([0-9][0-9,.]*)\s*kcal\s+(?:can|could|may)\s+come\s+from\\s+(?:carbohydrate|fat|protein)\\b/gi)];
+  const sourceMatches=[...text.matchAll(/([0-9][0-9,.]*)\s*kcal\s+(?:can|could|may)\s+come\s+from\s+(?:carbohydrate|fat|protein)\\b/gi)];
   const sourceComponents=sourceMatches
     .filter(m=>!/(?:the\s+)?remaining\s*$/i.test(text.slice(Math.max(0,m.index-20),m.index)))
     .map(m=>Number(m[1].replace(/,/g,"")));
@@ -59,8 +59,8 @@ function checkWorkedExampleArithmetic(text){
   return errors;
 }
 function runWorkedExampleArithmeticTests(){
-  const correct="170 g protein × 4 = 680 kcal; 80 g fat × 9 = 720 kcal; the remaining 1,350 kcal can come from carbohydrate. Total 2,750 kcal.";
-  const incorrect="170 g protein × 4 = 680 kcal; 80 g fat × 9 = 720 kcal; the remaining 1,300 kcal can come from carbohydrate. Total 2,750 kcal.";
+  const correct="170 × 4 = 680 kcal; 80 × 9 = 720 kcal; the remaining 1,350 kcal can come from carbohydrate. Total 2,750 kcal.";
+  const incorrect="170 × 4 = 680 kcal; 80 × 9 = 720 kcal; the remaining 1,300 kcal can come from carbohydrate. Total 2,750 kcal.";
   const correctErrors=checkWorkedExampleArithmetic(correct);
   const incorrectErrors=checkWorkedExampleArithmetic(incorrect);
   if(correctErrors.length)throw new Error("Arithmetic checker self-test failed: correct remaining-calorie example was rejected: "+correctErrors.join("; "));
