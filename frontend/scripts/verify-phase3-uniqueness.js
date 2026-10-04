@@ -24,7 +24,7 @@ function sixgrams(text){const w=text.toLowerCase().replace(/[^a-z0-9'\s]/g," ").
 function headings(html){
  const start=html.indexOf("<article"); const end=html.lastIndexOf("</article>");
  html=start>=0&&end>start?html.slice(start,end):html;
- return [...html.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/gi)].map(m=>m[1].replace(/<[^>]+>/g," ").replace(/&amp;/g,"&").replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/\s+/g," ").trim()).filter(h=>!/^(Frequently Asked Questions|Sources(?:\s*&| and)?\s*further reading|Use the matching FitMe Pro calculator|Check the numbers with FitMe Pro|Related FitMe Pro tools and guides|Health and wellness calculators)$/i.test(h));
+ return [...html.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/gi)].map(m=>m[1].replace(/<[^>]+>/g," ").replace(/&amp;/g,"&").replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/\s+/g," ").trim()).filter(h=>!/^(Frequently Asked Questions|Quick Summary|Sources(?:\s*&| and)?\s*further reading|Use the matching FitMe Pro calculator|Check the numbers with FitMe Pro|Related FitMe Pro tools and guides|Health and wellness calculators)$/i.test(h));
 }
 const built=walk(build),lookup=new Map();
 for(const file of built){const rel=path.relative(build,file).replace(/\\/g,"/");const m=rel.match(/^journal\/[^/]+\/([^/]+)\/index\.html$/);if(m)lookup.set(m[1],fs.readFileSync(file,"utf8"));}
