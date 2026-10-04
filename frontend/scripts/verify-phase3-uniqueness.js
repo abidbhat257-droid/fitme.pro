@@ -35,9 +35,15 @@ for(const [batch,slugs] of Object.entries(byBatch)){
    continue;
  }
  const arts=slugs.map(slug=>({slug,html:lookup.get(slug)})).filter(a=>a.html);
- const sentMap=new Map(), headMap=new Map(), grams=new Map(), topicSentMap=new Map();
+ const sentMap=new Map(), headMap=new Map(), grams=new Map(), topicSentMap=new Map(), firstSentenceMap=new Map();
  for(const a of arts){
    const text=clean(a.html);
+   const first=(text.match(/^(.*?[.!?])(?:\\s|$)/)||[])[1]||"";
+   if(first.split(/\\s+/).filter(Boolean).length>=8){
+     const key=first.toLowerCase().trim();
+     if(!firstSentenceMap.has(key))firstSentenceMap.set(key,new Set());
+     firstSentenceMap.get(key).add(a.slug);
+   }
    for(const s of new Set(sentences(text))){const key=s.toLowerCase();if(!sentMap.has(key))sentMap.set(key,new Set());sentMap.get(key).add(a.slug);}
    for(const h of new Set(headings(a.html))){const key=h.toLowerCase();if(!headMap.has(key))headMap.set(key,new Set());headMap.get(key).add(a.slug);}
    grams.set(a.slug,sixgrams(text));
@@ -49,6 +55,7 @@ for(const [batch,slugs] of Object.entries(byBatch)){
    }
  }
  const sentenceViolations=[...sentMap.entries()].filter(([,s])=>s.size>2).map(([sentence,s])=>({sentence,articles:[...s]}));
+ const firstSentenceViolations=[...firstSentenceMap.entries()].filter(([,s])=>s.size>=3).map(([sentence,s])=>({sentence,articles:[...s]}));
  const headingViolations=[...headMap.entries()].filter(([,s])=>s.size>3).map(([heading,s])=>({heading,articles:[...s]}));
  let highest={percent:0,a:"",b:"",shared:0,denominator:0};
  for(let i=0;i<arts.length;i++)for(let j=i+1;j<arts.length;j++){const A=grams.get(arts[i].slug),B=grams.get(arts[j].slug),shared=[...A].filter(x=>B.has(x)).length,den=Math.min(A.size,B.size),pct=den?shared/den*100:0;if(pct>highest.percent)highest={percent:Number(pct.toFixed(2)),a:arts[i].slug,b:arts[j].slug,shared,denominator:den};}
@@ -56,8 +63,9 @@ for(const [batch,slugs] of Object.entries(byBatch)){
  const topicSentenceTotal=arts.reduce((sum,a)=>sum+sentences(clean(a.html)).length,0);
  const topicSentenceViolationPercent=topicSentenceTotal?Number((topicSentenceViolations.reduce((sum,v)=>sum+v.articles.length,0)/topicSentenceTotal*100).toFixed(2)):0;
  const report={articles:arts.length,sentenceMaxShared:sentenceViolations.length?Math.max(...sentenceViolations.map(v=>v.articles.length)):0,sentenceViolations:sentenceViolations.length,highestSixWordPhraseOverlapPercent:highest.percent,highestSixWordPhrasePair:[highest.a,highest.b],headingMaxShared:headingViolations.length?Math.max(...headingViolations.map(v=>v.articles.length)):0,headingViolations:headingViolations.length,topicSentenceViolations:topicSentenceViolations.length,topicSentenceViolationPercent};
- reports.push({batch,...report});
- if(sentenceViolations.length||highest.percent>=10||headingViolations.length||(batch==="Batch5"&&topicSentenceViolationPercent>5))failures.push({batch,sentenceViolations:sentenceViolations.slice(0,5),highest,headingViolations:headingViolations.slice(0,5),topicSentenceViolations:topicSentenceViolations.slice(0,5),topicSentenceViolationPercent});
+ reports.push({batch,...report,firstSentenceViolations:firstSentenceViolations.length});
+ if(firstSentenceViolations.length||sentenceViolations.length||highest.percent>=10||headingViolations.length||(batch==="Batch5"&&topicSentenceViolationPercent>5))failures.push({batch,firstSentenceViolations:firstSentenceViolations.slice(0,5),sentenceViolations:sentenceViolations.slice(0,5),highest,headingViolations:headingViolations.slice(0,5),topicSentenceViolations:topicSentenceViolations.slice(0,5),topicSentenceViolationPercent});
 }
-console.log(JSON.stringify({ruleA:"No sentence of 8+ words may occur in more than 2 articles of a batch.",ruleB:"Highest shared unique 6-word-phrase overlap must be <10% of the smaller article phrase set.",ruleC:"No section heading may occur in more than 3 articles, excluding FAQ and Sources headings.",reports,failures},null,2));
+console.log(JSON.stringify({ruleA:"No sentence of 8+ words may occur in more than 2 articles of a batch.",ruleB:"Highest shared unique 6-word-phrase overlap must be <10% of the smaller article phrase set.",ruleC:"No section heading may occur in more than 3 articles, excluding FAQ and Sources headings.",
+ruleD:"No identical first sentence of 8+ words may occur in 3 or more articles of any batch.",reports,failures},null,2));
 if(failures.length)process.exit(23);
