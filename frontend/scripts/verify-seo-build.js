@@ -115,7 +115,7 @@ for(const slug of batch3Slugs){
   const file=path.join(build,"journal","weight-loss",slug,"index.html");
   if(!fs.existsSync(file))continue;
   const html=fs.readFileSync(file,"utf8");
-  const headings=[...html.matchAll(/<h2[^>]*>([\\s\\S]*?)<\\/h2>/gi)].map(m=>m[1].replace(/<[^>]+>/g,"").replace(/&amp;/g,"&").trim()).filter(h=>!batch3StandardHeadings.has(h)&&!/^Worked example/i.test(h));
+  const headings=[...html.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/gi)].map(m=>m[1].replace(/<[^>]+>/g,"").replace(/&amp;/g,"&").trim()).filter(h=>!batch3StandardHeadings.has(h)&&!/^Worked example/i.test(h));
   for(const h of headings){const list=batch3HeadingMap.get(h)||[];list.push(slug);batch3HeadingMap.set(h,list);}
 }
 for(const [heading,slugs] of batch3HeadingMap)if(slugs.length>1)batch3HeadingDuplicates.push({heading,slugs});
@@ -139,7 +139,7 @@ for(const slug of batch3Slugs){
 }
 const batch3CountCheck={expected:18,actual:batch3Slugs.length,pass:batch3Slugs.length===18};
 const priorPhase3HeadingSet=new Set();
-for(const slug of phase3Entries.filter(x=>!batch3Slugs.includes(x))){const file=path.join(build,"journal","weight-loss",slug,"index.html");if(!fs.existsSync(file))continue;const html=fs.readFileSync(file,"utf8");for(const m of html.matchAll(/<h2[^>]*>([\\s\\S]*?)<\\/h2>/gi)){const h=m[1].replace(/<[^>]+>/g,"").replace(/&amp;/g,"&").trim();if(!batch3StandardHeadings.has(h)&&!/^Worked example/i.test(h))priorPhase3HeadingSet.add(h);}}
+for(const slug of phase3Entries.filter(x=>!batch3Slugs.includes(x))){const file=path.join(build,"journal","weight-loss",slug,"index.html");if(!fs.existsSync(file))continue;const html=fs.readFileSync(file,"utf8");for(const m of html.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/gi)){const h=m[1].replace(/<[^>]+>/g,"").replace(/&amp;/g,"&").trim();if(!batch3StandardHeadings.has(h)&&!/^Worked example/i.test(h))priorPhase3HeadingSet.add(h);}}
 const batch3PriorHeadingOverlap=[...batch3HeadingMap.keys()].filter(h=>priorPhase3HeadingSet.has(h));
 const batch3HeadingCheck={duplicateHeadings:batch3HeadingDuplicates,priorArticleReuse:batch3PriorHeadingOverlap,pass:batch3HeadingDuplicates.length===0&&batch3PriorHeadingOverlap.length===0};
 
