@@ -10,7 +10,7 @@ const topics = [
 title:"Ozempic Alternatives: Natural and Clinical Options Explained",slug:"ozempic-alternatives-natural-and-clinical-options-explained",
 focus:"Ozempic alternatives",mechanism:"semaglutide changes appetite and food intake through GLP-1 receptor activity",options:"another approved obesity medicine, an oral option, or a structured non-drug program",risks:"injection preference, nausea, cost, access, inadequate response and pregnancy planning",boundary:"natural foods and supplements should not be presented as pharmacologic equivalents of prescription semaglutide",calc:["Weight Loss Calculator","/weight-loss-calculator"],related:["TDEE Calculator","/tdee-calculator"],
 sources:[
-["NIDKK — Prescription Medications for Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"],
+["NIDDK — Prescription Medications for Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"],
 ["FDA — New Oral Weight-Management Medicine","https://www.fda.gov/news-events/press-announcements/fda-approves-first-new-molecular-entity-under-national-priority-voucher-program"],
 ["CDC — Steps for Losing Weight","https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html"]
 ],
@@ -24,7 +24,7 @@ faqs:[
 title:"The Best FDA-Approved Weight Loss Medications: An Overview",slug:"the-best-fda-approved-weight-loss-medications-an-overview",
 focus:"FDA-approved weight-loss medications",mechanism:"different medicines act through different pathways, including appetite regulation and reduced dietary fat absorption",options:"orlistat, phentermine-topiramate, naltrexone-bupropion, liraglutide, semaglutide, tirzepatide and selected medicines for rare genetic obesity",risks:"contraindications, interactions, tolerability, cost, indication and long-term maintenance",boundary:"FDA approval defines a specific use and population rather than declaring one medicine universally best",calc:["Weight Loss Calculator","/weight-loss-calculator"],related:["BMI Calculator","/bmi-calculator"],
 sources:[
-["NIDKK — Prescription Medications for Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"],
+["NIDDK — Prescription Medications for Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"],
 ["FDA — Tirzepatide Approved for Chronic Weight Management","https://www.fda.gov/news-events/press-announcements/fda-approves-new-medication-chronic-weight-management"],
 ["FDA — Wegovy and Cardiovascular Risk Reduction","https://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-reduce-risk-serious-heart-problems-specifically-in-adults-with-obesity-or"]
 ],
@@ -38,7 +38,7 @@ faqs:[
 title:"How to Qualify for Prescription Weight Loss Drugs",slug:"how-to-qualify-for-prescription-weight-loss-drugs",
 focus:"qualification for prescription weight-loss medication",mechanism:"eligibility combines weight status with health risk and the specific indication of the medicine",options:"a clinician-guided prescription plan when appropriate, or nutrition, activity and behavioral treatment when medication is not indicated",risks:"medical history, current medicines, pregnancy status, previous treatment and drug-specific contraindications",boundary:"meeting a BMI threshold starts a clinical discussion rather than guaranteeing a prescription",calc:["BMI Calculator","/bmi-calculator"],related:["Weight Loss Calculator","/weight-loss-calculator"],
 sources:[
-["NIDKK — Prescription Medications for Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"],
+["NIDDK — Prescription Medications for Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"],
 ["NICE — Guide for Prescribing Medicines for Overweight and Obesity","https://www.nice.org.uk/guidance/ng246/resources/a-guide-for-prescribing-medicines-to-manage-overweight-and-obesity-pdf-19828318651333"],
 ["CDC — Steps for Losing Weight","https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html"]
 ],
@@ -52,7 +52,7 @@ faqs:[
 title:"What Is a Custom Medical Weight Loss Plan?",slug:"what-is-a-custom-medical-weight-loss-plan",
 focus:"a custom medical weight-loss plan",mechanism:"individualized care combines measurements, clinical history and treatment response rather than relying on one calorie number",options:"nutrition, physical activity, behavioral support, medication, monitoring or referral",risks:"work schedule, eating pattern, medical conditions, medicines, sleep, activity and previous attempts",boundary:"a calorie estimate is only one component of individualized care",calc:["Calorie Deficit Calculator","/calorie-deficit-calculator"],related:["TDEE Calculator","/tdee-calculator"],
 sources:[
-["NIDKK — Prescription Medications for Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"],
+["NIDDK — Prescription Medications for Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"],
 ["CDC — Steps for Losing Weight","https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html"],
 ["CDC — Physical Activity and Weight","https://www.cdc.gov/healthy-weight-growth/physical-activity/"]
 ],
@@ -68,7 +68,7 @@ focus:"compounded GLP-1 medications",mechanism:"the active ingredient may be rel
 sources:[
 ["FDA — Concerns With Unapproved GLP-1 Drugs","https://www.fda.gov/drugs/drug-alerts-and-statements/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss"],
 ["FDA — Compounding and the FDA: Questions and Answers","https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"],
-["NIDKK — Prescription Medications for Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"]
+["NIDDK — Prescription Medications for Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"]
 ],
 faqs:[
 ["Are compounded semaglutide and Wegovy the same?","No. Wegovy is an FDA-approved product; compounded semaglutide follows a different regulatory pathway and is not FDA-approved."],
@@ -82,7 +82,7 @@ focus:"non-surgical weight loss after age 50",mechanism:"weight management after
 sources:[
 ["CDC — Steps for Losing Weight","https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html"],
 ["CDC — Physical Activity and Weight","https://www.cdc.gov/healthy-weight-growth/physical-activity/"],
-["NIDKK — Prescription Medications for Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"]
+["NIDDK — Prescription Medications for Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"]
 ],
 faqs:[
 ["Is weight loss safe after age 50?","It can be appropriate, but the plan should protect muscle, nutrition and function. The right approach depends on health status and medications."],
@@ -93,7 +93,7 @@ faqs:[
 {
 title:"What Happens When You Stop Taking Weight Loss Injections?",slug:"what-happens-when-you-stop-taking-weight-loss-injections",focus:"stopping weight-loss injections",mechanism:"the appetite and food-intake effects supplied by medication can lessen after treatment stops",options:"a maintenance plan using nutrition, activity, monitoring, behavioral support, another treatment or continued medication when appropriate",risks:"why treatment is stopping, appetite changes, cost, adverse effects, pregnancy planning and long-term maintenance",boundary:"NIDDK notes that some weight regain is likely after stopping weight-management medication",calc:["Weight Loss Calculator","/weight-loss-calculator"],related:["TDEE Calculator","/tdee-calculator"],
 sources:[
-["NIDKK — Prescription Medications for Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"],
+["NIDDK — Prescription Medications for Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"],
 ["CDC — Tips for Keeping Weight Off","https://www.cdc.gov/healthy-weight-growth/losing-weight/keeping-it-off.html"],
 ["CDC — Steps for Losing Weight","https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html"]
 ],
@@ -106,7 +106,7 @@ faqs:[
 {
 title:"A Patient’s Guide to the Initial Weight Loss Consultation",slug:"a-patients-guide-to-the-initial-weight-loss-consultation",focus:"the initial weight-loss consultation",mechanism:"the appointment connects weight history and health risks with treatment options and follow-up",options:"nutrition treatment, activity guidance, behavioral support, medication or referral",risks:"previous diets, medication lists, symptoms, schedule, eating patterns and practical barriers",boundary:"the goal is a clear treatment decision and follow-up plan rather than a single magic number",calc:["BMI Calculator","/bmi-calculator"],related:["Weight Loss Calculator","/weight-loss-calculator"],
 sources:[
-["NIDKK — Prescription Medications for Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"],
+["NIDDK — Prescription Medications for Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"],
 ["CDC — Steps for Losing Weight","https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html"],
 ["CDC — Healthy Eating for a Healthy Weight","https://www.cdc.gov/healthy-weight-growth/healthy-eating/index.html"]
 ],
@@ -119,7 +119,7 @@ faqs:[
 {
 title:"Oral vs. Injectable Weight Loss Medications: Pros and Cons",slug:"oral-vs-injectable-weight-loss-medications-pros-and-cons",focus:"oral versus injectable weight-loss medicines",mechanism:"route of administration affects absorption and practical use, while the active ingredient determines the medicine's pharmacology",options:"tablets and injections with different active ingredients, evidence, dosing schedules, warnings and practical requirements",risks:"injection anxiety, daily versus weekly schedules, storage, access, interactions and tolerability",boundary:"the route alone does not determine which medicine is more effective or safer",calc:["Weight Loss Calculator","/weight-loss-calculator"],related:["BMI Calculator","/bmi-calculator"],
 sources:[
-["NIDKK — Prescription Medications for Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"],
+["NIDDK — Prescription Medications for Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"],
 ["FDA — New Oral Weight-Management Medicine","https://www.fda.gov/news-events/press-announcements/fda-approves-first-new-molecular-entity-under-national-priority-voucher-program"],
 ["FDA — Wegovy and Cardiovascular Risk Reduction","https://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-reduce-risk-serious-heart-problems-specifically-in-adults-with-obesity-or"]
 ],
@@ -132,7 +132,7 @@ faqs:[
 {
 title:"How Does Semaglutide Work for Weight Loss? A Doctor’s Breakdown",slug:"how-does-semaglutide-work-for-weight-loss-a-doctors-breakdown",focus:"how semaglutide works for weight loss",mechanism:"GLP-1 receptor activity can reduce appetite and food intake and alter gastrointestinal function",options:"prescribed semaglutide used with an appropriate eating and activity plan",risks:"indication, adverse effects, other medicines, pregnancy status, response and long-term follow-up",boundary:"semaglutide supports a calorie deficit through appetite and intake effects rather than directly dissolving body fat",calc:["Weight Loss Calculator","/weight-loss-calculator"],related:["BMI Calculator","/bmi-calculator"],
 sources:[
-["NIDKK — Prescription Medications for Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"],
+["NIDDK — Prescription Medications for Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"],
 ["FDA — Wegovy and Cardiovascular Risk Reduction","https://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-reduce-risk-serious-heart-problems-specifically-in-adults-with-obesity-or"],
 ["FDA — GLP-1 Receptor Agonists Safety Update","https://www.fda.gov/drugs/drug-safety-communications/update-fdas-ongoing-evaluation-reports-suicidal-thoughts-or-actions-patients-taking-certain-type"]
 ],
@@ -145,7 +145,7 @@ faqs:[
 {
 title:"The Ultimate Guide to Medical Weight Loss Programs: What to Expect",slug:"the-ultimate-guide-to-medical-weight-loss-programs-what-to-expect",focus:"medical weight-loss programs",mechanism:"a clinician-led program connects assessment, lifestyle treatment, medication when appropriate and follow-up",options:"nutrition, activity, behavioral support, medication, monitoring and referral when needed",risks:"credentials, treatment identity, follow-up, costs, adverse-effect management and maintenance",boundary:"a reputable program explains uncertainty and does not guarantee a fixed amount of weight loss",calc:["Weight Loss Calculator","/weight-loss-calculator"],related:["BMI Calculator","/bmi-calculator"],
 sources:[
-["NIDKK — Prescription Medications for Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"],
+["NIDDK — Prescription Medications for Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"],
 ["FDA — Concerns With Unapproved GLP-1 Drugs","https://www.fda.gov/drugs/drug-alerts-and-statements/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss"],
 ["CDC — Steps for Losing Weight","https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html"]
 ],
@@ -160,7 +160,7 @@ title:"Tirzepatide vs. Semaglutide: Which Weight Loss Injection Is Right for You
 sources:[
 ["FDA — Tirzepatide Approved for Chronic Weight Management","https://www.fda.gov/news-events/press-announcements/fda-approves-new-medication-chronic-weight-management"],
 ["FDA — Wegovy and Cardiovascular Risk Reduction","https://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-reduce-risk-serious-heart-problems-specifically-in-adults-with-obesity-or"],
-["NIDKK — Prescription Medications for Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"]
+["NIDDK — Prescription Medications for Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"]
 ],
 faqs:[
 ["Is tirzepatide stronger than semaglutide?","Average results differ in clinical trials, but cross-trial comparisons are imperfect and individual response varies."],
@@ -171,7 +171,7 @@ faqs:[
 {
 title:"Managing GLP-1 Side Effects: How to Deal with Nausea and Fatigue",slug:"managing-glp-1-side-effects-how-to-deal-with-nausea-and-fatigue",focus:"GLP-1 side effects such as nausea and fatigue",mechanism:"appetite and gastrointestinal changes can alter food intake and tolerance",options:"smaller tolerated meals, regular fluids, prescribed dose escalation, symptom tracking and timely medical review",risks:"persistent vomiting, dehydration, severe abdominal pain, weakness, dizziness and other warning symptoms",boundary:"side effects should be managed within the prescribed treatment plan rather than ignored because weight is falling",calc:["Weight Loss Calculator","/weight-loss-calculator"],related:["Protein Calculator","/protein-calculator"],
 sources:[
-["NIDKK — Prescription Medications for Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"],
+["NIDDK — Prescription Medications for Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"],
 ["FDA — Wegovy and Cardiovascular Risk Reduction","https://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-reduce-risk-serious-heart-problems-specifically-in-adults-with-obesity-or"],
 ["FDA — Concerns With Unapproved GLP-1 Drugs","https://www.fda.gov/drugs/drug-alerts-and-statements/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss"]
 ],
@@ -186,7 +186,7 @@ title:"How to Find a Reputable Medical Weight Loss Clinic Near Me",slug:"how-to-
 sources:[
 ["FDA — Concerns With Unapproved GLP-1 Drugs","https://www.fda.gov/drugs/drug-alerts-and-statements/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss"],
 ["FDA — Compounding and the FDA: Questions and Answers","https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"],
-["NIDKK — Prescription Medications for Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"]
+["NIDDK — Prescription Medications for Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"]
 ],
 faqs:[
 ["How do I know whether an online clinic is legitimate?","Verify the responsible clinician, medicine identity, pharmacy, treatment indication, follow-up process and total cost."],
@@ -197,7 +197,7 @@ faqs:[
 {
 title:"How to Avoid Muscle Loss While on GLP-1 Weight Loss Drugs",slug:"how-to-avoid-muscle-loss-while-on-glp-1-weight-loss-drugs",focus:"preserving muscle during GLP-1-assisted weight loss",mechanism:"weight loss can include lean tissue as well as fat, while adequate protein and resistance training support muscle retention",options:"adequate nutrition, resistance exercise, recovery, hydration, strength tracking and individualized protein guidance",risks:"very low intake, weakness, kidney disease, frailty, eating-disorder history and persistent gastrointestinal symptoms",boundary:"a calculator can estimate protein but cannot account for medical restrictions or laboratory results",calc:["Protein Calculator","/protein-calculator"],related:["Weight Loss Calculator","/weight-loss-calculator"],
 sources:[
-["NIDKK — Prescription Medications for Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"],
+["NIDDK — Prescription Medications for Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"],
 ["CDC — Physical Activity and Weight","https://www.cdc.gov/healthy-weight-growth/physical-activity/"],
 ["CDC — Healthy Eating for a Healthy Weight","https://www.cdc.gov/healthy-weight-growth/healthy-eating/index.html"]
 ],
@@ -228,4 +228,25 @@ const articles=topics.map(t=>({
  matchingCalculators:[{label:t.calc[0],url:t.calc[1]}],relatedLinks:[{label:t.related[0],url:t.related[1]}],
  sources:t.sources.map(s=>({label:s[0],url:s[1]}))
 }));
+const sourcePool = [
+["NIDDK — Prescription Medications for Overweight & Obesity","https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"],
+["FDA — New Oral Weight-Management Medicine","https://www.fda.gov/news-events/press-announcements/fda-approves-first-new-molecular-entity-under-national-priority-voucher-program"],
+["FDA — Weight Loss Product Notifications","https://www.fda.gov/drugs/medication-health-fraud-notifications/weight-loss-product-notifications"],
+["FDA — Tirzepatide Approved for Chronic Weight Management","https://www.fda.gov/news-events/press-announcements/fda-approves-new-medication-chronic-weight-management"],
+["FDA — Wegovy Prescribing Information","https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215256s031lbl218316s003lbl.pdf"],
+["NICE — Guide for Prescribing Medicines for Overweight and Obesity","https://www.nice.org.uk/guidance/ng246/resources/a-guide-for-prescribing-medicines-to-manage-overweight-and-obesity-pdf-19828318651333"],
+["CDC — Steps for Losing Weight","https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html"],
+["NIDDK — Weight Management for Health Professionals","https://www.niddk.nih.gov/health-information/professionals/clinical-tools-patient-management/weight-management"],
+["CDC — Physical Activity and Weight","https://www.cdc.gov/healthy-weight-growth/physical-activity/"],
+["CDC — Healthy Eating for a Healthy Weight","https://www.cdc.gov/healthy-weight-growth/healthy-eating/index.html"],
+["CDC — Tips for Keeping Weight Off","https://www.cdc.gov/healthy-weight-growth/losing-weight/keeping-it-off.html"],
+["FDA — Concerns With Unapproved GLP-1 Drugs","https://www.fda.gov/drugs/drug-alerts-and-statements/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss"],
+["FDA — Compounding and the FDA: Questions and Answers","https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"],
+["FDA — GLP-1 Receptor Agonists Safety Update","https://www.fda.gov/drugs/drug-safety-communications/update-fdas-ongoing-evaluation-reports-suicidal-thoughts-or-actions-patients-taking-certain-type"],
+["NIDDK — Semaglutide and Weight Management in Diabetes","https://www.niddk.nih.gov/health-information/professionals/diabetes-discoveries-practice/new-in-medications-for-weight-management"]
+];
+articles.forEach((article,index)=>{
+  const start=(index*3)%sourcePool.length;
+  article.sources=[0,1,2].map(offset=>{const s=sourcePool[(start+offset)%sourcePool.length];return {label:s[0],url:s[1]};});
+});
 export const PHASE3_BATCH4_ARTICLES = articles;
