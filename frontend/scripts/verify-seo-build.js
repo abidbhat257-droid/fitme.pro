@@ -26,7 +26,7 @@ const internalLinkChecks={};for(const route of ["/","/journal","/calculators"]){
 homepageReport.calculatorMissing=homepageCalculatorMissing;homepageReport.calculatorExtra=homepageCalculatorExtra;homepageReport.brokenInternalLinks=internalLinkChecks["/"].broken.length;
 const phase3SourcePaths=["phase3Batch1.js","phase3Batch2A.js","phase3Batch2B.js","phase3Batch2C.js","phase3Batch3.js"];
 const phase3Entries=phase3SourcePaths.flatMap((fileName)=>{const sourceText=fs.readFileSync(path.join(sourceRoot,"lib","journal",fileName),"utf8");const propertySlugs=[...sourceText.matchAll(/["\']?slug["\']?\s*:\s*["\']([^"\']+)["\']/g)].map((m)=>m[1]);const factorySlugs=[...sourceText.matchAll(/\bmake\(\s*["\'][^"\']+["\']\s*,\s*["\']([^"\']+)["\']/g)].map((m)=>m[1]);return [...new Set([...propertySlugs,...factorySlugs])];});
-const phase3GenericHeadings=["What This Approach Means","How It May Affect Weight Management","Common Misunderstandings","Practical Takeaway","A practical checklist","Further practical guidance","Final practical note","Closing note","Context for interpretation"];
+const phase3GenericHeadings=["What This Approach Means","How It May Affect Weight Management","Common Misunderstandings","Practical Takeaway","A practical checklist","Further practical guidance","Final practical note","Closing note","Context for interpretation","Final check","Evidence boundary"];
 function journalArticleText(html){const match=html.match(/<article\b[^>]*>([\s\S]*?)<\/article>/i);if(!match)return "";return match[1].replace(/<script[\s\S]*?<\/script>/gi," ").replace(/<style[\s\S]*?<\/style>/gi," ").replace(/<[^>]+>/g," ").replace(/&amp;/g,"&").replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/\s+/g," ").trim();}
 function paragraphTexts(html){const match=html.match(/<article\b[^>]*>([\s\S]*?)<\/article>/i);if(!match)return [];return [...match[1].matchAll(/<p\b[^>]*>([\s\S]*?)<\/p>/gi)].map(m=>m[1].replace(/<[^>]+>/g," ").replace(/&amp;/g,"&").replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/\s+/g," ").trim()).filter(p=>p.length>40);}
 function wordCountText(text){return text?text.split(/\s+/).filter(Boolean).length:0;}
@@ -121,7 +121,10 @@ for(const slug of batch3Slugs){
 for(const [heading,slugs] of batch3HeadingMap)if(slugs.length>1)batch3HeadingDuplicates.push({heading,slugs});
 const batch3ProtectedOverlap=[...new Set([...pilotEntries.map(x=>x.slug),...phase3Entries.filter(x=>!batch3Slugs.includes(x)).map(x=>x)].filter(x=>batch3Slugs.includes(x)))];
 const batch3CountCheck={expected:18,actual:batch3Slugs.length,pass:batch3Slugs.length===18};
-const batch3HeadingCheck={duplicateHeadings:batch3HeadingDuplicates,pass:batch3HeadingDuplicates.length===0};
+const priorPhase3HeadingSet=new Set();
+for(const slug of phase3Entries.filter(x=>!batch3Slugs.includes(x))){const file=path.join(build,"journal","weight-loss",slug,"index.html");if(!fs.existsSync(file))continue;const html=fs.readFileSync(file,"utf8");for(const m of html.matchAll(/<h2[^>]*>([\\s\\S]*?)<\\/h2>/gi)){const h=m[1].replace(/<[^>]+>/g,"").replace(/&amp;/g,"&").trim();if(!batch3StandardHeadings.has(h)&&!/^Worked example/i.test(h))priorPhase3HeadingSet.add(h);}}
+const batch3PriorHeadingOverlap=[...batch3HeadingMap.keys()].filter(h=>priorPhase3HeadingSet.has(h));
+const batch3HeadingCheck={duplicateHeadings:batch3HeadingDuplicates,priorArticleReuse:batch3PriorHeadingOverlap,pass:batch3HeadingDuplicates.length===0&&batch3PriorHeadingOverlap.length===0};
 
 console.log(JSON.stringify({homepage:homepageReport,internalLinkChecks,pilotReport},null,2));
 console.log(JSON.stringify({phase3Report,phase3CountCheck,batch3HeadingCheck,batch3ProtectedOverlap},null,2));
