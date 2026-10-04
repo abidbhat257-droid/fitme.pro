@@ -3,11 +3,9 @@ const root=path.resolve(__dirname,".."),build=path.join(root,"build"),journal=pa
 if(!fs.existsSync(journal)) throw new Error("Missing built Journal directory.");
 const files=fs.readdirSync(path.join(root,"src","lib","journal")).filter(f=>/^phase3Batch(?:1|2[ABC]|3|4)\.js$/.test(f)).sort();
 const groups={Batch1:files.filter(f=>f==="phase3Batch1.js"),Batch2:files.filter(f=>/^phase3Batch2[ABC]\.js$/.test(f)),Batch3:files.filter(f=>f==="phase3Batch3.js"),Batch4:files.filter(f=>f==="phase3Batch4.js")};
-function loadArticles(file){
+function loadSlugs(file){
  const src=fs.readFileSync(path.join(root,"src","lib","journal",file),"utf8");
- const m=src.match(/export\s+const\s+\w+\s*=\s*([\s\S]*);\s*$/);
- if(!m) throw new Error("Cannot load "+file);
- return new Function("return "+m[1])();
+ return [...src.matchAll(/slug\s*:\s*["']([^"']+)["']/g)].map(m=>m[1]);
 }
 const byBatch={};for(const [batch,names] of Object.entries(groups)){byBatch[batch]=[];for(const file of names){const arr=loadArticles(file);byBatch[batch].push(...arr.map(a=>a.slug));}}
 function walk(dir,out=[]){for(const e of fs.readdirSync(dir,{withFileTypes:true})){const p=path.join(dir,e.name);if(e.isDirectory())walk(p,out);else if(e.name==="index.html")out.push(p)}return out}
