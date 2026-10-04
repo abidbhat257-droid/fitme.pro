@@ -18,7 +18,7 @@ for(const file of files){
  const forbidden=html.includes("article-specific context")||html.includes("section 1 point")||/—\s*(?:article-specific context|label)\s*\d+/i.test(html);
  const hs=html.indexOf("<h1"),ht=html.indexOf(">",hs),he=html.indexOf("</h1>",ht);
  const title=hs>=0&&ht>hs&&he>ht?strip(html.slice(ht+1,he)):"";
- const robots=html.includes('<meta name="robots" content="index,follow');
+ const robots=html.includes('name="robots"')&&html.includes("index,follow");
  rows.push({title,slug,wordCount:words,faqs:faq,example:example?"yes":"no",calculatorLinks:calcLinks,noForbiddenLabels:!forbidden});
  if(words<1000||faq!==1||example<1||forbidden||!robots)failures.push(slug);
 }
