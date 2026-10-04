@@ -12,9 +12,10 @@ import { PHASE3_BATCH2C_ARTICLES } from "./journal/phase3Batch2C";
 import { PHASE3_BATCH2_EXTRA_SECTIONS } from "./journal/phase3Batch2ExtraSections";
 import { PHASE3_BATCH2_EXTRA_SECTIONS2 } from "./journal/phase3Batch2ExtraSections2";
 import { PHASE3_BATCH2_EXTRA_SECTIONS3 } from "./journal/phase3Batch2ExtraSections3";
+import { PHASE3_BATCH3_ARTICLES } from "./journal/phase3Batch3";
 
 const pilotBySlug = new Map(JOURNAL_PILOT_ARTICLES.map((article) => [article.slug, article]));
-const phase3Articles = [...PHASE3_BATCH1_ARTICLES, ...PHASE3_BATCH2A_ARTICLES, ...PHASE3_BATCH2B_ARTICLES, ...PHASE3_BATCH2C_ARTICLES].map((article) => { const extra1=PHASE3_BATCH2_EXTRA_SECTIONS[article.slug]||[]; const extra2=PHASE3_BATCH2_EXTRA_SECTIONS2[article.slug]||[]; const extra3=PHASE3_BATCH2_EXTRA_SECTIONS3[article.slug]||[]; return (extra1.length||extra2.length||extra3.length) ? { ...article, extraSections:[...extra1,...extra2,...extra3] } : article; });
+const phase3Articles = [...PHASE3_BATCH1_ARTICLES, ...PHASE3_BATCH2A_ARTICLES, ...PHASE3_BATCH2B_ARTICLES, ...PHASE3_BATCH2C_ARTICLES, ...PHASE3_BATCH3_ARTICLES].map((article) => { const extra1=PHASE3_BATCH2_EXTRA_SECTIONS[article.slug]||[]; const extra2=PHASE3_BATCH2_EXTRA_SECTIONS2[article.slug]||[]; const extra3=PHASE3_BATCH2_EXTRA_SECTIONS3[article.slug]||[]; return (extra1.length||extra2.length||extra3.length) ? { ...article, extraSections:[...extra1,...extra2,...extra3] } : article; });
 const phase3BySlug = new Map(phase3Articles.map((article) => [article.slug, article]));
 const replaceSpecialArticles = (articles) => articles.map((article) => phase3BySlug.get(article.slug) || pilotBySlug.get(article.slug) || article);
 
