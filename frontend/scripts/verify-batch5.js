@@ -4,21 +4,22 @@ const slugs=new Set(["body-recomposition-tips-for-ectomorphs-hardgainers","the-u
 function walk(dir,out=[]){for(const e of fs.readdirSync(dir,{withFileTypes:true})){const p=path.join(dir,e.name);if(e.isDirectory())walk(p,out);else if(e.name==="index.html")out.push(p)}return out}
 function strip(html){return html.replace(/<[^>]+>/g," ").replace(/&amp;/g,"&").replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/\s+/g," ").trim()}
 const files=walk(journal).filter(f=>slugs.has(path.relative(journal,f).replace(/\\/g,"/").split("/")[1]));
-const rows=[];const failures=[];const sourceUse=new Map();
+const rows=[],failures=[],sourceUse=new Map();
 for(const file of files){
- const html=fs.readFileSync(file,"utf8"), rel=path.relative(journal,file).replace(/\\/g,"/"), slug=rel.split("/")[1];
- const words=strip(html).split(/\\s+/).filter(Boolean).length;
- const faq=(html.match(/<h2[^>]*>Frequently Asked Questions<\\/h2>/i)||[]).length;
- const example=(html.match(/<h2[^>]*>Example(?:\\b|:)/i)||[]).length;
- const sourceBlock=(html.match(/<h2[^>]*>Sources[^<]*<\\/h2>[\\s\\S]*?<\\/section>/i)||[])[0]||"";
- const links=[...sourceBlock.matchAll(/href=["'](https?:\\/\\/[^"']+)["']/gi)].map(m=>m[1]);
- for(const u of new Set(links)){sourceUse.set(u,(sourceUse.get(u)||0)+1)}
- const calcLinks=[...html.matchAll(/href=["'](\\/[^"']+-calculator)["']/gi)].map(m=>m[1]);
- const forbidden=/article-specific context|section 1 point|—\\s*(?:article-specific context|label)\\s*\\d+/i.test(html);
- const robots=(html.match(/<meta\\s+name=["']robots["'][^>]*content=["']([^"']*)["']/i)||[])[1]||"";
- rows.push({title:(html.match(/<h1[^>]*>([\\s\\S]*?)<\\/h1>/i)||[])[1]||"",slug,wordCount:words,faqs:faq,example:example>0,calculatorLinks:[...new Set(calcLinks)],noForbiddenLabels:!forbidden});
- if(words<1000||faq!==1||example<1||forbidden||!/index,follow/i.test(robots)) failures.push(slug);
+ const html=fs.readFileSync(file,"utf8"),rel=path.relative(journal,file).replace(/\\/g,"/"),slug=rel.split("/")[1];
+ const words=strip(html).split(" ").filter(Boolean).length;
+ const faq=html.includes(">Frequently Asked Questions</h2>")?1:0;
+ const example=/<h2[^>]*>Example(?:\b|:)/i.test(html)?1:0;
+ const external=[...new Set((html.match(/https?:\/\/[^"' <]+/g)||[]))];
+ for(const u of external)sourceUse.set(u,(sourceUse.get(u)||0)+1);
+ const calcLinks=[...new Set((html.match(/href=["'](\/[^"']+-calculator)["']/gi)||[]).map(x=>x.replace(/^href=["']/i,"").replace(/["']$/,"")))];
+ const forbidden=html.includes("article-specific context")||html.includes("section 1 point")||/—\s*(?:article-specific context|label)\s*\d+/i.test(html);
+ const hs=html.indexOf("<h1"),he=html.indexOf("</h1>",hs);
+ const title=hs>=0&&he>hs?strip(html.slice(hs+4,he)):"";
+ const robots=html.includes('<meta name="robots" content="index,follow');
+ rows.push({title,slug,wordCount:words,faqs:faq,example:example?"yes":"no",calculatorLinks:calcLinks,noForbiddenLabels:!forbidden});
+ if(words<1000||faq!==1||example<1||forbidden||!robots)failures.push(slug);
 }
 const overused=[...sourceUse.entries()].filter(([,n])=>n>3).map(([url,n])=>({url,count:n}));
-if(files.length!==20||failures.length||overused.length)process.exit(31);
 console.log(JSON.stringify({articles:rows.length,failures,sourceReuseViolations:overused,rows},null,2));
+if(files.length!==20||failures.length||overused.length)process.exit(31);
