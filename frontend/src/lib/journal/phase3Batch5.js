@@ -587,3 +587,5 @@ for(const article of PHASE3_BATCH5_ARTICLES){
   article.sources=article.sources.map(([label,url])=>({label,url}));
   article.relatedLinks=[];
 }
+import { PHASE3_BATCH5_PART2 } from "./phase3Batch5Part2";
+export const PHASE3_BATCH5_ALL = [...PHASE3_BATCH5_ARTICLES, ...PHASE3_BATCH5_PART2];
