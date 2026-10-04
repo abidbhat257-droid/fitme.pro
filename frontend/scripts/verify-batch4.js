@@ -2,22 +2,22 @@ const fs=require("fs"),path=require("path");
 const root=path.resolve(__dirname,".."),build=path.join(root,"build");
 if(!fs.existsSync(build)) throw new Error("Missing build directory.");
 const sourcePath=path.join(root,"src","lib","journal","phase3Batch4.js");
-let source=fs.readFileSync(sourcePath,"utf8").replace(/export\\s+const\\s+PHASE3_BATCH4_ARTICLES\\s*=\\s*/,"return ");
+let source=fs.readFileSync(sourcePath,"utf8").replace(/export\s+const\s+PHASE3_BATCH4_ARTICLES\s*=\s*/,"return ");
 const articles=new Function(source)();
 const failures=[];
 function htmlFor(slug){const file=path.join(build,"journal","weight-loss",slug,"index.html");return fs.existsSync(file)?fs.readFileSync(file,"utf8"):null;}
-function text(html){return String(html).replace(/<script[\\s\\S]*?<\\/script>/gi," ").replace(/<style[\\s\\S]*?<\\/style>/gi," ").replace(/<[^>]+>/g," ").replace(/&amp;/g,"&").replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/\\s+/g," ").trim();}
-function words(html){const m=html.match(/<article\\b[^>]*>([\\s\\S]*?)<\\/article>/i);return m?text(m[1]).split(/\\s+/).filter(Boolean).length:0;}
+function text(html){return String(html).replace(/<script[\s\S]*?<\/script>/gi," ").replace(/<style[\s\S]*?<\/style>/gi," ").replace(/<[^>]+>/g," ").replace(/&amp;/g,"&").replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/\s+/g," ").trim();}
+function words(html){const m=html.match(/<article\b[^>]*>([\s\S]*?)<\/article>/i);return m?text(m[1]).split(/\s+/).filter(Boolean).length:0;}
 const rows=[];
 for(const a of articles){
  const html=htmlFor(a.slug);
  if(!html){failures.push(a.slug+": missing built page");continue;}
  const wc=words(html);
- const headings=[...html.matchAll(/<h2[^>]*>([\\s\\S]*?)<\\/h2>/gi)].map(m=>text(m[1]));
- const hasExample=headings.some(h=>/^(Example|Worked example)\\b/i.test(h));
- const faqSection=html.match(/<h2[^>]*>Frequently Asked Questions<\\/h2>([\\s\\S]*?)(?=<h2|<\\/article>)/i);
+ const headings=[...html.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/gi)].map(m=>text(m[1]));
+ const hasExample=headings.some(h=>/^(Example|Worked example)\b/i.test(h));
+ const faqSection=html.match(/<h2[^>]*>Frequently Asked Questions<\/h2>([\s\S]*?)(?=<h2|<\/article>)/i);
  const faqCount=faqSection?(faqSection[1].match(/<h3[^>]*>/gi)||[]).length:0;
- const schemaFaq=[...html.matchAll(/<script[^>]*type=["']application\\/ld\\+json["'][^>]*>([\\s\\S]*?)<\\/script>/gi)].reduce((n,m)=>{try{const p=JSON.parse(m[1]);const g=Array.isArray(p["@graph"])?p["@graph"]:[p];const f=g.find(x=>x&&x["@type"]==="FAQPage");return n+(f&&Array.isArray(f.mainEntity)?f.mainEntity.length:0)}catch{return n}},0);
+ const schemaFaq=[...html.matchAll(/<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)].reduce((n,m)=>{try{const p=JSON.parse(m[1]);const g=Array.isArray(p["@graph"])?p["@graph"]:[p];const f=g.find(x=>x&&x["@type"]==="FAQPage");return n+(f&&Array.isArray(f.mainEntity)?f.mainEntity.length:0)}catch{return n}},0);
  const sourceCount=a.sources.length;
  const calculatorOk=a.matchingCalculators.some(c=>html.includes('href="'+c.url+'"')||html.includes("href=\""+c.url+"\""));
  const forbidden=headings.filter(h=>/^(Final check|Evidence boundary)$/i.test(h));
