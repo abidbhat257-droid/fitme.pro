@@ -10,12 +10,14 @@ for(const file of files){
  const words=strip(html).split(" ").filter(Boolean).length;
  const faqStart=html.indexOf(">Frequently Asked Questions</h2>"),faqEnd=html.indexOf("</section>",faqStart); const faq=faqStart>=0&&faqEnd>faqStart?(html.slice(faqStart,faqEnd).match(/<h3/g)||[]).length:0;
  const example=/<h2[^>]*>Example(?:\b|:)/i.test(html)?1:0;
- const external=[...new Set((html.match(/https?:\/\/[^"' <]+/g)||[]))];
+ const sourceStart=html.indexOf("Sources & further reading"),sourceEnd=html.indexOf("</section>",sourceStart);
+ const sourceHtml=sourceStart>=0&&sourceEnd>sourceStart?html.slice(sourceStart,sourceEnd):"";
+ const external=[...new Set((sourceHtml.match(/https?:\/\/[^"' <]+/g)||[]))];
  for(const u of external)sourceUse.set(u,(sourceUse.get(u)||0)+1);
  const calcLinks=[...new Set((html.match(/href=["'](\/[^"']+-calculator)["']/gi)||[]).map(x=>x.replace(/^href=["']/i,"").replace(/["']$/,"")))];
  const forbidden=html.includes("article-specific context")||html.includes("section 1 point")||/—\s*(?:article-specific context|label)\s*\d+/i.test(html);
- const hs=html.indexOf("<h1"),he=html.indexOf("</h1>",hs);
- const title=hs>=0&&he>hs?strip(html.slice(hs+4,he)):"";
+ const hs=html.indexOf("<h1"),ht=html.indexOf(">",hs),he=html.indexOf("</h1>",ht);
+ const title=hs>=0&&ht>hs&&he>ht?strip(html.slice(ht+1,he)):"";
  const robots=html.includes('<meta name="robots" content="index,follow');
  rows.push({title,slug,wordCount:words,faqs:faq,example:example?"yes":"no",calculatorLinks:calcLinks,noForbiddenLabels:!forbidden});
  if(words<1000||faq!==1||example<1||forbidden||!robots)failures.push(slug);
