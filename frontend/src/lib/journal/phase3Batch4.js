@@ -224,7 +224,7 @@ function sections(t){
 const articles=topics.map(t=>({
  title:t.title,slug:t.slug,category:"Weight Management",categorySlug:"weight-loss",date:"October 4, 2026",phase3:true,
  description:"This evidence-informed guide explains "+t.focus+" in practical terms, including how the approach works, who may benefit, safety considerations, common mistakes and questions to discuss with a qualified professional.",
- sections:sections(t),faqs:t.faqs,
+ sections:[...sections(t),["How to judge progress with "+t.focus,"Progress should be judged against the goal that brought the person to "+t.focus+". A useful review looks at the relevant trend rather than a single day: weight and waist when appropriate, symptoms and treatment tolerance for medicines, strength and function when preserving muscle matters, and practical adherence when the plan depends on daily routines. If the expected outcome is not appearing, review the intervention, access, adherence and medical context before adding another product or making a drastic change. This creates a clear feedback loop and gives the patient and clinician a specific reason to continue, adjust or replace the current approach."]],faqs:t.faqs,
  matchingCalculators:[{label:t.calc[0],url:t.calc[1]}],relatedLinks:[{label:t.related[0],url:t.related[1]}],
  sources:t.sources.map(s=>({label:s[0],url:s[1]}))
 }));
