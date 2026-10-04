@@ -48,7 +48,7 @@ function checkWorkedExampleArithmetic(text){
   const remainingComponents=remainingMatches.map(m=>Number(m[1].replace(/,/g,"")));
   const sourceMatches=[...text.matchAll(/([0-9][0-9,.]*)\s*kcal\s+(?:can|could|may)\s+come\s+from\s+(?:carbohydrate|fat|protein)\b/gi)];
   const sourceComponents=sourceMatches
-    .filter(m=>!/(?:the\s+)?remaining\s*$/i.test(text.slice(Math.max(0,m.index-20),m.index)))
+    .filter(m=>!remainingMatches.some(rm=>m.index>=rm.index&&m.index<rm.index+rm[0].length))
     .map(m=>Number(m[1].replace(/,/g,"")));
   const stated=[...text.matchAll(/\b(?:total|target|daily intake|calorie target|intake target)\b[^.]{0,90}?([0-9][0-9,.]*)\s*kcal/gi)].map(m=>Number(m[1].replace(/,/g,"")));
   const allKcalComponents=[...kcalComponents,...remainingComponents,...sourceComponents];
