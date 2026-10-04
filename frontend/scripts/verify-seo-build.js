@@ -130,7 +130,7 @@ for(const slug of batch3Slugs){
   if(!fs.existsSync(file)){batch3SpecificFailures.push({slug,reason:"missing"});continue;}
   const html=fs.readFileSync(file,"utf8");
   const wordCount=countArticleWords(html);
-  const workedPos=html.search(/<h2[^>]*>Worked example[^<]*<\/h2>/i);
+  const workedPos=html.search(/<h2[^>]*>(?:Example|Worked example)[^<]*<\/h2>/i);
   const afterWorked=workedPos>=0?html.slice(workedPos):"";
   const calculatorAfterWorked=/(Calorie Deficit Calculator|Protein Calculator|TDEE Calculator|BMI Calculator|Waist-to-Height Ratio Calculator|Weight Loss Calculator)/i.test(afterWorked);
   const sourceUrls=Array.isArray(batch3SourceBySlug.get(slug)?.sources)?batch3SourceBySlug.get(slug).sources.map(source=>source.url):[];
