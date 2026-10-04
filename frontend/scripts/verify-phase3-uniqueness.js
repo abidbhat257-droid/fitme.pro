@@ -42,8 +42,8 @@ for(const [batch,slugs] of Object.entries(byBatch)){
    for(const h of new Set(headings(a.html))){const key=h.toLowerCase();if(!headMap.has(key))headMap.set(key,new Set());headMap.get(key).add(a.slug);}
    grams.set(a.slug,sixgrams(text));
    if(batch==="Batch5"){
-     const m=a.html.match(/<h1[^>]*>([\\s\\S]*?)<\\/h1>/i);
-     const topic=(m?m[1]:"").replace(/<[^>]+>/g," ").replace(/&amp;/g,"&").replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/\\s+/g," ").trim();
+     const hs=a.html.indexOf("<h1"), he=a.html.indexOf("</h1>",hs);
+     const topic=(hs>=0&&he>hs?a.html.slice(hs+4,he):"").replace(/<[^>]+>/g," ").replace(/&amp;/g,"&").replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/\\s+/g," ").trim();
      const normalized=topic?text.toLowerCase().split(topic.toLowerCase()).join("x"):text.toLowerCase();
      for(const s of new Set(sentences(normalized))){const key=s.toLowerCase();if(!topicSentMap.has(key))topicSentMap.set(key,new Set());topicSentMap.get(key).add(a.slug);}
    }
