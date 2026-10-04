@@ -44,13 +44,13 @@ function checkWorkedExampleArithmetic(text){
     if(Number.isFinite(expected)&&Math.abs(expected-actual)>0.51)errors.push(`Equation mismatch: ${m[0]}`);
   }
   const kcalComponents=[...text.matchAll(/([0-9][0-9,.]*)\s*[×x*]\s*([0-9][0-9,.]*)\s*=\s*([0-9][0-9,.]*)\s*kcal/gi)].map(m=>Number(m[3].replace(/,/g,"")));
-  const remainingMatches=[...text.matchAll(/(?:the\\s+)?remaining\\s+([0-9][0-9,.]*)\\s*kcal\\b/gi)];
+  const remainingMatches=[...text.matchAll(/(?:the\s+)?remaining\s+([0-9][0-9,.]*)\s*kcal\b/gi)];
   const remainingComponents=remainingMatches.map(m=>Number(m[1].replace(/,/g,"")));
-  const sourceMatches=[...text.matchAll(/([0-9][0-9,.]*)\\s*kcal\\s+(?:can|could|may)\\s+come\\s+from\\s+(?:carbohydrate|fat|protein)\\b/gi)];
+  const sourceMatches=[...text.matchAll(/([0-9][0-9,.]*)\s*kcal\s+(?:can|could|may)\\s+come\\s+from\\s+(?:carbohydrate|fat|protein)\\b/gi)];
   const sourceComponents=sourceMatches
-    .filter(m=>!/(?:the\\s+)?remaining\\s*$/i.test(text.slice(Math.max(0,m.index-20),m.index)))
+    .filter(m=>!/(?:the\s+)?remaining\s*$/i.test(text.slice(Math.max(0,m.index-20),m.index)))
     .map(m=>Number(m[1].replace(/,/g,"")));
-  const stated=[...text.matchAll(/\\b(?:total|target|daily intake|calorie target|intake target)\\b[^.]{0,90}?([0-9][0-9,.]*)\\s*kcal/gi)].map(m=>Number(m[1].replace(/,/g,"")));
+  const stated=[...text.matchAll(/\b(?:total|target|daily intake|calorie target|intake target)\b[^.]{0,90}?([0-9][0-9,.]*)\\s*kcal/gi)].map(m=>Number(m[1].replace(/,/g,"")));
   const allKcalComponents=[...kcalComponents,...remainingComponents,...sourceComponents];
   if(allKcalComponents.length>=2&&stated.length){
     const sum=allKcalComponents.reduce((a,b)=>a+b,0);
