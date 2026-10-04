@@ -44,13 +44,30 @@ function checkWorkedExampleArithmetic(text){
     if(Number.isFinite(expected)&&Math.abs(expected-actual)>0.51)errors.push(`Equation mismatch: ${m[0]}`);
   }
   const kcalComponents=[...text.matchAll(/([0-9][0-9,.]*)\s*[×x*]\s*([0-9][0-9,.]*)\s*=\s*([0-9][0-9,.]*)\s*kcal/gi)].map(m=>Number(m[3].replace(/,/g,"")));
-  const stated=[...text.matchAll(/\b(?:total|target|daily intake|calorie target|intake target)\b[^.]{0,90}?([0-9][0-9,.]*)\s*kcal/gi)].map(m=>Number(m[1].replace(/,/g,"")));
-  if(kcalComponents.length>=2&&stated.length){
-    const sum=kcalComponents.reduce((a,b)=>a+b,0);
+  const remainingMatches=[...text.matchAll(/(?:the\\s+)?remaining\\s+([0-9][0-9,.]*)\\s*kcal\\b/gi)];
+  const remainingComponents=remainingMatches.map(m=>Number(m[1].replace(/,/g,"")));
+  const sourceMatches=[...text.matchAll(/([0-9][0-9,.]*)\\s*kcal\\s+(?:can|could|may)\\s+come\\s+from\\s+(?:carbohydrate|fat|protein)\\b/gi)];
+  const sourceComponents=sourceMatches
+    .filter(m=>!/(?:the\\s+)?remaining\\s*$/i.test(text.slice(Math.max(0,m.index-20),m.index)))
+    .map(m=>Number(m[1].replace(/,/g,"")));
+  const stated=[...text.matchAll(/\\b(?:total|target|daily intake|calorie target|intake target)\\b[^.]{0,90}?([0-9][0-9,.]*)\\s*kcal/gi)].map(m=>Number(m[1].replace(/,/g,"")));
+  const allKcalComponents=[...kcalComponents,...remainingComponents,...sourceComponents];
+  if(allKcalComponents.length>=2&&stated.length){
+    const sum=allKcalComponents.reduce((a,b)=>a+b,0);
     for(const value of stated)if(Math.abs(sum-value)>1)errors.push(`Calorie total mismatch: component kcal sum ${sum} vs stated ${value}`);
   }
   return errors;
 }
+function runWorkedExampleArithmeticTests(){
+  const correct="170 g protein × 4 = 680 kcal; 80 g fat × 9 = 720 kcal; the remaining 1,350 kcal can come from carbohydrate. Total 2,750 kcal.";
+  const incorrect="170 g protein × 4 = 680 kcal; 80 g fat × 9 = 720 kcal; the remaining 1,300 kcal can come from carbohydrate. Total 2,750 kcal.";
+  const correctErrors=checkWorkedExampleArithmetic(correct);
+  const incorrectErrors=checkWorkedExampleArithmetic(incorrect);
+  if(correctErrors.length)throw new Error("Arithmetic checker self-test failed: correct remaining-calorie example was rejected: "+correctErrors.join("; "));
+  if(!incorrectErrors.some(error=>/component kcal sum 2700 vs stated 2750/.test(error)))throw new Error("Arithmetic checker self-test failed: mismatched component total was not rejected.");
+  console.log(JSON.stringify({arithmeticCheckerTests:{correctExample:"PASS",mismatchedExample:"PASS"}}));
+}
+runWorkedExampleArithmeticTests();
 const boilerplateA="Use our calculators to explore estimates alongside the information in this guide.";
 const boilerplateB="Before applying the information, define your main goal, identify the measurement or behavior that actually reflects that goal...";
 const boilerplateAFileMatches=allFiles.filter(file=>fs.readFileSync(file,"utf8").includes(boilerplateA));
