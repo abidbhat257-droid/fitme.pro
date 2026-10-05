@@ -124,7 +124,7 @@ export default function Compare() {
                 data-testid={`compare-range-${r.key}`}
                 onClick={() => setRange(r.key)}
                 aria-pressed={range === r.key}
-                className={`px-3 py-1.5 transition-colors ${range === r.key ? "bg-[var(--brand-lime)] text-black" : "hover:bg-muted"}`}
+                className={`min-h-11 px-3 py-2 transition-colors ${range === r.key ? "bg-[var(--brand-lime)] text-black" : "hover:bg-muted"}`}
               >
                 {r.label}
               </button>
