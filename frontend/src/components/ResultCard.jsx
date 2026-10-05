@@ -49,7 +49,7 @@ export default function ResultCard({ calc, result, ready, index = 0 }) {
       <div data-testid={CARD.category(calc.id)} className="text-[10px] font-bold uppercase tracking-[0.25em] px-2 py-1" style={{ color: cat.color, borderLeft: `2px solid ${cat.color}` }}>{cat.label}</div>
       <button data-testid={CARD.copyBtn(calc.id)} onClick={onCopy} className="text-muted-foreground hover:text-[var(--brand-lime)] transition-colors" aria-label="Copy result"><Copy size={16} weight="duotone" /></button>
     </div>
-    <p className="font-display text-xl uppercase tracking-tight leading-tight mb-4" role="heading" aria-level="3">{calc.name.replace(/ Calculator$/,"")}</p>
+    <p className="font-display text-xl uppercase tracking-tight leading-tight mb-4">{calc.name.replace(/ Calculator$/,"")}</p>
     <div className="flex-1">
       {ready ? <>
         <div data-testid={CARD.value(calc.id)} className="font-mono-data text-3xl sm:text-4xl font-black tracking-tight" style={{ color: tone }}>{result?.value ?? "—"}{result?.unit ? <span className="text-sm ml-1.5 text-muted-foreground font-normal">{result.unit}</span> : null}</div>
