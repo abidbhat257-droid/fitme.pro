@@ -88,7 +88,7 @@ const calculatorSections = groups.map(({ category, items }) => `
     <section>
       <h2>${esc(category)}</h2>
       <ul>
-        ${items.map((calculator) => `<li><a href="${esc(calculator.url)}">${esc(calculator.name)}</a></li>`).join("\n        ")}
+        ${items.slice(0, 4).map((calculator) => `<li><a href="${esc(calculator.url)}">${esc(calculator.name)}</a></li>`).join("\n        ")}
       </ul>
     </section>`).join("\n");
 
@@ -109,8 +109,26 @@ const journalLinks = [
 const homepageMain = `
 <main>
   <h1>Free Health, Fitness &amp; Body Composition Calculators</h1>
-  <p>FitMe Pro offers free health and fitness calculators with formulas explained clearly and results you can use to understand BMI, body fat, calories, running, strength and related measures. Each tool is designed to show how the calculation works and what its result means.</p>
+  <p>FitMe Pro provides free calculators for common health and fitness measurements. Each tool explains the method, shows the result clearly and describes important limits.</p><p><strong>Editorial owner:</strong> FitMe Pro Editorial Team · <strong>Last reviewed:</strong> October 5, 2026. Methods and health guidance are checked against authoritative public sources.</p>
 ${calculatorSections}
+    <section>
+      <h2>Browse All 100 Calculators</h2>
+      <p>The homepage shows a small selection from each topic to keep the page focused. The full <a href="/calculators">calculator directory</a> contains all 100 tools.</p>
+    </section>
+    <section>
+      <h2>How the Calculators Work</h2>
+      <p>Enter the measurements requested by a tool, check the formula and review the result. Equation-based outputs are estimates, so consistent measurements and the correct units matter.</p>
+      <p>Use calculator pages for learning and planning. Do not treat an estimate as a diagnosis or as a substitute for professional care.</p>
+    </section>
+    <section>
+      <h2>Evidence &amp; Editorial Standards</h2>
+      <p>FitMe Pro uses authoritative public-health sources for health explanations and publishes its <a href="/journal/evidence-sources">evidence sources</a> and <a href="/journal/editorial-standards">editorial standards</a>.</p>
+      <p>Examples include <a href="https://www.who.int/" rel="noopener noreferrer">WHO</a>, <a href="https://www.cdc.gov/" rel="noopener noreferrer">CDC</a>, <a href="https://www.nih.gov/" rel="noopener noreferrer">NIH</a> and <a href="https://www.nhs.uk/" rel="noopener noreferrer">NHS</a>.</p>
+    </section>
+    <section>
+      <h2>Important Health Note</h2>
+      <p>FitMe Pro calculators provide educational estimates and general information. They do not diagnose disease, prescribe treatment or replace advice from a qualified healthcare professional.</p>
+    </section>
     <section>
       <h2>FitMe Pro Journal</h2>
       <ul>
