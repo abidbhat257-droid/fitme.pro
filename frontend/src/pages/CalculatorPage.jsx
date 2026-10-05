@@ -81,10 +81,6 @@ export default function CalculatorPage({ seoSlug }) {
 
     canonical.setAttribute("href", pageUrl);
 
-    const faqItems = longForm?.faqs?.length
-      ? longForm.faqs
-      : content.faq;
-
     const ld = {
       "@context": "https://schema.org",
       "@graph": [
