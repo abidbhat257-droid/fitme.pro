@@ -126,8 +126,9 @@ ${categorySections}\n    <section><h2>Featured calculators</h2><ul>${featuredCal
 </main>`;
 
 const jsonLd = [
-  {"@context":"https://schema.org","@type":"WebSite","name":"FitMe Pro","url":`${site}/`},
-  {"@context":"https://schema.org","@type":"Organization","name":"FitMe Pro","url":`${site}/`,"logo":`${site}/fitme-pro-logo.svg`}
+  {"@context":"https://schema.org","@type":"WebSite","@id":site + "/#website","name":"FitMe Pro","url":site + "/"},
+  {"@context":"https://schema.org","@type":"WebPage","@id":site + "/#webpage","name":"FitMe Pro Health, Fitness & Body Composition Calculators","url":site + "/","isPartOf":{"@id":site + "/#website"}},
+  {"@context":"https://schema.org","@type":"Organization","@id":site + "/#organization","name":"FitMe Pro","url":site + "/","logo":site + "/fitme-pro-logo.svg"}
 ];
 
 let html = fs.readFileSync(indexPath, "utf8");
@@ -137,6 +138,9 @@ if (!/<div id="root">[\s\S]*<h1>Free Health, Fitness &amp; Body Composition Calc
 }
 
 html = html.replace(/<script type="application\/ld\+json" data-fitme-home-schema>[\s\S]*?<\/script>\s*/gi, "");
+for (const schema of jsonLd) {
+  if (!schema["@type"]) throw new Error("Homepage JSON-LD node is missing @type");
+}
 const jsonLdHtml = jsonLd.map((schema) => `<script type="application/ld+json" data-fitme-home-schema>${JSON.stringify(schema)}</script>`).join("");
 html = html.replace(/<\/head>/i, `${jsonLdHtml}</head>`);
 fs.writeFileSync(indexPath, html, "utf8");
