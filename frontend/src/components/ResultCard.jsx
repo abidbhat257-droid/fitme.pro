@@ -56,11 +56,11 @@ export default function ResultCard({ calc, result, ready, index = 0 }) {
         {result?.category ? <div className="text-xs mt-1.5 font-bold uppercase tracking-[0.15em] text-muted-foreground">{result.category}</div> : null}
         {gauge ? <div className="mt-4"><GaugeBar {...gauge} /></div> : null}
         {result?.range ? <div className="text-[11px] mt-3 text-muted-foreground">Reference: <span className="font-mono-data text-foreground">{result.range}</span></div> : null}
-      </> : <div className="text-sm text-muted-foreground leading-relaxed"><span className="text-[var(--brand-lime)] font-bold">→</span> Enter missing measurements to unlock.<div className="text-[10px] uppercase tracking-widest mt-2">Needs: {calc.requires.join(" · ")}</div></div>}
+      </> : <div className="text-sm text-muted-foreground leading-relaxed"><span className="text-[var(--brand-lime)] font-bold">→</span> Add the required measurements to calculate this result.<div className="text-[10px] uppercase tracking-widest mt-2">Needs: {calc.requires.join(" · ")}</div></div>}
     </div>
     <div className="flex items-center justify-between mt-5 pt-4 border-t border-border">
       <div className="text-[10px] uppercase tracking-widest text-muted-foreground font-mono-data">{calc.formula.length > 34 ? calc.formula.slice(0, 34) + "…" : calc.formula}</div>
-      <Link to={`/${calc.slug}-calculator`} data-testid={CARD.detailsLink(calc.id)} onClick={forceTop} className="text-xs font-bold uppercase tracking-[0.15em] flex items-center gap-1 hover:text-[var(--brand-lime)] transition-colors">Details <ArrowUpRight size={12} weight="bold" /></Link>
+      <Link to={`/${calc.slug}-calculator`} data-testid={CARD.detailsLink(calc.id)} onClick={forceTop} className="text-xs font-bold uppercase tracking-[0.15em] flex items-center gap-1 hover:text-[var(--brand-lime)] transition-colors">{calc.name} <ArrowUpRight size={12} weight="bold" /></Link>
     </div>
   </article>;
 }
