@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
+import EditorialTrust from "@/components/EditorialTrust";
 import { Link, useParams } from "react-router-dom";
 import { ArrowLeft, Copy, Printer, ShareNetwork } from "@phosphor-icons/react";
 import { toast } from "sonner";
@@ -79,7 +80,7 @@ export default function MissingCalculatorPage() {
   const share = async () => { try { if (navigator.share) await navigator.share({ title: calc.name, text: `${calc.name}: ${result?.value ?? "—"}`, url: window.location.href }); else { await navigator.clipboard.writeText(window.location.href); toast.success("Link copied"); } } catch {} };
 
   const related = [];
-  return <div className="flex min-h-screen flex-col lg:flex-row">
+  <EditorialTrust compact />\n  return <div className="flex min-h-screen flex-col lg:flex-row">
     <main className="min-w-0 flex-1">
       <section className="relative overflow-hidden border-b border-border"><div className="relative max-w-4xl px-6 py-8 sm:px-10 lg:py-10"><Link to="/calculators" className="mb-4 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.25em] text-muted-foreground hover:text-[var(--brand-lime)]"><ArrowLeft size={14}/> All calculators</Link><div className="mb-2 flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.3em]" style={{ color: categoryColor }}><span className="h-2 w-2" style={{ background: categoryColor }} />{calc.category}</div><h1 className="font-display text-3xl uppercase leading-none tracking-tighter sm:text-4xl lg:text-5xl">{calc.name}</h1><p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">{calc.description}</p></div></section>
       <section className="px-6 py-8 sm:px-10">
