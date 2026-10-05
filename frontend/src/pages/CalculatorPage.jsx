@@ -1,5 +1,5 @@
 
-import React, { useEffect, useMemo } from "react";
+import React, { Suspense, lazy, useEffect, useMemo } from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
 import { toast } from "sonner";
 import {
@@ -11,7 +11,7 @@ import {
 } from "@phosphor-icons/react";
 
 import MeasurementPanel from "@/components/MeasurementPanel";
-import Visualization from "@/components/viz/Visualization";
+const Visualization = lazy(() => import("@/components/viz/Visualization"));
 import VizInfo from "@/components/viz/VizInfo";
 
 import {
@@ -24,7 +24,7 @@ import {
 import { getContent } from "@/lib/content";
 import { getLongFormContent } from "@/lib/longFormContent";
 import { getCalculatorEvidence } from "@/lib/calculatorEvidence";
-import LongFormArticle from "@/components/LongFormArticle";
+const LongFormArticle = lazy(() => import("@/components/LongFormArticle"));
 import { useMeasurements } from "@/context/MeasurementContext";
 import {
   Accordion,
@@ -336,11 +336,13 @@ export default function CalculatorPage({ seoSlug }) {
                   className="bg-card border border-border p-5 sm:p-6"
                   style={{ borderTop: `3px solid ${cat.color}` }}
                 >
-                  <Visualization
-                    calc={calc}
-                    state={state}
-                    result={result}
-                  />
+                  <Suspense fallback={<div className="min-h-[280px] w-full animate-pulse bg-muted/20" aria-label="Loading visualization" />}>
+                    <Visualization
+                      calc={calc}
+                      state={state}
+                      result={result}
+                    />
+                  </Suspense>
                 </div>
               </div>
             )}
@@ -364,7 +366,7 @@ export default function CalculatorPage({ seoSlug }) {
               </ol>
             </div>
 
-            <LongFormArticle content={longForm} calc={calc} />
+            <Suspense fallback={null}><LongFormArticle content={longForm} calc={calc} /></Suspense>
             <section className="border border-border bg-card p-6 sm:p-8">
               <h2 className="font-display text-2xl uppercase tracking-tighter mb-3">Evidence &amp; Method Sources</h2>
               <p className="text-sm leading-relaxed text-muted-foreground mb-4">The calculator is an educational estimate. These public sources provide context for the health, fitness or methodology information used on this page.</p>
