@@ -27,13 +27,11 @@ export default function About() {
         </p>
 
         <h2 className="mb-3 text-2xl font-semibold">
-          Our purpose
+          Editorial ownership and methodology
         </h2>
 
         <p className="mb-8 leading-relaxed text-muted-foreground">
-          Our goal is to make health and fitness calculations easier to
-          understand and accessible to everyone. The calculators are intended
-          to help users learn more about their measurements and fitness goals.
+          Content and calculator methodology are maintained by the FitMe Pro Editorial Team. We do not claim medical credentials for this team. Calculator methods are documented where practical, and health explanations are checked against authoritative public-health and scientific sources. See our <a href="/journal/evidence-sources" className="font-medium underline">Evidence Sources</a> and <a href="/journal/editorial-standards" className="font-medium underline">Editorial Standards</a> for the process.
         </p>
 
         <h2 className="mb-3 text-2xl font-semibold">
@@ -45,6 +43,14 @@ export default function About() {
           information. Results may vary depending on the formula and the
           information provided. They are not a substitute for professional
           medical advice, diagnosis, or treatment.
+        </p>
+
+        <h2 className="mb-3 text-2xl font-semibold">
+          Review date
+        </h2>
+
+        <p className="mb-8 leading-relaxed text-muted-foreground">
+          This page and the homepage methodology information were last reviewed on October 5, 2026.
         </p>
 
         <h2 className="mb-3 text-2xl font-semibold">
