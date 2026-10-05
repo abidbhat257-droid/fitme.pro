@@ -78,7 +78,7 @@ export default function RadarProfile({ axes = [] }) {
 
       <div className="flex w-full flex-wrap items-center justify-between gap-3 mt-3">
         {idealPoints && <div className="flex gap-4 text-[10px] uppercase tracking-widest"><span className="flex items-center gap-1.5"><span className="h-2 w-4 bg-[var(--brand-lime)]" /> You</span><span className="flex items-center gap-1.5"><span className="h-2 w-4 border border-dashed border-[#3B82F6]" /> Reference</span></div>}
-        <SnapshotDialog trigger={<button className="inline-flex items-center gap-1.5 border border-border px-2.5 py-1.5 text-[9px] font-bold uppercase tracking-widest hover:border-[var(--brand-lime)] hover:text-[var(--brand-lime)]"><Camera size={13} /> Save snapshot</button>} />
+        <SnapshotDialog trigger={<button className="inline-flex min-h-11 min-w-11 items-center justify-center gap-1.5 border border-border px-3 py-2 text-[9px] font-bold uppercase tracking-widest hover:border-[var(--brand-lime)] hover:text-[var(--brand-lime)]"><Camera size={13} /> Save snapshot</button>} />
       </div>
 
       <div className="mt-4 grid w-full grid-cols-2 gap-2 sm:grid-cols-3">
