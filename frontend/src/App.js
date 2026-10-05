@@ -47,10 +47,8 @@ function HeadingSpacingManager() {
       });
     };
 
-    normalizeHeadings();
-    const observer = new MutationObserver(normalizeHeadings);
-    observer.observe(document.body, { childList: true, subtree: true });
-    return () => observer.disconnect();
+    const frame = requestAnimationFrame(normalizeHeadings);
+    return () => cancelAnimationFrame(frame);
   }, [location.key]);
 
   return null;
