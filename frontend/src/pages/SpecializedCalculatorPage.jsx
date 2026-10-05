@@ -83,7 +83,6 @@ function setJsonLd(calc, faqs) {
   script.textContent = JSON.stringify({ "@context": "https://schema.org", "@graph": [
     { "@type": "WebApplication", name: calc.name, url, applicationCategory: "HealthApplication", operatingSystem: "Web", offers: { "@type": "Offer", price: "0", priceCurrency: "USD" } },
     { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "FitMe Pro", item: `${window.location.origin}/` }, { "@type": "ListItem", position: 2, name: calc.category, item: `${window.location.origin}/calculators` }, { "@type": "ListItem", position: 3, name: calc.name, item: url }] },
-    { "@type": "FAQPage", mainEntity: faqs.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) }
   ]});
   document.head.appendChild(script);
 }
