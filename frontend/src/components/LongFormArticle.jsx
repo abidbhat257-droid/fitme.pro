@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { getExpansionSections } from "@/lib/longFormExpansion";
 import { CALCULATORS } from "@/lib/calculators";
 import BMISEOContent from "@/components/BMISEOContent";
 import CompositionSEOContent from "@/components/CompositionSEOContent";
@@ -81,7 +80,7 @@ export default function LongFormArticle({ content, calc }) {
   const isDedicatedRemaining = REMAINING_SEO_SLUGS.has(calc?.slug);
   const isDedicatedComposition = COMPOSITION_SEO_SLUGS.has(calc?.slug);
   const hasDedicatedSEO = isDedicatedComposition || isDedicatedPhase1 || isDedicatedPhase2 || isDedicatedPhase3 || isDedicatedPhase4 || isDedicatedPhase5 || isDedicatedPhase6 || isDedicatedRemaining || calc?.slug === "bmi";
-  const sections = hasDedicatedSEO ? [] : [...(content.sections || []), ...getExpansionSections(content)];
+  const sections = hasDedicatedSEO ? [] : [];
   const relatedNames = content.related || [];
   const relatedLinks = relatedNames.map((name) => { const found = CALCULATORS.find((item) => item.name === name); return found ? { name, slug: found.slug } : null; }).filter(Boolean);
   const name = content.name || calc?.name || "This Calculator";
@@ -100,7 +99,21 @@ export default function LongFormArticle({ content, calc }) {
       {isDedicatedRemaining && <RemainingSEOContent calc={calc} />}
       {hasDedicatedSEO && <SEOPageCompleteness slug={calc?.slug} />}
       {!hasDedicatedSEO && <section className="border border-border bg-card p-6"><h3 className="font-display text-xl uppercase tracking-tight mb-3">Worked Example</h3><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">For a practical example, start with {example}. Apply the formula or method shown on this page using the same units throughout. The calculator performs the arithmetic automatically, while the displayed method lets you verify which inputs drive the result. This example is for understanding the calculation, not a health recommendation.</p></section>}
-      {!hasDedicatedSEO && <div className="space-y-6">{sections.map((text, index) => { const heading = formatHeading(HEADINGS[index % HEADINGS.length], name); return <section key={`${index}-${heading}`}><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">{heading}</h3><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{text}</p></section>; })}</div>}
+      {!hasDedicatedSEO && <div className="space-y-6">
+        {[
+          ["What It Measures", content.what && `This calculator estimates ${content.what}. The result answers a specific measurement or planning question; it should not be treated as a complete description of health, fitness or body composition.`],
+          ["Why This Calculation Matters", content.why],
+          ["Inputs and Measurement Guide", content.inputs],
+          ["The Formula or Method", content.formula],
+          ["How to Interpret Your Result", content.interpretation],
+          ["Accuracy and Limitations", content.accuracy],
+          ["Common Mistakes to Avoid", content.mistakes],
+          ["Using the Result in Practice", content.use],
+          ["Worked Example", content.example || `Use the example inputs shown in the calculator, apply the stated method, and keep all units consistent. The result is for understanding the calculation rather than a personalized medical recommendation.`],
+        ].filter(([, text]) => text).map(([heading, text]) => (
+          <section key={heading}><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">{heading}</h3><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{text}</p></section>
+        ))}
+      </div>}
       {relatedLinks.length > 0 && !hasDedicatedSEO && <section className="border border-border bg-card p-6"><h3 className="font-display text-xl uppercase tracking-tight mb-3">Related Calculators</h3><div className="grid sm:grid-cols-2 gap-2">{relatedLinks.map((item) => <Link key={item.slug} to={`/${item.slug}-calculator`} className="border border-border px-4 py-3 text-sm font-bold hover:text-[var(--brand-lime)] hover:border-[var(--brand-lime)] transition-colors">{item.name}</Link>)}</div></section>}
       {!hasDedicatedSEO && <section className="border border-border p-6 bg-card"><h3 className="font-display text-xl uppercase tracking-tight mb-3">Important Health Note</h3><p className="text-sm text-muted-foreground leading-7">FitMe Pro calculators provide educational estimates. They do not diagnose disease, replace clinical assessment, or guarantee a particular health or fitness outcome. If a result is unexpected, concerning, or relevant to a medical condition, discuss it with a qualified healthcare professional.</p></section>}
     </article>
