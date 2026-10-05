@@ -1,0 +1,16 @@
+# FitMe Pro
+
+Free health and fitness calculators for body composition, weight and BMI, calories and metabolism, nutrition, running, strength, and heart-rate metrics.
+
+Homepage: https://fitme-pro.vercel.app/
+Calculator directory: https://fitme-pro.vercel.app/calculators
+Evidence sources: https://fitme-pro.vercel.app/journal/evidence-sources
+Editorial standards: https://fitme-pro.vercel.app/journal/editorial-standards
+About: https://fitme-pro.vercel.app/about
+Contact: https://fitme-pro.vercel.app/contact
+
+FitMe Pro calculator results are educational estimates. They are not diagnoses, prescriptions, or a substitute for individualized professional medical advice.
+
+Content and calculator methodology are maintained by the FitMe Pro Editorial Team. No medical credentials are claimed for the team. Health explanations should be checked against the cited authoritative sources.
+
+Last reviewed: 2026-10-05
