@@ -21,7 +21,7 @@ export default function Header() {
   return <header data-testid={NAV.root} className="no-print sticky top-0 z-40 border-b border-border backdrop-blur-xl bg-background/80">
     <div className="mx-auto max-w-[1600px] flex items-center justify-between px-4 sm:px-8 py-3 pl-16 sm:pl-20">
       <Link to="/" data-testid={NAV.logo} className="flex items-center gap-2.5 group" aria-label="FitMe Pro home" title="FitMe Pro — Health & Fitness Calculators">
-        <img src="/fitme-pro-logo.svg" width="40" height="40" srcSet="/fitme-pro-logo.svg 1x, /fitme-pro-logo.svg 2x" loading="eager" decoding="async" className="h-10 w-10 object-contain shrink-0" alt="FitMe Pro health and fitness calculator logo" />
+        <img src="/fitme-pro-logo.svg" width="40" height="40" srcSet="/fitme-pro-logo.svg 1x, /fitme-pro-logo.svg 2x" fetchPriority="high" loading="eager" decoding="async" className="h-10 w-10 object-contain shrink-0" alt="FitMe Pro health and fitness calculator logo" />
         <span className="font-display text-xl tracking-tighter uppercase"><span className="text-foreground">fitme</span><span className="text-[var(--brand-lime)]">.pro</span></span>
       </Link>
       <div className="flex items-center gap-2 sm:gap-3">
