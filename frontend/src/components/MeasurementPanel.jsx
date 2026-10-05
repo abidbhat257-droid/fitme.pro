@@ -60,7 +60,7 @@ function TacticalInput({ id, label, unit, testid, field, unitSystem, value, onCh
         onChange={onChange}
         aria-invalid={!!error}
         aria-describedby={error ? errorId : undefined}
-        className={`w-full bg-transparent border-b-2 py-2 text-lg font-mono-data transition-colors placeholder:text-muted-foreground/40 focus:outline-none ${error ? "border-red-500 focus:border-red-500" : "border-border focus:border-[var(--brand-lime)]"}`}
+        className={`w-full min-h-11 bg-transparent border-b-2 py-2 text-lg font-mono-data transition-colors placeholder:text-muted-foreground/40 focus:outline-none ${error ? "border-red-500 focus:border-red-500" : "border-border focus:border-[var(--brand-lime)]"}`}
       />
       {definition ? <p className="text-[10px] leading-4 text-muted-foreground/70">{definition}</p> : null}
       {error ? <div id={errorId} data-testid={`${testid}-error`} className="text-[10px] text-red-500 font-mono-data">{error}</div> : null}
@@ -121,8 +121,8 @@ export default function MeasurementPanel({ compact = false }) {
         </div>
 
         <div className="flex items-center border border-border overflow-hidden text-xs uppercase font-bold tracking-[0.15em]">
-          <button data-testid={PANEL.unitMetric} onClick={() => setUnit("metric")} aria-pressed={metric} className={`flex-1 py-2 ${metric ? "bg-[var(--brand-lime)] text-black" : "hover:bg-muted"}`}>Metric</button>
-          <button data-testid={PANEL.unitImperial} onClick={() => setUnit("imperial")} aria-pressed={!metric} className={`flex-1 py-2 ${!metric ? "bg-[var(--brand-lime)] text-black" : "hover:bg-muted"}`}>Imperial</button>
+          <button data-testid={PANEL.unitMetric} onClick={() => setUnit("metric")} aria-pressed={metric} className={`flex-1 min-h-11 py-2 ${metric ? "bg-[var(--brand-lime)] text-black" : "hover:bg-muted"}`}>Metric</button>
+          <button data-testid={PANEL.unitImperial} onClick={() => setUnit("imperial")} aria-pressed={!metric} className={`flex-1 min-h-11 py-2 ${!metric ? "bg-[var(--brand-lime)] text-black" : "hover:bg-muted"}`}>Imperial</button>
         </div>
 
         {pageCalc ? (
