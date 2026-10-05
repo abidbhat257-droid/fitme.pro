@@ -90,7 +90,7 @@ export default function MissingCalculatorPage() {
         </div>
         <div className="mt-8 max-w-4xl border border-border bg-card p-6 sm:p-8" style={{ borderTop: `3px solid ${categoryColor}` }}><div className="mb-5 text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)]">Calculator Inputs</div><div className="grid grid-cols-1 gap-6 sm:grid-cols-2">{calc.inputFields.map(f => <InputField key={f.name} config={f} value={values[f.name]} onChange={v => setValue(f.name, v)} />)}</div></div>
         <div className="mt-8 max-w-4xl border border-border bg-card p-6"><h2 className="font-display text-xl uppercase tracking-tight">Formula</h2><p className="mt-3 font-mono text-sm leading-7">{calc.formula}</p><p className="mt-4 text-sm leading-7 text-muted-foreground">{calc.interpretation}</p></div>
-        <div className="mt-8 max-w-4xl"><CalculatorSEOGuide calc={calc} related={related} /></div>
+        <div className="mt-8 max-w-4xl"><CalculatorSEOGuide calc={calc} related={related} /></div><EditorialTrust />
       </section>
     </main>
   </div>;
