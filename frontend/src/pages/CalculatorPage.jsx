@@ -23,6 +23,7 @@ import {
 
 import { getContent } from "@/lib/content";
 import { getLongFormContent } from "@/lib/longFormContent";
+import { getCalculatorEvidence } from "@/lib/calculatorEvidence";
 import LongFormArticle from "@/components/LongFormArticle";
 import { useMeasurements } from "@/context/MeasurementContext";
 import {
@@ -379,6 +380,15 @@ export default function CalculatorPage({ seoSlug }) {
             </div>
 
             <LongFormArticle content={longForm} calc={calc} />
+            <section className="border border-border bg-card p-6 sm:p-8">
+              <h2 className="font-display text-2xl uppercase tracking-tighter mb-3">Evidence &amp; Method Sources</h2>
+              <p className="text-sm leading-relaxed text-muted-foreground mb-4">The calculator is an educational estimate. These public sources provide context for the health, fitness or methodology information used on this page.</p>
+              <ul className="space-y-2">
+                {getCalculatorEvidence(calc.slug).map((source) => (
+                  <li key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold underline underline-offset-4 hover:text-[var(--brand-lime)]">{source.label}</a></li>
+                ))}
+              </ul>
+            </section>
 
             <div>
               <h2 className="font-display text-2xl uppercase tracking-tighter mb-4">
