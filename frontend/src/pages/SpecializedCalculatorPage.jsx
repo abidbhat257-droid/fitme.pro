@@ -7,6 +7,7 @@ import { getSpecializedCalculator, SPECIALIZED_CALCULATORS } from "@/lib/special
 import { toMetric } from "@/lib/units";
 import CalculatorSEOGuide from "@/components/CalculatorSEOGuide";
 import { toast } from "sonner";
+import EditorialTrust from "@/components/EditorialTrust";
 
 const CATEGORY_COLORS = { "Nutrition & Fitness": "#059669", "Running & Training": "#059669", "Strength Training": "#059669", "Body Composition": "#059669", "Heart Rate & Cardiovascular": "#059669" };
 
