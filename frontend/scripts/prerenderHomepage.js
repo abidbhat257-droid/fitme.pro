@@ -84,13 +84,19 @@ for (const url of sitemapCalculatorUrls) {
   if (!byCategory.get(category).items.some((item) => item.url === url)) byCategory.get(category).items.push({ ...calculator, url });
 }
 
-const calculatorSections = groups.map(({ category, items }) => `
+const categorySections = groups.map(({ category, items }) => `
     <section>
       <h2>${esc(category)}</h2>
-      <ul>
-        ${items.map((calculator) => `<li><a href="${esc(calculator.url)}">${esc(calculator.name.replace(/\s+Calculator$/i, ""))}</a></li>`).join("\n        ")}
-      </ul>
+      <p>${items.length} calculators covering ${esc(category.toLowerCase())}. Browse the full directory for every tool and formula.</p>
     </section>`).join("\n");
+const featuredUrls = new Set([
+  "/bmi-calculator", "/body-fat-calculator", "/bmr-calculator", "/tdee-calculator",
+  "/daily-calorie-needs-calculator", "/calorie-deficit-calculator", "/protein-calculator",
+  "/macro-calculator", "/pace-calculator", "/target-heart-rate-calculator"
+]);
+const featuredCalculators = sitemapCalculatorUrls
+  .map((url) => byUrl.get(url) || canonicalOverrides[url])
+  .filter((calculator) => calculator && featuredUrls.has(calculator.url));
 
 const journalLinks = [
   ["/journal", "FitMe Pro Journal"],
@@ -110,7 +116,7 @@ const homepageMain = `
 <main>
   <h1>Free Health, Fitness &amp; Body Composition Calculators</h1>
   <p>FitMe Pro provides free health and fitness calculators for common measurements and planning tasks. Each tool explains its method, inputs, result and important limitations.</p><p><strong>Editorial owner:</strong> FitMe Pro Editorial Team. <strong>Last reviewed:</strong> October 5, 2026. Health explanations are checked against authoritative public sources.</p><p>Use these calculators to learn how common formulas work and to compare consistent measurements over time. Results are estimates: they can vary with units, measurement technique, assumptions and the population for which a formula was developed. A calculator result is not a diagnosis, prescription or guarantee of health.</p><p>For health questions, symptoms, medication decisions, pregnancy, eating disorders or other individual medical circumstances, use qualified professional advice. The calculator pages explain when a result should not be interpreted as a clinical measurement.</p><p>FitMe Pro organizes tools by body composition, weight and BMI, calories and metabolism, nutrition, running and endurance, strength, and heart-rate metrics. Start with the measurement you want to understand, then review the formula and limitations before using the result.</p>
-${calculatorSections}
+${categorySections}\n    <section><h2>Featured calculators</h2><ul>${featuredCalculators.map((calculator) => `<li><a href="${esc(calculator.url)}">${esc(calculator.name.replace(/\s+Calculator$/i, ""))}</a></li>`).join("\n        ")}</ul><p><a href="/calculators">Browse all 100 health and fitness calculators</a></p></section>
     <section>
       <h2>FitMe Pro Journal</h2>
       <ul>
