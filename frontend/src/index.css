@@ -42,3 +42,14 @@ main > section:first-child > div:first-child[style*="radial-gradient"] { backgro
 .card-in { animation: cardIn 380ms ease both; }
 @media print { .no-print { display: none !important; } body { background: #fff !important; color: #000 !important; } .print-grid { grid-template-columns: repeat(2, 1fr) !important; } }
 @media (prefers-reduced-motion: reduce) { .card-in { animation: none; } .brut-hover { transition: none; } }
+
+/* Accessibility: preserve compact desktop UI while guaranteeing comfortable touch targets on touch devices. */
+@media (pointer: coarse) {
+  button,
+  a,
+  select,
+  [role="button"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
