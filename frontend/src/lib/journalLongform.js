@@ -40,7 +40,11 @@ function sectionExpansion(article, heading, text, index) {
 }
 
 function articleIntro(article) {
-  return `This guide explains ${article.title.replace(/[?.!]$/, "")}. It is written for a general international audience and makes a commonly searched health and fitness topic easier to understand. The goal is not to prescribe one perfect routine. Instead, it explains the underlying ideas, shows how they can be applied in everyday life, discusses common misunderstandings and identifies situations where individualized professional advice is more appropriate.`;
+  const title = String(article?.title || "this topic").replace(/[?.!]$/, "");
+  const description = String(article?.description || "").trim();
+  return description
+    ? title + " is explained here in practical terms, with attention to what the evidence supports and where individual circumstances can change the answer. " + description
+    : "This guide explains " + title + " using the available evidence, practical context and the limitations that matter when applying general health information to an individual.";
 }
 
 function faq(article) {
@@ -49,11 +53,40 @@ function faq(article) {
   const lastSection = rawSections[rawSections.length - 1];
   const first = Array.isArray(firstSection) ? firstSection[0] : (firstSection?.label || "this topic");
   const last = Array.isArray(lastSection) ? lastSection[0] : (lastSection?.label || "the information in this guide");
+  const title = String(article?.title || "this topic").replace(/[?.!]$/, "");
   return [
-    ["Can I use this information for my own plan?", `You can use this guide as general education and as a starting point for questions. Your appropriate target may differ because of age, health status, activity, medications, dietary needs and personal goals. ${first} should therefore be interpreted as guidance rather than a diagnosis or individualized prescription.`],
-    ["What if I cannot follow every recommendation?", "That is normal. Focus on changes that are realistic and meaningful for you. A sustainable routine with a few repeatable improvements is usually more useful than a perfect plan that lasts only a short time. Review progress over time and adjust gradually rather than treating one imperfect day as failure."],
-    ["When should I speak with a healthcare professional?", `Seek individualized advice when medical conditions, medications, pregnancy, injury, significant symptoms, unexplained changes or eating-related concerns may affect the decision. Professional guidance is particularly useful when ${last.toLowerCase()} cannot safely be interpreted from general information alone.`],
+    ["What is the main point of " + title + "?", "The main point is explained in the “" + first + "” section. Use that information as general education and consider your own goals, health status and circumstances before applying it."],
+    ["What should I be careful about with " + title + "?", "Pay attention to the limitations described in the guide, especially measurement uncertainty, individual variation and situations where general information may not apply."],
+    ["When should I speak with a healthcare professional?", "Seek individualized advice when medical conditions, medications, pregnancy, injury, significant symptoms, unexplained changes or eating-related concerns may affect the decision. Professional guidance is particularly useful when " + String(last).toLowerCase() + " cannot safely be interpreted from general information alone."]
   ];
+}
+
+export function getLongFormJournalArticle(article) {
+  if (!article) return article;
+  const normalizedSections = (Array.isArray(article.sections) ? article.sections : []).map((section) => {
+    if (Array.isArray(section)) return [section[0] || "Section", section[1] || ""];
+    if (section && typeof section === "object") return [section.label || "Section", section.text ?? section.url ?? ""];
+    return ["Section", String(section ?? "")];
+  });
+  const sections = [["Introduction", articleIntro(article)], ...normalizedSections];
+  const normalizedFaqs = Array.isArray(article.faqs) && article.faqs.length ? article.faqs : faq(article);
+  const withFaqSection = sections.some(([heading]) => /^frequently asked questions$/i.test(String(heading)))
+    ? sections
+    : [...sections, ["Frequently Asked Questions", normalizedFaqs.map(([q,a]) => q + " " + a).join(" ")]];
+  const total = withFaqSection.reduce((sum, [, text]) => sum + countWords(text), 0);
+  const bodyCompositionSources = [
+    {label:"NIH / NIDDK — Weight Management",url:"https://www.niddk.nih.gov/health-information/weight-management"},
+    {label:"CDC — Healthy Weight",url:"https://www.cdc.gov/healthy-weight-growth/"},
+    {label:"American College of Sports Medicine",url:"https://www.acsm.org/"},
+    {label:"International Society for Clinical Densitometry",url:"https://iscd.org/"}
+  ];
+  return {
+    ...article,
+    sections: withFaqSection,
+    faqs: normalizedFaqs,
+    sources: article.sources?.length ? article.sources : (article.category === "Body Composition" ? bodyCompositionSources : []),
+    readTime: article.readTime || (Math.max(4, Math.round(total / 220)) + " min read")
+  };
 }
 
 export function getLongFormJournalArticle(article) {
