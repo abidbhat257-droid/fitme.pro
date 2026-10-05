@@ -1,0 +1,41 @@
+# FitMe Pro
+
+> Free health, fitness, body-composition, nutrition, running, strength and cardiovascular calculators.
+
+## Purpose
+
+FitMe Pro helps people understand common health and fitness calculations. Calculator outputs are educational estimates, not diagnoses or prescriptions.
+
+## Calculator directory
+
+https://fitme-pro.vercel.app/calculators
+
+## Main topics
+
+- Body composition
+- Weight and BMI
+- Calories and metabolism
+- Nutrition and macronutrients
+- Running and endurance
+- Strength and gym performance
+- Heart rate and cardiovascular metrics
+
+## Evidence and editorial standards
+
+Evidence sources: https://fitme-pro.vercel.app/journal/evidence-sources
+Editorial standards: https://fitme-pro.vercel.app/journal/editorial-standards
+About FitMe Pro: https://fitme-pro.vercel.app/about
+
+FitMe Pro prefers authoritative public-health and scientific sources. Examples include WHO, CDC, NIH and NHS. Named equations should be checked against their original research or authoritative methodology before being described as validated for a particular population.
+
+## Limitations
+
+Results depend on the inputs, formula, assumptions, units and reference population. Do not use calculator results to diagnose disease, choose medication doses or replace individualized professional care.
+
+## Ownership
+
+Content and calculator methodology are maintained by the FitMe Pro Editorial Team. No medical credentials are claimed for this team.
+
+## Last reviewed
+
+2026-10-05
