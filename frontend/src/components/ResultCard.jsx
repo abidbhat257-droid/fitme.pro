@@ -47,7 +47,7 @@ export default function ResultCard({ calc, result, ready, index = 0 }) {
   return <article data-testid={CARD.root(calc.id)} className="card-in group relative bg-card border border-border p-6 brut-hover flex flex-col" style={{ animationDelay: `${Math.min(index, 20) * 30}ms`, borderTop: `3px solid ${cat.color}` }}>
     <div className="flex items-start justify-between mb-4">
       <div data-testid={CARD.category(calc.id)} className="text-[10px] font-bold uppercase tracking-[0.25em] px-2 py-1" style={{ color: cat.color, borderLeft: `2px solid ${cat.color}` }}>{cat.label}</div>
-      <button data-testid={CARD.copyBtn(calc.id)} onClick={onCopy} className="text-muted-foreground hover:text-[var(--brand-lime)] transition-colors" aria-label="Copy result"><Copy size={16} weight="duotone" /></button>
+      <button data-testid={CARD.copyBtn(calc.id)} onClick={onCopy} className="min-h-11 min-w-11 inline-flex items-center justify-center text-muted-foreground hover:text-[var(--brand-lime)] transition-colors" aria-label="Copy result"><Copy size={16} weight="duotone" /></button>
     </div>
     <h3 className="font-display text-xl uppercase tracking-tight leading-tight mb-4">{calc.name}</h3>
     <div className="flex-1">
