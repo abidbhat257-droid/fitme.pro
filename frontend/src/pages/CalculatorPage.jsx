@@ -234,7 +234,7 @@ export default function CalculatorPage({ seoSlug }) {
                 <div className="flex gap-2 no-print">
                   <button
                     onClick={onCopy}
-                    className="inline-flex items-center gap-1.5 border border-border px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest hover:border-[var(--brand-lime)] transition-colors"
+                    className="inline-flex min-h-11 min-w-11 items-center justify-center gap-1.5 border border-border px-3 py-2 text-[10px] font-bold uppercase tracking-widest hover:border-[var(--brand-lime)] transition-colors"
                   >
                     <Copy size={12} />
                     Copy
@@ -242,7 +242,7 @@ export default function CalculatorPage({ seoSlug }) {
 
                   <button
                     onClick={onShare}
-                    className="inline-flex items-center gap-1.5 border border-border px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest hover:border-[var(--brand-lime)] transition-colors"
+                    className="inline-flex min-h-11 min-w-11 items-center justify-center gap-1.5 border border-border px-3 py-2 text-[10px] font-bold uppercase tracking-widest hover:border-[var(--brand-lime)] transition-colors"
                   >
                     <ShareNetwork size={12} />
                     Share
@@ -250,7 +250,7 @@ export default function CalculatorPage({ seoSlug }) {
 
                   <button
                     onClick={() => window.print()}
-                    className="inline-flex items-center gap-1.5 border border-border px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest hover:border-[var(--brand-lime)] transition-colors"
+                    className="inline-flex min-h-11 min-w-11 items-center justify-center gap-1.5 border border-border px-3 py-2 text-[10px] font-bold uppercase tracking-widest hover:border-[var(--brand-lime)] transition-colors"
                   >
                     <Printer size={12} />
                     Print
