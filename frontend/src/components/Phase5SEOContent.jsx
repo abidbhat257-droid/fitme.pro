@@ -5,8 +5,8 @@ import { QUESTION_BANK_FAQS } from "@/lib/questionBankFAQs";
 const DATA = {
   "adjusted-body-weight": {
     title: "Adjusted Body Weight Calculator",
-    quick: "Adjusted body weight (AdjBW) is a calculated weight used in some clinical dosing protocols when actual body weight is substantially above ideal body weight. FitMe Pro uses the Devine ideal body weight and a 0.4 correction factor.",
-    formula: "AdjBW = IBW + 0.4 × (Actual Body Weight − IBW)",
+    quick: "AdjBW is an estimate used in some dosing protocols when a person’s measured mass is well above the reference value. FitMe Pro applies the Devine method with a 0.4 correction factor.",
+    formula: "AdjBW = IBW + 0.4 × (measured mass − IBW)",
     method: [
       "Estimate ideal body weight with the Devine equation.",
       "Subtract ideal body weight from actual body weight to find the excess weight.",
