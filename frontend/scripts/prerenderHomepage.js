@@ -141,16 +141,15 @@ if (!/<div id="root">[\s\S]*<h1>Free Health, Fitness &amp; Body Composition Calc
 }
 
 html = html.replace(/<script type="application\/ld\+json" data-fitme-home-schema>[\s\S]*?<\/script>\s*/gi, "");
-const validateSchemaNodes = (value, path = "schema") => {
-  if (!value || typeof value !== "object") return;
-  if (Array.isArray(value)) return value.forEach((item, i) => validateSchemaNodes(item, path + "[" + i + "]"));
-  if (path === "schema" || path.endsWith("@graph]")) return;
-  if (("name" in value || "@id" in value || "itemListElement" in value) && !value["@type"] && !("item" in value)) {
-    throw new Error("JSON-LD object is missing @type at " + path);
-  }
-  for (const [key, child] of Object.entries(value)) validateSchemaNodes(child, path + "." + key);
+const validateSchemaNodes = (schema) => {
+  const nodes = Array.isArray(schema["@graph"]) ? schema["@graph"] : [schema];
+  nodes.forEach((node, i) => {
+    if (!node || typeof node !== "object" || !node["@type"]) {
+      throw new Error("JSON-LD graph node is missing @type at index " + i);
+    }
+  });
 };
-jsonLd.forEach((schema, i) => validateSchemaNodes(schema, "schema[" + i + "]"));
+jsonLd.forEach(validateSchemaNodes);
 
 const jsonLdHtml = jsonLd.map((schema) => `<script type="application/ld+json" data-fitme-home-schema>${JSON.stringify(schema)}</script>`).join("");
 html = html.replace(/<\/head>/i, `${jsonLdHtml}</head>`);
