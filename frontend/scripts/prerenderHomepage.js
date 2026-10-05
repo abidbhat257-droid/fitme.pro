@@ -125,11 +125,14 @@ ${categorySections}\n    <section><h2>Featured calculators</h2><ul>${featuredCal
     </section>
 </main>`;
 
-const jsonLd = [
-  {"@context":"https://schema.org","@type":"WebSite","@id":site + "/#website","name":"FitMe Pro","url":site + "/"},
-  {"@context":"https://schema.org","@type":"WebPage","@id":site + "/#webpage","name":"FitMe Pro Health, Fitness & Body Composition Calculators","url":site + "/","isPartOf":{"@id":site + "/#website"}},
-  {"@context":"https://schema.org","@type":"Organization","@id":site + "/#organization","name":"FitMe Pro","url":site + "/","logo":site + "/fitme-pro-logo.svg"}
-];
+const jsonLd = [{
+  "@context":"https://schema.org",
+  "@graph":[
+    {"@type":"WebSite","@id":site + "/#website","name":"FitMe Pro","url":site + "/"},
+    {"@type":"WebPage","@id":site + "/#webpage","name":"FitMe Pro Health, Fitness & Body Composition Calculators","url":site + "/", "isPartOf":{"@id":site + "/#website"}},
+    {"@type":"Organization","@id":site + "/#organization","name":"FitMe Pro","url":site + "/","logo":site + "/fitme-pro-logo.svg"}
+  ]
+}];
 
 let html = fs.readFileSync(indexPath, "utf8");
 html = html.replace(/<div id="root"><\/div>/i, `<div id="root">${homepageMain}\n</div>`);
@@ -138,9 +141,17 @@ if (!/<div id="root">[\s\S]*<h1>Free Health, Fitness &amp; Body Composition Calc
 }
 
 html = html.replace(/<script type="application\/ld\+json" data-fitme-home-schema>[\s\S]*?<\/script>\s*/gi, "");
-for (const schema of jsonLd) {
-  if (!schema["@type"]) throw new Error("Homepage JSON-LD node is missing @type");
-}
+const validateSchemaNodes = (value, path = "schema") => {
+  if (!value || typeof value !== "object") return;
+  if (Array.isArray(value)) return value.forEach((item, i) => validateSchemaNodes(item, path + "[" + i + "]"));
+  if (path === "schema" || path.endsWith("@graph]")) return;
+  if (("name" in value || "@id" in value || "itemListElement" in value) && !value["@type"] && !("item" in value)) {
+    throw new Error("JSON-LD object is missing @type at " + path);
+  }
+  for (const [key, child] of Object.entries(value)) validateSchemaNodes(child, path + "." + key);
+};
+jsonLd.forEach((schema, i) => validateSchemaNodes(schema, "schema[" + i + "]"));
+
 const jsonLdHtml = jsonLd.map((schema) => `<script type="application/ld+json" data-fitme-home-schema>${JSON.stringify(schema)}</script>`).join("");
 html = html.replace(/<\/head>/i, `${jsonLdHtml}</head>`);
 fs.writeFileSync(indexPath, html, "utf8");
