@@ -50,6 +50,7 @@ function TacticalInput({ id, label, unit, testid, field, unitSystem, value, onCh
       </div>
       <input
         id={id}
+        aria-label={label}
         data-testid={testid}
         type="number"
         inputMode="decimal"
@@ -138,7 +139,7 @@ export default function MeasurementPanel({ compact = false }) {
                       <span title={DEFINITIONS.sex} className="cursor-help text-[10px] font-bold text-muted-foreground/60">ⓘ</span>
                     </div>
                     <Select value={state.sex} onValueChange={v => update({ sex: v })}>
-                      <SelectTrigger data-testid={PANEL.sex} aria-label="Sex" className="rounded-none border-0 border-b-2 border-border bg-transparent focus:border-[var(--brand-lime)] focus:ring-0 h-[42px] px-0 font-mono-data text-lg"><SelectValue /></SelectTrigger>
+                      <SelectTrigger data-testid={PANEL.sex} aria-label="Sex" className="rounded-none border-0 border-b-2 border-border bg-transparent focus:border-[var(--brand-lime)] focus:ring-0 h-11 min-h-11 px-0 font-mono-data text-lg"><SelectValue /></SelectTrigger>
                       <SelectContent className="rounded-none"><SelectItem value="male">Male</SelectItem><SelectItem value="female">Female</SelectItem></SelectContent>
                     </Select>
                     <p className="text-[10px] leading-4 text-muted-foreground/70">{DEFINITIONS.sex}</p>
@@ -150,7 +151,7 @@ export default function MeasurementPanel({ compact = false }) {
                   <div key={field} className="space-y-1.5">
                     <div className="flex items-center justify-between"><Label className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">Activity level</Label><span title={DEFINITIONS.activity} className="cursor-help text-[10px] font-bold text-muted-foreground/60">ⓘ</span></div>
                     <Select value={state.activity} onValueChange={v => update({ activity: v })}>
-                      <SelectTrigger data-testid={PANEL.activity} aria-label="Activity level" className="rounded-none border-0 border-b-2 border-border bg-transparent focus:border-[var(--brand-lime)] focus:ring-0 h-[42px] px-0 font-mono-data"><SelectValue /></SelectTrigger>
+                      <SelectTrigger data-testid={PANEL.activity} aria-label="Activity level" className="rounded-none border-0 border-b-2 border-border bg-transparent focus:border-[var(--brand-lime)] focus:ring-0 h-11 min-h-11 px-0 font-mono-data"><SelectValue /></SelectTrigger>
                       <SelectContent className="rounded-none max-w-[350px]">{ACTIVITY_LEVELS.map(a => <SelectItem key={a.value} value={a.value}>{a.label}</SelectItem>)}</SelectContent>
                     </Select>
                     <p className="text-[10px] leading-4 text-muted-foreground/70">{DEFINITIONS.activity}</p>
