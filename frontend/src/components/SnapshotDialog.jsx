@@ -44,7 +44,9 @@ export default function SnapshotDialog({ trigger }) {
         </DialogHeader>
 
         <div className="flex gap-2 mt-2">
+          <label htmlFor="snapshot-name-input" className="sr-only">Snapshot name</label>
           <input
+            id="snapshot-name-input"
             data-testid="snapshot-name-input"
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -54,7 +56,7 @@ export default function SnapshotDialog({ trigger }) {
           <button
             data-testid="snapshot-save-btn"
             onClick={onSave}
-            className="px-4 py-2 bg-[var(--brand-lime)] text-black text-xs font-bold uppercase tracking-[0.15em] hover:bg-white transition-colors"
+            aria-label="Save snapshot" className="min-h-11 px-4 py-2 bg-[var(--brand-lime)] text-black text-xs font-bold uppercase tracking-[0.15em] hover:bg-white transition-colors"
           >
             Save
           </button>
