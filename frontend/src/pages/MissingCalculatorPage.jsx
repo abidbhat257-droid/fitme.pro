@@ -35,7 +35,6 @@ function setJsonLd(calc) {
       { "@type": "ListItem", position: 2, name: calc.category, item: `${window.location.origin}/calculators` },
       { "@type": "ListItem", position: 3, name: calc.name, item: url }
     ] },
-    { "@type": "FAQPage", mainEntity: faqs.map(q => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: "Use the calculator with the stated inputs and interpret the result as an estimate. The method, measurement quality and individual differences can affect the result." } })) }
   ]});
   document.head.appendChild(script);
 }
