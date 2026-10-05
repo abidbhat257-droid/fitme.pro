@@ -55,8 +55,8 @@ export default function BodyProfileSidebar() {
       </div>
 
       <div className="mt-3 grid grid-cols-2 gap-2 px-3">
-        <SnapshotDialog trigger={<button className="flex min-w-0 items-center justify-center gap-1 border border-[var(--brand-lime)] bg-[var(--brand-lime)] px-2 py-2 text-[9px] font-bold uppercase tracking-wider text-black"><Camera size={13} /> Save</button>} />
-        <button onClick={() => setShowHistory((v) => !v)} className="flex min-w-0 items-center justify-center gap-1 border border-border px-2 py-2 text-[9px] font-bold uppercase tracking-wider hover:border-[var(--brand-lime)]"><ChartLineUp size={13} /> Compare</button>
+        <SnapshotDialog trigger={<button aria-label="Save profile snapshot" className="flex min-h-11 min-w-0 items-center justify-center gap-1 border border-[var(--brand-lime)] bg-[var(--brand-lime)] px-2 py-2 text-[9px] font-bold uppercase tracking-wider text-black"><Camera size={13} /> Save</button>} />
+        <button onClick={() => setShowHistory((v) => !v)} aria-label="Compare saved profile snapshots" className="flex min-h-11 min-w-0 items-center justify-center gap-1 border border-border px-2 py-2 text-[9px] font-bold uppercase tracking-wider hover:border-[var(--brand-lime)]"><ChartLineUp size={13} /> Compare</button>
       </div>
 
       {showHistory && <div className="mt-3 mx-3 border border-border bg-card/50 p-3">
