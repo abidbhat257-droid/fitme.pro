@@ -6,16 +6,14 @@ const build = path.join(root, "build");
 const indexPath = path.join(build, "index.html");
 const contentPath = path.join(root, "src", "lib", "content.js");
 const longFormPath = path.join(root, "src", "lib", "longFormContent.js");
-const expansionPath = path.join(root, "src", "lib", "longFormExpansion.js");
 const journalPath = path.join(root, "src", "lib", "journalContent.js");
 const tempModulePath = path.join(build, "__fitme_content.mjs");
 const tempLongFormPath = path.join(build, "__fitme_longform.mjs");
-const tempExpansionPath = path.join(build, "__fitme_expansion.mjs");
 const tempJournalPath = path.join(build, "__fitme_journal.mjs");
 const siteUrl = (process.env.SITE_URL || "https://fitme-pro.vercel.app").replace(/\/$/, "");
 
 if (!fs.existsSync(indexPath)) throw new Error(`CRA build output not found: ${indexPath}`);
-for (const required of [contentPath, longFormPath, expansionPath, journalPath]) if (!fs.existsSync(required)) throw new Error(`Required content file not found: ${required}`);
+for (const required of [contentPath, longFormPath, journalPath]) if (!fs.existsSync(required)) throw new Error(`Required content file not found: ${required}`);
 
 const esc = (value) => String(value ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\"/g, "&quot;").replace(/'/g, "&#39;");
 const json = (value) => JSON.stringify(value).replace(/</g, "\\u003c");
@@ -55,20 +53,16 @@ function writeRoute(route, html) {
     fs.writeFileSync(tempModulePath, `${source}
 export default CALC_CONTENT;`, "utf8");
     fs.writeFileSync(tempLongFormPath, fs.readFileSync(longFormPath, "utf8"), "utf8");
-    fs.writeFileSync(tempExpansionPath, fs.readFileSync(expansionPath, "utf8"), "utf8");
     fs.writeFileSync(tempJournalPath, fs.readFileSync(journalPath, "utf8"), "utf8");
     const mod = await import(`${pathToFileURL(tempModulePath).href}?v=${Date.now()}`);
     const longMod = await import(`${pathToFileURL(tempLongFormPath).href}?v=${Date.now()}`);
-    const expansionMod = await import(`${pathToFileURL(tempExpansionPath).href}?v=${Date.now()}`);
     const journalMod = await import(`${pathToFileURL(tempJournalPath).href}?v=${Date.now()}`);
     const pages = mod.CALC_CONTENT || mod.default;
     const getLongFormContent = longMod.getLongFormContent;
-    const getExpansionSections = expansionMod.getExpansionSections;
     const articles = journalMod.JOURNAL_ARTICLES || [];
     const categories = journalMod.JOURNAL_CATEGORIES || [];
     if (!pages || typeof pages !== "object") throw new Error("CALC_CONTENT was not exported from src/lib/content.js");
     if (typeof getLongFormContent !== "function") throw new Error("getLongFormContent was not exported from longFormContent.js");
-    if (typeof getExpansionSections !== "function") throw new Error("getExpansionSections was not exported from longFormExpansion.js");
 
     const base = fs.readFileSync(indexPath, "utf8");
     let calculatorCount = 0;
@@ -76,7 +70,7 @@ export default CALC_CONTENT;`, "utf8");
       if (!page || typeof page !== "object") continue;
       const canonical = `${siteUrl}/${slug}-calculator`;
       const longForm = getLongFormContent(slug);
-      const sections = longForm ? [...longForm.sections, ...getExpansionSections(longForm)] : [];
+      const sections = longForm ? [...(longForm.sections || [])] : [];
       const faq = longForm?.faqs?.length ? longForm.faqs : (Array.isArray(page.faq) ? page.faq : []);
       const steps = Array.isArray(page.steps) ? page.steps.map((s, i) => `<li><strong>Step ${i + 1}:</strong> ${esc(s)}</li>`).join("") : "";
       const faqs = faq.map((f) => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join("");
@@ -103,7 +97,9 @@ export default CALC_CONTENT;`, "utf8");
       const items = articles.filter(a => a.categorySlug === category.slug);
       const canonical = `${siteUrl}/journal/${category.slug}`;
       const schema = { "@context":"https://schema.org", "@type":"CollectionPage", name:`${category.name} — FitMe Pro Journal`, url:canonical, description:category.description };
+      const categoryRobots = ["wellness","health-education"].includes(category.slug) ? "noindex,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" : "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1";
       let html = setMeta(base, `${category.name} — FitMe Pro Journal`, `${category.description} Explore FitMe Pro Journal guides and calculators.`, canonical);
+      html = html.replace(/<meta name="robots"[^>]*>/i, `<meta name="robots" content="${categoryRobots}" />`);
       const body = `<main><article style="max-width:1100px;margin:0 auto;padding:40px 20px"><a href="/journal">FitMe Pro Journal</a><p>Journal / ${esc(category.name)}</p><h1>${esc(category.name)}</h1><p>${esc(category.description)}</p><h2>Guides</h2><ul>${items.map(a => `<li><a href="/journal/${a.categorySlug}/${a.slug}">${esc(a.title)}</a><p>${esc(a.description)}</p></li>`).join("")}</ul><p><a href="/tdee-calculator">Explore FitMe Pro calculators</a></p></article></main>`;
       html = html.replace(/<div id="root"><\/div>/i, `<div id="root">${body}</div>`).replace(/<\/head>/i, `<script type="application/ld+json">${json(schema)}</script></head>`);
       writeRoute(`/journal/${category.slug}`, html);
@@ -122,7 +118,7 @@ export default CALC_CONTENT;`, "utf8");
 
     console.log(`Prerendered ${calculatorCount} calculator pages, 1 Journal hub, ${categories.length} Journal categories and ${articles.length} Journal articles.`);
   } finally {
-    for (const file of [tempModulePath,tempLongFormPath,tempExpansionPath,tempJournalPath]) { try { fs.unlinkSync(file); } catch (_) {} }
+    for (const file of [tempModulePath,tempLongFormPath,tempJournalPath]) { try { fs.unlinkSync(file); } catch (_) {} }
   }
 })().catch((error)=>{console.error("Prerender failed:",error);process.exit(1);});
 
