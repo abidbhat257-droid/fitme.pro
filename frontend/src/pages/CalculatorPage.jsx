@@ -34,6 +34,7 @@ import {
 } from "@/components/ui/accordion";
 
 import { SEO } from "@/constants/testIds";
+import EditorialTrust from "@/components/EditorialTrust";
 
 export default function CalculatorPage({ seoSlug }) {
   const { slug: routeSlug } = useParams();
@@ -367,6 +368,8 @@ export default function CalculatorPage({ seoSlug }) {
             </div>
 
             <Suspense fallback={null}><LongFormArticle content={longForm} calc={calc} /></Suspense>
+            <EditorialTrust />
+
             <section className="border border-border bg-card p-6 sm:p-8">
               <h2 className="font-display text-2xl uppercase tracking-tighter mb-3">Evidence &amp; Method Sources</h2>
               <p className="text-sm leading-relaxed text-muted-foreground mb-4">The calculator is an educational estimate. These public sources provide context for the health, fitness or methodology information used on this page.</p>
