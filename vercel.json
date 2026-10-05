@@ -147,6 +147,10 @@
           "value": "h3=\":443\"; ma=86400"
         },
         {
+          "key": "Vary",
+          "value": "Accept-Encoding"
+        },
+        {
           "key": "Strict-Transport-Security",
           "value": "max-age=31536000; includeSubDomains"
         }
