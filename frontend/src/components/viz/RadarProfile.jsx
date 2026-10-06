@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Camera, CheckCircle, TrendDown, TrendUp } from "@phosphor-icons/react";
+import HomeIcon from "@/components/HomeIcon";
 import { useMeasurements } from "@/context/MeasurementContext";
 import SnapshotDialog from "@/components/SnapshotDialog";
 
@@ -78,11 +78,11 @@ export default function RadarProfile({ axes = [] }) {
 
       <div className="flex w-full flex-wrap items-center justify-between gap-3 mt-3">
         {idealPoints && <div className="flex gap-4 text-[10px] uppercase tracking-widest"><span className="flex items-center gap-1.5"><span className="h-2 w-4 bg-[var(--brand-lime)]" /> You</span><span className="flex items-center gap-1.5"><span className="h-2 w-4 border border-dashed border-[#3B82F6]" /> Reference</span></div>}
-        <SnapshotDialog trigger={<button className="inline-flex min-h-11 min-w-11 items-center justify-center gap-1.5 border border-border px-3 py-2 text-[9px] font-bold uppercase tracking-widest hover:border-[var(--brand-lime)] hover:text-[var(--brand-lime)]"><Camera size={13} /> Save snapshot</button>} />
+        <SnapshotDialog trigger={<button className="inline-flex min-h-11 min-w-11 items-center justify-center gap-1.5 border border-border px-3 py-2 text-[9px] font-bold uppercase tracking-widest hover:border-[var(--brand-lime)] hover:text-[var(--brand-lime)]"><HomeIcon name="camera" size={13} /> Save snapshot</button>} />
       </div>
 
       <div className="mt-4 grid w-full grid-cols-2 gap-2 sm:grid-cols-3">
-        {axes.map((a) => <button key={a.key} onClick={() => setSelected(a.key)} className={`border p-2.5 text-left transition-colors ${active?.key === a.key ? "border-[var(--brand-lime)] bg-background" : "border-border bg-background/60 hover:border-[var(--brand-lime)]"}`}><div className="text-[8px] font-bold uppercase tracking-[0.18em] text-muted-foreground">{a.label}</div><div className="mt-1 text-sm font-black text-[var(--brand-lime)]">{formatValue(a)}</div><div className="mt-1 flex items-center gap-1 text-[8px] uppercase tracking-wider text-muted-foreground">{status(a) === "Near ideal" ? <CheckCircle size={11} /> : status(a) === "Below" ? <TrendDown size={11} /> : status(a) === "Above" ? <TrendUp size={11} /> : null}{status(a)}</div></button>)}
+        {axes.map((a) => <button key={a.key} onClick={() => setSelected(a.key)} className={`border p-2.5 text-left transition-colors ${active?.key === a.key ? "border-[var(--brand-lime)] bg-background" : "border-border bg-background/60 hover:border-[var(--brand-lime)]"}`}><div className="text-[8px] font-bold uppercase tracking-[0.18em] text-muted-foreground">{a.label}</div><div className="mt-1 text-sm font-black text-[var(--brand-lime)]">{formatValue(a)}</div><div className="mt-1 flex items-center gap-1 text-[8px] uppercase tracking-wider text-muted-foreground">{status(a) === "Near ideal" ? <HomeIcon name="check" size={11} /> : status(a) === "Below" ? <HomeIcon name="trend-down" size={11} /> : status(a) === "Above" ? <HomeIcon name="trend-up" size={11} /> : null}{status(a)}</div></button>)}
       </div>
       <div className="mt-3 w-full grid grid-cols-3 gap-2 text-center text-[8px] uppercase tracking-wider text-muted-foreground"><div className="border border-border p-2"><b className="block text-foreground">{n}</b>Metrics</div><div className="border border-border p-2"><b className="block text-foreground">{counts.below + counts.above}</b>Outside</div><div className="border border-border p-2"><b className="block text-foreground">{snapshots.length}</b>Saved</div></div>
     </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Copy, ArrowUpRight } from "@phosphor-icons/react";
+import HomeIcon from "@/components/HomeIcon";
 import { toast } from "sonner";
 import { CATEGORIES } from "@/lib/calculators";
 import GaugeBar from "./GaugeBar";
@@ -47,7 +47,7 @@ export default function ResultCard({ calc, result, ready, index = 0 }) {
   return <article data-testid={CARD.root(calc.id)} className="card-in group relative bg-card border border-border p-6 brut-hover flex flex-col" style={{ animationDelay: `${Math.min(index, 20) * 30}ms`, borderTop: `3px solid ${cat.color}` }}>
     <div className="flex items-start justify-between mb-4">
       <div data-testid={CARD.category(calc.id)} className="text-[10px] font-bold uppercase tracking-[0.25em] px-2 py-1" style={{ color: cat.color, borderLeft: `2px solid ${cat.color}` }}>{cat.label}</div>
-      <button data-testid={CARD.copyBtn(calc.id)} onClick={onCopy} className="min-h-11 min-w-11 inline-flex items-center justify-center text-muted-foreground hover:text-[var(--brand-lime)] transition-colors" aria-label="Copy result"><Copy size={16} weight="duotone" /></button>
+      <button data-testid={CARD.copyBtn(calc.id)} onClick={onCopy} className="min-h-11 min-w-11 inline-flex items-center justify-center text-muted-foreground hover:text-[var(--brand-lime)] transition-colors" aria-label="Copy result"><HomeIcon name="copy" size={16} /></button>
     </div>
     <h3 className="font-display text-xl uppercase tracking-tight leading-tight mb-4">{calc.name.replace(/\s+Calculator$/i, "")}</h3>
     <div className="flex-1">
@@ -60,7 +60,7 @@ export default function ResultCard({ calc, result, ready, index = 0 }) {
     </div>
     <div className="flex items-center justify-between mt-5 pt-4 border-t border-border">
       <div className="text-[10px] uppercase tracking-widest text-muted-foreground font-mono-data">{calc.formula.length > 34 ? calc.formula.slice(0, 34) + "…" : calc.formula}</div>
-      <Link to={`/${calc.slug}-calculator`} data-testid={CARD.detailsLink(calc.id)} onClick={forceTop} className="text-xs font-bold uppercase tracking-[0.15em] flex items-center gap-1 hover:text-[var(--brand-lime)] transition-colors">{calc.name.replace(/\s+Calculator$/i, "")} <ArrowUpRight size={12} weight="bold" /></Link>
+      <Link aria-label={`Open ${calc.name}`} to={`/${calc.slug}-calculator`} data-testid={CARD.detailsLink(calc.id)} onClick={forceTop} className="text-xs font-bold uppercase tracking-[0.15em] flex items-center gap-1 hover:text-[var(--brand-lime)] transition-colors">{calc.name.replace(/\s+Calculator$/i, "")} <HomeIcon name="arrow-up-right" size={12} /></Link>
     </div>
   </article>;
 }

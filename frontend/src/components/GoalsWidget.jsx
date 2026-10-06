@@ -1,6 +1,6 @@
 import React from "react";
 import { toast } from "sonner";
-import { Plus, Trash, Target, PencilSimple } from "@phosphor-icons/react";
+import HomeIcon from "@/components/HomeIcon";
 import { useMeasurements } from "@/context/MeasurementContext";
 import { computeGoalProgress, GOAL_METRICS, STATUS_COLORS, STATUS_LABELS } from "@/lib/goals";
 import ProgressRing from "@/components/viz/ProgressRing";
@@ -25,7 +25,7 @@ function GoalCard({ goal }) {
       <div className="flex items-start justify-between gap-3 mb-4">
         <div className="min-w-0">
           <div className="flex items-center gap-2 text-[10px] uppercase tracking-[0.25em] font-bold" style={{ color }}>
-            <Target size={12} weight="duotone" /> {label}
+            <HomeIcon name="target" size={12} /> {label}
           </div>
           <div className="font-display text-lg uppercase tracking-tighter mt-1 truncate">
             {meta?.label ?? goal.metric}
@@ -40,7 +40,7 @@ function GoalCard({ goal }) {
             initial={goal}
             trigger={
               <button className="p-1.5 border border-border hover:border-[var(--brand-lime)] hover:text-[var(--brand-lime)] transition-colors" aria-label="Edit goal">
-                <PencilSimple size={12} weight="bold" />
+                <HomeIcon name="pencil" size={12} />
               </button>
             }
           />
@@ -49,7 +49,7 @@ function GoalCard({ goal }) {
             className="p-1.5 border border-border hover:border-red-500 hover:text-red-500 transition-colors"
             aria-label="Delete goal"
           >
-            <Trash size={12} weight="bold" />
+            <HomeIcon name="trash" size={12} />
           </button>
         </div>
       </div>
@@ -104,7 +104,7 @@ export default function GoalsWidget() {
         <div className="flex items-center gap-3">
           <div className="h-3 w-3 bg-[var(--brand-lime)]" />
           <h2 className="font-display text-2xl sm:text-3xl uppercase tracking-tighter flex items-center gap-2">
-            <Target size={22} weight="duotone" className="text-[var(--brand-lime)]" />
+            <HomeIcon name="target" size={22} className="text-[var(--brand-lime)]" />
             Weekly Goals
           </h2>
           <span className="font-mono-data text-xs text-muted-foreground">
@@ -117,7 +117,7 @@ export default function GoalsWidget() {
               data-testid="goal-add-btn"
               className="inline-flex items-center gap-2 px-4 py-2 bg-[var(--brand-lime)] text-black text-xs font-bold uppercase tracking-[0.15em] hover:bg-white transition-colors"
             >
-              <Plus size={14} weight="bold" /> Add Goal
+              <HomeIcon name="plus" size={14} /> Add Goal
             </button>
           }
         />
