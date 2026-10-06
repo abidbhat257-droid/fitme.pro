@@ -125,15 +125,43 @@ ${categorySections}\n    <section><h2>Featured calculators</h2><ul>${featuredCal
     </section>
 </main>`;
 
-const jsonLd = [{
-  "@context":"https://schema.org",
-  "@graph":[
-    {"@type":"WebSite","@id":site + "/#website","name":"FitMe Pro","url":site + "/"},
-    {"@type":"WebPage","@id":site + "/#webpage","name":"FitMe Pro Health, Fitness & Body Composition Calculators","url":site + "/", "isPartOf":{"@id":site + "/#website"}},
-    {"@type":"Organization","@id":site + "/#organization","name":"FitMe Pro","url":site + "/","logo":site + "/fitme-pro-logo.svg"}
-  ]
-}];
-
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": site + "/#website",
+    "name": "FitMe Pro",
+    "url": site + "/"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": site + "/#webpage",
+    "name": "FitMe Pro Health, Fitness & Body Composition Calculators",
+    "url": site + "/",
+    "isPartOf": { "@id": site + "/#website" }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": site + "/#organization",
+    "name": "FitMe Pro",
+    "url": site + "/",
+    "logo": site + "/fitme-pro-logo.svg"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "@id": site + "/#featured-calculators",
+    "name": "Featured FitMe Pro Calculators",
+    "itemListElement": featuredCalculators.map((calculator, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "name": calculator.name,
+      "url": site + calculator.url
+    }))
+  }
+];
 let html = fs.readFileSync(indexPath, "utf8");
 html = html.replace(/<div id="root"><\/div>/i, `<div id="root">${homepageMain}\n</div>`);
 if (!/<div id="root">[\s\S]*<h1>Free Health, Fitness &amp; Body Composition Calculators<\/h1>/i.test(html)) {
@@ -142,12 +170,7 @@ if (!/<div id="root">[\s\S]*<h1>Free Health, Fitness &amp; Body Composition Calc
 
 html = html.replace(/<script type="application\/ld\+json" data-fitme-home-schema>[\s\S]*?<\/script>\s*/gi, "");
 const validateSchemaNodes = (schema) => {
-  const nodes = Array.isArray(schema["@graph"]) ? schema["@graph"] : [schema];
-  nodes.forEach((node, i) => {
-    if (!node || typeof node !== "object" || !node["@type"]) {
-      throw new Error("JSON-LD graph node is missing @type at index " + i);
-    }
-  });
+  if (!schema || typeof schema !== "object" || !schema["@type"]) throw new Error("Homepage JSON-LD block is missing @type");
 };
 jsonLd.forEach(validateSchemaNodes);
 
