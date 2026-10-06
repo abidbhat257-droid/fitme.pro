@@ -1,4 +1,5 @@
 import React,{useEffect}from"react";import{Link,useParams}from"react-router-dom";import{getJournalArticle}from"@/lib/journalContent";import{getExpandedJournalArticle}from"@/lib/journalExpansion";import{SEO_COMPETITOR_ARTICLES}from"@/lib/seoCompetitorArticles";import{SEO_COMPETITOR_ARTICLES_2}from"@/lib/seoCompetitorArticles2";import{getLongFormJournalArticle}from"@/lib/journalLongform";import{getSpecialJournalArticle}from"@/lib/journalSpecialArticles";import EditorialTrust from "@/components/EditorialTrust";
+import { ALL_CALCULATORS } from "@/lib/allCalculators";
 const SITE_URL="https://fitme-pro.vercel.app";
 function optimizeUnsplashUrl(url){return String(url||"").replace(/([?&])w=\d+/,"$1w=900").replace(/([?&])q=\d+/,"$1q=65");}
 const SECTION_IMAGES={
@@ -14,5 +15,58 @@ function canonical(u){let l=document.querySelector('link[rel="canonical"]');if(!
 function sectionImage(article,heading,index){const pool=SECTION_IMAGES[article.categorySlug]||SECTION_IMAGES.wellness;const h=heading.toLowerCase();const keywordIndex=h.includes("sleep")?0:h.includes("water")||h.includes("hydration")?1:h.includes("exercise")||h.includes("training")||h.includes("activity")?2:h.includes("food")||h.includes("diet")||h.includes("nutrition")?3:index;return pool[keywordIndex%pool.length]}
 function renderSection(article,[heading,text],index){const paragraphs=String(text||"").split(/\n\s*\n+/).map(p=>p.trim()).filter(Boolean);return <section key={`${heading}-${index}`} className="mb-8"><h2 className="mb-2 text-2xl font-bold sm:text-3xl">{heading}</h2><img src={optimizeUnsplashUrl(sectionImage(article,heading,index))} alt={`${heading} — FitMe Pro Journal`} width={900} height={256} loading="lazy" decoding="async" className="mb-4 h-48 w-full rounded-2xl object-cover sm:h-64"/><div className="space-y-2">{paragraphs.map((p,j)=><p key={j} className="text-base leading-7 text-muted-foreground">{p}</p>)}</div></section>}
 export default function JournalArticle(){const{slug}=useParams();const source=getJournalArticle(slug)||getExpandedJournalArticle(slug)||getSpecialJournalArticle(slug)||SEO_COMPETITOR_ARTICLES.find(a=>a.slug===slug)||SEO_COMPETITOR_ARTICLES_2.find(a=>a.slug===slug);const article=getLongFormJournalArticle(source);useEffect(()=>{if(!article)return;const url=`${SITE_URL}/journal/${article.categorySlug}/${article.slug}`;document.title=`${article.title} | FitMe Pro Journal`;meta("description",(article.description||"").length<120 ? `${article.description} Practical guidance, examples and evidence-based context from FitMe Pro.` : article.description);meta("keywords",article.keywords);meta("robots",["wellness","health-education"].includes(article.categorySlug)?"noindex,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1":"index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1");meta("og:title",article.title,true);meta("og:description",article.description,true);meta("og:type","article",true);meta("og:url",url,true);canonical(url);const id="fitme-journal-article-schema";document.getElementById(id)?.remove();const s=document.createElement("script");s.id=id;s.type="application/ld+json";s.textContent=JSON.stringify({"@context":"https://schema.org","@type":"Article",headline:article.title,description:article.description,datePublished:new Date(article.date||"September 19, 2026").toISOString().slice(0,10),dateModified:new Date(article.dateModified||article.date||"September 19, 2026").toISOString().slice(0,10),mainEntityOfPage:{"@type":"WebPage","@id":url},author:{"@type":"Organization",name:"FitMe Pro Editorial Team",url:SITE_URL},publisher:{"@type":"Organization",name:"FitMe Pro",url:SITE_URL},articleSection:article.category,keywords:article.keywords,isAccessibleForFree:true});document.head.appendChild(s);return()=>document.getElementById(id)?.remove()},[article]);if(!article)return <main className="mx-auto max-w-4xl px-4 py-20"><h1 className="text-3xl font-bold">Article not found</h1><Link className="mt-4 inline-block text-primary" to="/journal">Back to Journal →</Link></main>;
-const sections=(article.sections||[]).filter(([heading])=>heading!=="Introduction");const quickSummary=Array.isArray(article.quickSummary)?article.quickSummary:[];const internalLinks=<section className="mb-8 rounded-3xl border border-primary/20 bg-primary/5 p-6"><h2 className="text-2xl font-bold">Health and wellness calculators</h2><p className="mt-2 leading-7 text-muted-foreground">Use these internal tools alongside the guide to explore your own numbers and continue learning about related topics.</p><div className="mt-4"><Link className="inline-flex min-h-11 items-center rounded-xl bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground" to="/calculators">Browse calculators</Link></div></section>;
+const CALCULATOR_TOPIC_RULES=[
+  [/\b(bmi|body mass index|healthy weight|ideal weight|obesity|overweight)\b/i,["bmi","healthy-weight-range","ideal-body-weight","bmi-prime","obesity-class","waist-height-ratio"]],
+  [/\b(weight loss|lose weight|fat loss|calorie deficit|caloric deficit|weight management|weight-loss)\b/i,["tdee","calorie-deficit","weight-loss-timeline","weight-loss-calorie","weekly-weight-loss","calories-to-lose-1-kg"]],
+  [/\b(weight gain|muscle gain|bulking|surplus|lean gain)\b/i,["tdee","calorie-surplus","weight-gain-calorie","weight-gain-goal","protein","macro-calculator"]],
+  [/\b(body fat|body-fat|fat mass|lean mass|fat-free mass|ffmi|body composition|adiposity)\b/i,["body-fat","fat-mass","fat-free-mass","lean-body-mass","ffmi","relative-fat-mass"]],
+  [/\b(waist|hip|central adiposity|visceral fat|body shape|circumference|waist-to-height|waist-to-hip|absi|bri)\b/i,["waist-height-ratio","waist-hip-ratio","waist-circumference-health-risk-calculator","absi","bri","conicity-index"]],
+  [/\b(calorie|calories|energy balance|metabolism|maintenance|tdee|bmr)\b/i,["bmr","tdee","daily-calorie-needs","calorie-deficit","calorie-surplus","calorie-calculator"]],
+  [/\b(protein|macronutrient|macro|carbohydrate|carbs|fat intake|fiber|fibre|nutrition)\b/i,["protein","macro-calculator","protein-per-meal","carbohydrate","fat-intake","fiber-intake"]],
+  [/\b(hydration|water intake|fluid)\b/i,["water-intake","sleep-duration-calculator","daily-calorie-needs","protein","carbohydrate","sodium-intake"]],
+  [/\b(sleep|sleep duration|recovery)\b/i,["sleep-duration-calculator","water-intake","resting-heart-rate-calculator","heart-rate-recovery-calculator","daily-calorie-needs","bmi"]],
+  [/\b(running|runner|race|5k|10k|half marathon|marathon|pace|endurance|aerobic)\b/i,["pace","running-speed-calculator","training-pace-calculator","5k-time-predictor","10k-time-predictor","vo2-max-calculator"]],
+  [/\b(strength|resistance training|lifting|deadlift|squat|bench press|1rm|muscle)\b/i,["one-rep-max-calculator","bench-press-1rm-calculator","squat-1rm-calculator","deadlift-1rm-calculator","strength-level-calculator","training-volume-calculator"]],
+  [/\b(heart rate|cardiovascular|cardio|blood pressure|pulse|heart health)\b/i,["maximum-heart-rate-calculator","heart-rate-zone-calculator","target-heart-rate-calculator","resting-heart-rate-calculator","heart-rate-reserve-calculator","mean-arterial-pressure-calculator"]],
+  [/\b(fitness|exercise|physical activity|workout|training)\b/i,["cardio-fitness-level-calculator","vo2-max-calculator","training-volume-calculator","one-rep-max-calculator","target-heart-rate-calculator","fitness-age-calculator"]]
+];
+const CATEGORY_DEFAULTS={
+  Nutrition:["protein","macro-calculator","carbohydrate","fat-intake","fiber-intake","daily-calorie-needs"],
+  Fitness:["cardio-fitness-level-calculator","vo2-max-calculator","training-volume-calculator","one-rep-max-calculator","pace","target-heart-rate-calculator"],
+  "Weight Management":["bmi","tdee","calorie-deficit","weight-loss-timeline","healthy-weight-range","daily-calorie-needs"],
+  "Body Composition":["bmi","body-fat","fat-mass","fat-free-mass","lean-body-mass","ffmi"],
+  Wellness:["sleep-duration-calculator","water-intake","resting-heart-rate-calculator","heart-rate-recovery-calculator","daily-calorie-needs","bmi"],
+  "Health Education":["bmi","body-fat","bmr","tdee","waist-height-ratio","daily-calorie-needs"]
+};
+const calculatorById=new Map(ALL_CALCULATORS.map((calculator)=>[calculator.id,calculator]));
+const calculatorWords=(calculator)=>\`${calculator.name||""} ${calculator.id||""} ${calculator.category||""}\`.toLowerCase().split(/[^a-z0-9]+/).filter((word)=>word.length>2);
+const stopWords=new Set(["calculator","calculation","guide","health","fitness","body","daily","total","and","the","for","with","what","your","from","into","about"]);
+function getRelatedCalculators(article){
+  const headings=(article.sections||[]).map((section)=>Array.isArray(section)?section[0]:"").join(" ");
+  const corpus=[article.title,article.description,article.keywords,headings,(article.quickSummary||[]).join(" ")].filter(Boolean).join(" ").toLowerCase();
+  const selected=[];
+  const add=(id)=>{const item=calculatorById.get(id);if(item&&!selected.some((existing)=>existing.id===id))selected.push(item);};
+  for(const [pattern,ids] of CALCULATOR_TOPIC_RULES){if(pattern.test(corpus))ids.forEach(add);}
+  (CATEGORY_DEFAULTS[article.category]||CATEGORY_DEFAULTS["Health Education"]).forEach(add);
+  const corpusWords=new Set(corpus.split(/[^a-z0-9]+/).filter((word)=>word.length>2&&!stopWords.has(word)));
+  const scored=ALL_CALCULATORS.map((calculator)=>{
+    const words=calculatorWords(calculator);
+    const overlap=words.reduce((score,word)=>score+(corpusWords.has(word)?1:0),0);
+    const titleBoost=words.some((word)=>String(article.title||"").toLowerCase().includes(word))?2:0;
+    return {calculator,score:overlap+titleBoost};
+  }).sort((a,b)=>b.score-a.score);
+  for(const item of scored)if(item.score>0)add(item.calculator.id);
+  return selected.slice(0,6);
+}
+const sections=(article.sections||[]).filter(([heading])=>heading!=="Introduction");
+const quickSummary=Array.isArray(article.quickSummary)?article.quickSummary:[];
+const relatedCalculators=getRelatedCalculators(article);
+const internalLinks=<section className="mb-8 rounded-3xl border border-primary/20 bg-primary/5 p-6">
+  <h2 className="text-2xl font-bold">Related Calculators</h2>
+  <p className="mt-2 leading-7 text-muted-foreground">Use these FitMe Pro calculators to explore the measurements and planning questions covered in this guide.</p>
+  <div className="mt-4 grid gap-2 sm:grid-cols-2">
+    {relatedCalculators.map((calculator)=><Link key={calculator.id} className="rounded-xl border border-border bg-background px-4 py-3 text-sm font-semibold transition-colors hover:border-primary hover:text-primary" to={calculator.url}>{calculator.name}</Link>)}
+  </div>
+  <Link className="mt-4 inline-flex min-h-11 items-center rounded-xl bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground" to="/calculators">Browse all 100 calculators</Link>
+</section>;
 return <main className="min-h-screen px-4 py-8 sm:px-6 lg:px-10"><article className="mx-auto max-w-4xl"><Link to={`/journal/${article.categorySlug}`} className="text-sm font-medium text-primary">← {article.category} Journal</Link><header className="mt-5 border-b border-white/10 pb-7"><p className="text-xs font-semibold uppercase tracking-[.16em] text-primary">{article.category} · {article.readTime}</p><h1 className="mt-3 text-4xl font-bold leading-[1.15] sm:text-5xl">{article.title}</h1><p className="mt-4 text-lg leading-7 text-muted-foreground">{article.description}</p><p className="mt-3 text-sm text-muted-foreground">Updated {article.dateModified||article.date||"September 19, 2026"} · FitMe Pro Journal · Reviewed by FitMe Pro Editorial Team</p></header><div className="mt-7">{quickSummary.length>0&&<section className="mb-8 rounded-3xl border border-primary/20 bg-primary/5 p-6"><h2 className="text-2xl font-bold">Quick Summary</h2><ul className="mt-4 list-disc space-y-2 pl-5 text-base leading-7 text-muted-foreground">{quickSummary.map((point,index)=><li key={index}>{point}</li>)}</ul></section>}{sections.map((section,index)=><React.Fragment key={`${section[0]}-${index}`}>{renderSection(article,section,index)}{index===2&&internalLinks}</React.Fragment>)}</div><EditorialTrust compact />\n<section className="mt-8 border-t border-white/10 pt-6"><h2 className="mb-2 text-xl font-semibold">Sources & further reading</h2><ul className="space-y-2">{article.sources.map(s=><li key={s.url}><a className="text-sm text-primary hover:underline" href={s.url} target="_blank" rel="noopener noreferrer">{s.label} ↗</a></li>)}</ul><p className="mt-4 text-xs leading-5 text-muted-foreground">FitMe Pro uses authoritative public-health guidance as a reference. Our wording is original and is not copied from source publications or competitor websites.</p></section></article></main>}
