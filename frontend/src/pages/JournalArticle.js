@@ -39,7 +39,7 @@ const CATEGORY_DEFAULTS={
   "Health Education":["bmi","body-fat","bmr","tdee","waist-height-ratio","daily-calorie-needs"]
 };
 const calculatorById=new Map(ALL_CALCULATORS.map((calculator)=>[calculator.id,calculator]));
-const calculatorWords=(calculator)=>\`${calculator.name||""} ${calculator.id||""} ${calculator.category||""}\`.toLowerCase().split(/[^a-z0-9]+/).filter((word)=>word.length>2);
+const calculatorWords=(calculator)=>`${calculator.name||""} ${calculator.id||""} ${calculator.category||""}`.toLowerCase().split(/[^a-z0-9]+/).filter((word)=>word.length>2);
 const stopWords=new Set(["calculator","calculation","guide","health","fitness","body","daily","total","and","the","for","with","what","your","from","into","about"]);
 function getRelatedCalculators(article){
   const headings=(article.sections||[]).map((section)=>Array.isArray(section)?section[0]:"").join(" ");
