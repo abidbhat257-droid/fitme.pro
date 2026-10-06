@@ -39,13 +39,14 @@ const CATEGORY_DEFAULTS={
   "Health Education":["bmi","body-fat","bmr","tdee","waist-height-ratio","daily-calorie-needs"]
 };
 const calculatorById=new Map(ALL_CALCULATORS.map((calculator)=>[calculator.id,calculator]));
+const resolveCalculator=(reference)=>calculatorById.get(reference)||ALL_CALCULATORS.find((calculator)=>calculator.id===reference+"-calculator"||calculator.slug===reference||calculator.slug===reference+"-calculator"||calculator.url===reference||calculator.url===`/${reference}-calculator`)||null;
 const calculatorWords=(calculator)=>`${calculator.name||""} ${calculator.id||""} ${calculator.category||""}`.toLowerCase().split(/[^a-z0-9]+/).filter((word)=>word.length>2);
 const stopWords=new Set(["calculator","calculation","guide","health","fitness","body","daily","total","and","the","for","with","what","your","from","into","about"]);
 function getRelatedCalculators(article){
   const headings=(article.sections||[]).map((section)=>Array.isArray(section)?section[0]:"").join(" ");
   const corpus=[article.title,article.description,article.keywords,headings,(article.quickSummary||[]).join(" ")].filter(Boolean).join(" ").toLowerCase();
   const selected=[];
-  const add=(id)=>{const item=calculatorById.get(id);if(item&&!selected.some((existing)=>existing.id===id))selected.push(item);};
+  const add=(id)=>{const item=resolveCalculator(id);if(item&&!selected.some((existing)=>existing.id===item.id))selected.push(item);};
   for(const [pattern,ids] of CALCULATOR_TOPIC_RULES){if(pattern.test(corpus))ids.forEach(add);}
   (CATEGORY_DEFAULTS[article.category]||CATEGORY_DEFAULTS["Health Education"]).forEach(add);
   const corpusWords=new Set(corpus.split(/[^a-z0-9]+/).filter((word)=>word.length>2&&!stopWords.has(word)));
