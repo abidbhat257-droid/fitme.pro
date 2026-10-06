@@ -57,6 +57,15 @@ function getRelatedCalculators(article){
     return {calculator,score:overlap+titleBoost};
   }).sort((a,b)=>b.score-a.score);
   for(const item of scored)if(item.score>0)add(item.calculator.id);
+  // Guarantee every Journal article has at least 5 real calculator links.
+  // Topic-matched calculators are preferred; remaining slots use the canonical
+  // 100-calculator registry so no invalid or missing URLs are introduced.
+  if(selected.length<5){
+    for(const calculator of ALL_CALCULATORS){
+      add(calculator.id);
+      if(selected.length>=5)break;
+    }
+  }
   return selected.slice(0,6);
 }
 const sections=(article.sections||[]).filter(([heading])=>heading!=="Introduction");
