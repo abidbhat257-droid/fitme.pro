@@ -33,7 +33,7 @@ export default function Footer(){
           <div className="flex flex-col gap-2 text-xs">
             <Link to="/journal/evidence-sources">Evidence Sources</Link>
             <Link to="/journal/editorial-standards">Editorial Standards</Link>
-            <Link to="/about">About FitMe Pro</Link><span>Editorial byline: FitMe Pro Editorial Team</span><span>Business address: not publicly listed</span>
+            <Link to="/about">About FitMe Pro</Link><span>Editorial byline: FitMe Pro Editorial Team</span><span>Expertise: fitness measurement, health-calculation methodology, and evidence review</span><span>Business address: not publicly listed</span>
             <Link to="/contact">Contact</Link><a href="https://www.cdc.gov/healthy-weight-growth/" target="_blank" rel="noopener noreferrer">CDC Healthy Weight</a><a href="https://www.niddk.nih.gov/health-information/weight-management" target="_blank" rel="noopener noreferrer">NIDDK Weight Management</a>
           </div>
         </div>
