@@ -29,11 +29,11 @@ export default function Footer(){
         </div>
         <div>
           <div className="text-[10px] font-bold uppercase tracking-[.25em] text-muted-foreground mb-3">Evidence & Trust</div>
-          <p className="text-xs text-muted-foreground leading-relaxed mb-3">FitMe Pro Editorial Team reviews methodology and cites public-health sources. <time dateTime="2026-10-05">Last reviewed October 5, 2026.</time></p><div className="mb-3 flex flex-wrap gap-2 text-[10px] font-bold uppercase tracking-wider"><span className="border border-border px-2 py-1">Evidence-informed</span><span className="border border-border px-2 py-1">Privacy-first</span><span className="border border-border px-2 py-1">Educational only</span></div>
+          <p className="text-xs text-muted-foreground leading-relaxed mb-3">FitMe Pro Editorial Team creates and reviews the site content using documented formulas and public-health sources. <time dateTime="2026-10-05">Last reviewed October 5, 2026.</time></p><div className="mb-3 flex flex-wrap gap-2 text-[10px] font-bold uppercase tracking-wider"><span className="border border-border px-2 py-1">Evidence-informed</span><span className="border border-border px-2 py-1">Privacy-first</span><span className="border border-border px-2 py-1">Educational only</span></div>
           <div className="flex flex-col gap-2 text-xs">
             <Link to="/journal/evidence-sources">Evidence Sources</Link>
             <Link to="/journal/editorial-standards">Editorial Standards</Link>
-            <Link to="/about">About FitMe Pro</Link>
+            <Link to="/about">About FitMe Pro</Link><span>Editorial byline: FitMe Pro Editorial Team</span><span>Business address: not publicly listed</span>
             <Link to="/contact">Contact</Link><a href="https://www.cdc.gov/healthy-weight-growth/" target="_blank" rel="noopener noreferrer">CDC Healthy Weight</a><a href="https://www.niddk.nih.gov/health-information/weight-management" target="_blank" rel="noopener noreferrer">NIDDK Weight Management</a>
           </div>
         </div>
