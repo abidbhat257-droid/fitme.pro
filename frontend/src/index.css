@@ -46,8 +46,9 @@ main > section:first-child > div:first-child[style*="radial-gradient"] { backgro
 /* Accessibility: preserve compact desktop UI while guaranteeing comfortable touch targets on touch devices. */
 @media (pointer: coarse) {
   button,
-  a,
+  input,
   select,
+  textarea,
   [role="button"] {
     min-height: 44px;
     min-width: 44px;
