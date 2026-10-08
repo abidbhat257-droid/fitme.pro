@@ -45,22 +45,20 @@ export default function ResultCard({ calc, result, ready, index = 0 }) {
   };
 
   return <article data-testid={CARD.root(calc.id)} className="card-in group relative bg-card border border-border p-6 brut-hover flex flex-col" style={{ animationDelay: `${Math.min(index, 20) * 30}ms`, borderTop: `3px solid ${cat.color}` }}>
-    <div className="flex items-start justify-between mb-4">
+    <header className="flex items-start justify-between mb-4">
       <div data-testid={CARD.category(calc.id)} className="text-[10px] font-bold uppercase tracking-[0.25em] px-2 py-1" style={{ color: cat.color, borderLeft: `2px solid ${cat.color}` }}>{cat.label}</div>
       <button data-testid={CARD.copyBtn(calc.id)} onClick={onCopy} className="min-h-11 min-w-11 inline-flex items-center justify-center text-muted-foreground hover:text-[var(--brand-lime)] transition-colors" aria-label="Copy result"><HomeIcon name="copy" size={16} /></button>
-    </div>
+    </header>
     <h3 className="font-display text-xl uppercase tracking-tight leading-tight mb-4">{calc.name.replace(/\s+Calculator$/i, "")}</h3>
-    <div className="flex-1">
-      {ready ? <>
+    {ready ? <>
         <div data-testid={CARD.value(calc.id)} className="font-mono-data text-3xl sm:text-4xl font-black tracking-tight" style={{ color: tone }}>{result?.value ?? "—"}{result?.unit ? <span className="text-sm ml-1.5 text-muted-foreground font-normal">{result.unit}</span> : null}</div>
         {result?.category ? <div className="text-xs mt-1.5 font-bold uppercase tracking-[0.15em] text-muted-foreground">{result.category}</div> : null}
         {gauge ? <div className="mt-4"><GaugeBar {...gauge} /></div> : null}
         {result?.range ? <div className="text-[11px] mt-3 text-muted-foreground">Reference: <span className="font-mono-data text-foreground">{result.range}</span></div> : null}
       </> : <div className="text-sm text-muted-foreground leading-relaxed"><span className="text-[var(--brand-lime)] font-bold">→</span> Add the required values to calculate this result.</div>}
-    </div>
-    <div className="flex items-center justify-between mt-5 pt-4 border-t border-border">
+    <footer className="flex items-center justify-between mt-5 pt-4 border-t border-border">
       <div className="text-[10px] uppercase tracking-widest text-muted-foreground font-mono-data">{calc.formula.length > 34 ? calc.formula.slice(0, 34) + "…" : calc.formula}</div>
       <Link aria-label={`Open ${calc.name}`} to={`/${calc.slug}-calculator`} data-testid={CARD.detailsLink(calc.id)} onClick={forceTop} className="text-xs font-bold uppercase tracking-[0.15em] flex items-center gap-1 hover:text-[var(--brand-lime)] transition-colors">{calc.name.replace(/\s+Calculator$/i, "")} <HomeIcon name="arrow-up-right" size={12} /></Link>
-    </div>
+    </footer>
   </article>;
 }
