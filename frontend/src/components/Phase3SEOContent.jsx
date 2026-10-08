@@ -61,7 +61,7 @@ const DATA = {
 
 const RELATED = {
   protein: ["/daily-calorie-needs-calculator", "/macro-calculator", "/protein-per-meal-calculator", "/meal-macro-calculator"],
-  pace: ["/running-speed-calculator", "/5k-time-predictor-calculator", "/training-pace-calculator", "/running-calories-calculator"],
+  pace: ["/running-speed-calculator", "/5k-time-predictor", "/training-pace-calculator", "/running-calorie-calculator"],
   "one-rep-max": ["/bench-press-1rm-calculator", "/squat-1rm-calculator", "/deadlift-1rm-calculator", "/strength-level-calculator"],
   "maximum-heart-rate": ["/heart-rate-zone-calculator", "/target-heart-rate-calculator", "/heart-rate-reserve-calculator", "/vo2-max-calculator"],
   "heart-rate-zone": ["/maximum-heart-rate-calculator", "/target-heart-rate-calculator", "/heart-rate-reserve-calculator", "/heart-rate-recovery-calculator"]
