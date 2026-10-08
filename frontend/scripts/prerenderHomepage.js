@@ -85,11 +85,23 @@ for (const url of sitemapCalculatorUrls) {
 }
 
 const whichCalculatorSection = `<section><h2>Which calculator should I use?</h2><p>Start with the goal you care about. For weight loss, use the <a href="/weight-loss-timeline-calculator">Weight Loss Timeline</a> to estimate how long a target may take, then use the <a href="/calorie-deficit-calculator">Calorie Deficit Calculator</a> to understand the energy gap. For muscle gain, use the <a href="/protein-calculator">Protein Calculator</a> for a daily protein target and the <a href="/calorie-surplus-calculator">Calorie Surplus Calculator</a> for a controlled energy surplus. Runners can use the <a href="/pace-calculator">Pace Calculator</a> to convert time, distance and pace, then use the <a href="/target-heart-rate-calculator">Target Heart Rate Calculator</a> to set a training zone. If you want a broad starting point, begin with the <a href="/bmi-calculator">BMI Calculator</a>, then compare it with a body-fat or waist-based measure. Choose the tool that matches your question, enter consistent measurements, and read the formula and limitations before acting on the result. FitMe Pro calculators provide estimates for planning and learning; they are not diagnoses or personal medical advice, and compare trends over time.</p></section>`;
+const hubLinks=[
+  ["Body Composition Hub","/calculator-category/body-composition"],
+  ["Weight Management Hub","/calculator-category/weight-management"],
+  ["Calories & Metabolism Hub","/calculator-category/calories"],
+  ["Nutrition & Macro Hub","/calculator-category/nutrition"],
+  ["Running & Endurance Hub","/calculator-category/running"],
+  ["Strength & Gym Hub","/calculator-category/strength"],
+  ["Heart Rate & Cardiovascular Hub","/calculator-category/heart"],
+];
 const categorySections = groups.map(({ category, items }) => `
     <section>
-      <h2>${esc(category)}</h2>
-      <p>${items.length} calculators covering ${esc(category.toLowerCase())}. Browse the full directory for every tool and formula.</p>
-    </section>`).join("\n");
+      <h3>${esc(category)}</h3>
+      <ul>
+        ${items.map((calculator) => `<li><a href="${esc(calculator.url)}">${esc(calculator.name)}</a></li>`).join("\\n        ")}
+      </ul>
+    </section>`).join("\\n");
+const allCalculatorsSection = `<section><h2>All calculators</h2><p>Browse every FitMe Pro calculator by category, or explore a topic hub.</p>${categorySections}<h3>Calculator topic hubs</h3><ul>${hubLinks.map(([label,url]) => `<li><a href="${url}">${esc(label)}</a></li>`).join("\\n")}</ul></section>\n    `;
 const featuredUrls = new Set([
   "/bmi-calculator", "/body-fat-calculator", "/bmr-calculator", "/tdee-calculator",
   "/daily-calorie-needs-calculator", "/calorie-deficit-calculator", "/protein-calculator",
@@ -117,7 +129,7 @@ const homepageMain = `
 <main>
   <h1>Free Health, Fitness &amp; Body Composition Calculators</h1>
   <p>FitMe Pro provides free health and fitness calculators for common measurements and planning tasks. Each tool explains its method, inputs, result and important limitations.</p><p><strong>Editorial owner:</strong> FitMe Pro Editorial Team. <strong>Last reviewed:</strong> October 5, 2026. Health explanations are checked against authoritative public sources.</p><p>Use these calculators to learn how common formulas work and to compare consistent measurements over time. Results are estimates: they can vary with units, measurement technique, assumptions and the population for which a formula was developed. A calculator result is not a diagnosis, prescription or guarantee of health.</p><p>For health questions, symptoms, medication decisions, pregnancy, eating disorders or other individual medical circumstances, use qualified professional advice. The calculator pages explain when a result should not be interpreted as a clinical measurement.</p><p>FitMe Pro organizes tools by body composition, weight and BMI, calories and metabolism, nutrition, running and endurance, strength, and heart-rate metrics. Start with the measurement you want to understand, then review the formula and limitations before using the result.</p>
-${categorySections}\n    ${whichCalculatorSection}\n    <section><h2>Featured calculators</h2><ul>${featuredCalculators.map((calculator) => `<li><a href="${esc(calculator.url)}">${esc(calculator.name.replace(/\s+Calculator$/i, ""))}</a></li>`).join("\n        ")}</ul><p><a href="/calculators">Browse all 100 health and fitness calculators</a></p></section>
+${allCalculatorsSection}${whichCalculatorSection}\n    <section><h2>Featured calculators</h2><ul>${featuredCalculators.map((calculator) => `<li><a href="${esc(calculator.url)}">${esc(calculator.name.replace(/\s+Calculator$/i, ""))}</a></li>`).join("\n        ")}</ul><p><a href="/calculators">Browse all 100 health and fitness calculators</a></p></section>
     <section>
       <h2>FitMe Pro Journal</h2>
       <ul>
