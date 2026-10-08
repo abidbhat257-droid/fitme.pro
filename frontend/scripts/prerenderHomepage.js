@@ -177,7 +177,15 @@ jsonLd.forEach(validateSchemaNodes);
 
 const jsonLdHtml = jsonLd.map((schema) => `<script type="application/ld+json" data-fitme-home-schema>${JSON.stringify(schema)}</script>`).join("");
 html = html.replace(/<\/head>/i, `${jsonLdHtml}</head>`);
+// Keep the prerendered document compact; the client app provides the interactive calculator UI.
+html = html.replace(/>\s+</g, "><").replace(/\s{2,}/g, " ").trim();
+const htmlBytes = Buffer.byteLength(html, "utf8");
+const HTML_BUDGET_BYTES = 100 * 1024;
+if (htmlBytes >= HTML_BUDGET_BYTES) {
+  throw new Error(`Homepage HTML budget exceeded: ${htmlBytes} bytes (target < ${HTML_BUDGET_BYTES} bytes)`);
+}
 fs.writeFileSync(indexPath, html, "utf8");
+console.log(`Homepage HTML: ${htmlBytes} bytes`);
 
 console.log(JSON.stringify({
   homepageCalculators: allCalculators.length,
