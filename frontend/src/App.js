@@ -15,8 +15,6 @@ const NewCalculatorPage = lazy(() => import("@/pages/NewCalculatorPage"));
 const MissingCalculatorPage = lazy(() => import("@/pages/MissingCalculatorPage"));
 const CalculatorsDirectory = lazy(() => import("@/pages/CalculatorsDirectory"));
 const CalculatorCategoryHub = lazy(() => import("@/pages/CalculatorCategoryHub"));
-import { SPECIALIZED_CALCULATORS } from "@/lib/specializedCalculators";
-import { NEW_CALCULATORS } from "@/lib/newSpecializedCalculators";
 import { ALL_CALCULATORS } from "@/lib/allCalculators";
 const About = lazy(() => import("./pages/about"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
