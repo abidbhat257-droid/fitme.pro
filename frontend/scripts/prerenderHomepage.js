@@ -88,7 +88,10 @@ const whichCalculatorSection = `<section><h2>Which calculator should I use?</h2>
 const categorySections = groups.map(({ category, items }) => `
     <section>
       <h2>${esc(category)}</h2>
-      <p>${items.length} calculators covering ${esc(category.toLowerCase())}. Browse the full directory for every tool and formula.</p>
+      <p>${items.length} calculators covering ${esc(category.toLowerCase())}. Each link is visible in the page HTML for users and search crawlers.</p>
+      <ul>
+        ${items.map((calculator) => `<li><a href="${esc(calculator.url)}">${esc(calculator.name)}</a></li>`).join("\n        ")}
+      </ul>
     </section>`).join("\n");
 const featuredUrls = new Set([
   "/bmi-calculator", "/body-fat-calculator", "/bmr-calculator", "/tdee-calculator",
