@@ -208,10 +208,10 @@ export default function Phase4SEOContent({ slug }) {
   if (!data) return null;
   const relatedLinks = data.related.map((name) => {
     const slugMap = {
-      "Pace Calculator": "pace", "Calories Burned Calculator": "calories-burned", "Daily Calorie Needs": "daily-calorie-needs", "TDEE Calculator": "tdee",
-      "Protein Calculator": "protein-intake", "Calorie Deficit Calculator": "calorie-deficit", "Meal Macro Calculator": "meal-macro", "Running Speed Calculator": "running-speed",
-      "Cardio Fitness Level Calculator": "cardio-fitness-level", "Maximum Heart Rate Calculator": "maximum-heart-rate", "BMI Calculator": "bmi", "Ideal Body Weight": "ideal-body-weight",
-      "Body Fat Percentage": "body-fat", "Waist-to-Height Ratio": "waist-to-height-ratio",
+      "Pace Calculator": "pace-calculator", "Calories Burned Calculator": "calories-burned-calculator", "Daily Calorie Needs": "daily-calorie-needs-calculator", "TDEE Calculator": "tdee-calculator",
+      "Protein Calculator": "protein-calculator", "Calorie Deficit Calculator": "calorie-deficit-calculator", "Meal Macro Calculator": "meal-macro-calculator", "Running Speed Calculator": "running-speed-calculator",
+      "Cardio Fitness Level Calculator": "cardio-fitness-level-calculator", "Maximum Heart Rate Calculator": "maximum-heart-rate-calculator", "BMI Calculator": "bmi-calculator", "Ideal Body Weight": "ideal-body-weight-calculator",
+      "Body Fat Percentage": "body-fat-calculator", "Waist-to-Height Ratio": "waist-height-ratio-calculator",
     };
     return slugMap[name] ? { name, slug: slugMap[name] } : null;
   }).filter(Boolean);
@@ -224,7 +224,7 @@ export default function Phase4SEOContent({ slug }) {
       <section className="border border-border bg-card p-6"><h3 className="font-display text-xl uppercase tracking-tight mb-3">Worked Example</h3><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{data.example}</p></section>
       <section><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">Accuracy and Limitations</h3><p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{data.limits}</p></section>
       <section><h3 className="font-display text-xl sm:text-2xl uppercase tracking-tight mb-3">Frequently Asked Questions</h3><div className="space-y-5">{data.faqs.map(([q,a]) => <div key={q}><h4 className="font-bold mb-1">{q}</h4><p className="text-sm text-muted-foreground leading-7">{a}</p></div>)}</div></section>
-      {relatedLinks.length > 0 && <section className="border border-border bg-card p-6"><h3 className="font-display text-xl uppercase tracking-tight mb-3">Related Calculators</h3><div className="grid sm:grid-cols-2 gap-2">{relatedLinks.map((item) => <Link key={item.slug} to={`/${item.slug}-calculator`} className="border border-border px-4 py-3 text-sm font-bold hover:text-[var(--brand-lime)] hover:border-[var(--brand-lime)] transition-colors">{item.name}</Link>)}</div></section>}
+      {relatedLinks.length > 0 && <section className="border border-border bg-card p-6"><h3 className="font-display text-xl uppercase tracking-tight mb-3">Related Calculators</h3><div className="grid sm:grid-cols-2 gap-2">{relatedLinks.map((item) => <Link key={item.slug} to={`/${item.slug}`} className="border border-border px-4 py-3 text-sm font-bold hover:text-[var(--brand-lime)] hover:border-[var(--brand-lime)] transition-colors">{item.name}</Link>)}</div></section>}
       <section className="border border-border p-6 bg-card"><h3 className="font-display text-xl uppercase tracking-tight mb-3">Important Health Note</h3><p className="text-sm text-muted-foreground leading-7">FitMe Pro calculators provide educational estimates. They do not diagnose disease, replace professional assessment, or guarantee a health or fitness outcome. For medical decisions, use the method and guidance provided by a qualified healthcare professional.</p></section>
     </div>
   );
