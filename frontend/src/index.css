@@ -43,6 +43,12 @@ main > section:first-child > div:first-child[style*="radial-gradient"] { backgro
 @media print { .no-print { display: none !important; } body { background: #fff !important; color: #000 !important; } .print-grid { grid-template-columns: repeat(2, 1fr) !important; } }
 @media (prefers-reduced-motion: reduce) { .card-in { animation: none; } .brut-hover { transition: none; } }
 
+/* Performance: defer layout/paint work for the large below-fold calculator grid without removing it from the DOM or accessibility tree. */
+.defer-render {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 1800px;
+}
+
 /* Accessibility: preserve compact desktop UI while guaranteeing comfortable touch targets on touch devices. */
 @media (pointer: coarse) {
   button,
