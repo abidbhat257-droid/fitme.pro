@@ -1,16 +1,44 @@
 # FitMe Pro
 
-Free health and fitness calculators for body composition, weight and BMI, calories and metabolism, nutrition, running, strength, and heart-rate metrics.
+FitMe Pro is a free health and fitness calculator platform covering body composition, weight and BMI, calories and metabolism, nutrition, running, strength, and heart-rate metrics.
 
-Homepage: https://fitme-pro.vercel.app/
-Calculator directory: https://fitme-pro.vercel.app/calculators
-Evidence sources: https://fitme-pro.vercel.app/journal/evidence-sources
-Editorial standards: https://fitme-pro.vercel.app/journal/editorial-standards
-About: https://fitme-pro.vercel.app/about
-Contact: https://fitme-pro.vercel.app/contact
+## Primary resources
 
-FitMe Pro calculator results are educational estimates. They are not diagnoses, prescriptions, or a substitute for individualized professional medical advice.
+- Homepage: https://fitme-pro.vercel.app/
+- Calculator directory: https://fitme-pro.vercel.app/calculators
+- Sitemap: https://fitme-pro.vercel.app/sitemap.xml
+- Robots: https://fitme-pro.vercel.app/robots.txt
+- Evidence sources: https://fitme-pro.vercel.app/journal/evidence-sources
+- Editorial standards: https://fitme-pro.vercel.app/journal/editorial-standards
+- About: https://fitme-pro.vercel.app/about
+- Contact: https://fitme-pro.vercel.app/contact
+
+## Calculator topics
+
+FitMe Pro provides calculators for:
+- BMI and body-size metrics
+- Body fat and body composition
+- Weight goals and weight change
+- BMR, TDEE and calorie needs
+- Calorie deficit and surplus planning
+- Protein, macros, fiber, water and selected nutrient intake
+- Running pace, speed, race-time and training metrics
+- VO2 max and cardiovascular fitness
+- Strength, 1RM and training-volume metrics
+- Maximum heart rate, heart-rate zones and related cardiovascular metrics
+
+## Content and methodology
+
+Calculator pages explain inputs, formulas or methodology, interpretation, limitations, and relevant evidence where available. Results are educational estimates and should not be treated as diagnoses, prescriptions, or individualized medical advice.
 
 Content and calculator methodology are maintained by the FitMe Pro Editorial Team. No medical credentials are claimed for the team. Health explanations should be checked against the cited authoritative sources.
+
+## Indexing guidance
+
+The XML sitemap identifies the public calculator URLs intended for discovery. The site also contains Journal content, including sections that may be intentionally excluded from indexing; do not infer that every Journal URL should be indexed.
+
+## Data and privacy
+
+Calculator inputs are designed to remain on the user's device through browser storage. FitMe Pro does not present calculator output as a medical diagnosis.
 
 Last reviewed: 2026-10-05
