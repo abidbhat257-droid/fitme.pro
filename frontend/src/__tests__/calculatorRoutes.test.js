@@ -1,4 +1,5 @@
-import React, { act, Suspense } from "react";
+import React, { Suspense } from "react";
+import { act } from "react-dom/test-utils";
 import { createRoot } from "react-dom/client";
 import { MemoryRouter, Route, Routes } from "react-router-dom";
 import fs from "fs";
