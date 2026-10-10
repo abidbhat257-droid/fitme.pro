@@ -20,6 +20,7 @@ describe("canonical calculator routes", () => {
     try {
       for (const calculator of ALL_CALCULATORS) {
         window.history.pushState({}, "", calculator.url);
+        window.dispatchEvent(new PopStateEvent("popstate"));
         await act(async () => {
           root.render(<App />);
           await wait(80);
