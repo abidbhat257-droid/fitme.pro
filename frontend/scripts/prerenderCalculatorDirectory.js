@@ -14,7 +14,7 @@ module.exports = function prerenderCalculatorDirectory() {
   const coreBlock = registrySource.match(/const CORE_URLS\s*=\s*\{([\s\S]*?)\n\};/);
   if (!coreBlock) throw new Error("Could not read CORE_URLS from allCalculators.js");
   const coreUrls = {};
-  for (const match of coreBlock[1].matchAll(/["']([^"']+)["']\s*:\s*["']([^"']+)["']/g)) coreUrls[match[1]] = match[2];
+  for (const match of coreBlock[1].matchAll(/["']?([A-Za-z0-9_-]+)["']?\s*:\s*["']([^"']+)["']/g)) coreUrls[match[1]] = match[2];
 
   const parseObjects = (source) => {
     const items = [];
@@ -119,5 +119,47 @@ module.exports = function prerenderCalculatorDirectory() {
   if (!finalSitemap.includes("<loc>" + canonical + "</loc>") || finalMissing.length !== 0 || [...finalDirectory.matchAll(/<h1\b/gi)].length !== 1) {
     throw new Error("Calculator directory/sitemap build check failed: missing directory URL or calculator links");
   }
-  console.log("Calculator directory check: 100/100 registry links; one H1; canonical and sitemap entry verified.");
+  const finalSitemap = fs.readFileSync(sitemapPath, "utf8");
+  const finalDirectory = fs.readFileSync(path.join(directory, "index.html"), "utf8");
+  const finalHrefs = new Set([...finalDirectory.matchAll(/<a\b[^>]*href=["']([^"']+)["']/gi)].map((match) => match[1]));
+  const sitemapPaths = [...finalSitemap.matchAll(/<loc>([^<]+)<\/loc>/g)]
+    .map((match) => {
+      try { return new URL(match[1]).pathname.replace(/\/$/, "") || "/"; }
+      catch { return null; }
+    })
+    .filter(Boolean);
+  const calculatorSitemapPaths = sitemapPaths.filter((urlPath) => {
+    if (urlPath === "/" || urlPath === "/calculators" || urlPath.startsWith("/calculator-category/")) return false;
+    if (urlPath.split("/").filter(Boolean).length !== 1) return false;
+    const route = urlPath.replace(/^\//, "");
+    const pageCandidates = [path.join(build, route, "index.html"), path.join(build, route + ".html")];
+    const pagePath = pageCandidates.find((candidate) => fs.existsSync(candidate));
+    if (!pagePath) return false;
+    const pageHtml = fs.readFileSync(pagePath, "utf8");
+    return /<h1\b[^>]*>[^<]*calculator/i.test(pageHtml) || /<title>[^<]*calculator/i.test(pageHtml);
+  });
+  const missingSitemapLinks = calculatorSitemapPaths.filter((urlPath) => !finalHrefs.has(urlPath));
+  const brokenDirectoryLinks = [...finalHrefs]
+    .filter((href) => href.startsWith("/") && href !== "/")
+    .filter((href) => {
+      const cleanPath = href.split(/[?#]/, 1)[0].replace(/\/$/, "");
+      const route = cleanPath.replace(/^\//, "");
+      const candidates = cleanPath === "/"
+        ? [path.join(build, "index.html")]
+        : [path.join(build, route, "index.html"), path.join(build, route + ".html")];
+      return !candidates.some((candidate) => fs.existsSync(candidate));
+    });
+  const finalH1Count = [...finalDirectory.matchAll(/<h1\b/gi)].length;
+  if (!finalSitemap.includes("<loc>" + canonical + "</loc>") ||
+      missingSitemapLinks.length ||
+      brokenDirectoryLinks.length ||
+      finalH1Count !== 1) {
+    throw new Error(
+      "Calculator directory/sitemap build check failed: sitemap calculator URLs missing from directory=" +
+      missingSitemapLinks.length + " [" + missingSitemapLinks.join(", ") +
+      "]; directory links to missing build pages=" + brokenDirectoryLinks.length + " [" +
+      brokenDirectoryLinks.join(", ") + "]; H1 count=" + finalH1Count
+    );
+  }
+  console.log("Calculator directory/sitemap check: " + calculatorSitemapPaths.length + "/" + calculatorSitemapPaths.length + " sitemap calculator URLs linked; 0 broken directory links; one H1; canonical and sitemap entry verified.");
 };
