@@ -1,29 +1,57 @@
-import React from "react";
-import { renderToStaticMarkup } from "react-dom/server";
+import React, { Suspense } from "react";
+import { renderToPipeableStream } from "react-dom/server";
+import { PassThrough } from "stream";
 import { MemoryRouter, Route, Routes } from "react-router-dom";
 import fs from "fs";
 import path from "path";
 import { ALL_CALCULATORS } from "../lib/allCalculators";
-import { NEW_CALCULATORS } from "../lib/newSpecializedCalculators";
-import CalculatorPage from "../pages/CalculatorPage";
-import SpecializedCalculatorPage from "../pages/SpecializedCalculatorPage";
-import NewCalculatorPage from "../pages/NewCalculatorPage";
-import MissingCalculatorPage from "../pages/MissingCalculatorPage";
+import { renderCalculator } from "../App";
 import { ThemeProvider } from "../context/ThemeContext";
 import { MeasurementProvider } from "../context/MeasurementContext";
 
+function renderMarkup(element) {
+  return new Promise((resolve, reject) => {
+    const chunks = [];
+    const output = new PassThrough();
+    const timeout = setTimeout(() => reject(new Error("Timed out rendering calculator route")), 10000);
+    output.on("data", (chunk) => chunks.push(chunk));
+    output.on("end", () => {
+      clearTimeout(timeout);
+      resolve(Buffer.concat(chunks).toString("utf8"));
+    });
+    let renderer;
+    renderer = renderToPipeableStream(element, {
+      onAllReady() {
+        renderer.pipe(output);
+      },
+      onShellError(error) {
+        clearTimeout(timeout);
+        reject(error);
+      },
+      onError(error) {
+        // React reports recoverable server-render errors here; the output and H1 check below decide the result.
+        console.error("Calculator route render error:", error);
+      },
+    });
+  });
+}
+
 function routeElement(calculator) {
-  if (["navy-body-fat", "army-body-fat"].includes(calculator.id)) return <CalculatorPage seoSlug="body-fat" />;
-  if (calculator.id === "calorie-calculator") return <CalculatorPage seoSlug="daily-calorie-needs" />;
-  if (calculator.source === "core") return <CalculatorPage seoSlug={calculator.id} />;
-  if (calculator.source === "missing") return <MissingCalculatorPage calculatorId={calculator.id} />;
-  return NEW_CALCULATORS.some((item) => item.id === calculator.id)
-    ? <NewCalculatorPage calculatorId={calculator.id} />
-    : <SpecializedCalculatorPage calculatorId={calculator.id} />;
+  if (["navy-body-fat", "army-body-fat"].includes(calculator.id)) {
+    const bodyFat = ALL_CALCULATORS.find((item) => item.id === "body-fat");
+    return renderCalculator(bodyFat);
+  }
+  if (calculator.id === "calorie-calculator") {
+    const dailyCalories = ALL_CALCULATORS.find((item) => item.id === "daily-calorie-needs");
+    return renderCalculator(dailyCalories);
+  }
+  return renderCalculator(calculator);
 }
 
 describe("canonical calculator routes", () => {
-  test("renders every registry route with an H1 and no not-found message", () => {
+  jest.setTimeout(120000);
+
+  test("renders every canonical registry route with an H1", async () => {
     expect(ALL_CALCULATORS).toHaveLength(100);
     const routeElements = ALL_CALCULATORS.map((calculator) => (
       <Route key={calculator.id} path={calculator.url} element={routeElement(calculator)} />
@@ -32,11 +60,11 @@ describe("canonical calculator routes", () => {
 
     for (const calculator of ALL_CALCULATORS) {
       try {
-        const markup = renderToStaticMarkup(
+        const markup = await renderMarkup(
           <ThemeProvider>
             <MeasurementProvider>
               <MemoryRouter initialEntries={[calculator.url]}>
-                <Routes>{routeElements}</Routes>
+                <Suspense fallback={<div>Loading calculator</div>}><Routes>{routeElements}</Routes></Suspense>
               </MemoryRouter>
             </MeasurementProvider>
           </ThemeProvider>
