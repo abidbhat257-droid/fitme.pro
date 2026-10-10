@@ -55,7 +55,7 @@ describe("canonical calculator routes", () => {
     }
 
     const report = { total: ALL_CALCULATORS.length, passed: ALL_CALCULATORS.length - failures.length, failed: failures.length, failures };
-    const reportPath = path.join(process.cwd(), "build", "calculator-route-verification.json");
+    const reportPath = path.resolve(__dirname, "../../build", "calculator-route-verification.json");
     fs.mkdirSync(path.dirname(reportPath), { recursive: true });
     fs.writeFileSync(reportPath, JSON.stringify(report, null, 2));
     console.log("Calculator route verification diagnostic: " + report.passed + "/" + report.total + " passed. Report: build/calculator-route-verification.json");
