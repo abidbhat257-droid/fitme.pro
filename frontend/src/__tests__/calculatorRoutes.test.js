@@ -25,7 +25,7 @@ describe("canonical calculator routes", () => {
       for (const calculator of ALL_CALCULATORS) {
         await act(async () => {
           root.render(
-            <MemoryRouter initialEntries={[calculator.url]}>
+            <MemoryRouter key={calculator.id} initialEntries={[calculator.url]}>
               <Routes>{routeElements}</Routes>
             </MemoryRouter>
           );
