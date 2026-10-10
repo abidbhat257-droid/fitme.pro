@@ -1,4 +1,4 @@
-import React, { act } from "react";
+import React, { act, Suspense } from "react";
 import { createRoot } from "react-dom/client";
 import { MemoryRouter, Route, Routes } from "react-router-dom";
 import { ALL_CALCULATORS } from "../lib/allCalculators";
@@ -26,7 +26,7 @@ describe("canonical calculator routes", () => {
         await act(async () => {
           root.render(
             <MemoryRouter key={calculator.id} initialEntries={[calculator.url]}>
-              <Routes>{routeElements}</Routes>
+              <Suspense fallback={<div>Loading calculator</div>}><Routes>{routeElements}</Routes></Suspense>
             </MemoryRouter>
           );
           await wait(80);
