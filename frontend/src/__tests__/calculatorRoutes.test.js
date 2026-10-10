@@ -3,6 +3,8 @@ import { createRoot } from "react-dom/client";
 import { MemoryRouter, Route, Routes } from "react-router-dom";
 import { ALL_CALCULATORS } from "../lib/allCalculators";
 import { renderCalculator } from "../App";
+import { ThemeProvider } from "../context/ThemeContext";
+import { MeasurementProvider } from "../context/MeasurementContext";
 
 globalThis.IS_REACT_ACT_ENVIRONMENT = true;
 
@@ -25,9 +27,9 @@ describe("canonical calculator routes", () => {
       for (const calculator of ALL_CALCULATORS) {
         await act(async () => {
           root.render(
-            <MemoryRouter key={calculator.id} initialEntries={[calculator.url]}>
+            <ThemeProvider><MeasurementProvider><MemoryRouter key={calculator.id} initialEntries={[calculator.url]}>
               <Suspense fallback={<div>Loading calculator</div>}><Routes>{routeElements}</Routes></Suspense>
-            </MemoryRouter>
+            </MemoryRouter></MeasurementProvider></ThemeProvider>
           );
           await wait(80);
         });
