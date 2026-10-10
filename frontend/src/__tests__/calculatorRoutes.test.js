@@ -1,6 +1,6 @@
 import React from "react";
 import { renderToStaticMarkup } from "react-dom/server";
-import { MemoryRouter, Navigate, Route, Routes } from "react-router-dom";
+import { MemoryRouter, Route, Routes } from "react-router-dom";
 import fs from "fs";
 import path from "path";
 import { ALL_CALCULATORS } from "../lib/allCalculators";
@@ -13,8 +13,8 @@ import { ThemeProvider } from "../context/ThemeContext";
 import { MeasurementProvider } from "../context/MeasurementContext";
 
 function routeElement(calculator) {
-  if (["navy-body-fat", "army-body-fat"].includes(calculator.id)) return <Navigate to="/body-fat-calculator" replace />;
-  if (calculator.id === "calorie-calculator") return <Navigate to="/daily-calorie-needs-calculator" replace />;
+  if (["navy-body-fat", "army-body-fat"].includes(calculator.id)) return <CalculatorPage seoSlug="body-fat" />;
+  if (calculator.id === "calorie-calculator") return <CalculatorPage seoSlug="daily-calorie-needs" />;
   if (calculator.source === "core") return <CalculatorPage seoSlug={calculator.id} />;
   if (calculator.source === "missing") return <MissingCalculatorPage calculatorId={calculator.id} />;
   return NEW_CALCULATORS.some((item) => item.id === calculator.id)
