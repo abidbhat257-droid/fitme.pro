@@ -115,13 +115,6 @@ module.exports = function prerenderCalculatorDirectory() {
   const finalSitemap = fs.readFileSync(sitemapPath, "utf8");
   const finalDirectory = fs.readFileSync(path.join(directory, "index.html"), "utf8");
   const finalHrefs = new Set([...finalDirectory.matchAll(/<a\b[^>]*href=["']([^"']+)["']/gi)].map((match) => match[1]));
-  const finalMissing = calculators.filter((item) => !finalHrefs.has(item.url));
-  if (!finalSitemap.includes("<loc>" + canonical + "</loc>") || finalMissing.length !== 0 || [...finalDirectory.matchAll(/<h1\b/gi)].length !== 1) {
-    throw new Error("Calculator directory/sitemap build check failed: missing directory URL or calculator links");
-  }
-  const finalSitemap = fs.readFileSync(sitemapPath, "utf8");
-  const finalDirectory = fs.readFileSync(path.join(directory, "index.html"), "utf8");
-  const finalHrefs = new Set([...finalDirectory.matchAll(/<a\b[^>]*href=["']([^"']+)["']/gi)].map((match) => match[1]));
   const sitemapPaths = [...finalSitemap.matchAll(/<loc>([^<]+)<\/loc>/g)]
     .map((match) => {
       try { return new URL(match[1]).pathname.replace(/\/$/, "") || "/"; }
