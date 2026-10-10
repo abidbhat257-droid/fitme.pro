@@ -53,7 +53,7 @@ module.exports = function prerenderCalculatorDirectory() {
   if (new Set(calculators.map((item) => item.url)).size !== 100) throw new Error("Canonical calculator URLs are not unique");
 
   const knownCategories = new Set([
-    "basic", "composition", "shape", "metabolism", "advanced",
+    "basic", "composition", "shape", "metabolism", "advanced", "Body Composition", "Running & Training",
     "Nutrition & Fitness", "Running & Training", "Strength Training",
     "Weight, BMI & Weight Goals", "Calories & Metabolism",
     "Nutrition & Macronutrients", "Wellness & Recovery", "Heart Rate & Cardiovascular",
