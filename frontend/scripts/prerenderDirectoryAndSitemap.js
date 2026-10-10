@@ -19,4 +19,4 @@ const urls=new Set();for(const file of htmlFiles(build)){const rel=path.relative
       }
     urls.add(site+(route||'/'))}
 const sitemap=`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${[...urls].sort().map(u=>`  <url><loc>${esc(u)}</loc></url>`).join('\n')}\n</urlset>\n`;fs.writeFileSync(path.join(build,'sitemap.xml'),sitemap,'utf8');console.log(`Generated sitemap with ${urls.size} verified URLs.`)}
-try{main()}catch(error){console.error(error);process.exit(1)}
+try{main();require('./prerenderCalculatorDirectory')()}catch(error){console.error(error);process.exit(1)}
