@@ -1,7 +1,8 @@
 import React, { act } from "react";
 import { createRoot } from "react-dom/client";
-import App from "../App";
+import { MemoryRouter, Route, Routes } from "react-router-dom";
 import { ALL_CALCULATORS } from "../lib/allCalculators";
+import { renderCalculator } from "../App";
 
 globalThis.IS_REACT_ACT_ENVIRONMENT = true;
 
@@ -16,13 +17,18 @@ describe("canonical calculator routes", () => {
     document.body.appendChild(container);
     const root = createRoot(container);
     const failures = [];
+    const routeElements = ALL_CALCULATORS.map((calculator) => (
+      <Route key={calculator.id} path={calculator.url} element={renderCalculator(calculator)} />
+    ));
 
     try {
       for (const calculator of ALL_CALCULATORS) {
-        window.history.pushState({}, "", calculator.url);
-        window.dispatchEvent(new PopStateEvent("popstate"));
         await act(async () => {
-          root.render(<App />);
+          root.render(
+            <MemoryRouter initialEntries={[calculator.url]}>
+              <Routes>{routeElements}</Routes>
+            </MemoryRouter>
+          );
           await wait(80);
         });
 
@@ -41,22 +47,16 @@ describe("canonical calculator routes", () => {
             notFound: /calculator not found/i.test(container.textContent || ""),
           });
         }
-
-        await act(async () => {
-          root.render(<></>);
-          await wait(0);
-        });
       }
     } finally {
       await act(async () => root.unmount());
       container.remove();
-      window.history.pushState({}, "", "/");
     }
 
     if (failures.length) {
-      throw new Error(`Calculator route verification failed: ${failures.length}/${ALL_CALCULATORS.length}\n${JSON.stringify(failures, null, 2)}`);
+      throw new Error("Calculator route verification failed: " + failures.length + "/" + ALL_CALCULATORS.length + "\n" + JSON.stringify(failures, null, 2));
     }
 
-    console.log(`Calculator route verification: ${ALL_CALCULATORS.length}/${ALL_CALCULATORS.length} routes rendered an H1; no "Calculator not found" messages.`);
+    console.log("Calculator route verification: " + ALL_CALCULATORS.length + "/" + ALL_CALCULATORS.length + " routes rendered an H1; no \"Calculator not found\" messages.");
   });
 });
