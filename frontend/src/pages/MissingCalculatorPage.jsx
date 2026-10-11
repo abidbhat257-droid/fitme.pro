@@ -48,9 +48,9 @@ function InputField({ config, value, onChange }) {
   </label>;
 }
 
-export default function MissingCalculatorPage() {
+export default function MissingCalculatorPage({ calculatorId }) {
   const { slug } = useParams();
-  const calc = getMissingCalculator(slug);
+  const calc = getMissingCalculator(calculatorId || slug);
   const initial = useMemo(() => Object.fromEntries((calc?.inputFields || []).map(f => [f.name, f.default])), [calc]);
   const [values, setValues] = useState(initial);
   useEffect(() => setValues(initial), [initial]);
