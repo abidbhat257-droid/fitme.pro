@@ -106,6 +106,12 @@ module.exports = function prerenderCalculatorDirectory() {
   if (!fs.existsSync(sitemapPath)) throw new Error("Missing build/sitemap.xml");
   const sitemap = fs.readFileSync(sitemapPath, "utf8");
   const urls = new Set([...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]));
+  for (const url of urls) {
+    let pathname;
+    try { pathname = new URL(url).pathname.replace(/\/$/, "") || "/"; }
+    catch { continue; }
+    if (pathname === "/journal/wellness" || pathname === "/journal/health-education") urls.delete(url);
+  }
   urls.add(canonical);
   const updatedSitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
     [...urls].sort().map((url) => "  <url><loc>" + esc(url) + "</loc></url>").join("\n") +
@@ -121,15 +127,12 @@ module.exports = function prerenderCalculatorDirectory() {
       catch { return null; }
     })
     .filter(Boolean);
-  const calculatorSitemapPaths = sitemapPaths.filter((urlPath) => {
-    if (urlPath === "/" || urlPath === "/calculators" || urlPath.startsWith("/calculator-category/")) return false;
-    if (urlPath.split("/").filter(Boolean).length !== 1) return false;
+  const calculatorSitemapPaths = calculators.map((item) => item.url);
+  const missingCalculatorSitemapUrls = calculatorSitemapPaths.filter((urlPath) => !sitemapPaths.includes(urlPath));
+  const missingCalculatorPages = calculatorSitemapPaths.filter((urlPath) => {
     const route = urlPath.replace(/^\//, "");
-    const pageCandidates = [path.join(build, route, "index.html"), path.join(build, route + ".html")];
-    const pagePath = pageCandidates.find((candidate) => fs.existsSync(candidate));
-    if (!pagePath) return false;
-    const pageHtml = fs.readFileSync(pagePath, "utf8");
-    return /<h1\b[^>]*>[^<]*calculator/i.test(pageHtml) || /<title>[^<]*calculator/i.test(pageHtml);
+    return ![path.join(build, route, "index.html"), path.join(build, route + ".html")]
+      .some((candidate) => fs.existsSync(candidate));
   });
   const missingSitemapLinks = calculatorSitemapPaths.filter((urlPath) => !finalHrefs.has(urlPath));
   const brokenDirectoryLinks = [...finalHrefs]
@@ -144,15 +147,19 @@ module.exports = function prerenderCalculatorDirectory() {
     });
   const finalH1Count = [...finalDirectory.matchAll(/<h1\b/gi)].length;
   if (!finalSitemap.includes("<loc>" + canonical + "</loc>") ||
+      missingCalculatorSitemapUrls.length ||
+      missingCalculatorPages.length ||
       missingSitemapLinks.length ||
       brokenDirectoryLinks.length ||
       finalH1Count !== 1) {
     throw new Error(
-      "Calculator directory/sitemap build check failed: sitemap calculator URLs missing from directory=" +
-      missingSitemapLinks.length + " [" + missingSitemapLinks.join(", ") +
+      "Calculator directory/sitemap build check failed: expected calculator URLs=" + calculatorSitemapPaths.length +
+      ", missing from sitemap=" + missingCalculatorSitemapUrls.length + " [" + missingCalculatorSitemapUrls.join(", ") +
+      "]; missing calculator pages=" + missingCalculatorPages.length + " [" + missingCalculatorPages.join(", ") +
+      "]; calculator links missing from directory=" + missingSitemapLinks.length + " [" + missingSitemapLinks.join(", ") +
       "]; directory links to missing build pages=" + brokenDirectoryLinks.length + " [" +
       brokenDirectoryLinks.join(", ") + "]; H1 count=" + finalH1Count
     );
   }
-  console.log("Calculator directory/sitemap check: " + calculatorSitemapPaths.length + "/" + calculatorSitemapPaths.length + " sitemap calculator URLs linked; 0 broken directory links; one H1; canonical and sitemap entry verified.");
+  console.log("Calculator directory/sitemap check: " + calculatorSitemapPaths.length + "/100 canonical calculators present in sitemap and directory; 0 missing calculator pages; 0 broken directory links; one H1; canonical and sitemap entry verified.");
 };
