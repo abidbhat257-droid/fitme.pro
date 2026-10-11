@@ -58,7 +58,7 @@ for (const file of walk(build)) {
   }
 
   for (const prop of ["og:type", "og:title", "og:description", "og:site_name"]) {
-    head = keepLast(head, new RegExp(`<meta\\\\s+property=["']${prop}["'][^>]*>\\\\s*`, "gi"));
+    head = keepLast(head, new RegExp(`<meta\\s+property=["']${prop}["'][^>]*>\\s*`, "gi"));
   }
   head = keepLast(head, /<meta\s+name=["']description["'][^>]*>\s*/gi);
 
