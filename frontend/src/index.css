@@ -59,3 +59,6 @@ main > section:first-child > div:first-child[style*="radial-gradient"] { backgro
     min-width: 44px;
   }
 }
+
+/* Keep inline links distinguishable from surrounding paragraph text. */
+main p a:not([role="button"]), article p a:not([role="button"]) { text-decoration-line: underline; text-underline-offset: 3px; }

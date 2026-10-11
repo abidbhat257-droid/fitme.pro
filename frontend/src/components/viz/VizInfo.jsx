@@ -36,7 +36,7 @@ export default function VizInfo({ slug }) {
         </div>
         <div className="border-t border-border pt-2">
           <div className="text-[10px] font-bold uppercase tracking-[0.25em] text-muted-foreground mb-1">Source</div>
-          <p className="text-[11px] font-mono-data text-foreground/80 leading-relaxed">{t.source}</p>
+          <p className="text-[11px] font-mono-data text-foreground leading-relaxed">{t.source}</p>
         </div>
       </PopoverContent>
     </Popover>

@@ -46,7 +46,7 @@ function TacticalInput({ id, label, unit, testid, field, unitSystem, value, onCh
         <Label htmlFor={id} className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">
           {label} {unit ? <span className="text-[var(--brand-lime)]">/ {unit}</span> : null}
         </Label>
-        {definition ? <span title={definition} aria-label={`${label} definition`} className="cursor-help text-[10px] font-bold text-muted-foreground/60">ⓘ</span> : null}
+        {definition ? <button type="button" aria-label={`${label} definition`} title={definition} className="inline-flex items-center justify-center min-w-[44px] min-h-[44px] -m-3 cursor-help text-[12px] font-bold text-muted-foreground">ⓘ</button> : null}
       </div>
       <input
         id={id}
@@ -61,9 +61,9 @@ function TacticalInput({ id, label, unit, testid, field, unitSystem, value, onCh
         onChange={onChange}
         aria-invalid={!!error}
         aria-describedby={error ? errorId : undefined}
-        className={`w-full min-h-11 bg-transparent border-b-2 py-2 text-lg font-mono-data transition-colors placeholder:text-muted-foreground/40 focus:outline-none ${error ? "border-red-500 focus:border-red-500" : "border-border focus:border-[var(--brand-lime)]"}`}
+        className={`w-full min-h-11 bg-transparent border-b-2 py-2 text-lg font-mono-data transition-colors placeholder:text-muted-foreground focus:outline-none ${error ? "border-red-500 focus:border-red-500" : "border-border focus:border-[var(--brand-lime)]"}`}
       />
-      {definition ? <p className="text-[10px] leading-4 text-muted-foreground/70">{definition}</p> : null}
+      {definition ? <p className="text-[10px] leading-4 text-muted-foreground">{definition}</p> : null}
       {error ? <div id={errorId} data-testid={`${testid}-error`} className="text-[10px] text-red-500 font-mono-data">{error}</div> : null}
     </div>
   );
@@ -136,25 +136,25 @@ export default function MeasurementPanel({ compact = false }) {
                   <div key={field} className="space-y-1.5">
                     <div className="flex items-center justify-between">
                       <Label className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">Sex</Label>
-                      <span title={DEFINITIONS.sex} className="cursor-help text-[10px] font-bold text-muted-foreground/60">ⓘ</span>
+                      <button type="button" aria-label="Sex definition" title={DEFINITIONS.sex} className="inline-flex items-center justify-center min-w-[44px] min-h-[44px] -m-3 cursor-help text-[12px] font-bold text-muted-foreground">ⓘ</button>
                     </div>
                     <Select value={state.sex} onValueChange={v => update({ sex: v })}>
                       <SelectTrigger data-testid={PANEL.sex} aria-label="Sex" className="rounded-none border-0 border-b-2 border-border bg-transparent focus:border-[var(--brand-lime)] focus:ring-0 h-11 min-h-11 px-0 font-mono-data text-lg"><SelectValue /></SelectTrigger>
                       <SelectContent className="rounded-none"><SelectItem value="male">Male</SelectItem><SelectItem value="female">Female</SelectItem></SelectContent>
                     </Select>
-                    <p className="text-[10px] leading-4 text-muted-foreground/70">{DEFINITIONS.sex}</p>
+                    <p className="text-[10px] leading-4 text-muted-foreground">{DEFINITIONS.sex}</p>
                   </div>
                 );
               }
               if (key === "activity") {
                 return (
                   <div key={field} className="space-y-1.5">
-                    <div className="flex items-center justify-between"><Label className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">Activity level</Label><span title={DEFINITIONS.activity} className="cursor-help text-[10px] font-bold text-muted-foreground/60">ⓘ</span></div>
+                    <div className="flex items-center justify-between"><Label className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">Activity level</Label><button type="button" aria-label="Activity level definition" title={DEFINITIONS.activity} className="inline-flex items-center justify-center min-w-[44px] min-h-[44px] -m-3 cursor-help text-[12px] font-bold text-muted-foreground">ⓘ</button></div>
                     <Select value={state.activity} onValueChange={v => update({ activity: v })}>
                       <SelectTrigger data-testid={PANEL.activity} aria-label="Activity level" className="rounded-none border-0 border-b-2 border-border bg-transparent focus:border-[var(--brand-lime)] focus:ring-0 h-11 min-h-11 px-0 font-mono-data"><SelectValue /></SelectTrigger>
                       <SelectContent className="rounded-none max-w-[350px]">{ACTIVITY_LEVELS.map(a => <SelectItem key={a.value} value={a.value}>{a.label}</SelectItem>)}</SelectContent>
                     </Select>
-                    <p className="text-[10px] leading-4 text-muted-foreground/70">{DEFINITIONS.activity}</p>
+                    <p className="text-[10px] leading-4 text-muted-foreground">{DEFINITIONS.activity}</p>
                   </div>
                 );
               }
@@ -170,13 +170,13 @@ export default function MeasurementPanel({ compact = false }) {
               <div className="text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)]">── General</div>
               <div className="grid grid-cols-2 gap-4">
                 <TacticalInput id="age" testid={PANEL.age} label="Age" unit="yrs" field="age" unitSystem={state.unit} value={state.age} onChange={set("age")} definition={DEFINITIONS.age} />
-                <div className="space-y-1.5"><div className="flex items-center justify-between"><Label className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">Sex</Label><span title={DEFINITIONS.sex} className="cursor-help text-[10px] font-bold text-muted-foreground/60">ⓘ</span></div><Select value={state.sex} onValueChange={v => update({ sex: v })}><SelectTrigger data-testid={PANEL.sex} aria-label="Sex" className="rounded-none border-0 border-b-2 border-border bg-transparent focus:border-[var(--brand-lime)] focus:ring-0 h-[42px] px-0 font-mono-data text-lg"><SelectValue /></SelectTrigger><SelectContent className="rounded-none"><SelectItem value="male">Male</SelectItem><SelectItem value="female">Female</SelectItem></SelectContent></Select></div>
+                <div className="space-y-1.5"><div className="flex items-center justify-between"><Label className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">Sex</Label><button type="button" aria-label="Sex definition" title={DEFINITIONS.sex} className="inline-flex items-center justify-center min-w-[44px] min-h-[44px] -m-3 cursor-help text-[12px] font-bold text-muted-foreground">ⓘ</button></div><Select value={state.sex} onValueChange={v => update({ sex: v })}><SelectTrigger data-testid={PANEL.sex} aria-label="Sex" className="rounded-none border-0 border-b-2 border-border bg-transparent focus:border-[var(--brand-lime)] focus:ring-0 h-[42px] px-0 font-mono-data text-lg"><SelectValue /></SelectTrigger><SelectContent className="rounded-none"><SelectItem value="male">Male</SelectItem><SelectItem value="female">Female</SelectItem></SelectContent></Select></div>
               </div>
               <TacticalInput id="height" testid={PANEL.height} label="Height" unit={metric ? "cm" : "in"} field="height" unitSystem={state.unit} value={state.height} onChange={set("height")} definition={DEFINITIONS.height} />
               <TacticalInput id="weight" testid={PANEL.weight} label="Weight" unit={metric ? "kg" : "lb"} field="weight" unitSystem={state.unit} value={state.weight} onChange={set("weight")} definition={DEFINITIONS.weight} />
             </div>
             <div className="space-y-4"><div className="text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)]">── Circumferences</div><div className="grid grid-cols-2 gap-4"><TacticalInput id="waist" testid={PANEL.waist} label="Waist" unit={metric ? "cm" : "in"} field="waist" unitSystem={state.unit} value={state.waist} onChange={set("waist")} definition={DEFINITIONS.waist} /><TacticalInput id="hip" testid={PANEL.hip} label="Hip" unit={metric ? "cm" : "in"} field="hip" unitSystem={state.unit} value={state.hip} onChange={set("hip")} definition={DEFINITIONS.hip} /><TacticalInput id="neck" testid={PANEL.neck} label="Neck" unit={metric ? "cm" : "in"} field="neck" unitSystem={state.unit} value={state.neck} onChange={set("neck")} definition={DEFINITIONS.neck} /><TacticalInput id="wrist" testid={PANEL.wrist} label="Wrist" unit={metric ? "cm" : "in"} field="wrist" unitSystem={state.unit} value={state.wrist} onChange={set("wrist")} definition={DEFINITIONS.wrist} /></div></div>
-            <div className="space-y-4"><div className="text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)]">── Lifestyle & Goals</div><div className="space-y-1.5"><div className="flex items-center justify-between"><Label className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">Activity Level</Label><span title={DEFINITIONS.activity} className="cursor-help text-[10px] font-bold text-muted-foreground/60">ⓘ</span></div><Select value={state.activity} onValueChange={v => update({ activity: v })}><SelectTrigger data-testid={PANEL.activity} aria-label="Activity level" className="rounded-none border-0 border-b-2 border-border bg-transparent focus:border-[var(--brand-lime)] focus:ring-0 h-[42px] px-0 font-mono-data"><SelectValue /></SelectTrigger><SelectContent className="rounded-none max-w-[350px]">{ACTIVITY_LEVELS.map(a => <SelectItem key={a.value} value={a.value}>{a.label}</SelectItem>)}</SelectContent></Select><p className="text-[10px] leading-4 text-muted-foreground/70">{DEFINITIONS.activity}</p></div><TacticalInput id="goal" testid={PANEL.goalWeight} label="Goal Weight (optional)" unit={metric ? "kg" : "lb"} field="goalWeight" unitSystem={state.unit} value={state.goalWeight} onChange={set("goalWeight")} definition={DEFINITIONS.goalWeight} /></div>
+            <div className="space-y-4"><div className="text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)]">── Lifestyle & Goals</div><div className="space-y-1.5"><div className="flex items-center justify-between"><Label className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">Activity Level</Label><button type="button" aria-label="Activity level definition" title={DEFINITIONS.activity} className="inline-flex items-center justify-center min-w-[44px] min-h-[44px] -m-3 cursor-help text-[12px] font-bold text-muted-foreground">ⓘ</button></div><Select value={state.activity} onValueChange={v => update({ activity: v })}><SelectTrigger data-testid={PANEL.activity} aria-label="Activity level" className="rounded-none border-0 border-b-2 border-border bg-transparent focus:border-[var(--brand-lime)] focus:ring-0 h-[42px] px-0 font-mono-data"><SelectValue /></SelectTrigger><SelectContent className="rounded-none max-w-[350px]">{ACTIVITY_LEVELS.map(a => <SelectItem key={a.value} value={a.value}>{a.label}</SelectItem>)}</SelectContent></Select><p className="text-[10px] leading-4 text-muted-foreground">{DEFINITIONS.activity}</p></div><TacticalInput id="goal" testid={PANEL.goalWeight} label="Goal Weight (optional)" unit={metric ? "kg" : "lb"} field="goalWeight" unitSystem={state.unit} value={state.goalWeight} onChange={set("goalWeight")} definition={DEFINITIONS.goalWeight} /></div>
             <div className="text-xs text-muted-foreground leading-relaxed border-t border-border pt-4"><span className="text-[var(--brand-lime)] font-bold">Tip:</span> All data stays on your device. Nothing is uploaded.</div>
           </>
         )}

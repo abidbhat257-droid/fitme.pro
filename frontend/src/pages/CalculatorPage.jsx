@@ -292,7 +292,7 @@ export default function CalculatorPage({ seoSlug }) {
                 </>
               ) : (
                 <div className="text-muted-foreground">
-                  <div className="font-mono-data text-4xl text-muted-foreground/40">
+                  <div className="font-mono-data text-4xl text-muted-foreground">
                     — — —
                   </div>
 
@@ -359,7 +359,7 @@ export default function CalculatorPage({ seoSlug }) {
                     <span className="font-mono-data text-xs bg-[var(--brand-lime)] text-black px-2 py-0.5 mt-0.5">
                       {String(i + 1).padStart(2, "0")}
                     </span>
-                    <span className="text-sm text-foreground/90 leading-relaxed">
+                    <span className="text-sm text-foreground leading-relaxed">
                       {s}
                     </span>
                   </li>
