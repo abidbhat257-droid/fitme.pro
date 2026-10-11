@@ -1,44 +1,15 @@
 # FitMe Pro
 
-FitMe Pro is a free health and fitness calculator platform covering body composition, weight and BMI, calories and metabolism, nutrition, running, strength, and heart-rate metrics.
+> Free health and fitness calculators for body composition, weight, calories, nutrition, running, strength, and heart-rate metrics.
 
-## Primary resources
+## Calculators and guides
 
-- Homepage: https://fitme-pro.vercel.app/
-- Calculator directory: https://fitme-pro.vercel.app/calculators
-- Sitemap: https://fitme-pro.vercel.app/sitemap.xml
-- Robots: https://fitme-pro.vercel.app/robots.txt
-- Evidence sources: https://fitme-pro.vercel.app/journal/evidence-sources
-- Editorial standards: https://fitme-pro.vercel.app/journal/editorial-standards
-- About: https://fitme-pro.vercel.app/about
-- Contact: https://fitme-pro.vercel.app/contact
-
-## Calculator topics
-
-FitMe Pro provides calculators for:
-- BMI and body-size metrics
-- Body fat and body composition
-- Weight goals and weight change
-- BMR, TDEE and calorie needs
-- Calorie deficit and surplus planning
-- Protein, macros, fiber, water and selected nutrient intake
-- Running pace, speed, race-time and training metrics
-- VO2 max and cardiovascular fitness
-- Strength, 1RM and training-volume metrics
-- Maximum heart rate, heart-rate zones and related cardiovascular metrics
-
-## Content and methodology
-
-Calculator pages explain inputs, formulas or methodology, interpretation, limitations, and relevant evidence where available. Results are educational estimates and should not be treated as diagnoses, prescriptions, or individualized medical advice.
-
-Content and calculator methodology are maintained by the FitMe Pro Editorial Team. No medical credentials are claimed for the team. Health explanations should be checked against the cited authoritative sources.
-
-## Indexing guidance
-
-The XML sitemap identifies the public calculator URLs intended for discovery. The site also contains Journal content, including sections that may be intentionally excluded from indexing; do not infer that every Journal URL should be indexed.
-
-## Data and privacy
-
-Calculator inputs are designed to remain on the user's device through browser storage. FitMe Pro does not present calculator output as a medical diagnosis.
-
-Last reviewed: 2026-10-05
+- [All calculators](/calculators) — Browse the site's 100 free health and fitness calculators by topic.
+- [Body Composition](/calculator-category/body-composition) — Calculators for BMI, body fat, lean mass, body density, and waist-based indices.
+- [Weight Management](/calculator-category/weight-management) — Calculators for healthy weight, target weight, weight change, weight-loss timelines, and calorie planning.
+- [Calories & Metabolism](/calculator-category/calories) — Calculators for BMR, TDEE, maintenance calories, calorie deficits, surpluses, and exercise energy.
+- [Nutrition & Macros](/calculator-category/nutrition) — Calculators for protein, carbohydrates, fats, fibre, water, sodium, caffeine, and macronutrients.
+- [Running & Endurance](/calculator-category/running) — Calculators for running pace, speed, race times, splits, training zones, and aerobic fitness.
+- [Strength & Gym](/calculator-category/strength) — Calculators for one-rep max, rep max, training volume, and strength-to-weight metrics.
+- [Heart Rate & Cardiovascular](/calculator-category/heart) — Calculators for heart-rate estimates, training zones, recovery, blood-pressure metrics, and cardiovascular fitness.
+- [FitMe Pro Journal](/journal) — Evidence-informed guides with definitions, measurement advice, practical context, and common questions.
