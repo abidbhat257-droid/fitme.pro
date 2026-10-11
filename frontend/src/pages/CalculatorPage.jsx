@@ -60,7 +60,7 @@ export default function CalculatorPage({ seoSlug }) {
   useEffect(() => {
     if (!calc || !content) return;
 
-    document.title = content.metaTitle || `${content.title} · Fitme Pro`;
+    document.title = content.metaTitle || `${content.title} · FitMe Pro`;
     upsertMeta("description", content.metaDescription);
     upsertMeta("og:title", content.metaTitle || content.title, true);
     upsertMeta("og:description", content.metaDescription, true);
