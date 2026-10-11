@@ -4,12 +4,12 @@
 
 ## Calculators and guides
 
-- [All calculators](/calculators) — Browse the site's 100 free health and fitness calculators by topic.
-- [Body Composition](/calculator-category/body-composition) — Calculators for BMI, body fat, lean mass, body density, and waist-based indices.
-- [Weight Management](/calculator-category/weight-management) — Calculators for healthy weight, target weight, weight change, weight-loss timelines, and calorie planning.
-- [Calories & Metabolism](/calculator-category/calories) — Calculators for BMR, TDEE, maintenance calories, calorie deficits, surpluses, and exercise energy.
-- [Nutrition & Macros](/calculator-category/nutrition) — Calculators for protein, carbohydrates, fats, fibre, water, sodium, caffeine, and macronutrients.
-- [Running & Endurance](/calculator-category/running) — Calculators for running pace, speed, race times, splits, training zones, and aerobic fitness.
-- [Strength & Gym](/calculator-category/strength) — Calculators for one-rep max, rep max, training volume, and strength-to-weight metrics.
-- [Heart Rate & Cardiovascular](/calculator-category/heart) — Calculators for heart-rate estimates, training zones, recovery, blood-pressure metrics, and cardiovascular fitness.
-- [FitMe Pro Journal](/journal) — Evidence-informed guides with definitions, measurement advice, practical context, and common questions.
+- [All calculators](https://fitme-pro.vercel.app/calculators) — Browse the site's 100 free health and fitness calculators by topic.
+- [Body Composition](https://fitme-pro.vercel.app/calculator-category/body-composition) — Calculators for BMI, body fat, lean mass, body density, and waist-based indices.
+- [Weight Management](https://fitme-pro.vercel.app/calculator-category/weight-management) — Calculators for healthy weight, target weight, weight change, weight-loss timelines, and calorie planning.
+- [Calories & Metabolism](https://fitme-pro.vercel.app/calculator-category/calories) — Calculators for BMR, TDEE, maintenance calories, calorie deficits, surpluses, and exercise energy.
+- [Nutrition & Macros](https://fitme-pro.vercel.app/calculator-category/nutrition) — Calculators for protein, carbohydrates, fats, fibre, water, sodium, caffeine, and macronutrients.
+- [Running & Endurance](https://fitme-pro.vercel.app/calculator-category/running) — Calculators for running pace, speed, race times, splits, training zones, and aerobic fitness.
+- [Strength & Gym](https://fitme-pro.vercel.app/calculator-category/strength) — Calculators for one-rep max, rep max, training volume, and strength-to-weight metrics.
+- [Heart Rate & Cardiovascular](https://fitme-pro.vercel.app/calculator-category/heart) — Calculators for heart-rate estimates, training zones, recovery, blood-pressure metrics, and cardiovascular fitness.
+- [FitMe Pro Journal](https://fitme-pro.vercel.app/journal) — Evidence-informed guides with definitions, measurement advice, practical context, and common questions.
