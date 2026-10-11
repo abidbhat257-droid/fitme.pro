@@ -45,8 +45,8 @@ export default function CategoryLadder({ segments = [], value, suffix = "" }) {
           return (
             <div
               key={i}
-              className="h-full flex items-center justify-center text-[9px] uppercase tracking-widest font-bold text-black/70 truncate px-1"
-              style={{ width: `${width}%`, background, opacity: isActive ? 1 : 0.4 }}
+              className="h-full flex items-center justify-center text-[9px] uppercase tracking-widest font-bold text-black truncate px-1"
+              style={{ width: `${width}%`, background, opacity: 1 }}
               title={s.label}
             >
               {width > 8 ? s.label : ""}

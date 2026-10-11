@@ -32,7 +32,7 @@ function GoalCard({ goal }) {
           </div>
           <div className="text-[10px] font-mono-data text-muted-foreground mt-0.5">
             {goal.direction === "down" ? "▼" : "▲"} {goal.amountPerWeek}{unit}/wk
-            {goal.note ? <span className="ml-2 text-foreground/70">· {goal.note}</span> : null}
+            {goal.note ? <span className="ml-2 text-foreground">· {goal.note}</span> : null}
           </div>
         </div>
         <div className="flex gap-1 shrink-0">
