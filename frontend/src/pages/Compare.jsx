@@ -51,7 +51,7 @@ export default function Compare() {
   const [bId, setBId] = useState(options[1]?.id || options[0]?.id || "__current__");
   const [range, setRange] = useState("30");
 
-  useEffect(() => { document.title = "Compare Snapshots · Fitme Pro"; }, []);
+  useEffect(() => { document.title = "Compare Snapshots · FitMe Pro"; }, []);
 
   const a = options.find((o) => o.id === aId) || options[0];
   const b = options.find((o) => o.id === bId) || options[0];
