@@ -38,6 +38,12 @@ for (const file of walk(build)) {
   files++;
   let head = html.slice(0, end), rest = html.slice(end);
   const before = head;
+  // Prevent external JavaScript in <head> from blocking HTML parsing.
+  // Preserve scripts that already use async/defer or native ES modules.
+  head = head.replace(/<script\\b[^>]*\\bsrc\\s*=\\s*["'][^"']+["'][^>]*>/gi, (tag) => {
+    if (/\\b(?:async|defer)\\b/i.test(tag) || /\\btype\\s*=\\s*["']module["']/i.test(tag)) return tag;
+    return tag.replace(/>$/, " defer>");
+  });
   const rel = path.relative(build, path.dirname(file)).split(path.sep).filter(Boolean).join("/");
   const ownUrl = rel ? `${site}/${rel}` : `${site}/`;
 
