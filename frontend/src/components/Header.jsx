@@ -22,7 +22,7 @@ export default function Header() {
     <div className="mx-auto max-w-[1600px] flex items-center justify-between px-4 sm:px-8 py-3 pl-16 sm:pl-20">
       <Link to="/" data-testid={NAV.logo} className="flex items-center gap-2.5 group" aria-label="FitMe Pro home" title="FitMe Pro — Health & Fitness Calculators">
         <img src="/fitme-pro-logo.svg" srcSet="/fitme-pro-logo.svg 40w, /fitme-pro-logo.svg 80w" sizes="40px" width="40" height="40" loading="eager" fetchPriority="high" decoding="async" className="h-10 w-10 object-contain shrink-0" alt="FitMe Pro health and fitness calculator logo" />
-        <span className="font-display text-xl tracking-tighter uppercase"><span className="text-foreground">fitme</span><span className="text-[var(--brand-lime)]">.pro</span></span>
+        <span className="font-display text-xl tracking-tighter uppercase"><span className="text-foreground">FitMe</span><span className="text-[var(--brand-lime)]"> Pro</span></span>
       </Link>
       <div className="flex items-center gap-2 sm:gap-3">
         <Link to="/journal" className="inline-flex sm:hidden items-center justify-center min-h-11 min-w-11 border border-border hover:border-[var(--brand-lime)] hover:text-[var(--brand-lime)] transition-colors" aria-label="FitMe Pro Journal" title="Journal"><HomeIcon name="book" size={18} /></Link>

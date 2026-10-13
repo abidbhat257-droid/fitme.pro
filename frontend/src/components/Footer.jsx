@@ -19,7 +19,7 @@ export default function Footer(){
         <div>
           <Link to="/" className="flex items-center gap-2 mb-3 w-fit group" aria-label="Open FitMe Pro dashboard">
             <div className="h-8 w-8 grid place-items-center bg-[var(--brand-lime)] text-white"><Barbell size={20} weight="duotone"/></div>
-            <span className="font-display text-lg uppercase tracking-tighter">fitme<span className="text-[var(--brand-lime)]">.pro</span></span>
+            <span className="font-display text-lg uppercase tracking-tighter">FitMe<span className="text-[var(--brand-lime)]"> Pro</span></span>
           </Link>
           <p className="text-sm text-muted-foreground max-w-sm leading-relaxed">A free suite of 100 health, body-composition, nutrition, running, strength, cardiovascular and fitness calculators.</p>
         </div>
