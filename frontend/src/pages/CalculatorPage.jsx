@@ -211,7 +211,7 @@ export default function CalculatorPage({ seoSlug }) {
             </div>
 
             <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl uppercase tracking-tighter leading-[1] mb-4">
-              {calc.name}
+              {/(calculator|predictor|converter|estimator)/i.test(calc.name) ? calc.name : `${calc.name} Calculator`}
             </h1>
 
             <p className="text-base sm:text-lg text-muted-foreground max-w-2xl leading-relaxed">
@@ -438,7 +438,7 @@ export default function CalculatorPage({ seoSlug }) {
 
             <div className="border border-border p-5 bg-card">
               <div className="text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-lime)] mb-3">
-                See all 30
+                See all 100
               </div>
 
               <p className="text-sm text-muted-foreground leading-relaxed">
